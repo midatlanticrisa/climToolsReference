@@ -1,0 +1,8 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Clim Tool test"
+theme = "learn"
+[params]
+themeVariant = "blue"
+[outputs]
+home = ["HTML"]
