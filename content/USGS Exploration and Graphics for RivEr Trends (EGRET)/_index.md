@@ -1,7 +1,7 @@
 ---
 title: "USGS Exploration and Graphics for RivEr Trends (EGRET)"
 description: "USGS Exploration and Graphics for RivEr Trends (EGRET)"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -22,4 +22,4 @@ EGRET is an tool for advanced users who have experience working with the softwar
 
 **Limitations:** After summer 2019 may experience less package maintenance and customer support, Requires import of additional software packages, Data must be in a specific format
 
-**Where this tool be found:** https://github.com/USGS-R/EGRET
+**Where this tool be found:** 

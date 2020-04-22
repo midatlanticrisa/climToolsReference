@@ -1,7 +1,7 @@
 ---
 title: "Climate Ready Water Utilities Adaptation Strategies Guide for Water Utilities"
 description: "Climate Ready Water Utilities Adaptation Strategies Guide for Water Utilities"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -16,10 +16,13 @@ Through this easy-to-use and iterative tool, users provide basic information abo
 
 **Scope:** National
 
-**Target Audience:** Public, Community Officials, Decision-makers, Community Leaders, Water Sector Practitioners
+**Target Audience:** Public
+*Community Officials 
+*Decisionmakers
+*Water Sector Practitioners
 
 **Strengths:** Provides or links to supporting  information, Guides user throughout the process by filtering choices based on previous selections, Lists general cost of solutions, Easy-to-use
 
 **Limitations:** Shouldn't be exclusively used for risk assessments or response plan development, Final report is only a preliminary step for planning and building adaptations, Does not direct users to professional resources, Cannot download final report
 
-**Where this tool be found:** https://www.epa.gov/crwu/resilient-strategies-guide-water-utilities#/
+**Where this tool be found:** 

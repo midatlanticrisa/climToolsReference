@@ -1,7 +1,7 @@
 ---
 title: "United States Drought Monitor"
 description: "United States Drought Monitor"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -18,11 +18,22 @@ This tool is intended for a wide range of users and does not require any special
 
 **Scope:** National
 
-**Target Audience:** Agriculturalists, Community Leaders, Decision Makers, Planners, Public, Residents/Property Owners, Environmental Consultant, Environmental Planner
+**Target Audience:** Agriculturalists
+*Community Officials 
+*Decisionmakers 
+*Planners
+*Public 
+*Residents/Property Owners 
+*Environmental Consultant 
+*Environmental Planner
 
-**Strengths:** Updated weekly, Weekly drought summary and forecast, Ability to compare conditions over time, Tabular and GIS data available, Tutorial offered
+**Strengths:** Updated weekly 
+*Weekly drought summary and forecast
+*Ability to compare conditions over time
+*Tabular and GIS data available
+*Tutorial offered
 
-**Limitations:** No ability to input other data, No long-term climate projections
+**Limitations:** No ability to input other data
+* No long-term climate projections
 
-**Where this tool be found:** https://droughtmonitor.unl.edu/
-
+**Where this tool be found:** 

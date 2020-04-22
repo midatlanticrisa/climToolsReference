@@ -1,7 +1,7 @@
 ---
 title: "Better Assessment Science Integrating Point and Non-point Sources (BASIN)"
 description: "Better Assessment Science Integrating Point and Non-point Sources (BASIN)"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -17,10 +17,21 @@ BASINS can be installed for free and operates using an open source GIS platform.
 
 **Scope:** National
 
-**Target Audience:** Conservationists, Decision-makers, Environmental Agencies, Natural Resource Professionals, Planners, Public, Researchers
+**Target Audience:** Conservationists
+*Decisionmakers
+*Environmental Agencies
+*Natural Resource Professionals
+*Planners
+*Public
+*Researchers
 
-**Strengths:** allows user to create specific scenarios, Provides different management scenarios based on user decisions, multiple data sets available, process can be applied at various locations, Can run analysis for large and small scale study areas
+**Strengths:** allows user to create specific scenarios
+*Provides different management scenarios based on user decisions
+*multiple data sets available
+*process can be applied at various locations
+*Can run analysis for large and small scale study areas
 
-**Limitations:** Can be time- and resource-intensive process if data not readily available, Management scenarios rely on historical climate data
+**Limitations:** Can be time- and resource-intensive process if data not readily available
+*Management scenarios rely on historical climate data
 
-**Where this tool be found:** https://www.epa.gov/ceam/better-assessment-science-integrating-point-and-non-point-sources-basins
+**Where this tool be found:** 

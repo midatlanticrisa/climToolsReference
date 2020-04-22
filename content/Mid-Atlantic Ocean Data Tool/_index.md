@@ -1,11 +1,12 @@
 ---
 title: "Mid-Atlantic Ocean Data Tool"
 description: "Mid-Atlantic Ocean Data Tool"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
-Developer: Mid-Atlantic Regional Council on the Ocean (MARCO)
+Developer: Mid-Atlantic Regional Council on
+the Ocean (MARCO)
 
 #### Tool Summary
 **Description:** The Mid-Atlantic Ocean Data Portal is a resource center consisting of an interactive map, data layers, case studies, and collaborative tools that allows users to explore and share visualizations of coastal and societal resources from New York to Virginia. 
@@ -22,4 +23,4 @@ The primary component of this tool is an interactive “Marine Planner” map wh
 
 **Limitations:** Requires free account for access to all resources, Imported layers are session based, Potential lags in loading big data layers, Doesn't allow advanced data analysis
 
-**Where this tool be found:** http://portal.midatlanticocean.org/
+**Where this tool be found:** 

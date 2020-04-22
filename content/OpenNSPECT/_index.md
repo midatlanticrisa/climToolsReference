@@ -1,7 +1,7 @@
 ---
 title: "OpenNSPECT"
 description: "OpenNSPECT"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -14,10 +14,17 @@ Developer: NOAA Office for Coastal Management
 
 **Scope:** Generalized
 
-**Target Audience:** xtension and Outreach Professionals, Natural Resource Professionals, Academics, Government
+**Target Audience:** Extension and Outreach Professionals
+* Natural Resource Professionals
+* Academics
+* Government
 
-**Strengths:** Provides training and input data *Can be used in any area with available data
+**Strengths:** Provides training and input data 
+*Can be used in any area with available data
 
-**Limitations:** Requires data several data inputs *Requires download *Technical *Requires MapWindow GIS v.4.8.8 (open source software)
+**Limitations:** Requires several data inputs 
+*Requires download 
+*Technical skills are required
+*Requires MapWindow GIS v.4.8.8 (open source software)
 
-**Where this tool be found:** https://coast.noaa.gov/digitalcoast/tools/opennspect.html
+**Where this tool be found:** 

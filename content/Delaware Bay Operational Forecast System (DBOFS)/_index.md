@@ -1,7 +1,7 @@
 ---
 title: "Delaware Bay Operational Forecast System (DBOFS)"
 description: "Delaware Bay Operational Forecast System (DBOFS)"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -23,4 +23,4 @@ Can capture effects of increased storm events and other extreme weather conditio
 
 **Limitations:** Challenging to navigate map interface, Data older than 1 month not readily available, Model-generated nowcast and forecast
 
-**Where this tool be found:** https://tidesandcurrents.noaa.gov/ofs/dbofs/dbofs.html
+**Where this tool be found:** 

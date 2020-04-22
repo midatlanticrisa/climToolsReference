@@ -1,7 +1,7 @@
 ---
 title: "Climate Smart Farming Climate Change in Your County"
 description: "Climate Smart Farming Climate Change in Your County"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -18,8 +18,13 @@ Through this easy-to-use tool, users can access an interactive map depicting reg
 
 **Target Audience:** Agriculturalists, Environmental Agencies, Environmental Planner, Educators, Non-governmental Organizations, Planners, Public, State Agencies
 
-**Strengths:** Easy-to-use interface, Site-specific results, Provides multiple scenarios, Raw data publically available
+**Strengths:** Easy-to-use interface
+*Site-specific results
+*Provides multiple scenarios
+*Raw data publicly available
 
-**Limitations:** Cannot only view one senario at a time, Recent data not available, Tool still undergoing revisions
+**Limitations:** Cannot only view one scenario at a time 
+*Recent data not available
+*Tool still undergoing revisions
 
-**Where this tool be found:** http://climatesmartfarming.org/tools/csf-county-climate-change/
+**Where this tool be found:** 

@@ -1,11 +1,11 @@
 ---
 title: "Shoreline Management Self-Guided Decision Tools"
 description: "Shoreline Management Self-Guided Decision Tools"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
-Developers: Virginia Institute of Marine Science (VIMS), Center for Coastal Resources Management (CCRM)
+Developer: Virginia Institute of Marine Science (VIMS), Center for Coastal Resources Management (CCRM)
 
 #### Tool Summary
 **Description:** The CCRM Shoreline Management Self-Guided Decision Tools guide users through a series of questions about shoreline conditions to provide a shoreline best management practice recommendation. 
@@ -16,10 +16,18 @@ The decision-trees provided by this tool are similar to the dichotomous keys use
 
 **Scope:** Generalized
 
-**Target Audience:** Property Owners, State Agencies, Planners, Elected officials
+**Target Audience:** Property Owners
+* State Agencies
+* Planners
+* Elected officials
 
-**Strengths:** Can be applied to most shorelines, Provides site-specific recommendations, Provides instructions and definitions for non-experts, Can be printed for in-field use
+**Strengths:** Can be applied to most shorelines
+* Provides site-specific recommendations
+* Provides instructions and definitions for non-experts
+* Can be printed for in-field use
 
-**Limitations:** Requires site-specific information, Site visits likely necessary, Moderate effort
+**Limitations:** Requires site-specific information
+* Site visits likely necessary
+* Moderate effort
 
-**Where this tool be found:** https://www.vims.edu/ccrm/ccrmp/bmp/decision_tools/index.php
+**Where this tool be found:** 

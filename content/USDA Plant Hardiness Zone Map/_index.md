@@ -1,7 +1,7 @@
 ---
 title: "USDA Plant Hardiness Zone Map"
 description: "USDA Plant Hardiness Zone Map"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -17,10 +17,20 @@ Useful for garden planning and local growers, this tool provides regionally spec
 
 **Scope:** National
 
-**Target Audience:** Gardeners, Growers, Environmental Planner, Natural Resource Professionals, Extension and Outreach Professionals, Public, Community Members, Government officials
+**Target Audience:** Gardeners
+* Growers
+* Environmental Planner
+* Natural Resource Professionals
+* Extension and Outreach Professionals
+* Public
+* Community Members
+* Government officials
 
-**Strengths:** Regionally specific, Can easily search for location of interest, Option to export maps
+**Strengths:** Regionally specific
+*  Can easily search for location of interest
+*  Option to export maps
 
-**Limitations:** Does not provide future projections, Data based on historical records, unknown update frequency
+**Limitations:** Does not provide future projections
+* Data based on historical records, unknown update frequency
 
-**Where this tool be found:** https://planthardiness.ars.usda.gov/PHZMWeb/Default.aspx
+**Where this tool be found:** 

@@ -1,7 +1,7 @@
 ---
 title: "Grape Hardiness & Freeze Risk"
 description: "Grape Hardiness & Freeze Risk"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -18,8 +18,11 @@ This tool assesses hardiness temperature across the Northeast in order to inform
 
 **Target Audience:** Agriculturalists, Environmental Agencies, Environmental Planner, Educators, Non-governmental Organizations, Planners, Public, State Agencies
 
-**Strengths:** Easy-to-use interface, Crop-specific results, Can easily search for locality of interest, 
+**Strengths:** Easy-to-use interface
+*Crop-specific results
+*Can easily search for locality of interest
 
-**Limitations:** Background knowledge of crop growth useful, Tool still undergoing development
+**Limitations:** Background knowledge of crop growth useful
+*Tool still undergoing development
 
-**Where this tool be found:** http://climatesmartfarming.org/tools/csf-grape-hardiness/
+**Where this tool be found:** 

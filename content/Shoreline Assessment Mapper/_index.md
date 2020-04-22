@@ -1,11 +1,11 @@
 ---
 title: "Shoreline Assessment Mapper"
 description: "Shoreline Assessment Mapper"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
-Developers: Virginia Institute of Marine Science (VIMS), Center for Coastal Resources Management (CCRM)
+Developer: Virginia Institute of Marine Science (VIMS), Center for Coastal Resources Management (CCRM)
 
 #### Tool Summary
 **Description:** The Shoreline Assessment Mapper is an interactive map that displays a variety of shoreline data for the coastal zone of Virginia. 
@@ -16,10 +16,17 @@ This easy-to-use tool allows users to view a variety of data layers describing s
 
 **Scope:** State
 
-**Target Audience:** Property Owners, Community Officials, Planners, Elected Officials
+**Target Audience:** Property Owners
+* Community Officials
+* Planners
+* Elected Officials
 
-**Strengths:** Easy-to-use interactive map, Can easily search for or zoom to area of interest, Wide variety of layers specific to shoreline assessment, Excellent documentation of data sources
+**Strengths:** Easy-to-use interactive map
+* Can easily search for or zoom to area of interest
+* Wide variety of layers specific to shoreline assessment
+* Excellent documentation of data sources
 
-**Limitations:** Not predictive of future shoreline conditions, No management recommendations
+**Limitations:** Not predictive of future shoreline conditions
+* No management recommendations
 
-**Where this tool be found:** http://cmap2.vims.edu/SAM/ShorelineAssessmentMapper.html
+**Where this tool be found:** 

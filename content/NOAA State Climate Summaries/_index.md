@@ -1,11 +1,11 @@
 ---
 title: "NOAA State Climate Summaries"
 description: "NOAA State Climate Summaries"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
-Developers: National Centers for Environmental Information, National Oceanic and Atmospheric Administration (NOAA), North Carolina Institute for Climate Studies (NCICS)
+Developer: National Centers for Environmental Information, National Oceanic and Atmospheric Administration (NOAA), North Carolina Institute for Climate Studies (NCICS)
 
 #### Tool Summary
 **Description:** The State Climate Summaries consist of brief statewide reports, describing historical climate conditions and future climate scenarios.
@@ -17,10 +17,20 @@ Each climate summary includes key messages, as well as a narrative description a
 
 **Scope:** National
 
-**Target Audience:** Environmental Agencies, Extension and Outreach Professionals, Federal Agencies, Planners, State Agencies, Public
+**Target Audience:** Environmental Agencies
+*Extension and Outreach Professionals
+*Federal Agencies
+*Planners
+*State Agencies
+*Public
 
-**Strengths:** Easy-to-use, Links to additional resources, Available for every state in the US, Aims for transparent data sources
+**Strengths:** Easy-to-use
+*Links to additional resources
+*Available for every state in the US
+*Aims for transparent data sources
 
-**Limitations:** Cannot compare state summaries simultaneously/side-by-side, Locality specific data not available, Broad overview does not allow for in-depth analysis of local impacts
+**Limitations:** Cannot compare state summaries simultaneously/side-by-side
+* Locality specific data not available
+* Broad overview does not allow for in-depth analysis of local impacts
 
-**Where this tool be found:** https://statesummaries.ncics.org/
+**Where this tool be found:** 

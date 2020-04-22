@@ -1,7 +1,7 @@
 ---
 title: "Chesapeake Bay Operational Forecast System (CBOFS)"
 description: "Chesapeake Bay Operational Forecast System (CBOFS)"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -22,4 +22,4 @@ The Chesapeake Bay Operational Forecast System (CBOFS) provides water level, wat
 
 **Limitations:** Challenging to navigate map interface, Data older than 1 month not readily available, Model-generated nowcast and forecast
 
-**Where this tool be found:** https://tidesandcurrents.noaa.gov/ofs/cbofs/cbofs.html
+**Where this tool be found:** 

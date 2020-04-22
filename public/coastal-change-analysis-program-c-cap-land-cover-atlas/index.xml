@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coastal Change Analysis Program (C-CAP) Land Cover Atlas on Clim Tool test</title>
-    <link>http://example.org/coastal-change-analysis-program-c-cap-land-cover-atlas/</link>
+    <link>https://cbtooltest.marisa.psu.edu/coastal-change-analysis-program-c-cap-land-cover-atlas/</link>
     <description>Recent content in Coastal Change Analysis Program (C-CAP) Land Cover Atlas on Clim Tool test</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2020 12:48:50 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2020 16:56:20 -0400</lastBuildDate>
     
-	<atom:link href="http://example.org/coastal-change-analysis-program-c-cap-land-cover-atlas/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cbtooltest.marisa.psu.edu/coastal-change-analysis-program-c-cap-land-cover-atlas/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

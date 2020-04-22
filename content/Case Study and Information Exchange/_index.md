@@ -1,7 +1,7 @@
 ---
 title: "Case Study and Information Exchange"
 description: "Case Study and Information Exchange"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -16,10 +16,13 @@ Using an interactive map, users can view a variety of projects designed to addre
 
 **Scope:** National
 
-**Target Audience:** Public, Community Officials, Decision-makers, Community Leaders, Water Sector Practitioners
+**Target Audience:** Public
+*Community Officials 
+*Decisionmakers
+*Water Sector Practitioners
 
 **Strengths:** Easy-to-use interface, Community based network, Results are site-specific
 
 **Limitations:** Shouldn't be exclusively used for risk assessments or response plan development, Inconsistency in available information for each project (ex: some have videos and reports whereas others don't), Does not provide supporting educational resources about implemented adaptation measures
 
-**Where this tool be found:** https://epa.maps.arcgis.com/apps/MapSeries/index.html?appid=03d35ca84b5944f8b3ab59bf3a981462
+**Where this tool be found:** 

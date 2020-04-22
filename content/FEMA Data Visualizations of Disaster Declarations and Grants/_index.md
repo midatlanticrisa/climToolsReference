@@ -1,7 +1,7 @@
 ---
 title: "FEMA Data Visualizations of Disaster Declarations and Grants"
 description: "FEMA Data Visualizations of Disaster Declarations and Grants"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -18,8 +18,13 @@ These tools help provide important information about the history of disaster dec
 
 **Target Audience:** Decisionmakers, Environmental Consultant, Environmental Planner, Floodplain Managers, Industry, Natural Resource Professionals, Non-governmental Organizations, Planners, Public, Homeowners/buyers, Real Estate Agents, State Agencies
 
-**Strengths:** Data available at the county level, Aims for transparent data sources, Easy-to-use, Directs users to additional resources, Includes U.S. territories and some cities
+**Strengths:** Data available at the county level
+*Aims for transparent data sources
+*Easy-to-use
+*Directs users to additional resources
+*Includes U.S. territories and some cities
 
-**Limitations:** Doesn't show national comparison among states, Missing data
+**Limitations:** Doesn't show national comparison among states
+*Missing data
 
-**Where this tool be found:** https://www.fema.gov/data-visualization
+**Where this tool be found:** 

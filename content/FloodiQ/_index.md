@@ -1,7 +1,7 @@
 ---
 title: "FloodiQ"
 description: "FloodiQ"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -18,10 +18,20 @@ Although most information is available without an account, users must provide an
 
 **Scope:** National
 
-**Target Audience:** Homeowners/buyers, Planners, Public, Community Leaders, Real Estate Agents, Environmental Planner, Floodplain Managers, Restoration Specialists
+**Target Audience:** Homeowners/buyers
+* Planners
+* Public
+* Community Officials
+* Real Estate Agents
+* Environmental Planner
+* Floodplain Managers
+* Restoration Specialists
 
-**Strengths:** Location specific information, Link and phone number to contact your elected official about the matter, Provides supporting educational information
+**Strengths:** Location specific information
+* Link and phone number to contact your elected official about the matter
+* Provides supporting educational information
 
-**Limitations:** Flood risk projections do not include precipitation, User must provide email to generate detailed report
+**Limitations:** Flood risk projections do not include precipitation
+* User must provide email to generate detailed report
 
-**Where this tool be found:** https://floodiq.com
+**Where this tool be found:** 

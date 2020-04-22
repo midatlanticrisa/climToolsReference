@@ -1,7 +1,7 @@
 ---
 title: "DC Department of Energy and Environment Data & Maps"
 description: "DC Department of Energy and Environment Data & Maps"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -20,5 +20,4 @@ Developer: Department of Energy and Environment (DOEE)
 
 **Limitations:** NA
 
-**Where this tool be found:** https://doee.dc.gov/service/environmental-data-maps
-
+**Where this tool be found:** 

@@ -1,11 +1,11 @@
 ---
 title: "AdaptVA"
 description: "AdaptVA"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
-Developers: Virginia Institute of Marine Science (VIMS), Center for Coastal Resources Management (CCRM)
+Developer: Virginia Institute of Marine Science (VIMS), Center for Coastal Resources Management (CCRM)
 
 #### Tool Summary
 **Description:** Tool that includes Sea Level Rise Projection Viewers, Tidewatch Map, and Interactive Map
@@ -20,4 +20,4 @@ Developers: Virginia Institute of Marine Science (VIMS), Center for Coastal Reso
 
 **Limitations:** NA
 
-**Where this tool be found:** http://adaptva.com/
+**Where this tool be found:** 

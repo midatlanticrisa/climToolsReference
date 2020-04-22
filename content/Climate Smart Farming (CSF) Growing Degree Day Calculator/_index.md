@@ -1,7 +1,7 @@
 ---
 title: "Climate Smart Farming (CSF) Growing Degree Day Calculator"
 description: "Climate Smart Farming (CSF) Growing Degree Day Calculator"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -22,4 +22,4 @@ The Growing Degree Day (GDD) calculator measures seasonal heat accumulation, thr
 
 **Limitations:** Background knowledge of crop growth useful, Tool still undergoing development, No future projections
 
-**Where this tool be found:** http://climatesmartfarming.org/tools/csf-growing-degree-day-calculator/
+**Where this tool be found:** 

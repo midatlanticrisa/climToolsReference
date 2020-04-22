@@ -1,7 +1,7 @@
 ---
 title: "Chesapeake Bay Interpretive Buoy System (CBIBS)"
 description: "Chesapeake Bay Interpretive Buoy System (CBIBS)"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -19,11 +19,22 @@ Each buoy location offers data to download as a CSV that includes all of the obs
 
 **Scope:** Locality
 
-**Target Audience:** Public, Decision Makers, Teachers, Researchers, Community Leaders, Residents/Property Owners, Environmental Planners, Boaters, Scientists
+**Target Audience:** Public
+* Decisionmakers
+* Teachers
+* Researchers
+* Community Officials
+* Residents/Property Owners
+* Environmental Planners
+* Boaters
+* Scientists
 
-**Strengths:** Data updated every 10 minutes, Charts and tables for data analysis, Extensive range of data parameters, Tutorials available
+**Strengths:** Data updated every 10 minutes
+* Charts and tables for data analysis
+* Extensive range of data parameters
+* Tutorials available
 
-**Limitations:** Water quality parameter graphs don't allow multiple variable comparison, Water quality parameters are restricted to specific buoy locations
+**Limitations:** Water quality parameter graphs don't allow multiple variable comparison
+* Water quality parameters are restricted to specific buoy locations
 
-**Where this tool be found:** https://buoybay.noaa.gov/about/about-system
-
+**Where this tool be found:** 

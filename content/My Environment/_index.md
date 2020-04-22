@@ -1,7 +1,7 @@
 ---
 title: "My Environment"
 description: "My Environment"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -18,10 +18,17 @@ The MyEnvironment tool displays local environmental data through a simple dashbo
 
 **Scope:** National
 
-**Target Audience:** Citizens, Public, Local governments, Environmental Planner, Residents/Property Owners
+**Target Audience:** Citizens
+* Public
+* Local governments
+* Environmental Planner
+* Residents/Property Owners
 
-**Strengths:** Easy-to-use, Provides links to supporting tools and resources, Location specific maps and data, , 
+**Strengths:** Easy-to-use
+* Provides links to supporting tools and resources
+* Location specific maps and data
 
-**Limitations:** Some data is not available for all locations, Does not include projections
+**Limitations:** Some data is not available for all locations
+* Does not include projections
 
-**Where this tool be found:** https://www3.epa.gov/myem/envmap/find.html
+**Where this tool be found:** 

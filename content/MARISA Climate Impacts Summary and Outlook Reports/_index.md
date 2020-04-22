@@ -1,7 +1,7 @@
 ---
 title: "MARISA Climate Impacts Summary and Outlook Reports"
 description: "MARISA Climate Impacts Summary and Outlook Reports"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -16,10 +16,16 @@ Released seasonally, these reports summarize recent weather events in the Chesap
 
 **Scope:** State
 
-**Target Audience:** Policy makers, Practitioners, Residents, Community officials
+**Target Audience:** Policy makers
+* Practitioners
+* Residents
+* Community Officials
 
-**Strengths:** Report issued quarterly, All charts and figures include easy-to-understand narrative descriptions, Significant weather events (i.e., Polar Vortex) are explained
+**Strengths:** Report issued quarterly
+* All charts and figures include easy-to-understand narrative descriptions
+* Significant weather events (i.e., Polar Vortex) are explained
 
-**Limitations:** Relatively new tool, no reports before Winter 2018, No information on resilience or adaption strategies
+**Limitations:** Relatively new tool, no reports before Winter 2018
+* No information on resilience or adaption strategies
 
-**Where this tool be found:** https://www.midatlanticrisa.org/resources.html
+**Where this tool be found:** 

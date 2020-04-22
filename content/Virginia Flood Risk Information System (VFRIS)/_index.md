@@ -1,7 +1,7 @@
 ---
 title: "Virginia Flood Risk Information System (VFRIS)"
 description: "Virginia Flood Risk Information System (VFRIS)"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -16,10 +16,17 @@ This easy-to-use, interactive mapping tool allows users to quickly locate a prop
 
 **Scope:** State
 
-**Target Audience:** Real Estate Agents, Property Buyers/Owners, Community Officials, Planners
+**Target Audience:** Real Estate Agents
+* Property Buyers/Owners
+* Community Officials
+* Planners
 
-**Strengths:** Easy-to-use, interactive map viewer with various flood zone layers, Excellent welcome guide/tutorial, Option to download data and reports, Option to upload additional data, if available
+**Strengths:** Easy-to-use, interactive map viewer with various flood zone layers
+* Excellent welcome guide/tutorial
+* Option to download data and reports
+* Option to upload additional data, if available
 
-**Limitations:** No projections of future flood risk, Additional map layers must be supplied by user
+**Limitations:** No projections of future flood risk
+* Additional map layers must be supplied by user
 
-**Where this tool be found:** http://cmap2.vims.edu/VaFloodRisk/vfris2.html
+**Where this tool be found:** 

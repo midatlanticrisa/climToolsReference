@@ -1,7 +1,7 @@
 ---
 title: "DC Department of Energy and Environment: SRC Trading Program Impervious Viewer"
 description: "DC Department of Energy and Environment: SRC Trading Program Impervious Viewer"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -18,11 +18,19 @@ To view areas of impervious surfaces, the user must first either navigate to, or
 
 **Scope:** Locality
 
-**Target Audience:** Decision Makers, Community Leaders, Planners, Homeowners, Environmental Planner, State Agencies
+**Target Audience:** Decisionmakers 
+* Community Officials 
+* Planners 
+* Homeowners 
+* Environmental Planner 
+* State Agencies
 
-**Strengths:** Can easily search for area of interest, Site specific data, Includes additional data overlays, Can easily annotate and export map
+**Strengths:** Can easily search for area of interest
+* Site specific data
+* Includes additional data overlays
+* Can easily annotate and export map
 
-**Limitations:** Some GIS layers require login to free account, No glossary for SRC practices
+**Limitations:** Some GIS layers require login to free account
+* No glossary for SRC practices
 
-**Where this tool be found:** https://dcgis.maps.arcgis.com/apps/webappviewer/index.html?id=92dca0c84d974a0c9ecc0858a110bf2d
-
+**Where this tool be found:** 

@@ -1,7 +1,7 @@
 ---
 title: "Climate Engine"
 description: "Climate Engine"
-date: 2020-04-22T12:48:50-0400
+date: 2020-04-22T16:56:20-0400
 weight: 1
 draft: false
 ---
@@ -14,14 +14,22 @@ Hosted by Google's Earth Engine, the Climate Engine Application allows users to 
 
 
 
-**Relevance:** Can be used to to see historical change in climate variables over time
+**Relevance:** Can be used to see historical change in climate variables over time
 
 **Scope:** National
 
-**Target Audience:** Environmental Agencies, Environmental Consultant, Environmental Planner, Extension and Outreach Professionals, Researchers, Natural Resource Professionals
+**Target Audience:** Environmental Agencies, Environmental Consultant, Environmental Planner, Extension and Outreach Professionals
+*Researchers
+*Natural Resource Professionals
 
-**Strengths:** Ability to visualize multiple climate change related variables at once, Data frequently updated, Provides supporting educational information and tutorials, Able to download customized data without needing to access and download entire dataset, Can share maps  and graphs via specifically generated web links , do not need to download
+**Strengths:** Ability to visualize multiple climate change related variables at once
+*Data frequently updated
+*Provides supporting educational information and tutorials
+*Able to download customized data without needing to access and download entire dataset
+* Can share maps  and graphs via specifically generated web links , do not need to download
 
-**Limitations:** Does not provide future projections, Coarse spatial resolution, Background knowledge may be necessary to interpret complex datasets
+**Limitations:** Does not provide future projections
+*Coarse spatial resolution
+*Background knowledge may be necessary to interpret complex datasets
 
-**Where this tool be found:** https://app.climateengine.org/
+**Where this tool be found:** 
