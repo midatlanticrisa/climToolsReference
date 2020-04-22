@@ -1,9 +1,9 @@
 ---
 title: "Virginia Coastal Geospatial and Educational Mapping System (GEMS)"
 description: "Virginia Coastal Geospatial and Educational Mapping System (GEMS)"
-date: 2020-04-21T15:50:06-0400
+date: 2020-04-22T12:48:50-0400
 weight: 1
-draft: true
+draft: false
 ---
 Developer: Virginia Department of Environmental Quality
 

@@ -1,9 +1,9 @@
 ---
 title: "Resilience Adaptation Feasibility Tool (The RAFT)"
 description: "Resilience Adaptation Feasibility Tool (The RAFT)"
-date: 2020-04-21T15:50:06-0400
+date: 2020-04-22T12:48:50-0400
 weight: 1
-draft: true
+draft: false
 ---
 Developers: The Institute for Engagement & Negotiation at the University of Virginia, The Virginia Coastal Policy Center at William & Mary Law School, Old Dominion University/Virginia Sea Grant Climate Adaptation and Resilience Program
 

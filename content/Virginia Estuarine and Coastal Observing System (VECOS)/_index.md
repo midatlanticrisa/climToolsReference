@@ -1,9 +1,9 @@
 ---
 title: "Virginia Estuarine and Coastal Observing System (VECOS)"
 description: "Virginia Estuarine and Coastal Observing System (VECOS)"
-date: 2020-04-21T15:50:06-0400
+date: 2020-04-22T12:48:50-0400
 weight: 1
-draft: true
+draft: false
 ---
 Developers: Chesapeake Bay National Estuarine Research Reserve, Virginia Institute of Marine Sciences William & Mary
 

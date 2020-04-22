@@ -1,9 +1,9 @@
 ---
 title: "Annual United States Climate Stripes: Temperature and Precipitation"
 description: "Annual United States Climate Stripes: Temperature and Precipitation"
-date: 2020-04-21T15:50:06-0400
+date: 2020-04-22T12:48:50-0400
 weight: 1
-draft: true
+draft: false
 ---
 Developer: North Carolina Institute for Climate Studies
 

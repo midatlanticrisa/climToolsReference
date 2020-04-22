@@ -1,9 +1,9 @@
 ---
 title: "Virginia Wetland Condition Assessment Tool (WetCAT)"
 description: "Virginia Wetland Condition Assessment Tool (WetCAT)"
-date: 2020-04-21T15:50:06-0400
+date: 2020-04-22T12:48:50-0400
 weight: 1
-draft: true
+draft: false
 ---
 Developers: Center for Coastal Resources Management (CCRM), Virginia Department of Environmental Quality (DEQ)
 

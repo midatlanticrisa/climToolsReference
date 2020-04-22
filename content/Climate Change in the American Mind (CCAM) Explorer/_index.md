@@ -1,9 +1,9 @@
 ---
 title: "Climate Change in the American Mind (CCAM) Explorer"
 description: "Climate Change in the American Mind (CCAM) Explorer"
-date: 2020-04-21T15:50:06-0400
+date: 2020-04-22T12:48:50-0400
 weight: 1
-draft: true
+draft: false
 ---
 Developers: Yale Program on Climate Change Communication, George Mason Center for Climate Change Communication
 

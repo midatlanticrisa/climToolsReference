@@ -1,9 +1,9 @@
 ---
 title: "Beach Nourishment Viewer"
 description: "Beach Nourishment Viewer"
-date: 2020-04-21T15:50:06-0400
+date: 2020-04-22T12:48:50-0400
 weight: 1
-draft: true
+draft: false
 ---
 Developers: Program for the Study of Developed Shorelines, Western Carolina University
 

@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Clim Tool test"
 theme = "learn"
 [params]
+author = "Matthew D. Lisk, Dr. Robert Nicholas"
+description = "A site to show available climate tools."
+disableSearch = false
 themeVariant = "blue"
 [outputs]
-home = ["HTML"]
+home = ["HTML", "RSS", "JSON"]
