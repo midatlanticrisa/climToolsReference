@@ -1,3 +1,6 @@
 [submodule "themes/learn"]
 	path = themes/learn
 	url = https://github.com/matcornic/hugo-theme-learn.git
+[submodule "themes/w3Simple"]
+	path = themes/w3Simple
+	url = https://github.com/jesselau76/hugo-w3-simple.git

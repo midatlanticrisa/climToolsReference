@@ -45,13 +45,12 @@ formatStarStrings <- function(str){
 # }
 ##########################################################################
 ##########################################################################
-generateToolPage <- function(toolRec, tempPage, tempIndex, el, siteDir, updateContent=F){
+generateToolPage <- function(toolRec, tempPage, el, siteDir, updateContent=F){
   #################
-  #toolRec <- splitByToolID[[98]]
-  #tempPage <- templatePage
-  #tempIndex <- chaptPage
-  #el <- "\n"
-  #siteDir <- siteDir
+  toolRec <- splitByToolID[[98]]
+  tempPage <- templatePage
+  el <- "\n"
+  siteDir <- toolsDir
   #################
   ##check the developers, to make sure the directories are available and are set up properly
   if(is.na(toolRec$Developer)==T){
@@ -62,8 +61,8 @@ generateToolPage <- function(toolRec, tempPage, tempIndex, el, siteDir, updateCo
   toolIDtxt <- paste0("page-tool", toolRec$`Tool ID`)  ##the name of the tool page within the site
   #writeTool <- paste0(siteDir, splitDevs[1], "/", toolIDtxt, ".md")  ##the file in which the tool information will be written to, assumes first developer is the most important
   toolRec$`Tool Name` <- gsub(el, " ", toolRec$`Tool Name`) ##remove any cariage returns from the tool name
-  toolDir <- paste0(siteDir, gsub("/|:", "-", toolRec$`Tool Name`), "/")
-  writeTool <- paste0(toolDir, "_index.md")
+  #toolDir <- paste0(siteDir, gsub("/|:", "-", toolRec$`Tool Name`), "/")
+  writeTool <- paste0(siteDir, toolIDtxt, ".md")
   ##if subdirectories do not already exist for the developers, create them and the chapter file for that developer
   # sapply(splitDevs, function(dev){if(dir.exists(paste0(siteDir,dev))==F){
   #                                   dir.create(paste0(siteDir,dev), recursive=T);
@@ -94,9 +93,10 @@ generateToolPage <- function(toolRec, tempPage, tempIndex, el, siteDir, updateCo
   #                                                     "[", toolRec$`Tool Name`, "](#", toolIDtxt, ")");
   #                                 writeLines(chaptPage, file(findDevMain))
   #                                 })
-  if(dir.exists(toolDir)==F){
-    dir.create(toolDir, recursive=T);
-  }
+  
+  #if(dir.exists(toolDir)==F){
+  #  dir.create(toolDir, recursive=T);
+  #}
   
   if(file.exists(writeTool)==F | updateContent==T){
     ##provide new page title
@@ -104,9 +104,14 @@ generateToolPage <- function(toolRec, tempPage, tempIndex, el, siteDir, updateCo
     ##update date
     toolPage <- gsub("1-1-1111", format(Sys.time(), "%FT%T%z"), toolPage)
     ##change description
-    toolPage <- gsub("a page", toolRec$`Tool Name`, toolPage)
-    ##change the weight of the file based on what is already in the directory
-    #toolPage <- gsub("weight: 1", paste0("weight: ", length(list.files(paste0(siteDir,splitDevs[1])))+1), toolPage)
+    toolPage <- gsub("a page", toolRec$Description, toolPage)
+    ##add categories and tags to the tool page
+    getCats <- sapply()
+    #toolPage <- 
+    getTags <- sapply()
+    
+    
+    
     
     ##page/tool title
     #pageTitle <- paste0(el, "## ", toolRec$`Tool Name`)
