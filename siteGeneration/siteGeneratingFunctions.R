@@ -47,7 +47,10 @@ formatStarStrings <- function(str){
 ##########################################################################
 generateToolPage <- function(toolRec, tempPage, el, siteDir, updateContent=F){
   #################
-  toolRec <- splitByToolID[[98]]
+  #toolRec <- splitByToolID[[3]]
+  #toolRec <- splitByToolID[[9]]
+  #toolRec <- splitByToolID[[36]]
+  toolRec <- splitByToolID[[64]]
   tempPage <- templatePage
   el <- "\n"
   siteDir <- toolsDir
@@ -104,13 +107,55 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, updateContent=F){
     ##update date
     toolPage <- gsub("1-1-1111", format(Sys.time(), "%FT%T%z"), toolPage)
     ##change description
-    toolPage <- gsub("a page", toolRec$Description, toolPage)
-    ##add categories and tags to the tool page
-    getCats <- sapply()
-    #toolPage <- 
-    getTags <- sapply()
+    if(is.na(toolRec$Description)==F){
+      toolPage <- gsub("a page", toolRec$Description, toolPage)
+    }else{
+      toolPage <- gsub("a page", toolRec$`Tool Name`, toolPage)
+    }
+    ##add categories to the header
+    baseScope <- toolRec$Scope
+    if(baseScope=="State" & is.na(toolRec$State)==F){
+      availStates <- strsplit(toolRec$State, "; |;\n")[[1]]
+      baseScope <- paste0(baseScope, " - ", availStates)
+    }else if(baseScope=="Locality" & is.na(toolRec$Locality)==F){
+      availLocs <- strsplit(toolRec$Locality, "'*'|;\n|*\n")[[1]]
+      baseScope <- paste0(baseScope, " - ", availLocs)
+    }else if(is.na(baseScope)==T){
+      baseScope <- "Unknown Scope"
+    }
+    cats <- baseScope
+    ##checks and adds the tool functionality
+    chkFunction <- toolRec[,grep("Tool Function-", names(toolRec))]
+    chkFunInd <- which(chkFunction=="x")
+    if(length(chkFunInd)>0){
+      baseFunction <- sapply(strsplit(names(chkFunction)[chkFunInd], "-"), "[[", 2)
+      cats <- c(cats, baseFunction)
+    }
+    ##checks and adds the tool function projections
+    chkProj <- toolRec[,grep("Future Projections-", names(toolRec))]
+    chkProjInd <- which(chkProj=="x")
+    if(length(chkProjInd)>0){
+      baseProj <- sapply(strsplit(names(chkProj)[chkProjInd], "-"), "[[", 2)
+      cats <- c(cats, baseProj)
+    }
+    ##add coastal, if appropriate
+    if(toolRec$Coastal=="x" & is.na(toolRec$Coastal)==F){
+      cats <- c(cats, "Coastal")
+    }
+    toolPage <- gsub('\"categories\"', paste(paste0('\"', unique(cats), '\"'), collapse=", "), toolPage)
     
-    
+    ##add  tags to the header
+    tags <- splitDevs
+    if(is.na(toolRec$State)==F){
+      tags <- c(tags, strsplit(toolRec$State, "; |;\n")[[1]])
+    }
+    if(is.na(toolRec$Locality)==F){
+      tags <- c(tags, strsplit(toolRec$Locality, "'*'|;\n|*\n")[[1]])
+    }
+    if(is.na(toolRec$`Target Audience`)==F){
+      tags <- c(tags, formatStarStrings(toolRec$`Target Audience`))
+    }
+    toolPage <- gsub('\"tags\"', paste(paste0('\"', unique(tags), '\"'), collapse=", "), toolPage)
     
     
     ##page/tool title
@@ -124,28 +169,56 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, updateContent=F){
     }
     
     ##tool description
-    toolDes <- paste0("**Description:** ", toolRec$About, el)
+    if(is.na(toolRec$About)==F){
+      toolDes <- paste0("**Description:** ", toolRec$About, el)
+    }else{
+      toolDes <- paste0("**Description:** ", "Not Available", el)
+    }
     
     ##Why tool is useful
-    toolUse <- paste0("**Relevance:** ", toolRec$`Climate Relevance`, el)
+    if(is.na(toolRec$`Climate Relevance`)==F){
+      toolUse <- paste0("**Relevance:** ", toolRec$`Climate Relevance`, el)
+    }else{
+      toolUse <- paste0("**Relevance:** ", "Not Available", el)
+    }
     
     ##tool audience
-    checkAud <- formatStarStrings(toolRec$`Target Audience`)
-    toolAud <- paste0("**Target Audience:** ", paste(checkAud, collapse=", "), el)
+    if(is.na(toolRec$`Target Audience`)==F){
+      checkAud <- formatStarStrings(toolRec$`Target Audience`)
+      toolAud <- paste0("**Target Audience:** ", paste(checkAud, collapse=", "), el)
+    }else{
+      toolAud <- paste0("**Target Audience:** ", "Not Available", el)
+    }
     
     ##tool scope
-    toolScope <- paste0("**Scope:** ", toolRec$Scope, el)
+    if(is.na(toolRec$Scope)==F){
+      toolScope <- paste0("**Scope:** ", toolRec$Scope, el)
+    }else{
+      toolScope <- paste0("**Scope:** ", "Not Available", el)
+    }
     
     ##tool strengths
-    checkStr <- formatStarStrings(toolRec$Strengths)
-    toolStrs <- paste0("**Strengths:** ", paste(checkStr, collapse=", "), el)
+    if(is.na(toolRec$Strengths)==F){
+      checkStr <- formatStarStrings(toolRec$Strengths)
+      toolStrs <- paste0("**Strengths:** ", paste(checkStr, collapse=", "), el)
+    }else{
+      toolStrs <- paste0("**Strengths:** ", "Not Available", el)
+    }
     
     ##tool weaknesses
-    checkLim <- formatStarStrings(toolRec$Limitations)
-    toolLims <- paste0("**Limitations:** ", paste(checkLim, collapse=", "), el)
+    if(is.na(toolRec$Limitations)==F){
+      checkLim <- formatStarStrings(toolRec$Limitations)
+      toolLims <- paste0("**Limitations:** ", paste(checkLim, collapse=", "), el)
+    }else{
+      toolLims <- paste0("**Limitations:** ", "Not Available", el)
+    }
     
     ##tool URL
-    toolURL <- paste0("**Where this tool be found:** ", toolRec$URL...5)
+    if(is.na(toolRec$URL)==F){
+      toolURL <- paste0("**Where this tool be found:** ", toolRec$URL)
+    }else{
+      toolURL <- paste0("**Where this tool be found:** ", "Not Available")
+    }
     
     ##bring the page together
     #toolPage <- paste(toolPage, pageTitle, toolDev, "#### Tool Summary-", toolDes, toolUse, toolScope, toolAud, toolStrs, toolLims, toolURL, sep=el)

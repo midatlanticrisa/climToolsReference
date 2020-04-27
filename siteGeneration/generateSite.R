@@ -34,8 +34,8 @@ toolInventory <- lapply(sheetNames, read_excel, path=toolInventoryFile, col_name
 inventory <- toolInventory[[1]]
 baseNames <- as.character(inventory[2,])
 ##for now, hard coded
-baseNames[15:23] <- paste(baseNames[15], as.character(inventory[3,][15:23]), sep="-")
-baseNames[24:27] <- paste(baseNames[24], as.character(inventory[3,][24:27]), sep="-")
+baseNames[15:23] <- paste(baseNames[15], as.character(inventory[4,][15:23]), sep="-")
+baseNames[24:27] <- paste(baseNames[24], as.character(inventory[4,][24:27]), sep="-")
 colnames(inventory) <- baseNames
 inventory <- inventory[which(inventory$`Tool ID`=="1.0"):nrow(inventory),]
 invValsOnly <- inventory[which(is.na(inventory$`Group ID`)==F),]
@@ -60,15 +60,24 @@ if(dir.exists(toolsDir)==F){
 
 pblapply(splitByToolID, generateToolPage, tempPage=templatePage, el=el, siteDir=toolsDir, updateContent=T)
 
-##need to set up the index and about files
-indexPage <- gsub("page-template", "Climate Tools are Coolz", templatePage)
-indexPage <- gsub("1-1-1111", format(Sys.time(), "%FT%T%z"), indexPage)
-isect1Title <- "### Climate Tools and what they do"
-ip1 <- paste0("Blurb about what climate tools are and things they do.", el)
-isect2Title <- "### Why Climate Tools are important"
-ip2 <- paste0("Blurb about why this list is useful and important", el)
-indexPage <- paste(indexPage, isect1Title, ip1, isect2Title, ip2, sep=el)
-writeFile <- paste0(siteDir, "/_index.md")
-writeLines(indexPage, file(writeFile))
+##need to set up the about file
+##first, remove thumnail, categories, and tags
+aboutPage <- paste0(sapply(strsplit(templatePage, "\ncategories"), "[[", 1), "\nurl: /about/\n---")
+aboutPage <- gsub("page-template", "About Climate Tool Lookup", aboutPage)
+aboutPage <- gsub("1-1-1111", format(Sys.time(), "%FT%T%z"), aboutPage)
+aboutPage <- gsub("post", "page", aboutPage)
+
+##fill the about file
+abSection1Title <- "### Climate Tools"
+ab1Text <- paste0("The changing climate of our world is one of the largest concerns of any generation. Due to the scope of climate change, and its affects on human societies, it would be almost impossible to collect, analyze, and communicate the results of an analysis without some helpful tools. However, not every tool is the same, and selecting the correct tool is a critical decision.", el)
+
+abSection2Title  <- "### A Tool for Tools"
+ab2Text <- paste0("This site is a service for you to be able to view a summary of the available climate tools, and compare the various tools in one similar format. Our goal is to be the advisor on which climate tools would best suit the goals of your project.", el)
+
+abSection3Title  <- "### EESI at Penn State, and the people involved"
+
+aboutPage <- paste(aboutPage, abSection1Title, ab1Text, abSection2Title, ab2Text, abSection3Title, sep=el)
+writeFile <- paste0(siteDir, "/about.md")
+writeLines(aboutPage, file(writeFile))
 
 

@@ -1,11 +1,54 @@
-baseURL = "http://example.org/"
+baseURL = "https://cbtooltest.marisa.psu.edu/"
 languageCode = "en-us"
-title = "Clim Tool test"
-theme = "learn"
+defaultContentLanguage = "en"
+
+theme = "w3Simple"
+disqusShortname = ""      # disqus_shortname
+googleAnalytics = ""      # UA-XXXXXXXX-X
+paginate = 12 #gridstyle use 3 column. so should be 3,6,9,12,15....
+[markup.goldmark.renderer]
+unsafe= true
+[languages.en]
+weight = 0
+languageName = "English"
+contentDir = "content/english"
+[languages.en.params]
+      title = "Clim Tool test"
+      authorinfo = "Authored By Matthew D. Lisk"
+      logotext = "Clim Tool Lookup"
+
+[[languages.en.menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+[[languages.en.menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 3
+[[languages.en.menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+[[languages.en.menu.main]]
+    name = "All Tools"
+    url = "/allposts/"
+    weight = 5
+
 [params]
-author = "Matthew D. Lisk, Dr. Robert Nicholas"
-description = "A site to show available climate tools."
-disableSearch = false
-themeVariant = "blue"
+    logotext = "Clim Tool Site"
+    searchfunction = true
+    googletranslate = true
+    glowlogo = false
+    scrollindicator = true
+    allliststyle = false
+    gridstyle = true
+    firstpic = true
+
+[outputFormats]
+[outputFormats.sphinx]
+    basename = "sphinx"
+    inPlainText = true
+    mediaType = "application/xml"
+    path = "/"
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+    home = ["HTML", "RSS", "sphinx"]

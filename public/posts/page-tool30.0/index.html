@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta http-equiv="Cache-Control" content="public" />
+ 
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.69.0" />
+
+    
+    
+    
+
+<title>Drought Risk Atlas • Clim Tool test</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Drought Risk Atlas"/>
+<meta name="twitter:description" content="View drought indices to assess national drought risk on map or for specific weather stations of United States"/>
+
+<meta property="og:title" content="Drought Risk Atlas" />
+<meta property="og:description" content="View drought indices to assess national drought risk on map or for specific weather stations of United States" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cbtooltest.marisa.psu.edu/posts/page-tool30.0/" />
+<meta property="article:published_time" content="2020-04-27T09:15:12-04:00" />
+<meta property="article:modified_time" content="2020-04-27T09:15:12-04:00" /><meta property="og:site_name" content="Clim Tool test" />
+
+
+
+<link rel="canonical" href="https://cbtooltest.marisa.psu.edu/posts/page-tool30.0/" />
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+
+<link rel="stylesheet" href="/css/w3.css" />
+
+
+<link rel="stylesheet" href="/css/style.css" />
+
+
+
+
+
+
+
+
+
+  
+  
+</head>
+<body class="w3-light-grey">
+
+
+    
+    <header id="header">
+         
+        <div class="w3-right ">
+<div class="w3-bar w3-light-grey  ">
+  
+  <span class="w3-bar-item w3-left " id="google_translate_element"></span>
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+          pageLanguage: 'en'
+        , layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT
+        , multilanguagePage: true
+      }
+      , 'google_translate_element'
+    );
+  }
+</script>
+<script async src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+  
+       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-green" title="Search" onclick="displaysearch()"><i class="fa fa-search"></i></a>
+  
+      <span class="w3-hide-small">
+
+      </span>
+  
+</div>
+</div>
+<br>
+  <div class="w3-content">
+  
+  <div class="w3-container w3-center w3-padding-32 w3-hide-small"> 
+      <h1 class="w3-xxxlarge w3-text-blue w3-wide w3-allerta  " style="text-shadow:1px 1px 0 #444" ><u>
+      
+         Clim Tool Lookup
+      
+</u></h1>
+      
+    </div>
+    <div class="w3-content w3-center">
+    <div class="w3-bar w3-light-grey w3-border">
+    <a href="/" class="w3-bar-item w3-button w3-large w3-green"><i class="fa fa-home"></i></a>
+    
+      <a href="/about/" class="w3-bar-item w3-button w3-hide-small">About</a>
+    
+      <a href="/categories/" class="w3-bar-item w3-button w3-hide-small">Categories</a>
+    
+      <a href="/tags/" class="w3-bar-item w3-button w3-hide-small">Tags</a>
+    
+      <a href="/allposts/" class="w3-bar-item w3-button w3-hide-small">All Tools</a>
+    
+   
+    
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="displaymenu()">&#9776;</a>
+  </div>
+
+<div id="mobilemenu" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium">
+  
+      <a href="/about/" class="w3-bar-item w3-button">About</a>
+      
+      <a href="/categories/" class="w3-bar-item w3-button">Categories</a>
+      
+      <a href="/tags/" class="w3-bar-item w3-button">Tags</a>
+      
+      <a href="/allposts/" class="w3-bar-item w3-button">All Tools</a>
+      
+  
+</div>
+</div>
+</div>
+<script>
+function displaymenu() {
+    var x = document.getElementById("mobilemenu");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+
+  <div id="searchOverlay" class="overlay w3-hide">
+    <span class="closebtn" onclick="displaysearch()" title="Close Overlay">×</span>
+    <div class="overlay-content">
+        <form action="/search/">
+          <input type="text" placeholder="Search.." name="q">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+  </div>
+
+  <script>
+  function displaysearch() {
+    var x = document.getElementById("searchOverlay");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+      
+  }
+
+ 
+  </script>
+
+  
+
+
+    
+    <hr class="headfoot">
+   
+      
+    </header>
+    
+<div class="w3-content">
+    
+      <div>
+        
+        <div id="content" >
+          
+    
+
+      <div id="toc" class="w3-dropdown-hover w3-hide-small w3-hide-medium">
+    <button class="w3-button w3-teal w3-xlarge">&#9776;</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
+         
+          <h3 class="w3-center">Contents </h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+         
+      </div>
+
+     
+      </div>
+    
+
+ 
+     
+
+
+  <div class="w3-content w3-card-4" >
+    
+    <header class="w3-container w3-center w3-padding-32">
+      <h1>Drought Risk Atlas</h1>
+
+      <div >
+        <p> 2020-04-27 
+          
+        </p>
+        <div >
+            
+              <a class="w3-btn w3-small w3-round w3-green" href="/categories/national/"> National </a>
+            
+              <a class="w3-btn w3-small w3-round w3-green" href="/categories/view-past/current-conditions/"> view past/current conditions </a>
+            
+              <a class="w3-btn w3-small w3-round w3-green" href="/categories/identify-vulnerabilities/"> identify vulnerabilities </a>
+            
+          </div>
+       
+        
+      </div>
+    </header>
+
+   
+    
+    <div class="w3-container">
+      
+        <p>Developers: National Drought Mitigation Center, National Weather Service, Regional Climate Centers (RCC)</p>
+<h4 id="tool-summary">Tool Summary</h4>
+<p><strong>Description:</strong> The Drought Risk Atlas provides historical drought information for weather stations across the United States through an interactive map viewer and data portal.</p>
+<p>By providing several different drought indices at multiple time steps, this tool provides a variety of options to evaluate drought events throughout the United States. In the map viewer, users can view historical drought information from the U.S. Drought Monitor (2000 - 2012) and Standardized Precipitation Index (1910 - 2012). Additional drought indices and timesteps are available through the data portal for each included weather station. Within the portal, users can search for a station of interest by name or location, then select the specific metrics and timesteps of interest to access station-specific time series plots, tables and rankings. Most of the queried data can also be exported for additional analysis. This easy-to-use tool contains thorough descriptions of the methodology as well as helpful tutorials appropriate for beginner users. However, users should be aware that the available of period of station data may not be completely up to date.</p>
+<p><strong>Relevance:</strong> Historical for climate data for drought</p>
+<p><strong>Scope:</strong> National</p>
+<p><strong>Target Audience:</strong> Agriculturalists</p>
+<ul>
+<li>Community Officials</li>
+<li>Conservationists</li>
+<li>Decisionmakers</li>
+<li>Environmental Agencies</li>
+<li>Environmental Planner</li>
+<li>Natural Resource Professionals</li>
+<li>Researchers</li>
+</ul>
+<p><strong>Strengths:</strong> provides multiple indices and timesteps</p>
+<ul>
+<li>ability to compare multiple indices</li>
+<li>long historical record</li>
+<li>helpful tutorial</li>
+<li>can easily search for area of interest</li>
+</ul>
+<p><strong>Limitations:</strong> Data only current to 2012 for map viewer, current to 2016 for data portal</p>
+<ul>
+<li>Limited display options in map viewer</li>
+<li>Does not provide future projections</li>
+</ul>
+<p><strong>Where this tool be found:</strong> <a href="https://droughtatlas.unl.edu/">https://droughtatlas.unl.edu/</a></p>
+
+      
+    </div>
+
+    
+   
+
+    <div class="w3-container">
+    	
+      <div class="w3-container">
+        	<hr class = "tag">
+        Tags: 
+          
+          <a class="w3-btn w3-small w3-round w3-green" href="/tags/national-drought-mitigation-center/">National Drought Mitigation Center</a>
+          
+          <a class="w3-btn w3-small w3-round w3-green" href="/tags/national-weather-service/">National Weather Service</a>
+          
+          <a class="w3-btn w3-small w3-round w3-green" href="/tags/regional-climate-centers-rcc/">Regional Climate Centers (RCC)</a>
+          
+          <a class="w3-btn w3-small w3-round w3-green" href="/tags/agriculturalists-community-officials-conservationists-decisionmakers-environmental-agencies-environmental-planner-natural-resource-professionals-researchers/">Agriculturalists * Community Officials * Conservationists * Decisionmakers * Environmental Agencies * Environmental Planner * Natural Resource Professionals * Researchers</a>
+          
+          <hr class = "tag">
+       
+        </div>
+     
+	</div>
+
+
+
+  
+
+
+    
+    <br>  
+</div>
+
+
+
+      
+    <div class="w3-content" > 
+      <div class="w3-bar w3-section">
+	     
+	      <a  href="https://cbtooltest.marisa.psu.edu/posts/page-tool31.0/" class="w3-btn w3-text-indigo w3-hover-green">
+	          &#10094; Drought Management Database
+	      </a>
+	    
+	      <a class="w3-btn w3-right w3-text-indigo w3-hover-green" href="https://cbtooltest.marisa.psu.edu/posts/page-tool29.0/">
+	       Drought-Applied Climate Information System (ACIS) &#10095;
+	      </a>
+  	  </div>
+    </div>
+	
+ 
+
+  
+  
+  
+        </div>
+        
+           
+          
+  
+
+        
+        
+      </div>
+    
+
+   
+    <footer id="footer" >
+      <div class="w3-container w3-center w3-padding-32"> 
+  
+</div>
+
+    </footer>
+    
+
+    
+  </div>
+
+  
+
+  
+    
+ 
+    
+
+    
+    
+      <div class="progress-container" id="scrollbar">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>  
+
+
+    
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  <!-- TOC -->
+    
+    
+    
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("toc").style.display = "block";
+    } else {
+        document.getElementById("toc").style.display = "none";
+    }
+    
+    
+    <!-- cookie bar -->
+    
+<!-- Back to top -->
+    
+    <!-- scroll indicator -->
+    
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("scrollbar").style.display = "block";
+        } else {
+            document.getElementById("scrollbar").style.display = "none";
+        }
+    
+
+    
+
+    <!-- allowads -->
+    
+}
+
+
+</script>
+
+
+
+  
+
+</body>
+</html>
