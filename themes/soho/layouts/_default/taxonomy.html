@@ -1,0 +1,16 @@
+{{ define "main" -}}
+<h1>Tag: {{ .Title }}</h1>
+<ul>
+  {{ $regularPages := .Data.Pages -}}
+  {{ $pagesNotHidden := where $regularPages ".Params.hidden" "==" false }}
+  {{ $pagesHiddenUnset := where $regularPages ".Params.hidden" "==" nil }}
+
+  {{ $pages := $pagesNotHidden | union $pagesHiddenUnset }}
+
+  {{ range $pages -}}
+  <li>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </li>
+  {{- end }}
+</ul>
+{{- end }}

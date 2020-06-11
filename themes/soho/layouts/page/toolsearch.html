@@ -1,0 +1,194 @@
+{{ define "main" -}}
+<head>
+  <meta charset="utf-8">
+  <title>jQuery Get Values of Selected Checboxes</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script>
+      $(document).ready(function() {
+        $('#tagTogAll').change(function(){
+          var checkboxes = $(this).closest('form').find(':checkbox');
+          checkboxes.prop('checked', $(this).is(':checked'));
+        })
+        $('#reqTogAll').change(function(){
+          var checkboxes = $(this).closest('form').find(':checkbox');
+          checkboxes.prop('checked', $(this).is(':checked'));
+        })
+
+        $("button").click(function(){
+          function addTool(name, link){
+            this.name = name;
+            this.link = link;
+          }
+          function getType(o) {
+            return Object.prototype.toString.call(o).match(/^\[object\s(.*)\]$/)[1];
+          }
+            //set variables
+            var showData = $('#outputList');
+            var origin = $(location).attr('host');
+            var searchTags = [];
+            var searchSoftReq = [];
+            var inTools = [];
+            var searchResults = [];
+            var tagData, reqData
+            var reSelAll = 'Select All';
+
+            //cycle through the tag inputs
+            $('#tagSearch :checked').each(function(){
+              searchTags.push($(this).val());
+            });
+            if(jQuery.inArray("Select All", searchTags) >= 0){
+              searchTags.splice(0,1);
+            }
+
+            //cycle through the software requirement inputs
+            $('#softReqSearch :checked').each(function(){
+              searchSoftReq.push($(this).val());
+            });
+            if(jQuery.inArray("Select All", searchSoftReq) >= 0){
+              searchSoftReq.splice(0,1);
+            }
+
+            //clear the output list
+            showData.empty();
+
+            $.when(
+              $.getJSON('/data/searchTags.json', function(data){
+                tagData = data;
+              }),
+              $.getJSON('/data/searchSoft.json', function(data){
+                reqData = data;
+              })
+            ).then(function(){
+              var items = tagData.items.map(function (item){
+                if(jQuery.inArray(item.tag, searchTags) >= 0){
+                  if(jQuery.inArray(item.name, inTools) == -1){
+                    inTools.push(item.name);
+                    var tool = new addTool(item.name, item.link);
+                    searchResults.push(tool)
+                  }
+                }
+              });
+
+              if(searchSoftReq.length>0 && searchResults.length>0){
+                $.each(searchResults, function(tool) {
+                  var toolName = this.name;
+                  var keepTool = 0;
+                  var toolReqs = [];
+                  var items = reqData.items.map(function (item){
+                    if(item.name == toolName){
+                      toolReqs.push(item.softReq)
+                    }
+                  });
+
+                  //alert(searchSoftReq[0])
+                  //alert(toolReqs[2] + " " + getType(toolReqs[2]))
+                  //alert(toolReqs[2] == searchSoftReq[0])  //works as expected
+                  //alert(jQuery.inArray(toolReqs[2], searchSoftReq[0]))  //does not works as expected
+                  //alert(jQuery.inArray(toolReqs[2], searchSoftReq))  //works as expected
+
+                  //do not know why this section does not work
+                  //$.each(toolReqs, function(req) {
+                  //  var reqName = this;
+                  //  alert(jQuery.inArray(this, searchSoftReq))
+                  //  alert(jQuery.inArray(reqName, searchSoftReq))
+                  //});
+
+                  for (i=0; i<=toolReqs.length; i++) {
+                    //alert(jQuery.inArray(toolReqs[i], searchSoftReq))
+                    if(jQuery.inArray(toolReqs[i], searchSoftReq) >= 0){
+                      keepTool = 1;
+                    }
+                  }
+
+                  if(keepTool==0){
+                    //alert(jQuery.inArray(toolName, inTools))
+                    var whichRemove = jQuery.inArray(toolName, inTools);
+                    inTools.splice(whichRemove, 1);
+                    searchResults.splice(whichRemove, 1);
+                  }
+
+                });
+              } else if(searchSoftReq.length>0 && searchResults.length==0){
+                var items = reqData.items.map(function (item){
+                  if(jQuery.inArray(item.softReq, searchSoftReq) >= 0){
+                    if(jQuery.inArray(item.name, inTools) == -1){
+                      inTools.push(item.name);
+                      var tool = new addTool(item.name, item.link);
+                      searchResults.push(tool)
+                    }
+                  }
+              });
+            }
+
+            if(searchResults.length > 0){
+              $.each(searchResults, function(tool) {
+                newTool = '<li><a href="' + '/tools/' + this.link +'/index.html">' + this.name + '</a></li>';
+                showData.append(newTool);
+              });
+            } else {
+              showData.text('No tools matching input selection.');
+            }
+          });
+        });
+      });
+</script>
+</head>
+<body>
+<div class="app-container">
+  <div class="app-content">
+    <section class="filtered-search">
+      <div class="filtered-search-dashboard">
+        <div class="filtered-search-banner">
+          <h2 class="mb-5">Tool Search</h2>
+        </div>
+        <div class="filtered-search-filters">
+          <fieldset class>
+            <fieldset class="singleRow">
+              <div class="header">
+                <h5>Tool Tags</h5>
+                <!--<button type="button">RESET</button>-->
+              </div>
+              <form id="tagSearch">
+                <label><input type="checkbox" aria-selected="false" id=tagTogAll value="Select All">Select All</label><br>
+                <label><input type="checkbox" aria-selected="false" value="Easy-to-use, interactive interface">Easy-to-use, interactive interface</label><br>
+                <label><input type="checkbox" aria-selected="false" value="Provides decadal projections for multiple sea level rise scenarios">Provides decadal projections for multiple sea level rise scenarios</label><br>
+                <label><input type="checkbox" aria-selected="false" value="Can easily search for locality of interest">Can easily search for locality of interest</label><br>
+                <label><input type="checkbox" aria-selected="false" value="Flooding forecast is updated every 12 hours">Flooding forecast is updated every 12 hours</label><br>
+                <label><input type="checkbox" aria-selected="false" value="Can overlay additional features, such as infrastructure and natural resources">Can overlay additional features, such as infrastructure and natural resources</label><br>
+                <label><input type="checkbox" aria-selected="false" value="Multiple basemap options">Multiple basemap options</label><br>
+                <label><input type="checkbox" aria-selected="false" value="Easy-to-use interface">Easy-to-use interface</label>
+              </form>
+            </fieldset>
+            <fieldset class="singleRow">
+            <div class="header">
+              <h5>Software Requirements</h5>
+              <!--<button type="button">RESET</button>-->
+            </div>
+              <form id="softReqSearch">
+                <label><input type="checkbox" aria-selected="false" id=reqTogAll value="Select All">Select All</label><br>
+                <label><input type="checkbox" aria-selected="false" value="None">None</label><br>
+                <label><input type="checkbox" aria-selected="false" value="R">R</label><br>
+                <label><input type="checkbox" aria-selected="false" value="R Studio">R Studio</label><br>
+                <label><input type="checkbox" aria-selected="false" value="ArcMap/ GIS software">ArcMap/ GIS software</label><br>
+                <label><input type="checkbox" aria-selected="false" value="ArcGIS (optional)">ArcGIS (optional)</label><br>
+              </form>
+          </fieldset>
+        </fieldset>
+          <hr>
+          <button type="button">Find Tools</button>
+        <!--<form name="searchTags" id="tagSearch">
+        </form>-->
+        </div>
+
+        <h2>Search Results</h2>
+        <div>
+          <ul id="outputList">
+
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+</body>
+{{- end }}

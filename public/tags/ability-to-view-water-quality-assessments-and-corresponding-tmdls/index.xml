@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ability to view water quality assessments and corresponding TMDLs on Climate Tools</title>
+    <link>https://cbtooltest.marisa.psu.edu/tags/ability-to-view-water-quality-assessments-and-corresponding-tmdls/</link>
+    <description>Recent content in Ability to view water quality assessments and corresponding TMDLs on Climate Tools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Jun 2020 09:47:16 -0400</lastBuildDate>
+    
+	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/ability-to-view-water-quality-assessments-and-corresponding-tmdls/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Water Quality Assessment and TMDLs</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool50.0/</link>
+      <pubDate>Tue, 09 Jun 2020 09:47:16 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool50.0/</guid>
+      <description>Developed By: MDE
+Summary: This interactive mapping tool displays surface water quality assessment information found in Maryland’s 2018 Integrated Report of Surface Water Quality (IR) as well as watersheds for which Total Maximum Daily Load (TMDL) analyses have been approved by EPA for Maryland.</description>
+    </item>
+    
+  </channel>
+</rss>

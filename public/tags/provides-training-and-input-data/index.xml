@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Provides training and input data on Climate Tools</title>
+    <link>https://cbtooltest.marisa.psu.edu/tags/provides-training-and-input-data/</link>
+    <description>Recent content in Provides training and input data on Climate Tools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Jun 2020 09:52:29 -0400</lastBuildDate>
+    
+	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/provides-training-and-input-data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OpenNSPECT</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool77.0/</link>
+      <pubDate>Tue, 09 Jun 2020 09:52:29 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool77.0/</guid>
+      <description>Developed By: NOAA_Office for Coastal Management
+Summary: This open-source version of the Nonpoint Source Pollution and Erosion Comparison Tool is used to investigate potential water quality impacts from climate change and development to other land uses.</description>
+    </item>
+    
+  </channel>
+</rss>

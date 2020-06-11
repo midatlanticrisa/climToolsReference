@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Easy-to-use, interactive map viewer with various flood zone layers on Climate Tools</title>
+    <link>https://cbtooltest.marisa.psu.edu/tags/easy-to-use-interactive-map-viewer-with-various-flood-zone-layers/</link>
+    <description>Recent content in Easy-to-use, interactive map viewer with various flood zone layers on Climate Tools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Jun 2020 09:38:51 -0400</lastBuildDate>
+    
+	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/easy-to-use-interactive-map-viewer-with-various-flood-zone-layers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Virginia Flood Risk Information System (VFRIS)</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool17.0/</link>
+      <pubDate>Tue, 09 Jun 2020 09:38:51 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool17.0/</guid>
+      <description>Developed By: VIMS, CCRM, and VDCR
+Summary: The Virginia Flood Risk Information System uses an interactive map to display FEMA flood risk zones in Virginia.</description>
+    </item>
+    
+  </channel>
+</rss>

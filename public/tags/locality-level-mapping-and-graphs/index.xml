@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Locality-level mapping and graphs on Climate Tools</title>
+    <link>https://cbtooltest.marisa.psu.edu/tags/locality-level-mapping-and-graphs/</link>
+    <description>Recent content in Locality-level mapping and graphs on Climate Tools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Jun 2020 09:52:13 -0400</lastBuildDate>
+    
+	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/locality-level-mapping-and-graphs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OSPREY Public</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool75.0/</link>
+      <pubDate>Tue, 09 Jun 2020 09:52:13 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool75.0/</guid>
+      <description>Developed By: NOAA_NWS
+Summary: Operation and Situational Preparedness for Responding to an Emergency (OSPREY) is an interactive map for Maryland that presents users with statewide current conditions on weather, traffic, and electrical outages.</description>
+    </item>
+    
+    <item>
+      <title>USGS Water Data for the Nation</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool71.0/</link>
+      <pubDate>Tue, 09 Jun 2020 09:51:25 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool71.0/</guid>
+      <description>Developed By: USGS
+Summary: The USGS Water Data for the Nation is a data portal that allows users to view real time data from approximately 1.</description>
+    </item>
+    
+    <item>
+      <title>Hampton Roads Geospatial Exchange Online (HRGEO)</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool2.0/</link>
+      <pubDate>Tue, 09 Jun 2020 09:33:51 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool2.0/</guid>
+      <description>Developed By: HRPDC, HRSD, and HRTPO
+Summary: HRGEO is a data portal that allows to users to view and download geographic, cultural, and population data in Hampton Roads, VA.</description>
+    </item>
+    
+  </channel>
+</rss>

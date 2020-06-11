@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Locality specific information on Climate Tools</title>
+    <link>https://cbtooltest.marisa.psu.edu/tags/locality-specific-information/</link>
+    <description>Recent content in Locality specific information on Climate Tools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Jun 2020 09:40:04 -0400</lastBuildDate>
+    
+	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/locality-specific-information/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FieldWatch</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool24.0/</link>
+      <pubDate>Tue, 09 Jun 2020 09:40:04 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool24.0/</guid>
+      <description>Developed By: Fieldwatch, and Purdue Research Foundation
+Summary: FieldWatch is a community mapping tool that allows beekeepers, crop growers, and pesticide applicators to interact through four connected tools: BeeCheck, Fieldcheck, Cropcheck, and Drift Watch.</description>
+    </item>
+    
+  </channel>
+</rss>

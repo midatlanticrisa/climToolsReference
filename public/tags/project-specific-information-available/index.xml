@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project specific information available on Climate Tools</title>
+    <link>https://cbtooltest.marisa.psu.edu/tags/project-specific-information-available/</link>
+    <description>Recent content in Project specific information available on Climate Tools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Jun 2020 09:34:19 -0400</lastBuildDate>
+    
+	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/project-specific-information-available/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hampton Roads Resilience Projects Dashboard</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool2.2/</link>
+      <pubDate>Tue, 09 Jun 2020 09:34:19 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool2.2/</guid>
+      <description>Developed By: HRPDC, HRSD, and HRTPO
+Summary: Part of the Hampton Roads Geospatial Exchange Online portal, this tool provides summary graphics and an interactive map to view current and proposed projects to improve resilience to flooding and coastal hazards in Hampton Roads, VA.</description>
+    </item>
+    
+  </channel>
+</rss>

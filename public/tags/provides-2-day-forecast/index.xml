@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Provides 2 day forecast on Climate Tools</title>
+    <link>https://cbtooltest.marisa.psu.edu/tags/provides-2-day-forecast/</link>
+    <description>Recent content in Provides 2 day forecast on Climate Tools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Jun 2020 09:52:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/provides-2-day-forecast/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Delaware Air Quality Forecast</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool74.0/</link>
+      <pubDate>Tue, 09 Jun 2020 09:52:00 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool74.0/</guid>
+      <description>Developed By: DDNREC
+Summary: The Delaware Air Quality Forecast is a user-friendly forecast that provides daily air quality forecasts for the state of Delaware.</description>
+    </item>
+    
+    <item>
+      <title>Air Quality Forecast</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool46.0/</link>
+      <pubDate>Tue, 09 Jun 2020 09:46:41 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool46.0/</guid>
+      <description>Developed By: Metropolitan Washington Council of Governments
+Summary: The Air Quality Forecast is a 3-part forecast, chart, and mapping tool that provides daily air quality forecasts for the Washington metropolitan area.</description>
+    </item>
+    
+  </channel>
+</rss>

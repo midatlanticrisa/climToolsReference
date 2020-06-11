@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interactive, easy-to-use interface on Climate Tools</title>
+    <link>https://cbtooltest.marisa.psu.edu/tags/interactive-easy-to-use-interface/</link>
+    <description>Recent content in Interactive, easy-to-use interface on Climate Tools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Jun 2020 09:37:28 -0400</lastBuildDate>
+    
+	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/interactive-easy-to-use-interface/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MARISA Climate Data Portal: Interactive Map for the MARISA Region</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool13.1/</link>
+      <pubDate>Tue, 09 Jun 2020 09:37:28 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool13.1/</guid>
+      <description>Developed By: NOAA, and MARISA
+Summary: The Interactive Map for the MARISA region is an interactive web map that enables users to view real time climate data for the MARISA region.</description>
+    </item>
+    
+  </channel>
+</rss>

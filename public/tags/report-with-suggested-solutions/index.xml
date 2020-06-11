@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Report with suggested solutions on Climate Tools</title>
+    <link>https://cbtooltest.marisa.psu.edu/tags/report-with-suggested-solutions/</link>
+    <description>Recent content in Report with suggested solutions on Climate Tools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Jun 2020 09:50:18 -0400</lastBuildDate>
+    
+	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/report-with-suggested-solutions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bay Footprint Calculator</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool64.0/</link>
+      <pubDate>Tue, 09 Jun 2020 09:50:18 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool64.0/</guid>
+      <description>Developed By: CBF, and UVA
+Summary: The Bay Footprint Calculator is an easy-to-use tool that estimates your contribution to nitrogen pollution in the Chesapeake Bay.</description>
+    </item>
+    
+  </channel>
+</rss>

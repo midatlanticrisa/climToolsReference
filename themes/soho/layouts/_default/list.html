@@ -1,0 +1,26 @@
+{{ define "main" -}}
+<div class="posts">
+  <h1>{{ .Title }}</h1>
+  {{ $regularPages := .Data.Pages -}}
+  {{ $pagesNotHidden := where $regularPages ".Params.hidden" "==" false }}
+  {{ $pagesHiddenUnset := where $regularPages ".Params.hidden" "==" nil }}
+
+  {{ $pages := $pagesNotHidden | union $pagesHiddenUnset }}
+
+  {{ range $pages -}}
+  <div class="post">
+    <span>
+
+      <img src="{{ .Params.image }}" style="max-width:250px;padding:5px;" align="right"/>
+      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <div>{{ if .Description }}
+        {{ .Description }}
+      {{ else }}
+        {{ .Summary }}
+      {{ end }}</div>
+      <p>{{ partial "techtags" . }}</p>
+    </span>
+  </div>
+  {{- end }}
+</div>
+{{- end }}

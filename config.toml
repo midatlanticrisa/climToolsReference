@@ -1,54 +1,51 @@
-baseURL = "https://cbtooltest.marisa.psu.edu/"
-languageCode = "en-us"
-defaultContentLanguage = "en"
-
-theme = "w3Simple"
-disqusShortname = ""      # disqus_shortname
-googleAnalytics = ""      # UA-XXXXXXXX-X
-paginate = 12 #gridstyle use 3 column. so should be 3,6,9,12,15....
-[markup.goldmark.renderer]
-unsafe= true
-[languages.en]
-weight = 0
-languageName = "English"
-contentDir = "content/english"
-[languages.en.params]
-      title = "Clim Tool test"
-      authorinfo = "Authored By Matthew D. Lisk"
-      logotext = "Clim Tool Lookup"
-
-[[languages.en.menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 2
-[[languages.en.menu.main]]
-    name = "Categories"
-    url = "/categories/"
-    weight = 3
-[[languages.en.menu.main]]
-    name = "Tags"
-    url = "/tags/"
-    weight = 4
-[[languages.en.menu.main]]
-    name = "All Tools"
-    url = "/allposts/"
-    weight = 5
+title = "Climate Tools"
+baseurl = "https://cbtooltest.marisa.psu.edu/"
+languageCode = "en"
+theme = "soho"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+summarylength = 10
+enableEmoji = false
 
 [params]
-    logotext = "Clim Tool Site"
-    searchfunction = true
-    googletranslate = true
-    glowlogo = false
-    scrollindicator = true
-    allliststyle = false
-    gridstyle = true
-    firstpic = true
+description = ""
+# gravatar = "soho@example.com"
+profileImage = "https://www.psu.edu/profiles/psu_profile/themes/psu_main/logonew.png"
+copyright = "EESI Team"
+phone = "1-555-555-1234"
+email = "mdl5548@psu.edu"
+license = "CC BY-SA 4.0"
+licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
 
-[outputFormats]
-[outputFormats.sphinx]
-    basename = "sphinx"
-    inPlainText = true
-    mediaType = "application/xml"
-    path = "/"
+[menu]
+
+  [[menu.main]]
+  name = "Tools"
+  weight = 100
+  identifier = "tools"
+  url = "/tools/"
+
+  [[menu.main]]
+  name = "Tool Search"
+  weight = 200
+  identifier = "toolsearch"
+  url = "/toolsearch/"
+
+[markup]
+
+  [markup.highlight]
+  codeFences = true
+  guessSyntax = false
+  hl_Lines = ""
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = true
+  noClasses = true
+  style = "monokai"
+  tabWidth = 4
+
+[markup.goldmark.renderer]
+unsafe = true
+
 [outputs]
-    home = ["HTML", "RSS", "sphinx"]
+home = ["HTML", "JSON"]

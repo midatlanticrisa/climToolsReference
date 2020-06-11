@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Allows user to search by location to view SAV in the interactive map on Climate Tools</title>
+    <link>https://cbtooltest.marisa.psu.edu/tags/allows-user-to-search-by-location-to-view-sav-in-the-interactive-map/</link>
+    <description>Recent content in Allows user to search by location to view SAV in the interactive map on Climate Tools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Jun 2020 09:43:44 -0400</lastBuildDate>
+    
+	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/allows-user-to-search-by-location-to-view-sav-in-the-interactive-map/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Submerged Aquatic Vegetation (SAV) in the Chesapeake Bay</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool38.0/</link>
+      <pubDate>Tue, 09 Jun 2020 09:43:44 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool38.0/</guid>
+      <description>Developed By: VIMS
+Summary: The Submerged Aquatic Vegetation (SAV) in Chesapeake Bay tool provides access to recent and historical SAV monitoring data from the Virginia Institute of Marine Science SAV program.</description>
+    </item>
+    
+  </channel>
+</rss>

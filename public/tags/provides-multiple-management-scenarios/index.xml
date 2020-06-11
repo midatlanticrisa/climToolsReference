@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Provides multiple management scenarios on Climate Tools</title>
+    <link>https://cbtooltest.marisa.psu.edu/tags/provides-multiple-management-scenarios/</link>
+    <description>Recent content in Provides multiple management scenarios on Climate Tools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Jun 2020 09:51:36 -0400</lastBuildDate>
+    
+	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/provides-multiple-management-scenarios/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Diagnostic Spreadsheet for Analysis of Water Quality Data in relation to Growth Requirements of Submerged Aquatic Vegetation</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool72.0/</link>
+      <pubDate>Tue, 09 Jun 2020 09:51:36 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool72.0/</guid>
+      <description>Developed By: CBP
+Summary: The Diagnostic Spreadsheet for Analysis of Water Quality Data analyzes Total Suspended Solids (TSS) and Chlorophyll data to determine if minimum light requirements for submerged aquatic vegetation (SAV) growth are met at a given station.</description>
+    </item>
+    
+  </channel>
+</rss>

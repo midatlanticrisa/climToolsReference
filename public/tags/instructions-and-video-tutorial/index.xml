@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Instructions and video tutorial on Climate Tools</title>
+    <link>https://cbtooltest.marisa.psu.edu/tags/instructions-and-video-tutorial/</link>
+    <description>Recent content in Instructions and video tutorial on Climate Tools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Jun 2020 09:44:16 -0400</lastBuildDate>
+    
+	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/instructions-and-video-tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Climate Smart Farming (CSF) Water Deficit Calculator</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.3/</link>
+      <pubDate>Tue, 09 Jun 2020 09:44:16 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.3/</guid>
+      <description>Developed By: Cornell University_College of Agriculture and Life Sciences
+Summary: Part of the Climate Smart Farming toolkit, the Water Deficit Calculator estimates soil water content within a crop&amp;rsquo;s effective root zone to predict potential water deficits and associated plant stress.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raw data publicly available on Climate Tools</title>
+    <link>https://cbtooltest.marisa.psu.edu/tags/raw-data-publicly-available/</link>
+    <description>Recent content in Raw data publicly available on Climate Tools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Jun 2020 09:44:04 -0400</lastBuildDate>
+    
+	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/raw-data-publicly-available/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Climate Smart Farming Climate Change in Your County</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.1/</link>
+      <pubDate>Tue, 09 Jun 2020 09:44:04 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.1/</guid>
+      <description>Developed By: Cornell University_College of Agriculture and Life Sciences
+Summary: Part of the Climate Smart Farming toolkit, the Climate Change in Your County tool allows users to view historic and projected future temperature and precipitation data within their county and region.</description>
+    </item>
+    
+  </channel>
+</rss>
