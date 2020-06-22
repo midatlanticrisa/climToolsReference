@@ -1,7 +1,7 @@
 ---
 title: "Introduction to FEMA Coastal Floodplain Mapping"
 description: "how to guide for reading and using floodplain maps created by FEMA > Flood Insurance Rate Maps (FIRMs) & Flood Insurance Study (FIS)"
-date: 2020-06-09T09:37:10-0400
+date: 2020-06-12T10:00:48-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Links to supporting information", "Tutorial explains many potential uses of data", "Provides instructions and definitions for non-experts"]

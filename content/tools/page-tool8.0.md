@@ -1,7 +1,7 @@
 ---
 title: "Creating Resilient Water Utilities (CRWU)"
 description: "Support water utility practitioners in preparing for extreme weather events"
-date: 2020-06-09T09:35:42-0400
+date: 2020-06-12T09:59:18-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Can stay updated on tool developments through a mailing list", "Able to generate an area specific report", "Updated frequently", "Allows cross-community comparisons through case studies"]

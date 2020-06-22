@@ -1,7 +1,7 @@
 ---
 title: "Climate Engine"
 description: "Web application that generates maps and graphs using climate data from remotely sensed source data"
-date: 2020-06-09T09:40:43-0400
+date: 2020-06-12T10:03:49-0400
 pubtype: "Tool"
 featured: true
 tags: ["Ability to visualize multiple climate change related variables at once", "Data frequently updated", "Provides supporting educational information and tutorials", "Able to download customized data without needing to access and download entire dataset", "Can share maps and graphs via specifically generated web links"]

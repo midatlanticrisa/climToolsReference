@@ -1,7 +1,7 @@
 ---
 title: "MARISA Climate Impacts Summary and Outlook Reports"
 description: "Seasonal (quarterly) reports outlining past weather events and their significance as well as projections to the next seasons weather"
-date: 2020-06-09T09:39:22-0400
+date: 2020-06-12T10:02:33-0400
 pubtype: "Tool"
 featured: true
 tags: ["Report issued quarterly", "All charts and figures include easy-to-understand narrative descriptions", "Significant weather events (i.e., Polar Vortex) are explained"]

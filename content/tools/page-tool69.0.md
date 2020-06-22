@@ -1,7 +1,7 @@
 ---
 title: "Flood Economics"
 description: "Provide case studies and data about flood mitigation projects and efforts across the US between 1996-2016"
-date: 2020-06-09T09:51:06-0400
+date: 2020-06-12T10:19:47-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Includes definitions of key terms", "Includes links to supporting resources"]

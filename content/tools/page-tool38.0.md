@@ -1,7 +1,7 @@
 ---
 title: "Submerged Aquatic Vegetation (SAV) in the Chesapeake Bay"
 description: "Monitor SAV growth in the Chesapeake Bay"
-date: 2020-06-09T09:43:44-0400
+date: 2020-06-12T10:06:10-0400
 pubtype: "Tool"
 featured: true
 tags: ["Links to supporting information", "Allows user to search by location to view SAV in the interactive map", "Option to download raw data", "Users can contribute detailed observations or survey data through external site", "Allows users to access historic SAV data"]

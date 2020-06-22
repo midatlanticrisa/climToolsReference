@@ -1,7 +1,7 @@
 ---
 title: "Hampton Roads Sea Level Rise Planning Scenarios"
 description: "Interactive map showing observed and projected sea level rise for scenarios of 1.5 feet (years 2018-2050), 3 feet (years 2050-2080), and 4.5 feet (years 2080-2100) above current MHHW."
-date: 2020-06-09T09:34:04-0400
+date: 2020-06-12T09:55:25-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Provides projections for multiple sea level rise scenarios", "Ability to compare climate conditions side-by-side", "Allows user to search by address", "Advanced users can upload additional data"]

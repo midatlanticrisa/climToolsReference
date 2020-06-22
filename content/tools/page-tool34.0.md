@@ -1,7 +1,7 @@
 ---
 title: "Delaware Climate Projections Portal"
 description: "Climate projections for state of Delaware"
-date: 2020-06-09T09:43:04-0400
+date: 2020-06-12T10:05:29-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Site-specific results", "Provides projections for many climate indicators"]

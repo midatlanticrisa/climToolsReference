@@ -1,7 +1,7 @@
 ---
 title: "i-Tree Mytree and Landscape"
 description: "Variety of tools that help users assess the benefits of trees"
-date: 2020-06-09T09:49:01-0400
+date: 2020-06-12T10:17:41-0400
 pubtype: "Tool"
 featured: true
 tags: ["Provides location specific results", "Allows user to create specific scenarios", "Welcome guide/tutorials", "i-Tree YouTube channel dedicated to explaining how to use various tools"]

@@ -1,7 +1,7 @@
 ---
 title: "MDOT Climate Change Vulnerability"
 description: "Illustrates the specific roads that will experience inundation due to predicted storm events. Displays projected water depth grids"
-date: 2020-06-09T09:47:06-0400
+date: 2020-06-12T10:09:45-0400
 pubtype: "Tool"
 featured: true
 tags: ["Interactive map layers", "Site specific results", "Road inundation layers", "Multiple scenarios for flood projections", "Long term projections"]

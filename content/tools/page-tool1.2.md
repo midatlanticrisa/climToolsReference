@@ -1,7 +1,7 @@
 ---
 title: "AdaptVA Tidewatch Map"
 description: "36-hour coastal flooding forecasts"
-date: 2020-06-09T09:33:27-0400
+date: 2020-06-12T09:54:53-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Flooding forecast is updated every 12 hours"]

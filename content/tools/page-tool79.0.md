@@ -1,7 +1,7 @@
 ---
 title: "Coastal County Snapshots"
 description: "The open-source map leads users to reports that contain graphs and figures with short-term projections and current data on flood exposure, ocean jobs, and wetland benefits specific to the user's selected county."
-date: 2020-06-09T09:52:46-0400
+date: 2020-06-12T10:23:22-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy to use", "County-level data for all coastal counties on the Atlantic coast"]

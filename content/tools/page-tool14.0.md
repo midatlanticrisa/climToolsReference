@@ -1,7 +1,7 @@
 ---
 title: "NOAA State Climate Summaries"
 description: "Summaries for each state regarding historical climate change and future climate projections"
-date: 2020-06-09T09:38:20-0400
+date: 2020-06-12T10:01:29-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use", "Links to additional resources", "Available for every state in the US", "Aims for transparent data sources"]

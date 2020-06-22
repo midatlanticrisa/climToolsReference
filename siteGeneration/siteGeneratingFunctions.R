@@ -114,6 +114,72 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, updateContent=T){
     }
     
     ##Why tool is useful
+    toolPurposes <- toolRec[grep("Purpose-Tool Function-", names(toolRec))]
+    toolPurposes <- toolPurposes[which(is.na(toolPurposes)==F)]
+    purposeVars <- sapply(strsplit(names(toolPurposes), "Purpose-Tool Function-"), "[[", 2)
+    if(length(purposeVars)>0){
+      if("past" %in% purposeVars){
+        purposeVars[which(purposeVars=="past")] <- "View Past/Current Conditions"
+      }
+      if("futr" %in% purposeVars){
+        purposeVars[which(purposeVars=="futr")] <- "View Future Projections"
+      }
+      if("risk" %in% purposeVars){
+        purposeVars[which(purposeVars=="risk")] <- "Identify Vulnerabilities"
+      }
+      if("adpt" %in% purposeVars){
+        purposeVars[which(purposeVars=="adpt")] <- "Adaptation Planning"
+      }
+      if("mtgt" %in% purposeVars){
+        purposeVars[which(purposeVars=="mtgt")] <- "Climate Mitigation Planning"
+      }
+      if("prcs" %in% purposeVars){
+        purposeVars[which(purposeVars=="prcs")] <- "Process Support"
+      }
+      if("eng" %in% purposeVars){
+        purposeVars[which(purposeVars=="eng")] <- "Engagement"
+      }
+      if("com" %in% purposeVars){
+        purposeVars[which(purposeVars=="com")] <- "Citizen Science"
+      }
+      toolPurposes <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolFunct=purposeVars)
+    }else{
+      toolPurposes <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolFunct="None")
+    }
+    searchToolFunct <<- rbind.data.frame(searchToolFunct, toolPurposes)
+
+    ##topic filters - Main filter
+    toolFilters <- toolRec[grep("Topic Filters-Main Topics-", names(toolRec))]
+    toolFilters <- toolFilters[which(is.na(toolFilters)==F)]
+    filterVars <- sapply(strsplit(names(toolFilters), "Topic Filters-Main Topics-"), "[[", 2)
+    if(length(filterVars)>0){
+      if("clim" %in% filterVars){
+        filterVars[which(filterVars=="clim")] <- "Weather and Climate"
+      }
+      if("eco" %in% filterVars){
+        filterVars[which(filterVars=="eco")] <- "Ecosystem"
+      }
+      if("agr" %in% filterVars){
+        filterVars[which(filterVars=="agr")] <- "Agriculture"
+      }
+      if("built" %in% filterVars){
+        filterVars[which(filterVars=="built")] <- "Built Environment"
+      }
+      if("soc" %in% filterVars){
+        filterVars[which(filterVars=="soc")] <- "Society"
+      }
+      if("fld" %in% filterVars){
+        filterVars[which(filterVars=="fld")] <- "Flooding"
+      }
+      if("wtr" %in% filterVars){
+        filterVars[which(filterVars=="wtr")] <- "Water"
+      }
+      toolFilters <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, topFilter=filterVars)
+    }else{
+      toolFilters <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, topFilter="None")
+    }
+    searchTopFilters <<- rbind.data.frame(searchTopFilters, toolFilters)
+    
     #if(is.na(toolRec$`Climate Relevance`)==F){
     #  toolUse <- paste0("**Relevance:** ", toolRec$`Climate Relevance`, el)
     #}else{
@@ -132,15 +198,21 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, updateContent=T){
     require(openintro)
     if(is.na(toolRec$`Geographic Scope-Scope`)==F & toolRec$`Geographic Scope-Scope`=="State"){
       toolScope <- paste0("__**Geographic Coverage**__", el, paste("- ", abbr2state(strsplit(toolRec$`Geographic Scope-State`, "; ")[[1]]), collapse=el), el)
+      toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, geoScope="State")
     }else if(is.na(toolRec$`Geographic Scope-Scope`)==F & toolRec$`Geographic Scope-Scope`=="Locality"){ 
       toolScope <- paste0("__**Geographic Coverage**__", el, paste("- ", strsplit(toolRec$`Geographic Scope-Locality`, "; ")[[1]], collapse=el), el)
+      toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, geoScope="Locality")
     }else if(is.na(toolRec$`Geographic Scope-Scope`)==F & toolRec$`Geographic Scope-Scope`=="National"){
       toolScope <- paste0("__**Geographic Coverage**__", el, "- Contiguous United States", el)
+      toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, geoScope="National")
     }else if(is.na(toolRec$`Geographic Scope-Scope`)==F & toolRec$`Geographic Scope-Scope`=="General"){
       toolScope <- paste0("__**Geographic Coverage**__", el, "- Applicable Anywhere", el)
+      toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, geoScope="Anywhere")
     }else{
       toolScope <- paste0("__**Geographic Coverage**__", el, "Not Available", el)
+      toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, geoScope="Not Available")
     }
+    searchGeoScope <<- rbind.data.frame(searchGeoScope, toolGeo)
     
     ##tool strengths
     if(is.na(toolRec$`Description-Strengths`)==F){

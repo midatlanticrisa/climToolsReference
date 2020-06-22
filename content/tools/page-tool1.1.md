@@ -1,7 +1,7 @@
 ---
 title: "AdaptVA Sea Level Rise Projection Viewer"
 description: "Observed and projected sea level rise from 1990 to 2100"
-date: 2020-06-09T09:33:16-0400
+date: 2020-06-12T09:54:43-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Provides decadal projections for multiple sea level rise scenarios", "Can easily search for locality of interest"]

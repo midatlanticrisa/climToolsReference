@@ -1,7 +1,7 @@
 ---
 title: "CSF Apple Stage / Freeze Damage Probability"
 description: "Create charts demonstrating risk of freeze damage for apple variety growth"
-date: 2020-06-09T09:44:28-0400
+date: 2020-06-12T10:07:05-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Crop-specific results", "Can easily search for locality of interest"]

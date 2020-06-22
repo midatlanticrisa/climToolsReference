@@ -1,7 +1,7 @@
 ---
 title: "DC Department of Energy & Environment: DC Flood Risk Map"
 description: "DC flood map with layers for 1% annual flood, storm surge, and interactive SLR meter"
-date: 2020-06-09T09:46:12-0400
+date: 2020-06-12T10:08:51-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive map viewer", "Includes multiple types of flooding", "Options to download brief reports", "Ability to calculate potential structural losses"]

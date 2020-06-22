@@ -1,7 +1,7 @@
 ---
 title: "Drought Management Database"
 description: "Resource database related to drought mitigation strategies"
-date: 2020-06-09T09:42:26-0400
+date: 2020-06-12T10:04:51-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use-interface", "Resources frequently updated", "Links to supporting information", "Option for user-submitted strategies"]

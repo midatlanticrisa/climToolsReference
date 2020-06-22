@@ -1,7 +1,7 @@
 ---
 title: "Climate Smart Farming Climate Change in Your County"
 description: "Visualize climate impacts via precipitation and temperature changes since 1950 in the Northeast as well as future changes"
-date: 2020-06-09T09:44:04-0400
+date: 2020-06-12T10:06:40-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Site-specific results", "Provides multiple scenarios", "Raw data publicly available"]

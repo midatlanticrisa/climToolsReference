@@ -1,7 +1,7 @@
 ---
 title: "Delaware Environmental Monitoring Sites"
 description: "This tool inventories environmental monitoring stations in Delaware and provides links to access corresponding data and find data of interest."
-date: 2020-06-09T09:49:37-0400
+date: 2020-06-12T10:18:21-0400
 pubtype: "Tool"
 featured: true
 tags: ["Large number of monitoring stations", "Includes historical and real time data", "Variety of meteorological, groundwater, tidal, and water quality variables"]

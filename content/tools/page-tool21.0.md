@@ -1,7 +1,7 @@
 ---
 title: "Wetbud: Wetland Water Budget Modeling Software"
 description: "Water budget projections for created and natural wetlands"
-date: 2020-06-09T09:39:35-0400
+date: 2020-06-12T10:02:43-0400
 pubtype: "Tool"
 featured: true
 tags: ["Multiple resources are provided on how to use the tool", "Data exports into excel efficiently", "Multiple users can access the same database at once"]

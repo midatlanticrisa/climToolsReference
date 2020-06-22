@@ -1,7 +1,7 @@
 ---
 title: "FieldWatch"
 description: "Platform for beekeepers, farmers, and pesticide applicators to communicate and share information"
-date: 2020-06-09T09:40:04-0400
+date: 2020-06-12T10:03:10-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy to use interface", "Promotes communication between different disciplines", "Locality specific information"]

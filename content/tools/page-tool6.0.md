@@ -2,7 +2,7 @@
 title: "Maryland Coastal Atlas"
 description: "Create maps and graphs presenting coastal and ocean data in Maryland
 "
-date: 2020-06-09T09:35:23-0400
+date: 2020-06-12T09:57:00-0400
 pubtype: "Tool"
 featured: true
 tags: ["Allows user to create specific scenarios", "Users can upload additional data", "Includes a step-by-step tutorial", "Can export final maps and charts"]

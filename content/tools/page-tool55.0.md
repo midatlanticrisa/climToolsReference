@@ -1,7 +1,7 @@
 ---
 title: "USGS National Water Census Data Portal"
 description: "USGS National Water Census Data Portal"
-date: 2020-06-09T09:48:03-0400
+date: 2020-06-12T10:10:45-0400
 pubtype: "Tool"
 featured: true
 tags: []

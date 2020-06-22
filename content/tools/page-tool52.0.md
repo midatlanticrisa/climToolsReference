@@ -1,7 +1,7 @@
 ---
 title: "Riparian Restoration Decision Support Tool"
 description: "Guide restoration efforts in identifying high priority areas by generating different scenarios for riparian habitats in the Eastern U.S."
-date: 2020-06-09T09:47:31-0400
+date: 2020-06-12T10:10:11-0400
 pubtype: "Tool"
 featured: true
 tags: ["Allows user to search by address", "Allows user to define specified thresholds for analysis", "Tutorial and webinar overviewing the tool and its uses are available", "Focus of restoration is on developing climate resilience"]

@@ -1,7 +1,7 @@
 ---
 title: "Shoreline Management Self-Guided Decision Tools"
 description: "Decision tree that provides shoreline management recommendations"
-date: 2020-06-09T09:39:05-0400
+date: 2020-06-12T10:02:14-0400
 pubtype: "Tool"
 featured: true
 tags: ["Can be applied to most shorelines", "Provides site-specific recommendations", "Provides instructions and definitions for non-experts", "Can be printed for in-field use;"]

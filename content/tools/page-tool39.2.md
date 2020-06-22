@@ -1,7 +1,7 @@
 ---
 title: "Climate Smart Farming (CSF) Growing Degree Day Calculator"
 description: "Create charts demonstrating changing growing degree days based on planting date and GDD base."
-date: 2020-06-09T09:44:10-0400
+date: 2020-06-12T10:06:45-0400
 pubtype: "Tool"
 featured: true
 tags: ["Results are site and crop specific", "Allows users to create specific scenarios based on provided GDD base and planting date", "Includes tutorial", "Ability to compare locations"]

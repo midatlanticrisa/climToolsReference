@@ -1,7 +1,7 @@
 ---
 title: "i-Tree Canopy"
 description: "Calculates canopy cover for the designated area and assigns benefits to that calculation"
-date: 2020-06-09T09:49:15-0400
+date: 2020-06-12T10:17:59-0400
 pubtype: "Tool"
 featured: true
 tags: ["Option to upload shapefiles", "Provides location specific scenarios", "Series of explainer videos"]

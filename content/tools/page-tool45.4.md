@@ -1,7 +1,7 @@
 ---
 title: "DC Department of Energy & Environment: Green Infrastructure Practices in the District"
 description: "Interactive map with filtered layers that highlights existing best management practice projects and provides the known specifications of projects"
-date: 2020-06-09T09:46:23-0400
+date: 2020-06-12T10:09:05-0400
 pubtype: "Tool"
 featured: true
 tags: ["Ability to view different layers", "Mobile access", "Site specific data", "Ability to search by location", "Downloadable data"]

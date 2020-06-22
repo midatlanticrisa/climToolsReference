@@ -1,7 +1,7 @@
 ---
 title: "Surging Seas Risk Zone Map (SSRZM)"
 description: "National scale map that highlights flooding along coastal areas with SLR from 1-10ft, social demographic layers. The tool also includes localized fact sheets and detailed reports with flood impacts and resilience efforts individuals may take."
-date: 2020-06-09T09:49:27-0400
+date: 2020-06-12T10:18:12-0400
 pubtype: "Tool"
 featured: true
 tags: ["Extensive data layers", "Visual for SLR extent", "Multiple scenarios", "Local fact sheets and reports", "State reports", "Tutorial video", "Offers range of solutions"]

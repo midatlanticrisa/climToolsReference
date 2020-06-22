@@ -1,7 +1,7 @@
 ---
 title: "Coastal Inundation Predictions for Maryland"
 description: "Projections of SLR and the predicted effects on the state of Maryland"
-date: 2020-06-09T09:39:46-0400
+date: 2020-06-12T10:02:54-0400
 pubtype: "Tool"
 featured: true
 tags: ["Provides state specific examples of the effect of SLR", "Explains how projections are calculated and how the differences from past projections", "Readable to a non-science audience", "Explains what is causing Sea Level Rise"]

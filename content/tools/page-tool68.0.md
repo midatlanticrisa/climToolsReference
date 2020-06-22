@@ -1,7 +1,7 @@
 ---
 title: "Nature's Network Prioritization Tool"
 description: "Modeling tool for conservation areas of high priority"
-date: 2020-06-09T09:50:56-0400
+date: 2020-06-12T10:19:37-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Ability to compare locations", "Flexible process can be applied to develop multiple models", "Welcome guide/tutorials", "Extensive datasets provide for wide range of analysis"]

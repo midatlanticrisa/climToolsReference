@@ -3,7 +3,7 @@ title: "i-Tree Hydro, and Eco"
 description: "i-Tree Eco provides functional, structural and compositional information, forecasting models, and management information on local trees.  
 
 i-Tree Hydro runs local and city-wide analysis of watershed dynamics and how trees impact these features"
-date: 2020-06-09T09:49:26-0400
+date: 2020-06-12T10:18:09-0400
 pubtype: "Tool"
 featured: true
 tags: ["Provides location-specific results", "Allows user to create specific scenarios", "Welcome guide/tutorials", "i-Tree YouTube channel dedicated to explaining how to use various tools"]

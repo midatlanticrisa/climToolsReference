@@ -1,7 +1,7 @@
 ---
 title: "Hampton Roads Geospatial Exchange Online (HRGEO)"
 description: "Provides data about the demographics, infrastructure, and natural resources in Hampton Roads. Also includes some map viewers and web apps to interact with the data"
-date: 2020-06-09T09:33:51-0400
+date: 2020-06-12T09:55:18-0400
 pubtype: "Tool"
 featured: true
 tags: ["Data regularly updated", "Easy-to-use interface", "Locality-level mapping and graphs"]

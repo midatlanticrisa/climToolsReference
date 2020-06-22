@@ -1,7 +1,7 @@
 ---
 title: "USGS National Water Census Data Portal: Water Budget"
 description: "A visualization of local water supply and demand, with water use and availability statistics summarized by HUC and by county."
-date: 2020-06-09T09:48:15-0400
+date: 2020-06-12T10:12:56-0400
 pubtype: "Tool"
 featured: true
 tags: ["Wide range of statistics that can be calculated and compared across watersheds", "Multiple options to export data"]

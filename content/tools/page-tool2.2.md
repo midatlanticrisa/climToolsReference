@@ -1,7 +1,7 @@
 ---
 title: "Hampton Roads Resilience Projects Dashboard"
 description: "Distribution, type, and features of resiliency projects in Hampton Roads"
-date: 2020-06-09T09:34:19-0400
+date: 2020-06-12T09:55:38-0400
 pubtype: "Tool"
 featured: true
 tags: ["Can filter projects by locality, type, and/or status", "Project specific information available", "Allows sorting by project type", "Allows user to search by address", "Frequently updated"]

@@ -1,7 +1,7 @@
 ---
 title: "USGS Geo Data Portal (GDP)"
 description: "Provide data on climate, geological processes, and meteorology"
-date: 2020-06-09T09:35:31-0400
+date: 2020-06-12T09:57:07-0400
 pubtype: "Tool"
 featured: true
 tags: ["Can also access GDP algorithms through python and R packages", "Decreases computational power needed to work with subsets of large data"]

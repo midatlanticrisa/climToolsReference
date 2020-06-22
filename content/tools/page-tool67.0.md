@@ -1,7 +1,7 @@
 ---
 title: "Future Urban Climates"
 description: "Interactive map illustrating climate migration of US cities in the next 60 years"
-date: 2020-06-09T09:50:45-0400
+date: 2020-06-12T10:19:27-0400
 pubtype: "Tool"
 featured: true
 tags: ["Locality specific", "Easy-to-use, interactive interface", "Provides multiple scenarios", "Links to supporting information"]

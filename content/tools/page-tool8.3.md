@@ -1,7 +1,7 @@
 ---
 title: "Climate Ready Water Utilities Adaptation Strategies Guide for Water Utilities"
 description: "Risk assessment application for water utilities"
-date: 2020-06-09T09:36:11-0400
+date: 2020-06-12T09:59:51-0400
 pubtype: "Tool"
 featured: true
 tags: ["Provides or links to supporting information", "Guides user throughout the process by filtering choices based on previous selections", "Lists general cost of solutions", "Easy-to-use"]

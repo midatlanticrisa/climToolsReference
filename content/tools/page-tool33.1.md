@@ -1,7 +1,7 @@
 ---
 title: "Percent Light at Leaf Calculator"
 description: "PLL calculator"
-date: 2020-06-09T09:43:04-0400
+date: 2020-06-12T10:05:29-0400
 pubtype: "Tool"
 featured: true
 tags: ["Provides supporting educational information", "Uses site-specific data", "Generates site-specific results"]

@@ -2,7 +2,7 @@
 title: "Adaptation Workbook (Climate Change Response Framework)"
 description: "Provide data and process support to bridge the gap between climate data and land managers
 "
-date: 2020-06-09T09:49:58-0400
+date: 2020-06-12T10:18:39-0400
 pubtype: "Tool"
 featured: true
 tags: ["Allows user to create a site-specific adaptation plan", "YouTube channel explaining how to use Workbook", "Site-specific guidance and results"]

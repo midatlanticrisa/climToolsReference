@@ -1,7 +1,7 @@
 ---
 title: "Storm Surge Inundation Map"
 description: "Maps about hurricane frequency, storm surge scenarios, and FEMA flood zones"
-date: 2020-06-09T09:36:21-0400
+date: 2020-06-12T10:00:00-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Can easily search for locality of interest", "Provides supporting educational material"]

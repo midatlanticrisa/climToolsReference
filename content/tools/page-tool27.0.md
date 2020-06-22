@@ -1,7 +1,7 @@
 ---
 title: "Climate Impact Map"
 description: "Interactive map showing past and future temperature based different climate models"
-date: 2020-06-09T09:40:33-0400
+date: 2020-06-12T10:03:38-0400
 pubtype: "Tool"
 featured: true
 tags: ["Interactive tool", "Option to export data", "Addresses uncertainty", "Detailed methodology"]

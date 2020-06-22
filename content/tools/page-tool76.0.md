@@ -1,7 +1,7 @@
 ---
 title: "Earth::Global wind patterns"
 description: "A fantastic visualization of climate, atmospheric, and oceanic data for educational purposes."
-date: 2020-06-09T09:52:21-0400
+date: 2020-06-12T10:22:57-0400
 pubtype: "Tool"
 featured: true
 tags: ["Data updated frequently", "Aesthetic, intuitive visualization of complex earth system topics", "Data are spatially and topically broad", "Data and visualizations are available for days into the future and years into the past"]

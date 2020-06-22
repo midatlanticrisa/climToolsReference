@@ -1,7 +1,7 @@
 ---
 title: "Eastern Virginia Coastal Resilience (ESVA Coastal Resilience)"
 description: "Decision support tool to assess coastal resilience in Eastern Virginia"
-date: 2020-06-09T09:36:45-0400
+date: 2020-06-12T10:00:20-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use", "Includes additional information/explanations for different variables", "Ability to compare climate change conditions side-by-side", "Thorough welcome guide/tutorial", "Aims for transparent data sources", "Able to export map into printable document or imbed into a website"]

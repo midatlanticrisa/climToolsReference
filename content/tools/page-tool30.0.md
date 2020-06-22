@@ -1,7 +1,7 @@
 ---
 title: "Drought Risk Atlas"
 description: "View drought indices to assess national drought risk on map or for specific weather stations of United States"
-date: 2020-06-09T09:42:14-0400
+date: 2020-06-12T10:04:37-0400
 pubtype: "Tool"
 featured: true
 tags: ["Provides multiple indices and timesteps", "Ability to compare multiple indices", "Long historical record", "Helpful tutorial", "Can easily search for area of interest"]

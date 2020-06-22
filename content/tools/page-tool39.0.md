@@ -1,7 +1,7 @@
 ---
 title: "Climate Smart Farming"
 description: "Climate Smart Farming"
-date: 2020-06-09T09:43:58-0400
+date: 2020-06-12T10:06:33-0400
 pubtype: "Tool"
 featured: true
 tags: []
