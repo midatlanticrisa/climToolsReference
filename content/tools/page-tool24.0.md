@@ -1,11 +1,11 @@
 ---
 title: "FieldWatch"
 description: "Platform for beekeepers, farmers, and pesticide applicators to communicate and share information"
-date: 2020-06-12T10:03:10-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy to use interface", "Promotes communication between different disciplines", "Locality specific information"]
-image: /images/page-tool24.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: Fieldwatch, and Purdue Research Foundation
 

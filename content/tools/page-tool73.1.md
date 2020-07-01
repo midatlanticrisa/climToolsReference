@@ -1,11 +1,11 @@
 ---
 title: "Storm Water Management Model (SWMM)"
 description: "Allows users to assess stormwater runoff quantity and quality in order to plan for grey and green infrastructure."
-date: 2020-06-12T10:22:25-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Tutorial and beginner manual provided", "Accounts for various hydrological processes (ex: snow melt)", "Although targeted at urban areas, can be applied for non-urban areas as well"]
-image: /images/page-tool73.1.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: EPA
 

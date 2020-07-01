@@ -1,11 +1,11 @@
 ---
 title: "USGS Exploration and Graphics for RivEr Trends (EGRET)"
 description: "R package for evaluating changes in river conditions"
-date: 2020-06-12T10:00:10-0400
+date: 2020-06-25T15:24:15-0400
 pubtype: "Tool"
 featured: true
 tags: ["Welcome guide pdf", "Sample code provided", "Additional resources for locating data provided", "Support for trouble-shooting available"]
-image: /images/page-tool9.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: USGS
 

@@ -1,11 +1,11 @@
 ---
 title: "USGS Water Data for the Nation"
 description: "Clearinghouse of all USGS-hosted water data across the country, including water temperatures, levels, flows, groundwater tables, and a host of other physical and chemical parameters."
-date: 2020-06-12T10:20:07-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Data frequently updated", "Site-specific results", "Locality-level mapping and graphs", "Links to supporting information"]
-image: /images/page-tool71.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: USGS
 

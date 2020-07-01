@@ -1,11 +1,11 @@
 ---
 title: "United States Drought Monitor"
 description: "Current and historical (through January 4, 2000) drought comparison mapping tool of continental U.S., Alaska, Hawaii,  and territories"
-date: 2020-06-12T10:08:10-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Updated weekly", "Weekly drought summary and forecast", "Ability to compare conditions over time", "Tabular and GIS data available", "Tutorial offered"]
-image: /images/page-tool44.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: NDMC, University of Nebraska-Lincoln, USDA, and NOAA
 

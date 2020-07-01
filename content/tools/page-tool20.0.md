@@ -1,11 +1,11 @@
 ---
 title: "MARISA Climate Impacts Summary and Outlook Reports"
 description: "Seasonal (quarterly) reports outlining past weather events and their significance as well as projections to the next seasons weather"
-date: 2020-06-12T10:02:33-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Report issued quarterly", "All charts and figures include easy-to-understand narrative descriptions", "Significant weather events (i.e., Polar Vortex) are explained"]
-image: /images/page-tool20.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: MARISA
 

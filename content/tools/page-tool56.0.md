@@ -1,11 +1,11 @@
 ---
 title: "Mapping Social Vulnerability of Fishing Communities"
 description: "National map of social vulnerability in fishing communities"
-date: 2020-06-12T10:17:20-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Wide range of social, economic, cultural, and environmental statistics", "Data easily exported", "Site-specific results"]
-image: /images/page-tool56.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: NOAA
 

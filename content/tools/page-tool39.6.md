@@ -1,11 +1,11 @@
 ---
 title: "Grape Hardiness & Freeze Risk"
 description: "Create charts demonstrating risk of freeze damage for grape variety growth"
-date: 2020-06-12T10:07:10-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Crop-specific results", "Can easily search for locality of interest"]
-image: /images/page-tool39.6.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: Cornell University_College of Agriculture and Life Sciences
 

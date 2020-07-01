@@ -1,11 +1,11 @@
 ---
 title: "AdaptVA"
 description: "AdaptVA"
-date: 2020-06-12T09:54:31-0400
+date: 2020-06-25T15:24:15-0400
 pubtype: "Tool"
 featured: true
 tags: []
-image: /images/page-tool1.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: VIMS_CCRM
 

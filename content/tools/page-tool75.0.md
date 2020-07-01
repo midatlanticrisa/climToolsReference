@@ -1,11 +1,11 @@
 ---
 title: "OSPREY Public"
 description: "Report current meteorological and infrastructure (electricity, traffic, shelters) conditions to aid emergency response planning for both citizens and professionals."
-date: 2020-06-12T10:22:46-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Data frequently updated", "Locality-level mapping and graphs", "Broad extent of data"]
-image: /images/page-tool75.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: NOAA_NWS
 

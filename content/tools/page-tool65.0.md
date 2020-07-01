@@ -1,11 +1,11 @@
 ---
 title: "Coastal Change Hazards Portal"
 description: "National map illustrating past, present, and projected coastal conditions"
-date: 2020-06-12T10:19:12-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Data are available for download", "Provides multiple scenarios", "Links to supporting information"]
-image: /images/page-tool65.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: USGS
 

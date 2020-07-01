@@ -107,6 +107,8 @@
   <meta charset="utf-8">
   <title>jQuery Get Values of Selected Checboxes</title>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
   <script>
       $(document).ready(function() {
         alert('in script')
@@ -117,6 +119,7 @@
         var holdGeoSearch = [];  
         var holdToolFunSearch = [];  
         var holdTopFilSearch = [];  
+        var holdTopSubSearch = [];
 
         
         
@@ -137,7 +140,7 @@
         
         
         
-        function selectTools(inTags, tagDat, inSR, reqDat, inGeo, geoDat, inFunct, tFunDat, inFilts, topFilDat){
+        function selectTools(inTags, tagDat, inSR, reqDat, inGeo, geoDat, inFunct, tFunDat, inFilts, topFilDat, inSubFilts, topSubFilDat){
           var fullResults = [];
           var inTools = [];
 
@@ -145,6 +148,40 @@
           if(inFilts.length > 0){
             var items = topFilDat.items.map(function (item){
               if(jQuery.inArray(item.topFilter, inFilts) >= 0){
+                if(jQuery.inArray(item.name, inTools) == -1){
+                  inTools.push(item.name);
+                  var tool = new addTool(item.name, item.link);
+                  fullResults.push(tool)
+                }
+              }
+            });
+          }
+
+          
+          if(inSubFilts.length>0 && fullResults.length>0){
+            $.each(fullResults, function(tool) {
+              var toolName = this.name;
+              var keepTool = 0;
+              var toolReqs = [];
+              var items = topSubFilDat.items.map(function (item){
+                if(item.name == toolName){
+                  toolReqs.push(item.subFilter)
+                }
+              });
+              for (i=0; i<=toolReqs.length; i++) {
+                if(jQuery.inArray(toolReqs[i], inSubFilts) >= 0){
+                  keepTool = 1;
+                }
+              }
+              if(keepTool==0){
+                var whichRemove = jQuery.inArray(toolName, inTools);
+                inTools.splice(whichRemove, 1);
+                fullResults.splice(whichRemove, 1);
+              }
+            });
+          }else if(inSubFilts.length>0 && fullResults.length==0){
+            var items = topSubFilDat.items.map(function (item){
+              if(jQuery.inArray(item.subFilter, inSubFilts) >= 0){
                 if(jQuery.inArray(item.name, inTools) == -1){
                   inTools.push(item.name);
                   var tool = new addTool(item.name, item.link);
@@ -165,14 +202,12 @@
                   toolReqs.push(item.softReq)
                 }
               });
-
               
               
               
               
               
               
-
               for (i=0; i<=toolReqs.length; i++) {
                 if(jQuery.inArray(toolReqs[i], inSR) >= 0){
                   keepTool = 1;
@@ -204,10 +239,9 @@
               var toolReqs = [];
               var items = geoDat.items.map(function (item){
                 if(item.name == toolName){
-                  toolReqs.push(item.softReq)
+                  toolReqs.push(item.geoScope)
                 }
               });
-
               for (i=0; i<=toolReqs.length; i++) {
                 if(jQuery.inArray(toolReqs[i], inGeo) >= 0){
                   keepTool = 1;
@@ -242,19 +276,16 @@
                   toolReqs.push(item.toolFun)
                 }
               });
-
               for (i=0; i<=toolReqs.length; i++) {
                 if(jQuery.inArray(toolReqs[i], inFunct) >= 0){
                   keepTool = 1;
                 }
               }
-
               if(keepTool==0){
                 var whichRemove = jQuery.inArray(toolName, inTools);
                 inTools.splice(whichRemove, 1);
                 fullResults.splice(whichRemove, 1);
               }
-
             });
           }else if(inFunct.length>0 && fullResults.length==0){
             var items = tFunDat.items.map(function (item){
@@ -276,22 +307,19 @@
               var toolReqs = [];
               var items = tagDat.items.map(function (item){
                 if(item.name == toolName){
-                  toolReqs.push(item.topFilter)
+                  toolReqs.push(item.tag)
                 }
               });
-
               for (i=0; i<=toolReqs.length; i++) {
                 if(jQuery.inArray(toolReqs[i], inTags) >= 0){
                   keepTool = 1;
                 }
               }
-
               if(keepTool==0){
                 var whichRemove = jQuery.inArray(toolName, inTools);
                 inTools.splice(whichRemove, 1);
                 fullResults.splice(whichRemove, 1);
               }
-
             });
           }else if(inTags.length>0 && fullResults.length==0){
             var items = tagDat.items.map(function (item){
@@ -305,7 +333,7 @@
             });
           }
 
-          alert('to be added: ' + fullResults.length)
+          
           if(fullResults.length > 0){
             $.each(fullResults, function(tool) {
               newTool = '<li><a href="' + '/tools/' + this.link +'/index.html">' + this.name + '</a></li>';
@@ -315,13 +343,13 @@
         }
         
         
-        function defualtSetup(tagD, reqD, geoD, funD, filtD){
+        function defualtSetup(tagD, reqD, geoD, funD, filtD, sFiltD){
           showData.empty();
           var check = [];
           $('#topFilterSearch :not(:checked)').each(function(){
             check.push($(this).val());
           });
-          selectTools(holdTagSearch, tagD, holdSoftReqSearch, reqD, holdGeoSearch, geoD, holdToolFunSearch, funD, check, filtD)
+          selectTools(holdTagSearch, tagD, holdSoftReqSearch, reqD, holdGeoSearch, geoD, holdToolFunSearch, funD, check, filtD, holdTopSubSearch, sFiltD)
         }
         
         
@@ -330,7 +358,8 @@
         }
         
         
-
+        
+        
         jQuery.getMultipleJSON = function(){
           var
             num = 0,
@@ -352,15 +381,100 @@
           ;
           return def;
         };
+        
+        
+        
+        switchSubTopics = function(){
+          
+          $('#topFilterSearch :unchecked').each(function(){
+            
+            if(jQuery.inArray($(this).val(), ['None']) >= 0){
+              $(".subFiltChecks-None").prop('checked', false);
+              $('.subFiltChecks-None').attr('disabled', true);
+              $('.subFiltChecks-None').css('opacity', '.95');
+              $('.subLabs-None').css('opacity', '.2');
+            }
+            if(jQuery.inArray($(this).val(), ['Weather and Climate']) >= 0){
+              $(".subFiltChecks-clim").prop('checked', false);
+              $('.subFiltChecks-clim').attr('disabled', true);
+              $('.subFiltChecks-clim').css('opacity', '.95');
+              $('.subLabs-clim').css('opacity', '.2');
+            }
+            if(jQuery.inArray($(this).val(), ['Ecosystems']) >= 0){
+              $(".subFiltChecks-eco").prop('checked', false);
+              $('.subFiltChecks-eco').attr('disabled', true);
+              $('.subFiltChecks-eco').css('opacity', '.95');
+              $('.subLabs-eco').css('opacity', '.2');
+            }
+            if(jQuery.inArray($(this).val(), ['Agriculture / Built Environment']) >= 0){
+              $(".subFiltChecks-blt").prop('checked', false);
+              $('.subFiltChecks-blt').attr('disabled', true);
+              $('.subFiltChecks-blt').css('opacity', '.95');
+              $('.subLabs-blt').css('opacity', '.2');
+            }
+            if(jQuery.inArray($(this).val(), ['Society']) >= 0){
+              $(".subFiltChecks-soc").prop('checked', false);
+              $('.subFiltChecks-soc').attr('disabled', true);
+              $('.subFiltChecks-soc').css('opacity', '.95');
+              $('.subLabs-soc').css('opacity', '.2');
+            }
+            if(jQuery.inArray($(this).val(), ['Water / Flooding']) >= 0){
+              $(".subFiltChecks-fld").prop('checked', false);
+              $('.subFiltChecks-fld').attr('disabled', true);
+              $('.subFiltChecks-fld').css('opacity', '.95');
+              $('.subLabs-fld').css('opacity', '.2');
+            }
+          });
 
+          
+          $('#topFilterSearch :checked').each(function(){
+            
+            if(jQuery.inArray($(this).val(), ['None']) >= 0){
+              $('.subFiltChecks-None').attr('disabled', false);
+              $('.subFiltChecks-None').css('opacity', '1');
+              $('.subLabs-None').css('opacity', '1');
+            }
+            if(jQuery.inArray($(this).val(), ['Weather and Climate']) >= 0){
+              $('.subFiltChecks-clim').attr('disabled', false);
+              $('.subFiltChecks-clim').css('opacity', '1');
+              $('.subLabs-clim').css('opacity', '1');
+            }
+            if(jQuery.inArray($(this).val(), ['Ecosystems']) >= 0){
+              $('.subFiltChecks-eco').attr('disabled', false);
+              $('.subFiltChecks-eco').css('opacity', '1');
+              $('.subLabs-eco').css('opacity', '1');
+            }
+            if(jQuery.inArray($(this).val(), ['Agriculture / Built Environment']) >= 0){
+              $('.subFiltChecks-blt').attr('disabled', false);
+              $('.subFiltChecks-blt').css('opacity', '1');
+              $('.subLabs-blt').css('opacity', '1');
+            }
+            if(jQuery.inArray($(this).val(), ['Society']) >= 0){
+              $('.subFiltChecks-soc').attr('disabled', false);
+              $('.subFiltChecks-soc').css('opacity', '1');
+              $('.subLabs-soc').css('opacity', '1');
+            }
+            if(jQuery.inArray($(this).val(), ['Water / Flooding']) >= 0){
+              $('.subFiltChecks-fld').attr('disabled', false);
+              $('.subFiltChecks-fld').css('opacity', '1');
+              $('.subLabs-fld').css('opacity', '1');
+            }
+          });
+        }
+        
+        
 
-        jQuery.getMultipleJSON('/data/searchTags.json', '/data/searchSoft.json', '/data/searchGeoScope.json', '/data/searchToolFun.json', '/data/searchTopFilter.json')
+        jQuery.getMultipleJSON('/data/searchTags.json', '/data/searchSoft.json', '/data/searchGeoScope.json', '/data/searchToolFun.json', '/data/searchTopFilter.json', '/data/searchSubFilter.json')
           .progress(function(percent, count, total){})
           .fail(function(jqxhr, textStatus, error){})
-          .done(function(tagData, reqData, geoData, tFunData, topFilData){
+          .done(function(tagData, reqData, geoData, tFunData, topFilData, subFilData){
 
-            defualtSetup(tagData, reqData, geoData, tFunData, topFilData)
+            
+            defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData);
+            
+            switchSubTopics();
 
+            
             
             $('#tagTogAll').change(function(){
               showData.empty();
@@ -374,11 +488,11 @@
               });
 
               holdTagSearch = searchTags;
-              var chkNumRes = $.sum([searchTags.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length]);
+              var chkNumRes = $.sum([searchTags.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
               if(chkNumRes>0){
-                selectTools(searchTags, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData)
+                selectTools(searchTags, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
               }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData)
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
               }
             });
             $('.tagChecks').change(function(){
@@ -396,14 +510,14 @@
               });
 
               holdTagSearch = searchTags;
-              var chkNumRes = $.sum([searchTags.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length]);
+              var chkNumRes = $.sum([searchTags.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
               if(chkNumRes>0){
-                selectTools(searchTags, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData)
+                selectTools(searchTags, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
               }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData)
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
               }
             });
-
+            
             
             $('#reqTogAll').change(function(){
               showData.empty();
@@ -417,11 +531,11 @@
               });
 
               holdSoftReqSearch = searchSoftReq;
-              var chkNumRes = $.sum([holdTagSearch.length, searchSoftReq.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length]);
+              var chkNumRes = $.sum([holdTagSearch.length, searchSoftReq.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
               if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, searchSoftReq, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData)
+                selectTools(holdTagSearch, tagData, searchSoftReq, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
               }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData)
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
               }
             });
             $('.reqChecks').change(function(){
@@ -439,14 +553,14 @@
               });
 
               holdSoftReqSearch = searchSoftReq;
-              var chkNumRes = $.sum([holdTagSearch.length, searchSoftReq.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length]);
+              var chkNumRes = $.sum([holdTagSearch.length, searchSoftReq.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
               if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, searchSoftReq, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData)
+                selectTools(holdTagSearch, tagData, searchSoftReq, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
               }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData)
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
               }
             });
-
+            
             
             $('#geoTogAll').change(function(){
               showData.empty();
@@ -460,11 +574,11 @@
               });
 
               holdSoftReqSearch = searchGeo;
-              var chkNumRes = $.sum([holdTagSearch.length, searchSoftReq.length, searchGeo.length, holdToolFunSearch.length, holdTopFilSearch.length]);
+              var chkNumRes = $.sum([holdTagSearch.length, searchSoftReq.length, searchGeo.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
               if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, searchSoftReq, reqData, searchGeo, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData)
+                selectTools(holdTagSearch, tagData, searchSoftReq, reqData, searchGeo, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
               }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData)
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
               }
             });
             $('.geoChecks').change(function(){
@@ -482,15 +596,15 @@
               });
 
               holdSoftReqSearch = searchGeo;
-              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, searchGeo.length, holdToolFunSearch.length, holdTopFilSearch.length]);
+              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, searchGeo.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
 
               if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, searchGeo, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData)
+                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, searchGeo, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
               }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData)
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
               }
             });
-
+            
             
             $('#tlfunTogAll').change(function(){
               showData.empty();
@@ -504,11 +618,11 @@
               });
 
               holdToolFunSearch = searchToolFun;
-              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, searchToolFun.length, holdTopFilSearch.length]);
+              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, searchToolFun.length, holdTopFilSearch.length, holdTopSubSearch.length]);
               if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, searchToolFun, tFunData, holdTopFilSearch, topFilData)
+                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, searchToolFun, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
               }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData)
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
               }
             });
             $('.toolFunctChecks').change(function(){
@@ -526,15 +640,14 @@
               });
 
               holdToolFunSearch = searchToolFun;
-              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, searchToolFun.length, holdTopFilSearch.length]);
+              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, searchToolFun.length, holdTopFilSearch.length, holdTopSubSearch.length]);
               if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, searchToolFun, tFunData, holdTopFilSearch, topFilData)
+                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, searchToolFun, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
               }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData)
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
               }
             });
-
-
+            
             
             $('#topfltTogAll').change(function(){
               showData.empty();
@@ -543,16 +656,18 @@
               var checkboxes = $(this).closest('form').find(':checkbox');
               checkboxes.prop('checked', $(this).is(':checked'));
 
+              switchSubTopics();
+
               $('#topFilterSearch :checked').each(function(){
                 searchTopFil.push($(this).val());
               });
 
-              holdTagSearch = searchTags;
-              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, searchTopFil.length]);
+              holdTopFilSearch = searchTopFil;
+              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, searchTopFil.length, holdTopSubSearch.length]);
               if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, searchTopFil, topFilData)
+                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, searchTopFil, topFilData, holdTopSubSearch, subFilData)
               }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData)
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
               }
             });
             $('.topFiltChecks').change(function(){
@@ -565,30 +680,204 @@
                 $('#topfltTogAll').prop('checked',false);
               }
 
+              switchSubTopics();
+
               $('#topFilterSearch :checked').each(function(){
                 searchTopFil.push($(this).val());
               });
 
               holdTopFilSearch = searchTopFil;
-              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, searchTopFil.length]);
+              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, searchTopFil.length, holdTopSubSearch.length]);
               if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, searchTopFil, topFilData)
+                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, searchTopFil, topFilData, holdTopSubSearch, subFilData)
               }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData)
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
+              }
+            });
+            
+            
+            $('#subfltTogAll').change(function(){
+              showData.empty();
+              var searchSubFil = [];
+
+              
+              var checkboxes = $(this).closest('form').find(':checkbox:not(:disabled)');
+              checkboxes.prop('checked', $(this).is(':checked'));
+
+              switchSubTopics();
+
+              $('#subFilterSearch :checked').each(function(){
+                searchSubFil.push($(this).val());
+              });
+
+              holdTopSubSearch = searchSubFil;
+              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, searchSubFil.length]);
+              if(chkNumRes>0){
+                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, searchSubFil, subFilData)
+              }else{
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
               }
             });
 
+            $('.subFiltChecks-None').change(function(){
+              showData.empty();
+              var searchSubFil = [];
+
+              var fullSubLength = $.sum([$('.subFiltChecks-None:not(:disabled)').length, $('.subFiltChecks-clim:not(:disabled)').length, $('.subFiltChecks-eco:not(:disabled)').length, $('.subFiltChecks-blt:not(:disabled)').length, $('.subFiltChecks-soc:not(:disabled)').length, $('.subFiltChecks-fld:not(:disabled)').length]);
+              var numChked = $.sum([$('.subFiltChecks-None:checked').length, $('.subFiltChecks-clim:checked').length, $('.subFiltChecks-eco:checked').length, $('.subFiltChecks-blt:checked').length, $('.subFiltChecks-soc:checked').length, $('.subFiltChecks-fld:checked').length]);
+
+              if(numChked == fullSubLength){
+                $('#subfltTogAll').prop('checked',true);
+              }else{
+                $('#subfltTogAll').prop('checked',false);
+              }
+
+              $('#subFilterSearch :checked').each(function(){
+                searchSubFil.push($(this).val());
+              });
+
+              holdTopSubSearch = searchSubFil;
+              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, searchSubFil.length]);
+              if(chkNumRes>0){
+                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, searchSubFil, subFilData)
+              }else{
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
+              }
+            });
+            $('.subFiltChecks-clim').change(function(){
+              showData.empty();
+              var searchSubFil = [];
+
+              var fullSubLength = $.sum([$('.subFiltChecks-None:not(:disabled)').length, $('.subFiltChecks-clim:not(:disabled)').length, $('.subFiltChecks-eco:not(:disabled)').length, $('.subFiltChecks-blt:not(:disabled)').length, $('.subFiltChecks-soc:not(:disabled)').length, $('.subFiltChecks-fld:not(:disabled)').length]);
+              var numChked = $.sum([$('.subFiltChecks-None:checked').length, $('.subFiltChecks-clim:checked').length, $('.subFiltChecks-eco:checked').length, $('.subFiltChecks-blt:checked').length, $('.subFiltChecks-soc:checked').length, $('.subFiltChecks-fld:checked').length]);
+
+              if(numChked == fullSubLength){
+                $('#subfltTogAll').prop('checked',true);
+              }else{
+                $('#subfltTogAll').prop('checked',false);
+              }
+
+              $('#subFilterSearch :checked').each(function(){
+                searchSubFil.push($(this).val());
+              });
+
+              holdTopSubSearch = searchSubFil;
+              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, searchSubFil.length]);
+              if(chkNumRes>0){
+                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, searchSubFil, subFilData)
+              }else{
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
+              }
+            });
+            $('.subFiltChecks-eco').change(function(){
+              showData.empty();
+              var searchSubFil = [];
+
+              var fullSubLength = $.sum([$('.subFiltChecks-None:not(:disabled)').length, $('.subFiltChecks-clim:not(:disabled)').length, $('.subFiltChecks-eco:not(:disabled)').length, $('.subFiltChecks-blt:not(:disabled)').length, $('.subFiltChecks-soc:not(:disabled)').length, $('.subFiltChecks-fld:not(:disabled)').length]);
+              var numChked = $.sum([$('.subFiltChecks-None:checked').length, $('.subFiltChecks-clim:checked').length, $('.subFiltChecks-eco:checked').length, $('.subFiltChecks-blt:checked').length, $('.subFiltChecks-soc:checked').length, $('.subFiltChecks-fld:checked').length]);
+
+              if(numChked == fullSubLength){
+                $('#subfltTogAll').prop('checked',true);
+              }else{
+                $('#subfltTogAll').prop('checked',false);
+              }
+
+              $('#subFilterSearch :checked').each(function(){
+                searchSubFil.push($(this).val());
+              });
+
+              holdTopSubSearch = searchSubFil;
+              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, searchSubFil.length]);
+              if(chkNumRes>0){
+                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, searchSubFil, subFilData)
+              }else{
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
+              }
+            });
+            $('.subFiltChecks-blt').change(function(){
+              showData.empty();
+              var searchSubFil = [];
+
+              var fullSubLength = $.sum([$('.subFiltChecks-None:not(:disabled)').length, $('.subFiltChecks-clim:not(:disabled)').length, $('.subFiltChecks-eco:not(:disabled)').length, $('.subFiltChecks-blt:not(:disabled)').length, $('.subFiltChecks-soc:not(:disabled)').length, $('.subFiltChecks-fld:not(:disabled)').length]);
+              var numChked = $.sum([$('.subFiltChecks-None:checked').length, $('.subFiltChecks-clim:checked').length, $('.subFiltChecks-eco:checked').length, $('.subFiltChecks-blt:checked').length, $('.subFiltChecks-soc:checked').length, $('.subFiltChecks-fld:checked').length]);
+
+              if(numChked == fullSubLength){
+                $('#subfltTogAll').prop('checked',true);
+              }else{
+                $('#subfltTogAll').prop('checked',false);
+              }
+
+              $('#subFilterSearch :checked').each(function(){
+                searchSubFil.push($(this).val());
+              });
+
+              holdTopSubSearch = searchSubFil;
+              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, searchSubFil.length]);
+              if(chkNumRes>0){
+                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, searchSubFil, subFilData)
+              }else{
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
+              }
+            });
+            $('.subFiltChecks-soc').change(function(){
+              showData.empty();
+              var searchSubFil = [];
+
+              var fullSubLength = $.sum([$('.subFiltChecks-None:not(:disabled)').length, $('.subFiltChecks-clim:not(:disabled)').length, $('.subFiltChecks-eco:not(:disabled)').length, $('.subFiltChecks-blt:not(:disabled)').length, $('.subFiltChecks-soc:not(:disabled)').length, $('.subFiltChecks-fld:not(:disabled)').length]);
+              var numChked = $.sum([$('.subFiltChecks-None:checked').length, $('.subFiltChecks-clim:checked').length, $('.subFiltChecks-eco:checked').length, $('.subFiltChecks-blt:checked').length, $('.subFiltChecks-soc:checked').length, $('.subFiltChecks-fld:checked').length]);
+
+              if(numChked == fullSubLength){
+                $('#subfltTogAll').prop('checked',true);
+              }else{
+                $('#subfltTogAll').prop('checked',false);
+              }
+
+              $('#subFilterSearch :checked').each(function(){
+                searchSubFil.push($(this).val());
+              });
+
+              holdTopSubSearch = searchSubFil;
+              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, searchSubFil.length]);
+              if(chkNumRes>0){
+                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, searchSubFil, subFilData)
+              }else{
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
+              }
+            });
+            $('.subFiltChecks-fld').change(function(){
+              showData.empty();
+              var searchSubFil = [];
+
+              var fullSubLength = $.sum([$('.subFiltChecks-None:not(:disabled)').length, $('.subFiltChecks-clim:not(:disabled)').length, $('.subFiltChecks-eco:not(:disabled)').length, $('.subFiltChecks-blt:not(:disabled)').length, $('.subFiltChecks-soc:not(:disabled)').length, $('.subFiltChecks-fld:not(:disabled)').length]);
+              var numChked = $.sum([$('.subFiltChecks-None:checked').length, $('.subFiltChecks-clim:checked').length, $('.subFiltChecks-eco:checked').length, $('.subFiltChecks-blt:checked').length, $('.subFiltChecks-soc:checked').length, $('.subFiltChecks-fld:checked').length]);
+
+              if(numChked == fullSubLength){
+                $('#subfltTogAll').prop('checked',true);
+              }else{
+                $('#subfltTogAll').prop('checked',false);
+              }
+
+              $('#subFilterSearch :checked').each(function(){
+                searchSubFil.push($(this).val());
+              });
+
+              holdTopSubSearch = searchSubFil;
+              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, searchSubFil.length]);
+              if(chkNumRes>0){
+                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, searchSubFil, subFilData)
+              }else{
+                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
+              }
+            });
+
+
+            
 
 
 
             
             
           });
-
-
-
-
-
 
         
         
@@ -616,9 +905,51 @@
                 <hr>
                 <label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="None">None</label><br>
                 <label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="Weather and Climate">Weather and Climate</label><br>
-                <label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="Flooding">Flooding</label><br>
-                <label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="Ecosystem">Ecosystem</label><br>
-                <label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="Built Environment">Built Environment</label><br>
+                <label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="Ecosystems">Ecosystems</label><br>
+                <label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="Agriculture / Built Environment">Agriculture / Built Environment</label><br>
+                <label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="Society">Society</label><br>
+                <label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="Water / Flooding">Water / Flooding</label>
+              </form>
+            </fieldset>
+            <fieldset class="singleRow">
+            <div class="header">
+              <h5>Sub-topic Filter</h5>
+              
+            </div>
+              <form id="subFilterSearch">
+                <label><input type="checkbox" aria-selected="false" id=subfltTogAll value="Select All">Select All</label><br>
+                <hr>
+                <label class="subLabs-None"><input type="checkbox" aria-selected="false" class="subFiltChecks-None" value="None">None</label><br>
+                <label class="subLabs-clim"><input type="checkbox" aria-selected="false" class="subFiltChecks-clim" value="Sea Level Rise">Sea Level Rise</label><br>
+                <label class="subLabs-eco"><input type="checkbox" aria-selected="false" class="subFiltChecks-eco" value="Wetlands">Wetlands</label><br>
+                <label class="subLabs-eco"><input type="checkbox" aria-selected="false" class="subFiltChecks-eco" value="Shorelines and Erosion">Shorelines and Erosion</label><br>
+                <label class="subLabs-blt"><input type="checkbox" aria-selected="false" class="subFiltChecks-blt" value="Planning / Land Use">Planning / Land Use</label><br>
+                <label class="subLabs-blt"><input type="checkbox" aria-selected="false" class="subFiltChecks-blt" value="Transportation">Transportation</label><br>
+                <label class="subLabs-soc"><input type="checkbox" aria-selected="false" class="subFiltChecks-soc" value="Social Vulnerability">Social Vulnerability</label><br>
+                <label class="subLabs-soc"><input type="checkbox" aria-selected="false" class="subFiltChecks-soc" value="Public Health">Public Health</label><br>
+                <label class="subLabs-eco"><input type="checkbox" aria-selected="false" class="subFiltChecks-eco" value="Restoration">Restoration</label><br>
+                <label class="subLabs-eco"><input type="checkbox" aria-selected="false" class="subFiltChecks-eco" value="Eco Services Valuation">Eco Services Valuation</label><br>
+                <label class="subLabs-blt"><input type="checkbox" aria-selected="false" class="subFiltChecks-blt" value="Buildings / Infrastructure">Buildings / Infrastructure</label><br>
+                <label class="subLabs-clim"><input type="checkbox" aria-selected="false" class="subFiltChecks-clim" value="Temperature">Temperature</label><br>
+                <label class="subLabs-clim"><input type="checkbox" aria-selected="false" class="subFiltChecks-clim" value="Precipitation">Precipitation</label><br>
+                <label class="subLabs-fld"><input type="checkbox" aria-selected="false" class="subFiltChecks-fld" value="Water Level">Water Level</label><br>
+                <label class="subLabs-fld"><input type="checkbox" aria-selected="false" class="subFiltChecks-fld" value="Water Quality">Water Quality</label><br>
+                <label class="subLabs-clim"><input type="checkbox" aria-selected="false" class="subFiltChecks-clim" value="Storms and Hurricanes">Storms and Hurricanes</label><br>
+                <label class="subLabs-eco"><input type="checkbox" aria-selected="false" class="subFiltChecks-eco" value="Submerged Aquatic Vegitation">Submerged Aquatic Vegitation</label><br>
+                <label class="subLabs-blt"><input type="checkbox" aria-selected="false" class="subFiltChecks-blt" value="Fisheries and Aquaculture">Fisheries and Aquaculture</label><br>
+                <label class="subLabs-clim"><input type="checkbox" aria-selected="false" class="subFiltChecks-clim" value="Drought">Drought</label><br>
+                <label class="subLabs-blt"><input type="checkbox" aria-selected="false" class="subFiltChecks-blt" value="Agriculture">Agriculture</label><br>
+                <label class="subLabs-clim"><input type="checkbox" aria-selected="false" class="subFiltChecks-clim" value="Carbon Emissions">Carbon Emissions</label><br>
+                <label class="subLabs-soc"><input type="checkbox" aria-selected="false" class="subFiltChecks-soc" value="Air Quality">Air Quality</label><br>
+                <label class="subLabs-blt"><input type="checkbox" aria-selected="false" class="subFiltChecks-blt" value="Forestry">Forestry</label><br>
+                <label class="subLabs-eco"><input type="checkbox" aria-selected="false" class="subFiltChecks-eco" value="Soils">Soils</label><br>
+                <label class="subLabs-blt"><input type="checkbox" aria-selected="false" class="subFiltChecks-blt" value="Economic Assessment">Economic Assessment</label><br>
+                <label class="subLabs-fld"><input type="checkbox" aria-selected="false" class="subFiltChecks-fld" value="Stream Flow">Stream Flow</label><br>
+                <label class="subLabs-blt"><input type="checkbox" aria-selected="false" class="subFiltChecks-blt" value="Urban Forestry">Urban Forestry</label><br>
+                <label class="subLabs-fld"><input type="checkbox" aria-selected="false" class="subFiltChecks-fld" value="High Tide / Recurrent Flooding">High Tide / Recurrent Flooding</label><br>
+                <label class="subLabs-fld"><input type="checkbox" aria-selected="false" class="subFiltChecks-fld" value="Storm Surge">Storm Surge</label><br>
+                <label class="subLabs-fld"><input type="checkbox" aria-selected="false" class="subFiltChecks-fld" value="Inland Flooding">Inland Flooding</label><br>
+                <label class="subLabs-fld"><input type="checkbox" aria-selected="false" class="subFiltChecks-fld" value="Saltwater Intrusion">Saltwater Intrusion</label>
               </form>
             </fieldset>
             <fieldset class="singleRow">

@@ -1,11 +1,11 @@
 ---
 title: "Mid-Atlantic Ocean Data Tool"
 description: "The Mid-Atlantic Ocean Data Portal is a resource center consisting of an interactive map, data layers, case studies, and collaborative tools that allows users to explore and share visualizations of coastal and social resources between New York and Virginia."
-date: 2020-06-12T10:07:17-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Option to browse or search for data layers", "Easy-to-use, interactive map", "Aims for transparent data sources", "Ensures quality of information by reviewing submitted data", "Welcome guide/tutorial"]
-image: /images/page-tool40.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: MARCO
 

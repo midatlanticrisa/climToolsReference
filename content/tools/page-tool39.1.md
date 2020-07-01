@@ -1,11 +1,11 @@
 ---
 title: "Climate Smart Farming Climate Change in Your County"
 description: "Visualize climate impacts via precipitation and temperature changes since 1950 in the Northeast as well as future changes"
-date: 2020-06-12T10:06:40-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Site-specific results", "Provides multiple scenarios", "Raw data publicly available"]
-image: /images/page-tool39.1.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: Cornell University_College of Agriculture and Life Sciences
 

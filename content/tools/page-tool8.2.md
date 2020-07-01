@@ -1,11 +1,11 @@
 ---
 title: "Case Study and Information Exchange"
 description: "Communities submit and share their experiences with implementing climate adaptation measures."
-date: 2020-06-12T09:59:37-0400
+date: 2020-06-25T15:24:15-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Community based network", "Results are site-specific"]
-image: /images/page-tool8.2.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: EPA
 

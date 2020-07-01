@@ -1,11 +1,11 @@
 ---
 title: "Northeast Conservation Planning Atlas"
 description: "View, create, and collaborate with other users on maps to visualize biological, physical, and socio-economic information about the Northeast."
-date: 2020-06-12T10:07:57-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Can compare maps side-by-side", "Welcome guide/tutorials", "Option to input own data", "Users can store up to 1 GB of data for free"]
-image: /images/page-tool43.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: Conservation Biology Institute
 

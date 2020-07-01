@@ -1,11 +1,11 @@
 ---
 title: "Beach Nourishment Viewer"
 description: "Demonstrates location of past and current beach nourishment projects, number of nourishment episodes in one area, date of project completion, cost, and volume of the project."
-date: 2020-06-12T10:18:28-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Provides project cost information", "Comprehensive list of projects", "Searchable by State and beach", "Historic cost adjusted for inflation"]
-image: /images/page-tool60.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: Western Carolina University_Program for the Study of Developed Shorelines
 

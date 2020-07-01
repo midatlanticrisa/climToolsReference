@@ -1,7 +1,7 @@
 ---
 title: "FloodiQ"
 description: "Map of tidal and hurricane flooding under present and future scenarios"
-date: 2020-06-12T10:03:24-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Location specific information", "Link and phone number to contact your elected official about the matter", "Provides supporting educational information"]

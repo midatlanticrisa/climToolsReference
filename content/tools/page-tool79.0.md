@@ -1,11 +1,11 @@
 ---
 title: "Coastal County Snapshots"
 description: "The open-source map leads users to reports that contain graphs and figures with short-term projections and current data on flood exposure, ocean jobs, and wetland benefits specific to the user's selected county."
-date: 2020-06-12T10:23:22-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy to use", "County-level data for all coastal counties on the Atlantic coast"]
-image: /images/page-tool79.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: NOAA_Office for Coastal Management
 

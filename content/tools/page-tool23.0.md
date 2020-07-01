@@ -1,11 +1,11 @@
 ---
 title: "Headwaters Economics Neighborhoods at Risk"
 description: "Assessment of neighborhood risk based on census tracts and FEMA flood maps"
-date: 2020-06-12T10:03:04-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interactive interface", "Detailed explanation of models and supporting information", "Includes a wide range of urban areas", "Working to expand its range"]
-image: /images/page-tool23.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: Headwater Economics
 

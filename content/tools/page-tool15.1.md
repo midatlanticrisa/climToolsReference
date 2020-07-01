@@ -1,11 +1,11 @@
 ---
 title: "Better Assessment Science Integrating Point and Non-point Sources (BASIN)"
 description: "BASINS purpose is to assist in watershed management and TMDL development by integrating data, tools, and models."
-date: 2020-06-12T10:01:40-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Allows user to create specific scenarios", "Provides different management scenarios based on user decisions", "Multiple data sets available", "Process can be applied at various locations", "Can run analysis for large and small scale study areas"]
-image: /images/page-tool15.1.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: EPA
 

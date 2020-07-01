@@ -105,7 +105,8 @@ searchTags <- data.frame(toolName=NA, toolLink=NA, tag=NA)
 searchSoftReqs <- data.frame(toolName=NA, toolLink=NA, softReqs=NA)
 searchGeoScope <- data.frame(toolName=NA, toolLink=NA, geoScope=NA)
 searchToolFunct <- data.frame(toolName=NA, toolLink=NA, toolFunct=NA)
-searchTopFilters <- data.frame(toolName=NA, toolLink=NA, topFilter=NA)
+searchTopFilters <- data.frame(toolName=NA, toolLink=NA, topFilter=NA, topFilterNam=NA,  subFilter=NA)
+#searchSubFilters <- data.frame(toolName=NA, toolLink=NA, subFilter=NA)
 
 pblapply(splitByToolID, generateToolPage, tempPage=templatePage, el=el, siteDir=toolsDir, updateContent=T)
 searchTags <- searchTags[-1,]
@@ -113,6 +114,7 @@ searchSoftReqs <- searchSoftReqs[-1,]
 searchGeoScope <- searchGeoScope[-1,]
 searchToolFunct <- searchToolFunct[-1,]
 searchTopFilters <- searchTopFilters[-1,]
+#searchSubFilters <- searchSubFilters[-1,]
 
 ##set up tool index file
 toolIndex <- gsub("TemplateIndex", "Tools", templateIndexPg)
@@ -166,10 +168,15 @@ toolFunData <- paste0('{', el, '"items":[', el, createRecs, el, ']', el, '}')
 writeFile <- paste0(discovDir, "searchToolFun.json")
 writeLines(toolFunData, file(writeFile))
 ##create the tool search object jscript for topic filter
-createRecs <- paste('{"topFilter":"', searchTopFilters$topFilter, '","name":"', searchTopFilters$toolName, '","link":"', searchTopFilters$toolLink, '"}', sep="", collapse=",\n")
-softReqsData <- paste0('{', el, '"items":[', el, createRecs, el, ']', el, '}')
+createRecs <- paste('{"topFilter":"', searchTopFilters$topFilterNam, '","name":"', searchTopFilters$toolName, '","link":"', searchTopFilters$toolLink, '"}', sep="", collapse=",\n")
+mainFiltData <- paste0('{', el, '"items":[', el, createRecs, el, ']', el, '}')
 writeFile <- paste0(discovDir, "searchTopFilter.json")
-writeLines(softReqsData, file(writeFile))
+writeLines(mainFiltData, file(writeFile))
+##create the tool search object jscript for sub-topic filter
+createRecs <- paste('{"subFilter":"', searchTopFilters$subFilter, '","name":"', searchTopFilters$toolName, '","link":"', searchTopFilters$toolLink, '"}', sep="", collapse=",\n")
+subFiltData <- paste0('{', el, '"items":[', el, createRecs, el, ']', el, '}')
+writeFile <- paste0(discovDir, "searchSubFilter.json")
+writeLines(subFiltData, file(writeFile))
 
 
 ##fill out the tool search page code
@@ -179,20 +186,25 @@ createTagBoxes <- paste('<label><input type="checkbox" aria-selected="false" cla
 templateSearchTemp <- gsub("<inputTags>", createTagBoxes, templateSearchTemp)
 ##software requirements
 uniqueReqs <- unique(searchSoftReqs$softReqs)
-createTagBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="reqChecks" value="', uniqueReqs, '">', uniqueReqs, '</label>', sep="", collapse="<br>\n")
-templateSearchTemp <- gsub("<inputSoftReq>", createTagBoxes, templateSearchTemp)
+createReqBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="reqChecks" value="', uniqueReqs, '">', uniqueReqs, '</label>', sep="", collapse="<br>\n")
+templateSearchTemp <- gsub("<inputSoftReq>", createReqBoxes, templateSearchTemp)
 ##geographic scope
 uniqueGeoScope <- unique(searchGeoScope$geoScope)
-createTagBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="geoChecks" value="', uniqueGeoScope, '">', uniqueGeoScope, '</label>', sep="", collapse="<br>\n")
-templateSearchTemp <- gsub("<inputGeoScp>", createTagBoxes, templateSearchTemp)
+createGeoBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="geoChecks" value="', uniqueGeoScope, '">', uniqueGeoScope, '</label>', sep="", collapse="<br>\n")
+templateSearchTemp <- gsub("<inputGeoScp>", createGeoBoxes, templateSearchTemp)
 ##tool function
 uniqueToolFunct <- unique(searchToolFunct$toolFunct)
-createTagBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="', uniqueToolFunct, '">', uniqueToolFunct, '</label>', sep="", collapse="<br>\n")
-templateSearchTemp <- gsub("<inputToolFun>", createTagBoxes, templateSearchTemp)
+createTFBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="', uniqueToolFunct, '">', uniqueToolFunct, '</label>', sep="", collapse="<br>\n")
+templateSearchTemp <- gsub("<inputToolFun>", createTFBoxes, templateSearchTemp)
 ##topic filter
-uniqueTopFilters <- unique(searchTopFilters$topFilter)
-createTagBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="', uniqueTopFilters, '">', uniqueTopFilters, '</label>', sep="", collapse="<br>\n")
-templateSearchTemp <- gsub("<inputTopFilter>", createTagBoxes, templateSearchTemp)
+uniqueTopFilters <- unique(searchTopFilters$topFilterNam)
+createTFiltBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="', uniqueTopFilters, '">', uniqueTopFilters, '</label>', sep="", collapse="<br>\n")
+templateSearchTemp <- gsub("<inputTopFilter>", createTFiltBoxes, templateSearchTemp)
+##sub-topic filter
+uniqueSubFilters <- unique(data.frame(topFilter=searchTopFilters$topFilter, subFilter=searchTopFilters$subFilter))
+createSFiltBoxes <- paste('<label class="sublabs-', uniqueSubFilters$topFilter, '"><input type="checkbox" aria-selected="false" class="subFiltChecks" value="', uniqueSubFilters$subFilter, '">', uniqueSubFilters$subFilter, '</label>', sep="", collapse="<br>\n")
+templateSearchTemp <- gsub("<inputSubFilter>", createSFiltBoxes, templateSearchTemp)
+
 writeFile <- paste0(toolSearchDir, "toolsearch.html")
 writeLines(templateSearchTemp, file(writeFile))
 

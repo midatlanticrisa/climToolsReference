@@ -1,11 +1,11 @@
 ---
 title: "My Environment"
 description: "a tool dashboard providing health and environmental quality assessments for the chosen locality"
-date: 2020-06-12T10:03:28-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use", "Provides links to supporting tools and resources", "Location specific maps and data"]
-image: /images/page-tool26.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: EPA
 

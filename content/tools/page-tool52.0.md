@@ -1,11 +1,11 @@
 ---
 title: "Riparian Restoration Decision Support Tool"
 description: "Guide restoration efforts in identifying high priority areas by generating different scenarios for riparian habitats in the Eastern U.S."
-date: 2020-06-12T10:10:11-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Allows user to search by address", "Allows user to define specified thresholds for analysis", "Tutorial and webinar overviewing the tool and its uses are available", "Focus of restoration is on developing climate resilience"]
-image: /images/page-tool52.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: Appalachian Landscape Conservation Cooperative, USFS, and University of Massachusetts
 

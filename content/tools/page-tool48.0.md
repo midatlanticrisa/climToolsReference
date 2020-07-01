@@ -1,11 +1,11 @@
 ---
 title: "Chesapeake Bay Interpretive Buoy System (CBIBS)"
 description: "Measures and records weather and water conditions within the Chesapeake Bay"
-date: 2020-06-12T10:09:36-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Data updated every 10 minutes", "Charts and tables for data analysis", "Extensive range of data parameters", "Tutorials available"]
-image: /images/page-tool48.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: NOAA
 

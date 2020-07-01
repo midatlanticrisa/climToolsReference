@@ -1,11 +1,11 @@
 ---
 title: "Virginia Estuarine and Coastal Observing System (VECOS)"
 description: "Provides access to water quality and meteorological data from a variety of monitoring programs conducted by the Chesapeake Bay National Estuarine Research Reserve (CBNERR) in Virginia"
-date: 2020-06-12T10:05:57-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Includes recent and historical water quality data", "Provides helpful tutorial and description of data sources", "Option to download raw data"]
-image: /images/page-tool37.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: VIMS
 

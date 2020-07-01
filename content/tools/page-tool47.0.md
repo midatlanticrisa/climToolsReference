@@ -1,11 +1,11 @@
 ---
 title: "Chesapeake Assessment Scenario Tool (CAST)"
 description: "CAST provides estimates of load reductions, allows users to understand which BMPs provide the greatest load reduction benefit, the extent to which these BMPs can be implemented, and the cost of these BMPs."
-date: 2020-06-12T10:09:26-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Estimates cost of BMP", "Optional user data input", "Tutorials Provided", "Charts and graphs available for download", "Compare multiple scenarios at once"]
-image: /images/page-tool47.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: CBP
 

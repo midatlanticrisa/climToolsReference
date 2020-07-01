@@ -1,11 +1,11 @@
 ---
 title: "NOAA State Climate Summaries"
 description: "Summaries for each state regarding historical climate change and future climate projections"
-date: 2020-06-12T10:01:29-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use", "Links to additional resources", "Available for every state in the US", "Aims for transparent data sources"]
-image: /images/page-tool14.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: NOAA_NCEI, and NCICS
 

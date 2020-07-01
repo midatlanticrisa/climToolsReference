@@ -414,14 +414,25 @@
         <div class="filtered-search-filters">
           <fieldset class>
             <fieldset class="singleRow">
-              <div class="header">
-                <h5>Tool Tags</h5>
-                <!--<button type="button">RESET</button>-->
-              </div>
-              <form id="tagSearch">
-                <label><input type="checkbox" aria-selected="false" id=tagTogAll value="Select All">Select All</label><br>
+            <div class="header">
+              <h5>Topic Filter</h5>
+              <!--<button type="button">RESET</button>-->
+            </div>
+              <form id="topFilterSearch">
+                <label><input type="checkbox" aria-selected="false" id=topfltTogAll value="Select All">Select All</label><br>
                 <hr>
-                <inputTags>
+                <inputTopFilter>
+              </form>
+            </fieldset>
+            <fieldset class="singleRow">
+            <div class="header">
+              <h5>Sub-topic Filter</h5>
+              <!--<button type="button">RESET</button>-->
+            </div>
+              <form id="subFilterSearch">
+                <label><input type="checkbox" aria-selected="false" id=subfltTogAll value="Select All">Select All</label><br>
+                <hr>
+                <inputSubFilter>
               </form>
             </fieldset>
             <fieldset class="singleRow">
@@ -458,14 +469,14 @@
             </form>
           </fieldset>
           <fieldset class="singleRow">
-          <div class="header">
-            <h5>Topic Filter</h5>
-            <!--<button type="button">RESET</button>-->
-          </div>
-            <form id="topFilterSearch">
-              <label><input type="checkbox" aria-selected="false" id=topfltTogAll value="Select All">Select All</label><br>
+            <div class="header">
+              <h5>Tool Tags</h5>
+              <!--<button type="button">RESET</button>-->
+            </div>
+            <form id="tagSearch">
+              <label><input type="checkbox" aria-selected="false" id=tagTogAll value="Select All">Select All</label><br>
               <hr>
-              <inputTopFilter>
+              <inputTags>
             </form>
           </fieldset>
         </fieldset>

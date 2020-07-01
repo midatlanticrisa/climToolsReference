@@ -1,11 +1,11 @@
 ---
 title: "i-Tree Design"
 description: "Users assess the current benefits of trees. Option to look at data for the current year, in 100 years, and then as combined benefits over the next 10 years."
-date: 2020-06-12T10:17:48-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Provides location-specific results", "Allows user to create specific scenarios", "Welcome guide/tutorials", "i-Tree YouTube channel dedicated to explaining how to use various tools"]
-image: /images/page-tool57.2.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of Municipal Arborists, International Society of Arboriculture, Casey Trees, and SUNY_College of Environmental Science and Forestry.
 

@@ -1,11 +1,11 @@
 ---
 title: "Virginia Flood Risk Information System (VFRIS)"
 description: "Interactive flood maps to determine if property is within a FEMA flood risk zone."
-date: 2020-06-12T10:02:01-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive map viewer with various flood zone layers", "Excellent welcome guide/tutorial", "Option to download data and reports", "Option to upload additional data, if available;"]
-image: /images/page-tool17.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: VIMS, CCRM, and VDCR
 

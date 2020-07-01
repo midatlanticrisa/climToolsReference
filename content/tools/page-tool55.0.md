@@ -1,11 +1,11 @@
 ---
 title: "USGS National Water Census Data Portal"
 description: "USGS National Water Census Data Portal"
-date: 2020-06-12T10:10:45-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: []
-image: /images/page-tool55.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: USGS
 

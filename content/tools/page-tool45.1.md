@@ -1,11 +1,11 @@
 ---
 title: "DC Department of Energy and Environment: Targeted Subwatersheds"
 description: "map of D.C. sewers and subwatersheds"
-date: 2020-06-12T10:08:35-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Downloadable data", "Ability to view different layers simultaneously"]
-image: /images/page-tool45.1.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: DCDOEE
 

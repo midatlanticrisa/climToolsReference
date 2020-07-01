@@ -1,11 +1,11 @@
 ---
 title: "Drought Management Database"
 description: "Resource database related to drought mitigation strategies"
-date: 2020-06-12T10:04:51-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use-interface", "Resources frequently updated", "Links to supporting information", "Option for user-submitted strategies"]
-image: /images/page-tool31.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: NDMC
 

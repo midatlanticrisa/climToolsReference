@@ -1,11 +1,11 @@
 ---
 title: "Delaware Bay Operational Forecast System (DBOFS)"
 description: "DBOFS provides real time information about water levels, wind, water temperature, salinity, and currents."
-date: 2020-06-12T09:56:16-0400
+date: 2020-06-25T15:24:15-0400
 pubtype: "Tool"
 featured: true
 tags: ["Updated frequently", "Additional data available upon request", "Captures real time data", "Able to download real-time data"]
-image: /images/page-tool3.2.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: NOAA, and Rutgers University_Regional Ocean Modeling System
 

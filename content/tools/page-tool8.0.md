@@ -1,11 +1,11 @@
 ---
 title: "Creating Resilient Water Utilities (CRWU)"
 description: "Support water utility practitioners in preparing for extreme weather events"
-date: 2020-06-12T09:59:18-0400
+date: 2020-06-25T15:24:15-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Can stay updated on tool developments through a mailing list", "Able to generate an area specific report", "Updated frequently", "Allows cross-community comparisons through case studies"]
-image: /images/page-tool8.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: EPA
 

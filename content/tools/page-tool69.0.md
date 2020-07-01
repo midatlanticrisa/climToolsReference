@@ -1,11 +1,11 @@
 ---
 title: "Flood Economics"
 description: "Provide case studies and data about flood mitigation projects and efforts across the US between 1996-2016"
-date: 2020-06-12T10:19:47-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Includes definitions of key terms", "Includes links to supporting resources"]
-image: /images/page-tool69.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: The Economist Intelligence Unit, and FEMA
 

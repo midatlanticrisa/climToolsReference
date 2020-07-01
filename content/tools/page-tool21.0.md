@@ -1,11 +1,11 @@
 ---
 title: "Wetbud: Wetland Water Budget Modeling Software"
 description: "Water budget projections for created and natural wetlands"
-date: 2020-06-12T10:02:43-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Multiple resources are provided on how to use the tool", "Data exports into excel efficiently", "Multiple users can access the same database at once"]
-image: /images/page-tool21.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: Wetland Studies and Solutions, Inc.
 

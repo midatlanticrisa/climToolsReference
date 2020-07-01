@@ -1,11 +1,11 @@
 ---
 title: "Eastern Virginia Coastal Resilience (ESVA Coastal Resilience)"
 description: "Decision support tool to assess coastal resilience in Eastern Virginia"
-date: 2020-06-12T10:00:20-0400
+date: 2020-06-25T15:24:15-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use", "Includes additional information/explanations for different variables", "Ability to compare climate change conditions side-by-side", "Thorough welcome guide/tutorial", "Aims for transparent data sources", "Able to export map into printable document or imbed into a website"]
-image: /images/page-tool10.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: NOAA, and TNC
 

@@ -1,7 +1,7 @@
 ---
 title: "Air Quality Forecast"
 description: "Report the current conditions and 2 day forecast of the Washington D.C. Air Quality"
-date: 2020-06-12T10:09:23-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, simple interface", "Clear graphics with supporting explanations", "Current conditions updated hourly", "Provides 2 day forecast", "Links to additional resources"]

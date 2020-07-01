@@ -1,11 +1,11 @@
 ---
 title: "Potomac Inundation Maps"
 description: "Real time data showing storm-based flood potential for the Potomac and Anacostia Rivers around the DC area"
-date: 2020-06-12T10:10:24-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Updated frequently", "Captures real time data ", "Data available for download in a variety of formats", "Can easily search for locality of interest", "Directs users to additional resources"]
-image: /images/page-tool53.1.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: DC Silver Jackets, NOAA_NWS, USACE, USGS, City of Alexandria, and DCDOEE
 

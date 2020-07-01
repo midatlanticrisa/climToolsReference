@@ -1,11 +1,11 @@
 ---
 title: "Climate Engine"
 description: "Web application that generates maps and graphs using climate data from remotely sensed source data"
-date: 2020-06-12T10:03:49-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Ability to visualize multiple climate change related variables at once", "Data frequently updated", "Provides supporting educational information and tutorials", "Able to download customized data without needing to access and download entire dataset", "Can share maps and graphs via specifically generated web links"]
-image: /images/page-tool28.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: Desert Research Institute, University of Idaho, and Google
 

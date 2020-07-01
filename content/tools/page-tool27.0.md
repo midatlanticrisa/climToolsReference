@@ -1,11 +1,11 @@
 ---
 title: "Climate Impact Map"
 description: "Interactive map showing past and future temperature based different climate models"
-date: 2020-06-12T10:03:38-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Interactive tool", "Option to export data", "Addresses uncertainty", "Detailed methodology"]
-image: /images/page-tool27.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: Climate Impact Lab
 

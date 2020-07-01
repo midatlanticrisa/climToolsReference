@@ -1,11 +1,11 @@
 ---
 title: "MARISA Climate Data Portal: Climate Data for the Mid-Atlantic Region"
 description: "climate data downloads"
-date: 2020-06-12T10:00:57-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Allows for comparison across locations", "Process can be applied at various specific locations", "Aims for transparent data sources"]
-image: /images/page-tool13.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: NOAA, and MARISA
 

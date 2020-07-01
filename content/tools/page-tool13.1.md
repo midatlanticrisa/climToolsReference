@@ -1,11 +1,11 @@
 ---
 title: "MARISA Climate Data Portal: Interactive Map for the MARISA Region"
 description: "interactive map with current climate data"
-date: 2020-06-12T10:01:05-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Interactive, easy-to-use interface", "Data frequently updated", "Works on mobile devices"]
-image: /images/page-tool13.1.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: NOAA, and MARISA
 

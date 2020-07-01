@@ -3,11 +3,11 @@ title: "OpenNSPECT"
 description: "*Map surface water runoff volumes, pollutants, and total sediment loads
 *Identify areas that might benefit from changes to proposed development strategies
 *Analyze land use change scenarios and impacts"
-date: 2020-06-12T10:23:04-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Provides training and input data", "Can be used in any area with available data"]
-image: /images/page-tool77.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: NOAA_Office for Coastal Management
 

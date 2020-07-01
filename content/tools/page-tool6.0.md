@@ -2,11 +2,11 @@
 title: "Maryland Coastal Atlas"
 description: "Create maps and graphs presenting coastal and ocean data in Maryland
 "
-date: 2020-06-12T09:57:00-0400
+date: 2020-06-25T15:24:15-0400
 pubtype: "Tool"
 featured: true
 tags: ["Allows user to create specific scenarios", "Users can upload additional data", "Includes a step-by-step tutorial", "Can export final maps and charts"]
-image: /images/page-tool6.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: MDNR
 

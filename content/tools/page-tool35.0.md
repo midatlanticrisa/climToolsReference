@@ -1,11 +1,11 @@
 ---
 title: "Annual United States Climate Stripes: Temperature and Precipitation"
 description: "artistic representation of Climate Change"
-date: 2020-06-12T10:05:38-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy to understand visualizations of climate change", "Links to supporting information"]
-image: /images/page-tool35.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: NCICS
 

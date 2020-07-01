@@ -1,11 +1,11 @@
 ---
 title: "Bay Footprint Calculator"
 description: "Calculates individual nitrogen contribution to the Chesapeake Bay."
-date: 2020-06-12T10:19:00-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Letter grade for individual nitrogen pollution", "Report with suggested solutions", "Easy-to-use, interactive interface", "Works on mobile devices", "Links to additional information"]
-image: /images/page-tool64.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: CBF, and UVA
 

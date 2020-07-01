@@ -6,7 +6,7 @@
     <description>Recent content in Updated frequently on Climate Tools</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 12 Jun 2020 10:10:24 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2020 15:24:16 -0400</lastBuildDate>
     
 	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/updated-frequently/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,16 +14,26 @@
     <item>
       <title>Potomac Inundation Maps</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool53.1/</link>
-      <pubDate>Fri, 12 Jun 2020 10:10:24 -0400</pubDate>
+      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool53.1/</guid>
       <description>Developed By: DC Silver Jackets, NOAA_NWS, USACE, USGS, City of Alexandria, and DCDOEE</description>
     </item>
     
     <item>
+      <title>Chesapeake Bay Operational Forecast System (CBOFS)</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool3.1/</link>
+      <pubDate>Thu, 25 Jun 2020 15:24:15 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool3.1/</guid>
+      <description>Developed By: NOAA
+Summary: The Chesapeake Bay Operational Forecast System (CBOFS) tool is a data viewer that provides real time forecasts of oceanographic conditions in the Chesapeake Bay.</description>
+    </item>
+    
+    <item>
       <title>Creating Resilient Water Utilities (CRWU)</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.0/</link>
-      <pubDate>Fri, 12 Jun 2020 09:59:18 -0400</pubDate>
+      <pubDate>Thu, 25 Jun 2020 15:24:15 -0400</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.0/</guid>
       <description>Developed By: EPA
@@ -33,21 +43,11 @@ Summary: The CRWU provides tools, training, and technical assistance for drinkin
     <item>
       <title>Delaware Bay Operational Forecast System (DBOFS)</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool3.2/</link>
-      <pubDate>Fri, 12 Jun 2020 09:56:16 -0400</pubDate>
+      <pubDate>Thu, 25 Jun 2020 15:24:15 -0400</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool3.2/</guid>
       <description>Developed By: NOAA, and Rutgers University_Regional Ocean Modeling System
 Summary: The Delaware Bay Operational Forecast System (DBOFS) tool is a data viewer that provides real time forecasts of oceanographic conditions in the Delaware Bay.</description>
-    </item>
-    
-    <item>
-      <title>Chesapeake Bay Operational Forecast System (CBOFS)</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool3.1/</link>
-      <pubDate>Fri, 12 Jun 2020 09:55:58 -0400</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool3.1/</guid>
-      <description>Developed By: NOAA
-Summary: The Chesapeake Bay Operational Forecast System (CBOFS) tool is a data viewer that provides real time forecasts of oceanographic conditions in the Chesapeake Bay.</description>
     </item>
     
   </channel>

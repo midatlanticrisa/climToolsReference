@@ -1,11 +1,11 @@
 ---
 title: "Sea Level Report Cards"
 description: "Illustrate trends and projected sea level rise"
-date: 2020-06-12T10:01:49-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Results are site-specific", "Can compare sea level across localities and regions", "Provides supporting educational information;"]
-image: /images/page-tool16.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: VIMS_CCRM
 

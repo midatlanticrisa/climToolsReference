@@ -1,11 +1,11 @@
 ---
 title: "USDA Plant Hardiness Zone Map"
 description: "National, regional, and state maps detailing plant hardiness zones"
-date: 2020-06-12T10:05:47-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Regionally specific", "Can easily search for location of interest", "Option to export maps"]
-image: /images/page-tool36.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: USDA
 

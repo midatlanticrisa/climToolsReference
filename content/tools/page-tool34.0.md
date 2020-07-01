@@ -1,11 +1,11 @@
 ---
 title: "Delaware Climate Projections Portal"
 description: "Climate projections for state of Delaware"
-date: 2020-06-12T10:05:29-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Site-specific results", "Provides projections for many climate indicators"]
-image: /images/page-tool34.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: DDNREC_Division of Energy & Climate
 

@@ -1,11 +1,11 @@
 ---
 title: "Shoreline Management Self-Guided Decision Tools"
 description: "Decision tree that provides shoreline management recommendations"
-date: 2020-06-12T10:02:14-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Can be applied to most shorelines", "Provides site-specific recommendations", "Provides instructions and definitions for non-experts", "Can be printed for in-field use;"]
-image: /images/page-tool18.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: VIMS_CCRM
 

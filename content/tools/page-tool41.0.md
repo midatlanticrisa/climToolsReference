@@ -1,11 +1,11 @@
 ---
 title: "Virginia Coastal Geospatial and Educational Mapping System (GEMS)"
 description: "Ongoing inventory of features from Virginia’s coastal ecosystems with each feature accompanied by supporting information"
-date: 2020-06-12T10:07:28-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Provides supporting metadata, descriptions, and resources for each data layer", "Mapping tool provides basic markup and searching features", "Synthesis of variety of coastal resource tools and data"]
-image: /images/page-tool41.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: VDEQ
 

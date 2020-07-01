@@ -1,11 +1,11 @@
 ---
 title: "CREAT Risk Assessment Application for Water Utilities"
 description: "Risk assessment application for water utilities"
-date: 2020-06-12T09:59:28-0400
+date: 2020-06-25T15:24:15-0400
 pubtype: "Tool"
 featured: true
 tags: ["Developed in accordance with best industry practices", "Results are site specific", "Allows user to create specific scenarios", "Process can be applied at various locations"]
-image: /images/page-tool8.1.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: EPA
 

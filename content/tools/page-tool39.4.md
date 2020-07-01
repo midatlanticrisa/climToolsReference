@@ -1,11 +1,11 @@
 ---
 title: "Climate Smart Farming (CSF) Winter Cover Crop Planting Scheduler"
 description: "Create charts demonstrating winter crop cover planting based on crop variety (rye, buckwheat, and mustard)."
-date: 2020-06-12T10:06:58-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Crop- and site-specific results"]
-image: /images/page-tool39.4.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: Cornell University_College of Agriculture and Life Sciences
 

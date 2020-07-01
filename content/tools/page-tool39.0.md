@@ -1,11 +1,11 @@
 ---
 title: "Climate Smart Farming"
 description: "Climate Smart Farming"
-date: 2020-06-12T10:06:33-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: []
-image: /images/page-tool39.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: Cornell University_College of Agriculture and Life Sciences
 

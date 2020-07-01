@@ -1,11 +1,11 @@
 ---
 title: "National Beach Nourishment Database"
 description: "Demonstrates location of past and current beach nourishment projects, number of nourishment episodes in one area, date of project completion, cost, and volume of the project."
-date: 2020-06-12T10:18:48-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Provides project cost information", "Comprehensive list of projects", "Searchable by State"]
-image: /images/page-tool63.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: American Shore & Beach Protection Agency, Regional Sediment Management Program, and APTIM
 

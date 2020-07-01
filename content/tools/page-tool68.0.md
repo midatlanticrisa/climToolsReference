@@ -1,11 +1,11 @@
 ---
 title: "Nature's Network Prioritization Tool"
 description: "Modeling tool for conservation areas of high priority"
-date: 2020-06-12T10:19:37-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Ability to compare locations", "Flexible process can be applied to develop multiple models", "Welcome guide/tutorials", "Extensive datasets provide for wide range of analysis"]
-image: /images/page-tool68.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: Nature's Network
 

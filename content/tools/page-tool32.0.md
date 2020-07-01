@@ -1,11 +1,11 @@
 ---
 title: "Eyes On The Bay: Main site"
 description: "Website providing Maryland water quality data and information"
-date: 2020-06-12T10:05:04-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Data frequently updated", "Site-specific results", "Links to supporting information ", "Includes explanations of key processes"]
-image: /images/page-tool32.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: MDNR
 

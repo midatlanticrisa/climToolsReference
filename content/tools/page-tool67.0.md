@@ -1,11 +1,11 @@
 ---
 title: "Future Urban Climates"
 description: "Interactive map illustrating climate migration of US cities in the next 60 years"
-date: 2020-06-12T10:19:27-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Locality specific", "Easy-to-use, interactive interface", "Provides multiple scenarios", "Links to supporting information"]
-image: /images/page-tool67.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: UMCES
 

@@ -1,11 +1,11 @@
 ---
 title: "Shoreline Assessment Mapper"
 description: "An interactive map that displays a variety of data describing shoreline type and condition in coastal VA"
-date: 2020-06-12T10:02:24-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interactive map", "Can easily search for or zoom to area of interest", "Wide variety of layers specific to shoreline assessment", "Excellent documentation of data sources"]
-image: /images/page-tool19.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: VIMS_CCRM
 

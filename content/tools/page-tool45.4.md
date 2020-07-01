@@ -1,11 +1,11 @@
 ---
 title: "DC Department of Energy & Environment: Green Infrastructure Practices in the District"
 description: "Interactive map with filtered layers that highlights existing best management practice projects and provides the known specifications of projects"
-date: 2020-06-12T10:09:05-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Ability to view different layers", "Mobile access", "Site specific data", "Ability to search by location", "Downloadable data"]
-image: /images/page-tool45.4.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: DCDOEE
 

@@ -1,11 +1,11 @@
 ---
 title: "USGS National Water Census Data Portal: Water Budget"
 description: "A visualization of local water supply and demand, with water use and availability statistics summarized by HUC and by county."
-date: 2020-06-12T10:12:56-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Wide range of statistics that can be calculated and compared across watersheds", "Multiple options to export data"]
-image: /images/page-tool55.1.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: USGS
 

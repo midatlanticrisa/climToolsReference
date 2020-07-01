@@ -1,11 +1,11 @@
 ---
 title: "Know Your Zone"
 description: "Allows residents of coastal Virginia to identify their evacuation zone in preparation for severe weather conditions during annual hurricane season"
-date: 2020-06-12T10:00:34-0400
+date: 2020-06-25T15:24:15-0400
 pubtype: "Tool"
 featured: true
 tags: ["Able to search by address", "Easy-to-use, interactive map", "Provides supporting educational material"]
-image: /images/page-tool11.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: VDEM
 

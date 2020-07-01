@@ -1,11 +1,11 @@
 ---
 title: "Hampton Roads Resilience Projects Dashboard"
 description: "Distribution, type, and features of resiliency projects in Hampton Roads"
-date: 2020-06-12T09:55:38-0400
+date: 2020-06-25T15:24:15-0400
 pubtype: "Tool"
 featured: true
 tags: ["Can filter projects by locality, type, and/or status", "Project specific information available", "Allows sorting by project type", "Allows user to search by address", "Frequently updated"]
-image: /images/page-tool2.2.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: HRPDC, HRSD, and HRTPO
 

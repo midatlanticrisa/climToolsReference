@@ -1,11 +1,11 @@
 ---
 title: "FEMA Data Visualizations of Disaster Declarations and Grants"
 description: "Visualize FEMA data regarding natural disaster occurrence, flood frequency, and housing assistance at the national, state, county, and tribal level."
-date: 2020-06-12T10:10:36-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Data available at the county level", "Aims for transparent data sources", "Easy-to-use", "Directs users to additional resources", "Includes U.S. territories and some cities"]
-image: /images/page-tool54.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: FEMA
 

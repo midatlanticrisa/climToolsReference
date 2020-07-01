@@ -6,7 +6,7 @@
     <description>Recent content in Aims for transparent data sources on Climate Tools</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 12 Jun 2020 10:10:36 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2020 15:24:16 -0400</lastBuildDate>
     
 	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/aims-for-transparent-data-sources/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>FEMA Data Visualizations of Disaster Declarations and Grants</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool54.0/</link>
-      <pubDate>Fri, 12 Jun 2020 10:10:36 -0400</pubDate>
+      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool54.0/</guid>
       <description>Developed By: FEMA
@@ -22,9 +22,19 @@ Summary: FEMA’s Data Visualization tools allow users to explore when and where
     </item>
     
     <item>
+      <title>MARISA Climate Data Portal: Climate Data for the Mid-Atlantic Region</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool13.0/</link>
+      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool13.0/</guid>
+      <description>Developed By: NOAA, and MARISA
+Summary: The MARISA Climate Data Portal is a data download center that provides climate data from a variety of sources for the Chesapeake Bay region.</description>
+    </item>
+    
+    <item>
       <title>Mid-Atlantic Ocean Data Tool</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool40.0/</link>
-      <pubDate>Fri, 12 Jun 2020 10:07:17 -0400</pubDate>
+      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool40.0/</guid>
       <description>Developed By: MARCO
@@ -34,7 +44,7 @@ Summary: The Mid-Atlantic Ocean Data Portal is a resource center consisting of a
     <item>
       <title>NOAA State Climate Summaries</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool14.0/</link>
-      <pubDate>Fri, 12 Jun 2020 10:01:29 -0400</pubDate>
+      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool14.0/</guid>
       <description>Developed By: NOAA_NCEI, and NCICS
@@ -42,19 +52,9 @@ Summary: The State Climate Summaries consist of brief statewide reports, describ
     </item>
     
     <item>
-      <title>MARISA Climate Data Portal: Climate Data for the Mid-Atlantic Region</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool13.0/</link>
-      <pubDate>Fri, 12 Jun 2020 10:00:57 -0400</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool13.0/</guid>
-      <description>Developed By: NOAA, and MARISA
-Summary: The MARISA Climate Data Portal is a data download center that provides climate data from a variety of sources for the Chesapeake Bay region.</description>
-    </item>
-    
-    <item>
       <title>Eastern Virginia Coastal Resilience (ESVA Coastal Resilience)</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool10.0/</link>
-      <pubDate>Fri, 12 Jun 2020 10:00:20 -0400</pubDate>
+      <pubDate>Thu, 25 Jun 2020 15:24:15 -0400</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool10.0/</guid>
       <description>Developed By: NOAA, and TNC

@@ -1,11 +1,11 @@
 ---
 title: "Drought-Applied Climate Information System (ACIS)"
 description: "Interactive chart to view precipitation / temperature data for stations across the U.S."
-date: 2020-06-12T10:04:30-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Single site-specific and multi station results available", "Allows user to search by city, state, or zip code", "Option to download graphs and/or data"]
-image: /images/page-tool29.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: NOAA_RCC
 

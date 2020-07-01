@@ -1,11 +1,11 @@
 ---
 title: "Chesapeake Bay Program DataHub"
 description: "Datasets related to water quality, living resources, pollution, and fluorescence"
-date: 2020-06-12T10:05:18-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Data updated daily/monthly depending on dataset", "Able to query and download specific attributes of a dataset"]
-image: /images/page-tool33.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: CBP
 

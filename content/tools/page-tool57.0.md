@@ -1,11 +1,11 @@
 ---
 title: "i-Tree"
 description: "i-Tree"
-date: 2020-06-12T10:17:29-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: []
-image: /images/page-tool57.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of Municipal Arborists, International Society of Arboriculture, Casey Trees, and SUNY_College of Environmental Science and Forestry.
 

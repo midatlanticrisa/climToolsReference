@@ -1,11 +1,11 @@
 ---
 title: "Drought Risk Atlas"
 description: "View drought indices to assess national drought risk on map or for specific weather stations of United States"
-date: 2020-06-12T10:04:37-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Provides multiple indices and timesteps", "Ability to compare multiple indices", "Long historical record", "Helpful tutorial", "Can easily search for area of interest"]
-image: /images/page-tool30.0.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: NDMC, NOAA_NWS, and NOAA_RCC
 

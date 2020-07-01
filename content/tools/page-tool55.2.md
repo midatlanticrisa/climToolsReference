@@ -1,11 +1,11 @@
 ---
 title: "USGS National Water Census Data Portal: Streamflow"
 description: "Streamflow data, trends, and analyses from USGS gaging stations."
-date: 2020-06-12T10:15:08-0400
+date: 2020-06-25T15:24:16-0400
 pubtype: "Tool"
 featured: true
 tags: ["Wide range of statistics", "Data easily exported", "Site-specific results"]
-image: /images/page-tool55.2.png
+image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
 ---
 Developed By: USGS
 
