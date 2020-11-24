@@ -45,15 +45,17 @@ formatStarStrings <- function(str){
 # }
 ##########################################################################
 ##########################################################################
-generateToolPage <- function(toolRec, tempPage, el, siteDir, updateContent=T){
+generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateContent=T){
   #################
-  #toolRec <- splitByToolID[[2]]
-  #toolRec <- splitByToolID[[9]]
-  #toolRec <- splitByToolID[[36]]
+  #toolRec <- splitByToolID[[5]]
+  #toolRec <- splitByToolID[[7]]
+  #toolRec <- splitByToolID[[12]]
+  #toolRec <- splitByToolID[[45]]
   #toolRec <- splitByToolID[[100]]
   #tempPage <- templatePage
   #el <- "\n"
   #siteDir <- toolsDir
+  #scTab <- stcntyTab
   #################
   ##check the developers, to make sure the directories are available and are set up properly
   if(is.na(toolRec$Developer)==T){
@@ -431,25 +433,130 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, updateContent=T){
     #  toolAud <- paste0("**Target Audience:** ", "Not Available", el)
     #}
     
+    
+    #toolRec <- splitByToolID[[12]]
+    #toolRec <- splitByToolID[[45]]
+    #toolRec <- splitByToolID[[5]]
+    #toolRec <- splitByToolID[[21]]
+    #toolRec <- splitByToolID[[35]]
+    #toolRec <- splitByToolID[[70]]
+    #toolRec <- splitByToolID[[77]]
+    #toolRec <- splitByToolID[[24]]
+    #toolRec <- splitByToolID[[8]]
     ##tool scope
     require(openintro)
-    if(is.na(toolRec$`Geographic Scope-Scope`)==F & toolRec$`Geographic Scope-Scope`=="State"){
-      toolScope <- paste0("__**Geographic Coverage**__", el, paste("- ", abbr2state(strsplit(toolRec$`Geographic Scope-State`, "; ")[[1]]), collapse=el), el)
-      toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, geoScope="State")
-    }else if(is.na(toolRec$`Geographic Scope-Scope`)==F & toolRec$`Geographic Scope-Scope`=="Locality"){ 
-      toolScope <- paste0("__**Geographic Coverage**__", el, paste("- ", strsplit(toolRec$`Geographic Scope-Locality`, "; ")[[1]], collapse=el), el)
-      toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, geoScope="Locality")
-    }else if(is.na(toolRec$`Geographic Scope-Scope`)==F & toolRec$`Geographic Scope-Scope`=="National"){
+    if(toolRec$`Geographic Scope-Scope`=="Locality" & is.na(toolRec$`Geographic Scope-Locality`)==T){
+      subTab <- scTab[scTab$state=="VA",]
+      whichCity <- grep(" City", subTab$cntyName)
+      subTab$cntyName[-whichCity] <- paste0(subTab$cntyName[-whichCity], " County")
+      toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState="Virginia", toolLoc=subTab$cntyName, coastal=toolRec$`Geographic Scope-Coastal`)
+      toolScope <- paste0("__**Geographic Coverage**__", el, "- All Virginian Cities and Counties", el)
+    }else if(toolRec$`Geographic Scope-Scope`=="Locality" & is.na(toolRec$`Geographic Scope-Locality`)==F){ 
+      
+      if(toolRec$`Geographic Scope-Locality`=="all watershed cities/counties" | toolRec$`Geographic Scope-Locality`=="Chesapeake Bay"){
+        subTab <- scTab[scTab$state %in% c("VA","MD"),]
+        subTab <- subTab[subTab$coastal=="Y",]
+        subTab$state[subTab$state=="MD"] <- "Maryland"
+        subTab$state[subTab$state=="VA"] <- "Virginia"
+        whichCity <- grep(" City", subTab$cntyName)
+        subTab$cntyName[-whichCity] <- paste0(subTab$cntyName[-whichCity], " County")
+        toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState=subTab$state, toolLoc=subTab$cntyName, coastal="x")
+        toolScope <- paste0("__**Geographic Coverage**__", el, "- All Cities and Counties around the Chesapeake Bay", el)
+      }else if(toolRec$`Tool ID`=="23.0"){
+        locsNoState <- c("City of Buffalo", "City of Lancaster", "Richmond City", "City of Gaithersburg", "City of Blacksburg")
+        findState <- c("New York", "Pennsylvania", "Virginia", "Maryland", "Virginia")
+        toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState=findState, toolLoc=locsNoState, coastal=toolRec$`Geographic Scope-Coastal`)
+        toolScope <- paste0("__**Geographic Coverage**__", el, "- Buffalo, NY; Lancaster, PA; Richmond City, VA; Gaithersburg, MD; Blaskburg, VA", el)
+      }else if(toolRec$`Tool ID`=="46.0"){
+        locsNoState <- c("District of Columbia", "City of Takoma Park", "Prince George's County", "Community of Beltsville", "City of Rockville", "Montgomery County",
+                         "Charles County", "Frederick County", "Calvert County", "Alexandria City", "Arlington County", "Prince William County", 
+                         "Loudoun County", "Fairfax County")
+        findState <- c("DC", "Maryland", "Maryland", "Maryland", "Maryland", "Maryland", "Maryland", "Maryland", "Maryland", "Virginia", "Virginia", "Virginia", "Virginia", "Virginia")
+        toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState=findState, toolLoc=locsNoState, coastal=toolRec$`Geographic Scope-Coastal`)
+        toolScope <- paste0("__**Geographic Coverage**__", el, "- DC; Takoma Park, MD; Prince George's County, MD; Beltsville, MD; Rockville, MD; Montgomery County, MD; Charles County, MD; Frederick County, MD; Calvert County, MD; Alexandria, VA; Arlington County, VA; Prince William County, VA; Loudoun County, VA; Farifax County, VA", el)
+      }else if(toolRec$`Tool ID`=="53.1"){
+        locsNoState <- c("District of Columbia", "Arlington County", "Alexandria City", "Fort Foote", "Fairfax County", "Prince George County")
+        findState <- c("DC", "Virginia", "Virginia", "Maryland", "Virginia", "Virginia")
+        toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState=findState, toolLoc=locsNoState, coastal=toolRec$`Geographic Scope-Coastal`)
+        toolScope <- paste0("__**Geographic Coverage**__", el, "- DC; Arlington County, VA; Alexandria, VA; Fort Foote, MD; Fairfax County, VA; Prince George County, VA", el)
+      }else{
+        collectLocs <- strsplit(toolRec$`Geographic Scope-Locality`, "; ")[[1]]
+        ##isolate the location
+        locsNoState <- sapply(strsplit(collectLocs, ", "), "[[", 1)
+        whichCnts <- grep(" County", locsNoState)
+        whichIsl <- grep(" Island$", locsNoState)
+        whichDC <- grep("Washington, DC", collectLocs)
+        locsNoState[-c(whichCnts,whichIsl,whichDC)] <- paste0(locsNoState[-c(whichCnts,whichIsl,whichDC)], " City")
+        ##isolate the state
+        findState <- sapply(strsplit(collectLocs, ", "), "[[", 2)
+        toolScope <- paste0("__**Geographic Coverage**__", el, "- ", paste(locsNoState, ", ", findState, sep="", collapse="; "), el)
+        findState[grep("VA", findState)] <- "Virginia"
+        findState[grep("PA", findState)] <- "Pennsylvania"
+        findState[grep("MD", findState)] <- "Maryland"
+        findState[grep("NY", findState)] <- "New York"
+        findState[grep("TN", findState)] <- "Tennessee"
+        ##
+        toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState=findState, toolLoc=locsNoState, coastal=toolRec$`Geographic Scope-Coastal`)
+      }
+    }else if(toolRec$`Geographic Scope-Scope`=="State"){
+      collectSts <- strsplit(toolRec$`Geographic Scope-State`, "; ")[[1]]
+      
+      locsNoState <- NA
+      if(is.na(toolRec$`Geographic Scope-Coastal`)==F & toolRec$`Geographic Scope-Coastal`=="x"){
+        subTab <- scTab[scTab$state %in% collectSts,]
+        subTab <- subTab[subTab$coastal=="Y",]
+        whichCity <- grep(" City", subTab$cntyName)
+        subTab$cntyName[-whichCity] <- paste0(subTab$cntyName[-whichCity], " County")
+        locsNoState <- subTab$cntyName
+        collectSts <- subTab$state
+      }
+      
+      collectSts[grep("VA", collectSts)] <- "Virginia"
+      collectSts[grep("WV", collectSts)] <- "West Virginia"
+      collectSts[grep("PA", collectSts)] <- "Pennsylvania"
+      collectSts[grep("MD", collectSts)] <- "Maryland"
+      collectSts[grep("NY", collectSts)] <- "New York"
+      collectSts[grep("TN", collectSts)] <- "Tennessee"
+      collectSts[grep("DE", collectSts)] <- "Delaware"
+      collectSts[grep("NJ", collectSts)] <- "New Jersey"
+      collectSts[grep("NC", collectSts)] <- "North Carolina"
+      collectSts[grep("IN", collectSts)] <- "Indiana"
+      collectSts[grep("IL", collectSts)] <- "Illinois"
+      collectSts[grep("WI", collectSts)] <- "Wisconsin"
+      collectSts[grep("MI", collectSts)] <- "Michigan"
+      collectSts[grep("MN", collectSts)] <- "Minnesota"
+      collectSts[grep("NE", collectSts)] <- "Nebraska"
+      collectSts[grep("CO", collectSts)] <- "Colorado"
+      collectSts[grep("MT", collectSts)] <- "Montana"
+      collectSts[grep("MO", collectSts)] <- "Missouri"
+      collectSts[grep("KS", collectSts)] <- "Kansas"
+      collectSts[grep("NM", collectSts)] <- "New Mexico"
+      collectSts[grep("IA", collectSts)] <- "Iowa"
+      collectSts[grep("AR", collectSts)] <- "Arkansas"
+      collectSts[grep("OR", collectSts)] <- "Oregon"
+      collectSts[grep("SD", collectSts)] <- "South Dakota"
+      collectSts[grep("TN", collectSts)] <- "Tennessee"
+      collectSts[grep("CA", collectSts)] <- "California"
+      collectSts[grep("CT", collectSts)] <- "Connecticut"
+      collectSts[grep("RI", collectSts)] <- "Rhode Island"
+      collectSts[grep("MA", collectSts)] <- "Massachusetts"
+      collectSts[grep("NH", collectSts)] <- "New Hampshire"
+      collectSts[grep("ME", collectSts)] <- "Maine"
+      collectSts[grep("VT", collectSts)] <- "Vermont"
+      collectSts[grep("KY", collectSts)] <- "Kentucky"
+      
+      toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState=collectSts, toolLoc=locsNoState, coastal=toolRec$`Geographic Scope-Coastal`)
+      toolScope <- paste0("__**Geographic Coverage**__", el, "- ", paste(unique(collectSts), collapse="; "), el)
+    }else if(toolRec$`Geographic Scope-Scope`=="National"){
+      toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState="All", toolLoc="All", coastal=toolRec$`Geographic Scope-Coastal`)
       toolScope <- paste0("__**Geographic Coverage**__", el, "- Contiguous United States", el)
-      toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, geoScope="National")
-    }else if(is.na(toolRec$`Geographic Scope-Scope`)==F & toolRec$`Geographic Scope-Scope`=="General"){
-      toolScope <- paste0("__**Geographic Coverage**__", el, "- Applicable Anywhere", el)
-      toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, geoScope="Anywhere")
     }else{
-      toolScope <- paste0("__**Geographic Coverage**__", el, "Not Available", el)
-      toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, geoScope="Not Available")
+      toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState="Gen", toolLoc="Gen", coastal=toolRec$`Geographic Scope-Coastal`)
+      toolScope <- paste0("__**Geographic Coverage**__", el, "- Applicable Anywhere", el)
     }
     searchGeoScope <<- rbind.data.frame(searchGeoScope, toolGeo)
+    
+    
     
     ##tool strengths
     if(is.na(toolRec$`Description-Strengths`)==F){
@@ -468,20 +575,8 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, updateContent=T){
     
     ##tool URL
     if(is.na(toolRec$URL)==F){
-      toolURL <- paste0('<a href="', toolRec$URL, '" target="_blank">Get This Tool</a>', el)
-      #toolURL <- paste0('[Get This Tool](', toolRec$URL, '){:target="_blank"}', el)
-      ##collect a screenshot of the tool, and store it to be included in the website
-      #if(length(grep(".xls", toolRec$URL))==0){
-      #  testGetShot <- try(webshot(toolRec$URL, paste0(imageDir, toolIDtxt, ".png"), cliprect="viewport", vwidth=674, vheight=457, delay=1.5), silent=T)
-      #  if(class(testGetShot) %in% 'try-error'){
-      #    
-      #  }else{
-      #    webshot(toolRec$URL, paste0(imageDir, toolIDtxt, ".png"), cliprect="viewport", vwidth=674, vheight=457, delay=1.5)
-      #    #print(toolPage)
-      #    toolPage <- gsub("https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg", paste0("/images/", toolIDtxt, ".png"), toolPage)
-      #    #print(toolPage)
-      #  }
-      #}
+      #toolURL <- paste0('<a href="', toolRec$URL, '" target="_blank">Get This Tool</a>', el)  ##embedded link in Get This Tool
+      toolURL <- paste0('__**Get This Tool:**__ ', toolRec$URL, el)
     }else{
       #toolURL <- paste0("[Get This Tool] ", "Not Available")
       toolURL <- paste0("", el)

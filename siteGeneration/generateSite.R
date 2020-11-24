@@ -19,10 +19,11 @@ toolSearchDir <- paste0(baseDir, "climToolsReference/themes/soho/layouts/page/")
 source(paste0(dataDir, "siteGeneratingFunctions.R"))
 
 #toolInventoryName <- "Inventory_2020-01-21_v2.xlsx"
-toolInventoryName <- "Tool Inventory - 5.1.20.xlsx"
+toolInventoryName <- "Tool Inventory - 10.23.20.xlsx"
 templatePageName <- "pageTemplate.md"
 templateIndex <- "templateIndex.md"
 searchCodePage <- "searchTemplate.html"
+stcntyFile <- paste0(dataDir, "MARISAstateFIPS.csv")
 
 ##line break character
 el <- "\n"
@@ -37,6 +38,7 @@ sheetNames <- excel_sheets(toolInventoryFile)
 
 ##read in data
 toolInventory <- lapply(sheetNames, read_excel, path=toolInventoryFile, col_names=F)
+stcntyTab <- read.csv(stcntyFile)
 
 ##inventory, cleaning headers to be useful
 inventory <- toolInventory[[1]]
@@ -44,26 +46,24 @@ catNames <- as.character(inventory[1,])
 baseNames <- as.character(inventory[2,])
 ##for now, hard coded
 baseNames[6:10] <- paste(catNames[6], baseNames[6:10], sep="-")
-baseNames[11:14] <- paste(catNames[11], baseNames[11:14], sep="-")
-baseNames[15:23] <- paste(catNames[15], baseNames[15], as.character(inventory[3,][15:23]), sep="-")
-baseNames[24:27] <- paste(catNames[15], baseNames[24], as.character(inventory[3,][24:27]), sep="-")
-baseNames[28] <- paste(catNames[15], baseNames[28], sep="-")
-baseNames[29:33] <- paste(catNames[29], baseNames[29:33], sep="-")
-baseNames[34:35] <- paste(catNames[34], baseNames[34:35], sep="-")
-baseNames[36:38] <- paste(catNames[36], baseNames[36:38], sep="-")
-baseNames[44] <- paste(catNames[36], baseNames[44], sep="-")
-baseNames[45:49] <- paste(catNames[45], baseNames[45:49], sep="-")
-baseNames[50:52] <- paste(catNames[50], baseNames[50:52], sep="-")
-baseNames[53:59] <- paste(catNames[53], baseNames[53], as.character(inventory[3,][53:59]), sep="-")
-baseNames[60:65] <- paste(catNames[53], baseNames[60], as.character(inventory[3,][60:65]), sep="-")
-baseNames[66:72] <- paste(catNames[53], baseNames[66], as.character(inventory[3,][66:72]), sep="-")
-baseNames[73:75] <- paste(catNames[53], baseNames[73], as.character(inventory[3,][73:75]), sep="-")
-baseNames[76:79] <- paste(catNames[53], baseNames[76], as.character(inventory[3,][76:79]), sep="-")
-baseNames[80:83] <- paste(catNames[53], baseNames[80], as.character(inventory[3,][80:83]), sep="-")
-baseNames[84:88] <- paste(catNames[53], baseNames[84], as.character(inventory[3,][84:88]), sep="-")
-baseNames[89:91] <- paste(catNames[53], baseNames[89], as.character(inventory[3,][89:91]), sep="-")
-baseNames[92:93] <- paste(catNames[92], baseNames[92:93], sep="-")
-baseNames[94:98] <- paste(catNames[92], baseNames[94:98], sep="-")
+baseNames[11:15] <- paste(catNames[11], baseNames[11:15], sep="-")
+baseNames[16:24] <- paste(catNames[16], baseNames[16], as.character(inventory[3,][16:24]), sep="-")
+baseNames[25:28] <- paste(catNames[16], baseNames[25], as.character(inventory[3,][25:28]), sep="-")
+baseNames[29] <- paste(catNames[16], baseNames[29], sep="-")
+baseNames[30:34] <- paste(catNames[30], baseNames[30:34], sep="-")
+baseNames[35:36] <- paste(catNames[35], baseNames[35:36], sep="-")
+baseNames[37:39] <- paste(catNames[37], baseNames[37:39], sep="-")
+baseNames[45] <- paste(catNames[37], baseNames[45], sep="-")
+baseNames[46:50] <- paste(catNames[46], baseNames[46:50], sep="-")
+baseNames[51:53] <- paste(catNames[51], baseNames[51:53], sep="-")
+baseNames[54:60] <- paste(catNames[54], baseNames[54], as.character(inventory[3,][54:58]), sep="-")
+baseNames[59:64] <- paste(catNames[54], baseNames[59], as.character(inventory[3,][59:64]), sep="-")
+baseNames[65:70] <- paste(catNames[54], baseNames[65], as.character(inventory[3,][65:70]), sep="-")
+baseNames[71:78] <- paste(catNames[54], baseNames[71], as.character(inventory[3,][71:78]), sep="-")
+baseNames[79:82] <- paste(catNames[54], baseNames[79], as.character(inventory[3,][79:82]), sep="-")
+baseNames[83:90] <- paste(catNames[54], baseNames[83], as.character(inventory[3,][83:90]), sep="-")
+baseNames[93:94] <- paste(catNames[93], baseNames[93:94], sep="-")
+baseNames[95:99] <- paste(catNames[93], baseNames[95:99], sep="-")
 
 colnames(inventory) <- baseNames
 inventory <- inventory[which(inventory$`Tool ID`=="1"):nrow(inventory),]
@@ -103,12 +103,15 @@ if(dir.exists(imageDir)==F){
 
 searchTags <- data.frame(toolName=NA, toolLink=NA, tag=NA)
 searchSoftReqs <- data.frame(toolName=NA, toolLink=NA, softReqs=NA)
-searchGeoScope <- data.frame(toolName=NA, toolLink=NA, geoScope=NA)
+searchGeoScope <- data.frame(toolName=NA, toolLink=NA, toolState=NA, toolLoc=NA, coastal=NA)
 searchToolFunct <- data.frame(toolName=NA, toolLink=NA, toolFunct=NA)
 searchTopFilters <- data.frame(toolName=NA, toolLink=NA, topFilter=NA, topFilterNam=NA,  subFilter=NA)
 #searchSubFilters <- data.frame(toolName=NA, toolLink=NA, subFilter=NA)
 
-pblapply(splitByToolID, generateToolPage, tempPage=templatePage, el=el, siteDir=toolsDir, updateContent=T)
+#ttt <- data.frame(table(invValsOnly$`Geographic Scope-Scope`, useNA="ifany"))
+#hhh <- invValsOnly[invValsOnly$`Geographic Scope-Scope`=="National",]
+
+pblapply(splitByToolID, generateToolPage, tempPage=templatePage, el=el, siteDir=toolsDir, scTab=stcntyTab, updateContent=T)
 searchTags <- searchTags[-1,]
 searchSoftReqs <- searchSoftReqs[-1,]
 searchGeoScope <- searchGeoScope[-1,]
@@ -125,26 +128,26 @@ writeLines(toolIndex, file(writeFile))
 
 
 ##site index file
-siteIndex <- gsub("TemplateIndex", "Home", templateIndexPg)
-siteIndex <- gsub("\nlink: NA\nimage: NA\ndescription: NA\nweight: 10", "", siteIndex)
-siteIndex <- gsub("\n  weight: 0.5", "", siteIndex)
-siteIndex <- gsub("0.6", "1.0\n\noutputs:\n- html\n- rss\n- json", siteIndex)
+#siteIndex <- gsub("TemplateIndex", "Home", templateIndexPg)
+#siteIndex <- gsub("\nlink: NA\nimage: NA\ndescription: NA\nweight: 10", "", siteIndex)
+#siteIndex <- gsub("\n  weight: 0.5", "", siteIndex)
+#siteIndex <- gsub("0.6", "1.0\n\noutputs:\n- html\n- rss\n- json", siteIndex)
 
 ##fill the about file
-abSection1Title <- "### Climate Tools"
-ab1Text <- paste0("The changing climate of our world is one of the largest concerns of any generation. Due to the scope of climate change, and its affects on human societies, it would be almost impossible to collect, analyze, and communicate the results of an analysis without some helpful tools. However, not every tool is the same, and selecting the correct tool is a critical decision.", el)
+#abSection1Title <- "### Climate Tools"
+#ab1Text <- paste0("The changing climate of our world is one of the largest concerns of any generation. Due to the scope of climate change, and its affects on human societies, it would be almost impossible to collect, analyze, and communicate the results of an analysis without some helpful tools. However, not every tool is the same, and selecting the correct tool is a critical decision.", el)
 
-abSection2Title  <- "### A Tool for Tools"
-ab2Text <- paste0("This site is a service for you to be able to view a summary of the available climate tools, and compare the various tools in one similar format. Our goal is to be the advisor on which climate tools would best suit the goals of your project.", el)
+#abSection2Title  <- "### A Tool for Tools"
+#ab2Text <- paste0("This site is a service for you to be able to view a summary of the available climate tools, and compare the various tools in one similar format. Our goal is to be the advisor on which climate tools would best suit the goals of your project.", el)
 
-abSection3Title  <- "### EESI at Penn State, and the people involved"
-ab3Text <- paste0("This is who we are. We do cool stuff!")
+#abSection3Title  <- "### EESI at Penn State, and the people involved"
+#ab3Text <- paste0("This is who we are. We do cool stuff!")
 
 
-siteIndex <- paste(siteIndex, abSection1Title, ab1Text, abSection2Title, ab2Text, abSection3Title, ab3Text, sep=el)
-writeFile <- paste0(siteDir, "_index.md")
-#writeFile <- paste0(homeDir, "_index.md")
-writeLines(siteIndex, file(writeFile))
+#siteIndex <- paste(siteIndex, abSection1Title, ab1Text, abSection2Title, ab2Text, abSection3Title, ab3Text, sep=el)
+#writeFile <- paste0(siteDir, "_index.md")
+##writeFile <- paste0(homeDir, "_index.md")
+#writeLines(siteIndex, file(writeFile))
 
 
 ##create the tool search object jscript for tags
@@ -179,34 +182,35 @@ writeFile <- paste0(discovDir, "searchSubFilter.json")
 writeLines(subFiltData, file(writeFile))
 
 
-##fill out the tool search page code
-##tags
-uniqueTags <- unique(searchTags$tag)
-createTagBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="tagChecks" value="', uniqueTags, '">', uniqueTags, '</label>', sep="", collapse="<br>\n")
-templateSearchTemp <- gsub("<inputTags>", createTagBoxes, templateSearchTemp)
-##software requirements
-uniqueReqs <- unique(searchSoftReqs$softReqs)
-createReqBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="reqChecks" value="', uniqueReqs, '">', uniqueReqs, '</label>', sep="", collapse="<br>\n")
-templateSearchTemp <- gsub("<inputSoftReq>", createReqBoxes, templateSearchTemp)
-##geographic scope
-uniqueGeoScope <- unique(searchGeoScope$geoScope)
-createGeoBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="geoChecks" value="', uniqueGeoScope, '">', uniqueGeoScope, '</label>', sep="", collapse="<br>\n")
-templateSearchTemp <- gsub("<inputGeoScp>", createGeoBoxes, templateSearchTemp)
-##tool function
-uniqueToolFunct <- unique(searchToolFunct$toolFunct)
-createTFBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="', uniqueToolFunct, '">', uniqueToolFunct, '</label>', sep="", collapse="<br>\n")
-templateSearchTemp <- gsub("<inputToolFun>", createTFBoxes, templateSearchTemp)
-##topic filter
-uniqueTopFilters <- unique(searchTopFilters$topFilterNam)
-createTFiltBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="', uniqueTopFilters, '">', uniqueTopFilters, '</label>', sep="", collapse="<br>\n")
-templateSearchTemp <- gsub("<inputTopFilter>", createTFiltBoxes, templateSearchTemp)
-##sub-topic filter
-uniqueSubFilters <- unique(data.frame(topFilter=searchTopFilters$topFilter, subFilter=searchTopFilters$subFilter))
-createSFiltBoxes <- paste('<label class="sublabs-', uniqueSubFilters$topFilter, '"><input type="checkbox" aria-selected="false" class="subFiltChecks" value="', uniqueSubFilters$subFilter, '">', uniqueSubFilters$subFilter, '</label>', sep="", collapse="<br>\n")
-templateSearchTemp <- gsub("<inputSubFilter>", createSFiltBoxes, templateSearchTemp)
+# ##fill out the tool search page code
+# ##tags
+# uniqueTags <- unique(searchTags$tag)
+# createTagBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="tagChecks" value="', uniqueTags, '">', uniqueTags, '</label>', sep="", collapse="<br>\n")
+# templateSearchTemp <- gsub("<inputTags>", createTagBoxes, templateSearchTemp)
+# ##software requirements
+# uniqueReqs <- unique(searchSoftReqs$softReqs)
+# createReqBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="reqChecks" value="', uniqueReqs, '">', uniqueReqs, '</label>', sep="", collapse="<br>\n")
+# templateSearchTemp <- gsub("<inputSoftReq>", createReqBoxes, templateSearchTemp)
+# ##geographic scope
+# uniqueGeoScope <- unique(searchGeoScope$geoScope)
+# createGeoBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="geoChecks" value="', uniqueGeoScope, '">', uniqueGeoScope, '</label>', sep="", collapse="<br>\n")
+# templateSearchTemp <- gsub("<inputGeoScp>", createGeoBoxes, templateSearchTemp)
+# ##tool function
+# uniqueToolFunct <- unique(searchToolFunct$toolFunct)
+# createTFBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="', uniqueToolFunct, '">', uniqueToolFunct, '</label>', sep="", collapse="<br>\n")
+# templateSearchTemp <- gsub("<inputToolFun>", createTFBoxes, templateSearchTemp)
+# ##topic filter
+# uniqueTopFilters <- unique(searchTopFilters$topFilterNam)
+# createTFiltBoxes <- paste('<label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="', uniqueTopFilters, '">', uniqueTopFilters, '</label>', sep="", collapse="<br>\n")
+# templateSearchTemp <- gsub("<inputTopFilter>", createTFiltBoxes, templateSearchTemp)
+# ##sub-topic filter
+# uniqueSubFilters <- unique(data.frame(topFilter=searchTopFilters$topFilter, subFilter=searchTopFilters$subFilter))
+# createSFiltBoxes <- paste('<label class="sublabs-', uniqueSubFilters$topFilter, '"><input type="checkbox" aria-selected="false" class="subFiltChecks" value="', uniqueSubFilters$subFilter, '">', uniqueSubFilters$subFilter, '</label>', sep="", collapse="<br>\n")
+# templateSearchTemp <- gsub("<inputSubFilter>", createSFiltBoxes, templateSearchTemp)
 
-writeFile <- paste0(toolSearchDir, "toolsearch.html")
-writeLines(templateSearchTemp, file(writeFile))
+##for when finally ready to make fully automatic
+#writeFile <- paste0(toolSearchDir, "toolsearch.html")
+#writeLines(templateSearchTemp, file(writeFile))
 
 
 
