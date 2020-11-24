@@ -290,7 +290,6 @@
         //////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////
         switchSubTopics = function(){
-          alert('in switch function')
 
           var chkFilters = [];
           var chkTopFilter = $("#topFilterSearch :checked")
@@ -303,7 +302,6 @@
             $('.subFiltChecks-None').css('opacity', '1');
             $('.subLabs-None').css('opacity', '1');
           } else {
-            alert("not checked")
             $(".subFiltChecks-None").prop('checked', false);
             $('.subFiltChecks-None').attr('disabled', true);
             $('.subFiltChecks-None').css('opacity', '.95');
@@ -311,14 +309,14 @@
           }
 
           if(jQuery.inArray('Weather and Climate', chkFilters) >= 0){
+            $('.subFiltChecks-clim').attr('disabled', false);
+            $('.subFiltChecks-clim').css('opacity', '1');
+            $('.subLabs-clim').css('opacity', '1');
+          } else {
             $(".subFiltChecks-clim").prop('checked', false);
             $('.subFiltChecks-clim').attr('disabled', true);
             $('.subFiltChecks-clim').css('opacity', '.95');
             $('.subLabs-clim').css('opacity', '.2');
-          } else {
-            $('.subFiltChecks-clim').attr('disabled', false);
-            $('.subFiltChecks-clim').css('opacity', '1');
-            $('.subLabs-clim').css('opacity', '1');
           }
 
           if(jQuery.inArray('Ecosystems', chkFilters) >= 0){
@@ -333,39 +331,37 @@
           }
 
           if(jQuery.inArray('Agriculture / Built Environment', chkFilters) >= 0){
+            $('.subFiltChecks-blt').attr('disabled', false);
+            $('.subFiltChecks-blt').css('opacity', '1');
+            $('.subLabs-blt').css('opacity', '1');
+          } else {
             $(".subFiltChecks-blt").prop('checked', false);
             $('.subFiltChecks-blt').attr('disabled', true);
             $('.subFiltChecks-blt').css('opacity', '.95');
             $('.subLabs-blt').css('opacity', '.2');
-          } else {
-            $('.subFiltChecks-blt').attr('disabled', false);
-            $('.subFiltChecks-blt').css('opacity', '1');
-            $('.subLabs-blt').css('opacity', '1');
           }
 
           if(jQuery.inArray('Society', chkFilters) >= 0){
+            $('.subFiltChecks-soc').attr('disabled', false);
+            $('.subFiltChecks-soc').css('opacity', '1');
+            $('.subLabs-soc').css('opacity', '1');
+          } else {
             $(".subFiltChecks-soc").prop('checked', false);
             $('.subFiltChecks-soc').attr('disabled', true);
             $('.subFiltChecks-soc').css('opacity', '.95');
             $('.subLabs-soc').css('opacity', '.2');
-          } else {
-            $('.subFiltChecks-soc').attr('disabled', false);
-            $('.subFiltChecks-soc').css('opacity', '1');
-            $('.subLabs-soc').css('opacity', '1');
           }
 
           if(jQuery.inArray('Water / Flooding', chkFilters) >= 0){
+            $('.subFiltChecks-fld').attr('disabled', false);
+            $('.subFiltChecks-fld').css('opacity', '1');
+            $('.subLabs-fld').css('opacity', '1');
+          } else {
             $(".subFiltChecks-fld").prop('checked', false);
             $('.subFiltChecks-fld').attr('disabled', true);
             $('.subFiltChecks-fld').css('opacity', '.95');
             $('.subLabs-fld').css('opacity', '.2');
-          } else {
-            $('.subFiltChecks-fld').attr('disabled', false);
-            $('.subFiltChecks-fld').css('opacity', '1');
-            $('.subLabs-fld').css('opacity', '1');
           }
-
-          alert('switched filters')
         }
         //////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////
@@ -701,7 +697,6 @@
             defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData);
 
             switchSubTopics();
-            alert('post settin subtopics')
 
             //rules for tags select all
             $('#tagTogAll').change(function(){
