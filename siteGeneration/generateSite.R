@@ -56,7 +56,7 @@ baseNames[37:39] <- paste(catNames[37], baseNames[37:39], sep="-")
 baseNames[45] <- paste(catNames[37], baseNames[45], sep="-")
 baseNames[46:50] <- paste(catNames[46], baseNames[46:50], sep="-")
 baseNames[51:53] <- paste(catNames[51], baseNames[51:53], sep="-")
-baseNames[54:60] <- paste(catNames[54], baseNames[54], as.character(inventory[3,][54:58]), sep="-")
+baseNames[54:58] <- paste(catNames[54], baseNames[54], as.character(inventory[3,][54:58]), sep="-")
 baseNames[59:64] <- paste(catNames[54], baseNames[59], as.character(inventory[3,][59:64]), sep="-")
 baseNames[65:70] <- paste(catNames[54], baseNames[65], as.character(inventory[3,][65:70]), sep="-")
 baseNames[71:78] <- paste(catNames[54], baseNames[71], as.character(inventory[3,][71:78]), sep="-")
@@ -72,7 +72,8 @@ invValsOnly <- inventory[which(is.na(inventory$`Group ID`)==F),]
 ##needed with tool id with new file, may not be needed in future versions
 invValsOnly$`Tool ID` <- as.character(format(round(as.numeric(invValsOnly$`Tool ID`),1)),nsmall=1)
 
-invValsOnly <- invValsOnly[,c(1:38, 44:98)]
+#hhh <- invValsOnly[,c(1:39, 45:99)]
+invValsOnly <- invValsOnly[,c(1:39, 45:99)]
 
 ##read in the template files to be editted
 findTempFile <- list.files(dataDir, templatePageName, recursive=T, full.names=T)
@@ -119,6 +120,13 @@ searchToolFunct <- searchToolFunct[-1,]
 searchTopFilters <- searchTopFilters[-1,]
 #searchSubFilters <- searchSubFilters[-1,]
 
+searchGeoScope$coastal[is.na(searchGeoScope$coastal)==T] <- 0
+searchGeoScope$coastal[searchGeoScope$coastal=="x"] <- 1
+searchGeoScope$coastal <- as.numeric(searchGeoScope$coastal)
+
+
+
+
 ##set up tool index file
 toolIndex <- gsub("TemplateIndex", "Tools", templateIndexPg)
 toolIndex <- paste0(toolIndex, el, el, "A collection of articles, presentations or talks, most likely on stuff and stuff.")
@@ -151,25 +159,45 @@ writeLines(toolIndex, file(writeFile))
 
 
 ##create the tool search object jscript for tags
-createRecs <- paste('{"tag":"', searchTags$tag, '","name":"', searchTags$toolName, '","link":"', searchTags$toolLink, '"}', sep="", collapse=",\n")
-tagData <- paste0('{', el, '"items":[', el, createRecs, el, ']', el, '}')
-writeFile <- paste0(discovDir, "searchTags.json")
-writeLines(tagData, file(writeFile))
+#createRecs <- paste('{"tag":"', searchTags$tag, '","name":"', searchTags$toolName, '","link":"', searchTags$toolLink, '"}', sep="", collapse=",\n")
+#tagData <- paste0('{', el, '"items":[', el, createRecs, el, ']', el, '}')
+#writeFile <- paste0(discovDir, "searchTags.json")
+#writeLines(tagData, file(writeFile))
+##########################################################################
 ##create the tool search object jscript for software requirements
 createRecs <- paste('{"softReq":"', searchSoftReqs$softReqs, '","name":"', searchSoftReqs$toolName, '","link":"', searchSoftReqs$toolLink, '"}', sep="", collapse=",\n")
 softReqsData <- paste0('{', el, '"items":[', el, createRecs, el, ']', el, '}')
 writeFile <- paste0(discovDir, "searchSoft.json")
 writeLines(softReqsData, file(writeFile))
+##########################################################################
 ##create the tool search object jscript for geographic scope
-createRecs <- paste('{"geoScope":"', searchGeoScope$geoScope, '","name":"', searchGeoScope$toolName, '","link":"', searchGeoScope$toolLink, '"}', sep="", collapse=",\n")
+##state
+createRecs <- paste('{"geoScopeST":"', searchGeoScope$toolState, '","name":"', searchGeoScope$toolName, '","link":"', searchGeoScope$toolLink, '"}', sep="", collapse=",\n")
 geoScopeData <- paste0('{', el, '"items":[', el, createRecs, el, ']', el, '}')
-writeFile <- paste0(discovDir, "searchGeoScope.json")
+writeFile <- paste0(discovDir, "searchGeoScope_state.json")
 writeLines(geoScopeData, file(writeFile))
+##county
+createRecs <- paste('{"geoScopeCNTY":"', searchGeoScope$toolLoc, '","name":"', searchGeoScope$toolName, '","link":"', searchGeoScope$toolLink, '"}', sep="", collapse=",\n")
+geoScopeData <- paste0('{', el, '"items":[', el, createRecs, el, ']', el, '}')
+writeFile <- paste0(discovDir, "searchGeoScope_county.json")
+writeLines(geoScopeData, file(writeFile))
+##coastal
+#createRecs <- paste('{"geoScopeCoast":"', searchGeoScope$coastal, '","name":"', searchGeoScope$toolName, '","link":"', searchGeoScope$toolLink, '"}', sep="", collapse=",\n")
+fff <- cbind.data.frame(searchGeoScope$coastal, searchGeoScope$toolName, searchGeoScope$toolLink)
+ggg <- unique(fff)
+createRecs <- paste('{"geoScopeCoast":"', ggg$`searchGeoScope$coastal`, '","name":"', ggg$`searchGeoScope$toolName`, '","link":"', ggg$`searchGeoScope$toolLink`, '"}', sep="", collapse=",\n")
+geoScopeData <- paste0('{', el, '"items":[', el, createRecs, el, ']', el, '}')
+writeFile <- paste0(discovDir, "searchGeoScope_coastal.json")
+writeLines(geoScopeData, file(writeFile))
+
+
+##########################################################################
 ##create the tool search object jscript for tool function
 createRecs <- paste('{"toolFun":"', searchToolFunct$toolFunct, '","name":"', searchToolFunct$toolName, '","link":"', searchToolFunct$toolLink, '"}', sep="", collapse=",\n")
 toolFunData <- paste0('{', el, '"items":[', el, createRecs, el, ']', el, '}')
 writeFile <- paste0(discovDir, "searchToolFun.json")
 writeLines(toolFunData, file(writeFile))
+##########################################################################
 ##create the tool search object jscript for topic filter
 createRecs <- paste('{"topFilter":"', searchTopFilters$topFilterNam, '","name":"', searchTopFilters$toolName, '","link":"', searchTopFilters$toolLink, '"}', sep="", collapse=",\n")
 mainFiltData <- paste0('{', el, '"items":[', el, createRecs, el, ']', el, '}')

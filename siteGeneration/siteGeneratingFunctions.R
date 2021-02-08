@@ -47,10 +47,13 @@ formatStarStrings <- function(str){
 ##########################################################################
 generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateContent=T){
   #################
+  #toolRec <- splitByToolID[[2]]
+  #toolRec <- splitByToolID[[4]]
   #toolRec <- splitByToolID[[5]]
   #toolRec <- splitByToolID[[7]]
   #toolRec <- splitByToolID[[12]]
   #toolRec <- splitByToolID[[45]]
+  #toolRec <- splitByToolID[[64]]
   #toolRec <- splitByToolID[[100]]
   #tempPage <- templatePage
   #el <- "\n"
@@ -94,7 +97,7 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
     
     ##extract software requirements, for search terms on site
     if(is.na(toolRec$`Software Requirements-software`)==F){
-      softReqs <- strsplit(toolRec$`Software Requirements-software`, "; |;  ")[[1]]
+      softReqs <- strsplit(toolRec$`Software Requirements-software`, "; |;  |\r\n")[[1]]
       toolSoftReqs <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, softReqs=softReqs)
     }else{
       toolSoftReqs <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, softReqs="None")
@@ -149,40 +152,8 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
       toolPurposes <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolFunct="None")
     }
     searchToolFunct <<- rbind.data.frame(searchToolFunct, toolPurposes)
-
-    ##topic filters - Main filter
-    #toolFilters <- toolRec[grep("Topic Filters-Main Topics-", names(toolRec))]
-    #toolFilters <- toolFilters[which(is.na(toolFilters)==F)]
-    #filterVars <- sapply(strsplit(names(toolFilters), "Topic Filters-Main Topics-"), "[[", 2)
-    #if(length(filterVars)>0){
-    #  if("clim" %in% filterVars){
-    #    filterVars[which(filterVars=="clim")] <- "Weather and Climate"
-    #  }
-    #  if("eco" %in% filterVars){
-    #    filterVars[which(filterVars=="eco")] <- "Ecosystem"
-    #  }
-    #  if("agr" %in% filterVars){
-    #    filterVars[which(filterVars=="agr")] <- "Agriculture"
-    #  }
-    #  if("built" %in% filterVars){
-    #    filterVars[which(filterVars=="built")] <- "Built Environment"
-    #  }
-    #  if("soc" %in% filterVars){
-    #    filterVars[which(filterVars=="soc")] <- "Society"
-    #  }
-    #  if("fld" %in% filterVars){
-    #    filterVars[which(filterVars=="fld")] <- "Flooding"
-    #  }
-    #  if("wtr" %in% filterVars){
-    #    filterVars[which(filterVars=="wtr")] <- "Water"
-    #  }
-    #  toolFilters <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, topFilter=filterVars)
-    #}else{
-    #  toolFilters <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, topFilter="None")
-    #}
-    #searchTopFilters <<- rbind.data.frame(searchTopFilters, toolFilters)
     
-    ##topic filters - sub-filters
+    ##topic filters - both main and sub-filters
     toolSubFilts <- vector(mode="character")
     climFilters <- toolRec[grep("Topic Filters-Climate-", names(toolRec))]
     climFilters <- climFilters[which(is.na(climFilters)==F)]
@@ -194,33 +165,42 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
     if(length(ecoFilters)>0){
       toolSubFilts <- c(toolSubFilts, sapply(strsplit(names(ecoFilters), "Topic Filters-Ecosystems-"), "[[", 2))
     }
-    agFilters <- toolRec[grep("Topic Filters-Agriculture-", names(toolRec))]
-    agFilters <- agFilters[which(is.na(agFilters)==F)]
-    if(length(agFilters)>0){
-      toolSubFilts <- c(toolSubFilts, sapply(strsplit(names(agFilters), "Topic Filters-Agriculture-"), "[[", 2))
-    }
-    builtFilters <- toolRec[grep("Topic Filters-Built Environment-", names(toolRec))]
+    #agFilters <- toolRec[grep("Topic Filters-Agriculture-", names(toolRec))]
+    #agFilters <- agFilters[which(is.na(agFilters)==F)]
+    #if(length(agFilters)>0){
+    #  toolSubFilts <- c(toolSubFilts, sapply(strsplit(names(agFilters), "Topic Filters-Agriculture-"), "[[", 2))
+    #}
+    builtFilters <- toolRec[grep("Topic Filters-Agriculture / Built Environment-", names(toolRec))]
     builtFilters <- builtFilters[which(is.na(builtFilters)==F)]
     if(length(builtFilters)>0){
-      toolSubFilts <- c(toolSubFilts, sapply(strsplit(names(builtFilters), "Topic Filters-Built Environment-"), "[[", 2))
+      toolSubFilts <- c(toolSubFilts, sapply(strsplit(names(builtFilters), "Topic Filters-Agriculture / Built Environment-"), "[[", 2))
     }
     socFilters <- toolRec[grep("Topic Filters-Society-", names(toolRec))]
     socFilters <- socFilters[which(is.na(socFilters)==F)]
     if(length(socFilters)>0){
       toolSubFilts <- c(toolSubFilts, sapply(strsplit(names(socFilters), "Topic Filters-Society-"), "[[", 2))
     }
-    floodFilters <- toolRec[grep("Topic Filters-Flooding-", names(toolRec))]
-    floodFilters <- floodFilters[which(is.na(floodFilters)==F)]
-    if(length(floodFilters)>0){
-      toolSubFilts <- c(toolSubFilts, sapply(strsplit(names(floodFilters), "Topic Filters-Flooding-"), "[[", 2))
-    }
-    waterFilters <- toolRec[grep("Topic Filters-Water-", names(toolRec))]
+    #floodFilters <- toolRec[grep("Topic Filters-Flooding-", names(toolRec))]
+    #floodFilters <- floodFilters[which(is.na(floodFilters)==F)]
+    #if(length(floodFilters)>0){
+    #  toolSubFilts <- c(toolSubFilts, sapply(strsplit(names(floodFilters), "Topic Filters-Flooding-"), "[[", 2))
+    #}
+    waterFilters <- toolRec[grep("Topic Filters-Water / Flooding-", names(toolRec))]
     waterFilters <- waterFilters[which(is.na(waterFilters)==F)]
     if(length(waterFilters)>0){
-      toolSubFilts <- c(toolSubFilts, sapply(strsplit(names(waterFilters), "Topic Filters-Water-"), "[[", 2))
+      toolSubFilts <- c(toolSubFilts, sapply(strsplit(names(waterFilters), "Topic Filters-Water / Flooding-"), "[[", 2))
     }
+    
+    ##remove errosion as a category
+    if("ersn" %in% toolSubFilts){
+      toolSubFilts <- toolSubFilts[-grep("ersn", toolSubFilts)]
+    }
+    
+    ##set up for output
     toolFilts <- toolSubFilts
     toolFiltsName <- toolSubFilts
+    
+    
     
     if(length(toolSubFilts)>0){
       if("crbn" %in% toolSubFilts){
@@ -443,7 +423,7 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
     #toolRec <- splitByToolID[[77]]
     #toolRec <- splitByToolID[[24]]
     #toolRec <- splitByToolID[[8]]
-    ##tool scope
+    ##tool geographic scope
     require(openintro)
     if(toolRec$`Geographic Scope-Scope`=="Locality" & is.na(toolRec$`Geographic Scope-Locality`)==T){
       subTab <- scTab[scTab$state=="VA",]
@@ -467,6 +447,11 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
         findState <- c("New York", "Pennsylvania", "Virginia", "Maryland", "Virginia")
         toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState=findState, toolLoc=locsNoState, coastal=toolRec$`Geographic Scope-Coastal`)
         toolScope <- paste0("__**Geographic Coverage**__", el, "- Buffalo, NY; Lancaster, PA; Richmond City, VA; Gaithersburg, MD; Blaskburg, VA", el)
+      }else if(sapply(strsplit(toolRec$`Tool ID`, "[.]"),"[[",1)=="45"){
+        locsNoState <- "District of Columbia"
+        findState <- "DC"
+        toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState=findState, toolLoc=locsNoState, coastal=toolRec$`Geographic Scope-Coastal`)
+        toolScope <- paste0("__**Geographic Coverage**__", el, "- DC", el)
       }else if(toolRec$`Tool ID`=="46.0"){
         locsNoState <- c("District of Columbia", "City of Takoma Park", "Prince George's County", "Community of Beltsville", "City of Rockville", "Montgomery County",
                          "Charles County", "Frederick County", "Calvert County", "Alexandria City", "Arlington County", "Prince William County", 

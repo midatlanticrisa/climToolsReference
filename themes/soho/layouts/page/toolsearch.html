@@ -12,16 +12,22 @@
   <link rel="stylesheet" href="./multiselect/jquery.multiselect.css">
   <script>
       $(document).ready(function() {
-        alert('in script')
+        //alert('in script')
         //set variables
         var showData = $('#outputList');
-        var holdTagSearch = [];
         var holdSoftReqSearch = []; //searchSoftReq
-        var holdGeoSearch = [];  // searchGeo
+        var holdGeoSearch_coast = [];  // searchGeo
+        var holdGeoSearch_cnty = [];  // searchGeo
+        var holdGeoSearch_state = [];  // searchGeo
         var holdToolFunSearch = [];  //searchToolFun
         var holdTopFilSearch = [];  //searchTopFil
         var holdTopSubSearch = [];  //searchSubFilter
 
+        //////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////
+        const unique = (value, index, self) => {
+          return self.indexOf(value) === index
+        }
         //////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////
         function addTool(name, link){
@@ -40,232 +46,107 @@
         }
         //////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////
-        //run through all of the variables to select tools
-        function selectTools(inTags, tagDat, inSR, reqDat, inGeo, geoDat, inFunct, tFunDat, inFilts, topFilDat, inSubFilts, topSubFilDat){
-          var fullResults = [];
-          var inTools = [];
-
-          //tool topic filters
-          if(inFilts.length > 0){
-            var items = topFilDat.items.map(function (item){
-              if(jQuery.inArray(item.topFilter, inFilts) >= 0){
-                if(jQuery.inArray(item.name, inTools) == -1){
-                  inTools.push(item.name);
-                  var tool = new addTool(item.name, item.link);
-                  fullResults.push(tool)
-                }
-              }
-            });
+        //from https://www.positronx.io/chekc-if-value-exists-array-javascript-jquery/
+        function findValueInArray(stArr,val,cntyArr){
+          var res = [];
+          for(var i=0; i<stArr.length; i++){
+            var arrVal = stArr[i];
+            if(arrVal == val){
+              res.push(cntyArr[i]);
+            }
           }
 
-          //tool topic subfilters
-          if(inSubFilts.length>0 && fullResults.length>0){
-            $.each(fullResults, function(tool) {
-              var toolName = this.name;
-              var keepTool = 0;
-              var toolReqs = [];
-              var items = topSubFilDat.items.map(function (item){
-                if(item.name == toolName){
-                  toolReqs.push(item.subFilter)
-                }
-              });
-              for (i=0; i<=toolReqs.length; i++) {
-                if(jQuery.inArray(toolReqs[i], inSubFilts) >= 0){
-                  keepTool = 1;
-                }
-              }
-              if(keepTool==0){
-                var whichRemove = jQuery.inArray(toolName, inTools);
-                inTools.splice(whichRemove, 1);
-                fullResults.splice(whichRemove, 1);
-              }
-            });
-          }else if(inSubFilts.length>0 && fullResults.length==0){
-            var items = topSubFilDat.items.map(function (item){
-              if(jQuery.inArray(item.subFilter, inSubFilts) >= 0){
-                if(jQuery.inArray(item.name, inTools) == -1){
-                  inTools.push(item.name);
-                  var tool = new addTool(item.name, item.link);
-                  fullResults.push(tool)
-                }
-              }
-            });
-          }
-
-          //tool software requirements
-          if(inSR.length>0 && fullResults.length>0){
-            $.each(fullResults, function(tool) {
-              var toolName = this.name;
-              var keepTool = 0;
-              var toolReqs = [];
-              var items = reqDat.items.map(function (item){
-                if(item.name == toolName){
-                  toolReqs.push(item.softReq)
-                }
-              });
-
-              //do not know why this section does not work
-              //$.each(toolReqs, function(req) {
-              //  var reqName = this;
-              //  alert(jQuery.inArray(this, inSR))
-              //  alert(jQuery.inArray(reqName, inSR))
-              //});
-
-              for (i=0; i<=toolReqs.length; i++) {
-                if(jQuery.inArray(toolReqs[i], inSR) >= 0){
-                  keepTool = 1;
-                }
-              }
-              if(keepTool==0){
-                var whichRemove = jQuery.inArray(toolName, inTools);
-                inTools.splice(whichRemove, 1);
-                fullResults.splice(whichRemove, 1);
-              }
-            });
-          }else if(inSR.length>0 && fullResults.length==0){
-            var items = reqDat.items.map(function (item){
-              if(jQuery.inArray(item.softReq, inSR) >= 0){
-                if(jQuery.inArray(item.name, inTools) == -1){
-                  inTools.push(item.name);
-                  var tool = new addTool(item.name, item.link);
-                  fullResults.push(tool)
-                }
-              }
-            });
-          }
-
-          //tool geography
-          if(inGeo.length>0 && fullResults.length>0){
-            $.each(fullResults, function(tool) {
-              var toolName = this.name;
-              var keepTool = 0;
-              var toolReqs = [];
-              var items = geoDat.items.map(function (item){
-                if(item.name == toolName){
-                  toolReqs.push(item.geoScope)
-                }
-              });
-              for (i=0; i<=toolReqs.length; i++) {
-                if(jQuery.inArray(toolReqs[i], inGeo) >= 0){
-                  keepTool = 1;
-                }
-              }
-              if(keepTool==0){
-                var whichRemove = jQuery.inArray(toolName, inTools);
-                inTools.splice(whichRemove, 1);
-                fullResults.splice(whichRemove, 1);
-              }
-            });
-          }else if(inGeo.length>0 && fullResults.length==0){
-            var items = geoDat.items.map(function (item){
-              if(jQuery.inArray(item.geoScope, inGeo) >= 0){
-                if(jQuery.inArray(item.name, inTools) == -1){
-                  inTools.push(item.name);
-                  var tool = new addTool(item.name, item.link);
-                  fullResults.push(tool)
-                }
-              }
-            });
-          }
-
-          //tool Function
-          if(inFunct.length>0 && fullResults.length>0){
-            $.each(fullResults, function(tool) {
-              var toolName = this.name;
-              var keepTool = 0;
-              var toolReqs = [];
-              var items = tFunDat.items.map(function (item){
-                if(item.name == toolName){
-                  toolReqs.push(item.toolFun)
-                }
-              });
-
-              for (i=0; i<=toolReqs.length; i++) {
-                if(jQuery.inArray(toolReqs[i], inFunct) >= 0){
-                  keepTool = 1;
-                }
-              }
-
-              if(keepTool==0){
-                var whichRemove = jQuery.inArray(toolName, inTools);
-                inTools.splice(whichRemove, 1);
-                fullResults.splice(whichRemove, 1);
-              }
-
-            });
-          }else if(inFunct.length>0 && fullResults.length==0){
-            var items = tFunDat.items.map(function (item){
-              if(jQuery.inArray(item.toolFun, inFunct) >= 0){
-                if(jQuery.inArray(item.name, inTools) == -1){
-                  inTools.push(item.name);
-                  var tool = new addTool(item.name, item.link);
-                  fullResults.push(tool)
-                }
-              }
-            });
-          }
-
-          //tags
-          if(inTags.length>0 && fullResults.length>0){
-            $.each(fullResults, function(tool) {
-              var toolName = this.name;
-              var keepTool = 0;
-              var toolReqs = [];
-              var items = tagDat.items.map(function (item){
-                if(item.name == toolName){
-                  toolReqs.push(item.tag)
-                }
-              });
-              for (i=0; i<=toolReqs.length; i++) {
-                if(jQuery.inArray(toolReqs[i], inTags) >= 0){
-                  keepTool = 1;
-                }
-              }
-              if(keepTool==0){
-                var whichRemove = jQuery.inArray(toolName, inTools);
-                inTools.splice(whichRemove, 1);
-                fullResults.splice(whichRemove, 1);
-              }
-            });
-          }else if(inTags.length>0 && fullResults.length==0){
-            var items = tagDat.items.map(function (item){
-             if(jQuery.inArray(item.tag, inTags) >= 0){
-                if(jQuery.inArray(item.name, inTools) == -1){
-                  inTools.push(item.name);
-                  var tool = new addTool(item.name, item.link);
-                  fullResults.push(tool)
-                }
-              }
-            });
-          }
-
-
-          //return(fullResults)
-          if(fullResults.length > 0){
-            $.each(fullResults, function(tool) {
-              newTool = '<li><a href="' + '/tools/' + this.link +'/index.html">' + this.name + '</a></li>';
-              showData.append(newTool);
-            });
-          }
+          //if(res.length == 0){
+          //  res.push(-1)
+          //}
+          return res;
         }
         //////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////
-        function defualtSetup(tagD, reqD, geoD, funD, filtD, sFiltD){
-          showData.empty();
-          var check = [];
-          $('#topFilterSearch :not(:checked)').each(function(){
-            check.push($(this).val());
+        collectGeoData = function(){
+          var cntySelect = [];
+          var stateSelect = [];
+
+          var paSelect = $("#paGeoOpt option:selected");
+          paSelect.each(function(){
+            cntySelect.push($(this).val());
+            stateSelect.push("Pennsylvania");
           });
-          selectTools(holdTagSearch, tagD, holdSoftReqSearch, reqD, holdGeoSearch, geoD, holdToolFunSearch, funD, check, filtD, holdTopSubSearch, sFiltD)
-        }
-        //////////////////////////////////////////////////////////////////
-        //////////////////////////////////////////////////////////////////
-        function getType(o) {
-          return Object.prototype.toString.call(o).match(/^\[object\s(.*)\]$/)[1];
-        }
-        //////////////////////////////////////////////////////////////////
-        //////////////////////////////////////////////////////////////////
+          var mdSelect = $("#mdGeoOpt option:selected");
+          mdSelect.each(function(){
+            cntySelect.push($(this).val());
+            stateSelect.push("Maryland");
+          });
+          var vaSelect = $("#vaGeoOpt option:selected");
+          vaSelect.each(function(){
+            cntySelect.push($(this).val());
+            stateSelect.push("Virginia");
+          });
+          var nySelect = $("#nyGeoOpt option:selected");
+          nySelect.each(function(){
+            cntySelect.push($(this).val());
+            stateSelect.push("New York");
+          });
+          var deSelect = $("#deGeoOpt option:selected");
+          deSelect.each(function(){
+            cntySelect.push($(this).val());
+            stateSelect.push("Delaware");
+          });
+          var njSelect = $("#njGeoOpt option:selected");
+          njSelect.each(function(){
+            cntySelect.push($(this).val());
+            stateSelect.push("New Jersey");
+          });
+          var dcSelect = $("#dcGeoOpt option:selected");
+          dcSelect.each(function(){
+            cntySelect.push("District of Columbia");
+            stateSelect.push("DC");
+          });
 
+          return {states : stateSelect, counties : cntySelect};
+        }
+        //////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////
+        collectFilterData = function(){
+          var topFilterSearch = [];
+          var subFilterSearch = [];
+
+          var climSelect = $("#climFiltOpt option:selected");
+          climSelect.each(function(){
+            subFilterSearch.push($(this).val());
+            topFilterSearch.push("Weather and Climate");
+          });
+          var ecoSelect = $("#ecoFiltOpt option:selected");
+          ecoSelect.each(function(){
+            subFilterSearch.push($(this).val());
+            topFilterSearch.push("Ecosystems");
+          });
+          var bltSelect = $("#bltFiltOpt option:selected");
+          bltSelect.each(function(){
+            subFilterSearch.push($(this).val());
+            topFilterSearch.push("Agriculture / Built Environment");
+          });
+          var socSelect = $("#socFiltOpt option:selected");
+          socSelect.each(function(){
+            subFilterSearch.push($(this).val());
+            topFilterSearch.push("Society");
+          });
+          var fldSelect = $("#fldFiltOpt option:selected");
+          fldSelect.each(function(){
+            subFilterSearch.push($(this).val());
+            topFilterSearch.push("Water / Flooding");
+          });
+          var othSelect = $("#othFiltOpt option:selected");
+          othSelect.each(function(){
+            subFilterSearch.push("None");
+            topFilterSearch.push("None");
+          });
+
+          return {topFilt : topFilterSearch, subFilt : subFilterSearch};
+        }
+        //////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////
+        //from https://stackoverflow.com/questions/19026331/call-multiple-json-data-files-in-one-getjson-request
         jQuery.getMultipleJSON = function(){
           var
             num = 0,
@@ -289,566 +170,959 @@
         };
         //////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////
-        switchSubTopics = function(){
+        //run through all of the variables to select tools
+        //function selectTools(inSR, reqDat, inGeo, geoDat, inFunct, tFunDat, inFilts, topFilDat, inSubFilts, topSubFilDat){
+        function selectTools(inSR, reqDat, inGeoCNTY, inGeoST, inGeoCoast, geoDatCNTY, geoDatST, geoDatCoast, inFunct, tFunDat, inFilts, topFilDat, inSubFilts, topSubFilDat){
+          var fullResults = [];
+          var inTools = [];
 
-          var chkFilters = [];
-          var chkTopFilter = $("#topFilterSearch :checked")
-          chkTopFilter.each(function(){
-            chkFilters.push($(this).val());
-          });
+          var uniqueST = inGeoST.filter(unique);
+          ////////////////////////////////////////////////////////////////
+          //inGeoCNTY, inGeoST, geoDatCNTY, geoDatST, geoDatCoast
+          //tool geography- state level
+          if(uniqueST.length>0 ){
+            uniqueST.push("All");
+            uniqueST.push("Gen");
+            $.each(uniqueST, function(st) {
+              var stateResults = [];
+              var items = geoDatST.items.map(function (item){
+                if($.inArray(item.geoScopeST, [uniqueST[st]]) >= 0){
+                //if(jQuery.inArray(item.geoScopeST, inGeoST) >= 0){
+                  if($.inArray(item.name, inTools) == -1){
+                    inTools.push(item.name);
+                    var tool = new addTool(item.name, item.link);
+                    stateResults.push(tool)
+                  }
+                }
+              });
 
-          if(jQuery.inArray('None', chkFilters) >= 0){
-            $('.subFiltChecks-None').attr('disabled', false);
-            $('.subFiltChecks-None').css('opacity', '1');
-            $('.subLabs-None').css('opacity', '1');
-          } else {
-            $(".subFiltChecks-None").prop('checked', false);
-            $('.subFiltChecks-None').attr('disabled', true);
-            $('.subFiltChecks-None').css('opacity', '.95');
-            $('.subLabs-None').css('opacity', '.2');
+              //now check in on the state selection
+              var stCNTYs = findValueInArray(inGeoST,uniqueST[st],inGeoCNTY);
+              stCNTYs.push("NA");
+              stCNTYs.push("All");
+              stCNTYs.push("Gen");
+
+              if(stCNTYs[0]=="Statewide"){
+
+              }else{
+                $.each(stateResults, function(tool) {
+                  var toolName = this.name;
+                  var keepTool = 0;
+                  var toolReqs = [];
+                  var items = geoDatCNTY.items.map(function (item){
+                    if(item.name == toolName){
+                      toolReqs.push(item.geoScopeCNTY)
+                    }
+                  });
+                  for (i=0; i<=toolReqs.length; i++) {
+                    if($.inArray(toolReqs[i], stCNTYs) >= 0){
+                      keepTool = 1;
+                    }
+                  }
+                  if(keepTool==0){
+                    var whichRemove = $.inArray(toolName, inTools);
+                    inTools.splice(whichRemove, 1);
+                    stateResults.splice(whichRemove, 1);
+                  }
+                });
+              }
+              //check to see if any of the state results are already in the full results
+              if(fullResults.length == 0){
+                $.each(stateResults, function(tool) {
+                  fullResults.push(this);
+                });
+              }else{
+                var existTools = [];
+                $.each(fullResults, function (item){
+                  existTools.push(this.name);
+                });
+
+                $.each(stateResults, function(tool) {
+                  var toolName = this.name;
+                  if($.inArray(toolName, existTools) == -1){
+                    fullResults.push(this);
+                  }
+                });
+              }
+            });
           }
 
-          if(jQuery.inArray('Weather and Climate', chkFilters) >= 0){
-            $('.subFiltChecks-clim').attr('disabled', false);
-            $('.subFiltChecks-clim').css('opacity', '1');
-            $('.subLabs-clim').css('opacity', '1');
-          } else {
-            $(".subFiltChecks-clim").prop('checked', false);
-            $('.subFiltChecks-clim').attr('disabled', true);
-            $('.subFiltChecks-clim').css('opacity', '.95');
-            $('.subLabs-clim').css('opacity', '.2');
+          //tool geography- coastal
+          if(inGeoCoast==1 && fullResults.length>0){
+            var indexToRemove = [];
+            $.each(fullResults, function(tool) {
+               var toolName = this.name;
+               var keepTool = 0;
+               var toolReqs = [];
+               var items = geoDatCoast.items.map(function (item){
+                 if(item.name == toolName){
+                   toolReqs.push(item.geoScopeCoast)
+                 }
+               });
+               for (i=0; i<=toolReqs.length; i++) {
+                 if(jQuery.inArray(toolReqs[i], "1") >= 0){
+                   keepTool = 1;
+                 }
+               }
+               if(keepTool==0){
+                 var whichRemove = jQuery.inArray(toolName, inTools);
+                 indexToRemove.push(whichRemove)
+               }
+            });
+
+            if(indexToRemove.length>0){
+              inTools = inTools.filter(function(val, ind) {
+                return indexToRemove.indexOf(ind) == -1
+              });
+              fullResults = fullResults.filter(function(val, ind) {
+                return indexToRemove.indexOf(ind) == -1
+              });
+            }
+
+          }else if(inGeoCoast==1 && fullResults.length==0){
+             var items = geoDatCoast.items.map(function (item){
+               if(jQuery.inArray(item.geoScopeCoast, "1") >= 0){
+                 if(jQuery.inArray(item.name, inTools) == -1){
+                   inTools.push(item.name);
+                   var tool = new addTool(item.name, item.link);
+                   fullResults.push(tool)
+                 }
+               }
+            });
           }
 
-          if(jQuery.inArray('Ecosystems', chkFilters) >= 0){
-            $('.subFiltChecks-eco').attr('disabled', false);
-            $('.subFiltChecks-eco').css('opacity', '1');
-            $('.subLabs-eco').css('opacity', '1');
-          }else{
-            $(".subFiltChecks-eco").prop('checked', false);
-            $('.subFiltChecks-eco').attr('disabled', true);
-            $('.subFiltChecks-eco').css('opacity', '.95');
-            $('.subLabs-eco').css('opacity', '.2');
+          ////////////////////////////////////////////////////////////////
+
+
+          //tool topic filters
+          if(inFilts.length>0 && fullResults.length>0){
+            var indexToRemove = [];
+            $.each(fullResults, function(tool) {
+              var toolName = this.name;
+              var keepTool = 0;
+              var toolReqs = [];
+              var items = topFilDat.items.map(function (item){
+                if(item.name == toolName){
+                  toolReqs.push(item.topFilter)
+                }
+              });
+              for (i=0; i<=toolReqs.length; i++) {
+                if(jQuery.inArray(toolReqs[i], inFilts) >= 0){
+                  keepTool = 1;
+                }
+              }
+              if(keepTool==0){
+                var whichRemove = jQuery.inArray(toolName, inTools);
+                indexToRemove.push(whichRemove)
+              }
+            });
+
+            if(indexToRemove.length>0){
+              inTools = inTools.filter(function(val, ind) {
+                return indexToRemove.indexOf(ind) == -1
+              });
+              fullResults = fullResults.filter(function(val, ind) {
+                return indexToRemove.indexOf(ind) == -1
+              });
+            }
+
+          }else if(inFilts.length>0 && fullResults.length==0){
+            var items = topFilDat.items.map(function (item){
+              if(jQuery.inArray(item.topFilter, inFilts) >= 0){
+                if(jQuery.inArray(item.name, inTools) == -1){
+                  inTools.push(item.name);
+                  var tool = new addTool(item.name, item.link);
+                  fullResults.push(tool)
+                }
+              }
+            });
           }
 
-          if(jQuery.inArray('Agriculture / Built Environment', chkFilters) >= 0){
-            $('.subFiltChecks-blt').attr('disabled', false);
-            $('.subFiltChecks-blt').css('opacity', '1');
-            $('.subLabs-blt').css('opacity', '1');
-          } else {
-            $(".subFiltChecks-blt").prop('checked', false);
-            $('.subFiltChecks-blt').attr('disabled', true);
-            $('.subFiltChecks-blt').css('opacity', '.95');
-            $('.subLabs-blt').css('opacity', '.2');
+          //tool topic subfilters
+          if(inSubFilts.length>0 && fullResults.length>0){
+            var indexToRemove = [];
+            $.each(fullResults, function(tool) {
+              var toolName = this.name;
+              var keepTool = 0;
+              var toolReqs = [];
+              var items = topSubFilDat.items.map(function (item){
+                if(item.name == toolName){
+                  toolReqs.push(item.subFilter)
+                }
+              });
+              for (i=0; i<=toolReqs.length; i++) {
+                if(jQuery.inArray(toolReqs[i], inSubFilts) >= 0){
+                  keepTool = 1;
+                }
+              }
+              if(keepTool==0){
+                var whichRemove = jQuery.inArray(toolName, inTools);
+                indexToRemove.push(whichRemove)
+              }
+            });
+
+            if(indexToRemove.length>0){
+              inTools = inTools.filter(function(val, ind) {
+                return indexToRemove.indexOf(ind) == -1
+              });
+              fullResults = fullResults.filter(function(val, ind) {
+                return indexToRemove.indexOf(ind) == -1
+              });
+            }
+
+          }else if(inSubFilts.length>0 && fullResults.length==0){
+            var items = topSubFilDat.items.map(function (item){
+              if(jQuery.inArray(item.subFilter, inSubFilts) >= 0){
+                if(jQuery.inArray(item.name, inTools) == -1){
+                  inTools.push(item.name);
+                  var tool = new addTool(item.name, item.link);
+                  fullResults.push(tool)
+                }
+              }
+            });
           }
 
-          if(jQuery.inArray('Society', chkFilters) >= 0){
-            $('.subFiltChecks-soc').attr('disabled', false);
-            $('.subFiltChecks-soc').css('opacity', '1');
-            $('.subLabs-soc').css('opacity', '1');
-          } else {
-            $(".subFiltChecks-soc").prop('checked', false);
-            $('.subFiltChecks-soc').attr('disabled', true);
-            $('.subFiltChecks-soc').css('opacity', '.95');
-            $('.subLabs-soc').css('opacity', '.2');
+          //tool software requirements
+          //if(inSR.length>0 && fullResults.length>0){
+          //  $.each(fullResults, function(tool) {
+          //    var toolName = this.name;
+          //    var keepTool = 0;
+          //    var toolReqs = [];
+          //    var items = reqDat.items.map(function (item){
+          //      if(item.name == toolName){
+          //        toolReqs.push(item.softReq)
+          //      }
+          //    });
+          //
+          //    //do not know why this section does not work
+          //    //$.each(toolReqs, function(req) {
+          //    //  var reqName = this;
+          //    //  alert(jQuery.inArray(this, inSR))
+          //    //  alert(jQuery.inArray(reqName, inSR))
+          //    //});
+          //
+          //    for (i=0; i<=toolReqs.length; i++) {
+          //      if(jQuery.inArray(toolReqs[i], inSR) >= 0){
+          //        keepTool = 1;
+          //      }
+          //    }
+          //    if(keepTool==0){
+          //      var whichRemove = jQuery.inArray(toolName, inTools);
+          //      inTools.splice(whichRemove, 1);
+          //      fullResults.splice(whichRemove, 1);
+          //    }
+          //  });
+          //}else if(inSR.length>0 && fullResults.length==0){
+          //  var items = reqDat.items.map(function (item){
+          //    if(jQuery.inArray(item.softReq, inSR) >= 0){
+          //      if(jQuery.inArray(item.name, inTools) == -1){
+          //        inTools.push(item.name);
+          //        var tool = new addTool(item.name, item.link);
+          //        fullResults.push(tool)
+          //      }
+          //    }
+          //  });
+          //}
+
+          //tool Function
+          if(inFunct.length>0 && fullResults.length>0){
+            var indexToRemove = [];
+            $.each(fullResults, function(tool) {
+              var toolName = this.name;
+              var keepTool = 0;
+              var toolReqs = [];
+              var items = tFunDat.items.map(function (item){
+                if(item.name == toolName){
+                  toolReqs.push(item.toolFun)
+                }
+              });
+              for (i=0; i<=toolReqs.length; i++) {
+                if(jQuery.inArray(toolReqs[i], inFunct) >= 0){
+                  keepTool = 1;
+                }
+              }
+              if(keepTool==0){
+                var whichRemove = jQuery.inArray(toolName, inTools);
+                indexToRemove.push(whichRemove)
+              }
+            });
+
+            if(indexToRemove.length>0){
+              inTools = inTools.filter(function(val, ind) {
+                return indexToRemove.indexOf(ind) == -1
+              });
+              fullResults = fullResults.filter(function(val, ind) {
+                return indexToRemove.indexOf(ind) == -1
+              });
+            }
+
+          }else if(inFunct.length>0 && fullResults.length==0){
+            var items = tFunDat.items.map(function (item){
+              if(jQuery.inArray(item.toolFun, inFunct) >= 0){
+                if(jQuery.inArray(item.name, inTools) == -1){
+                  inTools.push(item.name);
+                  var tool = new addTool(item.name, item.link);
+                  fullResults.push(tool)
+                }
+              }
+            });
           }
 
-          if(jQuery.inArray('Water / Flooding', chkFilters) >= 0){
-            $('.subFiltChecks-fld').attr('disabled', false);
-            $('.subFiltChecks-fld').css('opacity', '1');
-            $('.subLabs-fld').css('opacity', '1');
-          } else {
-            $(".subFiltChecks-fld").prop('checked', false);
-            $('.subFiltChecks-fld').attr('disabled', true);
-            $('.subFiltChecks-fld').css('opacity', '.95');
-            $('.subLabs-fld').css('opacity', '.2');
+          //return(fullResults)  -- not used
+          //alert("full result length: " + fullResults.length)
+          document.getElementsByTagName("h2")[1].innerHTML = "Search Results (Displaying " + fullResults.length + " Tools)"
+          if(fullResults.length > 0){
+            $.each(fullResults, function(tool) {
+              newTool = '<li><a href="' + '/tools/' + this.link +'/index.html">' + this.name + '</a></li>';
+              showData.append(newTool);
+            });
           }
+        }
+        //////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////
+        function defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData){
+          showData.empty();
+          //var check = [];
+          //$('#topFilterSearch :not(:checked)').each(function(){
+          //  check.push($(this).val());
+          //});
+          var check = ['Weather and Climate', 'Ecosystems', 'Agriculture / Built Environment', 'Society', 'Water / Flooding', 'None'];
+          selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, check, topFilData, holdTopSubSearch, subFilData)
+        }
+        //////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////
+        function getType(o) {
+          return Object.prototype.toString.call(o).match(/^\[object\s(.*)\]$/)[1];
         }
         //////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////
 
         //////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////
-        $('#mdGeoOpt').multiselect({
-          columns: 1,
-          placeholder: 'Maryland',
-          maxWidth: 287,
-          onOptionClick : function(){
-            var allSelected = [];
-
-            //var testSel = [];
-            //var
-            //var searchTags = [];
-            //$('#topFilterSearch option:unchecked').each(function(){
-            //  searchTags.push($(this).val());
-            //});
-            //var testFilter = $("#topFilterSearch :checked")
-            //testFilter.each(function(){
-            //  testSel.push($(this).val());
-              //if(jQuery.inArray($(this).val(), ['Ecosystems']) >= 0){
-              //  alert("Ecosystem in da house")
-              //} else {
-              //  alert("Ecosystem has left da building")
-              //}
-            //});
-            //alert(testSel)
-            //alert(jQuery.inArray('Ecosystems', testSel))
-            //alert(jQuery.inArray('Society', testSel))
-            //if(jQuery.inArray('Ecosystems', testSel) >= 0){
-            //  alert("Ecosystem in da house")
-            //}else{
-            //  alert("Ecosystem has left da building")
-            //}
-            //alert(testSel)
-
-            var paSelect = $("#paGeoOpt option:selected");
-            paSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var mdSelect = $("#mdGeoOpt option:selected");
-            mdSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var vaSelect = $("#vaGeoOpt option:selected");
-            vaSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var nySelect = $("#nyGeoOpt option:selected");
-            nySelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var deSelect = $("#deGeoOpt option:selected");
-            deSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var njSelect = $("#njGeoOpt option:selected");
-            njSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var othSelect = $("#othGeoOpt option:selected");
-            othSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            dcSelect = $("#dcCheckbox option:checked");
-            dcSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-
-            alert(allSelected)
-          }
-        });
-        $('#paGeoOpt').multiselect({
-          columns: 1,
-          placeholder: 'Pennsylvania',
-          maxWidth: 287,
-          onOptionClick : function(){
-            var allSelected = [];
-
-            var paSelect = $("#paGeoOpt option:selected");
-            paSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var mdSelect = $("#mdGeoOpt option:selected");
-            mdSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var vaSelect = $("#vaGeoOpt option:selected");
-            vaSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var nySelect = $("#nyGeoOpt option:selected");
-            nySelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var deSelect = $("#deGeoOpt option:selected");
-            deSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var njSelect = $("#njGeoOpt option:selected");
-            njSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var othSelect = $("#othGeoOpt option:selected");
-            othSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-
-            alert(allSelected)
-          }
-        });
-        $('#vaGeoOpt').multiselect({
-          columns: 1,
-          placeholder: 'Virginia',
-          maxWidth: 287,
-          onOptionClick : function(){
-            var allSelected = [];
-
-            var paSelect = $("#paGeoOpt option:selected");
-            paSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var mdSelect = $("#mdGeoOpt option:selected");
-            mdSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var vaSelect = $("#vaGeoOpt option:selected");
-            vaSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var nySelect = $("#nyGeoOpt option:selected");
-            nySelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var deSelect = $("#deGeoOpt option:selected");
-            deSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var njSelect = $("#njGeoOpt option:selected");
-            njSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var othSelect = $("#othGeoOpt option:selected");
-            othSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-
-            alert(allSelected)
-          }
-        });
-        $('#nyGeoOpt').multiselect({
-          columns: 1,
-          placeholder: 'New York',
-          maxWidth: 287,
-          onOptionClick : function(){
-            var allSelected = [];
-
-            var paSelect = $("#paGeoOpt option:selected");
-            paSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var mdSelect = $("#mdGeoOpt option:selected");
-            mdSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var vaSelect = $("#vaGeoOpt option:selected");
-            vaSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var nySelect = $("#nyGeoOpt option:selected");
-            nySelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var deSelect = $("#deGeoOpt option:selected");
-            deSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var njSelect = $("#njGeoOpt option:selected");
-            njSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var othSelect = $("#othGeoOpt option:selected");
-            othSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-
-            alert(allSelected)
-          }
-        });
-        $('#deGeoOpt').multiselect({
-          columns: 1,
-          placeholder: 'Delaware',
-          maxWidth: 287,
-          onOptionClick : function(){
-            var allSelected = [];
-
-            var paSelect = $("#paGeoOpt option:selected");
-            paSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var mdSelect = $("#mdGeoOpt option:selected");
-            mdSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var vaSelect = $("#vaGeoOpt option:selected");
-            vaSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var nySelect = $("#nyGeoOpt option:selected");
-            nySelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var deSelect = $("#deGeoOpt option:selected");
-            deSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var njSelect = $("#njGeoOpt option:selected");
-            njSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var othSelect = $("#othGeoOpt option:selected");
-            othSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-
-            alert(allSelected)
-          }
-        });
-        $('#njGeoOpt').multiselect({
-          columns: 1,
-          placeholder: 'New Jersey',
-          maxWidth: 287,
-          onOptionClick : function(){
-            var allSelected = [];
-
-            var paSelect = $("#paGeoOpt option:selected");
-            paSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var mdSelect = $("#mdGeoOpt option:selected");
-            mdSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var vaSelect = $("#vaGeoOpt option:selected");
-            vaSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var nySelect = $("#nyGeoOpt option:selected");
-            nySelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var deSelect = $("#deGeoOpt option:selected");
-            deSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var njSelect = $("#njGeoOpt option:selected");
-            njSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var othSelect = $("#othGeoOpt option:selected");
-            othSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-
-            alert(allSelected)
-          }
-        });
-        $('#othGeoOpt').multiselect({
-          columns: 1,
-          placeholder: 'Other States',
-          maxWidth: 287,
-          onOptionClick : function(){
-            var allSelected = [];
-
-            var paSelect = $("#paGeoOpt option:selected");
-            paSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var mdSelect = $("#mdGeoOpt option:selected");
-            mdSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var vaSelect = $("#vaGeoOpt option:selected");
-            vaSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var nySelect = $("#nyGeoOpt option:selected");
-            nySelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var deSelect = $("#deGeoOpt option:selected");
-            deSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var njSelect = $("#njGeoOpt option:selected");
-            njSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-            var othSelect = $("#othGeoOpt option:selected");
-            othSelect.each(function(){
-              allSelected.push($(this).val());
-            });
-
-            alert(allSelected)
-          }
-        });
-        //////////////////////////////////////////////////////////////////
-        //////////////////////////////////////////////////////////////////
-
-
-        jQuery.getMultipleJSON('/data/searchTags.json', '/data/searchSoft.json', '/data/searchGeoScope.json', '/data/searchToolFun.json', '/data/searchTopFilter.json', '/data/searchSubFilter.json')
+        //'/data/searchGeoScopeCounty.json', '/data/searchGeoScopeState.json', '/data/searchGeoScopeCoastal.json', '/data/searchToolFun.json', '/data/searchTopFilter.json', '/data/searchSubFilter.json'
+        jQuery.getMultipleJSON('/data/searchSoft.json', '/data/searchGeoScope_county.json', '/data/searchGeoScope_state.json', '/data/searchGeoScope_coastal.json', '/data/searchToolFun.json', '/data/searchTopFilter.json', '/data/searchSubFilter.json')
           .progress(function(percent, count, total){})
-          .fail(function(jqxhr, textStatus, error){})
-          .done(function(tagData, reqData, geoData, tFunData, topFilData, subFilData){
-            //var holdToolFunSearch = [];  //searchToolFun
-            //var holdTopFilSearch = [];
-            alert('pre setup')
+          .fail(function(jqxhr, textStatus, error){alert("load error")})
+          .done(function(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData){
 
-            //var searchTags = [];
-            //$('#tagSearch option:unselected').each(function(){
-            //  searchTags.push($(this).val());
-          //});
-            //alert(searchTags)
+            defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData);
+            //switchSubTopics();
 
-            //var nySelect = $("#nyGeoOpt option:selected");
-            //nySelect.each(function(){
-            //  allSelected.push($(this).val());
-            //});
+            //geographic search
+            //geo - Maryland
+            $('#mdGeoOpt').multiselect({
+              columns: 1,
+              maxWidth: 287,
+              minHeight: 20,
+              maxHeight: 260,
+              selectGroup: true,
+              texts: {
+                placeholder: 'Maryland',
+                selectAllTxt: 'Statewide'
+              },
+              onOptionClick : function(){
+                showData.empty();
 
+                var collectGeo = collectGeoData();
+                var stateSelect = collectGeo.states;
+                var cntySelect = collectGeo.counties;
 
-            defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData);
+                holdGeoSearch_cnty = cntySelect;
+                holdGeoSearch_state = stateSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
 
-            switchSubTopics();
+              },
+              onSelectAll : function(){
+                showData.empty();
 
-            //rules for tags select all
-            $('#tagTogAll').change(function(){
-              showData.empty();
-              var searchTags = [];
+                var collectGeo = collectGeoData();
+                var stateSelect = collectGeo.states;
+                var cntySelect = collectGeo.counties;
 
-              var checkboxes = $(this).closest('form').find(':checkbox');
-              checkboxes.prop('checked', $(this).is(':checked'));
+                holdGeoSearch_cnty = cntySelect;
+                holdGeoSearch_state = stateSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
 
-              $('#tagSearch :checked').each(function(){
-                searchTags.push($(this).val());
-              });
-
-              holdTagSearch = searchTags;
-              var chkNumRes = $.sum([searchTags.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-              if(chkNumRes>0){
-                selectTools(searchTags, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-              }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
               }
             });
-            $('.tagChecks').change(function(){
-              showData.empty();
-              var searchTags = [];
+            //geo - Pennsylvania
+            $('#paGeoOpt').multiselect({
+              columns: 1,
+              maxWidth: 287,
+              minHeight: 20,
+              maxHeight: 260,
+              selectGroup: true,
+              texts: {
+                placeholder: 'Pennsylvania',
+                selectAllTxt: 'Statewide'
+              },
+              onOptionClick : function(){
+                showData.empty();
 
-              if($('.tagChecks:checked').length == $('.tagChecks').length){
-                $('#tagTogAll').prop('checked',true);
-              }else{
-                $('#tagTogAll').prop('checked',false);
+                var collectGeo = collectGeoData();
+                var stateSelect = collectGeo.states;
+                var cntySelect = collectGeo.counties;
+
+                holdGeoSearch_cnty = cntySelect;
+                holdGeoSearch_state = stateSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              },
+              onSelectAll : function(){
+                showData.empty();
+
+                var collectGeo = collectGeoData();
+                var stateSelect = collectGeo.states;
+                var cntySelect = collectGeo.counties;
+
+                holdGeoSearch_cnty = cntySelect;
+                holdGeoSearch_state = stateSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              }
+            });
+            //geo - Virginia
+            $('#vaGeoOpt').multiselect({
+              columns: 1,
+              maxWidth: 287,
+              minHeight: 20,
+              maxHeight: 260,
+              selectGroup: true,
+              texts: {
+                placeholder: 'Virginia',
+                selectAllTxt: 'Statewide'
+              },
+              onOptionClick : function(){
+                showData.empty();
+
+                var collectGeo = collectGeoData();
+                var stateSelect = collectGeo.states;
+                var cntySelect = collectGeo.counties;
+
+                holdGeoSearch_cnty = cntySelect;
+                holdGeoSearch_state = stateSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              },
+              onSelectAll : function(){
+                showData.empty();
+
+                var collectGeo = collectGeoData();
+                var stateSelect = collectGeo.states;
+                var cntySelect = collectGeo.counties;
+
+                holdGeoSearch_cnty = cntySelect;
+                holdGeoSearch_state = stateSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              }
+            });
+            //geo - New York
+            $('#nyGeoOpt').multiselect({
+              columns: 1,
+              maxWidth: 287,
+              minHeight: 20,
+              maxHeight: 260,
+              selectGroup: true,
+              texts: {
+                placeholder: 'New York',
+                selectAllTxt: 'Statewide'
+              },
+              onOptionClick : function(){
+                showData.empty();
+
+                var collectGeo = collectGeoData();
+                var stateSelect = collectGeo.states;
+                var cntySelect = collectGeo.counties;
+
+                holdGeoSearch_cnty = cntySelect;
+                holdGeoSearch_state = stateSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              },
+              onSelectAll : function(){
+                showData.empty();
+
+                var collectGeo = collectGeoData();
+                var stateSelect = collectGeo.states;
+                var cntySelect = collectGeo.counties;
+
+                holdGeoSearch_cnty = cntySelect;
+                holdGeoSearch_state = stateSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              }
+            });
+            //geo - Delaware
+            $('#deGeoOpt').multiselect({
+              columns: 1,
+              maxWidth: 287,
+              minHeight: 20,
+              maxHeight: 260,
+              selectGroup: true,
+              texts: {
+                placeholder: 'Delaware',
+                selectAllTxt: 'Statewide'
+              },
+              onOptionClick : function(){
+                showData.empty();
+
+                var collectGeo = collectGeoData();
+                var stateSelect = collectGeo.states;
+                var cntySelect = collectGeo.counties;
+
+                holdGeoSearch_cnty = cntySelect;
+                holdGeoSearch_state = stateSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              },
+              onSelectAll : function(){
+                showData.empty();
+
+                var collectGeo = collectGeoData();
+                var stateSelect = collectGeo.states;
+                var cntySelect = collectGeo.counties;
+
+                holdGeoSearch_cnty = cntySelect;
+                holdGeoSearch_state = stateSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              }
+            });
+            //geo - New Jersey
+            $('#njGeoOpt').multiselect({
+              columns: 1,
+              maxWidth: 287,
+              minHeight: 20,
+              maxHeight: 260,
+              selectGroup: true,
+              texts: {
+                placeholder: 'New Jersey',
+                selectAllTxt: 'Statewide'
+              },
+              onOptionClick : function(){
+                showData.empty();
+
+                var collectGeo = collectGeoData();
+                var stateSelect = collectGeo.states;
+                var cntySelect = collectGeo.counties;
+
+                holdGeoSearch_cnty = cntySelect;
+                holdGeoSearch_state = stateSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              },
+              onSelectAll : function(){
+                showData.empty();
+
+                var collectGeo = collectGeoData();
+                var stateSelect = collectGeo.states;
+                var cntySelect = collectGeo.counties;
+
+                holdGeoSearch_cnty = cntySelect;
+                holdGeoSearch_state = stateSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              }
+            });
+            //geo - DC
+            $('#dcGeoOpt').multiselect({
+              columns: 1,
+              placeholder: 'Washington D.C.',
+              maxWidth: 287,
+              minHeight: 20,
+              maxHeight: 260,
+              onOptionClick : function(){
+                showData.empty();
+
+                var collectGeo = collectGeoData();
+                var stateSelect = collectGeo.states;
+                var cntySelect = collectGeo.counties;
+
+                holdGeoSearch_cnty = cntySelect;
+                holdGeoSearch_state = stateSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              }
+            });
+            //the remainder of the geographic filters
+            $('.globalGeoChecks').change(function(){
+              showData.empty();
+              var searchGeoGlobal = [];
+              var getCoast = [];
+
+              $('#globalGeoOptions :checked').each(function(){
+                searchGeoGlobal.push($(this).val());
+              });
+              //alert(searchGeoGlobal)
+
+              for(var i=0; i<searchGeoGlobal.length; i++){
+                var arrVal = searchGeoGlobal[i];
+                if(arrVal == "Coastal"){
+                  getCoast = 1;
+                }
               }
 
-              $('#tagSearch :checked').each(function(){
-                searchTags.push($(this).val());
-              });
+              holdGeoSearch_coast = getCoast;
 
-              holdTagSearch = searchTags;
-              var chkNumRes = $.sum([searchTags.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+              var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, getCoast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
               if(chkNumRes>0){
-                selectTools(searchTags, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+                selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, getCoast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
               }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
+                defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
               }
             });
 
-            //rules for software requirements select all
-            $('#reqTogAll').change(function(){
-              showData.empty();
-              var searchSoftReq = [];
 
-              var checkboxes = $(this).closest('form').find(':checkbox');
-              checkboxes.prop('checked', $(this).is(':checked'));
+            //topic filter search
+            //filter - Weather and Climate
+            $('#climFiltOpt').multiselect({
+              columns: 1,
+              maxWidth: 287,
+              minHeight: 20,
+              maxHeight: 260,
+              selectGroup: true,
+              texts: {
+                placeholder: 'Weather and Climate',
+                selectAllTxt: 'Select All'
+              },
+              onOptionClick : function(){
+                showData.empty();
 
-              $('#softReqSearch :checked').each(function(){
-                searchSoftReq.push($(this).val());
-              });
+                var collectFilter = collectFilterData();
+                var topFilterSelect = collectFilter.topFilt;
+                var subFilterSelect = collectFilter.subFilt;
 
-              holdSoftReqSearch = searchSoftReq;
-              var chkNumRes = $.sum([holdTagSearch.length, searchSoftReq.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-              if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, searchSoftReq, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-              }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
+                holdTopFilSearch = topFilterSelect;
+                holdTopSubSearch = subFilterSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              },
+              onSelectAll : function(){
+                showData.empty();
+
+                var collectFilter = collectFilterData();
+                var topFilterSelect = collectFilter.topFilt;
+                var subFilterSelect = collectFilter.subFilt;
+
+                holdTopFilSearch = topFilterSelect;
+                holdTopSubSearch = subFilterSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
               }
             });
-            $('.reqChecks').change(function(){
-              showData.empty();
-              var searchSoftReq = [];
+            //filter - Ecosystems
+            $('#ecoFiltOpt').multiselect({
+              columns: 1,
+              maxWidth: 287,
+              minHeight: 20,
+              maxHeight: 260,
+              selectGroup: true,
+              texts: {
+                placeholder: 'Ecosystems',
+                selectAllTxt: 'Select All'
+              },
+              onOptionClick : function(){
+                showData.empty();
 
-              if($('.reqChecks:checked').length == $('.reqChecks').length){
-                $('#reqTogAll').prop('checked',true);
-              }else{
-                $('#reqTogAll').prop('checked',false);
+                var collectFilter = collectFilterData();
+                var topFilterSelect = collectFilter.topFilt;
+                var subFilterSelect = collectFilter.subFilt;
+
+                holdTopFilSearch = topFilterSelect;
+                holdTopSubSearch = subFilterSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              },
+              onSelectAll : function(){
+                showData.empty();
+
+                var collectFilter = collectFilterData();
+                var topFilterSelect = collectFilter.topFilt;
+                var subFilterSelect = collectFilter.subFilt;
+
+                holdTopFilSearch = topFilterSelect;
+                holdTopSubSearch = subFilterSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
               }
+            });
+            //filter - Agriculture / Built Environment
+            $('#bltFiltOpt').multiselect({
+              columns: 1,
+              maxWidth: 287,
+              minHeight: 20,
+              maxHeight: 260,
+              selectGroup: true,
+              texts: {
+                placeholder: 'Developed Environments',
+                selectAllTxt: 'Select All'
+              },
+              onOptionClick : function(){
+                showData.empty();
 
-              $('#softReqSearch :checked').each(function(){
-                searchSoftReq.push($(this).val());
-              });
+                var collectFilter = collectFilterData();
+                var topFilterSelect = collectFilter.topFilt;
+                var subFilterSelect = collectFilter.subFilt;
 
-              holdSoftReqSearch = searchSoftReq;
-              var chkNumRes = $.sum([holdTagSearch.length, searchSoftReq.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-              if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, searchSoftReq, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-              }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
+                holdTopFilSearch = topFilterSelect;
+                holdTopSubSearch = subFilterSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              },
+              onSelectAll : function(){
+                showData.empty();
+
+                var collectFilter = collectFilterData();
+                var topFilterSelect = collectFilter.topFilt;
+                var subFilterSelect = collectFilter.subFilt;
+
+                holdTopFilSearch = topFilterSelect;
+                holdTopSubSearch = subFilterSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              }
+            });
+            //filter - Society
+            $('#socFiltOpt').multiselect({
+              columns: 1,
+              maxWidth: 287,
+              minHeight: 20,
+              maxHeight: 260,
+              selectGroup: true,
+              texts: {
+                placeholder: 'Society',
+                selectAllTxt: 'Select All'
+              },
+              onOptionClick : function(){
+                showData.empty();
+
+                var collectFilter = collectFilterData();
+                var topFilterSelect = collectFilter.topFilt;
+                var subFilterSelect = collectFilter.subFilt;
+
+                holdTopFilSearch = topFilterSelect;
+                holdTopSubSearch = subFilterSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              },
+              onSelectAll : function(){
+                showData.empty();
+
+                var collectFilter = collectFilterData();
+                var topFilterSelect = collectFilter.topFilt;
+                var subFilterSelect = collectFilter.subFilt;
+
+                holdTopFilSearch = topFilterSelect;
+                holdTopSubSearch = subFilterSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              }
+            });
+            //filter - Water / Flooding
+            $('#fldFiltOpt').multiselect({
+              columns: 1,
+              maxWidth: 287,
+              minHeight: 20,
+              maxHeight: 260,
+              selectGroup: true,
+              texts: {
+                placeholder: 'Water / Flooding',
+                selectAllTxt: 'Select All'
+              },
+              onOptionClick : function(){
+                showData.empty();
+
+                var collectFilter = collectFilterData();
+                var topFilterSelect = collectFilter.topFilt;
+                var subFilterSelect = collectFilter.subFilt;
+
+                holdTopFilSearch = topFilterSelect;
+                holdTopSubSearch = subFilterSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              },
+              onSelectAll : function(){
+                showData.empty();
+
+                var collectFilter = collectFilterData();
+                var topFilterSelect = collectFilter.topFilt;
+                var subFilterSelect = collectFilter.subFilt;
+
+                holdTopFilSearch = topFilterSelect;
+                holdTopSubSearch = subFilterSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
+              }
+            });
+            //filter - Other
+            $('#othFiltOpt').multiselect({
+              columns: 1,
+              placeholder: 'Other / Uncategorized',
+              maxWidth: 287,
+              minHeight: 20,
+              maxHeight: 260,
+              onOptionClick : function(){
+                showData.empty();
+
+                var collectFilter = collectFilterData();
+                var topFilterSelect = collectFilter.topFilt;
+                var subFilterSelect = collectFilter.subFilt;
+
+                holdTopFilSearch = topFilterSelect;
+                holdTopSubSearch = subFilterSelect;
+                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
+                if(chkNumRes>0){
+                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
+                }else{
+                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
+                }
+
               }
             });
 
-            //rules for tool geography select all
-            //$('#geoTogAll').change(function(){
+
+            //rules for software requirements
+            //$('.reqChecks').change(function(){
             //  showData.empty();
-            //  var searchGeo = [];
-
-            //  var checkboxes = $(this).closest('form').find(':checkbox');
-            //  checkboxes.prop('checked', $(this).is(':checked'));
-
-            //  $('#geoScopeSearch :checked').each(function(){
-            //    searchGeo.push($(this).val());
-            //  });
-
-            //  holdGeoSearch = searchGeo;
-            //  var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, searchGeo.length]);
-            //  if(chkNumRes>0){
-            //    selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, searchGeo, geoData)
+            //  var searchSoftReq = [];
+            //
+            //  if($('.reqChecks:checked').length == $('.reqChecks').length){
+            //    $('#reqTogAll').prop('checked',true);
             //  }else{
-            //    defualtSetup(tagData, reqData, geoData)
+            //    $('#reqTogAll').prop('checked',false);
             //  }
-            //});
-            //$('.geoChecks').change(function(){
-            //  showData.empty();
-            //  var searchGeo = [];
-
-            //  if($('.geoChecks:checked').length == $('.geoChecks').length){
-            //    $('#geoTogAll').prop('checked',true);
-            //  }else{
-            //    $('#geoTogAll').prop('checked',false);
-            //  }
-
-            //  $('#geoScopeSearch :checked').each(function(){
-            //    searchGeo.push($(this).val());
+            //
+            //  $('#softReqSearch :checked').each(function(){
+            //    searchSoftReq.push($(this).val());
             //  });
-
-            //  holdGeoSearch = searchGeo;
-            //  var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, searchGeo.length]);
+            //
+            //  holdSoftReqSearch = searchSoftReq;
+            //  var chkNumRes = $.sum([searchSoftReq.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
             //  if(chkNumRes>0){
-            //    selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, searchGeo, geoData)
+            //    selectTools(searchSoftReq, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
             //  }else{
-            //    defualtSetup(tagData, reqData, geoData)
+            //    defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
             //  }
             //});
 
-          //});
 
-          //tool function
-          $('#tlfunTogAll').change(function(){
-              showData.empty();
-              var searchToolFun = [];
-
-              var checkboxes = $(this).closest('form').find(':checkbox');
-              checkboxes.prop('checked', $(this).is(':checked'));
-
-              $('#toolFunSearch :checked').each(function(){
-                searchToolFun.push($(this).val());
-              });
-
-              holdToolFunSearch = searchToolFun;
-              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, searchToolFun.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-              if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, searchToolFun, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-              }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
-              }
-            });
+            //rules for tool function
             $('.toolFunctChecks').change(function(){
               showData.empty();
               var searchToolFun = [];
@@ -864,238 +1138,14 @@
               });
 
               holdToolFunSearch = searchToolFun;
-              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, searchToolFun.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+              var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, searchToolFun.length, holdTopFilSearch.length, holdTopSubSearch.length]);
               if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, searchToolFun, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+                selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, searchToolFun, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
               }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
-              }
-            });
-
-            //topic filter
-            $('#topfltTogAll').change(function(){
-              showData.empty();
-              var searchTopFil = [];
-
-              var checkboxes = $(this).closest('form').find(':checkbox');
-              checkboxes.prop('checked', $(this).is(':checked'));
-
-              switchSubTopics();
-
-              $('#topFilterSearch :checked').each(function(){
-                searchTopFil.push($(this).val());
-              });
-              alert(searchTopFil)
-
-              holdTopFilSearch = searchTopFil;
-              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, searchTopFil.length, holdTopSubSearch.length]);
-              if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, searchTopFil, topFilData, holdTopSubSearch, subFilData)
-              }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
-              }
-            });
-            $('.topFiltChecks').change(function(){
-              showData.empty();
-              var searchTopFil = [];
-
-              if($('.topFiltChecks:checked').length == $('.topFiltChecks').length){
-                $('#topfltTogAll').prop('checked',true);
-              }else{
-                $('#topfltTogAll').prop('checked',false);
-              }
-
-              switchSubTopics();
-
-              $('#topFilterSearch :checked').each(function(){
-                searchTopFil.push($(this).val());
-              });
-
-              holdTopFilSearch = searchTopFil;
-              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, searchTopFil.length, holdTopSubSearch.length]);
-              if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, searchTopFil, topFilData, holdTopSubSearch, subFilData)
-              }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
-              }
-            });
-
-            $('#subfltTogAll').change(function(){
-              showData.empty();
-              var searchSubFil = [];
-
-
-              var checkboxes = $(this).closest('form').find(':checkbox:not(:disabled)');
-              checkboxes.prop('checked', $(this).is(':checked'));
-
-              switchSubTopics();
-
-              $('#subFilterSearch :checked').each(function(){
-                searchSubFil.push($(this).val());
-              });
-
-              holdTopSubSearch = searchSubFil;
-              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, searchSubFil.length]);
-              if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, searchSubFil, subFilData)
-              }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
-              }
-            });
-
-            $('.subFiltChecks-None').change(function(){
-              showData.empty();
-              var searchSubFil = [];
-
-              var fullSubLength = $.sum([$('.subFiltChecks-None:not(:disabled)').length, $('.subFiltChecks-clim:not(:disabled)').length, $('.subFiltChecks-eco:not(:disabled)').length, $('.subFiltChecks-blt:not(:disabled)').length, $('.subFiltChecks-soc:not(:disabled)').length, $('.subFiltChecks-fld:not(:disabled)').length]);
-              var numChked = $.sum([$('.subFiltChecks-None:checked').length, $('.subFiltChecks-clim:checked').length, $('.subFiltChecks-eco:checked').length, $('.subFiltChecks-blt:checked').length, $('.subFiltChecks-soc:checked').length, $('.subFiltChecks-fld:checked').length]);
-
-              if(numChked == fullSubLength){
-                $('#subfltTogAll').prop('checked',true);
-              }else{
-                $('#subfltTogAll').prop('checked',false);
-              }
-
-              $('#subFilterSearch :checked').each(function(){
-                searchSubFil.push($(this).val());
-              });
-
-              holdTopSubSearch = searchSubFil;
-              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, searchSubFil.length]);
-              if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, searchSubFil, subFilData)
-              }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
-              }
-            });
-            $('.subFiltChecks-clim').change(function(){
-              showData.empty();
-              var searchSubFil = [];
-
-              var fullSubLength = $.sum([$('.subFiltChecks-None:not(:disabled)').length, $('.subFiltChecks-clim:not(:disabled)').length, $('.subFiltChecks-eco:not(:disabled)').length, $('.subFiltChecks-blt:not(:disabled)').length, $('.subFiltChecks-soc:not(:disabled)').length, $('.subFiltChecks-fld:not(:disabled)').length]);
-              var numChked = $.sum([$('.subFiltChecks-None:checked').length, $('.subFiltChecks-clim:checked').length, $('.subFiltChecks-eco:checked').length, $('.subFiltChecks-blt:checked').length, $('.subFiltChecks-soc:checked').length, $('.subFiltChecks-fld:checked').length]);
-
-              if(numChked == fullSubLength){
-                $('#subfltTogAll').prop('checked',true);
-              }else{
-                $('#subfltTogAll').prop('checked',false);
-              }
-
-              $('#subFilterSearch :checked').each(function(){
-                searchSubFil.push($(this).val());
-              });
-
-              holdTopSubSearch = searchSubFil;
-              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, searchSubFil.length]);
-              if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, searchSubFil, subFilData)
-              }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
-              }
-            });
-            $('.subFiltChecks-eco').change(function(){
-              showData.empty();
-              var searchSubFil = [];
-
-              var fullSubLength = $.sum([$('.subFiltChecks-None:not(:disabled)').length, $('.subFiltChecks-clim:not(:disabled)').length, $('.subFiltChecks-eco:not(:disabled)').length, $('.subFiltChecks-blt:not(:disabled)').length, $('.subFiltChecks-soc:not(:disabled)').length, $('.subFiltChecks-fld:not(:disabled)').length]);
-              var numChked = $.sum([$('.subFiltChecks-None:checked').length, $('.subFiltChecks-clim:checked').length, $('.subFiltChecks-eco:checked').length, $('.subFiltChecks-blt:checked').length, $('.subFiltChecks-soc:checked').length, $('.subFiltChecks-fld:checked').length]);
-
-              if(numChked == fullSubLength){
-                $('#subfltTogAll').prop('checked',true);
-              }else{
-                $('#subfltTogAll').prop('checked',false);
-              }
-
-              $('#subFilterSearch :checked').each(function(){
-                searchSubFil.push($(this).val());
-              });
-
-              holdTopSubSearch = searchSubFil;
-              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, searchSubFil.length]);
-              if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, searchSubFil, subFilData)
-              }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
-              }
-            });
-            $('.subFiltChecks-blt').change(function(){
-              showData.empty();
-              var searchSubFil = [];
-
-              var fullSubLength = $.sum([$('.subFiltChecks-None:not(:disabled)').length, $('.subFiltChecks-clim:not(:disabled)').length, $('.subFiltChecks-eco:not(:disabled)').length, $('.subFiltChecks-blt:not(:disabled)').length, $('.subFiltChecks-soc:not(:disabled)').length, $('.subFiltChecks-fld:not(:disabled)').length]);
-              var numChked = $.sum([$('.subFiltChecks-None:checked').length, $('.subFiltChecks-clim:checked').length, $('.subFiltChecks-eco:checked').length, $('.subFiltChecks-blt:checked').length, $('.subFiltChecks-soc:checked').length, $('.subFiltChecks-fld:checked').length]);
-
-              if(numChked == fullSubLength){
-                $('#subfltTogAll').prop('checked',true);
-              }else{
-                $('#subfltTogAll').prop('checked',false);
-              }
-
-              $('#subFilterSearch :checked').each(function(){
-                searchSubFil.push($(this).val());
-              });
-
-              holdTopSubSearch = searchSubFil;
-              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, searchSubFil.length]);
-              if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, searchSubFil, subFilData)
-              }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
-              }
-            });
-            $('.subFiltChecks-soc').change(function(){
-              showData.empty();
-              var searchSubFil = [];
-
-              var fullSubLength = $.sum([$('.subFiltChecks-None:not(:disabled)').length, $('.subFiltChecks-clim:not(:disabled)').length, $('.subFiltChecks-eco:not(:disabled)').length, $('.subFiltChecks-blt:not(:disabled)').length, $('.subFiltChecks-soc:not(:disabled)').length, $('.subFiltChecks-fld:not(:disabled)').length]);
-              var numChked = $.sum([$('.subFiltChecks-None:checked').length, $('.subFiltChecks-clim:checked').length, $('.subFiltChecks-eco:checked').length, $('.subFiltChecks-blt:checked').length, $('.subFiltChecks-soc:checked').length, $('.subFiltChecks-fld:checked').length]);
-
-              if(numChked == fullSubLength){
-                $('#subfltTogAll').prop('checked',true);
-              }else{
-                $('#subfltTogAll').prop('checked',false);
-              }
-
-              $('#subFilterSearch :checked').each(function(){
-                searchSubFil.push($(this).val());
-              });
-
-              holdTopSubSearch = searchSubFil;
-              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, searchSubFil.length]);
-              if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, searchSubFil, subFilData)
-              }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
-              }
-            });
-            $('.subFiltChecks-fld').change(function(){
-              showData.empty();
-              var searchSubFil = [];
-
-              var fullSubLength = $.sum([$('.subFiltChecks-None:not(:disabled)').length, $('.subFiltChecks-clim:not(:disabled)').length, $('.subFiltChecks-eco:not(:disabled)').length, $('.subFiltChecks-blt:not(:disabled)').length, $('.subFiltChecks-soc:not(:disabled)').length, $('.subFiltChecks-fld:not(:disabled)').length]);
-              var numChked = $.sum([$('.subFiltChecks-None:checked').length, $('.subFiltChecks-clim:checked').length, $('.subFiltChecks-eco:checked').length, $('.subFiltChecks-blt:checked').length, $('.subFiltChecks-soc:checked').length, $('.subFiltChecks-fld:checked').length]);
-
-              if(numChked == fullSubLength){
-                $('#subfltTogAll').prop('checked',true);
-              }else{
-                $('#subfltTogAll').prop('checked',false);
-              }
-
-              $('#subFilterSearch :checked').each(function(){
-                searchSubFil.push($(this).val());
-              });
-
-              holdTopSubSearch = searchSubFil;
-              var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, searchSubFil.length]);
-              if(chkNumRes>0){
-                selectTools(holdTagSearch, tagData, holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, searchSubFil, subFilData)
-              }else{
-                defualtSetup(tagData, reqData, geoData, tFunData, topFilData, subFilData)
+                defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
               }
             });
           });
-
-
 
       });
   </script>
@@ -1110,192 +1160,207 @@
         </div>
         <div class="filtered-search-filters">
           <fieldset class>
-            <fieldset class="singleRow">
-              <div class="header">
-                <h5>Topic Filter</h5>
 
-              </div>
-
-
-              <form id="topFilterSearch">
-                <label><input type="checkbox" aria-selected="false" id=topfltTogAll value="Select All">Select All</label><br>
-                <hr>
-                <label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="None">None</label><br>
-                <label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="Weather and Climate">Weather and Climate</label><br>
-                <label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="Ecosystems">Ecosystems</label><br>
-                <label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="Agriculture / Built Environment">Agriculture / Built Environment</label><br>
-                <label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="Society">Society</label><br>
-                <label><input type="checkbox" aria-selected="false" class="topFiltChecks" value="Water / Flooding">Water / Flooding</label>
-              </form>
-            </fieldset>
-            <fieldset class="singleRow">
-            <div class="header">
-              <h5>Sub-topic Filter</h5>
-
-            </div>
-              <form id="subFilterSearch">
-                <label><input type="checkbox" aria-selected="false" id=subfltTogAll value="Select All">Select All</label><br>
-                <hr>
-                <label class="subLabs-None"><input type="checkbox" aria-selected="false" class="subFiltChecks-None" value="None">None</label><br>
-                <label class="subLabs-clim"><input type="checkbox" aria-selected="false" class="subFiltChecks-clim" value="Sea Level Rise">Sea Level Rise</label><br>
-                <label class="subLabs-eco"><input type="checkbox" aria-selected="false" class="subFiltChecks-eco" value="Wetlands">Wetlands</label><br>
-                <label class="subLabs-eco"><input type="checkbox" aria-selected="false" class="subFiltChecks-eco" value="Shorelines and Erosion">Shorelines and Erosion</label><br>
-                <label class="subLabs-blt"><input type="checkbox" aria-selected="false" class="subFiltChecks-blt" value="Planning / Land Use">Planning / Land Use</label><br>
-                <label class="subLabs-blt"><input type="checkbox" aria-selected="false" class="subFiltChecks-blt" value="Transportation">Transportation</label><br>
-                <label class="subLabs-soc"><input type="checkbox" aria-selected="false" class="subFiltChecks-soc" value="Social Vulnerability">Social Vulnerability</label><br>
-                <label class="subLabs-soc"><input type="checkbox" aria-selected="false" class="subFiltChecks-soc" value="Public Health">Public Health</label><br>
-                <label class="subLabs-eco"><input type="checkbox" aria-selected="false" class="subFiltChecks-eco" value="Restoration">Restoration</label><br>
-                <label class="subLabs-eco"><input type="checkbox" aria-selected="false" class="subFiltChecks-eco" value="Eco Services Valuation">Eco Services Valuation</label><br>
-                <label class="subLabs-blt"><input type="checkbox" aria-selected="false" class="subFiltChecks-blt" value="Buildings / Infrastructure">Buildings / Infrastructure</label><br>
-                <label class="subLabs-clim"><input type="checkbox" aria-selected="false" class="subFiltChecks-clim" value="Temperature">Temperature</label><br>
-                <label class="subLabs-clim"><input type="checkbox" aria-selected="false" class="subFiltChecks-clim" value="Precipitation">Precipitation</label><br>
-                <label class="subLabs-fld"><input type="checkbox" aria-selected="false" class="subFiltChecks-fld" value="Water Level">Water Level</label><br>
-                <label class="subLabs-fld"><input type="checkbox" aria-selected="false" class="subFiltChecks-fld" value="Water Quality">Water Quality</label><br>
-                <label class="subLabs-clim"><input type="checkbox" aria-selected="false" class="subFiltChecks-clim" value="Storms and Hurricanes">Storms and Hurricanes</label><br>
-                <label class="subLabs-eco"><input type="checkbox" aria-selected="false" class="subFiltChecks-eco" value="Submerged Aquatic Vegitation">Submerged Aquatic Vegitation</label><br>
-                <label class="subLabs-blt"><input type="checkbox" aria-selected="false" class="subFiltChecks-blt" value="Fisheries and Aquaculture">Fisheries and Aquaculture</label><br>
-                <label class="subLabs-clim"><input type="checkbox" aria-selected="false" class="subFiltChecks-clim" value="Drought">Drought</label><br>
-                <label class="subLabs-blt"><input type="checkbox" aria-selected="false" class="subFiltChecks-blt" value="Agriculture">Agriculture</label><br>
-                <label class="subLabs-clim"><input type="checkbox" aria-selected="false" class="subFiltChecks-clim" value="Carbon Emissions">Carbon Emissions</label><br>
-                <label class="subLabs-soc"><input type="checkbox" aria-selected="false" class="subFiltChecks-soc" value="Air Quality">Air Quality</label><br>
-                <label class="subLabs-blt"><input type="checkbox" aria-selected="false" class="subFiltChecks-blt" value="Forestry">Forestry</label><br>
-                <label class="subLabs-eco"><input type="checkbox" aria-selected="false" class="subFiltChecks-eco" value="Soils">Soils</label><br>
-                <label class="subLabs-blt"><input type="checkbox" aria-selected="false" class="subFiltChecks-blt" value="Economic Assessment">Economic Assessment</label><br>
-                <label class="subLabs-fld"><input type="checkbox" aria-selected="false" class="subFiltChecks-fld" value="Stream Flow">Stream Flow</label><br>
-                <label class="subLabs-blt"><input type="checkbox" aria-selected="false" class="subFiltChecks-blt" value="Urban Forestry">Urban Forestry</label><br>
-                <label class="subLabs-fld"><input type="checkbox" aria-selected="false" class="subFiltChecks-fld" value="High Tide / Recurrent Flooding">High Tide / Recurrent Flooding</label><br>
-                <label class="subLabs-fld"><input type="checkbox" aria-selected="false" class="subFiltChecks-fld" value="Storm Surge">Storm Surge</label><br>
-                <label class="subLabs-fld"><input type="checkbox" aria-selected="false" class="subFiltChecks-fld" value="Inland Flooding">Inland Flooding</label><br>
-                <label class="subLabs-fld"><input type="checkbox" aria-selected="false" class="subFiltChecks-fld" value="Saltwater Intrusion">Saltwater Intrusion</label>
-              </form>
-            </fieldset>
-            <fieldset class="singleRow">
-            <div class="header">
-              <h5>Software Requirements</h5>
-
-            </div>
-              <form id="softReqSearch">
-                <label><input type="checkbox" aria-selected="false" id=reqTogAll value="Select All">Select All</label><br>
-                <hr>
-                <label><input type="checkbox" aria-selected="false" class="reqChecks" value="None">None</label><br>
-                <label><input type="checkbox" aria-selected="false" class="reqChecks" value="R">R</label><br>
-                <label><input type="checkbox" aria-selected="false" class="reqChecks" value="R Studio">R Studio</label><br>
-                <label><input type="checkbox" aria-selected="false" class="reqChecks" value="ArcMap/ GIS software">ArcMap/ GIS software</label><br>
-                <label><input type="checkbox" aria-selected="false" class="reqChecks" value="ArcGIS (optional)">ArcGIS (optional)</label><br>
-              </form>
-          </fieldset>
           <fieldset class="singleRow">
-          <div class="header">
-            <h5>Geographic Scope</h5>
-
-          </div>
+            <div class="header"><h5>Geographic Scope</h5></div>
             <form id="geoScopeSearch">
-
-              <select name="mdGeoOpt[]" id="mdGeoOpt" multiple="multiple">
-                <option value="mdAll">All Counties</option>
-                <option value="mdCoastal">Coastal</option>
+              <select name="deGeoOpt[]" id="deGeoOpt" multiple="multiple">
                 <optgroup label=" ">
-                <option value="Allegany County">Allegany County</option>
-                <option value="Anne Arundel County">Anne Arundel County</option>
-                <option value="Baltimore County">Baltimore County</option>
-                <option value="Calvert County">Calvert County</option>
-                <option value="Caroline County">Caroline County</option>
-                <option value="Carroll County">Carroll County</option>
-                <option value="Cecil County">Cecil County</option>
-                <option value="Charles County">Charles County</option>
-                <option value="Dorchester County">Dorchester County</option>
-                <option value="Frederick County">Frederick County</option>
-                <option value="Garrett County">Garrett County</option>
-                <option value="Harford County">Harford County</option>
-                <option value="Howard County">Howard County</option>
-                <option value="Kent County">Kent County</option>
-                <option value="Montgomery County">Montgomery County</option>
-                <option value="Prince George's County">Prince George's County</option>
-                <option value="Somerset County">Somerset County</option>
-                <option value="St. Mary's County">St. Mary's County</option>
-                <option value="Talbot County">Talbot County</option>
-                <option value="Washington County">Washington County</option>
-                <option value="Wicomico County">Wicomico County</option>
-                <option value="Worcester County">Worcester County</option>
-                <option value="Baltimore City">Baltimore City</option>
+                  <option value="Kent County">Kent County</option>
+                  <option value="New Castle County">New Castle County</option>
+                  <option value="Sussex County">Sussex County</option>
+                </optgroup>
+              </select>
+              <select name="mdGeoOpt[]" id="mdGeoOpt" multiple="multiple">
+                <optgroup label=" ">
+                  <option value="Allegany County">Allegany County</option>
+                  <option value="Anne Arundel County">Anne Arundel County</option>
+                  <option value="Baltimore County">Baltimore County</option>
+                  <option value="Calvert County">Calvert County</option>
+                  <option value="Caroline County">Caroline County</option>
+                  <option value="Carroll County">Carroll County</option>
+                  <option value="Cecil County">Cecil County</option>
+                  <option value="Charles County">Charles County</option>
+                  <option value="Dorchester County">Dorchester County</option>
+                  <option value="Frederick County">Frederick County</option>
+                  <option value="Garrett County">Garrett County</option>
+                  <option value="Harford County">Harford County</option>
+                  <option value="Howard County">Howard County</option>
+                  <option value="Kent County">Kent County</option>
+                  <option value="Montgomery County">Montgomery County</option>
+                  <option value="Prince George's County">Prince George's County</option>
+                  <option value="Somerset County">Somerset County</option>
+                  <option value="St. Mary's County">St. Mary's County</option>
+                  <option value="Talbot County">Talbot County</option>
+                  <option value="Washington County">Washington County</option>
+                  <option value="Wicomico County">Wicomico County</option>
+                  <option value="Worcester County">Worcester County</option>
+                  <option value="Baltimore City">Baltimore City</option>
+                </optgroup>
+              </select>
+              <select name="njGeoOpt[]" id="njGeoOpt" multiple="multiple">
+                <optgroup label=" ">
+                  <option value="Atlantic County">Atlantic County</option>
+                  <option value="Bergen County">Bergen County</option>
+                  <option value="Burlington City">Burlington City</option>
+                  <option value="Camden County">Camden County</option>
+                  <option value="Cape May County">Cape May County</option>
+                  <option value="Cumerland County">Cumerland County</option>
+                  <option value="Essex County">Essex County</option>
+                  <option value="Gloucester County">Gloucester County</option>
+                  <option value="Hudson County">Hudson County</option>
+                  <option value="Hunterdon County">Hunterdon County</option>
+                  <option value="Mercer County">Mercer County</option>
+                  <option value="Middlesex County">Middlesex County</option>
+                  <option value="Monmouth County">Monmouth County</option>
+                  <option value="Morris County">Morris County</option>
+                  <option value="Ocean County">Ocean County</option>
+                  <option value="Passaic County">Passaic County</option>
+                  <option value="Salem County">Salem County</option>
+                  <option value="Somerset County">Somerset County</option>
+                  <option value="Sussex County">Sussex County</option>
+                  <option value="Union County">Union County</option>
+                  <option value="Warren County">Warren County</option>
+                </optgroup>
+              </select>
+              <select name="nyGeoOpt[]" id="nyGeoOpt" multiple="multiple">
+                <optgroup label=" ">
+                  <option value="Albany County">Albany County</option>
+                  <option value="Allegany County">Allegany County</option>
+                  <option value="Bronx County">Bronx County</option>
+                  <option value="Broome County<">Broome County</option>
+                  <option value="Cattaraugus County">Cattaraugus County</option>
+                  <option value="Cayuga County">Cayuga County</option>
+                  <option value="Chautauqua County">Chautauqua County</option>
+                  <option value="Chemung County">Chemung County</option>
+                  <option value="Chenango County">Chenango County</option>
+                  <option value="Clinton County">Clinton County</option>
+                  <option value="Columbia County">Columbia County</option>
+                  <option value="Cortland County">Cortland County</option>
+                  <option value="Delaware County">Delaware County</option>
+                  <option value="Dutchess County">Dutchess County</option>
+                  <option value="Erie County">Erie County</option>
+                  <option value="Essex County">Essex County</option>
+                  <option value="Franklin County">Franklin County</option>
+                  <option value="Fulton County">Fulton County</option>
+                  <option value="Genesee County">Genesee County</option>
+                  <option value="Greene County">Greene County</option>
+                  <option value="Hamilton County">Hamilton County</option>
+                  <option value="Herkimer County">Herkimer County</option>
+                  <option value="Jefferson County">Jefferson County</option>
+                  <option value="Kings County">Kings County</option>
+                  <option value="Lewis County">Lewis County</option>
+                  <option value="Livingston County">Livingston County</option>
+                  <option value="Madison County">Madison County</option>
+                  <option value="Monroe County">Monroe County</option>
+                  <option value="Montgomery County">Montgomery County</option>
+                  <option value="Nassau County">Nassau County</option>
+                  <option value="New York County">New York County</option>
+                  <option value="Niagara County">Niagara County</option>
+                  <option value="Oneida County">Oneida County</option>
+                  <option value="Onondaga County">Onondaga County</option>
+                  <option value="Ontario County">Ontario County</option>
+                  <option value="Orange County">Orange County</option>
+                  <option value="Orleans County">Orleans County</option>
+                  <option value="Oswego County">Oswego County</option>
+                  <option value="Otsego County">Otsego County</option>
+                  <option value="Putnam County">Putnam County</option>
+                  <option value="Queens County">Queens County</option>
+                  <option value="Rensselaer County">Rensselaer County</option>
+                  <option value="Richmond County">Richmond County</option>
+                  <option value="Rockland County">Rockland County</option>
+                  <option value="St. Lawrence County">St. Lawrence County</option>
+                  <option value="Saratoga County">Saratoga County</option>
+                  <option value="Schenectady County">Schenectady County</option>
+                  <option value="Schoharie County">Schoharie County</option>
+                  <option value="Schuyler County">Schuyler County</option>
+                  <option value="Seneca County">Seneca County</option>
+                  <option value="Steuben County">Steuben County</option>
+                  <option value="Suffolk County">Suffolk County</option>
+                  <option value="Sullivan County">Sullivan County</option>
+                  <option value="Tioga County">Tioga County</option>
+                  <option value="Tompkins County">Tompkins County</option>
+                  <option value="Ulster County">Ulster County</option>
+                  <option value="Warren County">Warren County</option>
+                  <option value="Washington County">Washington County</option>
+                  <option value="Wayne County">Wayne County</option>
+                  <option value="Westchester County">Westchester County</option>
+                  <option value="Wyoming County">Wyoming County</option>
+                  <option value="Yates County">Yates County</option>
                 </optgroup>
               </select>
               <select name="paGeoOpt[]" id="paGeoOpt" multiple="multiple">
-                <option value="paAll">All Counties</option>
-                <option value="paCoastal">Coastal</option>
                 <optgroup label=" ">
-                <option value="Adams County">Adams County</option>
-                <option value="Allegheny County">Allegheny County</option>
-                <option value="Armstrong County">Armstrong County</option>
-                <option value="Beaver County">Beaver County</option>
-                <option value="Bedford County">Bedford County</option>
-                <option value="Berks County">Berks County</option>
-                <option value="Blair County">Blair County</option>
-                <option value="Bradford County">Bradford County</option>
-                <option value="Bucks County">Bucks County</option>
-                <option value="Butler County">Butler County</option>
-                <option value="Cambria County">Cambria County</option>
-                <option value="Cameron County">Cameron County</option>
-                <option value="Carbon County">Carbon County</option>
-                <option value="Centre County">Centre County</option>
-                <option value="Chester County">Chester County</option>
-                <option value="Clarion County">Clarion County</option>
-                <option value="Clearfield County">Clearfield County</option>
-                <option value="Clinton County">Clinton County</option>
-                <option value="Columbia County">Columbia County</option>
-                <option value="Crawford County">Crawford County</option>
-                <option value="Cumberland County">Cumberland County</option>
-                <option value="Dauphin County">Dauphin County</option>
-                <option value="Delaware County">Delaware County</option>
-                <option value="Elk County">Elk County</option>
-                <option value="Erie County">Erie County</option>
-                <option value="Fayette County">Fayette County</option>
-                <option value="Forest County">Forest County</option>
-                <option value="Franklin County">Franklin County</option>
-                <option value="Fulton County">Fulton County</option>
-                <option value="Greene County">Greene County</option>
-                <option value="Huntingdon County">Huntingdon County</option>
-                <option value="Indiana County">Indiana County</option>
-                <option value="Jefferson County">Jefferson County</option>
-                <option value="Juniata County">Juniata County</option>
-                <option value="Lackawanna County">Lackawanna County</option>
-                <option value="Lancaster County">Lancaster County</option>
-                <option value="Lawrence County">Lawrence County</option>
-                <option value="Lebanon County">Lebanon County</option>
-                <option value="Lehigh County">Lehigh County</option>
-                <option value="Luzerne County">Luzerne County</option>
-                <option value="Lycoming County">Lycoming County</option>
-                <option value="McKean County">McKean County</option>
-                <option value="Mercer County">Mercer County</option>
-                <option value="Mifflin County">Mifflin County</option>
-                <option value="Monroe County">Monroe County</option>
-                <option value="Montgomery County">Montgomery County</option>
-                <option value="Montour County">Montour County</option>
-                <option value="Northampton County">Northampton County</option>
-                <option value="Northumberland County">Northumberland County</option>
-                <option value="Perry County">Perry County</option>
-                <option value="Philadelphia County">Philadelphia County</option>
-                <option value="Pike County">Pike County</option>
-                <option value="Potter County">Potter County</option>
-                <option value="Schuylkill County">Schuylkill County</option>
-                <option value="Snyder County">Snyder County</option>
-                <option value="Somerset County">Somerset County</option>
-                <option value="Sullivan County">Sullivan County</option>
-                <option value="Susquehanna County">Susquehanna County</option>
-                <option value="Tioga County">Tioga County</option>
-                <option value="Union County">Union County</option>
-                <option value="Venago County">Venago County</option>
-                <option value="Warren County">Warren County</option>
-                <option value="Washington County">Washington County</option>
-                <option value="Wayne County">Wayne County</option>
-                <option value="Westmoreland County">Westmoreland County</option>
-                <option value="Wyoming County">Wyoming County</option>
-                <option value="York County">York County</option>
+                  <option value="Adams County">Adams County</option>
+                  <option value="Allegheny County">Allegheny County</option>
+                  <option value="Armstrong County">Armstrong County</option>
+                  <option value="Beaver County">Beaver County</option>
+                  <option value="Bedford County">Bedford County</option>
+                  <option value="Berks County">Berks County</option>
+                  <option value="Blair County">Blair County</option>
+                  <option value="Bradford County">Bradford County</option>
+                  <option value="Bucks County">Bucks County</option>
+                  <option value="Butler County">Butler County</option>
+                  <option value="Cambria County">Cambria County</option>
+                  <option value="Cameron County">Cameron County</option>
+                  <option value="Carbon County">Carbon County</option>
+                  <option value="Centre County">Centre County</option>
+                  <option value="Chester County">Chester County</option>
+                  <option value="Clarion County">Clarion County</option>
+                  <option value="Clearfield County">Clearfield County</option>
+                  <option value="Clinton County">Clinton County</option>
+                  <option value="Columbia County">Columbia County</option>
+                  <option value="Crawford County">Crawford County</option>
+                  <option value="Cumberland County">Cumberland County</option>
+                  <option value="Dauphin County">Dauphin County</option>
+                  <option value="Delaware County">Delaware County</option>
+                  <option value="Elk County">Elk County</option>
+                  <option value="Erie County">Erie County</option>
+                  <option value="Fayette County">Fayette County</option>
+                  <option value="Forest County">Forest County</option>
+                  <option value="Franklin County">Franklin County</option>
+                  <option value="Fulton County">Fulton County</option>
+                  <option value="Greene County">Greene County</option>
+                  <option value="Huntingdon County">Huntingdon County</option>
+                  <option value="Indiana County">Indiana County</option>
+                  <option value="Jefferson County">Jefferson County</option>
+                  <option value="Juniata County">Juniata County</option>
+                  <option value="Lackawanna County">Lackawanna County</option>
+                  <option value="Lancaster County">Lancaster County</option>
+                  <option value="Lawrence County">Lawrence County</option>
+                  <option value="Lebanon County">Lebanon County</option>
+                  <option value="Lehigh County">Lehigh County</option>
+                  <option value="Luzerne County">Luzerne County</option>
+                  <option value="Lycoming County">Lycoming County</option>
+                  <option value="McKean County">McKean County</option>
+                  <option value="Mercer County">Mercer County</option>
+                  <option value="Mifflin County">Mifflin County</option>
+                  <option value="Monroe County">Monroe County</option>
+                  <option value="Montgomery County">Montgomery County</option>
+                  <option value="Montour County">Montour County</option>
+                  <option value="Northampton County">Northampton County</option>
+                  <option value="Northumberland County">Northumberland County</option>
+                  <option value="Perry County">Perry County</option>
+                  <option value="Philadelphia County">Philadelphia County</option>
+                  <option value="Pike County">Pike County</option>
+                  <option value="Potter County">Potter County</option>
+                  <option value="Schuylkill County">Schuylkill County</option>
+                  <option value="Snyder County">Snyder County</option>
+                  <option value="Somerset County">Somerset County</option>
+                  <option value="Sullivan County">Sullivan County</option>
+                  <option value="Susquehanna County">Susquehanna County</option>
+                  <option value="Tioga County">Tioga County</option>
+                  <option value="Union County">Union County</option>
+                  <option value="Venago County">Venago County</option>
+                  <option value="Warren County">Warren County</option>
+                  <option value="Washington County">Washington County</option>
+                  <option value="Wayne County">Wayne County</option>
+                  <option value="Westmoreland County">Westmoreland County</option>
+                  <option value="Wyoming County">Wyoming County</option>
+                  <option value="York County">York County</option>
                 </optgroup>
               </select>
               <select name="vaGeoOpt[]" id="vaGeoOpt" multiple="multiple">
-                <option value="vaAll">All Counties</option>
-                <option value="vaCoastal">Coastal</option>
                 <optgroup label=" ">
                   <option value="Accomack County">Accomack County</option>
                   <option value="Albemarie County">Albemarie County</option>
@@ -1431,159 +1496,94 @@
                   <option value="Winchester City">Winchester City</option>
                 </optgroup>
               </select>
-              <select name="nyGeoOpt[]" id="nyGeoOpt" multiple="multiple">
-                <option value="nyAll">All Counties</option>
-                <option value="nyCoastal">Coastal</option>
-                <optgroup label=" ">
-                <option value="Albany County">Albany County</option>
-                <option value="Allegany County">Allegany County</option>
-                <option value="Bronx County">Bronx County</option>
-                <option value="Broome County<">Broome County</option>
-                <option value="Cattaraugus County">Cattaraugus County</option>
-                <option value="Cayuga County">Cayuga County</option>
-                <option value="Chautauqua County">Chautauqua County</option>
-                <option value="Chemung County">Chemung County</option>
-                <option value="Chenango County">Chenango County</option>
-                <option value="Clinton County">Clinton County</option>
-                <option value="Columbia County">Columbia County</option>
-                <option value="Cortland County">Cortland County</option>
-                <option value="Delaware County">Delaware County</option>
-                <option value="Dutchess County">Dutchess County</option>
-                <option value="Erie County">Erie County</option>
-                <option value="Essex County">Essex County</option>
-                <option value="Franklin County">Franklin County</option>
-                <option value="Fulton County">Fulton County</option>
-                <option value="Genesee County">Genesee County</option>
-                <option value="Greene County">Greene County</option>
-                <option value="Hamilton County">Hamilton County</option>
-                <option value="Herkimer County">Herkimer County</option>
-                <option value="Jefferson County">Jefferson County</option>
-                <option value="Kings County">Kings County</option>
-                <option value="Lewis County">Lewis County</option>
-                <option value="Livingston County">Livingston County</option>
-                <option value="Madison County">Madison County</option>
-                <option value="Monroe County">Monroe County</option>
-                <option value="Montgomery County">Montgomery County</option>
-                <option value="Nassau County">Nassau County</option>
-                <option value="New York County">New York County</option>
-                <option value="Niagara County">Niagara County</option>
-                <option value="Oneida County">Oneida County</option>
-                <option value="Onondaga County">Onondaga County</option>
-                <option value="Ontario County">Ontario County</option>
-                <option value="Orange County">Orange County</option>
-                <option value="Orleans County">Orleans County</option>
-                <option value="Oswego County">Oswego County</option>
-                <option value="Otsego County">Otsego County</option>
-                <option value="Putnam County">Putnam County</option>
-                <option value="Queens County">Queens County</option>
-                <option value="Rensselaer County">Rensselaer County</option>
-                <option value="Richmond County">Richmond County</option>
-                <option value="Rockland County">Rockland County</option>
-                <option value="St. Lawrence County">St. Lawrence County</option>
-                <option value="Saratoga County">Saratoga County</option>
-                <option value="Schenectady County">Schenectady County</option>
-                <option value="Schoharie County">Schoharie County</option>
-                <option value="Schuyler County">Schuyler County</option>
-                <option value="Seneca County">Seneca County</option>
-                <option value="Steuben County">Steuben County</option>
-                <option value="Suffolk County">Suffolk County</option>
-                <option value="Sullivan County">Sullivan County</option>
-                <option value="Tioga County">Tioga County</option>
-                <option value="Tompkins County">Tompkins County</option>
-                <option value="Ulster County">Ulster County</option>
-                <option value="Warren County">Warren County</option>
-                <option value="Washington County">Washington County</option>
-                <option value="Wayne County">Wayne County</option>
-                <option value="Westchester County">Westchester County</option>
-                <option value="Wyoming County">Wyoming County</option>
-                <option value="Yates County">Yates County</option>
-                </optgroup>
+              <select name="dcGeoOpt[]" id="dcGeoOpt" multiple="multiple">
+                <option value="DC">Washington D.C.</option>
               </select>
-              <select name="deGeoOpt[]" id="deGeoOpt" multiple="multiple">
-                <option value="deAll">All Counties</option>
-                <option value="deCoastal">Coastal</option>
-                <optgroup label=" ">
-                <option value="Kent County">Kent County</option>
-                <option value="New Castle County">New Castle County</option>
-                <option value="Sussex County">Sussex County</option>
-                </optgroup>
-              </select>
-              <select name="njGeoOpt[]" id="njGeoOpt" multiple="multiple">
-                <option value="njAll">All Counties</option>
-                <option value="njCoastal">Coastal</option>
-                <optgroup label=" ">
-                <option value="Atlantic County">Atlantic County</option>
-                <option value="Bergen County">Bergen County</option>
-                <option value="Burlington City">Burlington City</option>
-                <option value="Camden County">Camden County</option>
-                <option value="Cape May County">Cape May County</option>
-                <option value="Cumerland County">Cumerland County</option>
-                <option value="Essex County">Essex County</option>
-                <option value="Gloucester County">Gloucester County</option>
-                <option value="Hudson County">Hudson County</option>
-                <option value="Hunterdon County">Hunterdon County</option>
-                <option value="Mercer County">Mercer County</option>
-                <option value="Middlesex County">Middlesex County</option>
-                <option value="Monmouth County">Monmouth County</option>
-                <option value="Morris County">Morris County</option>
-                <option value="Ocean County">Ocean County</option>
-                <option value="Passaic County">Passaic County</option>
-                <option value="Salem County">Salem County</option>
-                <option value="Somerset County">Somerset County</option>
-                <option value="Sussex County">Sussex County</option>
-                <option value="Union County">Union County</option>
-                <option value="Warren County">Warren County</option>
-                </optgroup>
-              </select>
-              <label><input type="checkbox" class="dcCheckbox" value="DC">DC</label><br>
-              <select name="othGeoOpt[]" id="othGeoOpt" multiple="multiple">
-                <option value="othAll">All Other States</option>
-                <option value="othCoastal">Coastal</option>
-                <optgroup label=" ">
-                <option value="Rhode Island">Rhode Island</option>
-                <option value="Iowa">Iowa</option>
-                <option value="Maine">Maine</option>
-                <option value="New Mexico">New Mexico</option>
-                <option value="West Virginia">West Virginia</option>
-                </optgroup>
-              </select>
-
+            </form>
+            <form id="globalGeoOptions">
+              <label><input type="checkbox" aria-selected="false" class="globalGeoChecks" value="Coastal">Only Tools Related To Coasts</label><br>
+              <label><input type="checkbox" aria-selected="false" class="globalGeoChecks" value="inChesBay">Only Within Chesapeake Bay</label><br>
+              <label><input type="checkbox" aria-selected="false" class="globalGeoChecks" value="inMARISA">Only Within MARISA Boundary</label><br>
             </form>
           </fieldset>
           <fieldset class="singleRow">
-          <div class="header">
-            <h5>Tool Function</h5>
-
-          </div>
+            <div class="header"><h5>Topic Filter</h5></div>
+            <form id="filterSearch">
+              <select name="bltFiltOpt[]" id="bltFiltOpt" multiple="multiple">
+                <optgroup label=" ">
+                  <option value="Planning / Land Use">Planning / Land Use</option>
+                  <option value="Transportation">Transportation</option>
+                  <option value="Buildings / Infrastructure">Buildings / Infrastructure</option>
+                  <option value="Fisheries and Aquaculture">Fisheries and Aquaculture</option>
+                  <option value="Agriculture">Agriculture</option>
+                  <option value="Forestry">Forestry</option>
+                  <option value="Economic Assessment">Economic Assessment</option>
+                <option value="Urban Forestry">Urban Forestry</option>
+                </optgroup>
+              </select>
+              <select name="ecoFiltOpt[]" id="ecoFiltOpt" multiple="multiple">
+                <optgroup label=" ">
+                  <option value="Wetlands">Wetlands</option>
+                  <option value="Shorelines and Erosion">Shorelines and Erosion</option>
+                  <option value="Restoration">Restoration</option>
+                  <option value="Eco Services Valuation">Eco Services Valuation</option>
+                  <option value="Submerged Aquatic Vegitation">Submerged Aquatic Vegitation</option>
+                  <option value="Soils">Soils</option>
+                </optgroup>
+              </select>
+              <select name="socFiltOpt[]" id="socFiltOpt" multiple="multiple">
+                <optgroup label=" ">
+                  <option value="Social Vulnerability">Social Vulnerability</option>
+                  <option value="Public Health">Public Health</option>
+                  <option value="Air Quality">Air Quality</option>
+                </optgroup>
+              </select>
+              <select name="fldFiltOpt[]" id="fldFiltOpt" multiple="multiple">
+                <optgroup label=" ">
+                  <option value="Water Level">Water Level</option>
+                  <option value="Water Quality">Water Quality</option>
+                  <option value="Stream Flow">Stream Flow</option>
+                  <option value="High Tide / Recurrent Flooding">High Tide / Recurrent Flooding</option>
+                  <option value="Storm Surge">Storm Surge</option>
+                  <option value="Inland Flooding">Inland Flooding</option>
+                <option value="Saltwater Intrusion">Saltwater Intrusion</option>
+                </optgroup>
+              </select>
+              <select name="climFiltOpt[]" id="climFiltOpt" multiple="multiple">
+                <optgroup label=" ">
+                  <option value="Sea Level Rise">Sea Level Rise</option>
+                  <option value="Temperature">Temperature</option>
+                  <option value="Precipitation">Precipitation</option>
+                  <option value="Storms and Hurricanes">Storms and Hurricanes</option>
+                  <option value="Drought">Drought</option>
+                  <option value="Carbon Emissions">Carbon Emissions</option>
+                </optgroup>
+              </select>
+              <select name="othFiltOpt[]" id="othFiltOpt" multiple="multiple">
+                <option value="None">Other</option>
+              </select>
+            </form>
+          </fieldset>
+          <!--<fieldset class="singleRow">
+            <div class="header"><h5>Software Requirements</h5></div>
+            <form id="softReqSearch">
+              <label><input type="checkbox" aria-selected="false" class="reqChecks" value="R">R</label><br>
+              <label><input type="checkbox" aria-selected="false" class="reqChecks" value="R Studio">R Studio</label><br>
+              <label><input type="checkbox" aria-selected="false" class="reqChecks" value="ArcMap/ GIS software">ArcMap/ GIS software</label><br>
+              <label><input type="checkbox" aria-selected="false" class="reqChecks" value="ArcGIS (optional)">ArcGIS (optional)</label><br>
+              <label><input type="checkbox" aria-selected="false" class="reqChecks" value="None">None</label><br>
+            </form>
+          </fieldset>-->
+          <fieldset class="singleRow">
+            <div class="header"><h5>Tool Function</h5></div>
             <form id="toolFunSearch">
-              <label><input type="checkbox" aria-selected="false" id=tlfunTogAll value="Select All">Select All</label><br>
-              <hr>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="None">None</label><br>
               <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="View Past/Current Conditions">View Past/Current Conditions</label><br>
               <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="View Future Projections">View Future Projections</label><br>
               <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Engagement">Engagement</label><br>
               <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Identify Vulnerabilities">Identify Vulnerabilities</label><br>
+              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="None">Unspecified</label><br>
             </form>
           </fieldset>
-          <fieldset class="singleRow">
-            <div class="header">
-              <h5>Tool Tags</h5>
-
-            </div>
-            <form id="tagSearch">
-              <label><input type="checkbox" aria-selected="false" id=tagTogAll value="Select All">Select All</label><br>
-              <hr>
-              <label><input type="checkbox" aria-selected="false" class="tagChecks" value="Easy-to-use, interactive interface">Easy-to-use, interactive interface</label><br>
-              <label><input type="checkbox" aria-selected="false" class="tagChecks" value="Provides decadal projections for multiple sea level rise scenarios">Provides decadal projections for multiple sea level rise scenarios</label><br>
-              <label><input type="checkbox" aria-selected="false" class="tagChecks" value="Can easily search for locality of interest">Can easily search for locality of interest</label><br>
-              <label><input type="checkbox" aria-selected="false" class="tagChecks" value="Flooding forecast is updated every 12 hours">Flooding forecast is updated every 12 hours</label><br>
-              <label><input type="checkbox" aria-selected="false" class="tagChecks" value="Can overlay additional features, such as infrastructure and natural resources">Can overlay additional features, such as infrastructure and natural resources</label><br>
-              <label><input type="checkbox" aria-selected="false" class="tagChecks" value="Multiple basemap options">Multiple basemap options</label><br>
-              <label><input type="checkbox" aria-selected="false" class="tagChecks" value="Easy-to-use interface">Easy-to-use interface</label>
-            </form>
-          </fieldset>
-        </fieldset>
-        <button type="button">Find Tools</button>
         </div>
 
         <hr>
