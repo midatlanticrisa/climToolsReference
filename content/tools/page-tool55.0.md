@@ -1,20 +1,20 @@
 ---
 title: "USGS National Water Census Data Portal"
 description: "USGS National Water Census Data Portal"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: []
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_55.0_ScreenCapture-1.png
 ---
 Developed By: USGS
 
 **Summary:** Data portal that provides data on Water Budget and Stream Flow
 
-<a href="https://cida.usgs.gov/nwc/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://cida.usgs.gov/nwc/
 
 __**Geographic Coverage**__
-Not Available
+- Contiguous United States
 
 __**Strengths**__
 Not Available

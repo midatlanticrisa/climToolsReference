@@ -1,11 +1,11 @@
 ---
 title: "FEMA's National Flood Hazard Layer (NFHL) Viewer"
 description: "Display FEMA-delineated flood hazards through Flood Insurance Rate Maps (FIRMs) and revisions to FIRMS via Letters of Map Amendments and Letters of Map Revisions (LOMRs)"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Considered the official database for the National Flood Insurance Program", "Allows user to search by address"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_51.0_ScreenCapture-1.png
 ---
 Developed By: FEMA
 
@@ -15,7 +15,7 @@ Through this tool, users can browse NFHL’s through a map interface, which incl
 
 FIRM shapefiles and county information can be downloaded through the tool, however NFHL data, metadata, or FIRMette shapefiles must be requested from FEMA’s Flood Map Service Center. The tool is updated as studies go effective.
 
-<a href="https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=8b0adb51996444d4879338b5529aa9cd" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=8b0adb51996444d4879338b5529aa9cd
 
 __**Geographic Coverage**__
 - Contiguous United States

@@ -1,11 +1,11 @@
 ---
 title: "MDOT Climate Change Vulnerability"
 description: "Illustrates the specific roads that will experience inundation due to predicted storm events. Displays projected water depth grids"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Interactive map layers", "Site specific results", "Road inundation layers", "Multiple scenarios for flood projections", "Long term projections"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_49.0_ScreenCapture-1.png
 ---
 Developed By: MDOT_State Highway Administration, Salisbury University, and the Eastern Shore Regional GIS Cooperative
 
@@ -15,11 +15,11 @@ This tool is primarily intended to support MDOT State Highway Administration to 
 
 This map's water level projections are based on data from the US Army Corps of Engineers (USACE) Sea Level Change Projections, United States Geological Survey (USGS) studies, and the National Oceanic & Atmospheric Administration (NOAA) tidal observations.
 
-<a href="https://maryland.maps.arcgis.com/apps/webappviewer/index.html?id=86b5933d2d3e45ee8b9d8a5f03a7030c
-" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://maryland.maps.arcgis.com/apps/webappviewer/index.html?id=86b5933d2d3e45ee8b9d8a5f03a7030c
+
 
 __**Geographic Coverage**__
--  Maryland
+- Maryland
 
 __**Strengths**__
 -  Interactive map layers

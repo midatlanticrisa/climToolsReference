@@ -1,11 +1,11 @@
 ---
 title: "Storm Water Management Model (SWMM)"
 description: "Allows users to assess stormwater runoff quantity and quality in order to plan for grey and green infrastructure."
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Tutorial and beginner manual provided", "Accounts for various hydrological processes (ex: snow melt)", "Although targeted at urban areas, can be applied for non-urban areas as well"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_73.1_ScreenCapture-1.png
 ---
 Developed By: EPA
 
@@ -14,10 +14,10 @@ Developed By: EPA
 Users must download the software and then input spatial data to generate stormwater simulations for large-scale planning analyses of continuous water quality/quantity data or for modeling a single-storm event. The tool accounts for various hydrological processes and allows users to incorporate climate change projections into their analyses through the SWMM Climate Adjustment Tool (SWMM-CAT).The tool has extensive help documentation available online, including a manual, user's guide, and help portal for technical support.
 
 
-<a href="https://www.epa.gov/water-research/storm-water-management-model-swmm" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://www.epa.gov/water-research/storm-water-management-model-swmm
 
 __**Geographic Coverage**__
-Not Available
+- Applicable Anywhere
 
 __**Strengths**__
 -  Tutorial and beginner manual provided

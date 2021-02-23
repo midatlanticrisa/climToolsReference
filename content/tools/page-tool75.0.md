@@ -1,11 +1,11 @@
 ---
 title: "OSPREY Public"
 description: "Report current meteorological and infrastructure (electricity, traffic, shelters) conditions to aid emergency response planning for both citizens and professionals."
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Data frequently updated", "Locality-level mapping and graphs", "Broad extent of data"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_75.0_ScreenCapture-1.png
 ---
 Developed By: NOAA_NWS
 
@@ -15,10 +15,10 @@ This detailed interface offers a broad range of information to aid emergency man
 
 OSPREY is supported by MD iMAP and is associated with the National Weather Service for DC/Baltimore Twitter account (@NWS_BaltWash), which users may follow to receive daily weather updates for the region.
 
-<a href="https://geodata.md.gov/ospreypublic/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://geodata.md.gov/ospreypublic/
 
 __**Geographic Coverage**__
--  Maryland
+- Maryland
 
 __**Strengths**__
 -  Data frequently updated

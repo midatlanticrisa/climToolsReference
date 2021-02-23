@@ -1,11 +1,11 @@
 ---
 title: "AdaptVA Interactive Map"
 description: "Maps that shows sea level rise projections (low, mid, and high) in relationship to social vulnerability, infrastructure, management, and natural resources."
-date: 2020-06-25T15:24:15-0400
+date: 2021-02-11T14:07:02-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Can overlay additional features, such as infrastructure and natural resources", "Multiple basemap options", "Easy to export and print", "Excellent documentation of most map layers"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_1.3_ScreenCapture-1.png
 ---
 Developed By: VIMS_CCRM
 
@@ -13,10 +13,10 @@ Developed By: VIMS_CCRM
 
 This easy-to-use tool provides three sea level rise scenarios (low, intermediate, and extreme), which can be viewed at 10-year increments from 1992 – 2100. Users may click through or automate the display to view 10-year intervals for each sea level rise scenario. Users can also overlay addition features portraying vulnerability/risk, infrastructure, recommended shoreline management, and natural resources.  This tool is intended for beginner users and does not require any specialized software or training.
 
-<a href="http://cmap2.vims.edu/AdaptVA/adaptVA_viewer.html" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ http://cmap2.vims.edu/AdaptVA/adaptVA_viewer.html
 
 __**Geographic Coverage**__
--  Virginia
+- Virginia
 
 __**Strengths**__
 -  Easy-to-use, interactive interface

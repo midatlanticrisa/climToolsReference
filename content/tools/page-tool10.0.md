@@ -1,11 +1,11 @@
 ---
 title: "Eastern Virginia Coastal Resilience (ESVA Coastal Resilience)"
 description: "Decision support tool to assess coastal resilience in Eastern Virginia"
-date: 2020-06-25T15:24:15-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use", "Includes additional information/explanations for different variables", "Ability to compare climate change conditions side-by-side", "Thorough welcome guide/tutorial", "Aims for transparent data sources", "Able to export map into printable document or imbed into a website"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_10.0_ScreenCapture-1.png
 ---
 Developed By: NOAA, and TNC
 
@@ -15,24 +15,10 @@ In this tool, users can explore five modules to visualize and map the potential 
 
 This tool was designed with feedback from a variety of local stakeholders and does not require any advanced training or experience. The web portal provides a welcome guide describing each application, as well as a short introductory video, step-by-step tutorial, and factsheets about how to use each app. Users can also easily find metadata to access original local, state, and federal data where available.
 
-<a href="https://maps.coastalresilience.org/virginia/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://maps.coastalresilience.org/virginia/
 
 __**Geographic Coverage**__
--  Accomack County, VA
--  Northampton, VA
--  Assateague Island, VA
--  Wallops Island, VA
--  Assawoman Island, VA
--  Metompkin Island, VA
--  Cedar Island, VA
--  Parramore Island, VA
--  Hog Island, VA
--  Cobb Island, VA
--  Wreck Island, VA
--  Ship Shoal Island, VA
--  Myrtle Island, VA
--  Smith Island, VA
--  Fishermans Island, VA
+- Accomack County, VA; Northampton City, VA; Assateague Island, VA; Wallops Island, VA; Assawoman Island, VA; Metompkin Island, VA; Cedar Island, VA; Parramore Island, VA; Hog Island, VA; Cobb Island, VA; Wreck Island, VA; Ship Shoal Island, VA; Myrtle Island, VA; Smith Island, VA; Fishermans Island, VA
 
 __**Strengths**__
 -  Easy-to-use

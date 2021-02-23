@@ -1,11 +1,11 @@
 ---
 title: "Coastal County Snapshots"
 description: "The open-source map leads users to reports that contain graphs and figures with short-term projections and current data on flood exposure, ocean jobs, and wetland benefits specific to the user's selected county."
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy to use", "County-level data for all coastal counties on the Atlantic coast"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_79.0_ScreenCapture-1.png
 ---
 Developed By: NOAA_Office for Coastal Management
 
@@ -13,7 +13,7 @@ Developed By: NOAA_Office for Coastal Management
 
 Coastal County Snapshots begins with an interactive map that allows users to find and choose their county. The open-source map leads users to reports that contain graphs and figures with short-term projections and current data on flood exposure, ocean jobs, and wetland benefits specific to the user's selected county. This tool is connected to climate change by its incorporation of sea level rise and extreme weather event risks. Coastal County Snapshots requires a low expertise level and low effort level. Adobe Flash is required.
 
-<a href="https://coast.noaa.gov/digitalcoast/tools/snapshots.html" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://coast.noaa.gov/digitalcoast/tools/snapshots.html
 
 __**Geographic Coverage**__
 - Contiguous United States

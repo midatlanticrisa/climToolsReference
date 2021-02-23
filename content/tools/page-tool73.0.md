@@ -1,20 +1,20 @@
 ---
-title: "Green Infrastructure Modeling Toolkit "
-description: "Green Infrastructure Modeling Toolkit "
-date: 2020-06-25T15:24:16-0400
+title: "Green Infrastructure Modeling Toolkit"
+description: "Green Infrastructure Modeling Toolkit"
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: []
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_73.0_ScreenCapture-1.png
 ---
 Developed By: EPA
 
 **Summary:** Not Available
 
-<a href="https://www.epa.gov/water-research/green-infrastructure-modeling-toolkit" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://www.epa.gov/water-research/green-infrastructure-modeling-toolkit
 
 __**Geographic Coverage**__
-Not Available
+- Applicable Anywhere
 
 __**Strengths**__
 Not Available

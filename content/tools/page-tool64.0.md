@@ -1,11 +1,11 @@
 ---
 title: "Bay Footprint Calculator"
 description: "Calculates individual nitrogen contribution to the Chesapeake Bay."
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Letter grade for individual nitrogen pollution", "Report with suggested solutions", "Easy-to-use, interactive interface", "Works on mobile devices", "Links to additional information"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_64.0_ScreenCapture-1.png
 ---
 Developed By: CBF, and UVA
 
@@ -15,16 +15,10 @@ By providing simple lifestyle information such as diet, housing, and transportat
 
 Another helpful output of this tool is the final report that offers easy solutions to limit your Bay Footprint, such as eating less meat, and using a rain barrel at your home. This is an excellent tool for gauging your personal impact on such a valuable natural resource as the Chesapeake Bay.
 
-<a href="https://secure.cbf.org/site/SPageNavigator/bay_footprint.html?pg_wrap=n&s_src=social" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://secure.cbf.org/site/SPageNavigator/bay_footprint.html?pg_wrap=n&s_src=social
 
 __**Geographic Coverage**__
--  Virginia
--  Maryland
--  Delaware
--  New York
--  Pennsylvania
--  West Virginia
--  District of Columbia
+- Virginia; Maryland; Delaware; New York; Pennsylvania; West Virginia; DC
 
 __**Strengths**__
 -  Letter grade for individual nitrogen pollution

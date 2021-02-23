@@ -1,11 +1,11 @@
 ---
 title: "USGS Geo Data Portal (GDP)"
 description: "Provide data on climate, geological processes, and meteorology"
-date: 2020-06-25T15:24:15-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Can also access GDP algorithms through python and R packages", "Decreases computational power needed to work with subsets of large data"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_7.0_ScreenCapture-1.png
 ---
 Developed By: USGS
 
@@ -15,7 +15,7 @@ This tool allows users to easily subset and summarize large or complex data by p
 
 In addition to downloading the data directly through the portal, users can also access and interact with the data through Python and R packages. The GDP provides a brief description of each data source and the variables available for processing. After selecting a data source, the GDP then prompts the user to define their area of interest and select specific variables as well as an algorithm to process the data.
 
-<a href="https://cida.usgs.gov/gdp/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://cida.usgs.gov/gdp/
 
 __**Geographic Coverage**__
 - Contiguous United States

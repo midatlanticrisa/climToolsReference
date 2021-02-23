@@ -2,6 +2,7 @@ title = "Climate Tools"
 baseurl = "https://cbtooltest.marisa.psu.edu/"
 languageCode = "en"
 theme = "soho"
+googleAnalytics = "UA-114998663-2"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 summarylength = 10
@@ -10,7 +11,8 @@ enableEmoji = false
 [params]
 description = ""
 # gravatar = "soho@example.com"
-profileImage = "https://www.psu.edu/profiles/psu_profile/themes/psu_main/logonew.png"
+# profileImage = "https://standard.psu.edu/images/uploads/psu-mark.svg"
+profileImage = "https://wwwassets.rand.org/content/dam/marisa/logo-marisa.svg"
 copyright = "EESI Team"
 phone = "1-555-555-1234"
 email = "mdl5548@psu.edu"

@@ -1,20 +1,20 @@
 ---
 title: "AdaptVA"
 description: "AdaptVA"
-date: 2020-06-25T15:24:15-0400
+date: 2021-02-11T14:07:02-0500
 pubtype: "Tool"
 featured: true
 tags: []
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_1.0_ScreenCapture-1.png
 ---
 Developed By: VIMS_CCRM
 
 **Summary:** Tool that includes Sea Level Rise Projection Viewers, Tidewatch Map, and Interactive Map
 
-<a href="http://adaptva.com/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ http://adaptva.com/
 
 __**Geographic Coverage**__
-Not Available
+- Virginia
 
 __**Strengths**__
 Not Available

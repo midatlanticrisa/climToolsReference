@@ -1,11 +1,11 @@
 ---
 title: "Shoreline Assessment Mapper"
 description: "An interactive map that displays a variety of data describing shoreline type and condition in coastal VA"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interactive map", "Can easily search for or zoom to area of interest", "Wide variety of layers specific to shoreline assessment", "Excellent documentation of data sources"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_19.0_ScreenCapture-1.png
 ---
 Developed By: VIMS_CCRM
 
@@ -13,10 +13,10 @@ Developed By: VIMS_CCRM
 
 This easy-to-use tool allows users to view a variety of data layers describing shoreline type and condition. Some of the available data layers include aquaculture sites, wetlands, shoreline structures, and oyster reefs. While most of the data layers describe current conditions, some historical data such as the historical tidal marsh inventory is also available. This tool does not provide future projections of shoreline extent or condition.
 
-<a href="http://cmap2.vims.edu/SAM/ShorelineAssessmentMapper.html" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ http://cmap2.vims.edu/SAM/ShorelineAssessmentMapper.html
 
 __**Geographic Coverage**__
--  Virginia
+- Virginia
 
 __**Strengths**__
 -  Easy-to-use interactive map

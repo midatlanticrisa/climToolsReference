@@ -1,11 +1,11 @@
 ---
 title: "Chesapeake Bay Interpretive Buoy System (CBIBS)"
 description: "Measures and records weather and water conditions within the Chesapeake Bay"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Data updated every 10 minutes", "Charts and tables for data analysis", "Extensive range of data parameters", "Tutorials available"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_48.0_ScreenCapture-1.png
 ---
 Developed By: NOAA
 
@@ -16,11 +16,11 @@ CBIBS allows users to easily view current Chesapeake Bay conditions such as wave
 Each buoy location offers data to download as a CSV that includes all of the observations from the past year, or as historical data from 2008 to present. Some buoys are offline as they undergo maintenance, but still display previously collected data. CBIBS also offers a “Data in the Classroom” resource designed for middle and high school science classes, and a presentation for recreational fishermen outlining how CBIBS can enhance their experience on the Bay.
 
 
-<a href="https://buoybay.noaa.gov/about/about-system
-" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://buoybay.noaa.gov/about/about-system
+
 
 __**Geographic Coverage**__
--  Chesapeake Bay
+- All Cities and Counties around the Chesapeake Bay
 
 __**Strengths**__
 -  Data updated every 10 minutes

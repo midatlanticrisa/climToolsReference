@@ -1,11 +1,11 @@
 ---
 title: "Chesapeake Bay Program DataHub"
 description: "Datasets related to water quality, living resources, pollution, and fluorescence"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Data updated daily/monthly depending on dataset", "Able to query and download specific attributes of a dataset"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_33.0_ScreenCapture-1.png
 ---
 Developed By: CBP
 
@@ -16,10 +16,10 @@ This tool provides access to several types of data related to pollutants, water 
 
 
 
-<a href="http://data.chesapeakebay.net/Home" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ http://data.chesapeakebay.net/Home
 
 __**Geographic Coverage**__
--  Chesapeake Bay
+- All Cities and Counties around the Chesapeake Bay
 
 __**Strengths**__
 -  Easy-to-use interface

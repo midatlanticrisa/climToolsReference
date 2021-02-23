@@ -1,11 +1,11 @@
 ---
 title: "Earth::Global wind patterns"
 description: "A fantastic visualization of climate, atmospheric, and oceanic data for educational purposes."
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Data updated frequently", "Aesthetic, intuitive visualization of complex earth system topics", "Data are spatially and topically broad", "Data and visualizations are available for days into the future and years into the past"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_76.0_ScreenCapture-1.png
 ---
 Developed By: Cameron Beccario
 
@@ -13,10 +13,10 @@ Developed By: Cameron Beccario
 
 
 
-<a href="https://earth.nullschool.net/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://earth.nullschool.net/
 
 __**Geographic Coverage**__
-Not Available
+- Applicable Anywhere
 
 __**Strengths**__
 -  Data updated frequently

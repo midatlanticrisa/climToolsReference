@@ -1,11 +1,11 @@
 ---
 title: "Beach Nourishment Viewer"
 description: "Demonstrates location of past and current beach nourishment projects, number of nourishment episodes in one area, date of project completion, cost, and volume of the project."
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Provides project cost information", "Comprehensive list of projects", "Searchable by State and beach", "Historic cost adjusted for inflation"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_60.0_ScreenCapture-1.png
 ---
 Developed By: Western Carolina University_Program for the Study of Developed Shorelines
 
@@ -15,7 +15,7 @@ This tool provides the size, cost, and location of past beach nourishment projec
 
 In addition to the data viewer, users have the option to download a data spreadsheet including a comprehensive record of nourishment projects in the selected location. An Explanation of Beach Nourishment Episode Attributes is available through a help link that provides a glossary feature to explain key terms and concepts referenced through this tool.
 
-<a href="http://beachnourishment.wcu.edu/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ http://beachnourishment.wcu.edu/
 
 __**Geographic Coverage**__
 - Contiguous United States

@@ -1,20 +1,20 @@
 ---
 title: "Operational Forecast System"
 description: "Operational Forecast System"
-date: 2020-06-25T15:24:15-0400
+date: 2021-02-11T14:07:02-0500
 pubtype: "Tool"
 featured: true
 tags: []
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_3.0_ScreenCapture-1.png
 ---
 Developed By: NOAA
 
 **Summary:** Tool including the Chesapeake Bay Forecast System and Delaware Bay Forecast System
 
-<a href="https://tidesandcurrents.noaa.gov/models.html" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://tidesandcurrents.noaa.gov/models.html
 
 __**Geographic Coverage**__
-Not Available
+- Delaware; Maryland; Virginia
 
 __**Strengths**__
 Not Available

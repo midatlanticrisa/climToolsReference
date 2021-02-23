@@ -1,11 +1,11 @@
 ---
 title: "Virginia Wetland Condition Assessment Tool (WetCAT)"
 description: "Method of assessing wetland's ability to perform ecosystem services."
-date: 2020-06-25T15:24:15-0400
+date: 2021-02-11T14:07:02-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Easy to export maps and tables", "High data resolution", "Option to upload additional data"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_4.0_ScreenCapture-1.png
 ---
 Developed By: CCRM, and VDEQ
 
@@ -13,10 +13,10 @@ Developed By: CCRM, and VDEQ
 
 Using remotely sensed data, WetCAT scores each wetland's capacity to perform habitat or water quality services based on its anthropogenic stress condition (i.e., human stressors). The water quality and habitat condition of each wetland are provided as map layers, tables, and graphs. WetCAT has data layers from as early as 2001, which capture features like land surface and land cover changes, to show the change in condition over time. In addition to wetland condition, users can also view additional layers such as shoreline condition, impaired waters, and soils, as well as the distribution of conservation lands and mitigation banks for restoration. Users can also upload their own GIS data or use the provided geoprocessing tools to gather more detailed information about each wetland's surrounding land use and watershed. This tool provides thorough metadata describing each layer as well as introductory tutorials for new users. However, some background knowledge of wetland functions and processes may be necessary to fully utilize this tool.
 
-<a href="http://cmap2.vims.edu/WetCAT/WetCAT_Viewer/WetCAT_VA_2D.html#abstrShow" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ http://cmap2.vims.edu/WetCAT/WetCAT_Viewer/WetCAT_VA_2D.html#abstrShow
 
 __**Geographic Coverage**__
--  Virginia
+- Virginia
 
 __**Strengths**__
 -  Easy-to-use, interactive interface

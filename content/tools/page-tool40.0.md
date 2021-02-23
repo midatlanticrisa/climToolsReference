@@ -1,11 +1,11 @@
 ---
 title: "Mid-Atlantic Ocean Data Tool"
 description: "The Mid-Atlantic Ocean Data Portal is a resource center consisting of an interactive map, data layers, case studies, and collaborative tools that allows users to explore and share visualizations of coastal and social resources between New York and Virginia."
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Option to browse or search for data layers", "Easy-to-use, interactive map", "Aims for transparent data sources", "Ensures quality of information by reviewing submitted data", "Welcome guide/tutorial"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_40.0_ScreenCapture-1.png
 ---
 Developed By: MARCO
 
@@ -13,14 +13,10 @@ Developed By: MARCO
 
 The primary component of this tool is an interactive “Marine Planner” map which allows users to display over 4,000 data layers representing ocean resources and human use data. Users can select which layers to display from nine drop down menus: administrative, fishing, marine life, oceanography, recreation, renewable energy, security, and socioeconomic, or use the search bar to find a specific layer. The tool also includes a “Data Catalog” in which users can find background information, download options, and links for the available data layers. This tool provides thorough documentation describing tool functions and applications through a variety of case studies and “How Tuesday” webinars. The tool is free to access, but users must register for a free account to access certain functions, such as uploading data and creating/joining collaborative teams with other users. Although users have the option to upload data to overlay with the provided data layers, data uploaded to the tool is session-based and cannot be saved within the map. The data portal is frequently updated and users are encouraged to provide feedback or share issues, comments, and experiences through email or Twitter.
 
-<a href="http://portal.midatlanticocean.org/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ http://portal.midatlanticocean.org/
 
 __**Geographic Coverage**__
--  New York
--  New Jersey
--  Delaware
--  Maryland
--  Virginia
+- New York; New Jersey; Delaware; Maryland; Virginia
 
 __**Strengths**__
 -  Option to browse or search for data layers

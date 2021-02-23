@@ -1,11 +1,11 @@
 ---
 title: "i-Tree Mytree and Landscape"
 description: "Variety of tools that help users assess the benefits of trees"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Provides location specific results", "Allows user to create specific scenarios", "Welcome guide/tutorials", "i-Tree YouTube channel dedicated to explaining how to use various tools"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_57.1_ScreenCapture-1.png
 ---
 Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of Municipal Arborists, International Society of Arboriculture, Casey Trees, and SUNY_College of Environmental Science and Forestry.
 
@@ -13,8 +13,8 @@ Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of 
 
 i-Tree MyTree and Landscape are intended to reach a wide audience of individuals who may not be subject matter experts. This includes the public, landowners, real estate agents, educators, and Community Officials. Because of their easy-to-use interface these tools reach a wider audience than more complex i-Tree tools. i-Tree landscape has the option to view RCP 4.5 and RCP 8.5 and multiple health risk scenarios. In creating the report users have the option to give factors low and high priority and weight factors separately.
 
-<a href="https://mytree.itreetools.org/
-https://landscape.itreetools.org/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://mytree.itreetools.org/
+https://landscape.itreetools.org/
 
 __**Geographic Coverage**__
 - Contiguous United States

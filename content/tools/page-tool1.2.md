@@ -1,11 +1,11 @@
 ---
 title: "AdaptVA Tidewatch Map"
 description: "36-hour coastal flooding forecasts"
-date: 2020-06-25T15:24:15-0400
+date: 2021-02-11T14:07:02-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Flooding forecast is updated every 12 hours"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_1.2_ScreenCapture-1.png
 ---
 Developed By: VIMS_CCRM
 
@@ -13,10 +13,10 @@ Developed By: VIMS_CCRM
 
 This easy-to-use tool provides 36-hour forecasts of coastal flooding, which are updated daily at 6:00 am and 6:00 pm. Users may click through or automate the display to view hourly forecasts over the next 36 hours. The tool contains location-specific plots of water level over time.
 
-<a href="http://cmap2.vims.edu/AdaptVA/adaptVA_viewer.html" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ http://cmap2.vims.edu/AdaptVA/adaptVA_viewer.html
 
 __**Geographic Coverage**__
--  Virginia
+- Virginia
 
 __**Strengths**__
 -  Easy-to-use, interactive interface

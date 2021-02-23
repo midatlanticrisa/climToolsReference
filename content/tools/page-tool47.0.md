@@ -1,11 +1,11 @@
 ---
 title: "Chesapeake Assessment Scenario Tool (CAST)"
 description: "CAST provides estimates of load reductions, allows users to understand which BMPs provide the greatest load reduction benefit, the extent to which these BMPs can be implemented, and the cost of these BMPs."
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Estimates cost of BMP", "Optional user data input", "Tutorials Provided", "Charts and graphs available for download", "Compare multiple scenarios at once"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_47.0_ScreenCapture-1.png
 ---
 Developed By: CBP
 
@@ -16,17 +16,11 @@ CAST allows Decisionmakers and planners to determine the most cost-effective str
 CAST's Results include interactive graphs and maps as well as customizable reports. The graphs allow for up to 4 customizable time scenarios within multiple geographical areas, and can be printed. The map comparison feature allows the user to analyze the same two spatial areas under different time periods. Report requests take some time to process but are highly tailored to the user's needs and are emailed to the user. Report topics include BMP Summaries, Base Conditions, Loads, Wastewater, and Atmospheric Deposition for specified geographic areas.
 
 
-<a href="https://cast.chesapeakebay.net
-" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://cast.chesapeakebay.net
+
 
 __**Geographic Coverage**__
--  District of Columbia
--  Delaware
--  Maryland
--  New York
--  Pennsylvania
--  Virginia
--  West Virginia
+- DC; Delaware; Maryland; New York; Pennsylvania; Virginia; West Virginia
 
 __**Strengths**__
 -  Estimates cost of BMP

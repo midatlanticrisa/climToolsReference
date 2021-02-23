@@ -1,11 +1,11 @@
 ---
 title: "Case Study and Information Exchange"
 description: "Communities submit and share their experiences with implementing climate adaptation measures."
-date: 2020-06-25T15:24:15-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Community based network", "Results are site-specific"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_8.2_ScreenCapture-1.png
 ---
 Developed By: EPA
 
@@ -13,7 +13,7 @@ Developed By: EPA
 
 Using an interactive map, users can view a variety of projects designed to address drought, flood, ecosystem changes, service reliability, and/or water quality challenges. Within each category, users will find relevant case studies, each with a brief description of potential utility impacts, the threats addressed, and adaptive measures used. In some cases, additional information is available in the form of a summarized project report or an explanatory YouTube video. The Cast Study and Information Exchange is an ongoing project and communities are encouraged to contribute additional examples of utility adaptation projects.
 
-<a href="https://epa.maps.arcgis.com/apps/MapSeries/index.html?appid=03d35ca84b5944f8b3ab59bf3a981462" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://epa.maps.arcgis.com/apps/MapSeries/index.html?appid=03d35ca84b5944f8b3ab59bf3a981462
 
 __**Geographic Coverage**__
 - Contiguous United States

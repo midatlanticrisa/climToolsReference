@@ -1,11 +1,11 @@
 ---
 title: "MARISA Climate Data Portal: Interactive Map for the MARISA Region"
 description: "interactive map with current climate data"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Interactive, easy-to-use interface", "Data frequently updated", "Works on mobile devices"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_13.1_ScreenCapture-1.png
 ---
 Developed By: NOAA, and MARISA
 
@@ -13,17 +13,10 @@ Developed By: NOAA, and MARISA
 
 This interactive map includes a variety of layers that allows users to view weather observations, stream discharge, buoy observations, and tide gauge water levels. Users may also select U.S. climate divisions to view recent historical trends in temperature and precipitation. Additional weather information provided by this tool include weather radar and a drought monitor. Although this mapping tool is centered on the Mid-Atlantic region, users may zoom out to view the entire contiguous United States.
 
-<a href="https://www.marisa.psu.edu/map/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://www.marisa.psu.edu/map/
 
 __**Geographic Coverage**__
--  New York
--  Pennsylvania
--  New Jersey
--  Delaware
--  Maryland
--  Virginia
--  West Virginia
--  Ohio
+- New York; Pennsylvania; New Jersey; Delaware; Maryland; Virginia; West Virginia; OH
 
 __**Strengths**__
 -  Interactive, easy-to-use interface

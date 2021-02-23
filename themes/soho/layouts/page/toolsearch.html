@@ -382,48 +382,6 @@
             });
           }
 
-          //tool software requirements
-          //if(inSR.length>0 && fullResults.length>0){
-          //  $.each(fullResults, function(tool) {
-          //    var toolName = this.name;
-          //    var keepTool = 0;
-          //    var toolReqs = [];
-          //    var items = reqDat.items.map(function (item){
-          //      if(item.name == toolName){
-          //        toolReqs.push(item.softReq)
-          //      }
-          //    });
-          //
-          //    //do not know why this section does not work
-          //    //$.each(toolReqs, function(req) {
-          //    //  var reqName = this;
-          //    //  alert(jQuery.inArray(this, inSR))
-          //    //  alert(jQuery.inArray(reqName, inSR))
-          //    //});
-          //
-          //    for (i=0; i<=toolReqs.length; i++) {
-          //      if(jQuery.inArray(toolReqs[i], inSR) >= 0){
-          //        keepTool = 1;
-          //      }
-          //    }
-          //    if(keepTool==0){
-          //      var whichRemove = jQuery.inArray(toolName, inTools);
-          //      inTools.splice(whichRemove, 1);
-          //      fullResults.splice(whichRemove, 1);
-          //    }
-          //  });
-          //}else if(inSR.length>0 && fullResults.length==0){
-          //  var items = reqDat.items.map(function (item){
-          //    if(jQuery.inArray(item.softReq, inSR) >= 0){
-          //      if(jQuery.inArray(item.name, inTools) == -1){
-          //        inTools.push(item.name);
-          //        var tool = new addTool(item.name, item.link);
-          //        fullResults.push(tool)
-          //      }
-          //    }
-          //  });
-          //}
-
           //tool Function
           if(inFunct.length>0 && fullResults.length>0){
             var indexToRemove = [];
@@ -470,13 +428,29 @@
 
           //return(fullResults)  -- not used
           //alert("full result length: " + fullResults.length)
+          inTools.sort(function (a,b) {
+            return a.toLowerCase().localeCompare(b.toLowerCase());
+          });
+
+          //needed because the sort function reorders inTools and any other variable name the text is assigned to
+          var holdOrigOrder = [];
+          $.each(fullResults, function(tool) {
+            holdOrigOrder.push(this.name)
+          });
+
+          //alert(fullResults[1].name)
           document.getElementsByTagName("h2")[1].innerHTML = "Search Results (Displaying " + fullResults.length + " Tools)"
           if(fullResults.length > 0){
-            $.each(fullResults, function(tool) {
-              newTool = '<li><a href="' + '/tools/' + this.link +'/index.html">' + this.name + '</a></li>';
+            for(var i=0; i<inTools.length; i++){
+              var tInd = jQuery.inArray(inTools[i], holdOrigOrder)
+              //alert("tool Index: " + tInd + "; sortedTools: " + sortTools[i] + "; holdOrigOrder: " + holdOrigOrder[tInd])
+              newTool = '<li><a href="' + '/tools/' + fullResults[tInd].link +'/index.html">' + fullResults[tInd].name + '</a></li>';
               showData.append(newTool);
-            });
+            }
           }
+
+          //jQuery.inArray(item.toolFun, inFunct)
+
         }
         //////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////
@@ -1502,8 +1476,8 @@
             </form>
             <form id="globalGeoOptions">
               <label><input type="checkbox" aria-selected="false" class="globalGeoChecks" value="Coastal">Only Tools Related To Coasts</label><br>
-              <label><input type="checkbox" aria-selected="false" class="globalGeoChecks" value="inChesBay">Only Within Chesapeake Bay</label><br>
-              <label><input type="checkbox" aria-selected="false" class="globalGeoChecks" value="inMARISA">Only Within MARISA Boundary</label><br>
+              <label><input type="checkbox" aria-selected="false" class="globalGeoChecks" disabled=true value="inChesBay">Only Within Chesapeake Bay</label><br>
+              <label><input type="checkbox" aria-selected="false" class="globalGeoChecks" disabled=true value="inMARISA">Only Within MARISA Boundary</label><br>
             </form>
           </fieldset>
           <fieldset class="singleRow">
@@ -1564,23 +1538,25 @@
               </select>
             </form>
           </fieldset>
-          <!--<fieldset class="singleRow">
-            <div class="header"><h5>Software Requirements</h5></div>
-            <form id="softReqSearch">
-              <label><input type="checkbox" aria-selected="false" class="reqChecks" value="R">R</label><br>
-              <label><input type="checkbox" aria-selected="false" class="reqChecks" value="R Studio">R Studio</label><br>
-              <label><input type="checkbox" aria-selected="false" class="reqChecks" value="ArcMap/ GIS software">ArcMap/ GIS software</label><br>
-              <label><input type="checkbox" aria-selected="false" class="reqChecks" value="ArcGIS (optional)">ArcGIS (optional)</label><br>
-              <label><input type="checkbox" aria-selected="false" class="reqChecks" value="None">None</label><br>
-            </form>
-          </fieldset>-->
           <fieldset class="singleRow">
             <div class="header"><h5>Tool Function</h5></div>
             <form id="toolFunSearch">
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="View Past/Current Conditions">View Past/Current Conditions</label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="View Future Projections">View Future Projections</label><br>
+              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Adaptation Planning"><span title="Preparing a natural or urban area for the effects of climate change and extreme weather with the intention of reducing risk or exposure. Includes planning for current and expected future climates.">Adaptation Planning</span></label><br>
+              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Citizen Science"><span title="Involving public participation in data collection or other components of the scientific process.">Citizen Science</span></label><br>
+              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Climate Mitigation Planning"><span title="Reducing heat-trapping gasses in the atmosphere. May be accomplished by reducing sources (e.g., burning fossil fuels) or enhancing sinks (e.g., oceans, forests, soils).">Climate Mitigation Planning</span></label><br>
+              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Engagement"><span title="Tools or guidance to support community engagement in climate impact assessment and/or planning.">Engagement</span></label><br>
+              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Identify Vulnerabilities"><span title="Identifying community assets (e.g., critical infrastructure and natural resources) and people at risk to extreme weather and climate-related hazards.">Identify Vulnerabilities</span></label><br>
+              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Process Support"><span title="'Formal ways of thinking about the means by which decision are made, as opposed to computational or modeling methods used to support decision making' (RAND). ">Process Support</span></label><br>
+              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="View Past/Current Conditions"><span title="Visualizing or comparing historical and/or present-day conditions.">View Past/Current Conditions</span></label><br>
+              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="View Future Projections"><span title="Visualizing or comparing possible future scenarios projected by climate models.">View Future Projections</span></label><br>
+              <!--<label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Adaptation Planning">Adaptation Planning</label><br>
+              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Citizen Science">Citizen Science</label><br>
+              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Climate Mitigation Planning">Climate Mitigation Planning</label><br>
               <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Engagement">Engagement</label><br>
               <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Identify Vulnerabilities">Identify Vulnerabilities</label><br>
+              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Process Support">Process Support</label><br>
+              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="View Past/Current Conditions">View Past/Current Conditions</label><br>
+              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="View Future Projections">View Future Projections</label><br>-->
               <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="None">Unspecified</label><br>
             </form>
           </fieldset>

@@ -1,17 +1,17 @@
 ---
 title: "i-Tree Canopy"
 description: "Calculates canopy cover for the designated area and assigns benefits to that calculation"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Option to upload shapefiles", "Provides location specific scenarios", "Series of explainer videos"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_57.3_ScreenCapture-1.png
 ---
 Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of Municipal Arborists, International Society of Arboriculture, Casey Trees, and SUNY_College of Environmental Science and Forestry.
 
 **Summary:** The i-Tree Canopy tool creates a custom canopy cover report and assess the benefits (or costs) of increasing or decreasing the canopy cover in a user-defined location. Using google earth imagery, users then must classify the cover type (i.e., tree, non-tree, water, etc.) at randomly distributed points within the study area. This information can be time consuming to collect. However, it can be used as in conjunction with i-Tree Eco, as the canopy cover input data.
 
-<a href="https://canopy.itreetools.org/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://canopy.itreetools.org/
 
 __**Geographic Coverage**__
 - Contiguous United States

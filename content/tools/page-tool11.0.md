@@ -1,11 +1,11 @@
 ---
 title: "Know Your Zone"
 description: "Allows residents of coastal Virginia to identify their evacuation zone in preparation for severe weather conditions during annual hurricane season"
-date: 2020-06-25T15:24:15-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Able to search by address", "Easy-to-use, interactive map", "Provides supporting educational material"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_11.0_ScreenCapture-1.png
 ---
 Developed By: VDEM
 
@@ -13,10 +13,10 @@ Developed By: VDEM
 
 Know Your Zone was designed to help residents of coastal Virginia determine whether they should evacuate or shelter at home during an emergency. The tool is based on tiered evacuation zones and provides an interactive, color-coded map displaying each evacuation zone as well as state evacuation routes. For more detail, users can zoom to an area of interest or search by address to find a specific location. Information about hurricane season and the tiered evacuation zones for coastal Virginia can be found within the tool. The tool also contains additional information on other hurricane preparation techniques, available evacuation routes, and an assortment of ready-made outreach materials known as the “Know Your Zone Digital Toolbox”. This tool will not tell users which zone is being evacuated in the case of an emergency.
 
-<a href="https://www.vaemergency.gov/hurricane-evacuation-zone-lookup/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://www.vaemergency.gov/hurricane-evacuation-zone-lookup/
 
 __**Geographic Coverage**__
--  Virginia
+- Virginia
 
 __**Strengths**__
 -  Able to search by address

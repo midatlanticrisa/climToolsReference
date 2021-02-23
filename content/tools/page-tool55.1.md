@@ -1,11 +1,11 @@
 ---
 title: "USGS National Water Census Data Portal: Water Budget"
 description: "A visualization of local water supply and demand, with water use and availability statistics summarized by HUC and by county."
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Wide range of statistics that can be calculated and compared across watersheds", "Multiple options to export data"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_55.1_ScreenCapture-1.png
 ---
 Developed By: USGS
 
@@ -13,7 +13,7 @@ Developed By: USGS
 
 This tool allows users to navigate to or search for a location of interest, then select a corresponding 8 or 12-digit HUC watershed layer. After selecting a watershed, the tool then  provides annual, monthly, and daily plots of mean precipitation and evapotranspiration from 1980 to present. Users can also download the precipitation and evapotranspiration data for the selected watershed, as well as any corresponding upstream watersheds. Users also have the option to compare the provided water budget data with another watershed, or to plot and download water use data for individual counties.
 
-<a href="https://cida.usgs.gov/nwc/#!waterbudget" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://cida.usgs.gov/nwc/#!waterbudget
 
 __**Geographic Coverage**__
 - Contiguous United States

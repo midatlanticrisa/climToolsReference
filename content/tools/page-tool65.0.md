@@ -1,11 +1,11 @@
 ---
 title: "Coastal Change Hazards Portal"
 description: "National map illustrating past, present, and projected coastal conditions"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Data are available for download", "Provides multiple scenarios", "Links to supporting information"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_65.0_ScreenCapture-1.png
 ---
 Developed By: USGS
 
@@ -13,7 +13,7 @@ Developed By: USGS
 
 Information and products are organized within three coastal change hazard themes: 1) extreme storms, 2) shoreline change, and 3) sea-level rise. Each data item represents an individual research product, with some items grouped together as aggregates to show the breadth of the topic and make it easy to explore. Data are easily exportable, but some data layers are limited to east coast applications. Available data layers include coastal change forecasts, beach morphology, hurricane and nor'easter overwash scenarios, long-term and short-term rates of shoreline change, coastal response scenarios, and coastal vulnerability.
 
-<a href="https://marine.usgs.gov/coastalchangehazardsportal/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://marine.usgs.gov/coastalchangehazardsportal/
 
 __**Geographic Coverage**__
 - Contiguous United States

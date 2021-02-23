@@ -1,11 +1,11 @@
 ---
 title: "Climate Engine"
 description: "Web application that generates maps and graphs using climate data from remotely sensed source data"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Ability to visualize multiple climate change related variables at once", "Data frequently updated", "Provides supporting educational information and tutorials", "Able to download customized data without needing to access and download entire dataset", "Can share maps and graphs via specifically generated web links"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_28.0_ScreenCapture-1.png
 ---
 Developed By: Desert Research Institute, University of Idaho, and Google
 
@@ -15,7 +15,7 @@ Hosted by Google's Earth Engine, the Climate Engine Application allows users to 
 
 
 
-<a href="https://app.climateengine.org/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://app.climateengine.org/
 
 __**Geographic Coverage**__
 - Contiguous United States

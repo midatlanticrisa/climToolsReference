@@ -1,11 +1,11 @@
 ---
 title: "Water Quality Assessment and TMDLs"
 description: "Provide water quality assessment and TMDL information. Show the spatial relationship of how each intersect"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Downloadable data", "Site specific results", "Ability to view water quality assessments and corresponding TMDLs", "Ability to overlay external GIS layers"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_50.0_ScreenCapture-1.png
 ---
 Developed By: MDE
 
@@ -16,11 +16,11 @@ Decisionmakers, environmental planners, and the public alike will find this map 
 TMDL and water quality data are available to download as compressed file geodatabases. TMDL and the water quality assessment report are available for additional information.
 
 
-<a href="https://mdewin64.mde.state.md.us/WSA/IR-TMDL/index.html
-" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://mdewin64.mde.state.md.us/WSA/IR-TMDL/index.html
+
 
 __**Geographic Coverage**__
--  Maryland
+- Maryland
 
 __**Strengths**__
 -  Downloadable data

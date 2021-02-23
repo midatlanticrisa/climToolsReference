@@ -1,11 +1,11 @@
 ---
 title: "Air Quality Forecast"
 description: "Report the current conditions and 2 day forecast of the Washington D.C. Air Quality"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, simple interface", "Clear graphics with supporting explanations", "Current conditions updated hourly", "Provides 2 day forecast", "Links to additional resources"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_46.0_ScreenCapture-1.png
 ---
 Developed By: Metropolitan Washington Council of Governments
 
@@ -15,24 +15,11 @@ This forecast's primary objective is to report the level of health concern due t
 
 The Air Quality Forecast also provides links to educational resources that users can use to learn what factors affect air quality, how air quality affects human health, and policy approaches that Decisionmakers can use to improve air quality and human health.
 
-<a href="https://www.mwcog.org/environment/planning-areas/air-quality/air-quality-forecast/
-" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://www.mwcog.org/environment/planning-areas/air-quality/air-quality-forecast/
+
 
 __**Geographic Coverage**__
--  Washington, DC
--  Takoma Park, MD
--  Prince George's County, MD
--  Beltsville, MD
--  Rockville, MD
--  Montgomery County, MD
--  Charles County, MD
--  Frederick County, MD
--  Calvert County, MD
--  Alexandria, VA
--  Arlington County, VA
--  Prince WIlliam County, VA
--  Loudoun County, VA
--  Fairfax County, VA
+- DC; Takoma Park, MD; Prince George's County, MD; Beltsville, MD; Rockville, MD; Montgomery County, MD; Charles County, MD; Frederick County, MD; Calvert County, MD; Alexandria, VA; Arlington County, VA; Prince William County, VA; Loudoun County, VA; Farifax County, VA
 
 __**Strengths**__
 -  Easy-to-use, simple interface

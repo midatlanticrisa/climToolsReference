@@ -1,11 +1,11 @@
 ---
 title: "Percent Light at Leaf Calculator"
 description: "PLL calculator"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Provides supporting educational information", "Uses site-specific data", "Generates site-specific results"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_33.1_ScreenCapture-1.png
 ---
 Developed By: CBP
 
@@ -15,10 +15,10 @@ The PLL calculator is an automated Microsoft Excel 97 spreadsheet that calculate
 
 
 
-<a href="http://archive.chesapeakebay.net/cims/PLL_calcII.xls" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ http://archive.chesapeakebay.net/cims/PLL_calcII.xls
 
 __**Geographic Coverage**__
-Not Available
+- Applicable Anywhere
 
 __**Strengths**__
 -  Provides supporting educational information

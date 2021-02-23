@@ -1,11 +1,11 @@
 ---
 title: "Annual United States Climate Stripes: Temperature and Precipitation"
 description: "artistic representation of Climate Change"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy to understand visualizations of climate change", "Links to supporting information"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_35.0_ScreenCapture-1.png
 ---
 Developed By: NCICS
 
@@ -13,7 +13,7 @@ Developed By: NCICS
 
 Inspired by Ed Hawkin's Warming Strips visualizations, this tool provides color-banded representations of temperature and precipitation anomalies for every county in the United State. This simple visualization tool provides an unique artistic approach to examine historical changes in local climate data, dating back to 1895. Within the tool, users can find basic explanations of the data and visualizations, as well as links to supporting information.
 
-<a href="https://ncsu.maps.arcgis.com/apps/MapSeries/index.html?appid=a414fcbe90fb4dedaab06a8abf12b1a0" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://ncsu.maps.arcgis.com/apps/MapSeries/index.html?appid=a414fcbe90fb4dedaab06a8abf12b1a0
 
 __**Geographic Coverage**__
 - Contiguous United States

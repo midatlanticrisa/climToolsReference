@@ -1,11 +1,11 @@
 ---
 title: "i-Tree"
 description: "i-Tree"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: []
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_57.0_ScreenCapture-1.png
 ---
 Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of Municipal Arborists, International Society of Arboriculture, Casey Trees, and SUNY_College of Environmental Science and Forestry.
 
@@ -13,10 +13,10 @@ Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of 
 
 By providing information such as location, species, tree size, condition, and location in relationship existing structures, users receive specific estimates of CO2 mitigation, air quality improvements, and stormwater interception of existing and or planned tree species. Listed in order of increasing complexity, i-Tree is made up of the following subtools: MyTree, Landscape, Design, Canopy, Eco, and Hydro. All tools are available for download on Windows/PC, with i-Tree Eco and Hydro only available as downloadable software. All other tools can be used in the web browser.
 
-<a href="https://www.itreetools.org/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://www.itreetools.org/
 
 __**Geographic Coverage**__
-Not Available
+- Contiguous United States
 
 __**Strengths**__
 Not Available

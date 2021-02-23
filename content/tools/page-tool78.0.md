@@ -1,11 +1,11 @@
 ---
 title: "PINEMAP"
 description: "PINEMAP contains 13 total tools dealing with loblolly pine trees in Southeastern US across four categories: Environment, Establishment, Management, and Production."
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Multiple tools in one", "Tools related to the general environment", "establishment, management, and production of pine trees", "Clear navigation and explanation of tools"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_78.0_ScreenCapture-1.png
 ---
 Developed By: North Carolina State Climate Office, and USDA
 
@@ -13,10 +13,10 @@ Developed By: North Carolina State Climate Office, and USDA
 
 The USDA tool is focused on helping foresters understand how pine forests will be affected by climate change, focusing on temperature and precipitation changes. Each tool in this network provides an interactive map, searchable by latitude and longitude, with layers of data for observed historical climate parameters, projected change, and a projected average. Time scale projections run until 2099 and are available in 20-year increments. Two emissions scenarios are available. The low-effort tool is for use by beginner- to intermediate-level tool users.
 
-<a href="https://climate.ncsu.edu/pinemap/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://climate.ncsu.edu/pinemap/
 
 __**Geographic Coverage**__
-Not Available
+- Applicable Anywhere
 
 __**Strengths**__
 -  Multiple tools in one

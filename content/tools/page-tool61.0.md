@@ -2,11 +2,11 @@
 title: "Adaptation Workbook (Climate Change Response Framework)"
 description: "Provide data and process support to bridge the gap between climate data and land managers
 "
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Allows user to create a site-specific adaptation plan", "YouTube channel explaining how to use Workbook", "Site-specific guidance and results"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_61.0_ScreenCapture-1.png
 ---
 Developed By: Northern Institute for Applied Climate Science, and USDA_USFS
 
@@ -19,7 +19,7 @@ This tool examines soils, hydrology, temperature, and surrounding land use for t
 The tool allows users to create a custom adaptation plan, but the overall success of the project depends on the accuracy of the user’s data and their ability to design, implement, and monitor the project. This tool is moderately time-intensive, however there are multiple resources and how-to guides, including a YouTube channel and a 7-week online training course, to explain how to use and get the most out of this tool. 
 
 
-<a href="https://adaptationworkbook.org/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://adaptationworkbook.org/
 
 __**Geographic Coverage**__
 - Contiguous United States

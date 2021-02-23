@@ -1,11 +1,11 @@
 ---
 title: "DC Department of Energy and Environment: Targeted Subwatersheds"
 description: "map of D.C. sewers and subwatersheds"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Downloadable data", "Ability to view different layers simultaneously"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_45.1_ScreenCapture-1.png
 ---
 Developed By: DCDOEE
 
@@ -14,11 +14,11 @@ Developed By: DCDOEE
 The purpose of this map is to show the overlap of the subwatersheds and combined sewer system. Users can print the map or export a table of the watershed/sewer boundary locations.
 
 
-<a href="https://dcgis.maps.arcgis.com/apps/webappviewer/index.html?id=d872faed1f8642d190c45befed97c760
-" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://dcgis.maps.arcgis.com/apps/webappviewer/index.html?id=d872faed1f8642d190c45befed97c760
+
 
 __**Geographic Coverage**__
--  Washington, DC
+- DC
 
 __**Strengths**__
 -  Easy-to-use interface

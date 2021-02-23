@@ -16,3 +16,4 @@ The changing climate of our world is one of the largest concerns of any generati
 This site is a service for you to be able to view a summary of the available climate tools, and compare the various tools in one similar format. Our goal is to be the advisor on which climate tools would best suit the goals of your project.
 
 ### EESI at Penn State, and the people involved
+This is who we are. We do cool stuff!

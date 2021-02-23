@@ -3,11 +3,11 @@ title: "i-Tree Hydro, and Eco"
 description: "i-Tree Eco provides functional, structural and compositional information, forecasting models, and management information on local trees.  
 
 i-Tree Hydro runs local and city-wide analysis of watershed dynamics and how trees impact these features"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Provides location-specific results", "Allows user to create specific scenarios", "Welcome guide/tutorials", "i-Tree YouTube channel dedicated to explaining how to use various tools"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_57.4_ScreenCapture-1.png
 ---
 Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of Municipal Arborists, International Society of Arboriculture, Casey Trees, and SUNY_College of Environmental Science and Forestry.
 
@@ -15,10 +15,10 @@ Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of 
 
 i-Tree Eco and Hydro are the most time intensive and complex tools on i-Tree. Both tools require a downloadable software application. i-Tree Eco is designed to use field-collected tree cover data along with local hourly air pollution and meteorological data to quantify forest structure, environmental benefits of trees, and economic value of these trees to communities.
 
-<a href="https://www.itreetools.org/tools/i-tree-eco
+__**Get This Tool:**__ https://www.itreetools.org/tools/i-tree-eco
 
 
-https://www.itreetools.org/tools/hydro" target="_blank">Get This Tool</a>
+https://www.itreetools.org/tools/hydro
 
 __**Geographic Coverage**__
 - Contiguous United States

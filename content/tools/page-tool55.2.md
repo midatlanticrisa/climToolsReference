@@ -1,11 +1,11 @@
 ---
 title: "USGS National Water Census Data Portal: Streamflow"
 description: "Streamflow data, trends, and analyses from USGS gaging stations."
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Wide range of statistics", "Data easily exported", "Site-specific results"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_55.2_ScreenCapture-1.png
 ---
 Developed By: USGS
 
@@ -13,7 +13,7 @@ Developed By: USGS
 
 This tool helps users assess streamflow magnitude, duration, frequency, timing, and rate of change. Observed streamflow can be viewed in plots and additional data and statistics are easily exported. Calculated statistics are clearly explained and useful for assessment. This tool provides the option to view two locations simultaneously in order to view assessed statistics side by side. The tool is limited by where gages are present. Data collection varies by gage and ranges from 1950 to present. Data can also be calculated and accessed through a corresponding R package provided in the portal.
 
-<a href="https://cida.usgs.gov/nwc/#!streamflow-stats" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://cida.usgs.gov/nwc/#!streamflow-stats
 
 __**Geographic Coverage**__
 - Contiguous United States

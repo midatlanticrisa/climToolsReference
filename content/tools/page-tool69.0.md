@@ -1,11 +1,11 @@
 ---
 title: "Flood Economics"
 description: "Provide case studies and data about flood mitigation projects and efforts across the US between 1996-2016"
-date: 2020-06-25T15:24:16-0400
+date: 2021-02-11T14:07:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Includes definitions of key terms", "Includes links to supporting resources"]
-image: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg
+image: https://cbtooltest.marisa.psu.edu/images/TOOLID_69.0_ScreenCapture-1.png
 ---
 Developed By: The Economist Intelligence Unit, and FEMA
 
@@ -13,7 +13,7 @@ Developed By: The Economist Intelligence Unit, and FEMA
 
 Through this tool users can find general information describing the benefits and approaches to flood mitigation investment, as well as brief case studies describing communities and homeowners benefitting from flood mitigation action. Flood Economics also provides an analysis of statewide flood mitigation across the US, including key statistics such as the total investment, average return on investment, and the estimated benefits of flood mitigations actions by state, from 1996-2016.  Each statewide summary includes simple graphics and data visualizations of investment statistics, along with a basic filtering function to view investments over time. With easy-to-understand case studies and definitions of investment terms, this tool is appropriate for users of all skill levels.
 
-<a href="https://floodeconomics.com/" target="_blank">Get This Tool</a>
+__**Get This Tool:**__ https://floodeconomics.com/
 
 __**Geographic Coverage**__
 - Contiguous United States
