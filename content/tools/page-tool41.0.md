@@ -1,11 +1,12 @@
 ---
 title: "Virginia Coastal Geospatial and Educational Mapping System (GEMS)"
 description: "Ongoing inventory of features from Virginia’s coastal ecosystems with each feature accompanied by supporting information"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Provides supporting metadata, descriptions, and resources for each data layer", "Mapping tool provides basic markup and searching features", "Synthesis of variety of coastal resource tools and data"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_41.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_41.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_41.0_ScreenCapture-1.png
 ---
 Developed By: VDEQ
 

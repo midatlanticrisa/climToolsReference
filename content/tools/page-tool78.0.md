@@ -1,11 +1,12 @@
 ---
 title: "PINEMAP"
 description: "PINEMAP contains 13 total tools dealing with loblolly pine trees in Southeastern US across four categories: Environment, Establishment, Management, and Production."
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Multiple tools in one", "Tools related to the general environment", "establishment, management, and production of pine trees", "Clear navigation and explanation of tools"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_78.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_78.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_78.0_ScreenCapture-1.png
 ---
 Developed By: North Carolina State Climate Office, and USDA
 

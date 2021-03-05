@@ -1,11 +1,12 @@
 ---
 title: "Eastern Virginia Coastal Resilience (ESVA Coastal Resilience)"
 description: "Decision support tool to assess coastal resilience in Eastern Virginia"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use", "Includes additional information/explanations for different variables", "Ability to compare climate change conditions side-by-side", "Thorough welcome guide/tutorial", "Aims for transparent data sources", "Able to export map into printable document or imbed into a website"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_10.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_10.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_10.0_ScreenCapture-1.png
 ---
 Developed By: NOAA, and TNC
 

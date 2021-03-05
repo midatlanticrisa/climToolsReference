@@ -1,11 +1,12 @@
 ---
 title: "Diagnostic Spreadsheet for Analysis of Water Quality Data in relation to Growth Requirements of Submerged Aquatic Vegetation"
 description: "Determines if minimum light requirements for SAV growth are met at a given station."
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Site-specific results", "Allows user to input own data", "Introduction/instruction guide", "Provides multiple management scenarios"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_72.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_72.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_72.0_ScreenCapture-1.png
 ---
 Developed By: CBP
 

@@ -1,11 +1,12 @@
 ---
 title: "Hampton Roads Geospatial Exchange Online (HRGEO)"
 description: "Provides data about the demographics, infrastructure, and natural resources in Hampton Roads. Also includes some map viewers and web apps to interact with the data"
-date: 2021-02-11T14:07:02-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Data regularly updated", "Easy-to-use interface", "Locality-level mapping and graphs"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_2.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_2.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_2.0_ScreenCapture-1.png
 ---
 Developed By: HRPDC, HRSD, and HRTPO
 

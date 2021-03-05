@@ -1,11 +1,12 @@
 ---
 title: "i-Tree Canopy"
 description: "Calculates canopy cover for the designated area and assigns benefits to that calculation"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Option to upload shapefiles", "Provides location specific scenarios", "Series of explainer videos"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_57.3_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_57.3_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_57.3_ScreenCapture-1.png
 ---
 Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of Municipal Arborists, International Society of Arboriculture, Casey Trees, and SUNY_College of Environmental Science and Forestry.
 

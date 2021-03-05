@@ -1,11 +1,12 @@
 ---
 title: "Water Quality Assessment and TMDLs"
 description: "Provide water quality assessment and TMDL information. Show the spatial relationship of how each intersect"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Downloadable data", "Site specific results", "Ability to view water quality assessments and corresponding TMDLs", "Ability to overlay external GIS layers"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_50.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_50.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_50.0_ScreenCapture-1.png
 ---
 Developed By: MDE
 

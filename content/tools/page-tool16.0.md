@@ -1,11 +1,12 @@
 ---
 title: "Sea Level Report Cards"
 description: "Illustrate trends and projected sea level rise"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Results are site-specific", "Can compare sea level across localities and regions", "Provides supporting educational information;"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_16.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_16.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_16.0_ScreenCapture-1.png
 ---
 Developed By: VIMS_CCRM
 

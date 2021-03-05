@@ -1,11 +1,12 @@
 ---
 title: "Virginia Wetland Condition Assessment Tool (WetCAT)"
 description: "Method of assessing wetland's ability to perform ecosystem services."
-date: 2021-02-11T14:07:02-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Easy to export maps and tables", "High data resolution", "Option to upload additional data"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_4.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_4.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_4.0_ScreenCapture-1.png
 ---
 Developed By: CCRM, and VDEQ
 

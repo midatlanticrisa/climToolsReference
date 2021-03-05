@@ -1,11 +1,12 @@
 ---
 title: "Eyes On The Bay: Main site"
 description: "Website providing Maryland water quality data and information"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Data frequently updated", "Site-specific results", "Links to supporting information ", "Includes explanations of key processes"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_32.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_32.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_32.0_ScreenCapture-1.png
 ---
 Developed By: MDNR
 

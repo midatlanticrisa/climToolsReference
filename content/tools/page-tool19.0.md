@@ -1,11 +1,12 @@
 ---
 title: "Shoreline Assessment Mapper"
 description: "An interactive map that displays a variety of data describing shoreline type and condition in coastal VA"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interactive map", "Can easily search for or zoom to area of interest", "Wide variety of layers specific to shoreline assessment", "Excellent documentation of data sources"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_19.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_19.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_19.0_ScreenCapture-1.png
 ---
 Developed By: VIMS_CCRM
 

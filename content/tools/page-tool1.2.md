@@ -1,11 +1,12 @@
 ---
 title: "AdaptVA Tidewatch Map"
 description: "36-hour coastal flooding forecasts"
-date: 2021-02-11T14:07:02-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Flooding forecast is updated every 12 hours"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_1.2_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_1.2_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_1.2_ScreenCapture-1.png
 ---
 Developed By: VIMS_CCRM
 

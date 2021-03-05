@@ -1,11 +1,12 @@
 ---
 title: "Resilience Adaptation Feasibility Tool (The RAFT)"
 description: "Provides independent, objective assessment of locality resilience in coastal Virginia."
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy to navigate website", "Provides site specific assessments", "Free for participating communities", "Includes case studies of previous assessments"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_5.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_5.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_5.0_ScreenCapture-1.png
 ---
 Developed By: UVA_IEN, WM_VCPC, ODU, and VSG
 

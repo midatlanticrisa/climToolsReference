@@ -1,11 +1,12 @@
 ---
 title: "Coastal Inundation Predictions for Maryland"
 description: "Projections of SLR and the predicted effects on the state of Maryland"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Provides state specific examples of the effect of SLR", "Explains how projections are calculated and how the differences from past projections", "Readable to a non-science audience", "Explains what is causing Sea Level Rise"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_22.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_22.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_22.0_ScreenCapture-1.png
 ---
 Developed By: UMCES
 

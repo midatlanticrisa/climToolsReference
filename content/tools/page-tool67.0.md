@@ -1,11 +1,12 @@
 ---
 title: "Future Urban Climates"
 description: "Interactive map illustrating climate migration of US cities in the next 60 years"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Locality specific", "Easy-to-use, interactive interface", "Provides multiple scenarios", "Links to supporting information"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_67.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_67.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_67.0_ScreenCapture-1.png
 ---
 Developed By: UMCES
 

@@ -1,0 +1,3 @@
+cd "/Volumes/GoogleDrive/Shared drives/MARISA/Coastal Climate Extension Pilot/Tool Inventory/Tool Screenshots_originals"
+magick mogrify -resize 250x156 -path '../Tool Screenshots_resized_156_250' *.png
+magick mogrify -resize 400x250 -path '../Tool Screenshots_resized_250_400' *.png

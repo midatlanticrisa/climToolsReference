@@ -1,11 +1,12 @@
 ---
 title: "Climate Smart Farming Climate Change in Your County"
 description: "Visualize climate impacts via precipitation and temperature changes since 1950 in the Northeast as well as future changes"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Site-specific results", "Provides multiple scenarios", "Raw data publicly available"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_39.1_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_39.1_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_39.1_ScreenCapture-1.png
 ---
 Developed By: Cornell University_College of Agriculture and Life Sciences
 

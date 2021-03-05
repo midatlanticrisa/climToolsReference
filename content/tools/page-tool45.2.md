@@ -1,11 +1,12 @@
 ---
 title: "DC Department of Energy and Environment: SRC Trading Program Impervious Viewer"
 description: "This map shows impervious surfaces within Washington D.C. intended to help users recognize areas where SRC practices can be implemented."
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Can easily search for area of interest", "Site specific data", "Includes additional data overlays", "Can easily annotate and export map"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_45.2_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_45.2_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_45.2_ScreenCapture-1.png
 ---
 Developed By: DCDOEE
 

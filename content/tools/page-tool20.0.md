@@ -1,11 +1,12 @@
 ---
 title: "MARISA Climate Impacts Summary and Outlook Reports"
 description: "Seasonal (quarterly) reports outlining past weather events and their significance as well as projections to the next seasons weather"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Report issued quarterly", "All charts and figures include easy-to-understand narrative descriptions", "Significant weather events (i.e., Polar Vortex) are explained"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_20.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_20.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_20.0_ScreenCapture-1.png
 ---
 Developed By: MARISA
 

@@ -1,11 +1,12 @@
 ---
 title: "National Beach Nourishment Database"
 description: "Demonstrates location of past and current beach nourishment projects, number of nourishment episodes in one area, date of project completion, cost, and volume of the project."
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Provides project cost information", "Comprehensive list of projects", "Searchable by State"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_63.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_63.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_63.0_ScreenCapture-1.png
 ---
 Developed By: American Shore & Beach Protection Agency, Regional Sediment Management Program, and APTIM
 

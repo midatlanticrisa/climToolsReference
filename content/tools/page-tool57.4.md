@@ -3,11 +3,12 @@ title: "i-Tree Hydro, and Eco"
 description: "i-Tree Eco provides functional, structural and compositional information, forecasting models, and management information on local trees.  
 
 i-Tree Hydro runs local and city-wide analysis of watershed dynamics and how trees impact these features"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Provides location-specific results", "Allows user to create specific scenarios", "Welcome guide/tutorials", "i-Tree YouTube channel dedicated to explaining how to use various tools"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_57.4_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_57.4_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_57.4_ScreenCapture-1.png
 ---
 Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of Municipal Arborists, International Society of Arboriculture, Casey Trees, and SUNY_College of Environmental Science and Forestry.
 

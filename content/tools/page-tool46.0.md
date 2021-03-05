@@ -1,11 +1,12 @@
 ---
 title: "Air Quality Forecast"
 description: "Report the current conditions and 2 day forecast of the Washington D.C. Air Quality"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, simple interface", "Clear graphics with supporting explanations", "Current conditions updated hourly", "Provides 2 day forecast", "Links to additional resources"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_46.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_46.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_46.0_ScreenCapture-1.png
 ---
 Developed By: Metropolitan Washington Council of Governments
 

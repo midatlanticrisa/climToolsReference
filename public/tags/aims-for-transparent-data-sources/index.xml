@@ -6,7 +6,7 @@
     <description>Recent content in Aims for transparent data sources on Climate Tools</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Jun 2020 15:24:16 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 01 Mar 2021 15:05:11 -0500</lastBuildDate>
     
 	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/aims-for-transparent-data-sources/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>FEMA Data Visualizations of Disaster Declarations and Grants</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool54.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:11 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool54.0/</guid>
       <description>Developed By: FEMA
@@ -22,9 +22,19 @@ Summary: FEMA’s Data Visualization tools allow users to explore when and where
     </item>
     
     <item>
+      <title>Eastern Virginia Coastal Resilience (ESVA Coastal Resilience)</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool10.0/</link>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool10.0/</guid>
+      <description>Developed By: NOAA, and TNC
+Summary: The Virginia Eastern Shore Coastal Resilience tool is an interactive mapping tool that allows users to visualize potential social, economic, and environmental impacts of sea level rise and storm surge and identify areas for nature-based solutions to enhance resilience and reduce risks where possible.</description>
+    </item>
+    
+    <item>
       <title>MARISA Climate Data Portal: Climate Data for the Mid-Atlantic Region</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool13.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool13.0/</guid>
       <description>Developed By: NOAA, and MARISA
@@ -34,7 +44,7 @@ Summary: The MARISA Climate Data Portal is a data download center that provides 
     <item>
       <title>Mid-Atlantic Ocean Data Tool</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool40.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool40.0/</guid>
       <description>Developed By: MARCO
@@ -44,21 +54,11 @@ Summary: The Mid-Atlantic Ocean Data Portal is a resource center consisting of a
     <item>
       <title>NOAA State Climate Summaries</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool14.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool14.0/</guid>
       <description>Developed By: NOAA_NCEI, and NCICS
 Summary: The State Climate Summaries consist of brief statewide reports, describing historical climate conditions and future climate scenarios.</description>
-    </item>
-    
-    <item>
-      <title>Eastern Virginia Coastal Resilience (ESVA Coastal Resilience)</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool10.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:15 -0400</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool10.0/</guid>
-      <description>Developed By: NOAA, and TNC
-Summary: The Virginia Eastern Shore Coastal Resilience tool is an interactive mapping tool that allows users to visualize potential social, economic, and environmental impacts of sea level rise and storm surge and identify areas for nature-based solutions to enhance resilience and reduce risks where possible.</description>
     </item>
     
   </channel>

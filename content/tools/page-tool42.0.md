@@ -1,11 +1,12 @@
 ---
 title: "Climate Change in the American Mind (CCAM) Explorer"
 description: "Display data on American climate change perceptions based on year and respondent characteristics"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Intuitive interactive interface", "Can view responses to multiple survey questions simultaneously", "Includes description of methods", "Access to raw data"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_42.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_42.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_42.0_ScreenCapture-1.png
 ---
 Developed By: Yale_Yale Program on Climate Change Communication, and George Mason University_Center for Climate Change Communication
 

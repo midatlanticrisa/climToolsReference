@@ -2,11 +2,12 @@
 title: "Adaptation Workbook (Climate Change Response Framework)"
 description: "Provide data and process support to bridge the gap between climate data and land managers
 "
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Allows user to create a site-specific adaptation plan", "YouTube channel explaining how to use Workbook", "Site-specific guidance and results"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_61.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_61.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_61.0_ScreenCapture-1.png
 ---
 Developed By: Northern Institute for Applied Climate Science, and USDA_USFS
 

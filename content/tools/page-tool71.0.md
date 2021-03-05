@@ -1,11 +1,12 @@
 ---
 title: "USGS Water Data for the Nation"
 description: "Clearinghouse of all USGS-hosted water data across the country, including water temperatures, levels, flows, groundwater tables, and a host of other physical and chemical parameters."
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Data frequently updated", "Site-specific results", "Locality-level mapping and graphs", "Links to supporting information"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_71.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_71.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_71.0_ScreenCapture-1.png
 ---
 Developed By: USGS
 

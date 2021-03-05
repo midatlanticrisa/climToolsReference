@@ -1,11 +1,12 @@
 ---
 title: "CREAT Risk Assessment Application for Water Utilities"
 description: "Risk assessment application for water utilities"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Developed in accordance with best industry practices", "Results are site specific", "Allows user to create specific scenarios", "Process can be applied at various locations"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_8.1_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_8.1_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_8.1_ScreenCapture-1.png
 ---
 Developed By: EPA
 

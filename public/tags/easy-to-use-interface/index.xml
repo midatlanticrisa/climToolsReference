@@ -6,15 +6,45 @@
     <description>Recent content in Easy-to-use interface on Climate Tools</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Jun 2020 15:24:16 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 01 Mar 2021 15:05:11 -0500</lastBuildDate>
     
 	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/easy-to-use-interface/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Coastal Change Analysis Program (C-CAP) Land Cover Atlas</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool70.0/</link>
+      <pubDate>Mon, 01 Mar 2021 15:05:11 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool70.0/</guid>
+      <description>Developed By: NOAA, USDOC, and NOAA_National Ocean Service
+Summary: The Coastal Change Analysis Program (C-CAP) Land Cover Atlas is an interactive mapping tool that allows user to view changes in coastal land cover from 1996-2010 throughout the US.</description>
+    </item>
+    
+    <item>
+      <title>DC Department of Energy and Environment: Targeted Subwatersheds</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool45.1/</link>
+      <pubDate>Mon, 01 Mar 2021 15:05:11 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool45.1/</guid>
+      <description>Developed By: DCDOEE
+Summary: Targeted Subwatersheds is a simple mapping tool that displays watershed boundaries, TMDL subwatersheds targeted for Waste Load Allocation (WLA) prioritization, as well as the D.</description>
+    </item>
+    
+    <item>
+      <title>Case Study and Information Exchange</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.2/</link>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.2/</guid>
+      <description>Developed By: EPA
+Summary: Part of the Creating Resilient Water Utilities Tool (CRWU), the Case Study and Information Exchange provides examples from water utilities that have implemented adaptation measures for natural hazards and water management challenges such as climate change.</description>
+    </item>
+    
+    <item>
       <title>Chesapeake Bay Program DataHub</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool33.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool33.0/</guid>
       <description>Developed By: CBP
@@ -24,7 +54,7 @@ Summary: The DataHub is the Chesapeake Bay Program’s primary tool for searchin
     <item>
       <title>Climate Smart Farming (CSF) Winter Cover Crop Planting Scheduler</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.4/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.4/</guid>
       <description>Developed By: Cornell University_College of Agriculture and Life Sciences
@@ -34,7 +64,7 @@ Summary: Part of the Climate Smart Farming toolkit, the Winter Cover Crop Planti
     <item>
       <title>Climate Smart Farming Climate Change in Your County</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.1/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.1/</guid>
       <description>Developed By: Cornell University_College of Agriculture and Life Sciences
@@ -42,19 +72,19 @@ Summary: Part of the Climate Smart Farming toolkit, the Climate Change in Your C
     </item>
     
     <item>
-      <title>Coastal Change Analysis Program (C-CAP) Land Cover Atlas</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool70.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <title>Creating Resilient Water Utilities (CRWU)</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.0/</link>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool70.0/</guid>
-      <description>Developed By: NOAA, USDOC, and NOAA_National Ocean Service
-Summary: The Coastal Change Analysis Program (C-CAP) Land Cover Atlas is an interactive mapping tool that allows user to view changes in coastal land cover from 1996-2010 throughout the US.</description>
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.0/</guid>
+      <description>Developed By: EPA
+Summary: The CRWU provides tools, training, and technical assistance for drinking water, wastewater, and stormwater utilities to build climate resilience.</description>
     </item>
     
     <item>
       <title>CSF Apple Stage / Freeze Damage Probability</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.5/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.5/</guid>
       <description>Developed By: Cornell University_College of Agriculture and Life Sciences
@@ -62,19 +92,9 @@ Summary: Part of the Climate Smart Farming toolkit, the Apple Stage/Freeze Proba
     </item>
     
     <item>
-      <title>DC Department of Energy and Environment: Targeted Subwatersheds</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool45.1/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool45.1/</guid>
-      <description>Developed By: DCDOEE
-Summary: Targeted Subwatersheds is a simple mapping tool that displays watershed boundaries, TMDL subwatersheds targeted for Waste Load Allocation (WLA) prioritization, as well as the D.</description>
-    </item>
-    
-    <item>
       <title>Drought Management Database</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool31.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool31.0/</guid>
       <description>Developed By: NDMC
@@ -84,7 +104,7 @@ Summary: The Drought Management Database is a growing collection of strategies t
     <item>
       <title>FieldWatch</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool24.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool24.0/</guid>
       <description>Developed By: Fieldwatch, and Purdue Research Foundation
@@ -94,7 +114,7 @@ Summary: FieldWatch is a community mapping tool that allows beekeepers, crop gro
     <item>
       <title>Grape Hardiness &amp; Freeze Risk</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.6/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.6/</guid>
       <description>Developed By: Cornell University_College of Agriculture and Life Sciences
@@ -102,39 +122,9 @@ Summary: Part of the Climate Smart Farming toolkit, the Grape Freeze Risk Tool p
     </item>
     
     <item>
-      <title>Sea Level Report Cards</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool16.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool16.0/</guid>
-      <description>Developed By: VIMS_CCRM
-Summary: The Sea-Level Report cards provide interactive graphs and narrative descriptions of sea-level trends and projections for 32 coastal locations across the U.</description>
-    </item>
-    
-    <item>
-      <title>Case Study and Information Exchange</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.2/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:15 -0400</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.2/</guid>
-      <description>Developed By: EPA
-Summary: Part of the Creating Resilient Water Utilities Tool (CRWU), the Case Study and Information Exchange provides examples from water utilities that have implemented adaptation measures for natural hazards and water management challenges such as climate change.</description>
-    </item>
-    
-    <item>
-      <title>Creating Resilient Water Utilities (CRWU)</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:15 -0400</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.0/</guid>
-      <description>Developed By: EPA
-Summary: The CRWU provides tools, training, and technical assistance for drinking water, wastewater, and stormwater utilities to build climate resilience.</description>
-    </item>
-    
-    <item>
       <title>Hampton Roads Geospatial Exchange Online (HRGEO)</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool2.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:15 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool2.0/</guid>
       <description>Developed By: HRPDC, HRSD, and HRTPO
@@ -144,7 +134,7 @@ Summary: HRGEO is a data portal that allows to users to view and download geogra
     <item>
       <title>Introduction to FEMA Coastal Floodplain Mapping</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool12.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:15 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool12.0/</guid>
       <description>Developed By: FEMA
@@ -152,9 +142,19 @@ Summary: This educational tool describes how coastal risks are shown on Flood In
     </item>
     
     <item>
+      <title>Sea Level Report Cards</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool16.0/</link>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool16.0/</guid>
+      <description>Developed By: VIMS_CCRM
+Summary: The Sea-Level Report cards provide interactive graphs and narrative descriptions of sea-level trends and projections for 32 coastal locations across the U.</description>
+    </item>
+    
+    <item>
       <title>Storm Surge Inundation Map</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.4/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:15 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.4/</guid>
       <description>Developed By: EPA

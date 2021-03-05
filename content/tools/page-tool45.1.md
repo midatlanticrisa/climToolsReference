@@ -1,11 +1,12 @@
 ---
 title: "DC Department of Energy and Environment: Targeted Subwatersheds"
 description: "map of D.C. sewers and subwatersheds"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Downloadable data", "Ability to view different layers simultaneously"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_45.1_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_45.1_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_45.1_ScreenCapture-1.png
 ---
 Developed By: DCDOEE
 

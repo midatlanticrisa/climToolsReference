@@ -1,11 +1,12 @@
 ---
 title: "Northeast Conservation Planning Atlas"
 description: "View, create, and collaborate with other users on maps to visualize biological, physical, and socio-economic information about the Northeast."
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Can compare maps side-by-side", "Welcome guide/tutorials", "Option to input own data", "Users can store up to 1 GB of data for free"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_43.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_43.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_43.0_ScreenCapture-1.png
 ---
 Developed By: Conservation Biology Institute
 

@@ -6,25 +6,15 @@
     <description>Recent content in Links to supporting information on Climate Tools</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Jun 2020 15:24:16 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 01 Mar 2021 15:05:11 -0500</lastBuildDate>
     
 	<atom:link href="https://cbtooltest.marisa.psu.edu/tags/links-to-supporting-information/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Annual United States Climate Stripes: Temperature and Precipitation</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool35.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool35.0/</guid>
-      <description>Developed By: NCICS
-Summary: The Annual United State Climate Stripes is a climate visualization tool designed to depict changes in temperature and precipitation through the United States.</description>
-    </item>
-    
-    <item>
       <title>Coastal Change Hazards Portal</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool65.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:11 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool65.0/</guid>
       <description>Developed By: USGS
@@ -32,9 +22,39 @@ Summary: The USGS Coastal Change Hazards Portal is an easy to use tool that synt
     </item>
     
     <item>
+      <title>Future Urban Climates</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool67.0/</link>
+      <pubDate>Mon, 01 Mar 2021 15:05:11 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool67.0/</guid>
+      <description>Developed By: UMCES
+Summary: The Future Urban Climates tool is an interactive map showing how climate may change within the next 60 years in 540 cities across the US.</description>
+    </item>
+    
+    <item>
+      <title>USGS Water Data for the Nation</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool71.0/</link>
+      <pubDate>Mon, 01 Mar 2021 15:05:11 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool71.0/</guid>
+      <description>Developed By: USGS
+Summary: The USGS Water Data for the Nation is a data portal that allows users to view real time data from approximately 1.</description>
+    </item>
+    
+    <item>
+      <title>Annual United States Climate Stripes: Temperature and Precipitation</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool35.0/</link>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool35.0/</guid>
+      <description>Developed By: NCICS
+Summary: The Annual United State Climate Stripes is a climate visualization tool designed to depict changes in temperature and precipitation through the United States.</description>
+    </item>
+    
+    <item>
       <title>Drought Management Database</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool31.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool31.0/</guid>
       <description>Developed By: NDMC
@@ -44,7 +64,7 @@ Summary: The Drought Management Database is a growing collection of strategies t
     <item>
       <title>Eyes On The Bay: Main site</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool32.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool32.0/</guid>
       <description>Developed By: MDNR
@@ -52,43 +72,23 @@ Summary: Eyes On The Bay provides maps, data and information about tidal water q
     </item>
     
     <item>
-      <title>Future Urban Climates</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool67.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <title>Introduction to FEMA Coastal Floodplain Mapping</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool12.0/</link>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool67.0/</guid>
-      <description>Developed By: UMCES
-Summary: The Future Urban Climates tool is an interactive map showing how climate may change within the next 60 years in 540 cities across the US.</description>
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool12.0/</guid>
+      <description>Developed By: FEMA
+Summary: This educational tool describes how coastal risks are shown on Flood Insurance Rate Maps (FIRMs, or flood maps) and teaches users how to interpret coastal flood maps.</description>
     </item>
     
     <item>
       <title>Submerged Aquatic Vegetation (SAV) in the Chesapeake Bay</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool38.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
+      <pubDate>Mon, 01 Mar 2021 15:05:10 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool38.0/</guid>
       <description>Developed By: VIMS
 Summary: The Submerged Aquatic Vegetation (SAV) in Chesapeake Bay tool provides access to recent and historical SAV monitoring data from the Virginia Institute of Marine Science SAV program.</description>
-    </item>
-    
-    <item>
-      <title>USGS Water Data for the Nation</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool71.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:16 -0400</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool71.0/</guid>
-      <description>Developed By: USGS
-Summary: The USGS Water Data for the Nation is a data portal that allows users to view real time data from approximately 1.</description>
-    </item>
-    
-    <item>
-      <title>Introduction to FEMA Coastal Floodplain Mapping</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool12.0/</link>
-      <pubDate>Thu, 25 Jun 2020 15:24:15 -0400</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool12.0/</guid>
-      <description>Developed By: FEMA
-Summary: This educational tool describes how coastal risks are shown on Flood Insurance Rate Maps (FIRMs, or flood maps) and teaches users how to interpret coastal flood maps.</description>
     </item>
     
   </channel>

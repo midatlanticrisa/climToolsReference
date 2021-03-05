@@ -1,11 +1,12 @@
 ---
 title: "Delaware Environmental Monitoring Sites"
 description: "This tool inventories environmental monitoring stations in Delaware and provides links to access corresponding data and find data of interest."
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Large number of monitoring stations", "Includes historical and real time data", "Variety of meteorological, groundwater, tidal, and water quality variables"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_59.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_59.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_59.0_ScreenCapture-1.png
 ---
 Developed By: DEMAC, Delaware Geological Survey, and University of Delaware
 

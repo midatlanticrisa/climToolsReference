@@ -1,11 +1,12 @@
 ---
 title: "OSPREY Public"
 description: "Report current meteorological and infrastructure (electricity, traffic, shelters) conditions to aid emergency response planning for both citizens and professionals."
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Data frequently updated", "Locality-level mapping and graphs", "Broad extent of data"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_75.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_75.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_75.0_ScreenCapture-1.png
 ---
 Developed By: NOAA_NWS
 

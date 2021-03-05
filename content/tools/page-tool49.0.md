@@ -1,11 +1,12 @@
 ---
 title: "MDOT Climate Change Vulnerability"
 description: "Illustrates the specific roads that will experience inundation due to predicted storm events. Displays projected water depth grids"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Interactive map layers", "Site specific results", "Road inundation layers", "Multiple scenarios for flood projections", "Long term projections"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_49.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_49.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_49.0_ScreenCapture-1.png
 ---
 Developed By: MDOT_State Highway Administration, Salisbury University, and the Eastern Shore Regional GIS Cooperative
 

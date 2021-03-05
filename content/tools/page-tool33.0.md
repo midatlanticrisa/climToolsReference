@@ -1,11 +1,12 @@
 ---
 title: "Chesapeake Bay Program DataHub"
 description: "Datasets related to water quality, living resources, pollution, and fluorescence"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Data updated daily/monthly depending on dataset", "Able to query and download specific attributes of a dataset"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_33.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_33.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_33.0_ScreenCapture-1.png
 ---
 Developed By: CBP
 

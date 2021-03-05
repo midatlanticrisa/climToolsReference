@@ -1,11 +1,12 @@
 ---
 title: "Climate Impact Map"
 description: "Interactive map showing past and future temperature based different climate models"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Interactive tool", "Option to export data", "Addresses uncertainty", "Detailed methodology"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_27.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_27.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_27.0_ScreenCapture-1.png
 ---
 Developed By: Climate Impact Lab
 

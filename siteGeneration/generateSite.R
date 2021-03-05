@@ -7,6 +7,7 @@ library(stringi)
 library(webshot)
 ##webshot::install_phantomjs()
 
+#/Volumes/GoogleDrive/Shared drives/MARISA/Coastal Climate Extension Pilot/Tool Inventory/Tool Screenshots_resized_156_250/TOOLID_1.0_ScreenCapture-1.png
 ##find data file, assumed to be on computer
 baseDir <- "/Users/mdl5548/Documents/GitHub/"
 dataDir <- paste0(baseDir, "climToolsReference/siteGeneration/")

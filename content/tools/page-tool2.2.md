@@ -1,11 +1,12 @@
 ---
 title: "Hampton Roads Resilience Projects Dashboard"
 description: "Distribution, type, and features of resiliency projects in Hampton Roads"
-date: 2021-02-11T14:07:02-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Can filter projects by locality, type, and/or status", "Project specific information available", "Allows sorting by project type", "Allows user to search by address", "Frequently updated"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_2.2_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_2.2_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_2.2_ScreenCapture-1.png
 ---
 Developed By: HRPDC, HRSD, and HRTPO
 

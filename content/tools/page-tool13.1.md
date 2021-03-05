@@ -1,11 +1,12 @@
 ---
 title: "MARISA Climate Data Portal: Interactive Map for the MARISA Region"
 description: "interactive map with current climate data"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Interactive, easy-to-use interface", "Data frequently updated", "Works on mobile devices"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_13.1_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_13.1_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_13.1_ScreenCapture-1.png
 ---
 Developed By: NOAA, and MARISA
 

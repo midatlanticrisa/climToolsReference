@@ -1,11 +1,12 @@
 ---
 title: "NOAA State Climate Summaries"
 description: "Summaries for each state regarding historical climate change and future climate projections"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use", "Links to additional resources", "Available for every state in the US", "Aims for transparent data sources"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_14.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_14.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_14.0_ScreenCapture-1.png
 ---
 Developed By: NOAA_NCEI, and NCICS
 

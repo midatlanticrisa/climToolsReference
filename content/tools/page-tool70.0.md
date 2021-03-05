@@ -1,11 +1,12 @@
 ---
 title: "Coastal Change Analysis Program (C-CAP) Land Cover Atlas"
 description: "Interactive map showing changes in land use cover from 1996-2010 in coastal regions"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use interface", "Option to export data raw data", "Option to view data by watershed"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_70.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_70.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_70.0_ScreenCapture-1.png
 ---
 Developed By: NOAA, USDOC, and NOAA_National Ocean Service
 

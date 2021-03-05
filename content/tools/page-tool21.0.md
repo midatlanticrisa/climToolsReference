@@ -1,11 +1,12 @@
 ---
 title: "Wetbud: Wetland Water Budget Modeling Software"
 description: "Water budget projections for created and natural wetlands"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Multiple resources are provided on how to use the tool", "Data exports into excel efficiently", "Multiple users can access the same database at once"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_21.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_21.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_21.0_ScreenCapture-1.png
 ---
 Developed By: Wetland Studies and Solutions, Inc.
 

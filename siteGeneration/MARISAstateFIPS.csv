@@ -1,0 +1,312 @@
+state,cntyName,coastal
+DC,District of Columbia,
+DE,Kent,Y
+DE,New Castle,Y
+DE,Sussex,Y
+MD,Allegany,
+MD,Anne Arundel,Y
+MD,Baltimore,Y
+MD,Baltimore City,Y
+MD,Calvert,Y
+MD,Caroline,Y
+MD,Carroll,
+MD,Cecil,Y
+MD,Charles,Y
+MD,Dorchester,Y
+MD,Frederick,
+MD,Garrett,
+MD,Harford,Y
+MD,Howard,
+MD,Kent,Y
+MD,Montgomery,
+MD,Prince George's,Y
+MD,Queen Anne's,Y
+MD,Somerset,Y
+MD,St. Mary's,Y
+MD,Talbot,Y
+MD,Washington,
+MD,Wicomico,Y
+MD,Worcester,Y
+NJ,Atlantic,Y
+NJ,Bergen,
+NJ,Burlington,
+NJ,Camden,
+NJ,Cape May,Y
+NJ,Cumberland,Y
+NJ,Essex,
+NJ,Gloucester,
+NJ,Hudson,Y
+NJ,Hunterdon,
+NJ,Mercer,
+NJ,Middlesex,Y
+NJ,Monmouth,Y
+NJ,Morris,
+NJ,Ocean,Y
+NJ,Passaic,
+NJ,Salem,Y
+NJ,Somerset,
+NJ,Sussex,
+NJ,Union,
+NJ,Warren,
+NY,Albany,
+NY,Allegany,
+NY,Bronx,Y
+NY,Broome,
+NY,Cattaraugus,
+NY,Cayuga,
+NY,Chautauqua,
+NY,Chemung,
+NY,Chenango,
+NY,Clinton,
+NY,Columbia,
+NY,Cortland,
+NY,Delaware,
+NY,Dutchess,
+NY,Erie,
+NY,Essex,
+NY,Franklin,
+NY,Fulton,
+NY,Genesee,
+NY,Greene,
+NY,Hamilton,
+NY,Herkimer,
+NY,Jefferson,
+NY,Kings,Y
+NY,Lewis,
+NY,Livingston,
+NY,Madison,
+NY,Monroe,
+NY,Montgomery,
+NY,Nassau,Y
+NY,New York,Y
+NY,Niagara,
+NY,Oneida,
+NY,Onondaga,
+NY,Ontario,
+NY,Orange,
+NY,Orleans,
+NY,Oswego,
+NY,Otsego,
+NY,Putnam,
+NY,Queens,Y
+NY,Rensselaer,
+NY,Richmond,Y
+NY,Rockland,
+NY,Saratoga,
+NY,Schenectady,
+NY,Schoharie,
+NY,Schuyler,
+NY,Seneca,
+NY,St. Lawrence,
+NY,Steuben,
+NY,Suffolk,Y
+NY,Sullivan,
+NY,Tioga,
+NY,Tompkins,
+NY,Ulster,
+NY,Warren,
+NY,Washington,
+NY,Wayne,
+NY,Westchester,Y
+NY,Wyoming,
+NY,Yates,
+PA,Adams,
+PA,Allegheny,
+PA,Armstrong,
+PA,Beaver,
+PA,Bedford,
+PA,Berks,
+PA,Blair,
+PA,Bradford,
+PA,Bucks,
+PA,Butler,
+PA,Cambria,
+PA,Cameron,
+PA,Carbon,
+PA,Centre,
+PA,Chester,
+PA,Clarion,
+PA,Clearfield,
+PA,Clinton,
+PA,Columbia,
+PA,Crawford,
+PA,Cumberland,
+PA,Dauphin,
+PA,Delaware,
+PA,Elk,
+PA,Erie,
+PA,Fayette,
+PA,Forest,
+PA,Franklin,
+PA,Fulton,
+PA,Greene,
+PA,Huntingdon,
+PA,Indiana,
+PA,Jefferson,
+PA,Juniata,
+PA,Lackawanna,
+PA,Lancaster,
+PA,Lawrence,
+PA,Lebanon,
+PA,Lehigh,
+PA,Luzerne,
+PA,Lycoming,
+PA,McKean,
+PA,Mercer,
+PA,Mifflin,
+PA,Monroe,
+PA,Montgomery,
+PA,Montour,
+PA,Northampton,
+PA,Northumberland,
+PA,Perry,
+PA,Philadelphia,
+PA,Pike,
+PA,Potter,
+PA,Schuylkill,
+PA,Snyder,
+PA,Somerset,
+PA,Sullivan,
+PA,Susquehanna,
+PA,Tioga,
+PA,Union,
+PA,Venango,
+PA,Warren,
+PA,Washington,
+PA,Wayne,
+PA,Westmoreland,
+PA,Wyoming,
+PA,York,
+VA,Accomack,Y
+VA,Albemarle,
+VA,Alexandria City,Y
+VA,Alleghany,
+VA,Amelia,
+VA,Amherst,
+VA,Appomattox,
+VA,Arlington,Y
+VA,Augusta,
+VA,Bath,
+VA,Bedford,
+VA,Bland,
+VA,Botetourt,
+VA,Bristol City,
+VA,Brunswick,
+VA,Buchanan,
+VA,Buckingham,
+VA,Buena Vista City,
+VA,Campbell,
+VA,Caroline,Y
+VA,Carroll,
+VA,Charles City,Y
+VA,Charlotte,
+VA,Charlottesville City,
+VA,Chesapeake City,Y
+VA,Chesterfield,Y
+VA,Clarke,
+VA,Colonial Heights City,Y
+VA,Covington City,
+VA,Craig,
+VA,Culpeper,
+VA,Cumberland,
+VA,Danville City,
+VA,Dickenson,
+VA,Dinwiddie,
+VA,Emporia City,
+VA,Essex,Y
+VA,Fairfax,Y
+VA,Fairfax City,
+VA,Falls Church City,
+VA,Fauquier,
+VA,Floyd,
+VA,Fluvanna,
+VA,Franklin,
+VA,Franklin City,
+VA,Frederick,
+VA,Fredericksburg City,Y
+VA,Galax City,
+VA,Giles,
+VA,Gloucester,Y
+VA,Goochland,
+VA,Grayson,
+VA,Greene,
+VA,Greensville,
+VA,Halifax,
+VA,Hampton City,Y
+VA,Hanover,Y
+VA,Harrisonburg City,
+VA,Henrico,Y
+VA,Henry,
+VA,Highland,
+VA,Hopewell City,Y
+VA,Isle of Wight,Y
+VA,James City,Y
+VA,King and Queen,Y
+VA,King George,Y
+VA,King William,Y
+VA,Lancaster,Y
+VA,Lee,
+VA,Lexington City,
+VA,Loudoun,
+VA,Louisa,
+VA,Lunenburg,
+VA,Lynchburg City,
+VA,Madison,
+VA,Manassas City,
+VA,Manassas Park City,
+VA,Martinsville City,
+VA,Mathews,Y
+VA,Mecklenburg,
+VA,Middlesex,Y
+VA,Montgomery,
+VA,Nelson,
+VA,New Kent,Y
+VA,Newport News City,Y
+VA,Norfolk City,Y
+VA,Northampton,Y
+VA,Northumberland,
+VA,Norton City,
+VA,Nottoway,
+VA,Orange,
+VA,Page,
+VA,Patrick,
+VA,Petersburg City,Y
+VA,Pittsylvania,
+VA,Poquoson City,Y
+VA,Portsmouth City,Y
+VA,Powhatan,
+VA,Prince Edward,
+VA,Prince George,Y
+VA,Prince William,Y
+VA,Pulaski,
+VA,Radford City,
+VA,Rappahannock,
+VA,Richmond,Y
+VA,Richmond City,Y
+VA,Roanoke,
+VA,Roanoke City,
+VA,Rockbridge,
+VA,Rockingham,
+VA,Russell,
+VA,Salem City,
+VA,Scott,
+VA,Shenandoah,
+VA,Smyth,
+VA,Southampton,
+VA,Spotsylvania,Y
+VA,Stafford,Y
+VA,Staunton City,
+VA,Suffolk City,Y
+VA,Surry,Y
+VA,Sussex,
+VA,Tazewell,
+VA,Virginia Beach City,Y
+VA,Warren,
+VA,Washington,
+VA,Waynesboro City,
+VA,Westmoreland,Y
+VA,Williamsburg City,Y
+VA,Winchester City,
+VA,Wise,
+VA,Wythe,
+VA,York,Y

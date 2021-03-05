@@ -1,11 +1,12 @@
 ---
 title: "AdaptVA Sea Level Rise Projection Viewer"
 description: "Observed and projected sea level rise from 1990 to 2100"
-date: 2021-02-11T14:07:02-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Easy-to-use, interactive interface", "Provides decadal projections for multiple sea level rise scenarios", "Can easily search for locality of interest"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_1.1_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_1.1_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_1.1_ScreenCapture-1.png
 ---
 Developed By: VIMS_CCRM
 

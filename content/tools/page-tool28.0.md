@@ -1,11 +1,12 @@
 ---
 title: "Climate Engine"
 description: "Web application that generates maps and graphs using climate data from remotely sensed source data"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:10-0500
 pubtype: "Tool"
 featured: true
 tags: ["Ability to visualize multiple climate change related variables at once", "Data frequently updated", "Provides supporting educational information and tutorials", "Able to download customized data without needing to access and download entire dataset", "Can share maps and graphs via specifically generated web links"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_28.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_28.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_28.0_ScreenCapture-1.png
 ---
 Developed By: Desert Research Institute, University of Idaho, and Google
 

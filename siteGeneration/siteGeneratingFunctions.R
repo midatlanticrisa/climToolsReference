@@ -59,6 +59,7 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
   #el <- "\n"
   #siteDir <- toolsDir
   #scTab <- stcntyTab
+  #updateContent <- T
   #################
   ##check the developers, to make sure the directories are available and are set up properly
   if(is.na(toolRec$Developer)==T){
@@ -94,6 +95,12 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
       #toolPage <- gsub('\"tags\"', '\"placeholder\"', toolPage)
       toolPage <- gsub('\"tags\"', '', toolPage)
     }
+    
+    ##replace the placeholder image with an actual screenshot of the tool, if available
+    toolPage <- gsub("pageImage: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg", 
+                     paste0("pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_", trimws(toolRec$`Tool ID`), "_ScreenCapture-1.png"), toolPage)
+    toolPage <- gsub("thumbImage: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg", 
+                     paste0("thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_", trimws(toolRec$`Tool ID`), "_ScreenCapture-1.png"), toolPage)
     
     ##extract software requirements, for search terms on site
     if(is.na(toolRec$`Software Requirements-software`)==F){
@@ -199,7 +206,6 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
     ##set up for output
     toolFilts <- toolSubFilts
     toolFiltsName <- toolSubFilts
-    
     
     
     if(length(toolSubFilts)>0){

@@ -1,0 +1,93 @@
+//rules for software requirements select all
+//$('#reqTogAll').change(function(){
+//  showData.empty();
+//  var searchSoftReq = [];
+
+//  var checkboxes = $(this).closest('form').find(':checkbox');
+//  checkboxes.prop('checked', $(this).is(':checked'));
+
+//  $('#softReqSearch :checked').each(function(){
+//    searchSoftReq.push($(this).val());
+//  });
+
+//  holdSoftReqSearch = searchSoftReq;
+//  var chkNumRes = $.sum([holdTagSearch.length, searchSoftReq.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+//  if(chkNumRes>0){
+//    selectTools(searchSoftReq, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+//  }else{
+//    defualtSetup(reqData, geoData, tFunData, topFilData, subFilData)
+//  }
+//});
+
+
+
+//tool function all selection
+//$('#tlfunTogAll').change(function(){
+//    showData.empty();
+//    var searchToolFun = [];
+
+//    var checkboxes = $(this).closest('form').find(':checkbox');
+//    checkboxes.prop('checked', $(this).is(':checked'));
+
+//    $('#toolFunSearch :checked').each(function(){
+//      searchToolFun.push($(this).val());
+//    });
+
+//    holdToolFunSearch = searchToolFun;
+//    var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, searchToolFun.length, holdTopFilSearch.length, holdTopSubSearch.length]);
+//    if(chkNumRes>0){
+//      selectTools(holdSoftReqSearch, reqData, holdGeoSearch, geoData, searchToolFun, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
+//    }else{
+//      defualtSetup(reqData, geoData, tFunData, topFilData, subFilData)
+//    }
+//  });
+
+
+
+//topic filter all selection
+//$('#topfltTogAll').change(function(){
+//  showData.empty();
+//  var searchTopFil = [];
+
+//  var checkboxes = $(this).closest('form').find(':checkbox');
+//  checkboxes.prop('checked', $(this).is(':checked'));
+
+//  switchSubTopics();
+
+//  $('#topFilterSearch :checked').each(function(){
+//    searchTopFil.push($(this).val());
+//  });
+//  alert(searchTopFil)
+
+//  holdTopFilSearch = searchTopFil;
+//  var chkNumRes = $.sum([holdTagSearch.length, holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, searchTopFil.length, holdTopSubSearch.length]);
+//  if(chkNumRes>0){
+//    selectTools(holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, searchTopFil, topFilData, holdTopSubSearch, subFilData)
+//  }else{
+//    defualtSetup(reqData, geoData, tFunData, topFilData, subFilData)
+//  }
+//});
+
+
+
+//$('#subfltTogAll').change(function(){
+//  showData.empty();
+//  var searchSubFil = [];
+
+//  var checkboxes = $(this).closest('form').find(':checkbox:not(:disabled)');
+//  checkboxes.prop('checked', $(this).is(':checked'));
+
+//  switchSubTopics();
+
+//  $('#subFilterSearch :checked').each(function(){
+//    searchSubFil.push($(this).val());
+//  });
+
+//  holdTopSubSearch = searchSubFil;
+//  var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch.length, holdToolFunSearch.length, holdTopFilSearch.length, searchSubFil.length]);
+//  if(chkNumRes>0){
+//    selectTools(holdSoftReqSearch, reqData, holdGeoSearch, geoData, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, searchSubFil, subFilData)
+//  }else{
+//    defualtSetup(reqData, geoData, tFunData, topFilData, subFilData)
+//  }
+//});

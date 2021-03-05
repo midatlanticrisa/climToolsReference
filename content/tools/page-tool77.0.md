@@ -3,11 +3,12 @@ title: "OpenNSPECT"
 description: "*Map surface water runoff volumes, pollutants, and total sediment loads
 *Identify areas that might benefit from changes to proposed development strategies
 *Analyze land use change scenarios and impacts"
-date: 2021-02-11T14:07:03-0500
+date: 2021-03-01T15:05:11-0500
 pubtype: "Tool"
 featured: true
 tags: ["Provides training and input data", "Can be used in any area with available data"]
-image: https://cbtooltest.marisa.psu.edu/images/TOOLID_77.0_ScreenCapture-1.png
+pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_77.0_ScreenCapture-1.png
+thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_77.0_ScreenCapture-1.png
 ---
 Developed By: NOAA_Office for Coastal Management
 
