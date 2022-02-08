@@ -1,10 +1,10 @@
 ---
 title: "Chesapeake Bay Program DataHub"
-description: "Datasets related to water quality, living resources, pollution, and fluorescence"
-date: 2021-03-01T15:05:10-0500
+description: "Datasets related to water quality, living resources, pollution, and fluorescence "
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Easy-to-use interface", "Data updated daily/monthly depending on dataset", "Able to query and download specific attributes of a dataset"]
+tags: ["Free", "Historical ", "Real-time/Current", "Website", "Dataset", "Downloadable data"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_33.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_33.0_ScreenCapture-1.png
 ---
@@ -20,12 +20,15 @@ This tool provides access to several types of data related to pollutants, water 
 __**Get This Tool:**__ http://data.chesapeakebay.net/Home
 
 __**Geographic Coverage**__
-- All Cities and Counties around the Chesapeake Bay
+- Chesapeake Bay
 
-__**Strengths**__
--  Easy-to-use interface
--  Data updated daily/monthly depending on dataset
--  Able to query and download specific attributes of a dataset
+__**Tags**__
+-  Free
+-  Historical 
+-  Real-time/Current
+-  Website
+-  Dataset
+-  Downloadable data
 
 __**Cost**__
 - Free

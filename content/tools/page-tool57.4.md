@@ -2,11 +2,11 @@
 title: "i-Tree Hydro, and Eco"
 description: "i-Tree Eco provides functional, structural and compositional information, forecasting models, and management information on local trees.  
 
-i-Tree Hydro runs local and city-wide analysis of watershed dynamics and how trees impact these features"
-date: 2021-03-01T15:05:11-0500
+i-Tree Hydro runs local and city-wide analysis of watershed dynamics and how trees impact these features "
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Provides location-specific results", "Allows user to create specific scenarios", "Welcome guide/tutorials", "i-Tree YouTube channel dedicated to explaining how to use various tools"]
+tags: ["Free", "Restrictions apply", "Real-time/Current", "Forecast", "Location specific", "City level", "Application", "Interactive interface/map", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_57.4_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_57.4_ScreenCapture-1.png
 ---
@@ -24,11 +24,16 @@ https://www.itreetools.org/tools/hydro
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
--  Provides location-specific results
--   Allows user to create specific scenarios
--   Welcome guide/tutorials
--   i-Tree YouTube channel dedicated to explaining how to use various tools
+__**Tags**__
+-  Free
+-  Restrictions apply
+-  Real-time/Current
+-  Forecast
+-  Location specific
+-  City level
+-  Application
+-  Interactive interface/map
+-  Downloadable results
 
 __**Cost**__
 - Free

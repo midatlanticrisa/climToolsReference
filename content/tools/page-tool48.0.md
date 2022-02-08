@@ -1,10 +1,10 @@
 ---
 title: "Chesapeake Bay Interpretive Buoy System (CBIBS)"
 description: "Measures and records weather and water conditions within the Chesapeake Bay"
-date: 2021-03-01T15:05:11-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Data updated every 10 minutes", "Charts and tables for data analysis", "Extensive range of data parameters", "Tutorials available"]
+tags: ["Free", "Historical ", "Real-time/Current", "Location specific", "Watershed level", "Website", "Dataset", "Downloadable data", "Subdaily"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_48.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_48.0_ScreenCapture-1.png
 ---
@@ -21,13 +21,18 @@ __**Get This Tool:**__ https://buoybay.noaa.gov/about/about-system
 
 
 __**Geographic Coverage**__
-- All Cities and Counties around the Chesapeake Bay
+- Chesapeake Bay
 
-__**Strengths**__
--  Data updated every 10 minutes
--   Charts and tables for data analysis
--   Extensive range of data parameters
--   Tutorials available
+__**Tags**__
+-  Free
+-  Historical 
+-  Real-time/Current
+-  Location specific
+-  Watershed level
+-  Website
+-  Dataset
+-  Downloadable data
+-  Subdaily
 
 __**Cost**__
 - Free

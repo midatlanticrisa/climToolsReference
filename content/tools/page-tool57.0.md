@@ -1,7 +1,7 @@
 ---
 title: "i-Tree"
 description: "i-Tree"
-date: 2021-03-01T15:05:11-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
 tags: []
@@ -12,14 +12,14 @@ Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of 
 
 **Summary:** i-Tree is a collection of tools designed to help users evaluate the benefits of local tree species, by assessing their economic value and benefits over time. 
 
-By providing information such as location, species, tree size, condition, and location in relationship existing structures, users receive specific estimates of CO2 mitigation, air quality improvements, and stormwater interception of existing and or planned tree species. Listed in order of increasing complexity, i-Tree is made up of the following subtools: MyTree, Landscape, Design, Canopy, Eco, and Hydro. All tools are available for download on Windows/PC, with i-Tree Eco and Hydro only available as downloadable software. All other tools can be used in the web browser.
+By providing information such as location, species, tree size, condition, and location in relationship existing structures, users receive specific estimates of CO2 mitigation, air quality improvements, and stormwater interception of existing and or planned tree species. Listed in order of increasing complexity, i-Tree is made up of the following subtools: MyTree, Landscape, Design, Canopy, Eco, and Hydro. All tools are available for download on Windows/PC, with i-Tree Eco and Hydro only available as downloadable software. All other tools can be used in the web browser. 
 
 __**Get This Tool:**__ https://www.itreetools.org/
 
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
+__**Tags**__
 Not Available
 
 __**Cost**__

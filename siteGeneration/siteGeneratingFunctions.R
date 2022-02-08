@@ -1,7 +1,7 @@
 ##site generating functions
 ##########################################################################
 ##########################################################################
-formatStarStrings <- function(str){
+formatStarStrings <- function(str){ # Not USED?
   #################
   #str <-toolRec$`Target Audience`
   #################
@@ -45,6 +45,12 @@ formatStarStrings <- function(str){
 # }
 ##########################################################################
 ##########################################################################
+# toolRec: data.frame of information for a tool
+# tempPage: markdown template page
+# el: end of line marker, "/n"
+# siteDir: path to output directory
+# scTab: data.frame of states, county names, and whether they are coastal
+# updateContent=T: Boolean (True/FALSE), True will rewrite the files if they exist
 generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateContent=T){
   #################
   #toolRec <- splitByToolID[[2]]
@@ -62,69 +68,101 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
   #updateContent <- T
   #################
   ##check the developers, to make sure the directories are available and are set up properly
+  # If the Developer column is NA, set it to unknown
   if(is.na(toolRec$Developer)==T){
     toolRec$Developer <- "Unknown"
   }
   ##if there is more than one developer, split the developers into a vector
   splitDevs <- strsplit(toolRec$Developer, "; ")[[1]]
-  toolIDtxt <- paste0("page-tool", trimws(toolRec$`Tool ID`))  ##the name of the tool page within the site
-  #writeTool <- paste0(siteDir, splitDevs[1], "/", toolIDtxt, ".md")  ##the file in which the tool information will be written to, assumes first developer is the most important
-  toolRec$`Tool Name` <- gsub(el, " ", toolRec$`Tool Name`) ##remove any cariage returns from the tool name
-  #toolDir <- paste0(siteDir, gsub("/|:", "-", toolRec$`Tool Name`), "/")
+  # Set the name of the markdown page as "page-tool<tool ID number>.md"
+  ##the name of the tool page within the site
+  toolIDtxt <- paste0("page-tool", trimws(toolRec$`Tool ID`))  
   writeTool <- paste0(siteDir, toolIDtxt, ".md")
+  #writeTool <- paste0(siteDir, splitDevs[1], "/", toolIDtxt, ".md")  ##the file in which the tool information will be written to, assumes first developer is the most important
+  toolRec$`Tool Name` <- gsub(el, " ", toolRec$`Tool Name`) ##remove any carriage returns from the tool name
+  #toolDir <- paste0(siteDir, gsub("/|:", "-", toolRec$`Tool Name`), "/")
   
+  # Check if the file exists
+  # If the file does not exists or updateContent is TRUE,
+  # then create the markdown page, otherwise do nothing.
   if(file.exists(writeTool)==F | updateContent==T){
-    ##provide new page title
+    ## Replace "page-template" with the tool name as the page title
     toolPage <- gsub("page-template", toolRec$`Tool Name`, tempPage)
-    ##update date
+    ## Update the date with the system time 
     toolPage <- gsub("1-1-1111", format(Sys.time(), "%FT%T%z"), toolPage)
-    ##change description
+    
+    ## Change the description with the tool description or the name of the tool
+    # if no description exists
     if(is.na(toolRec$`Purpose-Description`)==F){
       toolPage <- gsub("a page", toolRec$`Purpose-Description`, toolPage)
     }else{
       toolPage <- gsub("a page", toolRec$`Tool Name`, toolPage)
     }
+    
+    # If Strengths exits, then set them as tags
     ##add  tags to the header
     ##and extract tags to add to search objects
     if(is.na(toolRec$`Description-Strengths`)==F){
+      # split the string of strengths into a vector of strengths
       tags <- strsplit(toolRec$`Description-Strengths`, "; |;  ")[[1]]
+      # Update the "tags" with the list of tags..."strengths"
       toolPage <- gsub('\"tags\"', paste(paste0('\"', unique(tags), '\"'), collapse=", "), toolPage)
+      # Create a data.frame of tags
       toolTags <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, tag=tags)
+      # BIND the tags data.frame to the GLOBAL searchTags list
       searchTags <<- rbind.data.frame(searchTags, toolTags)
     }else{
       #toolPage <- gsub('\"tags\"', '\"placeholder\"', toolPage)
+      # Set tags as an empty space if no strengths exist
       toolPage <- gsub('\"tags\"', '', toolPage)
     }
     
     ##replace the placeholder image with an actual screenshot of the tool, if available
     toolPage <- gsub("pageImage: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg", 
-                     paste0("pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_", trimws(toolRec$`Tool ID`), "_ScreenCapture-1.png"), toolPage)
+                     paste0("pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_", 
+                            trimws(toolRec$`Tool ID`), "_ScreenCapture-1.png"), toolPage)
     toolPage <- gsub("thumbImage: https://www.887theriver.ca/wp-content/uploads/2017/07/placeholder.jpg", 
-                     paste0("thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_", trimws(toolRec$`Tool ID`), "_ScreenCapture-1.png"), toolPage)
+                     paste0("thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_", 
+                            trimws(toolRec$`Tool ID`), "_ScreenCapture-1.png"), toolPage)
     
     ##extract software requirements, for search terms on site
+    # IF software requirements exist
+    ## THIS IS NOT currently available on the site
     if(is.na(toolRec$`Software Requirements-software`)==F){
       softReqs <- strsplit(toolRec$`Software Requirements-software`, "; |;  |\r\n")[[1]]
       toolSoftReqs <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, softReqs=softReqs)
     }else{
       toolSoftReqs <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, softReqs="None")
     }
+    # BIND the tags data.frame to the GLOBAL searchSoftReqs list
     searchSoftReqs <<- rbind.data.frame(searchSoftReqs, toolSoftReqs)
     
     ##tool developer
+    # Set the developer based on if multiple developers exist
     if(length(splitDevs)==1){
       toolDev <- paste0("Developed By: ", splitDevs, el)
     }else{
-      toolDev <- paste0("Developed By: ", paste0(paste(splitDevs[1:(length(splitDevs)-1)], collapse=", "), ", and ", splitDevs[length(splitDevs)]), el)
+      toolDev <- paste0("Developed By: ", 
+                        paste0(paste(splitDevs[1:(length(splitDevs)-1)], 
+                                     collapse=", "), ", and ", 
+                               splitDevs[length(splitDevs)]), el)
     }
     
     ##tool description
+    # Set the summary description if one exists
     if(is.na(toolRec$`Description-About`)==F){
       toolDes <- paste0("**Summary:** ", toolRec$`Description-About`, el)
     }else{
       toolDes <- paste0("**Summary:** ", "Not Available", el)
     }
-    
+    ##########################################################################
+    # TOOL SEARCH
+    ##########################################################################
+
+# Tool function -----------------------------------------------------------
+
+    # Extract the "Tool Functions" for the tool for use in the "Tool Function search engine"
+    # convert the codes into real variables
     ##Why tool is useful
     toolPurposes <- toolRec[grep("Purpose-Tool Function-", names(toolRec))]
     toolPurposes <- toolPurposes[which(is.na(toolPurposes)==F)]
@@ -155,18 +193,24 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
         purposeVars[which(purposeVars=="com")] <- "Citizen Science"
       }
       toolPurposes <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolFunct=purposeVars)
-    }else{
+    }else{ # Set to none if no function exists
       toolPurposes <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolFunct="None")
     }
+    # BIND the tags data.frame to the GLOBAL search* list
     searchToolFunct <<- rbind.data.frame(searchToolFunct, toolPurposes)
     
+# Topic filter ------------------------------------------------------------
+
     ##topic filters - both main and sub-filters
     toolSubFilts <- vector(mode="character")
+    
+    # Extract all climate related topic filters
     climFilters <- toolRec[grep("Topic Filters-Climate-", names(toolRec))]
     climFilters <- climFilters[which(is.na(climFilters)==F)]
     if(length(climFilters)>0){
       toolSubFilts <- c(toolSubFilts, sapply(strsplit(names(climFilters), "Topic Filters-Climate-"), "[[", 2))
     }
+    # Extract all ecosystem related topic filters
     ecoFilters <- toolRec[grep("Topic Filters-Ecosystems-", names(toolRec))]
     ecoFilters <- ecoFilters[which(is.na(ecoFilters)==F)]
     if(length(ecoFilters)>0){
@@ -177,11 +221,13 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
     #if(length(agFilters)>0){
     #  toolSubFilts <- c(toolSubFilts, sapply(strsplit(names(agFilters), "Topic Filters-Agriculture-"), "[[", 2))
     #}
+    # Extract all Agriculture / Built Environment related topic filters
     builtFilters <- toolRec[grep("Topic Filters-Agriculture / Built Environment-", names(toolRec))]
     builtFilters <- builtFilters[which(is.na(builtFilters)==F)]
     if(length(builtFilters)>0){
       toolSubFilts <- c(toolSubFilts, sapply(strsplit(names(builtFilters), "Topic Filters-Agriculture / Built Environment-"), "[[", 2))
     }
+    # Extract all society related topic filters
     socFilters <- toolRec[grep("Topic Filters-Society-", names(toolRec))]
     socFilters <- socFilters[which(is.na(socFilters)==F)]
     if(length(socFilters)>0){
@@ -192,21 +238,22 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
     #if(length(floodFilters)>0){
     #  toolSubFilts <- c(toolSubFilts, sapply(strsplit(names(floodFilters), "Topic Filters-Flooding-"), "[[", 2))
     #}
+    # Extract all water / flooding related topic filters
     waterFilters <- toolRec[grep("Topic Filters-Water / Flooding-", names(toolRec))]
     waterFilters <- waterFilters[which(is.na(waterFilters)==F)]
     if(length(waterFilters)>0){
       toolSubFilts <- c(toolSubFilts, sapply(strsplit(names(waterFilters), "Topic Filters-Water / Flooding-"), "[[", 2))
     }
-    
+     # Remove erosion as a category from water/flooding
     ##remove errosion as a category
     if("ersn" %in% toolSubFilts){
       toolSubFilts <- toolSubFilts[-grep("ersn", toolSubFilts)]
     }
     
+    # Classify each sub topic into a top level topic for the topic filter
     ##set up for output
     toolFilts <- toolSubFilts
     toolFiltsName <- toolSubFilts
-    
     
     if(length(toolSubFilts)>0){
       if("crbn" %in% toolSubFilts){
@@ -403,6 +450,7 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
       toolFilters <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, topFilter="None", topFilterNam="None", subFilter="None")
     }
     #searchSubFilters <<- rbind.data.frame(searchSubFilters, toolFilters)
+    # BIND the tags data.frame to the GLOBAL search* list
     searchTopFilters <<- rbind.data.frame(searchTopFilters, toolFilters)
     
     #if(is.na(toolRec$`Climate Relevance`)==F){
@@ -429,14 +477,21 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
     #toolRec <- splitByToolID[[77]]
     #toolRec <- splitByToolID[[24]]
     #toolRec <- splitByToolID[[8]]
+    
+# Geographic Scope --------------------------------------------------------
+    
     ##tool geographic scope
     require(openintro)
+    ### LOCALITY
+    # If the scope is "locality" based, but no locality is specified then set to all localities in VA
     if(toolRec$`Geographic Scope-Scope`=="Locality" & is.na(toolRec$`Geographic Scope-Locality`)==T){
       subTab <- scTab[scTab$state=="VA",]
       whichCity <- grep(" City", subTab$cntyName)
       subTab$cntyName[-whichCity] <- paste0(subTab$cntyName[-whichCity], " County")
       toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState="Virginia", toolLoc=subTab$cntyName, coastal=toolRec$`Geographic Scope-Coastal`)
       toolScope <- paste0("__**Geographic Coverage**__", el, "- All Virginian Cities and Counties", el)
+      
+      # locality is specified
     }else if(toolRec$`Geographic Scope-Scope`=="Locality" & is.na(toolRec$`Geographic Scope-Locality`)==F){ 
       
       if(toolRec$`Geographic Scope-Locality`=="all watershed cities/counties" | toolRec$`Geographic Scope-Locality`=="Chesapeake Bay"){
@@ -448,16 +503,19 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
         subTab$cntyName[-whichCity] <- paste0(subTab$cntyName[-whichCity], " County")
         toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState=subTab$state, toolLoc=subTab$cntyName, coastal="x")
         toolScope <- paste0("__**Geographic Coverage**__", el, "- All Cities and Counties around the Chesapeake Bay", el)
-      }else if(toolRec$`Tool ID`=="23.0"){
+       #!!!!!! If tool 23.0: Headwaters Economics Neighborhoods at Risk
+        }else if(toolRec$`Tool ID`=="23.0"){
         locsNoState <- c("City of Buffalo", "City of Lancaster", "Richmond City", "City of Gaithersburg", "City of Blacksburg")
         findState <- c("New York", "Pennsylvania", "Virginia", "Maryland", "Virginia")
         toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState=findState, toolLoc=locsNoState, coastal=toolRec$`Geographic Scope-Coastal`)
         toolScope <- paste0("__**Geographic Coverage**__", el, "- Buffalo, NY; Lancaster, PA; Richmond City, VA; Gaithersburg, MD; Blaskburg, VA", el)
-      }else if(sapply(strsplit(toolRec$`Tool ID`, "[.]"),"[[",1)=="45"){
+        #!!!!!! If tool 45.*: Any DC Department of Energy and Environment Data & Maps tool
+        }else if(sapply(strsplit(toolRec$`Tool ID`, "[.]"),"[[",1)=="45"){
         locsNoState <- "District of Columbia"
         findState <- "DC"
         toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState=findState, toolLoc=locsNoState, coastal=toolRec$`Geographic Scope-Coastal`)
         toolScope <- paste0("__**Geographic Coverage**__", el, "- DC", el)
+        #!!!!!! If tool: Air Quality Forecast
       }else if(toolRec$`Tool ID`=="46.0"){
         locsNoState <- c("District of Columbia", "City of Takoma Park", "Prince George's County", "Community of Beltsville", "City of Rockville", "Montgomery County",
                          "Charles County", "Frederick County", "Calvert County", "Alexandria City", "Arlington County", "Prince William County", 
@@ -465,12 +523,14 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
         findState <- c("DC", "Maryland", "Maryland", "Maryland", "Maryland", "Maryland", "Maryland", "Maryland", "Maryland", "Virginia", "Virginia", "Virginia", "Virginia", "Virginia")
         toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState=findState, toolLoc=locsNoState, coastal=toolRec$`Geographic Scope-Coastal`)
         toolScope <- paste0("__**Geographic Coverage**__", el, "- DC; Takoma Park, MD; Prince George's County, MD; Beltsville, MD; Rockville, MD; Montgomery County, MD; Charles County, MD; Frederick County, MD; Calvert County, MD; Alexandria, VA; Arlington County, VA; Prince William County, VA; Loudoun County, VA; Farifax County, VA", el)
-      }else if(toolRec$`Tool ID`=="53.1"){
+        #!!!!!! If tool: Potomac Inundation Maps
+        }else if(toolRec$`Tool ID`=="53.1"){
         locsNoState <- c("District of Columbia", "Arlington County", "Alexandria City", "Fort Foote", "Fairfax County", "Prince George County")
         findState <- c("DC", "Virginia", "Virginia", "Maryland", "Virginia", "Virginia")
         toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState=findState, toolLoc=locsNoState, coastal=toolRec$`Geographic Scope-Coastal`)
         toolScope <- paste0("__**Geographic Coverage**__", el, "- DC; Arlington County, VA; Alexandria, VA; Fort Foote, MD; Fairfax County, VA; Prince George County, VA", el)
-      }else{
+      # All other localities
+        }else{
         collectLocs <- strsplit(toolRec$`Geographic Scope-Locality`, "; ")[[1]]
         ##isolate the location
         locsNoState <- sapply(strsplit(collectLocs, ", "), "[[", 1)
@@ -489,9 +549,11 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
         ##
         toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState=findState, toolLoc=locsNoState, coastal=toolRec$`Geographic Scope-Coastal`)
       }
+    ### STATE
     }else if(toolRec$`Geographic Scope-Scope`=="State"){
       collectSts <- strsplit(toolRec$`Geographic Scope-State`, "; ")[[1]]
       
+      # if it is coastal then grab coastal counties
       locsNoState <- NA
       if(is.na(toolRec$`Geographic Scope-Coastal`)==F & toolRec$`Geographic Scope-Coastal`=="x"){
         subTab <- scTab[scTab$state %in% collectSts,]
@@ -501,7 +563,7 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
         locsNoState <- subTab$cntyName
         collectSts <- subTab$state
       }
-      
+      # convert the abbreviation to a state name: can use a look-up table for this
       collectSts[grep("VA", collectSts)] <- "Virginia"
       collectSts[grep("WV", collectSts)] <- "West Virginia"
       collectSts[grep("PA", collectSts)] <- "Pennsylvania"
@@ -538,18 +600,21 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
       
       toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState=collectSts, toolLoc=locsNoState, coastal=toolRec$`Geographic Scope-Coastal`)
       toolScope <- paste0("__**Geographic Coverage**__", el, "- ", paste(unique(collectSts), collapse="; "), el)
-    }else if(toolRec$`Geographic Scope-Scope`=="National"){
+    ### NATIONAL
+      }else if(toolRec$`Geographic Scope-Scope`=="National"){
       toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState="All", toolLoc="All", coastal=toolRec$`Geographic Scope-Coastal`)
       toolScope <- paste0("__**Geographic Coverage**__", el, "- Contiguous United States", el)
+      ### OTHER OR ANYWHERE
     }else{
       toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, toolState="Gen", toolLoc="Gen", coastal=toolRec$`Geographic Scope-Coastal`)
       toolScope <- paste0("__**Geographic Coverage**__", el, "- Applicable Anywhere", el)
     }
+    ## tools geographic scope
+    # BIND the tags data.frame to the GLOBAL search* list
     searchGeoScope <<- rbind.data.frame(searchGeoScope, toolGeo)
     
-    
-    
     ##tool strengths
+    # Set the strengths as the tags
     if(is.na(toolRec$`Description-Strengths`)==F){
       toolStrs <- paste0("__**Strengths**__", el, paste("- ", strsplit(toolRec$`Description-Strengths`, "; ")[[1]], collapse=el), el)
     }else{
@@ -565,6 +630,7 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
     #}
     
     ##tool URL
+    # Set the URL to "Get This Tool"
     if(is.na(toolRec$URL)==F){
       #toolURL <- paste0('<a href="', toolRec$URL, '" target="_blank">Get This Tool</a>', el)  ##embedded link in Get This Tool
       toolURL <- paste0('__**Get This Tool:**__ ', toolRec$URL, el)
@@ -574,6 +640,7 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
     }
     
     ##tool cost
+    # Set the cost
     if(is.na(toolRec$`Software Requirements-Cost`)==F){
       toolCost <- paste0("__**Cost**__", el, "- ", toolRec$`Software Requirements-Cost`, el)
     }else{
@@ -581,14 +648,14 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
     }
     
     ##tool skill lvl
+    # Set the skill level
     if(is.na(toolRec$`Effort / Skill-Skill`)==F){
       toolSkill <- paste0("__**Skill Level**__", el, "- ", toolRec$`Effort / Skill-Skill`)
     }else{
       toolSkill <- paste0("__**Skill Level**__", el, "- Unknown")
     }
     
-    
-    ##bring the page together
+    ## Bring the page together
     #toolPage <- paste(toolPage, pageTitle, toolDev, "#### Tool Summary-", toolDes, toolUse, toolScope, toolAud, toolStrs, toolLims, toolURL, sep=el)
     #toolPage <- paste(toolPage, toolDev, "#### Tool Summary", toolDes, toolUse, toolScope, toolAud, toolStrs, toolLims, toolURL, sep=el)
     toolPage <- paste(toolPage, toolDev, toolDes, toolURL, toolScope, toolStrs, toolCost, toolSkill, sep=el)

@@ -1,10 +1,10 @@
 ---
 title: "Case Study and Information Exchange"
 description: "Communities submit and share their experiences with implementing climate adaptation measures."
-date: 2021-03-01T15:05:10-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Easy-to-use interface", "Community based network", "Results are site-specific"]
+tags: ["Free", "Location specific", "Application", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_8.2_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_8.2_ScreenCapture-1.png
 ---
@@ -19,10 +19,14 @@ __**Get This Tool:**__ https://epa.maps.arcgis.com/apps/MapSeries/index.html?app
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
--  Easy-to-use interface
--  Community based network
--  Results are site-specific
+__**Tags**__
+-  Free
+-  Location specific
+-  Application
+-  Interactive interface/map
+-  Compare scenarios/locations
+-  Solutions
+-  Downloadable results
 
 __**Cost**__
 - Free

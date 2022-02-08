@@ -1,10 +1,10 @@
 ---
 title: "DC Department of Energy & Environment: DC Flood Risk Map"
 description: "DC flood map with layers for 1% annual flood, storm surge, and interactive SLR meter"
-date: 2021-03-01T15:05:11-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Easy-to-use, interactive map viewer", "Includes multiple types of flooding", "Options to download brief reports", "Ability to calculate potential structural losses"]
+tags: ["Free", "Real-time/Current", "Forecast", "Jursidiction based", "City level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_45.3_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_45.3_ScreenCapture-1.png
 ---
@@ -20,13 +20,18 @@ __**Get This Tool:**__ http://dcfloodrisk.org/
 
 
 __**Geographic Coverage**__
-- DC
+- Washington, DC
 
-__**Strengths**__
--  Easy-to-use, interactive map viewer
--   Includes multiple types of flooding
--   Options to download brief reports
--   Ability to calculate potential structural losses
+__**Tags**__
+-  Free
+-  Real-time/Current
+-  Forecast
+-  Jursidiction based
+-  City level
+-  Application
+-  Interactive interface/map
+-  Compare scenarios/locations
+-  Downloadable results
 
 __**Cost**__
 - Free

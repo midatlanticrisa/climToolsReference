@@ -1,10 +1,10 @@
 ---
 title: "Coastal County Snapshots"
 description: "The open-source map leads users to reports that contain graphs and figures with short-term projections and current data on flood exposure, ocean jobs, and wetland benefits specific to the user's selected county."
-date: 2021-03-01T15:05:11-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Easy to use", "County-level data for all coastal counties on the Atlantic coast"]
+tags: ["Free", "Historical ", "Jursidiction based", "County level", "Website", "Interactive interface/map"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_79.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_79.0_ScreenCapture-1.png
 ---
@@ -19,9 +19,13 @@ __**Get This Tool:**__ https://coast.noaa.gov/digitalcoast/tools/snapshots.html
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
--  Easy to use
--  County-level data for all coastal counties on the Atlantic coast
+__**Tags**__
+-  Free
+-  Historical 
+-  Jursidiction based
+-  County level
+-  Website
+-  Interactive interface/map
 
 __**Cost**__
 - Free

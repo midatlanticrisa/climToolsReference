@@ -1,10 +1,10 @@
 ---
 title: "MARISA Climate Data Portal: Climate Data for the Mid-Atlantic Region"
-description: "climate data downloads"
-date: 2021-03-01T15:05:10-0500
+description: "climate data downloads "
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Allows for comparison across locations", "Process can be applied at various specific locations", "Aims for transparent data sources"]
+tags: ["Free", "Historical ", "Grid based", "Regional level", "Dataset", "Downloadable data", "Daily"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_13.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_13.0_ScreenCapture-1.png
 ---
@@ -21,10 +21,14 @@ __**Get This Tool:**__ https://www.marisa.psu.edu/data/
 __**Geographic Coverage**__
 - Virginia; West Virginia; Pennsylvania; Delaware; Maryland; New Jersey; North Carolina; New York
 
-__**Strengths**__
--  Allows for comparison across locations
--  Process can be applied at various specific locations
--  Aims for transparent data sources
+__**Tags**__
+-  Free
+-  Historical 
+-  Grid based
+-  Regional level
+-  Dataset
+-  Downloadable data
+-  Daily
 
 __**Cost**__
 - Free

@@ -1,10 +1,10 @@
 ---
 title: "Creating Resilient Water Utilities (CRWU)"
-description: "Support water utility practitioners in preparing for extreme weather events"
-date: 2021-03-01T15:05:10-0500
+description: "Support water utility practitioners in preparing for extreme weather events "
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Easy-to-use interface", "Can stay updated on tool developments through a mailing list", "Able to generate an area specific report", "Updated frequently", "Allows cross-community comparisons through case studies"]
+tags: ["Free", "Website", "Program"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_8.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_8.0_ScreenCapture-1.png
 ---
@@ -19,12 +19,10 @@ __**Get This Tool:**__ https://www.epa.gov/crwu
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
--  Easy-to-use interface
--  Can stay updated on tool developments through a mailing list
--  Able to generate an area specific report
--  Updated frequently
--  Allows cross-community comparisons through case studies
+__**Tags**__
+-  Free
+-  Website
+-  Program
 
 __**Cost**__
 - Free

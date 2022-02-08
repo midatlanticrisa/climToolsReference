@@ -1,7 +1,7 @@
 ---
 title: "USGS National Water Census Data Portal"
 description: "USGS National Water Census Data Portal"
-date: 2021-03-01T15:05:11-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
 tags: []
@@ -12,12 +12,12 @@ Developed By: USGS
 
 **Summary:** Data portal that provides data on Water Budget and Stream Flow
 
-__**Get This Tool:**__ https://cida.usgs.gov/nwc/
+__**Get This Tool:**__ https://waterdata.usgs.gov/nwis
 
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
+__**Tags**__
 Not Available
 
 __**Cost**__

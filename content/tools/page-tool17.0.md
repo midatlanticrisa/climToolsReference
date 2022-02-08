@@ -1,10 +1,10 @@
 ---
 title: "Virginia Flood Risk Information System (VFRIS)"
-description: "Interactive flood maps to determine if property is within a FEMA flood risk zone."
-date: 2021-03-01T15:05:10-0500
+description: "Interactive flood maps to determine if property is within a FEMA flood risk zone. "
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Easy-to-use, interactive map viewer with various flood zone layers", "Excellent welcome guide/tutorial", "Option to download data and reports", "Option to upload additional data, if available;"]
+tags: ["Free", "Real-time/Current", "Climate projections", "Jursidiction based", "Grid based", "Location specific", "Application", "Interactive interface/map", "Downloadable data"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_17.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_17.0_ScreenCapture-1.png
 ---
@@ -19,11 +19,16 @@ __**Get This Tool:**__ http://cmap2.vims.edu/VaFloodRisk/vfris2.html
 __**Geographic Coverage**__
 - Virginia
 
-__**Strengths**__
--  Easy-to-use, interactive map viewer with various flood zone layers
--   Excellent welcome guide/tutorial
--   Option to download data and reports
--   Option to upload additional data, if available;
+__**Tags**__
+-  Free
+-  Real-time/Current
+-  Climate projections
+-  Jursidiction based
+-  Grid based
+-  Location specific
+-  Application
+-  Interactive interface/map
+-  Downloadable data
 
 __**Cost**__
 - Free

@@ -1,10 +1,10 @@
 ---
 title: "Climate Smart Farming"
 description: "Climate Smart Farming"
-date: 2021-03-01T15:05:10-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: []
+tags: ["Free", "Regional level", "Program"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_39.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_39.0_ScreenCapture-1.png
 ---
@@ -15,10 +15,12 @@ Developed By: Cornell University_College of Agriculture and Life Sciences
 __**Get This Tool:**__ http://climatesmartfarming.org/tools/
 
 __**Geographic Coverage**__
-- Maine; New Hampshire; Vermont; New York; Massachusetts; Connecticut; Rhode Island; Pennsylvania; New Jersey; Delaware; Maryland; DC; Virginia; West Virginia
+- Maine; New Hampshire; Vermont; New York; Massachusetts; Connecticut; Rhode Island; Pennsylvania; New Jersey; Delaware; Maryland; District of Columbia; Virginia; West Virginia
 
-__**Strengths**__
-Not Available
+__**Tags**__
+-  Free
+-  Regional level
+-  Program
 
 __**Cost**__
 - Unknown

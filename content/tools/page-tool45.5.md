@@ -1,10 +1,10 @@
 ---
 title: "DC Department of Energy & Environment: DC Solar Tool"
 description: "Calculates cost, federal tax credit, carbon offset, average revenue, and energy output of solar energy for residential and business roofs in D.C. area that are looking to create solar panel systems"
-date: 2021-03-01T15:05:11-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["User friendly, interactive interface", "Allows user to analyze specific scenarios", "Tutorial available upon accessing tool", "Extensive details about the provided values", "Ability to export customizable report"]
+tags: ["Free", "Real-time/Current", "Jursidiction based", "City level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Cost estimates", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_45.5_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_45.5_ScreenCapture-1.png
 ---
@@ -20,14 +20,18 @@ __**Get This Tool:**__ https://www.mapdwell.com/en/solar/dc
 
 
 __**Geographic Coverage**__
-- DC
+- Washington, DC
 
-__**Strengths**__
--  User friendly, interactive interface
--   Allows user to analyze specific scenarios
--   Tutorial available upon accessing tool
--   Extensive details about the provided values
--   Ability to export customizable report
+__**Tags**__
+-  Free
+-  Real-time/Current
+-  Jursidiction based
+-  City level
+-  Application
+-  Interactive interface/map
+-  Compare scenarios/locations
+-  Cost estimates
+-  Downloadable results
 
 __**Cost**__
 - Free

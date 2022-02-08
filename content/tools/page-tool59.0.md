@@ -1,10 +1,10 @@
 ---
 title: "Delaware Environmental Monitoring Sites"
 description: "This tool inventories environmental monitoring stations in Delaware and provides links to access corresponding data and find data of interest."
-date: 2021-03-01T15:05:11-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Large number of monitoring stations", "Includes historical and real time data", "Variety of meteorological, groundwater, tidal, and water quality variables"]
+tags: ["Free", "Historical ", "Real-time/Current", "Location specific", "Watershed level", "Regional level", "Website", "Interactive interface/map", "Downloadable data"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_59.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_59.0_ScreenCapture-1.png
 ---
@@ -17,15 +17,21 @@ This tool provides access to over 400 meteorological, groundwater, tidal, and wa
 
 The monitoring sites linked through this data access portal vary widely in terms of content and structure. Therefore data availability and downloads vary by site.
 
-__**Get This Tool:**__ http://demac.udel.edu/monitoring/del_env_sites.html
+__**Get This Tool:**__ https://demac.udel.edu/monitoring/del_env_sites.html
 
 __**Geographic Coverage**__
 - Delaware
 
-__**Strengths**__
--  Large number of monitoring stations
--   Includes historical and real time data
--   Variety of meteorological, groundwater, tidal, and water quality variables
+__**Tags**__
+-  Free
+-  Historical 
+-  Real-time/Current
+-  Location specific
+-  Watershed level
+-  Regional level
+-  Website
+-  Interactive interface/map
+-  Downloadable data
 
 __**Cost**__
 - Free

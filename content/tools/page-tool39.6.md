@@ -1,10 +1,10 @@
 ---
 title: "Grape Hardiness & Freeze Risk"
-description: "Create charts demonstrating risk of freeze damage for grape variety growth"
-date: 2021-03-01T15:05:10-0500
+description: "Create charts demonstrating risk of freeze damage for grape variety growth "
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Easy-to-use interface", "Crop-specific results", "Can easily search for locality of interest"]
+tags: ["Free", "Historical ", "Real-time/Current", "Forecast", "Location specific", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_39.6_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_39.6_ScreenCapture-1.png
 ---
@@ -17,12 +17,19 @@ This tool assesses hardiness temperature across the Northeast in order to inform
 __**Get This Tool:**__ http://climatesmartfarming.org/tools/csf-grape-hardiness/
 
 __**Geographic Coverage**__
-- Maine; New Hampshire; Vermont; New York; Massachusetts; Connecticut; Rhode Island; Pennsylvania; New Jersey; Delaware; Maryland; DC; Virginia; West Virginia; OH; Kentucky
+- Maine; New Hampshire; Vermont; New York; Massachusetts; Connecticut; Rhode Island; Pennsylvania; New Jersey; Delaware; Maryland; District of Columbia; Virginia; West Virginia; Ohio; Kentucky
 
-__**Strengths**__
--  Easy-to-use interface
--  Crop-specific results
--  Can easily search for locality of interest
+__**Tags**__
+-  Free
+-  Historical 
+-  Real-time/Current
+-  Forecast
+-  Location specific
+-  Regional level
+-  Application
+-  Interactive interface/map
+-  Compare scenarios/locations
+-  Downloadable results
 
 __**Cost**__
 - Free

@@ -1,10 +1,10 @@
 ---
 title: "Water Quality Assessment and TMDLs"
 description: "Provide water quality assessment and TMDL information. Show the spatial relationship of how each intersect"
-date: 2021-03-01T15:05:11-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Downloadable data", "Site specific results", "Ability to view water quality assessments and corresponding TMDLs", "Ability to overlay external GIS layers"]
+tags: ["Free", "Historical ", "Real-time/Current", "State level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_50.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_50.0_ScreenCapture-1.png
 ---
@@ -23,11 +23,16 @@ __**Get This Tool:**__ https://mdewin64.mde.state.md.us/WSA/IR-TMDL/index.html
 __**Geographic Coverage**__
 - Maryland
 
-__**Strengths**__
+__**Tags**__
+-  Free
+-  Historical 
+-  Real-time/Current
+-  State level
+-  Application
+-  Interactive interface/map
+-  Compare scenarios/locations
 -  Downloadable data
--   Site specific results
--   Ability to view water quality assessments and corresponding TMDLs
--   Ability to overlay external GIS layers
+-  Downloadable results
 
 __**Cost**__
 - Free

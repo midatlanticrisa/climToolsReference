@@ -1,10 +1,10 @@
 ---
 title: "i-Tree Mytree and Landscape"
 description: "Variety of tools that help users assess the benefits of trees"
-date: 2021-03-01T15:05:11-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Provides location specific results", "Allows user to create specific scenarios", "Welcome guide/tutorials", "i-Tree YouTube channel dedicated to explaining how to use various tools"]
+tags: ["Free", "Location specific", "Application", "Interactive interface/map", "Cost estimates", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_57.1_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_57.1_ScreenCapture-1.png
 ---
@@ -20,11 +20,13 @@ https://landscape.itreetools.org/
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
--  Provides location specific results
--   Allows user to create specific scenarios
--   Welcome guide/tutorials
--   i-Tree YouTube channel dedicated to explaining how to use various tools
+__**Tags**__
+-  Free
+-  Location specific
+-  Application
+-  Interactive interface/map
+-  Cost estimates
+-  Downloadable results
 
 __**Cost**__
 - Free

@@ -1,10 +1,10 @@
 ---
 title: "Drought-Applied Climate Information System (ACIS)"
 description: "Interactive chart to view precipitation / temperature data for stations across the U.S."
-date: 2021-03-01T15:05:10-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Easy-to-use, interactive interface", "Single site-specific and multi station results available", "Allows user to search by city, state, or zip code", "Option to download graphs and/or data"]
+tags: ["Free", "Historical ", "Location specific", "Application", "Dataset", "Interactive interface/map", "Downloadable data", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_29.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_29.0_ScreenCapture-1.png
 ---
@@ -19,11 +19,15 @@ __**Get This Tool:**__ http://drought.rcc-acis.org/
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
--  Easy-to-use, interactive interface
--  Single site-specific and multi station results available
--  Allows user to search by city, state, or zip code
--   Option to download graphs and/or data
+__**Tags**__
+-  Free
+-  Historical 
+-  Location specific
+-  Application
+-  Dataset
+-  Interactive interface/map
+-  Downloadable data
+-  Downloadable results
 
 __**Cost**__
 - Free

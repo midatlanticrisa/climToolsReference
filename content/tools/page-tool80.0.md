@@ -1,10 +1,10 @@
 ---
 title: "DGIF Wildlife Action Plan"
 description: "Virginia's 2015 Wildlife Action Plan contains ecological data and conservation plans for hundreds of species. The plan has reports and interactive maps that make ecological data available on a planning district commission-level. Locality-specific reports document conservation needs in communities, with prioritized actions for locally threatened species."
-date: 2021-03-01T15:05:11-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Easy-to-use, simple interface", "Data and conservation plans are made locally available for each of Virginia's 21 Planning District Commissions", "The tool displays information in printed reports and in an online interactive format", "Links to additional resources", "Incorporates projected species distribution models"]
+tags: ["Free", "Jursidiction based", "Application", "Interactive interface/map"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_80.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_80.0_ScreenCapture-1.png
 ---
@@ -19,12 +19,11 @@ __**Get This Tool:**__ http://bewildvirginia.org/wildlife-action-plan/
 __**Geographic Coverage**__
 - Virginia
 
-__**Strengths**__
--  Easy-to-use, simple interface
--   Data and conservation plans are made locally available for each of Virginia's 21 Planning District Commissions
--   The tool displays information in printed reports and in an online interactive format
--   Links to additional resources
--   Incorporates projected species distribution models
+__**Tags**__
+-  Free
+-  Jursidiction based
+-  Application
+-  Interactive interface/map
 
 __**Cost**__
 - Free

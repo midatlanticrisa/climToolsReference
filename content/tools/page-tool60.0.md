@@ -1,10 +1,10 @@
 ---
 title: "Beach Nourishment Viewer"
 description: "Demonstrates location of past and current beach nourishment projects, number of nourishment episodes in one area, date of project completion, cost, and volume of the project."
-date: 2021-03-01T15:05:11-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Provides project cost information", "Comprehensive list of projects", "Searchable by State and beach", "Historic cost adjusted for inflation"]
+tags: ["Free", "Historical ", "Jursidiction based", "Location specific", "Website", "Interactive interface/map", "Cost estimates", "Downloadable data", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_60.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_60.0_ScreenCapture-1.png
 ---
@@ -21,11 +21,16 @@ __**Get This Tool:**__ http://beachnourishment.wcu.edu/
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
--  Provides project cost information
--   Comprehensive list of projects
--   Searchable by State and beach
--   Historic cost adjusted for inflation
+__**Tags**__
+-  Free
+-  Historical 
+-  Jursidiction based
+-  Location specific
+-  Website
+-  Interactive interface/map
+-  Cost estimates
+-  Downloadable data
+-  Downloadable results
 
 __**Cost**__
 - Free

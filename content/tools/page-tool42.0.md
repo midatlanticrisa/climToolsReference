@@ -1,10 +1,10 @@
 ---
 title: "Climate Change in the American Mind (CCAM) Explorer"
 description: "Display data on American climate change perceptions based on year and respondent characteristics"
-date: 2021-03-01T15:05:10-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Intuitive interactive interface", "Can view responses to multiple survey questions simultaneously", "Includes description of methods", "Access to raw data"]
+tags: ["Free", "Historical ", "Program", "Dataset", "Interactive interface/map", "Downloadable data", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_42.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_42.0_ScreenCapture-1.png
 ---
@@ -12,18 +12,21 @@ Developed By: Yale_Yale Program on Climate Change Communication, and George Maso
 
 **Summary:** The CCAM Explorer is an interactive graphing tool that allows users to examine survey results from the Climate Change in the American Mind (CCAM) project. 
 
-Led by the Yale Program on Climate Change Communication and the George Mason Center for Climate Change communication, the CCAM project is national survey of public opinion on climate change. This survey tracks changes in American beliefs and attitudes about climate change through a series of survey questions about risk perceptions, policy preferences, and information acquisition behaviors. The CCAM explorer allows users view survey data from 2007-2018 through a series of interactive graphs portraying climate views over time, and by demographics and political views. Output graphs can be easily downloaded or shared online through social media or a web link. This tool provides excellent documentation, describing the project purpose and methodology as well as links to access the raw data and learn more about project.
+Led by the Yale Program on Climate Change Communication and the George Mason Center for Climate Change communication, the CCAM project is national survey of public opinion on climate change. This survey tracks changes in American beliefs and attitudes about climate change through a series of survey questions about risk perceptions, policy preferences, and information acquisition behaviors. The CCAM explorer allows users view survey data from 2007-2018 through a series of interactive graphs portraying climate views over time, and by demographics and political views. Output graphs can be easily downloaded or shared online through social media or a web link. This tool provides excellent documentation, describing the project purpose and methodology as well as links to access the raw data and learn more about project. 
 
 __**Get This Tool:**__ https://www.climatechangecommunication.org/ccam-explorer/
 
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
--  Intuitive interactive interface
--   Can view responses to multiple survey questions simultaneously
--   Includes description of methods
--   Access to raw data
+__**Tags**__
+-  Free
+-  Historical 
+-  Program
+-  Dataset
+-  Interactive interface/map
+-  Downloadable data
+-  Downloadable results
 
 __**Cost**__
 - Free

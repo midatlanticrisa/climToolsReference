@@ -1,10 +1,10 @@
 ---
 title: "Climate Impact Map"
 description: "Interactive map showing past and future temperature based different climate models"
-date: 2021-03-01T15:05:10-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Interactive tool", "Option to export data", "Addresses uncertainty", "Detailed methodology"]
+tags: ["Free", "Historical ", "Climate projections", "Jursidiction based", "County level", "State level", "Website", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_27.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_27.0_ScreenCapture-1.png
 ---
@@ -19,11 +19,17 @@ __**Get This Tool:**__ http://www.impactlab.org/map/#usmeas=absolute&usyear=2080
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
--  Interactive tool
--   Option to export data
--   Addresses uncertainty
--   Detailed methodology
+__**Tags**__
+-  Free
+-  Historical 
+-  Climate projections
+-  Jursidiction based
+-  County level
+-  State level
+-  Website
+-  Interactive interface/map
+-  Compare scenarios/locations
+-  Downloadable data
 
 __**Cost**__
 - Free

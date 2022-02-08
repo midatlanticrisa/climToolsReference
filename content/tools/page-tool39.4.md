@@ -1,10 +1,10 @@
 ---
 title: "Climate Smart Farming (CSF) Winter Cover Crop Planting Scheduler"
 description: "Create charts demonstrating winter crop cover planting based on crop variety (rye, buckwheat, and mustard)."
-date: 2021-03-01T15:05:10-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Easy-to-use interface", "Crop- and site-specific results"]
+tags: ["Free", "Historical ", "Location specific", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_39.4_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_39.4_ScreenCapture-1.png
 ---
@@ -18,11 +18,17 @@ __**Get This Tool:**__ http://climatesmartfarming.org/tools/csf-winter-cover-cro
 
 
 __**Geographic Coverage**__
-- Maine; New Hampshire; Vermont; New York; Massachusetts; Connecticut; Rhode Island; Pennsylvania; New Jersey; Delaware; Maryland; DC; Virginia; West Virginia; OH; Kentucky
+- Maine; New Hampshire; Vermont; New York; Massachusetts; Connecticut; Rhode Island; Pennsylvania; New Jersey; Delaware; Maryland; District of Columbia; Virginia; West Virginia; Ohio; Kentucky
 
-__**Strengths**__
--  Easy-to-use interface
--  Crop- and site-specific results
+__**Tags**__
+-  Free
+-  Historical 
+-  Location specific
+-  Regional level
+-  Application
+-  Interactive interface/map
+-  Compare scenarios/locations
+-  Downloadable results
 
 __**Cost**__
 - Free

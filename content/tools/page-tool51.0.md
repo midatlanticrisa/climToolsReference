@@ -1,10 +1,10 @@
 ---
 title: "FEMA's National Flood Hazard Layer (NFHL) Viewer"
 description: "Display FEMA-delineated flood hazards through Flood Insurance Rate Maps (FIRMs) and revisions to FIRMS via Letters of Map Amendments and Letters of Map Revisions (LOMRs)"
-date: 2021-03-01T15:05:11-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Considered the official database for the National Flood Insurance Program", "Allows user to search by address"]
+tags: ["Free", "Real-time/Current", "Jursidiction based", "Grid based", "Program", "Interactive interface/map", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_51.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_51.0_ScreenCapture-1.png
 ---
@@ -21,9 +21,14 @@ __**Get This Tool:**__ https://hazards-fema.maps.arcgis.com/apps/webappviewer/in
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
--  Considered the official database for the National Flood Insurance Program
--  Allows user to search by address
+__**Tags**__
+-  Free
+-  Real-time/Current
+-  Jursidiction based
+-  Grid based
+-  Program
+-  Interactive interface/map
+-  Downloadable results
 
 __**Cost**__
 - Free

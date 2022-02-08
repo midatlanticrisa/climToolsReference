@@ -1,10 +1,10 @@
 ---
 title: "Delaware Climate Projections Portal"
 description: "Climate projections for state of Delaware"
-date: 2021-03-01T15:05:10-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Easy-to-use, interactive interface", "Site-specific results", "Provides projections for many climate indicators"]
+tags: ["Free", "Climate projections", "Jursidiction based", "Location specific", "City level", "Website", "Interactive interface/map", "Downloadable data"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_34.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_34.0_ScreenCapture-1.png
 ---
@@ -20,10 +20,15 @@ __**Get This Tool:**__ http://climate.udel.edu/declimateprojections/
 __**Geographic Coverage**__
 - Delaware
 
-__**Strengths**__
--  Easy-to-use, interactive interface
--  Site-specific results
--  Provides projections for many climate indicators
+__**Tags**__
+-  Free
+-  Climate projections
+-  Jursidiction based
+-  Location specific
+-  City level
+-  Website
+-  Interactive interface/map
+-  Downloadable data
 
 __**Cost**__
 - Free

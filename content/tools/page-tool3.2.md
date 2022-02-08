@@ -1,10 +1,10 @@
 ---
 title: "Delaware Bay Operational Forecast System (DBOFS)"
 description: "DBOFS provides real time information about water levels, wind, water temperature, salinity, and currents."
-date: 2021-03-01T15:05:10-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Updated frequently", "Additional data available upon request", "Captures real time data", "Able to download real-time data"]
+tags: ["Free", "Real-time/Current", "Forecast", "Grid based", "Location specific", "Regional level", "Website", "Interactive interface/map", "Downloadable data", "Subdaily"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_3.2_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_3.2_ScreenCapture-1.png
 ---
@@ -19,11 +19,17 @@ __**Get This Tool:**__ https://tidesandcurrents.noaa.gov/ofs/dbofs/dbofs.html
 __**Geographic Coverage**__
 - Delaware
 
-__**Strengths**__
--  Updated frequently
--  Additional data available upon request
--  Captures real time data
--  Able to download real-time data
+__**Tags**__
+-  Free
+-  Real-time/Current
+-  Forecast
+-  Grid based
+-  Location specific
+-  Regional level
+-  Website
+-  Interactive interface/map
+-  Downloadable data
+-  Subdaily
 
 __**Cost**__
 - Free

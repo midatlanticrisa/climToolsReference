@@ -1,10 +1,10 @@
 ---
 title: "Nature's Network Prioritization Tool"
 description: "Modeling tool for conservation areas of high priority"
-date: 2021-03-01T15:05:11-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Easy-to-use, interactive interface", "Ability to compare locations", "Flexible process can be applied to develop multiple models", "Welcome guide/tutorials", "Extensive datasets provide for wide range of analysis"]
+tags: ["Free", "Application", "Interactive interface/map", "Downloadable data", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_68.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_68.0_ScreenCapture-1.png
 ---
@@ -23,12 +23,12 @@ __**Get This Tool:**__ http://www.naturesnetwork.org/prioritization-tool/
 __**Geographic Coverage**__
 - Maine; New Hampshire; Vermont; New York; Massachusetts; Rhode Island; Connecticut; Pennsylvania; New Jersey; Delaware; Maryland; Virginia
 
-__**Strengths**__
--  Easy-to-use, interactive interface
--  Ability to compare locations
--  Flexible process can be applied to develop multiple models
--  Welcome guide/tutorials
--  Extensive datasets provide for wide range of analysis
+__**Tags**__
+-  Free
+-  Application
+-  Interactive interface/map
+-  Downloadable data
+-  Downloadable results
 
 __**Cost**__
 - Free

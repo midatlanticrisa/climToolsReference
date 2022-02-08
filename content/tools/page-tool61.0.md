@@ -2,10 +2,10 @@
 title: "Adaptation Workbook (Climate Change Response Framework)"
 description: "Provide data and process support to bridge the gap between climate data and land managers
 "
-date: 2021-03-01T15:05:11-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Allows user to create a site-specific adaptation plan", "YouTube channel explaining how to use Workbook", "Site-specific guidance and results"]
+tags: ["Free", "Registration required", "Climate projections", "Program", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_61.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_61.0_ScreenCapture-1.png
 ---
@@ -13,7 +13,7 @@ Developed By: Northern Institute for Applied Climate Science, and USDA_USFS
 
 **Summary:** The Adaptation Workbook guides users through the process of creating an adaptation plan to prepare for land management and conservation efforts under changing conditions. 
 
-This tool provides a structured, stepwise approachto evaluate the potential impacts of climate change on land management and conservation and design a local adaptation plan to mitigate future impacts. Using a general framework that can be tailored to individual needs, this tool accommodates a wide variety of geographic locations, land ownership types, ecosystems and land uses, management goals, and project sizes. User applications may range from forestry management to residential planning.
+This tool provides a structured, stepwise approach to evaluate the potential impacts of climate change on land management and conservation and design a local adaptation plan to mitigate future impacts. Using a general framework that can be tailored to individual needs, this tool accommodates a wide variety of geographic locations, land ownership types, ecosystems and land uses, management goals, and project sizes. User applications may range from forestry management to residential planning.
 
 This tool examines soils, hydrology, temperature, and surrounding land use for the designated project site. Though the tool guides users through the assessment and planning process, users are required to provide substantial input regarding present conditions, as well as potential vulnerabilities and changes that will affect the project going forward. These vulnerabilities include ones driven by climate change as well as land use changes. This tool can be used by one person or as a collaborative project between groups. 
 
@@ -25,10 +25,15 @@ __**Get This Tool:**__ https://adaptationworkbook.org/
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
--  Allows user to create a site-specific adaptation plan
--   YouTube channel explaining how to use Workbook
--   Site-specific guidance and results
+__**Tags**__
+-  Free
+-  Registration required
+-  Climate projections
+-  Program
+-  Interactive interface/map
+-  Compare scenarios/locations
+-  Solutions
+-  Downloadable results
 
 __**Cost**__
 - Free

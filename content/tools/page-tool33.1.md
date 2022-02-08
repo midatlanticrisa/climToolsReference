@@ -1,10 +1,10 @@
 ---
 title: "Percent Light at Leaf Calculator"
 description: "PLL calculator"
-date: 2021-03-01T15:05:10-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Provides supporting educational information", "Uses site-specific data", "Generates site-specific results"]
+tags: ["Free", "Location specific", "Spreadsheet", "Interactive interface/map"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_33.1_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_33.1_ScreenCapture-1.png
 ---
@@ -21,10 +21,11 @@ __**Get This Tool:**__ http://archive.chesapeakebay.net/cims/PLL_calcII.xls
 __**Geographic Coverage**__
 - Applicable Anywhere
 
-__**Strengths**__
--  Provides supporting educational information
--  Uses site-specific data
--  Generates site-specific results
+__**Tags**__
+-  Free
+-  Location specific
+-  Spreadsheet
+-  Interactive interface/map
 
 __**Cost**__
 - Free

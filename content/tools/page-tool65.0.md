@@ -1,10 +1,10 @@
 ---
 title: "Coastal Change Hazards Portal"
 description: "National map illustrating past, present, and projected coastal conditions"
-date: 2021-03-01T15:05:11-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Easy-to-use, interactive interface", "Data are available for download", "Provides multiple scenarios", "Links to supporting information"]
+tags: ["Free", "Grid based", "Application", "Interactive interface/map", "Downloadable data"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_65.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_65.0_ScreenCapture-1.png
 ---
@@ -19,11 +19,12 @@ __**Get This Tool:**__ https://marine.usgs.gov/coastalchangehazardsportal/
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
--  Easy-to-use, interactive interface
--   Data are available for download
--   Provides multiple scenarios
--   Links to supporting information
+__**Tags**__
+-  Free
+-  Grid based
+-  Application
+-  Interactive interface/map
+-  Downloadable data
 
 __**Cost**__
 - Free

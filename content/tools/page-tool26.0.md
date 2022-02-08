@@ -1,10 +1,10 @@
 ---
 title: "My Environment"
-description: "a tool dashboard providing health and environmental quality assessments for the chosen locality"
-date: 2021-03-01T15:05:10-0500
+description: "a tool dashboard providing health and environmental quality assessments for the chosen locality "
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Easy-to-use", "Provides links to supporting tools and resources", "Location specific maps and data"]
+tags: ["Free", "Real-time/Current", "Forecast", "Jursidiction based", "Location specific", "City level", "County level", "State level", "Application", "Interactive interface/map"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_26.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_26.0_ScreenCapture-1.png
 ---
@@ -21,10 +21,17 @@ __**Get This Tool:**__ https://www3.epa.gov/myem/envmap/find.html
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
--  Easy-to-use
--   Provides links to supporting tools and resources
--   Location specific maps and data
+__**Tags**__
+-  Free
+-  Real-time/Current
+-  Forecast
+-  Jursidiction based
+-  Location specific
+-  City level
+-  County level
+-  State level
+-  Application
+-  Interactive interface/map
 
 __**Cost**__
 - Free

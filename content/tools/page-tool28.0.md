@@ -1,10 +1,10 @@
 ---
 title: "Climate Engine"
 description: "Web application that generates maps and graphs using climate data from remotely sensed source data"
-date: 2021-03-01T15:05:10-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Ability to visualize multiple climate change related variables at once", "Data frequently updated", "Provides supporting educational information and tutorials", "Able to download customized data without needing to access and download entire dataset", "Can share maps and graphs via specifically generated web links"]
+tags: ["Free", "Real-time/Current", "Forecast", "Grid based", "Application", "Dataset", "Interactive interface/map", "Downloadable data", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_28.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_28.0_ScreenCapture-1.png
 ---
@@ -21,12 +21,16 @@ __**Get This Tool:**__ https://app.climateengine.org/
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
--  Ability to visualize multiple climate change related variables at once
--  Data frequently updated
--  Provides supporting educational information and tutorials
--  Able to download customized data without needing to access and download entire dataset
--   Can share maps and graphs via specifically generated web links
+__**Tags**__
+-  Free
+-  Real-time/Current
+-  Forecast
+-  Grid based
+-  Application
+-  Dataset
+-  Interactive interface/map
+-  Downloadable data
+-  Downloadable results
 
 __**Cost**__
 - Free

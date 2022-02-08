@@ -1,10 +1,10 @@
 ---
 title: "Submerged Aquatic Vegetation (SAV) in the Chesapeake Bay"
-description: "Monitor SAV growth in the Chesapeake Bay"
-date: 2021-03-01T15:05:10-0500
+description: "Monitor SAV growth in the Chesapeake Bay "
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Links to supporting information", "Allows user to search by location to view SAV in the interactive map", "Option to download raw data", "Users can contribute detailed observations or survey data through external site", "Allows users to access historic SAV data"]
+tags: ["Free", "Historical ", "Location specific", "Regional level", "Program", "Interactive interface/map", "Downloadable data", "Downloadable results", "Yearly"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_38.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_38.0_ScreenCapture-1.png
 ---
@@ -19,12 +19,16 @@ __**Get This Tool:**__ http://web.vims.edu/bio/sav/index.html
 __**Geographic Coverage**__
 - Delaware; Maryland; Virginia
 
-__**Strengths**__
--  Links to supporting information
--  Allows user to search by location to view SAV in the interactive map
--   Option to download raw data
--  Users can contribute detailed observations or survey data through external site
--  Allows users to access historic SAV data
+__**Tags**__
+-  Free
+-  Historical 
+-  Location specific
+-  Regional level
+-  Program
+-  Interactive interface/map
+-  Downloadable data
+-  Downloadable results
+-  Yearly
 
 __**Cost**__
 - Free

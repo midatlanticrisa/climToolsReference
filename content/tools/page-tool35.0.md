@@ -1,10 +1,10 @@
 ---
 title: "Annual United States Climate Stripes: Temperature and Precipitation"
 description: "artistic representation of Climate Change"
-date: 2021-03-01T15:05:10-0500
+date: 2022-02-08T11:30:44-0500
 pubtype: "Tool"
 featured: true
-tags: ["Easy to understand visualizations of climate change", "Links to supporting information"]
+tags: ["Free", "Historical ", "Jursidiction based", "County level", "Application", "Interactive interface/map", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_35.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_35.0_ScreenCapture-1.png
 ---
@@ -19,9 +19,14 @@ __**Get This Tool:**__ https://ncsu.maps.arcgis.com/apps/MapSeries/index.html?ap
 __**Geographic Coverage**__
 - Contiguous United States
 
-__**Strengths**__
--  Easy to understand visualizations of climate change
--   Links to supporting information
+__**Tags**__
+-  Free
+-  Historical 
+-  Jursidiction based
+-  County level
+-  Application
+-  Interactive interface/map
+-  Downloadable results
 
 __**Cost**__
 - Free
