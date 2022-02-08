@@ -1,7 +1,7 @@
 ---
 title: "Drought-Applied Climate Information System (ACIS)"
 description: "Interactive chart to view precipitation / temperature data for stations across the U.S."
-date: 2022-02-08T11:30:44-0500
+date: 2022-02-08T14:50:21-0500
 pubtype: "Tool"
 featured: true
 tags: ["Free", "Historical ", "Location specific", "Application", "Dataset", "Interactive interface/map", "Downloadable data", "Downloadable results"]

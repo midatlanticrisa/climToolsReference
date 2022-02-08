@@ -1,7 +1,7 @@
 ---
 title: "DC Department of Energy and Environment Data & Maps"
 description: "DC Department of Energy and Environment Data & Maps"
-date: 2022-02-08T11:30:44-0500
+date: 2022-02-08T14:50:21-0500
 pubtype: "Tool"
 featured: true
 tags: ["Free", "Real-time/Current", "Climate projections", "Jursidiction based", "City level", "Website", "Program", "Dataset", "Downloadable data", "Downloadable results"]

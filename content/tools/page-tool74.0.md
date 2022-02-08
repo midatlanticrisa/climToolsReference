@@ -1,7 +1,7 @@
 ---
 title: "Delaware Air Quality Forecast"
 description: "Report the current conditions and next day forecast of Delaware Air Quality."
-date: 2022-02-08T11:30:44-0500
+date: 2022-02-08T14:50:21-0500
 pubtype: "Tool"
 featured: true
 tags: ["Free", "Historical ", "Real-time/Current", "Forecast", "Grid based", "Location specific", "City level", "Application", "Interactive interface/map", "Subdaily"]

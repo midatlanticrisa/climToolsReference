@@ -1,7 +1,7 @@
 ---
 title: "Better Assessment Science Integrating Point and Non-point Sources (BASIN)"
 description: "BASINS purpose is to assist in watershed management and TMDL development by integrating data, tools, and models."
-date: 2022-02-08T11:30:44-0500
+date: 2022-02-08T14:50:20-0500
 pubtype: "Tool"
 featured: true
 tags: ["Free", "Restrictions apply", "Grid based", "Application", "Interactive interface/map", "Downloadable data"]

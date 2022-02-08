@@ -1,7 +1,7 @@
 ---
 title: "MARISA Climate Data Portal: Interactive Map for the MARISA Region"
 description: "interactive map with current climate data"
-date: 2022-02-08T11:30:44-0500
+date: 2022-02-08T14:50:20-0500
 pubtype: "Tool"
 featured: true
 tags: ["Free", "Real-time/Current", "Jursidiction based", "Grid based", "Location specific", "County level", "Regional level", "Website", "Interactive interface/map", "Subdaily"]

@@ -1,7 +1,7 @@
 ---
 title: "Storm Water Management Model (SWMM)"
 description: "Allows users to assess stormwater runoff quantity and quality in order to plan for grey and green infrastructure."
-date: 2022-02-08T11:30:44-0500
+date: 2022-02-08T14:50:21-0500
 pubtype: "Tool"
 featured: true
 tags: ["Free", "Open source", "Restrictions apply", "Real-time/Current", "Climate projections", "Application", "Interactive interface/map", "Compare scenarios/locations"]

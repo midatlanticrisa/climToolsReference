@@ -1,7 +1,7 @@
 ---
 title: "FEMA's National Flood Hazard Layer (NFHL) Viewer"
 description: "Display FEMA-delineated flood hazards through Flood Insurance Rate Maps (FIRMs) and revisions to FIRMS via Letters of Map Amendments and Letters of Map Revisions (LOMRs)"
-date: 2022-02-08T11:30:44-0500
+date: 2022-02-08T14:50:21-0500
 pubtype: "Tool"
 featured: true
 tags: ["Free", "Real-time/Current", "Jursidiction based", "Grid based", "Program", "Interactive interface/map", "Downloadable results"]

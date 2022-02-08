@@ -1,5 +1,5 @@
 state,cntyName,coastal
-DC,District of Columbia,
+DC,District of Columbia,Y
 DE,Kent,Y
 DE,New Castle,Y
 DE,Sussex,Y
@@ -28,27 +28,27 @@ MD,Washington,
 MD,Wicomico,Y
 MD,Worcester,Y
 NJ,Atlantic,Y
-NJ,Bergen,
-NJ,Burlington,
-NJ,Camden,
+NJ,Bergen,Y
+NJ,Burlington,Y
+NJ,Camden,Y
 NJ,Cape May,Y
 NJ,Cumberland,Y
-NJ,Essex,
-NJ,Gloucester,
+NJ,Essex,Y
+NJ,Gloucester,Y
 NJ,Hudson,Y
 NJ,Hunterdon,
-NJ,Mercer,
+NJ,Mercer,Y
 NJ,Middlesex,Y
 NJ,Monmouth,Y
 NJ,Morris,
 NJ,Ocean,Y
-NJ,Passaic,
+NJ,Passaic,Y
 NJ,Salem,Y
-NJ,Somerset,
+NJ,Somerset,Y
 NJ,Sussex,
-NJ,Union,
+NJ,Union,Y
 NJ,Warren,
-NY,Albany,
+NY,Albany,Y
 NY,Allegany,
 NY,Bronx,Y
 NY,Broome,
@@ -61,7 +61,7 @@ NY,Clinton,
 NY,Columbia,
 NY,Cortland,
 NY,Delaware,
-NY,Dutchess,
+NY,Dutchess,Y
 NY,Erie,
 NY,Essex,
 NY,Franklin,
@@ -83,15 +83,15 @@ NY,Niagara,
 NY,Oneida,
 NY,Onondaga,
 NY,Ontario,
-NY,Orange,
+NY,Orange,Y
 NY,Orleans,
 NY,Oswego,
 NY,Otsego,
-NY,Putnam,
+NY,Putnam,Y
 NY,Queens,Y
 NY,Rensselaer,
 NY,Richmond,Y
-NY,Rockland,
+NY,Rockland,Y
 NY,Saratoga,
 NY,Schenectady,
 NY,Schoharie,
@@ -103,7 +103,7 @@ NY,Suffolk,Y
 NY,Sullivan,
 NY,Tioga,
 NY,Tompkins,
-NY,Ulster,
+NY,Ulster,Y
 NY,Warren,
 NY,Washington,
 NY,Wayne,
@@ -118,7 +118,7 @@ PA,Bedford,
 PA,Berks,
 PA,Blair,
 PA,Bradford,
-PA,Bucks,
+PA,Bucks,Y
 PA,Butler,
 PA,Cambria,
 PA,Cameron,
@@ -132,9 +132,9 @@ PA,Columbia,
 PA,Crawford,
 PA,Cumberland,
 PA,Dauphin,
-PA,Delaware,
+PA,Delaware,Y
 PA,Elk,
-PA,Erie,
+PA,Erie,Y
 PA,Fayette,
 PA,Forest,
 PA,Franklin,
@@ -160,7 +160,7 @@ PA,Montour,
 PA,Northampton,
 PA,Northumberland,
 PA,Perry,
-PA,Philadelphia,
+PA,Philadelphia,Y
 PA,Pike,
 PA,Potter,
 PA,Schuylkill,
@@ -215,7 +215,7 @@ VA,Dinwiddie,
 VA,Emporia City,
 VA,Essex,Y
 VA,Fairfax,Y
-VA,Fairfax City,
+VA,Fairfax City,Y
 VA,Falls Church City,
 VA,Fauquier,
 VA,Floyd,
@@ -264,7 +264,7 @@ VA,New Kent,Y
 VA,Newport News City,Y
 VA,Norfolk City,Y
 VA,Northampton,Y
-VA,Northumberland,
+VA,Northumberland,Y
 VA,Norton City,
 VA,Nottoway,
 VA,Orange,

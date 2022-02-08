@@ -1,7 +1,7 @@
 ---
 title: "Climate Impact Map"
 description: "Interactive map showing past and future temperature based different climate models"
-date: 2022-02-08T11:30:44-0500
+date: 2022-02-08T14:50:21-0500
 pubtype: "Tool"
 featured: true
 tags: ["Free", "Historical ", "Climate projections", "Jursidiction based", "County level", "State level", "Website", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data"]

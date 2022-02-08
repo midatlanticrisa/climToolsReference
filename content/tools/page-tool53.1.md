@@ -1,7 +1,7 @@
 ---
 title: "Potomac Inundation Maps"
 description: "Real time data showing storm-based flood potential for the Potomac and Anacostia Rivers around the DC area"
-date: 2022-02-08T11:30:44-0500
+date: 2022-02-08T14:50:21-0500
 pubtype: "Tool"
 featured: true
 tags: ["Free", "Real-time/Current", "Forecast", "Grid based", "Location specific", "Website", "Interactive interface/map", "Downloadable results"]

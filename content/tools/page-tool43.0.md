@@ -1,7 +1,7 @@
 ---
 title: "Northeast Conservation Planning Atlas"
 description: "View, create, and collaborate with other users on maps to visualize biological, physical, and socio-economic information about the Northeast."
-date: 2022-02-08T11:30:44-0500
+date: 2022-02-08T14:50:21-0500
 pubtype: "Tool"
 featured: true
 tags: ["Free", "Registration required", "Historical ", "Real-time/Current", "Climate projections", "Regional level", "Program", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data", "Downloadable results"]

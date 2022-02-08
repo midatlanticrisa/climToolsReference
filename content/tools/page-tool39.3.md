@@ -1,7 +1,7 @@
 ---
 title: "Climate Smart Farming (CSF) Water Deficit Calculator"
 description: "Create charts demonstrating changing water deficits based on soil capacity, crop type, date of planting or budbreak, and irrigation"
-date: 2022-02-08T11:30:44-0500
+date: 2022-02-08T14:50:21-0500
 pubtype: "Tool"
 featured: true
 tags: ["Free", "Historical ", "Real-time/Current", "Forecast", "Location specific", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]

@@ -1,7 +1,7 @@
 ---
 title: "Water Quality Assessment and TMDLs"
 description: "Provide water quality assessment and TMDL information. Show the spatial relationship of how each intersect"
-date: 2022-02-08T11:30:44-0500
+date: 2022-02-08T14:50:21-0500
 pubtype: "Tool"
 featured: true
 tags: ["Free", "Historical ", "Real-time/Current", "State level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data", "Downloadable results"]

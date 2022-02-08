@@ -1,7 +1,7 @@
 ---
 title: "CREAT Risk Assessment Application for Water Utilities"
 description: "Risk assessment application for water utilities"
-date: 2022-02-08T11:30:44-0500
+date: 2022-02-08T14:50:20-0500
 pubtype: "Tool"
 featured: true
 tags: ["Free", "Registration required", "Historical ", "Climate projections", "Application", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Cost estimates", "Downloadable results"]

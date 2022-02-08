@@ -1,7 +1,7 @@
 ---
 title: "Case Study and Information Exchange"
 description: "Communities submit and share their experiences with implementing climate adaptation measures."
-date: 2022-02-08T11:30:44-0500
+date: 2022-02-08T14:50:20-0500
 pubtype: "Tool"
 featured: true
 tags: ["Free", "Location specific", "Application", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Downloadable results"]

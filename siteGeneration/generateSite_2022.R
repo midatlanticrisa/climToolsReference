@@ -43,6 +43,33 @@ statefips = read.csv(paste0(dataDir, "stateFIPS.csv"))
 el <- "\n"
 tab <- "  "
 
+##########################################################################
+# STOP - DO YOU WANT TO CLEAN THE TOOLS?
+# THIS IS A MUST IF YOU HAVE REMOVED TOOLS OR REMOVED TAGS
+# clean_website_tools_and_tags <- FALSE: NO
+# clean_website_tools_and_tags <- TRUE: YES
+##########################################################################
+clean_website_tools_and_tags <- FALSE
+
+# if true remove the files/subdirectories
+if(clean_website_tools_and_tags){
+  # Remove all the tool_pages. Leave the index
+  rm_toolpages <- grep("page", list.files(toolsDir, full.names = TRUE), value=TRUE)
+  file.remove(rm_toolpages)
+  
+  # Refresh everything in tags:
+  system(paste0("rm -rf ", baseDir, "climToolsReference/public/tags/*"))
+  
+  # Refresh everything in data:
+  rm_datajson <- list.files(discovDir, full.names = TRUE)
+  file.remove(rm_datajson)
+  
+  # Refresh everything in tools (a mix of folders and files):
+  system(paste0("rm -rf ", baseDir, "climToolsReference/public/tools/*"))
+}
+##########################################################################
+##########################################################################
+
 ##read in the tool description document
 toolInventoryFile <- list.files(dataDir, toolInventoryName, recursive=T, full.names=T)
 toolInventoryFile <- toolInventoryFile[grep("~",toolInventoryFile, invert=TRUE)]

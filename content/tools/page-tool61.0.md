@@ -2,7 +2,7 @@
 title: "Adaptation Workbook (Climate Change Response Framework)"
 description: "Provide data and process support to bridge the gap between climate data and land managers
 "
-date: 2022-02-08T11:30:44-0500
+date: 2022-02-08T14:50:21-0500
 pubtype: "Tool"
 featured: true
 tags: ["Free", "Registration required", "Climate projections", "Program", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Downloadable results"]
