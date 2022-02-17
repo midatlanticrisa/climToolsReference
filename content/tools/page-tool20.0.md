@@ -1,10 +1,10 @@
 ---
 title: "MARISA Climate Impacts Summary and Outlook Reports"
 description: "Seasonal (quarterly) reports outlining past weather events and their significance as well as projections to the next seasons weather"
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Historical ", "Climate projections", "Grid based", "Location specific", "Watershed level", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Quarterly"]
+tags: ["Historical ", "Climate projections", "Grid based", "Location specific", "Watershed level", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Quarterly"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_20.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_20.0_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - Maryland; Delaware; Pennsylvania; Virginia; West Virginia
 
 __**Tags**__
--  Free
 -  Historical 
 -  Climate projections
 -  Grid based

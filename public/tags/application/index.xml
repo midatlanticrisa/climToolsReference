@@ -6,21 +6,11 @@
     <description>Recent content in Application on Climate Tools</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Feb 2022 14:50:21 -0500</lastBuildDate><atom:link href="https://cbtooltest.marisa.psu.edu/tags/application/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Annual United States Climate Stripes: Temperature and Precipitation</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool35.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool35.0/</guid>
-      <description>Developed By: NCICS
-Summary: The Annual United State Climate Stripes is a climate visualization tool designed to depict changes in temperature and precipitation through the United States.</description>
-    </item>
-    
+    <lastBuildDate>Wed, 16 Feb 2022 16:57:46 -0500</lastBuildDate><atom:link href="https://cbtooltest.marisa.psu.edu/tags/application/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bay Footprint Calculator</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool64.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool64.0/</guid>
       <description>Developed By: CBF, and UVA
@@ -28,58 +18,9 @@ Summary: The Bay Footprint Calculator is an easy-to-use tool that estimates your
     </item>
     
     <item>
-      <title>Climate Engine</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool28.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool28.0/</guid>
-      <description>Developed By: Desert Research Institute, University of Idaho, and Google</description>
-    </item>
-    
-    <item>
-      <title>Climate Smart Farming (CSF) Growing Degree Day Calculator</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.2/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.2/</guid>
-      <description>Developed By: Cornell University_College of Agriculture and Life Sciences
-Summary: Part of the Climate Smart Farming toolkit, the Growing Degree Day Calculator calculates and plots observed and predicted growing degree days for a given location during a growing season.</description>
-    </item>
-    
-    <item>
-      <title>Climate Smart Farming (CSF) Water Deficit Calculator</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.3/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.3/</guid>
-      <description>Developed By: Cornell University_College of Agriculture and Life Sciences
-Summary: Part of the Climate Smart Farming toolkit, the Water Deficit Calculator estimates soil water content within a crop&amp;rsquo;s effective root zone to predict potential water deficits and associated plant stress.</description>
-    </item>
-    
-    <item>
-      <title>Climate Smart Farming (CSF) Winter Cover Crop Planting Scheduler</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.4/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.4/</guid>
-      <description>Developed By: Cornell University_College of Agriculture and Life Sciences
-Summary: Part of the Climate Smart Farming toolkit, the Winter Cover Crop Planting Scheduler calculates the probability that specific cover crops reach important levels of growth by the end of the growing season.</description>
-    </item>
-    
-    <item>
-      <title>Climate Smart Farming Climate Change in Your County</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.1/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.1/</guid>
-      <description>Developed By: Cornell University_College of Agriculture and Life Sciences
-Summary: Part of the Climate Smart Farming toolkit, the Climate Change in Your County tool allows users to view historic and projected future temperature and precipitation data within their county and region.</description>
-    </item>
-    
-    <item>
       <title>Coastal Change Analysis Program (C-CAP) Land Cover Atlas</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool70.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool70.0/</guid>
       <description>Developed By: NOAA, USDOC, and NOAA_National Ocean Service
@@ -89,7 +30,7 @@ Summary: The Coastal Change Analysis Program (C-CAP) Land Cover Atlas is an inte
     <item>
       <title>Coastal Change Hazards Portal</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool65.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool65.0/</guid>
       <description>Developed By: USGS
@@ -97,49 +38,29 @@ Summary: The USGS Coastal Change Hazards Portal is an easy to use tool that synt
     </item>
     
     <item>
-      <title>CSF Apple Stage / Freeze Damage Probability</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.5/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <title>DC Flood Risk Map</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool84.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.5/</guid>
-      <description>Developed By: Cornell University_College of Agriculture and Life Sciences
-Summary: Part of the Climate Smart Farming toolkit, the Apple Stage/Freeze Probability Tool predicts the potential freeze damage for 3 varieties of apple crops.</description>
-    </item>
-    
-    <item>
-      <title>DC Department of Energy &amp; Environment: DC Flood Risk Map</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool45.3/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool45.3/</guid>
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool84.0/</guid>
       <description>Developed By: DCDOEE
 Summary: The DC Flood Risk Tool uses an interactive map to display the risk of various types of flooding throughout the District.</description>
     </item>
     
     <item>
-      <title>DC Department of Energy &amp; Environment: DC Solar Tool</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool45.5/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <title>DC Solar Tool</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool86.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool45.5/</guid>
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool86.0/</guid>
       <description>Developed By: Mapdwell, and Massachusetts Institute of Technology
 Summary: The D.</description>
     </item>
     
     <item>
-      <title>DC Department of Energy &amp; Environment: Green Infrastructure Practices in the District</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool45.4/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool45.4/</guid>
-      <description>Developed By: DCDOEE
-Summary: This interactive mapping tool displays locations within Washington D.</description>
-    </item>
-    
-    <item>
       <title>Delaware Air Quality Forecast</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool74.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool74.0/</guid>
       <description>Developed By: DDNREC
@@ -149,7 +70,7 @@ Summary: The Delaware Air Quality Forecast is a user-friendly forecast that prov
     <item>
       <title>DGIF Wildlife Action Plan</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool80.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool80.0/</guid>
       <description>Developed By: VDGIF
@@ -157,29 +78,9 @@ Summary: Virginia&amp;rsquo;s 2015 Wildlife Action Plan contains ecological data
     </item>
     
     <item>
-      <title>Drought Risk Atlas</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool30.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool30.0/</guid>
-      <description>Developed By: NDMC, NOAA_NWS, and NOAA_RCC
-Summary: The Drought Risk Atlas provides historical drought information for weather stations across the United States through an interactive map viewer and data portal.</description>
-    </item>
-    
-    <item>
-      <title>Drought-Applied Climate Information System (ACIS)</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool29.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool29.0/</guid>
-      <description>Developed By: NOAA_RCC
-Summary: The Applied Climate Information System (ACIS) Drought Portal allows users to view past and current temperature and precipitation data from weather stations throughout the US.</description>
-    </item>
-    
-    <item>
       <title>Earth::Global wind patterns</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool76.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool76.0/</guid>
       <description>Developed By: Cameron Beccario
@@ -189,7 +90,7 @@ Summary: This real-time visualization of global environmental conditions is a gr
     <item>
       <title>Future Urban Climates</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool67.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool67.0/</guid>
       <description>Developed By: UMCES
@@ -197,56 +98,56 @@ Summary: The Future Urban Climates tool is an interactive map showing how climat
     </item>
     
     <item>
-      <title>Grape Hardiness &amp; Freeze Risk</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.6/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <title>Green Infrastructure Modeling Toolkit: Storm Water Management Model (SWMM)</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool73.1/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.6/</guid>
-      <description>Developed By: Cornell University_College of Agriculture and Life Sciences
-Summary: Part of the Climate Smart Farming toolkit, the Grape Freeze Risk Tool predicts the potential freeze damage for 3 varieties of grapes.</description>
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool73.1/</guid>
+      <description>Developed By: EPA
+Summary: The EPA&amp;rsquo;s Storm Water Management Model (SWMM) is a software application that simulates water runoff quantity and quality.</description>
     </item>
     
     <item>
-      <title>Headwaters Economics Neighborhoods at Risk</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool23.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <title>Green Infrastructure Practices in the District</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool85.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool23.0/</guid>
-      <description>Developed By: Headwater Economics
-Summary: The Headwaters Economics Neighborhoods at Risk tool uses an interactive map to display characteristics of potentially vulnerable neighborhoods in 27 U.</description>
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool85.0/</guid>
+      <description>Developed By: DCDOEE
+Summary: This interactive mapping tool displays locations within Washington D.</description>
     </item>
     
     <item>
-      <title>i-Tree Canopy</title>
+      <title>i-Tree: Canopy</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool57.3/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool57.3/</guid>
       <description>Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of Municipal Arborists, International Society of Arboriculture, Casey Trees, and SUNY_College of Environmental Science and Forestry.</description>
     </item>
     
     <item>
-      <title>i-Tree Design</title>
+      <title>i-Tree: Design</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool57.2/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool57.2/</guid>
       <description>Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of Municipal Arborists, International Society of Arboriculture, Casey Trees, and SUNY_College of Environmental Science and Forestry.</description>
     </item>
     
     <item>
-      <title>i-Tree Hydro, and Eco</title>
+      <title>i-Tree: Hydro, and Eco</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool57.4/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool57.4/</guid>
       <description>Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of Municipal Arborists, International Society of Arboriculture, Casey Trees, and SUNY_College of Environmental Science and Forestry.</description>
     </item>
     
     <item>
-      <title>i-Tree Mytree and Landscape</title>
+      <title>i-Tree: Mytree and Landscape</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool57.1/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool57.1/</guid>
       <description>Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of Municipal Arborists, International Society of Arboriculture, Casey Trees, and SUNY_College of Environmental Science and Forestry.</description>
@@ -255,7 +156,7 @@ Summary: The Headwaters Economics Neighborhoods at Risk tool uses an interactive
     <item>
       <title>Mapping Social Vulnerability of Fishing Communities</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool56.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool56.0/</guid>
       <description>Developed By: NOAA
@@ -263,48 +164,9 @@ Summary: NOAA Fisheries Social Indicators Toolbox is comprised of a suite of soc
     </item>
     
     <item>
-      <title>MARISA Climate Impacts Summary and Outlook Reports</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool20.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool20.0/</guid>
-      <description>Developed By: MARISA
-Summary: The MARISA Climate Impacts Summary and Outlook Reports are a quarterly series summarizing seasonal weather and climate trends and forecasts for the Chesapeake Bay Watershed.</description>
-    </item>
-    
-    <item>
-      <title>MDOT Climate Change Vulnerability</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool49.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool49.0/</guid>
-      <description>Developed By: MDOT_State Highway Administration, Salisbury University, and the Eastern Shore Regional GIS Cooperative</description>
-    </item>
-    
-    <item>
-      <title>Mid-Atlantic Ocean Data Tool</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool40.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool40.0/</guid>
-      <description>Developed By: MARCO
-Summary: The Mid-Atlantic Ocean Data Portal is a resource center consisting of an interactive map, data layers, case studies, and collaborative tools that allows users to explore and share visualizations of coastal and societal resources from New York to Virginia.</description>
-    </item>
-    
-    <item>
-      <title>My Environment</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool26.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool26.0/</guid>
-      <description>Developed By: EPA
-Summary: The EPA&amp;rsquo;s MyEnvironment tool is an online dashboard that provides access to a cross-section environmental information specific to a user&amp;rsquo;s location.</description>
-    </item>
-    
-    <item>
       <title>National Beach Nourishment Database</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool63.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool63.0/</guid>
       <description>Developed By: American Shore &amp;amp; Beach Protection Agency, Regional Sediment Management Program, and APTIM</description>
@@ -313,7 +175,7 @@ Summary: The EPA&amp;rsquo;s MyEnvironment tool is an online dashboard that prov
     <item>
       <title>Nature&#39;s Network Prioritization Tool</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool68.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool68.0/</guid>
       <description>Developed By: Nature&amp;rsquo;s Network
@@ -323,7 +185,7 @@ Summary: The Prioritization Tool from Nature’s Network is an interactive mappi
     <item>
       <title>OpenNSPECT</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool77.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool77.0/</guid>
       <description>Developed By: NOAA_Office for Coastal Management
@@ -333,7 +195,7 @@ Summary: This open-source version of the Nonpoint Source Pollution and Erosion C
     <item>
       <title>OSPREY Public</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool75.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool75.0/</guid>
       <description>Developed By: NOAA_NWS
@@ -343,7 +205,7 @@ Summary: Operation and Situational Preparedness for Responding to an Emergency (
     <item>
       <title>PINEMAP</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool78.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool78.0/</guid>
       <description>Developed By: North Carolina State Climate Office, and USDA
@@ -353,16 +215,294 @@ Summary: PINEMAP is a suite of 13 products focusing on loblolly pines in the Sou
     <item>
       <title>Riparian Restoration Decision Support Tool</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool52.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool52.0/</guid>
       <description>Developed By: Appalachian Landscape Conservation Cooperative, USFS, and University of Massachusetts</description>
     </item>
     
     <item>
+      <title>USGS National Water Dashboard</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool55.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool55.0/</guid>
+      <description>Developed By: USGS
+Summary: The National Water Dashboard is a interactive map that shows reail-time water data colleged at USGS observation stations along with weather-related data from other public sources.</description>
+    </item>
+    
+    <item>
+      <title>USGS StreamStats</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool81.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool81.0/</guid>
+      <description>Developed By: USGS
+Summary: The USGS StreamStats: Streamflow Statistics and Spatial Analysis Tools for Water-Resources Applications provides tools for water-resources planning and management, and for engineering and design purposes.</description>
+    </item>
+    
+    <item>
+      <title>AdaptVA: Interactive Map</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool1.3/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool1.3/</guid>
+      <description>Developed By: VIMS_CCRM
+Summary: This tool from AdaptVA uses an interactive map to display sea level rise projections and FEMA flood hazard zones, as well as social vulnerability, infrastructure, and natural capital in a single viewer.</description>
+    </item>
+    
+    <item>
+      <title>AdaptVA: Sea Level Rise Projection Viewer</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool1.1/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool1.1/</guid>
+      <description>Developed By: VIMS_CCRM
+Summary: The AdaptVA Sea Level Rise Projection Viewer uses an interactive map to display sea level rise projections for coastal Virginia.</description>
+    </item>
+    
+    <item>
+      <title>AdaptVA: Tidewatch Map</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool1.2/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool1.2/</guid>
+      <description>Developed By: VIMS_CCRM
+Summary: The AdaptVA Tidewatch Map uses an interactive map to display coastal flooding in Virginia.</description>
+    </item>
+    
+    <item>
+      <title>Annual United States Climate Stripes: Temperature and Precipitation</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool35.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool35.0/</guid>
+      <description>Developed By: NCICS
+Summary: The Annual United State Climate Stripes is a climate visualization tool designed to depict changes in temperature and precipitation through the United States.</description>
+    </item>
+    
+    <item>
+      <title>Better Assessment Science Integrating Point and Non-point Sources (BASIN)</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool15.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool15.0/</guid>
+      <description>Developed By: EPA
+Summary: Better Assessment Science Integrating Point and Nonpoint Sources (BASINS) is a multipurpose environmental analysis system designed to help regional, state, and local agencies perform watershed- and water quality-based studies.</description>
+    </item>
+    
+    <item>
+      <title>Climate Engine</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool28.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool28.0/</guid>
+      <description>Developed By: Desert Research Institute, University of Idaho, and Google</description>
+    </item>
+    
+    <item>
+      <title>Climate Smart Farming: Apple Stage / Freeze Damage Probability</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.5/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.5/</guid>
+      <description>Developed By: Cornell University_College of Agriculture and Life Sciences
+Summary: Part of the Climate Smart Farming toolkit, the Apple Stage/Freeze Probability Tool predicts the potential freeze damage for 3 varieties of apple crops.</description>
+    </item>
+    
+    <item>
+      <title>Climate Smart Farming: Climate Change in Your County</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.1/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.1/</guid>
+      <description>Developed By: Cornell University_College of Agriculture and Life Sciences
+Summary: Part of the Climate Smart Farming toolkit, the Climate Change in Your County tool allows users to view historic and projected future temperature and precipitation data within their county and region.</description>
+    </item>
+    
+    <item>
+      <title>Climate Smart Farming: Grape Hardiness &amp; Freeze Risk</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.6/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.6/</guid>
+      <description>Developed By: Cornell University_College of Agriculture and Life Sciences
+Summary: Part of the Climate Smart Farming toolkit, the Grape Freeze Risk Tool predicts the potential freeze damage for 3 varieties of grapes.</description>
+    </item>
+    
+    <item>
+      <title>Climate Smart Farming: Growing Degree Day Calculator</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.2/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.2/</guid>
+      <description>Developed By: Cornell University_College of Agriculture and Life Sciences
+Summary: Part of the Climate Smart Farming toolkit, the Growing Degree Day Calculator calculates and plots observed and predicted growing degree days for a given location during a growing season.</description>
+    </item>
+    
+    <item>
+      <title>Climate Smart Farming: Water Deficit Calculator</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.3/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.3/</guid>
+      <description>Developed By: Cornell University_College of Agriculture and Life Sciences
+Summary: Part of the Climate Smart Farming toolkit, the Water Deficit Calculator estimates soil water content within a crop&amp;rsquo;s effective root zone to predict potential water deficits and associated plant stress.</description>
+    </item>
+    
+    <item>
+      <title>Climate Smart Farming: Winter Cover Crop Planting Scheduler</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool39.4/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool39.4/</guid>
+      <description>Developed By: Cornell University_College of Agriculture and Life Sciences
+Summary: Part of the Climate Smart Farming toolkit, the Winter Cover Crop Planting Scheduler calculates the probability that specific cover crops reach important levels of growth by the end of the growing season.</description>
+    </item>
+    
+    <item>
+      <title>Creating Resilient Water Utilities: Case Study and Information Exchange</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.2/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.2/</guid>
+      <description>Developed By: EPA
+Summary: Part of the Creating Resilient Water Utilities Tool (CRWU), the Case Study and Information Exchange provides examples from water utilities that have implemented adaptation measures for natural hazards and water management challenges such as climate change.</description>
+    </item>
+    
+    <item>
+      <title>Creating Resilient Water Utilities: Climate Resilience Evaluation and Awareness Tool Risk Assessment Application for Water Utilities</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.1/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.1/</guid>
+      <description>Developed By: EPA
+Summary: Part of the Creating Resilient Water Utilities (CRWU) initiative, the Climate Resilience Evaluation and Awareness Tool (CREAT) 3.</description>
+    </item>
+    
+    <item>
+      <title>Creating Resilient Water Utilities: Storm Surge Inundation Map</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.4/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.4/</guid>
+      <description>Developed By: EPA
+Summary: Part of the Creating Resilient Water Utilities (CRWU), the Storm Surge Inundation tool is a map interface depicting extreme weather conditions.</description>
+    </item>
+    
+    <item>
+      <title>Drought Risk Atlas</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool30.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool30.0/</guid>
+      <description>Developed By: NDMC, NOAA_NWS, and NOAA_RCC
+Summary: The Drought Risk Atlas provides historical drought information for weather stations across the United States through an interactive map viewer and data portal.</description>
+    </item>
+    
+    <item>
+      <title>Drought-Applied Climate Information System (ACIS)</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool29.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool29.0/</guid>
+      <description>Developed By: NOAA_RCC
+Summary: The Applied Climate Information System (ACIS) Drought Portal allows users to view past and current temperature and precipitation data from weather stations throughout the US.</description>
+    </item>
+    
+    <item>
+      <title>Eastern Virginia Coastal Resilience (ESVA Coastal Resilience)</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool10.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool10.0/</guid>
+      <description>Developed By: NOAA, and TNC
+Summary: The Virginia Eastern Shore Coastal Resilience tool is an interactive mapping tool that allows users to visualize potential social, economic, and environmental impacts of sea level rise and storm surge and identify areas for nature-based solutions to enhance resilience and reduce risks where possible.</description>
+    </item>
+    
+    <item>
+      <title>Hampton Roads Geospatial Exchange Online: Hampton Roads Resilience Projects Dashboard</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool2.2/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool2.2/</guid>
+      <description>Developed By: HRPDC, HRSD, and HRTPO
+Summary: Part of the Hampton Roads Geospatial Exchange Online portal, this tool provides summary graphics and an interactive map to view current and proposed projects to improve resilience to flooding and coastal hazards in Hampton Roads, VA.</description>
+    </item>
+    
+    <item>
+      <title>Headwaters Economics Neighborhoods at Risk</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool23.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool23.0/</guid>
+      <description>Developed By: Headwater Economics
+Summary: The Headwaters Economics Neighborhoods at Risk tool uses an interactive map to display characteristics of potentially vulnerable neighborhoods in 27 U.</description>
+    </item>
+    
+    <item>
+      <title>Know Your Zone</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool11.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool11.0/</guid>
+      <description>Developed By: VDEM
+Summary: The Know Your Zone tool is an interactive mapping tool that allows residents of coastal Virginia to determine their evacuation zone for hurricanes and severe storms.</description>
+    </item>
+    
+    <item>
+      <title>MARISA Climate Impacts Summary and Outlook Reports</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool20.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool20.0/</guid>
+      <description>Developed By: MARISA
+Summary: The MARISA Climate Impacts Summary and Outlook Reports are a quarterly series summarizing seasonal weather and climate trends and forecasts for the Chesapeake Bay Watershed.</description>
+    </item>
+    
+    <item>
+      <title>Maryland Coastal Atlas</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool6.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool6.0/</guid>
+      <description>Developed By: MDNR
+Summary: The Maryland Coastal Atlas is a mapping tool that allows users query, map, and analyze spatial data to better understand Maryland&amp;rsquo;s coastal and marine resources.</description>
+    </item>
+    
+    <item>
+      <title>MDOT Climate Change Vulnerability</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool49.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool49.0/</guid>
+      <description>Developed By: MDOT_State Highway Administration, Salisbury University, and the Eastern Shore Regional GIS Cooperative</description>
+    </item>
+    
+    <item>
+      <title>Mid-Atlantic Ocean Data Tool</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool40.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool40.0/</guid>
+      <description>Developed By: MARCO
+Summary: The Mid-Atlantic Ocean Data Portal is a resource center consisting of an interactive map, data layers, case studies, and collaborative tools that allows users to explore and share visualizations of coastal and societal resources from New York to Virginia.</description>
+    </item>
+    
+    <item>
+      <title>My Environment</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool26.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool26.0/</guid>
+      <description>Developed By: EPA
+Summary: The EPA&amp;rsquo;s MyEnvironment tool is an online dashboard that provides access to a cross-section environmental information specific to a user&amp;rsquo;s location.</description>
+    </item>
+    
+    <item>
       <title>Shoreline Assessment Mapper</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool19.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool19.0/</guid>
       <description>Developed By: VIMS_CCRM
@@ -370,19 +510,9 @@ Summary: The Shoreline Assessment Mapper is an interactive map that displays a v
     </item>
     
     <item>
-      <title>Storm Water Management Model (SWMM)</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool73.1/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool73.1/</guid>
-      <description>Developed By: EPA
-Summary: The EPA&amp;rsquo;s Storm Water Management Model (SWMM) is a software application that simulates water runoff quantity and quality.</description>
-    </item>
-    
-    <item>
       <title>USDA Plant Hardiness Zone Map</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool36.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool36.0/</guid>
       <description>Developed By: USDA
@@ -390,19 +520,19 @@ Summary: The United States Department of Agriculture (USDA) Plant hardiness Zone
     </item>
     
     <item>
-      <title>USGS National Water Census Data Portal: Streamflow</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool55.2/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <title>USGS Exploration and Graphics for RivEr Trends (EGRET)</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool9.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool55.2/</guid>
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool9.0/</guid>
       <description>Developed By: USGS
-Summary: The USGS National Water Census Data Portal Streamflow tool allows users to address streamflow averages for a specific locality, if a nearby stream gage is available.</description>
+Summary: The Exploration and Graphics RivEr Trends (EGRET) is an R package for the analysis of hydrologic data concerning long-term changes in rivers, river flows, and river quality.</description>
     </item>
     
     <item>
       <title>Virginia Coastal Geospatial and Educational Mapping System (GEMS)</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool41.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool41.0/</guid>
       <description>Developed By: VDEQ
@@ -412,7 +542,7 @@ Summary: The Virginia Coastal Geospatial and Educational Mapping System (Coastal
     <item>
       <title>Virginia Estuarine and Coastal Observing System (VECOS)</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool37.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool37.0/</guid>
       <description>Developed By: VIMS
@@ -420,139 +550,9 @@ Summary: The Virginia Estuarine and Coastal Observing System (VECOS) provides ac
     </item>
     
     <item>
-      <title>Water Quality Assessment and TMDLs</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool50.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool50.0/</guid>
-      <description>Developed By: MDE
-Summary: This interactive mapping tool displays surface water quality assessment information found in Maryland’s 2018 Integrated Report of Surface Water Quality (IR) as well as watersheds for which Total Maximum Daily Load (TMDL) analyses have been approved by EPA for Maryland.</description>
-    </item>
-    
-    <item>
-      <title>AdaptVA Interactive Map</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool1.3/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool1.3/</guid>
-      <description>Developed By: VIMS_CCRM
-Summary: This tool from AdaptVA uses an interactive map to display sea level rise projections and FEMA flood hazard zones, as well as social vulnerability, infrastructure, and natural capital in a single viewer.</description>
-    </item>
-    
-    <item>
-      <title>AdaptVA Sea Level Rise Projection Viewer</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool1.1/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool1.1/</guid>
-      <description>Developed By: VIMS_CCRM
-Summary: The AdaptVA Sea Level Rise Projection Viewer uses an interactive map to display sea level rise projections for coastal Virginia.</description>
-    </item>
-    
-    <item>
-      <title>AdaptVA Tidewatch Map</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool1.2/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool1.2/</guid>
-      <description>Developed By: VIMS_CCRM
-Summary: The AdaptVA Tidewatch Map uses an interactive map to display coastal flooding in Virginia.</description>
-    </item>
-    
-    <item>
-      <title>Better Assessment Science Integrating Point and Non-point Sources (BASIN)</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool15.1/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool15.1/</guid>
-      <description>Developed By: EPA
-Summary: Better Assessment Science Integrating Point and Nonpoint Sources (BASINS) is a multipurpose environmental analysis system designed to help regional, state, and local agencies perform watershed- and water quality-based studies.</description>
-    </item>
-    
-    <item>
-      <title>Case Study and Information Exchange</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.2/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.2/</guid>
-      <description>Developed By: EPA
-Summary: Part of the Creating Resilient Water Utilities Tool (CRWU), the Case Study and Information Exchange provides examples from water utilities that have implemented adaptation measures for natural hazards and water management challenges such as climate change.</description>
-    </item>
-    
-    <item>
-      <title>CREAT Risk Assessment Application for Water Utilities</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.1/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.1/</guid>
-      <description>Developed By: EPA
-Summary: Part of the Creating Resilient Water Utilities (CRWU) initiative, the Climate Resilience Evaluation and Awareness Tool (CREAT) 3.</description>
-    </item>
-    
-    <item>
-      <title>Eastern Virginia Coastal Resilience (ESVA Coastal Resilience)</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool10.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool10.0/</guid>
-      <description>Developed By: NOAA, and TNC
-Summary: The Virginia Eastern Shore Coastal Resilience tool is an interactive mapping tool that allows users to visualize potential social, economic, and environmental impacts of sea level rise and storm surge and identify areas for nature-based solutions to enhance resilience and reduce risks where possible.</description>
-    </item>
-    
-    <item>
-      <title>Hampton Roads Resilience Projects Dashboard</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool2.2/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool2.2/</guid>
-      <description>Developed By: HRPDC, HRSD, and HRTPO
-Summary: Part of the Hampton Roads Geospatial Exchange Online portal, this tool provides summary graphics and an interactive map to view current and proposed projects to improve resilience to flooding and coastal hazards in Hampton Roads, VA.</description>
-    </item>
-    
-    <item>
-      <title>Know Your Zone</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool11.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool11.0/</guid>
-      <description>Developed By: VDEM
-Summary: The Know Your Zone tool is an interactive mapping tool that allows residents of coastal Virginia to determine their evacuation zone for hurricanes and severe storms.</description>
-    </item>
-    
-    <item>
-      <title>Maryland Coastal Atlas</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool6.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool6.0/</guid>
-      <description>Developed By: MDNR
-Summary: The Maryland Coastal Atlas is a mapping tool that allows users query, map, and analyze spatial data to better understand Maryland&amp;rsquo;s coastal and marine resources.</description>
-    </item>
-    
-    <item>
-      <title>Storm Surge Inundation Map</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.4/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.4/</guid>
-      <description>Developed By: EPA
-Summary: Part of the Climate Ready Water Utilities Tool (CRWU), the Storm Surge Inundation tool is a map interface depicting extreme weather conditions.</description>
-    </item>
-    
-    <item>
-      <title>USGS Exploration and Graphics for RivEr Trends (EGRET)</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool9.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool9.0/</guid>
-      <description>Developed By: USGS
-Summary: The Exploration and Graphics RivEr Trends (EGRET) is an R package for the analysis of hydrologic data concerning long-term changes in rivers, river flows, and river quality.</description>
-    </item>
-    
-    <item>
       <title>Virginia Flood Risk Information System (VFRIS)</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool17.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool17.0/</guid>
       <description>Developed By: VIMS, CCRM, and VDCR
@@ -562,11 +562,21 @@ Summary: The Virginia Flood Risk Information System uses an interactive map to d
     <item>
       <title>Virginia Wetland Condition Assessment Tool (WetCAT)</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool4.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool4.0/</guid>
       <description>Developed By: CCRM, and VDEQ
 Summary: The Virginia Wetland Condition Assessment Tool (WetCAT) is an interactive map that assesses wetland capacity to perform ecosystem services and provides the tools to conduct analyses useful for wetland restoration efforts.</description>
+    </item>
+    
+    <item>
+      <title>Water Quality Assessment and TMDLs</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool50.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool50.0/</guid>
+      <description>Developed By: MDE
+Summary: This interactive mapping tool displays surface water quality assessment information found in Maryland’s 2018 Integrated Report of Surface Water Quality (IR) as well as watersheds for which Total Maximum Daily Load (TMDL) analyses have been approved by EPA for Maryland.</description>
     </item>
     
   </channel>

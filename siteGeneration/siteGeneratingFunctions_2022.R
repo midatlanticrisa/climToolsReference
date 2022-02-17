@@ -57,13 +57,15 @@ stateLookUp <- function(abb, statecodes){
 # siteDir: path to output directory
 # scTab: data.frame of states, county names, and whether they are coastal
 # updateContent=T: Boolean (True/FALSE), True will rewrite the files if they exist
-generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateContent=T){
+generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateContent=T, 
+                             splitByCol, toolCol, collectionPage){
   #################
   #toolRec <- splitByToolID[[2]]
   #toolRec <- splitByToolID[[4]]
   #toolRec <- splitByToolID[[5]]
   #toolRec <- splitByToolID[[7]]
   #toolRec <- splitByToolID[[12]]
+  #toolRec <- splitByToolID[[24]]
   #toolRec <- splitByToolID[[45]]
   #toolRec <- splitByToolID[[64]]
   #toolRec <- splitByToolID[[100]]
@@ -93,39 +95,66 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
   # If the file does not exists or updateContent is TRUE,
   # then create the markdown page, otherwise do nothing.
   if(file.exists(writeTool)==FALSE | updateContent==TRUE){
-    ## Replace "page-template" with the tool name as the page title
-    toolPage <- gsub("page-template", toolRec$`Tool Name`, tempPage)
-    ## Update the date with the system time 
-    toolPage <- gsub("1-1-1111", format(Sys.time(), "%FT%T%z"), toolPage)
     
-    ## Change the description with the tool description or the name of the tool
-    # if no description exists
-    if(is.na(toolRec$`Purpose-Description`)==FALSE){
-      toolPage <- gsub("a page", toolRec$`Purpose-Description`, toolPage)
-    }else{
-      toolPage <- gsub("a page", toolRec$`Tool Name`, toolPage)
-    }
-    
-    # Find the tags
-    tags_list <- toolRec[ ,grep("Description-Tags", colnames(toolRec))]
-    named_tags <- gsub('^(?:[^-]*-){3}','', colnames(tags_list)) # Remove everything before the 3rd "-"
-    tags <- named_tags[!is.na(tags_list)] # Determine which tags are not NA
-    
-    # If Strengths exists, then set them as tags
-    ##add  tags to the header
-    ##and extract tags to add to search objects
-    if(length(tags) > 0){
-      # Update the "tags" with the list of tags
-      toolPage <- gsub('\"tags\"', paste(paste0('\"', unique(tags), '\"'), collapse=", "), toolPage)
-      # Create a data.frame of tags
-      toolTags <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, tag=tags)
-      # BIND the tags data.frame to the GLOBAL searchTags list
-      # searchTags <<- rbind.data.frame(searchTags, toolTags)
-    }else{
-      #toolPage <- gsub('\"tags\"', '\"placeholder\"', toolPage)
+    # Is it a tool collection? Create a tool collection page
+    if(toolRec$`Tool ID` %in% toolCol){
+      ## Replace "page-template" with the tool name as the page title
+      toolPage <- gsub("collection-template", toolRec$`Tool Name`, collectionPage)
+      ## Update the date with the system time 
+      toolPage <- gsub("1-1-1111", format(Sys.time(), "%FT%T%z"), toolPage)
+      
+      ## Change the description with the tool description or the name of the tool
+      # if no description exists
+      if(is.na(toolRec$`Purpose-Description`)==FALSE){
+        toolPage <- gsub("a page", toolRec$`Purpose-Description`, toolPage)
+      }else{
+        toolPage <- gsub("a page", toolRec$`Tool Name`, toolPage)
+      }
+      
       # Set tags as an empty space if no strengths exist
-      toolPage <- gsub('\"tags\"', '', toolPage)
       toolTags <- ""
+      
+    } else { # A regular tool page
+      ## Replace "page-template" with the tool name as the page title
+      toolPage <- gsub("page-template", toolRec$`Tool Name`, tempPage)
+      ## Update the date with the system time 
+      toolPage <- gsub("1-1-1111", format(Sys.time(), "%FT%T%z"), toolPage)
+      
+      ## Change the description with the tool description or the name of the tool
+      # if no description exists
+      if(is.na(toolRec$`Purpose-Description`)==FALSE){
+        toolPage <- gsub("a page", toolRec$`Purpose-Description`, toolPage)
+      }else{
+        toolPage <- gsub("a page", toolRec$`Tool Name`, toolPage)
+      }
+      
+      # Find the tags
+      tags_list <- toolRec[ ,grep("Description-Tags", colnames(toolRec))]
+      named_tags <- gsub('^(?:[^-]*-){3}','', colnames(tags_list)) # Remove everything before the 3rd "-"
+      tags <- named_tags[!is.na(tags_list)] # Determine which tags are not NA
+      
+      # Since all models are free, remove Free as a tag for now
+      freetag <- which(tags == "Free")
+      if(length(freetag) > 0){
+        tags <- tags[-freetag]
+      }
+      
+      # If Strengths exists, then set them as tags
+      ##add  tags to the header
+      ##and extract tags to add to search objects
+      if(length(tags) > 0){
+        # Update the "tags" with the list of tags
+        toolPage <- gsub('\"tags\"', paste(paste0('\"', unique(tags), '\"'), collapse=", "), toolPage)
+        # Create a data.frame of tags
+        toolTags <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, tag=tags)
+        # BIND the tags data.frame to the GLOBAL searchTags list
+        # searchTags <<- rbind.data.frame(searchTags, toolTags)
+      }else{
+        #toolPage <- gsub('\"tags\"', '\"placeholder\"', toolPage)
+        # Set tags as an empty space if no strengths exist
+        toolPage <- gsub('\"tags\"', '', toolPage)
+        toolTags <- ""
+      }
     }
     
     # # If Strengths exists, then set them as tags
@@ -206,6 +235,7 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
       purposeVars <- ifelse(purposeVars == "prcs", "Process Support", purposeVars)
       purposeVars <- ifelse(purposeVars == "eng", "Engagement", purposeVars)
       purposeVars <- ifelse(purposeVars == "com", "Citizen Science", purposeVars)
+      purposeVars <- ifelse(purposeVars == "coll", "Toolkit/Tool Collection", purposeVars)
       # if("past" %in% purposeVars){
       #   purposeVars[which(purposeVars=="past")] <- "View Past/Current Conditions"
       # }
@@ -730,12 +760,33 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
     #   toolStrs <- paste0("__**Strengths**__", el, "Not Available", el)
     # }
     
-    ##tool strengths
-    # Set the strengths as the tags
-    if(length(tags) > 0){
-      toolStrs <- paste0("__**Tags**__", el, paste("- ", tags, collapse=el), el)
-    }else{
-      toolStrs <- paste0("__**Tags**__", el, "Not Available", el)
+    #If its a tool collection then list the tools instead of tags
+    if(toolRec$`Tool ID` %in% toolCol){
+      collectionIds <- sapply(splitByCol, "[[", 2)
+      collectInd <- grep(toolRec$`Tool ID`, collectionIds)
+      collectdf <- splitByCol[[collectInd]]
+      collectdf <- collectdf[-which(collectdf$`Tool ID` == toolRec$`Tool ID`), ]
+      
+      ##tool strengths
+      # Set the strengths as the tags
+      if(nrow(collectdf) > 0){
+        toolList <- paste0("[", collectdf$`Tool Name`, "](https://cbtooltest.marisa.psu.edu/tools/page-tool",
+                           trimws(collectdf$`Tool ID`), ")")
+        
+        toolStrs <- paste0("__**Available Tools**__", el, paste("- ", toolList, collapse=el), el)
+      }else{
+        toolStrs <- paste0("__**Available Tools**__", el, "Not Available", el)
+      }
+      
+    } else { # A regular page
+      
+      ##tool strengths
+      # Set the strengths as the tags
+      if(length(tags) > 0){
+        toolStrs <- paste0("__**Tags**__", el, paste("- ", tags, collapse=el), el)
+      }else{
+        toolStrs <- paste0("__**Tags**__", el, "Not Available", el)
+      }
     }
     
     ##tool weaknesses

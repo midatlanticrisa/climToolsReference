@@ -33,6 +33,7 @@ imageDir <- paste0(baseDir, "climToolsReference/public/images/")
 
 #toolInventoryName <- "Inventory_2020-01-21_v2.xlsx"
 toolInventoryName <- "Tool Inventory - 12.15.21 copy.xlsx"
+templateCollectionName <- "collectionTemplate.md"
 templatePageName <- "pageTemplate.md"
 templateIndex <- "templateIndex.md"
 searchCodePage <- "searchTemplate.html"
@@ -49,7 +50,7 @@ tab <- "  "
 # clean_website_tools_and_tags <- FALSE: NO
 # clean_website_tools_and_tags <- TRUE: YES
 ##########################################################################
-clean_website_tools_and_tags <- FALSE
+clean_website_tools_and_tags <- TRUE
 
 # if true remove the files/subdirectories
 if(clean_website_tools_and_tags){
@@ -174,6 +175,8 @@ invValsOnly <- invValsOnly[ ,!(colnames(invValsOnly) %in% crossNames)]
 # invValsOnly <- invValsOnly[,c(1:39, 45:99)] 
 
 ##read in the template files to be editted
+findColFile <- list.files(dataDir, templateCollectionName, recursive=T, full.names=T)
+collectionPage <- paste(readLines(findColFile), collapse="\n")
 findTempFile <- list.files(dataDir, templatePageName, recursive=T, full.names=T)
 templatePage <- paste(readLines(findTempFile), collapse="\n")
 findIndFile <- list.files(dataDir, templateIndex, recursive=T, full.names=T)
@@ -186,6 +189,13 @@ toolIDs <- unique(invValsOnly$`Tool ID`) # Make sure all values are different
 toolIDs <- toolIDs[is.na(toolIDs)==F] # Make sure all values are not NA
 # Convert the data.frame to a list where each item is a different tool
 splitByToolID <- lapply(toolIDs, function(x){invValsOnly[which(invValsOnly$`Tool ID`==x & is.na(invValsOnly$`Tool ID`)==F),]})
+
+# Find tool collections and group by collection
+multiTools <- toolIDs[grep("\\.[1-9]", toolIDs)]
+multiToolsID <- unique(gsub("\\..*", "", multiTools))
+toolCol <- toolIDs[which(toolIDs %in% paste0(multiToolsID, ".0"))]
+
+splitByCol <- lapply(multiToolsID, function(x){colID <- grep(x, toolIDs); invValsOnly[colID, ]})
 
 ##########################################################################
 # Set up search engine??
@@ -215,7 +225,8 @@ if(dir.exists(imageDir)==F){ # public/images/ directory
 
 # Run the generateToolPage function on each tool. #### IT APPEARS THE ABOVE DATA.FRAMES ARE USED GLOBALLY!!
 toolpage_list = pblapply(splitByToolID, generateToolPage, tempPage=templatePage, 
-                         el=el, siteDir=toolsDir, scTab=stcntyTab, updateContent=TRUE)
+                         el=el, siteDir=toolsDir, scTab=stcntyTab, updateContent=TRUE,
+                         splitByCol=splitByCol, toolCol=toolCol, collectionPage=collectionPage)
 
 # Tags
 searchTags <- lapply(X = 1:length(toolpage_list), function(X){toolpage_list[[X]]$searchTags})

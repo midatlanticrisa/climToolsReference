@@ -6,11 +6,78 @@
     <description>Recent content in Website on Climate Tools</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Feb 2022 14:50:21 -0500</lastBuildDate><atom:link href="https://cbtooltest.marisa.psu.edu/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Feb 2022 16:57:46 -0500</lastBuildDate><atom:link href="https://cbtooltest.marisa.psu.edu/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Beach Nourishment Viewer</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool60.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool60.0/</guid>
+      <description>Developed By: Western Carolina University_Program for the Study of Developed Shorelines</description>
+    </item>
+    
+    <item>
+      <title>Coastal County Snapshots</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool79.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool79.0/</guid>
+      <description>Developed By: NOAA_Office for Coastal Management
+Summary: Providing detailed reports across the country this tool is useful for anyone seeking to understand their county&amp;rsquo;s flood risk, ocean-related job opportunities, and/or wetland benefits.</description>
+    </item>
+    
+    <item>
+      <title>Delaware Environmental Monitoring Sites</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool59.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool59.0/</guid>
+      <description>Developed By: DEMAC, Delaware Geological Survey, and University of Delaware</description>
+    </item>
+    
+    <item>
+      <title>FEMA Data Visualizations of Disaster Declarations and Grants</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool54.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool54.0/</guid>
+      <description>Developed By: FEMA
+Summary: FEMA’s Data Visualization tools allow users to explore when and where disaster declarations have occurred across the US through interactive graphs and figures.</description>
+    </item>
+    
+    <item>
+      <title>Potomac Inundation Maps</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool53.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool53.0/</guid>
+      <description>Developed By: DC Silver Jackets, NOAA_NWS, USACE, USGS, City of Alexandria, and DCDOEE</description>
+    </item>
+    
+    <item>
+      <title>Surging Seas Risk Zone Map (SSRZM)</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool58.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool58.0/</guid>
+      <description>Developed By: Climate Central
+Summary: The Surging Seas Risk Zone Map (SSRZM) displays coastal areas predicted to experience the effects of sea level rise (SLR) within the U.</description>
+    </item>
+    
+    <item>
+      <title>USGS Water Data for the Nation</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool71.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool71.0/</guid>
+      <description>Developed By: USGS
+Summary: The USGS Water Data for the Nation allows users to view real time data from approximately 1.</description>
+    </item>
+    
     <item>
       <title>Air Quality Forecast</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool46.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool46.0/</guid>
       <description>Developed By: Metropolitan Washington Council of Governments
@@ -18,18 +85,9 @@ Summary: The Air Quality Forecast is a 3-part forecast, chart, and mapping tool 
     </item>
     
     <item>
-      <title>Beach Nourishment Viewer</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool60.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool60.0/</guid>
-      <description>Developed By: Western Carolina University_Program for the Study of Developed Shorelines</description>
-    </item>
-    
-    <item>
       <title>Chesapeake Bay Interpretive Buoy System (CBIBS)</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool48.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool48.0/</guid>
       <description>Developed By: NOAA
@@ -39,7 +97,7 @@ Summary: The Chesapeake Bay Interpretive Buoys System (CBIBS) is a network of oc
     <item>
       <title>Chesapeake Bay Program DataHub</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool33.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool33.0/</guid>
       <description>Developed By: CBP
@@ -49,7 +107,7 @@ Summary: The DataHub is the Chesapeake Bay Program’s primary tool for searchin
     <item>
       <title>Climate Impact Map</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool27.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool27.0/</guid>
       <description>Developed By: Climate Impact Lab
@@ -57,19 +115,19 @@ Summary: The Climate Impact Map is an interactive mapping tool that displays his
     </item>
     
     <item>
-      <title>Coastal County Snapshots</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool79.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <title>Creating Resilient Water Utilities: Resilient Strategies Guide for Water Utilities</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.3/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool79.0/</guid>
-      <description>Developed By: NOAA_Office for Coastal Management
-Summary: Providing detailed reports across the country this tool is useful for anyone seeking to understand their county&amp;rsquo;s flood risk, ocean-related job opportunities, and/or wetland benefits.</description>
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.3/</guid>
+      <description>Developed By: EPA
+Summary: Part of the Creating Resilient Water Utilities Tool (CRWU), the Resilient Strategies Guide is a beginner resource for water utilities working on a preliminary identification of adaptation strategies specific to their needs.</description>
     </item>
     
     <item>
       <title>DC Department of Energy and Environment Data &amp; Maps</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool45.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool45.0/</guid>
       <description>Developed By: DCDOEE
@@ -79,7 +137,7 @@ Summary: Tool that includes SRC Trading Program Impervious Viewer, Targeted Subw
     <item>
       <title>Delaware Climate Projections Portal</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool34.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool34.0/</guid>
       <description>Developed By: DDNREC_Division of Energy &amp;amp; Climate
@@ -87,18 +145,9 @@ Summary: The Delaware Climate Change Projections Portal allows users to easily f
     </item>
     
     <item>
-      <title>Delaware Environmental Monitoring Sites</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool59.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool59.0/</guid>
-      <description>Developed By: DEMAC, Delaware Geological Survey, and University of Delaware</description>
-    </item>
-    
-    <item>
       <title>Eyes On The Bay: Main site</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool32.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool32.0/</guid>
       <description>Developed By: MDNR
@@ -106,128 +155,19 @@ Summary: Eyes On The Bay provides maps, data and information about tidal water q
     </item>
     
     <item>
-      <title>FEMA Data Visualizations of Disaster Declarations and Grants</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool54.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool54.0/</guid>
-      <description>Developed By: FEMA
-Summary: FEMA’s Data Visualization tools allow users to explore when and where disaster declarations have occurred across the US through interactive graphs and figures.</description>
-    </item>
-    
-    <item>
       <title>FloodFactor</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool25.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool25.0/</guid>
       <description>Developed By: First Street Foundation
-Summary: FloodiQ is a flood risk mapping tool that shows the extent of potential inundation from tidal flooding and hurricane storm surge on the East and Gulf coasts of the U.</description>
-    </item>
-    
-    <item>
-      <title>Potomac Inundation Maps</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool53.1/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool53.1/</guid>
-      <description>Developed By: DC Silver Jackets, NOAA_NWS, USACE, USGS, City of Alexandria, and DCDOEE</description>
-    </item>
-    
-    <item>
-      <title>Shoreline Management Self-Guided Decision Tools</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool18.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool18.0/</guid>
-      <description>Developed By: VIMS_CCRM
-Summary: The CCRM Shoreline Management Self-Guided Decision Tools guide users through a series of questions about shoreline conditions to provide a shoreline best management practice recommendation.</description>
-    </item>
-    
-    <item>
-      <title>Surging Seas Risk Zone Map (SSRZM)</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool58.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool58.0/</guid>
-      <description>Developed By: Climate Central
-Summary: The Surging Seas Risk Zone Map (SSRZM) displays coastal areas predicted to experience the effects of sea level rise (SLR) within the U.</description>
-    </item>
-    
-    <item>
-      <title>United States Drought Monitor</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool44.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool44.0/</guid>
-      <description>Developed By: NDMC, University of Nebraska-Lincoln, USDA, and NOAA
-Summary: The United States Drought Monitor (USDM) is an interactive tool that allows users to view drought conditions at a regional scale within the United States and territories.</description>
-    </item>
-    
-    <item>
-      <title>USGS Water Data for the Nation</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool71.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool71.0/</guid>
-      <description>Developed By: USGS
-Summary: The USGS Water Data for the Nation is a data portal that allows users to view real time data from approximately 1.</description>
-    </item>
-    
-    <item>
-      <title>Chesapeake Bay Operational Forecast System (CBOFS)</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool3.1/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool3.1/</guid>
-      <description>Developed By: NOAA
-Summary: The Chesapeake Bay Operational Forecast System (CBOFS) tool is a data viewer that provides real time forecasts of oceanographic conditions in the Chesapeake Bay.</description>
-    </item>
-    
-    <item>
-      <title>Climate Ready Water Utilities Adaptation Strategies Guide for Water Utilities</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.3/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.3/</guid>
-      <description>Developed By: EPA
-Summary: Part of the Creating Resilient Water Utilities Tool (CRWU), the Adaptation Strategies Guide is a beginner resource for water utilities working on a preliminary identification of adaptation strategies specific to their needs.</description>
-    </item>
-    
-    <item>
-      <title>Creating Resilient Water Utilities (CRWU)</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.0/</guid>
-      <description>Developed By: EPA
-Summary: The CRWU provides tools, training, and technical assistance for drinking water, wastewater, and stormwater utilities to build climate resilience.</description>
-    </item>
-    
-    <item>
-      <title>Delaware Bay Operational Forecast System (DBOFS)</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool3.2/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool3.2/</guid>
-      <description>Developed By: NOAA, and Rutgers University_Regional Ocean Modeling System
-Summary: The Delaware Bay Operational Forecast System (DBOFS) tool is a data viewer that provides real time forecasts of oceanographic conditions in the Delaware Bay.</description>
-    </item>
-    
-    <item>
-      <title>Hampton Roads Geospatial Exchange Online (HRGEO)</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool2.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool2.0/</guid>
-      <description>Developed By: HRPDC, HRSD, and HRTPO
-Summary: HRGEO is a data portal that allows to users to view and download geographic, cultural, and population data in Hampton Roads, VA.</description>
+Summary: FloodFactor is a flood risk mapping tool that shows the extent of potential inundation from tidal flooding and hurricane storm surge on the East and Gulf coasts of the U.</description>
     </item>
     
     <item>
       <title>Introduction to FEMA Coastal Floodplain Mapping</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool12.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool12.0/</guid>
       <description>Developed By: FEMA
@@ -236,10 +176,10 @@ Summary: This educational tool describes how coastal risks are shown on Flood In
     
     <item>
       <title>MARISA Climate Data Portal: Interactive Map for the MARISA Region</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool13.1/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool13.2/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool13.1/</guid>
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool13.2/</guid>
       <description>Developed By: NOAA, and MARISA
 Summary: The Interactive Map for the MARISA region is an interactive web map that enables users to view real time climate data for the MARISA region.</description>
     </item>
@@ -247,7 +187,7 @@ Summary: The Interactive Map for the MARISA region is an interactive web map tha
     <item>
       <title>NOAA State Climate Summaries</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool14.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool14.0/</guid>
       <description>Developed By: NOAA_NCEI, and NCICS
@@ -255,23 +195,53 @@ Summary: The State Climate Summaries consist of brief statewide reports, describ
     </item>
     
     <item>
-      <title>Operational Forecast System</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool3.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
+      <title>Operational Forecast System: Chesapeake Bay Operational Forecast System (CBOFS)</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool3.1/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool3.0/</guid>
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool3.1/</guid>
       <description>Developed By: NOAA
-Summary: Tool including the Chesapeake Bay Forecast System and Delaware Bay Forecast System</description>
+Summary: The Chesapeake Bay Operational Forecast System (CBOFS) tool is a data viewer that provides real time forecasts of oceanographic conditions in the Chesapeake Bay.</description>
+    </item>
+    
+    <item>
+      <title>Operational Forecast System: Delaware Bay Operational Forecast System (DBOFS)</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool3.2/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool3.2/</guid>
+      <description>Developed By: NOAA, and Rutgers University_Regional Ocean Modeling System
+Summary: The Delaware Bay Operational Forecast System (DBOFS) tool is a data viewer that provides real time forecasts of oceanographic conditions in the Delaware Bay.</description>
     </item>
     
     <item>
       <title>Sea Level Report Cards</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool16.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool16.0/</guid>
       <description>Developed By: VIMS_CCRM
 Summary: The Sea-Level Report cards provide interactive graphs and narrative descriptions of sea-level trends and projections for 32 coastal locations across the U.</description>
+    </item>
+    
+    <item>
+      <title>Shoreline Management Self-Guided Decision Tools</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool18.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool18.0/</guid>
+      <description>Developed By: VIMS_CCRM
+Summary: The CCRM Shoreline Management Self-Guided Decision Tools guide users through a series of questions about shoreline conditions to provide a shoreline best management practice recommendation.</description>
+    </item>
+    
+    <item>
+      <title>United States Drought Monitor</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool44.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool44.0/</guid>
+      <description>Developed By: NDMC, University of Nebraska-Lincoln, USDA, and NOAA
+Summary: The United States Drought Monitor (USDM) is an interactive tool that allows users to view drought conditions at a regional scale within the United States and territories.</description>
     </item>
     
   </channel>

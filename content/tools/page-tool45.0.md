@@ -1,10 +1,10 @@
 ---
 title: "DC Department of Energy and Environment Data & Maps"
-description: "DC Department of Energy and Environment Data & Maps"
-date: 2022-02-08T14:50:21-0500
+description: "Provides information on how DC is tackling environmental and climate issues"
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Real-time/Current", "Climate projections", "Jursidiction based", "City level", "Website", "Program", "Dataset", "Downloadable data", "Downloadable results"]
+tags: ["Real-time/Current", "Climate projections", "Jursidiction based", "City level", "Website", "Program", "Dataset", "Downloadable data", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_45.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_45.0_ScreenCapture-1.png
 ---
@@ -19,7 +19,6 @@ __**Geographic Coverage**__
 - Washington, DC
 
 __**Tags**__
--  Free
 -  Real-time/Current
 -  Climate projections
 -  Jursidiction based
@@ -31,7 +30,7 @@ __**Tags**__
 -  Downloadable results
 
 __**Cost**__
-- Unknown
+- Free
 
 __**Skill Level**__
-- Unknown
+- Low

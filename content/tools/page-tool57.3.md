@@ -1,10 +1,10 @@
 ---
-title: "i-Tree Canopy"
+title: "i-Tree: Canopy"
 description: "Calculates canopy cover for the designated area and assigns benefits to that calculation"
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:46-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Application", "Interactive interface/map", "Downloadable results"]
+tags: ["Application", "Interactive interface/map", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_57.3_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_57.3_ScreenCapture-1.png
 ---
@@ -18,7 +18,6 @@ __**Geographic Coverage**__
 - Contiguous United States
 
 __**Tags**__
--  Free
 -  Application
 -  Interactive interface/map
 -  Downloadable results

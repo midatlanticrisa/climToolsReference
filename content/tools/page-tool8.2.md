@@ -1,10 +1,10 @@
 ---
-title: "Case Study and Information Exchange"
+title: "Creating Resilient Water Utilities: Case Study and Information Exchange"
 description: "Communities submit and share their experiences with implementing climate adaptation measures."
-date: 2022-02-08T14:50:20-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Location specific", "Application", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Downloadable results"]
+tags: ["Location specific", "Application", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_8.2_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_8.2_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - Contiguous United States
 
 __**Tags**__
--  Free
 -  Location specific
 -  Application
 -  Interactive interface/map

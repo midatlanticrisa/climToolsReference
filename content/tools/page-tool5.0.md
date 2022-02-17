@@ -1,10 +1,10 @@
 ---
 title: "Resilience Adaptation Feasibility Tool (The RAFT)"
 description: "Provides independent, objective assessment of locality resilience in coastal Virginia."
-date: 2022-02-08T14:50:20-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Restrictions apply", "Real-time/Current", "Climate projections", "Jursidiction based", "City level", "County level", "Program", "Compare scenarios/locations", "Solutions", "Downloadable results"]
+tags: ["Restrictions apply", "Real-time/Current", "Climate projections", "Jursidiction based", "City level", "County level", "Program", "Compare scenarios/locations", "Solutions", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_5.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_5.0_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - Virginia
 
 __**Tags**__
--  Free
 -  Restrictions apply
 -  Real-time/Current
 -  Climate projections

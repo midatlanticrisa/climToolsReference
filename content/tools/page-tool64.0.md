@@ -1,10 +1,10 @@
 ---
 title: "Bay Footprint Calculator"
 description: "Calculates individual nitrogen contribution to the Chesapeake Bay."
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:46-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Registration required", "Location specific", "Application", "Interactive interface/map", "Solutions", "Downloadable results"]
+tags: ["Registration required", "Location specific", "Application", "Interactive interface/map", "Solutions", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_64.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_64.0_ScreenCapture-1.png
 ---
@@ -22,7 +22,6 @@ __**Geographic Coverage**__
 - Virginia; Maryland; Delaware; New York; Pennsylvania; West Virginia; District of Columbia
 
 __**Tags**__
--  Free
 -  Registration required
 -  Location specific
 -  Application

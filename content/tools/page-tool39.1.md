@@ -1,10 +1,10 @@
 ---
-title: "Climate Smart Farming Climate Change in Your County"
+title: "Climate Smart Farming: Climate Change in Your County"
 description: "Visualize climate impacts via precipitation and temperature changes since 1950 in the Northeast as well as future changes"
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Historical ", "Climate projections", "Jursidiction based", "County level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
+tags: ["Historical ", "Climate projections", "Jursidiction based", "County level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_39.1_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_39.1_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - West Virginia; Maryland; Delaware; Pennsylvania; New York; Maine; Massachusetts; Connecticut; Vermont; New Hampshire; Rhode Island; New Jersey
 
 __**Tags**__
--  Free
 -  Historical 
 -  Climate projections
 -  Jursidiction based

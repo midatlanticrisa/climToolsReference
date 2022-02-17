@@ -1,10 +1,10 @@
 ---
 title: "NOAA State Climate Summaries"
 description: "Summaries for each state regarding historical climate change and future climate projections"
-date: 2022-02-08T14:50:20-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Historical ", "Climate projections", "Jursidiction based", "State level", "Website", "Downloadable results"]
+tags: ["Historical ", "Climate projections", "Jursidiction based", "State level", "Website", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_14.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_14.0_ScreenCapture-1.png
 ---
@@ -21,7 +21,6 @@ __**Geographic Coverage**__
 - Contiguous United States
 
 __**Tags**__
--  Free
 -  Historical 
 -  Climate projections
 -  Jursidiction based

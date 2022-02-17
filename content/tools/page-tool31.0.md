@@ -1,10 +1,10 @@
 ---
 title: "Drought Management Database"
-description: " Resource database related to drought mitigation strategies"
-date: 2022-02-08T14:50:21-0500
+description: "Resource database related to drought mitigation strategies"
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Location specific", "Program", "Solutions"]
+tags: ["Location specific", "Program", "Solutions"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_31.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_31.0_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - Applicable Anywhere
 
 __**Tags**__
--  Free
 -  Location specific
 -  Program
 -  Solutions

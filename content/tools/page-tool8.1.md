@@ -1,10 +1,10 @@
 ---
-title: "CREAT Risk Assessment Application for Water Utilities"
+title: "Creating Resilient Water Utilities: Climate Resilience Evaluation and Awareness Tool Risk Assessment Application for Water Utilities"
 description: "Risk assessment application for water utilities"
-date: 2022-02-08T14:50:20-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Registration required", "Historical ", "Climate projections", "Application", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Cost estimates", "Downloadable results"]
+tags: ["Registration required", "Historical ", "Climate projections", "Application", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Cost estimates", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_8.1_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_8.1_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - Contiguous United States
 
 __**Tags**__
--  Free
 -  Registration required
 -  Historical 
 -  Climate projections

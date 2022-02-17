@@ -6,11 +6,11 @@
     <description>Recent content in Registration required on Climate Tools</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Feb 2022 14:50:21 -0500</lastBuildDate><atom:link href="https://cbtooltest.marisa.psu.edu/tags/registration-required/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Feb 2022 16:57:46 -0500</lastBuildDate><atom:link href="https://cbtooltest.marisa.psu.edu/tags/registration-required/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adaptation Workbook (Climate Change Response Framework)</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool61.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool61.0/</guid>
       <description>Developed By: Northern Institute for Applied Climate Science, and USDA_USFS</description>
@@ -19,7 +19,7 @@
     <item>
       <title>Bay Footprint Calculator</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool64.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool64.0/</guid>
       <description>Developed By: CBF, and UVA
@@ -29,7 +29,7 @@ Summary: The Bay Footprint Calculator is an easy-to-use tool that estimates your
     <item>
       <title>Chesapeake Assessment Scenario Tool (CAST)</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool47.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool47.0/</guid>
       <description>Developed By: CBP
@@ -37,9 +37,19 @@ Summary: The Chesapeake Assessment Scenario Tool (CAST) is a web-based nitrogen,
     </item>
     
     <item>
+      <title>Creating Resilient Water Utilities: Climate Resilience Evaluation and Awareness Tool Risk Assessment Application for Water Utilities</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.1/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.1/</guid>
+      <description>Developed By: EPA
+Summary: Part of the Creating Resilient Water Utilities (CRWU) initiative, the Climate Resilience Evaluation and Awareness Tool (CREAT) 3.</description>
+    </item>
+    
+    <item>
       <title>FieldWatch</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool24.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool24.0/</guid>
       <description>Developed By: Fieldwatch, and Purdue Research Foundation
@@ -49,7 +59,7 @@ Summary: FieldWatch is a community mapping tool that allows beekeepers, crop gro
     <item>
       <title>Northeast Conservation Planning Atlas</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool43.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool43.0/</guid>
       <description>Developed By: Conservation Biology Institute
@@ -59,21 +69,11 @@ Summary: The Northeast Conservation Planning Atlas (CPA) is an online mapping pl
     <item>
       <title>Wetbud: Wetland Water Budget Modeling Software</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool21.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool21.0/</guid>
       <description>Developed By: Wetland Studies and Solutions, Inc.
 Summary: The Wetbud: Wetland Water Budget Modeling Software is a software application that calculates a water budget for a created or existing wetland.</description>
-    </item>
-    
-    <item>
-      <title>CREAT Risk Assessment Application for Water Utilities</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool8.1/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool8.1/</guid>
-      <description>Developed By: EPA
-Summary: Part of the Creating Resilient Water Utilities (CRWU) initiative, the Climate Resilience Evaluation and Awareness Tool (CREAT) 3.</description>
     </item>
     
   </channel>

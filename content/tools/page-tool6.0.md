@@ -2,10 +2,10 @@
 title: "Maryland Coastal Atlas"
 description: "Create maps and graphs presenting coastal and ocean data in Maryland
 "
-date: 2022-02-08T14:50:20-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Real-time/Current", "Climate projections", "Jursidiction based", "Grid based", "Location specific", "State level", "Watershed level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
+tags: ["Real-time/Current", "Climate projections", "Jursidiction based", "Grid based", "Location specific", "State level", "Watershed level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_6.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_6.0_ScreenCapture-1.png
 ---
@@ -21,7 +21,6 @@ __**Geographic Coverage**__
 - Maryland
 
 __**Tags**__
--  Free
 -  Real-time/Current
 -  Climate projections
 -  Jursidiction based

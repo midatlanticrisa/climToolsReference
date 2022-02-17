@@ -1,38 +1,36 @@
 ---
-title: "MARISA Climate Data Portal: Interactive Map for the MARISA Region"
-description: "interactive map with current climate data"
-date: 2022-02-08T14:50:20-0500
+title: "MARISA Climate Data Portal: Climate Data for the Mid-Atlantic Region"
+description: "Climate data"
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Real-time/Current", "Jursidiction based", "Grid based", "Location specific", "County level", "Regional level", "Website", "Interactive interface/map", "Subdaily"]
+tags: ["Historical ", "Grid based", "Regional level", "Dataset", "Downloadable data", "Daily"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_13.1_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_13.1_ScreenCapture-1.png
 ---
 Developed By: NOAA, and MARISA
 
-**Summary:** The Interactive Map for the MARISA region is an interactive web map that enables users to view real time climate data for the MARISA region.
+**Summary:** Climate Data for the Mid-Atlantic Region contains a list and overview of climate data products in the region. 
 
-This interactive map includes a variety of layers that allows users to view weather observations, stream discharge, buoy observations, and tide gauge water levels. Users may also select U.S. climate divisions to view recent historical trends in temperature and precipitation. Additional weather information provided by this tool include weather radar and a drought monitor. Although this mapping tool is centered on the Mid-Atlantic region, users may zoom out to view the entire contiguous United States. 
+Available data include an experimental precipitation dataset developed by MARISA researchers (ChexWX) as well as a variety of additional gridded temperature and precipitation data including: Daymet, Livneh, METDATA, nClimGrid, and PRISM.  Theses datasets are useful for looking at historical climate data, but do not include data for current or future climate projections. This tool is intended for advanced users with experience working with gridded data.
 
-__**Get This Tool:**__ https://www.marisa.psu.edu/map/
+
+
+__**Get This Tool:**__ https://www.marisa.psu.edu/data/
 
 __**Geographic Coverage**__
-- New York; Pennsylvania; New Jersey; Delaware; Maryland; Virginia; West Virginia; Ohio
+- Virginia; West Virginia; Pennsylvania; Delaware; Maryland; New Jersey; North Carolina; New York
 
 __**Tags**__
--  Free
--  Real-time/Current
--  Jursidiction based
+-  Historical 
 -  Grid based
--  Location specific
--  County level
 -  Regional level
--  Website
--  Interactive interface/map
--  Subdaily
+-  Dataset
+-  Downloadable data
+-  Daily
 
 __**Cost**__
 - Free
 
 __**Skill Level**__
-- Low
+- High

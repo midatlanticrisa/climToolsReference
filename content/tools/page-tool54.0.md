@@ -1,10 +1,10 @@
 ---
 title: "FEMA Data Visualizations of Disaster Declarations and Grants"
 description: "Visualize FEMA data regarding natural disaster occurrence, flood frequency, and housing assistance at the national, state, county, and tribal level."
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:46-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Historical ", "Jursidiction based", "County level", "State level", "Website", "Interactive interface/map", "Cost estimates", "Downloadable data", "Downloadable results"]
+tags: ["Historical ", "Jursidiction based", "County level", "State level", "Website", "Interactive interface/map", "Cost estimates", "Downloadable data", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_54.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_54.0_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - Contiguous United States
 
 __**Tags**__
--  Free
 -  Historical 
 -  Jursidiction based
 -  County level

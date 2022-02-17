@@ -1,10 +1,9 @@
 ---
 title: "Climate Smart Farming"
-description: "Climate Smart Farming"
-date: 2022-02-08T14:50:21-0500
+description: "A toolkit designed to help farmers in the Northeast US improve their productivity and resiliency in the face climate change"
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Regional level", "Program"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_39.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_39.0_ScreenCapture-1.png
 ---
@@ -17,13 +16,16 @@ __**Get This Tool:**__ http://climatesmartfarming.org/tools/
 __**Geographic Coverage**__
 - Maine; New Hampshire; Vermont; New York; Massachusetts; Connecticut; Rhode Island; Pennsylvania; New Jersey; Delaware; Maryland; District of Columbia; Virginia; West Virginia
 
-__**Tags**__
--  Free
--  Regional level
--  Program
+__**Available Tools**__
+-  [Climate Smart Farming: Climate Change in Your County](https://cbtooltest.marisa.psu.edu/tools/page-tool39.1)
+-  [Climate Smart Farming: Growing Degree Day Calculator](https://cbtooltest.marisa.psu.edu/tools/page-tool39.2)
+-  [Climate Smart Farming: Water Deficit Calculator](https://cbtooltest.marisa.psu.edu/tools/page-tool39.3)
+-  [Climate Smart Farming: Winter Cover Crop Planting Scheduler](https://cbtooltest.marisa.psu.edu/tools/page-tool39.4)
+-  [Climate Smart Farming: Apple Stage / Freeze Damage Probability](https://cbtooltest.marisa.psu.edu/tools/page-tool39.5)
+-  [Climate Smart Farming: Grape Hardiness & Freeze Risk](https://cbtooltest.marisa.psu.edu/tools/page-tool39.6)
 
 __**Cost**__
-- Unknown
+- Free
 
 __**Skill Level**__
-- Unknown
+- Varies

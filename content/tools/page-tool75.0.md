@@ -1,10 +1,10 @@
 ---
 title: "OSPREY Public"
 description: "Report current meteorological and infrastructure (electricity, traffic, shelters) conditions to aid emergency response planning for both citizens and professionals."
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:46-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Real-time/Current", "Location specific", "State level", "Application", "Interactive interface/map"]
+tags: ["Real-time/Current", "Location specific", "State level", "Application", "Interactive interface/map"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_75.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_75.0_ScreenCapture-1.png
 ---
@@ -22,7 +22,6 @@ __**Geographic Coverage**__
 - Maryland
 
 __**Tags**__
--  Free
 -  Real-time/Current
 -  Location specific
 -  State level

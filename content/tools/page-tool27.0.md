@@ -1,10 +1,10 @@
 ---
 title: "Climate Impact Map"
 description: "Interactive map showing past and future temperature based different climate models"
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Historical ", "Climate projections", "Jursidiction based", "County level", "State level", "Website", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data"]
+tags: ["Historical ", "Climate projections", "Jursidiction based", "County level", "State level", "Website", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_27.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_27.0_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - Contiguous United States
 
 __**Tags**__
--  Free
 -  Historical 
 -  Climate projections
 -  Jursidiction based

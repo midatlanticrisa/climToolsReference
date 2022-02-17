@@ -1,10 +1,10 @@
 ---
 title: "Earth::Global wind patterns"
 description: "A fantastic visualization of climate, atmospheric, and oceanic data for educational purposes."
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:46-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Historical ", "Real-time/Current", "Forecast", "Grid based", "Application", "Interactive interface/map", "Weekly", "Daily", "Subdaily"]
+tags: ["Historical ", "Real-time/Current", "Forecast", "Grid based", "Application", "Interactive interface/map", "Weekly", "Daily", "Subdaily"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_76.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_76.0_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - Applicable Anywhere
 
 __**Tags**__
--  Free
 -  Historical 
 -  Real-time/Current
 -  Forecast

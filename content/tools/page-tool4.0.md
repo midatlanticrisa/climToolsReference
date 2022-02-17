@@ -1,10 +1,10 @@
 ---
 title: "Virginia Wetland Condition Assessment Tool (WetCAT)"
 description: "Method of assessing wetland's ability to perform ecosystem services."
-date: 2022-02-08T14:50:20-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Jursidiction based", "Grid based", "State level", "Watershed level", "Regional level", "Application", "Interactive interface/map", "Downloadable results", "Quarterly", "Weekly"]
+tags: ["Jursidiction based", "Grid based", "State level", "Watershed level", "Regional level", "Application", "Interactive interface/map", "Downloadable results", "Quarterly", "Weekly"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_4.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_4.0_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - Virginia
 
 __**Tags**__
--  Free
 -  Jursidiction based
 -  Grid based
 -  State level

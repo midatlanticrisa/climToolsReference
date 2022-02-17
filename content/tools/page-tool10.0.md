@@ -1,10 +1,10 @@
 ---
 title: "Eastern Virginia Coastal Resilience (ESVA Coastal Resilience)"
 description: "Decision support tool to assess coastal resilience in Eastern Virginia "
-date: 2022-02-08T14:50:20-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Real-time/Current", "Climate projections", "Grid based", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
+tags: ["Real-time/Current", "Climate projections", "Grid based", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_10.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_10.0_ScreenCapture-1.png
 ---
@@ -22,7 +22,6 @@ __**Geographic Coverage**__
 - Accomack County, VA; Northampton, VA; Assateague Island, VA; Wallops Island, VA; Assawoman Island, VA; Metompkin Island, VA; Cedar Island, VA; Parramore Island, VA; Hog Island, VA; Cobb Island, VA; Wreck Island, VA; Ship Shoal Island, VA; Myrtle Island, VA; Smith Island, VA; Fishermans Island, VA
 
 __**Tags**__
--  Free
 -  Real-time/Current
 -  Climate projections
 -  Grid based

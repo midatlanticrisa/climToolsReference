@@ -1,10 +1,10 @@
 ---
 title: "Riparian Restoration Decision Support Tool"
 description: "Guide restoration efforts in identifying high priority areas by generating different scenarios for riparian habitats in the Eastern U.S."
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:46-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Historical ", "Real-time/Current", "Grid based", "Application", "Interactive interface/map", "Downloadable data", "Downloadable results"]
+tags: ["Historical ", "Real-time/Current", "Grid based", "Application", "Interactive interface/map", "Downloadable data", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_52.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_52.0_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - Maine; Vermont; New Hampshire; Massachusetts; Connecticut; Rhode Island; New York; Pennsylvania; New Jersey; Maryland; West Virginia; Virginia; North Carolina; NA
 
 __**Tags**__
--  Free
 -  Historical 
 -  Real-time/Current
 -  Grid based

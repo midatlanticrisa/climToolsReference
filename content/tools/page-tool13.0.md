@@ -1,37 +1,28 @@
 ---
-title: "MARISA Climate Data Portal: Climate Data for the Mid-Atlantic Region"
-description: "climate data downloads "
-date: 2022-02-08T14:50:20-0500
+title: "MARISA Climate Data Portal"
+description: "Collection of tools and information on climate change for individuals, local programs, and agencies in the Mid-Atlantic region"
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Historical ", "Grid based", "Regional level", "Dataset", "Downloadable data", "Daily"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_13.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_13.0_ScreenCapture-1.png
 ---
 Developed By: NOAA, and MARISA
 
-**Summary:** The MARISA Climate Data Portal is a data download center that provides climate data from a variety of sources for the Chesapeake Bay region. 
+**Summary:** The Climate Data Portal for the NOAA Mid-Atlantic Regional Integrated Sciences and Assessments (MARISA) team is a data center for the Chesapeake Bay Watershed and broader Mid-Atlantic region. This site is constantly being updated with new weather, climate, and natural hazards data sources and tools.
 
-Available data include an experimental precipitation dataset developed by MARISA researchers (ChexWX) as well as a variety of additional gridded temperature and precipitation data including: Daymet, Livneh, METDATA, nClimGrid, and PRISM.  Theses datasets are useful for looking at historical climate data, but do not include data for current or future climate projections. This tool is intended for advanced users with experience working with gridded data. Users with less technical experience are directed to the Interactive Map for the MARISA Region. 
-
-
-
-__**Get This Tool:**__ https://www.marisa.psu.edu/data/
+__**Get This Tool:**__ https://www.marisa.psu.edu/
 
 __**Geographic Coverage**__
-- Virginia; West Virginia; Pennsylvania; Delaware; Maryland; New Jersey; North Carolina; New York
+- District of Columbia; Delaware; Maryland; North Carolina; New Jersey; New York; Ohio; Pennsylvania; Virginia; West Virginia
 
-__**Tags**__
--  Free
--  Historical 
--  Grid based
--  Regional level
--  Dataset
--  Downloadable data
--  Daily
+__**Available Tools**__
+-  [MARISA Climate Data Portal: Climate Data for the Mid-Atlantic Region](https://cbtooltest.marisa.psu.edu/tools/page-tool13.1)
+-  [MARISA Climate Data Portal: Interactive Map for the MARISA Region](https://cbtooltest.marisa.psu.edu/tools/page-tool13.2)
+-  [MARISA Climate Data Portal: Community Climate Outlooks](https://cbtooltest.marisa.psu.edu/tools/page-tool13.3)
 
 __**Cost**__
 - Free
 
 __**Skill Level**__
-- High
+- Varies

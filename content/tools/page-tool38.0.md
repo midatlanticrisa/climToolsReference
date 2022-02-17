@@ -1,10 +1,10 @@
 ---
 title: "Submerged Aquatic Vegetation (SAV) in the Chesapeake Bay"
 description: "Monitor SAV growth in the Chesapeake Bay "
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Historical ", "Location specific", "Regional level", "Program", "Interactive interface/map", "Downloadable data", "Downloadable results", "Yearly"]
+tags: ["Historical ", "Location specific", "Regional level", "Program", "Interactive interface/map", "Downloadable data", "Downloadable results", "Yearly"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_38.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_38.0_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - District of Columbia; Delaware; Maryland; Virginia
 
 __**Tags**__
--  Free
 -  Historical 
 -  Location specific
 -  Regional level

@@ -1,10 +1,10 @@
 ---
-title: "AdaptVA Sea Level Rise Projection Viewer"
+title: "AdaptVA: Sea Level Rise Projection Viewer"
 description: "Observed and projected sea level rise from 1990 to 2100"
-date: 2022-02-08T14:50:20-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Climate projections", "Grid based", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations"]
+tags: ["Climate projections", "Grid based", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_1.1_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_1.1_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - Virginia
 
 __**Tags**__
--  Free
 -  Climate projections
 -  Grid based
 -  Regional level

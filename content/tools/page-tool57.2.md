@@ -1,10 +1,10 @@
 ---
-title: "i-Tree Design"
+title: "i-Tree: Design"
 description: "Users assess the current benefits of trees. Option to look at data for the current year, in 100 years, and then as combined benefits over the next 10 years."
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:46-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Real-time/Current", "Forecast", "Location specific", "Application", "Interactive interface/map", "Cost estimates", "Downloadable results"]
+tags: ["Real-time/Current", "Forecast", "Location specific", "Application", "Interactive interface/map", "Cost estimates", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_57.2_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_57.2_ScreenCapture-1.png
 ---
@@ -18,7 +18,6 @@ __**Geographic Coverage**__
 - Contiguous United States
 
 __**Tags**__
--  Free
 -  Real-time/Current
 -  Forecast
 -  Location specific
@@ -31,4 +30,4 @@ __**Cost**__
 - Free
 
 __**Skill Level**__
-- Unknown
+- Low

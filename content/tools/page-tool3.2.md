@@ -1,10 +1,10 @@
 ---
-title: "Delaware Bay Operational Forecast System (DBOFS)"
+title: "Operational Forecast System: Delaware Bay Operational Forecast System (DBOFS)"
 description: "DBOFS provides real time information about water levels, wind, water temperature, salinity, and currents."
-date: 2022-02-08T14:50:20-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Real-time/Current", "Forecast", "Grid based", "Location specific", "Regional level", "Website", "Interactive interface/map", "Downloadable data", "Subdaily"]
+tags: ["Real-time/Current", "Forecast", "Grid based", "Location specific", "Regional level", "Website", "Interactive interface/map", "Downloadable data", "Subdaily"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_3.2_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_3.2_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - Delaware
 
 __**Tags**__
--  Free
 -  Real-time/Current
 -  Forecast
 -  Grid based

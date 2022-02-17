@@ -1,10 +1,10 @@
 ---
-title: "Climate Smart Farming (CSF) Water Deficit Calculator"
+title: "Climate Smart Farming: Water Deficit Calculator"
 description: "Create charts demonstrating changing water deficits based on soil capacity, crop type, date of planting or budbreak, and irrigation"
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Historical ", "Real-time/Current", "Forecast", "Location specific", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
+tags: ["Historical ", "Real-time/Current", "Forecast", "Location specific", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_39.3_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_39.3_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - Maine; New Hampshire; Vermont; New York; Massachusetts; Connecticut; Rhode Island; Pennsylvania; New Jersey; Delaware; Maryland; District of Columbia; Virginia; West Virginia; Ohio; Kentucky
 
 __**Tags**__
--  Free
 -  Historical 
 -  Real-time/Current
 -  Forecast

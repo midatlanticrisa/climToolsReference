@@ -1,10 +1,10 @@
 ---
 title: "Sea Level Report Cards"
 description: "Illustrate trends and projected sea level rise"
-date: 2022-02-08T14:50:20-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Historical ", "Climate projections", "Location specific", "Website", "Downloadable results"]
+tags: ["Historical ", "Climate projections", "Location specific", "Website", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_16.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_16.0_ScreenCapture-1.png
 ---
@@ -21,7 +21,6 @@ __**Geographic Coverage**__
 - Contiguous United States
 
 __**Tags**__
--  Free
 -  Historical 
 -  Climate projections
 -  Location specific

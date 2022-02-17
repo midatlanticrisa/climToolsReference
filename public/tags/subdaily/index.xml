@@ -6,21 +6,11 @@
     <description>Recent content in Subdaily on Climate Tools</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Feb 2022 14:50:21 -0500</lastBuildDate><atom:link href="https://cbtooltest.marisa.psu.edu/tags/subdaily/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Chesapeake Bay Interpretive Buoy System (CBIBS)</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool48.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool48.0/</guid>
-      <description>Developed By: NOAA
-Summary: The Chesapeake Bay Interpretive Buoys System (CBIBS) is a network of ocean observing platforms that provide real-time access to meteorological, oceanographic and water quality data throughout the Chesapeake Bay.</description>
-    </item>
-    
+    <lastBuildDate>Wed, 16 Feb 2022 16:57:46 -0500</lastBuildDate><atom:link href="https://cbtooltest.marisa.psu.edu/tags/subdaily/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Delaware Air Quality Forecast</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool74.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool74.0/</guid>
       <description>Developed By: DDNREC
@@ -30,7 +20,7 @@ Summary: The Delaware Air Quality Forecast is a user-friendly forecast that prov
     <item>
       <title>Earth::Global wind patterns</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool76.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:21 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool76.0/</guid>
       <description>Developed By: Cameron Beccario
@@ -38,9 +28,19 @@ Summary: This real-time visualization of global environmental conditions is a gr
     </item>
     
     <item>
-      <title>AdaptVA Tidewatch Map</title>
+      <title>USGS National Water Dashboard</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool55.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:46 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool55.0/</guid>
+      <description>Developed By: USGS
+Summary: The National Water Dashboard is a interactive map that shows reail-time water data colleged at USGS observation stations along with weather-related data from other public sources.</description>
+    </item>
+    
+    <item>
+      <title>AdaptVA: Tidewatch Map</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool1.2/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool1.2/</guid>
       <description>Developed By: VIMS_CCRM
@@ -48,9 +48,29 @@ Summary: The AdaptVA Tidewatch Map uses an interactive map to display coastal fl
     </item>
     
     <item>
-      <title>Chesapeake Bay Operational Forecast System (CBOFS)</title>
+      <title>Chesapeake Bay Interpretive Buoy System (CBIBS)</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool48.0/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool48.0/</guid>
+      <description>Developed By: NOAA
+Summary: The Chesapeake Bay Interpretive Buoys System (CBIBS) is a network of ocean observing platforms that provide real-time access to meteorological, oceanographic and water quality data throughout the Chesapeake Bay.</description>
+    </item>
+    
+    <item>
+      <title>MARISA Climate Data Portal: Interactive Map for the MARISA Region</title>
+      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool13.2/</link>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
+      
+      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool13.2/</guid>
+      <description>Developed By: NOAA, and MARISA
+Summary: The Interactive Map for the MARISA region is an interactive web map that enables users to view real time climate data for the MARISA region.</description>
+    </item>
+    
+    <item>
+      <title>Operational Forecast System: Chesapeake Bay Operational Forecast System (CBOFS)</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool3.1/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool3.1/</guid>
       <description>Developed By: NOAA
@@ -58,33 +78,13 @@ Summary: The Chesapeake Bay Operational Forecast System (CBOFS) tool is a data v
     </item>
     
     <item>
-      <title>Delaware Bay Operational Forecast System (DBOFS)</title>
+      <title>Operational Forecast System: Delaware Bay Operational Forecast System (DBOFS)</title>
       <link>https://cbtooltest.marisa.psu.edu/tools/page-tool3.2/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
+      <pubDate>Wed, 16 Feb 2022 16:57:45 -0500</pubDate>
       
       <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool3.2/</guid>
       <description>Developed By: NOAA, and Rutgers University_Regional Ocean Modeling System
 Summary: The Delaware Bay Operational Forecast System (DBOFS) tool is a data viewer that provides real time forecasts of oceanographic conditions in the Delaware Bay.</description>
-    </item>
-    
-    <item>
-      <title>MARISA Climate Data Portal: Interactive Map for the MARISA Region</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool13.1/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool13.1/</guid>
-      <description>Developed By: NOAA, and MARISA
-Summary: The Interactive Map for the MARISA region is an interactive web map that enables users to view real time climate data for the MARISA region.</description>
-    </item>
-    
-    <item>
-      <title>Operational Forecast System</title>
-      <link>https://cbtooltest.marisa.psu.edu/tools/page-tool3.0/</link>
-      <pubDate>Tue, 08 Feb 2022 14:50:20 -0500</pubDate>
-      
-      <guid>https://cbtooltest.marisa.psu.edu/tools/page-tool3.0/</guid>
-      <description>Developed By: NOAA
-Summary: Tool including the Chesapeake Bay Forecast System and Delaware Bay Forecast System</description>
     </item>
     
   </channel>

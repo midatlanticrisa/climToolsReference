@@ -1,10 +1,10 @@
 ---
 title: "USDA Plant Hardiness Zone Map"
 description: "National, regional, and state maps detailing plant hardiness zones"
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Real-time/Current", "Grid based", "Application", "Interactive interface/map"]
+tags: ["Real-time/Current", "Grid based", "Application", "Interactive interface/map"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_36.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_36.0_ScreenCapture-1.png
 ---
@@ -21,7 +21,6 @@ __**Geographic Coverage**__
 - Contiguous United States
 
 __**Tags**__
--  Free
 -  Real-time/Current
 -  Grid based
 -  Application

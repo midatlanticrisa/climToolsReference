@@ -1,10 +1,10 @@
 ---
 title: "Water Quality Assessment and TMDLs"
 description: "Provide water quality assessment and TMDL information. Show the spatial relationship of how each intersect"
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Historical ", "Real-time/Current", "State level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data", "Downloadable results"]
+tags: ["Historical ", "Real-time/Current", "State level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_50.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_50.0_ScreenCapture-1.png
 ---
@@ -24,7 +24,6 @@ __**Geographic Coverage**__
 - Maryland
 
 __**Tags**__
--  Free
 -  Historical 
 -  Real-time/Current
 -  State level

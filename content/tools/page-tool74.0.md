@@ -1,10 +1,10 @@
 ---
 title: "Delaware Air Quality Forecast"
 description: "Report the current conditions and next day forecast of Delaware Air Quality."
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:46-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Historical ", "Real-time/Current", "Forecast", "Grid based", "Location specific", "City level", "Application", "Interactive interface/map", "Subdaily"]
+tags: ["Historical ", "Real-time/Current", "Forecast", "Grid based", "Location specific", "City level", "Application", "Interactive interface/map", "Subdaily"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_74.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_74.0_ScreenCapture-1.png
 ---
@@ -22,7 +22,6 @@ __**Geographic Coverage**__
 - Delaware
 
 __**Tags**__
--  Free
 -  Historical 
 -  Real-time/Current
 -  Forecast

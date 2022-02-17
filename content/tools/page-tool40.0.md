@@ -1,10 +1,10 @@
 ---
 title: "Mid-Atlantic Ocean Data Tool"
 description: "The Mid-Atlantic Ocean Data Portal is a resource center consisting of an interactive map, data layers, case studies, and collaborative tools that allows users to explore and share visualizations of coastal and social resources between New York and Virginia. "
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Real-time/Current", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data", "Downloadable results"]
+tags: ["Real-time/Current", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_40.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_40.0_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - New York; New Jersey; Delaware; Maryland; Virginia
 
 __**Tags**__
--  Free
 -  Real-time/Current
 -  Regional level
 -  Application

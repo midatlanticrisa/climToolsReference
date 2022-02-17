@@ -1,10 +1,10 @@
 ---
 title: "Chesapeake Assessment Scenario Tool (CAST)"
 description: "CAST provides estimates of load reductions, allows users to understand which BMPs provide the greatest load reduction benefit, the extent to which these BMPs can be implemented, and the cost of these BMPs."
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Registration required", "Program", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Cost estimates", "Downloadable data", "Downloadable results"]
+tags: ["Registration required", "Program", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Cost estimates", "Downloadable data", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_47.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_47.0_ScreenCapture-1.png
 ---
@@ -24,7 +24,6 @@ __**Geographic Coverage**__
 - District of Columbia; Delaware; Maryland; New York; Pennsylvania; Virginia; NA
 
 __**Tags**__
--  Free
 -  Registration required
 -  Program
 -  Interactive interface/map

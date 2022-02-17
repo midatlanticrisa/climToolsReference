@@ -1,10 +1,10 @@
 ---
 title: "Headwaters Economics Neighborhoods at Risk"
 description: "Assessment of neighborhood risk based on census tracts and FEMA flood maps"
-date: 2022-02-08T14:50:21-0500
+date: 2022-02-16T16:57:45-0500
 pubtype: "Tool"
 featured: true
-tags: ["Free", "Climate projections", "Jursidiction based", "City level", "County level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
+tags: ["Climate projections", "Jursidiction based", "City level", "County level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_23.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_23.0_ScreenCapture-1.png
 ---
@@ -20,7 +20,6 @@ __**Geographic Coverage**__
 - Buffalo, NY; Lancaster, PA; Richmond City, VA; Gaithersburg, MD; Blaskburg, VA
 
 __**Tags**__
--  Free
 -  Climate projections
 -  Jursidiction based
 -  City level
