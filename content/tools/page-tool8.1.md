@@ -1,7 +1,7 @@
 ---
 title: "Creating Resilient Water Utilities: Climate Resilience Evaluation and Awareness Tool Risk Assessment Application for Water Utilities"
 description: "Risk assessment application for water utilities"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Registration required", "Historical ", "Climate projections", "Application", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Cost estimates", "Downloadable results"]

@@ -10,6 +10,7 @@ library(openxlsx)
 ##webshot::install_phantomjs()
 library(dplyr)
 library(stringr)
+library(tidycensus)
 
 #/Volumes/GoogleDrive/Shared drives/MARISA/Coastal Climate Extension Pilot/Tool Inventory/Tool Screenshots_resized_156_250/TOOLID_1.0_ScreenCapture-1.png
 ##find data file, assumed to be on computer
@@ -37,7 +38,7 @@ templateCollectionName <- "collectionTemplate.md"
 templatePageName <- "pageTemplate.md"
 templateIndex <- "templateIndex.md"
 searchCodePage <- "searchTemplate.html"
-stcntyFile <- paste0(dataDir, "MARISAstateFIPS.csv")
+stcntyFile <- paste0(dataDir, "MARISAstateFIPSUpdate.csv")
 statefips = read.csv(paste0(dataDir, "stateFIPS.csv"))
 
 ##line break character
@@ -50,7 +51,7 @@ tab <- "  "
 # clean_website_tools_and_tags <- FALSE: NO
 # clean_website_tools_and_tags <- TRUE: YES
 ##########################################################################
-clean_website_tools_and_tags <- TRUE
+clean_website_tools_and_tags <- FALSE #TRUE
 
 # if true remove the files/subdirectories
 if(clean_website_tools_and_tags){
@@ -320,8 +321,10 @@ close(conFile) # Make sure to close the connection to prevent errors or warnings
 ##########################################################################
 ##create the tool search object jscript for geographic scope
 ##state
-createRecs <- paste('{"geoScopeST":"', searchGeoScope$toolState, '","name":"', 
-                    searchGeoScope$toolName, '","link":"', searchGeoScope$toolLink, 
+state.df <- cbind.data.frame(searchGeoScope$toolState, searchGeoScope$toolName, searchGeoScope$toolLink)
+state.unq <- unique(state.df) # Keep only the unique ones so we don't have duplicates
+createRecs <- paste('{"geoScopeST":"', state.unq$'searchGeoScope$toolState', '","name":"', 
+                    state.unq$'searchGeoScope$toolName', '","link":"', state.unq$'searchGeoScope$toolLink', 
                     '"}', sep="", collapse=",\n")
 geoScopeData <- paste0('{', el, '"items":[', el, createRecs, el, ']', el, '}')
 writeFile <- paste0(discovDir, "searchGeoScope_state.json")

@@ -1,7 +1,7 @@
 ---
 title: "Climate Smart Farming: Water Deficit Calculator"
 description: "Create charts demonstrating changing water deficits based on soil capacity, crop type, date of planting or budbreak, and irrigation"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Real-time/Current", "Forecast", "Location specific", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
@@ -17,7 +17,7 @@ The Water Deficit Calculator provides site and crop specific estimates of local 
 __**Get This Tool:**__ http://climatesmartfarming.org/tools/csf-water-deficit-calculator/
 
 __**Geographic Coverage**__
-- Maine; New Hampshire; Vermont; New York; Massachusetts; Connecticut; Rhode Island; Pennsylvania; New Jersey; Delaware; Maryland; District of Columbia; Virginia; West Virginia; Ohio; Kentucky
+- Delaware; District of Columbia; Maryland; New Jersey; New York; Pennsylvania; Virginia
 
 __**Tags**__
 -  Historical 

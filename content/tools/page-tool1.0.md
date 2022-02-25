@@ -1,7 +1,7 @@
 ---
 title: "AdaptVA"
 description: "Collection of tools and information on climate change adaptation for individuals, local programs, and agencies in Virginia"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_1.0_ScreenCapture-1.png

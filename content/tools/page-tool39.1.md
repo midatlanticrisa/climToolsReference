@@ -1,7 +1,7 @@
 ---
 title: "Climate Smart Farming: Climate Change in Your County"
 description: "Visualize climate impacts via precipitation and temperature changes since 1950 in the Northeast as well as future changes"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Climate projections", "Jursidiction based", "County level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
@@ -17,7 +17,7 @@ Through this easy-to-use tool, users can access an interactive map depicting reg
 __**Get This Tool:**__ http://climatesmartfarming.org/tools/csf-county-climate-change/
 
 __**Geographic Coverage**__
-- West Virginia; Maryland; Delaware; Pennsylvania; New York; Maine; Massachusetts; Connecticut; Vermont; New Hampshire; Rhode Island; New Jersey
+- Delaware; Maryland; New Jersey; New York; Pennsylvania
 
 __**Tags**__
 -  Historical 

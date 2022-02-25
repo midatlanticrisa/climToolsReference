@@ -1,7 +1,7 @@
 ---
 title: "Hampton Roads Geospatial Exchange Online: Hampton Roads Sea Level Rise Planning Scenarios (Raster)"
 description: "Interactive map showing observed and projected sea level rise for scenarios of 1.5 feet (years 2018-2050), 3 feet (years 2050-2080), and 4.5 feet (years 2080-2100) above current MHHW. "
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Climate projections", "Grid based", "Regional level", "Dataset", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data"]
@@ -18,7 +18,7 @@ __**Get This Tool:**__ http://www.arcgis.com/home/webmap/viewer.html?url=https%3
 or https://www.hrgeo.org/maps/HRPDC-GIS::hampton-roads-sea-level-rise-planning-scenarios-raster/about
 
 __**Geographic Coverage**__
-- Chesapeake, VA; Franklin, VA; Gloucester County, VA; Hampton, VA; Isle of Wight County, VA; James City County, VA; Newport News, VA; Norfolk, VA; Poquoson, VA; Portsmouth, VA; Smithfield, VA; Southampton County, VA; Suffolk, VA; Surry County, VA; Virginia Beach, VA; Williamsburg, VA; York County, VA
+- Chesapeake City, VA; Franklin City, VA; Gloucester County, VA; Hampton City, VA; Isle of Wight County, VA; James City County, VA; Newport News City, VA; Norfolk City, VA; Poquoson City, VA; Portsmouth City, VA; Smithfield, VA; Southampton County, VA; Suffolk City, VA; Surry County, VA; Virginia Beach City, VA; Williamsburg City, VA; York County, VA
 
 __**Tags**__
 -  Climate projections

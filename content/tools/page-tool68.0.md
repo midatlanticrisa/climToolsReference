@@ -1,7 +1,7 @@
 ---
 title: "Nature's Network Prioritization Tool"
 description: "Modeling tool for conservation areas of high priority"
-date: 2022-02-16T16:57:46-0500
+date: 2022-02-22T16:33:04-0500
 pubtype: "Tool"
 featured: true
 tags: ["Application", "Interactive interface/map", "Downloadable data", "Downloadable results"]
@@ -21,7 +21,7 @@ Users can view an interactive map for pre-defined scenarios, found on the main t
 __**Get This Tool:**__ http://www.naturesnetwork.org/prioritization-tool/
 
 __**Geographic Coverage**__
-- Maine; New Hampshire; Vermont; New York; Massachusetts; Rhode Island; Connecticut; Pennsylvania; New Jersey; Delaware; Maryland; Virginia
+- Delaware; Maryland; New Jersey; New York; Pennsylvania; Virginia
 
 __**Tags**__
 -  Application

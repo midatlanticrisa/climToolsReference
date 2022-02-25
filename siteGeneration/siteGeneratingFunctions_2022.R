@@ -569,11 +569,16 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
         findState <- sapply(strsplit(collectLocs, ", "), "[[", 2)
       
       }
+      
+      # Change Washington to District of Columbia
+      ind_notcounty <- grep("County", locsNoState, invert = TRUE)
+      locsNoState[ind_notcounty] <- gsub("Washington", "District of Columbia", locsNoState[ind_notcounty])
+      
       # Convert the list of states from abbreviations to the full name. Use a look up table.
       collectSts <- sapply(findState, stateLookUp, statecodes = statefips)
       
       toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, 
-                            toolState=findState, toolLoc=locsNoState, 
+                            toolState=collectSts, toolLoc=locsNoState, 
                             coastal=toolRec$`Geographic Scope-Coastal`)
       toolScope <- paste0("__**Geographic Coverage**__", el, "- ", toolRec$`Geographic Scope-Locality`, el)
       
@@ -582,18 +587,27 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
       collectSts <- strsplit(toolRec$`Geographic Scope-State`, "; ")[[1]]
       
       # if it is coastal then grab only the coastal counties
-      locsNoState <- NA
+      locsNoState <- NA ## NEED TO CREATE AN ELSE OPTION FOR NONE COASTAL COUNTIES
       if(!is.na(toolRec$`Geographic Scope-Coastal`) & toolRec$`Geographic Scope-Coastal`=="x"){
         subTab <- scTab[scTab$state %in% collectSts,]
         subTab <- subTab[subTab$coastal=="Y",]
-        whichnotCity <- grep(" City", subTab$cntyName, invert = TRUE)
-        subTab$cntyName[whichnotCity] <- paste0(subTab$cntyName[whichnotCity], " County")
+        # whichnotCity <- grep(" City", subTab$cntyName, invert = TRUE)
+        # subTab$cntyName[whichnotCity] <- paste0(subTab$cntyName[whichnotCity], " County")
         locsNoState <- subTab$cntyName
         collectSts <- subTab$state
+        
+        # Convert the list of states from abbreviations to the full name. Use a look up table.
+        collectSts <- sapply(collectSts, stateLookUp, statecodes = statefips)
+      } else {
+        # library(tidycensus)
+        data(fips_codes) # download state/county info
+        # list only the Marisa state counties
+        marisaSts <- collectSts[collectSts %in% unique(scTab$state)]
+        localities <- fips_codes[fips_codes$state %in% marisaSts, ]
+        locsNoState <-str_to_title(localities$county)
+        # Convert the list of states from abbreviations to the full name.
+        collectSts <- localities$state_name
       }
-      
-      # Convert the list of states from abbreviations to the full name. Use a look up table.
-      collectSts <- sapply(collectSts, stateLookUp, statecodes = statefips)
       
       toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, 
                             toolState=collectSts, toolLoc=locsNoState, 

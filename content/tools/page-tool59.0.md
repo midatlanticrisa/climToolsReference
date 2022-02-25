@@ -1,7 +1,7 @@
 ---
 title: "Delaware Environmental Monitoring Sites"
 description: "This tool inventories environmental monitoring stations in Delaware and provides links to access corresponding data and find data of interest."
-date: 2022-02-16T16:57:46-0500
+date: 2022-02-22T16:33:04-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Real-time/Current", "Location specific", "Watershed level", "Regional level", "Website", "Interactive interface/map", "Downloadable data"]

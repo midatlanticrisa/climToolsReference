@@ -1,7 +1,7 @@
 ---
 title: "FieldWatch"
 description: "Platform for beekeepers, farmers, and pesticide applicators to communicate and share information"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Registration required"]
@@ -17,7 +17,7 @@ This tool creates a platform for beekeepers, commercial specialty crop producers
 __**Get This Tool:**__ https://fieldwatch.com/fieldwatch-state-registries/
 
 __**Geographic Coverage**__
-- Indiana; Illinois; Wake Island; Michigan; Minnisota; Nebraska; Colorado; Montana; Missouri; Delaware; Kansas; New Mexico; North Carolina; Iowa; Arkansas; Ohio; South Dakota; Tennessee; Virginia; California; Maryland
+- Delaware; Maryland; Virginia
 
 __**Tags**__
 -  Registration required

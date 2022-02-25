@@ -1,7 +1,7 @@
 ---
 title: "MARISA Climate Data Portal: Community Climate Outlooks"
 description: "Summaries for each  county regarding historical climate change and future climate projections"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Restrictions apply", "Climate projections", "Jursidiction based", "City level", "County level", "Interactive interface/map", "Downloadable results"]
@@ -15,7 +15,7 @@ Developed By: NOAA, and MARISA
 __**Get This Tool:**__ https://www.marisa.psu.edu/outlooks/
 
 __**Geographic Coverage**__
-- Virginia; Maryland; Delaware; Pennsylvania; District of Columbia
+- Delaware; District of Columbia; Maryland; Pennsylvania; Virginia
 
 __**Tags**__
 -  Restrictions apply

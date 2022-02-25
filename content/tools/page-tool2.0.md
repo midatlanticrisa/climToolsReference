@@ -1,7 +1,7 @@
 ---
 title: "Hampton Roads Geospatial Exchange Online (HRGEO)"
 description: "Provides data about the demographics, infrastructure, and natural resources in Hampton Roads. Also includes some map viewers and web apps to interact with the data"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_2.0_ScreenCapture-1.png
@@ -16,7 +16,7 @@ This tool allows users to explore, visualize, and download geographic informatio
 __**Get This Tool:**__ https://www.hrgeo.org/
 
 __**Geographic Coverage**__
-- Chesapeake, VA; Franklin, VA; Gloucester County, VA; Hampton, VA; Isle of Wight County, VA; James City County, VA; Newport News, VA; Norfolk, VA; Poquoson, VA; Portsmouth, VA; Smithfield, VA; Southampton County, VA; Suffolk, VA; Surry County, VA; Virginia Beach, VA; Williamsburg, VA; York County, VA
+- Chesapeake City, VA; Franklin City, VA; Gloucester County, VA; Hampton City, VA; Isle of Wight County, VA; James City County, VA; Newport News City, VA; Norfolk City, VA; Poquoson City, VA; Portsmouth City, VA; Smithfield, VA; Southampton County, VA; Suffolk City, VA; Surry County, VA; Virginia Beach City, VA; Williamsburg City, VA; York County, VA
 
 __**Available Tools**__
 -  [Hampton Roads Geospatial Exchange Online: Hampton Roads Sea Level Rise Planning Scenarios (Raster)](https://cbtooltest.marisa.psu.edu/tools/page-tool2.1)

@@ -1,7 +1,7 @@
 ---
 title: "USGS Water Data for the Nation"
 description: "Clearinghouse of all USGS-hosted water data across the country, including water temperatures, levels, flows, groundwater tables, and a host of other physical and chemical parameters."
-date: 2022-02-16T16:57:46-0500
+date: 2022-02-22T16:33:04-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Real-time/Current", "Location specific", "Website", "Dataset", "Interactive interface/map", "Downloadable data", "Downloadable results"]

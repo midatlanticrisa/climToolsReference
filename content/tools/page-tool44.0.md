@@ -1,7 +1,7 @@
 ---
 title: "United States Drought Monitor"
 description: "Current and historical (through January 4, 2000) drought comparison mapping tool of continental U.S., Alaska, Hawaii,  and territories"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Real-time/Current", "Website", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data", "Downloadable results", "Weekly"]

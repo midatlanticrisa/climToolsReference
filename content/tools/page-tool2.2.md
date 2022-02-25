@@ -1,7 +1,7 @@
 ---
 title: "Hampton Roads Geospatial Exchange Online: Hampton Roads Resilience Projects Dashboard"
 description: "Distribution, type, and features of resiliency projects in Hampton Roads"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Real-time/Current", "Jursidiction based", "County level", "Regional level", "Application", "Interactive interface/map", "Cost estimates"]
@@ -17,7 +17,7 @@ The Resilience Projects Dashboard allows users to view the cost, status, type, a
 __**Get This Tool:**__ https://www.arcgis.com/apps/opsdashboard/index.html#/271ff8ba589540f494fc1770712cfea3
 
 __**Geographic Coverage**__
-- Chesapeake, VA; Franklin, VA; Gloucester County, VA; Hampton, VA; Isle of Wight County, VA; James City County, VA; Newport News, VA; Norfolk, VA; Poquoson, VA; Portsmouth, VA; Smithfield, VA; Southampton County, VA; Suffolk, VA; Surry County, VA; Virginia Beach, VA; Williamsburg, VA; York County, VA
+- Chesapeake City, VA; Franklin City, VA; Gloucester County, VA; Hampton City, VA; Isle of Wight County, VA; James City County, VA; Newport News City, VA; Norfolk City, VA; Poquoson City, VA; Portsmouth City, VA; Smithfield, VA; Southampton County, VA; Suffolk City, VA; Surry County, VA; Virginia Beach City, VA; Williamsburg City, VA; York County, VA
 
 __**Tags**__
 -  Real-time/Current

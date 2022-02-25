@@ -1,7 +1,7 @@
 ---
 title: "USGS Geo Data Portal (GDP)"
 description: "Provide data on climate, geological processes, and meteorology"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Open source", "Historical ", "Climate projections", "Grid based", "Regional level", "Program", "Dataset", "Downloadable data"]

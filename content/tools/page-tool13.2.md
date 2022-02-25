@@ -1,7 +1,7 @@
 ---
 title: "MARISA Climate Data Portal: Interactive Map for the MARISA Region"
 description: "Interactive map with current climate data"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Real-time/Current", "Jursidiction based", "Grid based", "Location specific", "County level", "Regional level", "Website", "Interactive interface/map", "Subdaily"]
@@ -17,7 +17,7 @@ This interactive map includes a variety of layers that allows users to view weat
 __**Get This Tool:**__ https://www.marisa.psu.edu/map/
 
 __**Geographic Coverage**__
-- New York; Pennsylvania; New Jersey; Delaware; Maryland; Virginia; West Virginia; Ohio
+- Delaware; Maryland; New Jersey; New York; Pennsylvania; Virginia
 
 __**Tags**__
 -  Real-time/Current

@@ -1,13 +1,14 @@
 {{ define "main" -}}
 <head>
   <meta charset="utf-8">
-  <title>jQuery Get Values of Selected Checboxes</title>
+  <title>jQuery Get Values of Selected Checkboxes</title>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+  <!-- Dropdowns and formatting js and css -->
   <script src="./multiselect/jquery.multiselect.js"></script>
   <link rel="stylesheet" href="./multiselect/jquery.multiselect.css">
   <script>
@@ -25,6 +26,7 @@
 
         //////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////
+        // Is it already in the array?? (maybe)
         const unique = (value, index, self) => {
           return self.indexOf(value) === index
         }
@@ -37,6 +39,7 @@
         //////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////
         //from https://stackoverflow.com/questions/8550183/sum-of-values-in-an-array-using-jquery
+        // sum all the values in an array
         $.sum = function(arr) {
           var r = 0;
           $.each(arr, function(i, v) {
@@ -47,6 +50,7 @@
         //////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////
         //from https://www.positronx.io/chekc-if-value-exists-array-javascript-jquery/
+        // Function that checkes whether a value exists within an array
         function findValueInArray(stArr,val,cntyArr){
           var res = [];
           for(var i=0; i<stArr.length; i++){
@@ -62,6 +66,7 @@
           return res;
         }
         //////////////////////////////////////////////////////////////////
+        // Collecting inputs (no filter just yet)
         //////////////////////////////////////////////////////////////////
         collectGeoData = function(){
           var cntySelect = [];
@@ -100,7 +105,8 @@
           var dcSelect = $("#dcGeoOpt option:selected");
           dcSelect.each(function(){
             cntySelect.push("District of Columbia");
-            stateSelect.push("DC");
+            //stateSelect.push("DC");
+            stateSelect.push("District of Columbia");
           });
 
           return {states : stateSelect, counties : cntySelect};
@@ -145,6 +151,7 @@
           return {topFilt : topFilterSearch, subFilt : subFilterSearch};
         }
         //////////////////////////////////////////////////////////////////
+        // Read multiple json files (3rd solution)
         //////////////////////////////////////////////////////////////////
         //from https://stackoverflow.com/questions/19026331/call-multiple-json-data-files-in-one-getjson-request
         jQuery.getMultipleJSON = function(){
@@ -170,11 +177,12 @@
         };
         //////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////
+        // Main function collects info from user, filters tools, and posts results
         //run through all of the variables to select tools
         //function selectTools(inSR, reqDat, inGeo, geoDat, inFunct, tFunDat, inFilts, topFilDat, inSubFilts, topSubFilDat){
         function selectTools(inSR, reqDat, inGeoCNTY, inGeoST, inGeoCoast, geoDatCNTY, geoDatST, geoDatCoast, inFunct, tFunDat, inFilts, topFilDat, inSubFilts, topSubFilDat){
-          var fullResults = [];
-          var inTools = [];
+          var fullResults = []; // search result object: the full list of tools
+          var inTools = []; // inTools are the subset of tools that could be added to the full tool results
 
           var uniqueST = inGeoST.filter(unique);
           ////////////////////////////////////////////////////////////////
@@ -399,6 +407,7 @@
                   keepTool = 1;
                 }
               }
+              // inTools are the subset of tools that could be added to the full tool results
               if(keepTool==0){
                 var whichRemove = jQuery.inArray(toolName, inTools);
                 indexToRemove.push(whichRemove)
@@ -451,8 +460,9 @@
 
           //jQuery.inArray(item.toolFun, inFunct)
 
-        }
+        } // END MAIN FUNCTION
         //////////////////////////////////////////////////////////////////
+        // resets the display to all 108 tools
         //////////////////////////////////////////////////////////////////
         function defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData){
           showData.empty();
@@ -465,6 +475,7 @@
         }
         //////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////
+        // R class function (similar to that) is it a character or string?
         function getType(o) {
           return Object.prototype.toString.call(o).match(/^\[object\s(.*)\]$/)[1];
         }
@@ -1136,7 +1147,7 @@
           <fieldset class>
 
           <fieldset class="singleRow">
-            <div class="header"><h5>Geographic Scope</h5></div>
+            <legend><h5>Geographic Scope</h5></legend>
             <form id="geoScopeSearch">
               <select name="deGeoOpt[]" id="deGeoOpt" multiple="multiple">
                 <optgroup label=" ">
@@ -1202,7 +1213,7 @@
                   <option value="Albany County">Albany County</option>
                   <option value="Allegany County">Allegany County</option>
                   <option value="Bronx County">Bronx County</option>
-                  <option value="Broome County<">Broome County</option>
+                  <option value="Broome County">Broome County</option>
                   <option value="Cattaraugus County">Cattaraugus County</option>
                   <option value="Cayuga County">Cayuga County</option>
                   <option value="Chautauqua County">Chautauqua County</option>
@@ -1471,18 +1482,19 @@
                 </optgroup>
               </select>
               <select name="dcGeoOpt[]" id="dcGeoOpt" multiple="multiple">
-                <option value="DC">Washington D.C.</option>
+                <!-- <option value="DC">Washington D.C.</option> -->
+                <option value="District of Columbia">Washington D.C.</option> 
               </select>
             </form>
             <form id="globalGeoOptions">
               <label><input type="checkbox" aria-selected="false" class="globalGeoChecks" value="Coastal">Only Tools Related To Coasts</label><br>
-              <label><input type="checkbox" aria-selected="false" class="globalGeoChecks" disabled=true value="inChesBay">Only Within Chesapeake Bay</label><br>
-              <label><input type="checkbox" aria-selected="false" class="globalGeoChecks" disabled=true value="inMARISA">Only Within MARISA Boundary</label><br>
+              <!-- <label><input type="checkbox" aria-selected="false" class="globalGeoChecks" disabled=true value="inChesBay">Only Within Chesapeake Bay</label><br> -->
+              <!-- <label><input type="checkbox" aria-selected="false" class="globalGeoChecks" disabled=true value="inMARISA">Only Within MARISA Boundary</label><br> -->
             </form>
           </fieldset>
-          <fieldset class="singleRow">
-            <div class="header"><h5>Topic Filter</h5></div>
-            <form id="filterSearch">
+          <form id="filterSearch">
+            <fieldset class="singleRow">
+              <legend><h5>Topic Filter</h5></legend>
               <select name="bltFiltOpt[]" id="bltFiltOpt" multiple="multiple">
                 <optgroup label=" ">
                   <option value="Planning / Land Use">Planning / Land Use</option>
@@ -1536,11 +1548,11 @@
               <select name="othFiltOpt[]" id="othFiltOpt" multiple="multiple">
                 <option value="None">Other</option>
               </select>
-            </form>
-          </fieldset>
-          <fieldset class="singleRow">
-            <div class="header"><h5>Tool Function</h5></div>
-            <form id="toolFunSearch">
+            </fieldset>
+          </form>
+          <form id="toolFunSearch">
+            <fieldset class="singleRow">
+              <legend><h5>Tool Function</h5></legend>
               <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Adaptation Planning"><span title="Preparing a natural or urban area for the effects of climate change and extreme weather with the intention of reducing risk or exposure. Includes planning for current and expected future climates.">Adaptation Planning</span></label><br>
               <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Citizen Science"><span title="Involving public participation in data collection or other components of the scientific process.">Citizen Science</span></label><br>
               <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Climate Mitigation Planning"><span title="Reducing heat-trapping gasses in the atmosphere. May be accomplished by reducing sources (e.g., burning fossil fuels) or enhancing sinks (e.g., oceans, forests, soils).">Climate Mitigation Planning</span></label><br>
@@ -1549,17 +1561,12 @@
               <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Process Support"><span title="'Formal ways of thinking about the means by which decision are made, as opposed to computational or modeling methods used to support decision making' (RAND). ">Process Support</span></label><br>
               <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="View Past/Current Conditions"><span title="Visualizing or comparing historical and/or present-day conditions.">View Past/Current Conditions</span></label><br>
               <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="View Future Projections"><span title="Visualizing or comparing possible future scenarios projected by climate models.">View Future Projections</span></label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Toolkit/Tool Collection"><span title="A program of data center providing multiple tools.">Toolkit/Tool Collection</span></label><br>
-              <!--<label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Adaptation Planning">Adaptation Planning</label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Citizen Science">Citizen Science</label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Climate Mitigation Planning">Climate Mitigation Planning</label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Engagement">Engagement</label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Identify Vulnerabilities">Identify Vulnerabilities</label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Process Support">Process Support</label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="View Past/Current Conditions">View Past/Current Conditions</label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="View Future Projections">View Future Projections</label><br>-->
+              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Toolkit/Tool Collection"><span title="A program or data center providing multiple tools.">Toolkit/Tool Collection</span></label><br>
               <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="None">Unspecified</label><br>
-            </form>
+              <!-- <input type="reset" value="Reset Values"> -->
+              <button type="button" onclick="defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData);">Custom Reset Button</button>
+            </fieldset>
+          </form>
           </fieldset>
         </div>
 

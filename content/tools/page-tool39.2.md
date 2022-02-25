@@ -1,7 +1,7 @@
 ---
 title: "Climate Smart Farming: Growing Degree Day Calculator"
 description: "Create charts demonstrating changing growing degree days based on planting date and GDD base."
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Real-time/Current", "Forecast", "Location specific", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
@@ -17,7 +17,7 @@ The Growing Degree Day (GDD) calculator measures seasonal heat accumulation, thr
 __**Get This Tool:**__ http://climatesmartfarming.org/tools/csf-growing-degree-day-calculator/ 
 
 __**Geographic Coverage**__
-- Maine; New Hampshire; Vermont; New York; Massachusetts; Connecticut; Rhode Island; Pennsylvania; New Jersey; Delaware; Maryland; District of Columbia; Virginia; West Virginia; Ohio; Kentucky
+- Delaware; District of Columbia; Maryland; New Jersey; New York; Pennsylvania; Virginia
 
 __**Tags**__
 -  Historical 

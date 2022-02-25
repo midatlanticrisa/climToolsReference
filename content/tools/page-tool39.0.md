@@ -1,7 +1,7 @@
 ---
 title: "Climate Smart Farming"
 description: "A toolkit designed to help farmers in the Northeast US improve their productivity and resiliency in the face climate change"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_39.0_ScreenCapture-1.png
@@ -14,7 +14,7 @@ Developed By: Cornell University_College of Agriculture and Life Sciences
 __**Get This Tool:**__ http://climatesmartfarming.org/tools/
 
 __**Geographic Coverage**__
-- Maine; New Hampshire; Vermont; New York; Massachusetts; Connecticut; Rhode Island; Pennsylvania; New Jersey; Delaware; Maryland; District of Columbia; Virginia; West Virginia
+- Delaware; District of Columbia; Maryland; New Jersey; New York; Pennsylvania; Virginia
 
 __**Available Tools**__
 -  [Climate Smart Farming: Climate Change in Your County](https://cbtooltest.marisa.psu.edu/tools/page-tool39.1)

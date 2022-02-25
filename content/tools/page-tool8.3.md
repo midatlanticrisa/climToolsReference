@@ -1,7 +1,7 @@
 ---
 title: "Creating Resilient Water Utilities: Resilient Strategies Guide for Water Utilities"
 description: "Risk assessment application for water utilities"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Jursidiction based", "State level", "Regional level", "Website", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Downloadable results"]

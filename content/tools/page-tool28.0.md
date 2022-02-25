@@ -1,7 +1,7 @@
 ---
 title: "Climate Engine"
 description: "Web application that generates maps and graphs using climate data from remotely sensed source data"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Real-time/Current", "Forecast", "Grid based", "Application", "Dataset", "Interactive interface/map", "Downloadable data", "Downloadable results"]

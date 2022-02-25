@@ -1,7 +1,7 @@
 ---
 title: "AdaptVA: Tidewatch Map"
 description: "36-hour coastal flooding forecasts"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Real-time/Current", "Forecast", "Regional level", "Application", "Interactive interface/map", "Subdaily"]

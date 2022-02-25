@@ -1,7 +1,7 @@
 ---
 title: "National Beach Nourishment Database"
 description: "Demonstrates location of past and current beach nourishment projects, number of nourishment episodes in one area, date of project completion, cost, and volume of the project."
-date: 2022-02-16T16:57:46-0500
+date: 2022-02-22T16:33:04-0500
 pubtype: "Tool"
 featured: true
 tags: ["Location specific", "Application", "Dataset", "Interactive interface/map", "Cost estimates", "Downloadable data"]

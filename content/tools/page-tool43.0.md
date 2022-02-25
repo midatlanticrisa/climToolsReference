@@ -1,7 +1,7 @@
 ---
 title: "Northeast Conservation Planning Atlas"
 description: "View, create, and collaborate with other users on maps to visualize biological, physical, and socio-economic information about the Northeast."
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Registration required", "Historical ", "Real-time/Current", "Climate projections", "Regional level", "Program", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data", "Downloadable results"]
@@ -17,7 +17,7 @@ Through the CPA users can find a variety of  maps and data from the tool's exten
 __**Get This Tool:**__ https://nalcc.databasin.org/
 
 __**Geographic Coverage**__
-- Maine; Vermont; New Hampshire; New York; Connecticut; Delaware; New Jersey; Massachusetts; Rhode Island; Pennsylvania; Maryland; Virginia; West Virginia
+- Delaware; Maryland; New Jersey; New York; Pennsylvania; Virginia
 
 __**Tags**__
 -  Registration required

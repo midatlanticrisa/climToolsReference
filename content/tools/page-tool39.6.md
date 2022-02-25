@@ -1,7 +1,7 @@
 ---
 title: "Climate Smart Farming: Grape Hardiness & Freeze Risk"
 description: "Create charts demonstrating risk of freeze damage for grape variety growth "
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Real-time/Current", "Forecast", "Location specific", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
@@ -17,7 +17,7 @@ This tool assesses hardiness temperature across the Northeast in order to inform
 __**Get This Tool:**__ http://climatesmartfarming.org/tools/csf-grape-hardiness/
 
 __**Geographic Coverage**__
-- Maine; New Hampshire; Vermont; New York; Massachusetts; Connecticut; Rhode Island; Pennsylvania; New Jersey; Delaware; Maryland; District of Columbia; Virginia; West Virginia; Ohio; Kentucky
+- Delaware; District of Columbia; Maryland; New Jersey; New York; Pennsylvania; Virginia
 
 __**Tags**__
 -  Historical 

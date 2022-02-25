@@ -1,7 +1,7 @@
 ---
 title: "DGIF Wildlife Action Plan"
 description: "Virginia's 2015 Wildlife Action Plan contains ecological data and conservation plans for hundreds of species. The plan has reports and interactive maps that make ecological data available on a planning district commission-level. Locality-specific reports document conservation needs in communities, with prioritized actions for locally threatened species."
-date: 2022-02-16T16:57:46-0500
+date: 2022-02-22T16:33:04-0500
 pubtype: "Tool"
 featured: true
 tags: ["Jursidiction based", "Application", "Interactive interface/map"]

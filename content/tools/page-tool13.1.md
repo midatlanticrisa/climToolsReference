@@ -1,7 +1,7 @@
 ---
 title: "MARISA Climate Data Portal: Climate Data for the Mid-Atlantic Region"
 description: "Climate data"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Grid based", "Regional level", "Dataset", "Downloadable data", "Daily"]
@@ -19,7 +19,7 @@ Available data include an experimental precipitation dataset developed by MARISA
 __**Get This Tool:**__ https://www.marisa.psu.edu/data/
 
 __**Geographic Coverage**__
-- Virginia; West Virginia; Pennsylvania; Delaware; Maryland; New Jersey; North Carolina; New York
+- Delaware; Maryland; New Jersey; New York; Pennsylvania; Virginia
 
 __**Tags**__
 -  Historical 

@@ -1,7 +1,7 @@
 ---
 title: "Creating Resilient Water Utilities: Case Study and Information Exchange"
 description: "Communities submit and share their experiences with implementing climate adaptation measures."
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Location specific", "Application", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Downloadable results"]

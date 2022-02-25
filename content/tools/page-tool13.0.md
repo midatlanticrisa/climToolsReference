@@ -1,7 +1,7 @@
 ---
 title: "MARISA Climate Data Portal"
 description: "Collection of tools and information on climate change for individuals, local programs, and agencies in the Mid-Atlantic region"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_13.0_ScreenCapture-1.png
@@ -14,7 +14,7 @@ Developed By: NOAA, and MARISA
 __**Get This Tool:**__ https://www.marisa.psu.edu/
 
 __**Geographic Coverage**__
-- District of Columbia; Delaware; Maryland; North Carolina; New Jersey; New York; Ohio; Pennsylvania; Virginia; West Virginia
+- Delaware; District of Columbia; Maryland; New Jersey; New York; Pennsylvania; Virginia
 
 __**Available Tools**__
 -  [MARISA Climate Data Portal: Climate Data for the Mid-Atlantic Region](https://cbtooltest.marisa.psu.edu/tools/page-tool13.1)

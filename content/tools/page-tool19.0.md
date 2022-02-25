@@ -1,7 +1,7 @@
 ---
 title: "Shoreline Assessment Mapper"
 description: "An interactive map that displays a variety of data describing shoreline type and condition in coastal VA"
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Real-time/Current", "Grid based", "Location specific", "Regional level", "Application", "Interactive interface/map"]

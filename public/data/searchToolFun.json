@@ -242,13 +242,16 @@
 {"toolFun":"View Past/Current Conditions","name":"DGIF Wildlife Action Plan","link":"page-tool80.0"},
 {"toolFun":"View Future Projections","name":"DGIF Wildlife Action Plan","link":"page-tool80.0"},
 {"toolFun":"View Past/Current Conditions","name":"USGS StreamStats","link":"page-tool81.0"},
+{"toolFun":"Identify Vulnerabilities","name":"Targeted Subwatersheds","link":"page-tool82.0"},
 {"toolFun":"opt","name":"Targeted Subwatersheds","link":"page-tool82.0"},
 {"toolFun":"View Past/Current Conditions","name":"SRC Trading Program Impervious Viewer","link":"page-tool83.0"},
 {"toolFun":"opt","name":"SRC Trading Program Impervious Viewer","link":"page-tool83.0"},
 {"toolFun":"View Past/Current Conditions","name":"DC Flood Risk Map","link":"page-tool84.0"},
 {"toolFun":"View Future Projections","name":"DC Flood Risk Map","link":"page-tool84.0"},
 {"toolFun":"Identify Vulnerabilities","name":"DC Flood Risk Map","link":"page-tool84.0"},
+{"toolFun":"Identify Vulnerabilities","name":"Green Infrastructure Practices in the District","link":"page-tool85.0"},
 {"toolFun":"opt","name":"Green Infrastructure Practices in the District","link":"page-tool85.0"},
+{"toolFun":"Engagement","name":"Green Infrastructure Practices in the District","link":"page-tool85.0"},
 {"toolFun":"opt","name":"DC Solar Tool","link":"page-tool86.0"},
 {"toolFun":"Citizen Science","name":"DC Solar Tool","link":"page-tool86.0"}
 ]

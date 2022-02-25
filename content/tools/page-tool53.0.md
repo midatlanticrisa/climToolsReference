@@ -1,7 +1,7 @@
 ---
 title: "Potomac Inundation Maps"
 description: "Real time data showing storm-based flood potential for the Potomac and Anacostia Rivers around the DC area"
-date: 2022-02-16T16:57:46-0500
+date: 2022-02-22T16:33:04-0500
 pubtype: "Tool"
 featured: true
 tags: ["Real-time/Current", "Forecast", "Grid based", "Location specific", "Website", "Interactive interface/map", "Downloadable results"]
@@ -17,7 +17,7 @@ This easy-to-use tool uses real time data in order to develop area specific read
 __**Get This Tool:**__ https://www.weather.gov/lwx/potomacinundationmaps
 
 __**Geographic Coverage**__
-- Washington, DC; Arlington, VA; Alexandria, VA; Fort Foote, MD; Fairfax County, VA;  Prince George's County, VA
+- Washington, DC; Arlington County, VA; Alexandria City, VA; Fort Foote, MD; Fairfax County, VA; Prince George's County, VA
 
 __**Tags**__
 -  Real-time/Current

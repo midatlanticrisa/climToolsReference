@@ -33,6 +33,12 @@ licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
   identifier = "toolsearch"
   url = "/toolsearch/"
 
+  [[menu.main]]
+  name = "About"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
+
 [markup]
 
   [markup.highlight]

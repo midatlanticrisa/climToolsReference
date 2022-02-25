@@ -1,7 +1,7 @@
 ---
 title: "PINEMAP"
 description: "PINEMAP contains 13 total tools dealing with loblolly pine trees in Southeastern US across four categories: Environment, Establishment, Management, and Production."
-date: 2022-02-16T16:57:46-0500
+date: 2022-02-22T16:33:04-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Climate projections", "Grid based", "Location specific", "Application", "Interactive interface/map", "Compare scenarios/locations"]

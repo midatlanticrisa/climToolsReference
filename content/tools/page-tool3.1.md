@@ -1,7 +1,7 @@
 ---
 title: "Operational Forecast System: Chesapeake Bay Operational Forecast System (CBOFS)"
 description: "CBOFS provides real time information about water levels, wind, water temperature, salinity, and currents."
-date: 2022-02-16T16:57:45-0500
+date: 2022-02-22T16:33:03-0500
 pubtype: "Tool"
 featured: true
 tags: ["Real-time/Current", "Forecast", "Grid based", "Location specific", "Regional level", "Website", "Interactive interface/map", "Downloadable data", "Subdaily"]
