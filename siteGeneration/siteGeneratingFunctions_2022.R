@@ -58,7 +58,7 @@ stateLookUp <- function(abb, statecodes){
 # scTab: data.frame of states, county names, and whether they are coastal
 # updateContent=T: Boolean (True/FALSE), True will rewrite the files if they exist
 generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateContent=T, 
-                             splitByCol, toolCol, collectionPage){
+                             splitByCol, toolCol, collectionPage, multiTools){
   #################
   #toolRec <- splitByToolID[[2]]
   #toolRec <- splitByToolID[[4]]
@@ -83,9 +83,16 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
   }
   ##if there is more than one developer, split the developers into a vector
   splitDevs <- strsplit(toolRec$Developer, "; ")[[1]]
-  # Set the name of the markdown page as "page-tool<tool ID number>.md"
-  ##the name of the tool page within the site
-  toolIDtxt <- paste0("page-tool", trimws(toolRec$`Tool ID`))  
+  
+  # Is it part of a tool collection? Save in the collection directory
+  if(toolRec$`Tool ID` %in% multiTools){
+    # Set the name of the markdown page as "page-tool<tool ID number>.md"
+    ##the name of the tool page within the site
+    toolIDtxt <- paste0("collection/page-tool", trimws(toolRec$`Tool ID`))  
+  } else {
+    toolIDtxt <- paste0("tools/page-tool", trimws(toolRec$`Tool ID`)) 
+  }
+  
   writeTool <- paste0(siteDir, toolIDtxt, ".md")
   #writeTool <- paste0(siteDir, splitDevs[1], "/", toolIDtxt, ".md")  ##the file in which the tool information will be written to, assumes first developer is the most important
   toolRec$`Tool Name` <- gsub(el, " ", toolRec$`Tool Name`) ##remove any carriage returns from the tool name
@@ -784,7 +791,7 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
       ##tool strengths
       # Set the strengths as the tags
       if(nrow(collectdf) > 0){
-        toolList <- paste0("[", collectdf$`Tool Name`, "](https://cbtooltest.marisa.psu.edu/tools/page-tool",
+        toolList <- paste0("[", collectdf$`Tool Name`, "](https://cbtooltest.marisa.psu.edu/collection/page-tool",
                            trimws(collectdf$`Tool ID`), ")")
         
         toolStrs <- paste0("__**Available Tools**__", el, paste("- ", toolList, collapse=el), el)

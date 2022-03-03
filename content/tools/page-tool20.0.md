@@ -1,7 +1,7 @@
 ---
 title: "MARISA Climate Impacts Summary and Outlook Reports"
 description: "Seasonal (quarterly) reports outlining past weather events and their significance as well as projections to the next seasons weather"
-date: 2022-02-22T16:33:03-0500
+date: 2022-02-28T11:04:49-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Climate projections", "Grid based", "Location specific", "Watershed level", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Quarterly"]

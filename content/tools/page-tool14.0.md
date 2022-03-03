@@ -1,7 +1,7 @@
 ---
 title: "NOAA State Climate Summaries"
 description: "Summaries for each state regarding historical climate change and future climate projections"
-date: 2022-02-22T16:33:03-0500
+date: 2022-02-28T11:04:49-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Climate projections", "Jursidiction based", "State level", "Website", "Downloadable results"]

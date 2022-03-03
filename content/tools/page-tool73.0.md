@@ -1,7 +1,7 @@
 ---
 title: "Green Infrastructure Modeling Toolkit"
 description: "A collection of models and tools for communities to manage water runoff in urban and other environments"
-date: 2022-02-22T16:33:04-0500
+date: 2022-02-28T11:04:50-0500
 pubtype: "Tool"
 featured: true
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_73.0_ScreenCapture-1.png
@@ -17,7 +17,7 @@ __**Geographic Coverage**__
 - Applicable Anywhere
 
 __**Available Tools**__
--  [Green Infrastructure Modeling Toolkit: Storm Water Management Model (SWMM)](https://cbtooltest.marisa.psu.edu/tools/page-tool73.1)
+-  [Green Infrastructure Modeling Toolkit: Storm Water Management Model (SWMM)](https://cbtooltest.marisa.psu.edu/collection/page-tool73.1)
 
 __**Cost**__
 - Free

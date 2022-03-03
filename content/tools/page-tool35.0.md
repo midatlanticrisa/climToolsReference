@@ -1,7 +1,7 @@
 ---
 title: "Annual United States Climate Stripes: Temperature and Precipitation"
 description: "Artistic representation of Climate Change"
-date: 2022-02-22T16:33:03-0500
+date: 2022-02-28T11:04:49-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Jursidiction based", "County level", "Application", "Interactive interface/map", "Downloadable results"]

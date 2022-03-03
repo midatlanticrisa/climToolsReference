@@ -1,7 +1,7 @@
 ---
 title: "OSPREY Public"
 description: "Report current meteorological and infrastructure (electricity, traffic, shelters) conditions to aid emergency response planning for both citizens and professionals."
-date: 2022-02-22T16:33:04-0500
+date: 2022-02-28T11:04:50-0500
 pubtype: "Tool"
 featured: true
 tags: ["Real-time/Current", "Location specific", "State level", "Application", "Interactive interface/map"]

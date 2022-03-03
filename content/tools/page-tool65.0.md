@@ -1,7 +1,7 @@
 ---
 title: "Coastal Change Hazards Portal"
 description: "National map illustrating past, present, and projected coastal conditions"
-date: 2022-02-22T16:33:04-0500
+date: 2022-02-28T11:04:50-0500
 pubtype: "Tool"
 featured: true
 tags: ["Grid based", "Application", "Interactive interface/map", "Downloadable data"]

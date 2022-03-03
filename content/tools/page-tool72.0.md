@@ -1,7 +1,7 @@
 ---
 title: "Diagnostic Spreadsheet for Analysis of Water Quality Data in relation to Growth Requirements of Submerged Aquatic Vegetation"
 description: "Determines if minimum light requirements for SAV growth are met at a given station."
-date: 2022-02-22T16:33:04-0500
+date: 2022-02-28T11:04:50-0500
 pubtype: "Tool"
 featured: true
 tags: ["Spreadsheet", "Compare scenarios/locations", "Solutions"]

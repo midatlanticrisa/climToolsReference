@@ -1,7 +1,7 @@
 ---
 title: "MARISA Climate Data Portal"
 description: "Collection of tools and information on climate change for individuals, local programs, and agencies in the Mid-Atlantic region"
-date: 2022-02-22T16:33:03-0500
+date: 2022-02-28T11:04:49-0500
 pubtype: "Tool"
 featured: true
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_13.0_ScreenCapture-1.png
@@ -17,9 +17,9 @@ __**Geographic Coverage**__
 - Delaware; District of Columbia; Maryland; New Jersey; New York; Pennsylvania; Virginia
 
 __**Available Tools**__
--  [MARISA Climate Data Portal: Climate Data for the Mid-Atlantic Region](https://cbtooltest.marisa.psu.edu/tools/page-tool13.1)
--  [MARISA Climate Data Portal: Interactive Map for the MARISA Region](https://cbtooltest.marisa.psu.edu/tools/page-tool13.2)
--  [MARISA Climate Data Portal: Community Climate Outlooks](https://cbtooltest.marisa.psu.edu/tools/page-tool13.3)
+-  [MARISA Climate Data Portal: Climate Data for the Mid-Atlantic Region](https://cbtooltest.marisa.psu.edu/collection/page-tool13.1)
+-  [MARISA Climate Data Portal: Interactive Map for the MARISA Region](https://cbtooltest.marisa.psu.edu/collection/page-tool13.2)
+-  [MARISA Climate Data Portal: Community Climate Outlooks](https://cbtooltest.marisa.psu.edu/collection/page-tool13.3)
 
 __**Cost**__
 - Free

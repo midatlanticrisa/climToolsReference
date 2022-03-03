@@ -34,8 +34,14 @@ licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
   url = "/toolsearch/"
 
   [[menu.main]]
-  name = "About"
+  name = "Glossary"
   weight = 300
+  identifier = "glossary"
+  url = "/glossary/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 400
   identifier = "about"
   url = "/about/"
 

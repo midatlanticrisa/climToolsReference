@@ -1,7 +1,7 @@
 ---
 title: "i-Tree"
 description: "A collection of tools to evaluate the benefits of local tree species by assessing their economic value and benefits over time."
-date: 2022-02-22T16:33:04-0500
+date: 2022-02-28T11:04:50-0500
 pubtype: "Tool"
 featured: true
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_57.0_ScreenCapture-1.png
@@ -19,10 +19,10 @@ __**Geographic Coverage**__
 - Contiguous United States
 
 __**Available Tools**__
--  [i-Tree: Mytree and Landscape](https://cbtooltest.marisa.psu.edu/tools/page-tool57.1)
--  [i-Tree: Design](https://cbtooltest.marisa.psu.edu/tools/page-tool57.2)
--  [i-Tree: Canopy](https://cbtooltest.marisa.psu.edu/tools/page-tool57.3)
--  [i-Tree: Hydro, and Eco](https://cbtooltest.marisa.psu.edu/tools/page-tool57.4)
+-  [i-Tree: Mytree and Landscape](https://cbtooltest.marisa.psu.edu/collection/page-tool57.1)
+-  [i-Tree: Design](https://cbtooltest.marisa.psu.edu/collection/page-tool57.2)
+-  [i-Tree: Canopy](https://cbtooltest.marisa.psu.edu/collection/page-tool57.3)
+-  [i-Tree: Hydro, and Eco](https://cbtooltest.marisa.psu.edu/collection/page-tool57.4)
 
 __**Cost**__
 - Free

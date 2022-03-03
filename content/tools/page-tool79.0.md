@@ -1,7 +1,7 @@
 ---
 title: "Coastal County Snapshots"
 description: "The open-source map leads users to reports that contain graphs and figures with short-term projections and current data on flood exposure, ocean jobs, and wetland benefits specific to the user's selected county."
-date: 2022-02-22T16:33:04-0500
+date: 2022-02-28T11:04:50-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Jursidiction based", "County level", "Website", "Interactive interface/map"]

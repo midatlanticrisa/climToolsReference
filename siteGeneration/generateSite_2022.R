@@ -51,12 +51,16 @@ tab <- "  "
 # clean_website_tools_and_tags <- FALSE: NO
 # clean_website_tools_and_tags <- TRUE: YES
 ##########################################################################
-clean_website_tools_and_tags <- FALSE #TRUE
+clean_website_tools_and_tags <- TRUE #TRUE
 
 # if true remove the files/subdirectories
 if(clean_website_tools_and_tags){
   # Remove all the tool_pages. Leave the index
   rm_toolpages <- grep("page", list.files(toolsDir, full.names = TRUE), value=TRUE)
+  file.remove(rm_toolpages)
+  
+  # Remove all the tool_pages in collection. Leave the index
+  rm_toolpages <- grep("page", list.files(paste0(siteDir, "collection/"), full.names = TRUE), value=TRUE)
   file.remove(rm_toolpages)
   
   # Refresh everything in tags:
@@ -68,6 +72,9 @@ if(clean_website_tools_and_tags){
   
   # Refresh everything in tools (a mix of folders and files):
   system(paste0("rm -rf ", baseDir, "climToolsReference/public/tools/*"))
+  
+  # Refresh everything in collection (a mix of folders and files):
+  system(paste0("rm -rf ", baseDir, "climToolsReference/public/collection/*"))
 }
 ##########################################################################
 ##########################################################################
@@ -226,8 +233,9 @@ if(dir.exists(imageDir)==F){ # public/images/ directory
 
 # Run the generateToolPage function on each tool. #### IT APPEARS THE ABOVE DATA.FRAMES ARE USED GLOBALLY!!
 toolpage_list = pblapply(splitByToolID, generateToolPage, tempPage=templatePage, 
-                         el=el, siteDir=toolsDir, scTab=stcntyTab, updateContent=TRUE,
-                         splitByCol=splitByCol, toolCol=toolCol, collectionPage=collectionPage)
+                         el=el, siteDir=siteDir, scTab=stcntyTab, updateContent=TRUE,
+                         splitByCol=splitByCol, toolCol=toolCol, collectionPage=collectionPage,
+                         multiTools=multiTools)
 
 # Tags
 searchTags <- lapply(X = 1:length(toolpage_list), function(X){toolpage_list[[X]]$searchTags})

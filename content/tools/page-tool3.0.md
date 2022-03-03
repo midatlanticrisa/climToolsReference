@@ -1,7 +1,7 @@
 ---
 title: "Operational Forecast System"
 description: "A national network of real-time information about water levels, wind, water temperature, salinity, and currents."
-date: 2022-02-22T16:33:03-0500
+date: 2022-02-28T11:04:49-0500
 pubtype: "Tool"
 featured: true
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_3.0_ScreenCapture-1.png
@@ -17,8 +17,8 @@ __**Geographic Coverage**__
 - Delaware; Maryland; Virginia
 
 __**Available Tools**__
--  [Operational Forecast System: Chesapeake Bay Operational Forecast System (CBOFS)](https://cbtooltest.marisa.psu.edu/tools/page-tool3.1)
--  [Operational Forecast System: Delaware Bay Operational Forecast System (DBOFS)](https://cbtooltest.marisa.psu.edu/tools/page-tool3.2)
+-  [Operational Forecast System: Chesapeake Bay Operational Forecast System (CBOFS)](https://cbtooltest.marisa.psu.edu/collection/page-tool3.1)
+-  [Operational Forecast System: Delaware Bay Operational Forecast System (DBOFS)](https://cbtooltest.marisa.psu.edu/collection/page-tool3.2)
 
 __**Cost**__
 - Free

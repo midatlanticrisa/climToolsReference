@@ -1,7 +1,7 @@
 ---
 title: "Beach Nourishment Viewer"
 description: "Demonstrates location of past and current beach nourishment projects, number of nourishment episodes in one area, date of project completion, cost, and volume of the project."
-date: 2022-02-22T16:33:04-0500
+date: 2022-02-28T11:04:50-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Jursidiction based", "Location specific", "Website", "Interactive interface/map", "Cost estimates", "Downloadable data", "Downloadable results"]

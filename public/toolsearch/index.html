@@ -91,6 +91,8 @@
         </li><li>
           <a href="/toolsearch/"> Tool Search </a>
         </li><li>
+          <a href="/glossary/"> Glossary </a>
+        </li><li>
           <a href="/about/"> About </a>
         </li>
       </ul>
@@ -558,7 +560,7 @@
             for(var i=0; i<inTools.length; i++){
               var tInd = jQuery.inArray(inTools[i], holdOrigOrder)
               
-              newTool = '<li><a href="' + '/tools/' + fullResults[tInd].link +'/index.html">' + fullResults[tInd].name + '</a></li>';
+              newTool = '<li><a href="https://cbtooltest.marisa.psu.edu/' + fullResults[tInd].link +'/index.html" target="_blank">' + fullResults[tInd].name + '</a></li>';
               showData.append(newTool);
             }
           }
