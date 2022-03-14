@@ -1,7 +1,7 @@
 ---
 title: "USDA Plant Hardiness Zone Map"
 description: "National, regional, and state maps detailing plant hardiness zones"
-date: 2022-02-28T11:04:49-0500
+date: 2022-03-09T16:02:05-0500
 pubtype: "Tool"
 featured: true
 tags: ["Real-time/Current", "Grid based", "Application", "Interactive interface/map"]

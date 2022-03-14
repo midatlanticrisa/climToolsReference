@@ -1,7 +1,7 @@
 ---
 title: "Green Infrastructure Practices in the District"
 description: "Interactive map with filtered layers that highlights existing best management practice projects and provides the known specifications of projects"
-date: 2022-02-28T11:04:50-0500
+date: 2022-03-09T16:02:06-0500
 pubtype: "Tool"
 featured: true
 tags: ["Real-time/Current", "Jursidiction based", "City level", "Application", "Dataset", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data", "Downloadable results"]

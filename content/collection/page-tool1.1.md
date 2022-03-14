@@ -1,7 +1,7 @@
 ---
 title: "AdaptVA: Sea Level Rise Projection Viewer"
 description: "Observed and projected sea level rise from 1990 to 2100"
-date: 2022-02-28T11:04:49-0500
+date: 2022-03-09T16:02:05-0500
 pubtype: "Tool"
 featured: true
 tags: ["Climate projections", "Grid based", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations"]
@@ -17,7 +17,7 @@ This easy-to-use tool provides three sea level rise scenarios (low, intermediate
 __**Get This Tool:**__ http://cmap2.vims.edu/SeaLevelRise_Depth/SLRDepth_revised4.html
 
 __**Geographic Coverage**__
-- Virginia
+- Coastal Virginia
 
 __**Tags**__
 -  Climate projections

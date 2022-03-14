@@ -1,7 +1,7 @@
 ---
 title: "Beach Nourishment Viewer"
 description: "Demonstrates location of past and current beach nourishment projects, number of nourishment episodes in one area, date of project completion, cost, and volume of the project."
-date: 2022-02-28T11:04:50-0500
+date: 2022-03-09T16:02:05-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Jursidiction based", "Location specific", "Website", "Interactive interface/map", "Cost estimates", "Downloadable data", "Downloadable results"]
@@ -19,7 +19,7 @@ In addition to the data viewer, users have the option to download a data spreads
 __**Get This Tool:**__ http://beachnourishment.wcu.edu/
 
 __**Geographic Coverage**__
-- Contiguous United States
+- Coastal Contiguous United States
 
 __**Tags**__
 -  Historical 

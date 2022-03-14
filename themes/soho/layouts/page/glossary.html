@@ -1,0 +1,64 @@
+{{ define "main" -}}
+<head>
+  <!-- Load the glossary json variable from a separate file -->
+  <script src="glossary.js" type="text/javascript"></script>
+  <style>
+    .glossary {
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+  background: none;
+ }
+  </style>
+</head>
+<body>
+  <!-- Create backend of page -->
+  <script>
+  // Function to read glossary definitions from json file based on button clicked
+  function getAlaphabet(value) {
+    document.getElementById("definitions").innerHTML=glossary[value].text;
+  }
+  
+  // Set the page to show 'A' definitions upon page load
+  function init(){
+    document.getElementById("definitions").innerHTML=glossary['A'].text;
+  }
+  window.onload = init;
+  </script>
+  
+  <!-- Create frontend of page -->
+  <h1>Glossary</h1>
+
+  <!-- Create alaphabet buttons at the top of the page -->
+  <input type="button" class="glossary" value="A" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="B" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="C" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="D" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="E" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="F" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="G" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="H" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="I" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="J" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="K" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="L" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="M" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="N" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="O" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="P" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="Q" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="R" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="S" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="T" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="U" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="V" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="W" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="X" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="Y" onclick="getAlaphabet(this.value)"/>
+  <input type="button" class="glossary" value="Z" onclick="getAlaphabet(this.value)"/>
+  
+  <!-- Print the definitions -->
+  <p id="definitions"></p>
+
+</body>
+{{- end }}

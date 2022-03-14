@@ -1,7 +1,7 @@
 ---
 title: "Sea Level Report Cards"
 description: "Illustrate trends and projected sea level rise"
-date: 2022-02-28T11:04:49-0500
+date: 2022-03-09T16:02:05-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Climate projections", "Location specific", "Website", "Downloadable results"]
@@ -18,7 +18,7 @@ This easy-to-use tool allows users to view trends and future projections of mont
 __**Get This Tool:**__ https://www.vims.edu/research/products/slrc/
 
 __**Geographic Coverage**__
-- Contiguous United States
+- Coastal Contiguous United States
 
 __**Tags**__
 -  Historical 

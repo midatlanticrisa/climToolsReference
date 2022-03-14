@@ -1,7 +1,7 @@
 ---
 title: "National Beach Nourishment Database"
 description: "Demonstrates location of past and current beach nourishment projects, number of nourishment episodes in one area, date of project completion, cost, and volume of the project."
-date: 2022-02-28T11:04:50-0500
+date: 2022-03-09T16:02:06-0500
 pubtype: "Tool"
 featured: true
 tags: ["Location specific", "Application", "Dataset", "Interactive interface/map", "Cost estimates", "Downloadable data"]
@@ -20,7 +20,7 @@ The beach nourishment data included in this tool is provided by a multiple data 
 __**Get This Tool:**__ https://gim2.aptim.com/ASBPANationwideRenourishment/
 
 __**Geographic Coverage**__
-- Contiguous United States
+- Coastal Contiguous United States
 
 __**Tags**__
 -  Location specific

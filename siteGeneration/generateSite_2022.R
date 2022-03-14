@@ -51,7 +51,7 @@ tab <- "  "
 # clean_website_tools_and_tags <- FALSE: NO
 # clean_website_tools_and_tags <- TRUE: YES
 ##########################################################################
-clean_website_tools_and_tags <- TRUE #TRUE
+clean_website_tools_and_tags <- FALSE #TRUE
 
 # if true remove the files/subdirectories
 if(clean_website_tools_and_tags){

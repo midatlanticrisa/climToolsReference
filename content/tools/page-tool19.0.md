@@ -1,7 +1,7 @@
 ---
 title: "Shoreline Assessment Mapper"
 description: "An interactive map that displays a variety of data describing shoreline type and condition in coastal VA"
-date: 2022-02-28T11:04:49-0500
+date: 2022-03-09T16:02:05-0500
 pubtype: "Tool"
 featured: true
 tags: ["Real-time/Current", "Grid based", "Location specific", "Regional level", "Application", "Interactive interface/map"]
@@ -17,7 +17,7 @@ This easy-to-use tool allows users to view a variety of data layers describing s
 __**Get This Tool:**__ http://cmap2.vims.edu/SAM/ShorelineAssessmentMapper.html
 
 __**Geographic Coverage**__
-- Virginia
+- Coastal Virginia
 
 __**Tags**__
 -  Real-time/Current

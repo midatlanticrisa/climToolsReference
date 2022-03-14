@@ -1,7 +1,7 @@
 ---
 title: "Coastal County Snapshots"
 description: "The open-source map leads users to reports that contain graphs and figures with short-term projections and current data on flood exposure, ocean jobs, and wetland benefits specific to the user's selected county."
-date: 2022-02-28T11:04:50-0500
+date: 2022-03-09T16:02:06-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Jursidiction based", "County level", "Website", "Interactive interface/map"]
@@ -17,7 +17,7 @@ Coastal County Snapshots begins with an interactive map that allows users to fin
 __**Get This Tool:**__ https://coast.noaa.gov/digitalcoast/tools/snapshots.html
 
 __**Geographic Coverage**__
-- Contiguous United States
+- Coastal Contiguous United States
 
 __**Tags**__
 -  Historical 

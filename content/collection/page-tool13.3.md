@@ -1,7 +1,7 @@
 ---
 title: "MARISA Climate Data Portal: Community Climate Outlooks"
 description: "Summaries for each  county regarding historical climate change and future climate projections"
-date: 2022-02-28T11:04:49-0500
+date: 2022-03-09T16:02:05-0500
 pubtype: "Tool"
 featured: true
 tags: ["Restrictions apply", "Climate projections", "Jursidiction based", "City level", "County level", "Interactive interface/map", "Downloadable results"]

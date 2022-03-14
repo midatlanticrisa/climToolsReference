@@ -1,7 +1,7 @@
 ---
 title: "i-Tree"
 description: "A collection of tools to evaluate the benefits of local tree species by assessing their economic value and benefits over time."
-date: 2022-02-28T11:04:50-0500
+date: 2022-03-09T16:02:05-0500
 pubtype: "Tool"
 featured: true
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_57.0_ScreenCapture-1.png

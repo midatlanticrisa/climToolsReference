@@ -1,7 +1,7 @@
 ---
 title: "FieldWatch"
 description: "Platform for beekeepers, farmers, and pesticide applicators to communicate and share information"
-date: 2022-02-28T11:04:49-0500
+date: 2022-03-09T16:02:05-0500
 pubtype: "Tool"
 featured: true
 tags: ["Registration required"]
@@ -17,7 +17,7 @@ This tool creates a platform for beekeepers, commercial specialty crop producers
 __**Get This Tool:**__ https://fieldwatch.com/fieldwatch-state-registries/
 
 __**Geographic Coverage**__
-- Delaware; Maryland; Virginia
+- Delaware; District of Columbia; Maryland; Pennsylvania; Virginia
 
 __**Tags**__
 -  Registration required

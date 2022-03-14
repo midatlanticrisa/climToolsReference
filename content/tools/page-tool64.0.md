@@ -1,7 +1,7 @@
 ---
 title: "Bay Footprint Calculator"
 description: "Calculates individual nitrogen contribution to the Chesapeake Bay."
-date: 2022-02-28T11:04:50-0500
+date: 2022-03-09T16:02:06-0500
 pubtype: "Tool"
 featured: true
 tags: ["Registration required", "Location specific", "Application", "Interactive interface/map", "Solutions", "Downloadable results"]

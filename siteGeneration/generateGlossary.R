@@ -68,3 +68,33 @@ format.glossary <- c(page.layout, "", paste0("<h3>", floatingLetterLinks, "</h3>
 #                                     glossary$defintion), "</DL>")
 
 cat(format.glossary, file=paste0(toolsDir, filenm), sep="\n")
+
+
+groupedtest = list()
+for(i in LETTERS){
+  if(i == "Z"){ # Ensure there is no ending comma
+    if(any(firstCharacter == i)){
+      letterGlos <- glossary[firstCharacter == i, ]
+      
+      alldefs <- paste0('<DT>', letterGlos$keyword, '<DD>', letterGlos$defintion, collapse="")
+      groupedtest[[i]] = paste0('"', i, '": {\n "text": "<h3>', i, 
+                                '</h3><DL>', alldefs, '</DL>"}')
+    } else {
+      groupedtest[[i]] = paste0('"', i, '": {\n "text": "<h3>', i, '</h3>"}')
+    }
+    
+  } else { # make sure there is an ending comma
+    if(any(firstCharacter == i)){
+      letterGlos <- glossary[firstCharacter == i, ]
+      
+      alldefs <- paste0('<DT>', letterGlos$keyword, '<DD>', letterGlos$defintion, collapse="")
+      groupedtest[[i]] = paste0('"', i, '": {\n "text": "<h3>', i, 
+                                '</h3><DL>', alldefs, '</DL>"},')
+    } else {
+      groupedtest[[i]] = paste0('"', i, '": {\n "text": "<h3>', i, '</h3>"},')
+    }
+  }
+}
+
+json.glossary <- c("var glossary = {", unlist(groupedtest), "}")
+cat(json.glossary , file=paste0(toolsDir, "glossary.js"), sep="\n")

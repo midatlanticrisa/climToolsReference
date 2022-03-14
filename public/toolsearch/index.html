@@ -107,1587 +107,620 @@
 
   <main class="content container">
   <head>
-  <meta charset="utf-8">
-  <title>jQuery Get Values of Selected Checkboxes</title>
+  
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
   
-  <script src="./multiselect/jquery.multiselect.js"></script>
-  <link rel="stylesheet" href="./multiselect/jquery.multiselect.css">
-  <script>
-      $(document).ready(function() {
-        
-        
-        var showData = $('#outputList');
-        var holdSoftReqSearch = []; 
-        var holdGeoSearch_coast = [];  
-        var holdGeoSearch_cnty = [];  
-        var holdGeoSearch_state = [];  
-        var holdToolFunSearch = [];  
-        var holdTopFilSearch = [];  
-        var holdTopSubSearch = [];  
-
-        
-        
-        
-        const unique = (value, index, self) => {
-          return self.indexOf(value) === index
-        }
-        
-        
-        function addTool(name, link){
-          this.name = name;
-          this.link = link;
-        }
-        
-        
-        
-        
-        $.sum = function(arr) {
-          var r = 0;
-          $.each(arr, function(i, v) {
-            r += +v;
-          });
-          return r;
-        }
-        
-        
-        
-        
-        function findValueInArray(stArr,val,cntyArr){
-          var res = [];
-          for(var i=0; i<stArr.length; i++){
-            var arrVal = stArr[i];
-            if(arrVal == val){
-              res.push(cntyArr[i]);
-            }
-          }
-
-          
-          
-          
-          return res;
-        }
-        
-        
-        
-        collectGeoData = function(){
-          var cntySelect = [];
-          var stateSelect = [];
-
-          var paSelect = $("#paGeoOpt option:selected");
-          paSelect.each(function(){
-            cntySelect.push($(this).val());
-            stateSelect.push("Pennsylvania");
-          });
-          var mdSelect = $("#mdGeoOpt option:selected");
-          mdSelect.each(function(){
-            cntySelect.push($(this).val());
-            stateSelect.push("Maryland");
-          });
-          var vaSelect = $("#vaGeoOpt option:selected");
-          vaSelect.each(function(){
-            cntySelect.push($(this).val());
-            stateSelect.push("Virginia");
-          });
-          var nySelect = $("#nyGeoOpt option:selected");
-          nySelect.each(function(){
-            cntySelect.push($(this).val());
-            stateSelect.push("New York");
-          });
-          var deSelect = $("#deGeoOpt option:selected");
-          deSelect.each(function(){
-            cntySelect.push($(this).val());
-            stateSelect.push("Delaware");
-          });
-          var njSelect = $("#njGeoOpt option:selected");
-          njSelect.each(function(){
-            cntySelect.push($(this).val());
-            stateSelect.push("New Jersey");
-          });
-          var dcSelect = $("#dcGeoOpt option:selected");
-          dcSelect.each(function(){
-            cntySelect.push("District of Columbia");
-            
-            stateSelect.push("District of Columbia");
-          });
-
-          return {states : stateSelect, counties : cntySelect};
-        }
-        
-        
-        collectFilterData = function(){
-          var topFilterSearch = [];
-          var subFilterSearch = [];
-
-          var climSelect = $("#climFiltOpt option:selected");
-          climSelect.each(function(){
-            subFilterSearch.push($(this).val());
-            topFilterSearch.push("Weather and Climate");
-          });
-          var ecoSelect = $("#ecoFiltOpt option:selected");
-          ecoSelect.each(function(){
-            subFilterSearch.push($(this).val());
-            topFilterSearch.push("Ecosystems");
-          });
-          var bltSelect = $("#bltFiltOpt option:selected");
-          bltSelect.each(function(){
-            subFilterSearch.push($(this).val());
-            topFilterSearch.push("Agriculture / Built Environment");
-          });
-          var socSelect = $("#socFiltOpt option:selected");
-          socSelect.each(function(){
-            subFilterSearch.push($(this).val());
-            topFilterSearch.push("Society");
-          });
-          var fldSelect = $("#fldFiltOpt option:selected");
-          fldSelect.each(function(){
-            subFilterSearch.push($(this).val());
-            topFilterSearch.push("Water / Flooding");
-          });
-          var othSelect = $("#othFiltOpt option:selected");
-          othSelect.each(function(){
-            subFilterSearch.push("None");
-            topFilterSearch.push("None");
-          });
-
-          return {topFilt : topFilterSearch, subFilt : subFilterSearch};
-        }
-        
-        
-        
-        
-        jQuery.getMultipleJSON = function(){
-          var
-            num = 0,
-            def = jQuery.Deferred(),
-            map = jQuery.map(arguments, function(jsonfile){
-              return jQuery.getJSON(jsonfile).then(function(){
-                def.notify(1/map.length * ++num, num, map.length);
-                return arguments;
-              });
-            })
-          ;
-          jQuery.when.apply(jQuery, map)
-            .fail(function(){ def.rejectWith(def, arguments); })
-            .done(function(){
-              def.resolveWith(def, jQuery.map(arguments, function(response){
-                return response[0];
-              }));
-            })
-          ;
-          return def;
-        };
-        
-        
-        
-        
-        
-        function selectTools(inSR, reqDat, inGeoCNTY, inGeoST, inGeoCoast, geoDatCNTY, geoDatST, geoDatCoast, inFunct, tFunDat, inFilts, topFilDat, inSubFilts, topSubFilDat){
-          var fullResults = []; 
-          var inTools = []; 
-
-          var uniqueST = inGeoST.filter(unique);
-          
-          
-          
-          if(uniqueST.length>0 ){
-            uniqueST.push("All");
-            uniqueST.push("Gen");
-            $.each(uniqueST, function(st) {
-              var stateResults = [];
-              var items = geoDatST.items.map(function (item){
-                if($.inArray(item.geoScopeST, [uniqueST[st]]) >= 0){
-                
-                  if($.inArray(item.name, inTools) == -1){
-                    inTools.push(item.name);
-                    var tool = new addTool(item.name, item.link);
-                    stateResults.push(tool)
-                  }
-                }
-              });
-
-              
-              var stCNTYs = findValueInArray(inGeoST,uniqueST[st],inGeoCNTY);
-              stCNTYs.push("NA");
-              stCNTYs.push("All");
-              stCNTYs.push("Gen");
-
-              if(stCNTYs[0]=="Statewide"){
-
-              }else{
-                $.each(stateResults, function(tool) {
-                  var toolName = this.name;
-                  var keepTool = 0;
-                  var toolReqs = [];
-                  var items = geoDatCNTY.items.map(function (item){
-                    if(item.name == toolName){
-                      toolReqs.push(item.geoScopeCNTY)
-                    }
-                  });
-                  for (i=0; i<=toolReqs.length; i++) {
-                    if($.inArray(toolReqs[i], stCNTYs) >= 0){
-                      keepTool = 1;
-                    }
-                  }
-                  if(keepTool==0){
-                    var whichRemove = $.inArray(toolName, inTools);
-                    inTools.splice(whichRemove, 1);
-                    stateResults.splice(whichRemove, 1);
-                  }
-                });
-              }
-              
-              if(fullResults.length == 0){
-                $.each(stateResults, function(tool) {
-                  fullResults.push(this);
-                });
-              }else{
-                var existTools = [];
-                $.each(fullResults, function (item){
-                  existTools.push(this.name);
-                });
-
-                $.each(stateResults, function(tool) {
-                  var toolName = this.name;
-                  if($.inArray(toolName, existTools) == -1){
-                    fullResults.push(this);
-                  }
-                });
-              }
-            });
-          }
-
-          
-          if(inGeoCoast==1 && fullResults.length>0){
-            var indexToRemove = [];
-            $.each(fullResults, function(tool) {
-               var toolName = this.name;
-               var keepTool = 0;
-               var toolReqs = [];
-               var items = geoDatCoast.items.map(function (item){
-                 if(item.name == toolName){
-                   toolReqs.push(item.geoScopeCoast)
-                 }
-               });
-               for (i=0; i<=toolReqs.length; i++) {
-                 if(jQuery.inArray(toolReqs[i], "1") >= 0){
-                   keepTool = 1;
-                 }
-               }
-               if(keepTool==0){
-                 var whichRemove = jQuery.inArray(toolName, inTools);
-                 indexToRemove.push(whichRemove)
-               }
-            });
-
-            if(indexToRemove.length>0){
-              inTools = inTools.filter(function(val, ind) {
-                return indexToRemove.indexOf(ind) == -1
-              });
-              fullResults = fullResults.filter(function(val, ind) {
-                return indexToRemove.indexOf(ind) == -1
-              });
-            }
-
-          }else if(inGeoCoast==1 && fullResults.length==0){
-             var items = geoDatCoast.items.map(function (item){
-               if(jQuery.inArray(item.geoScopeCoast, "1") >= 0){
-                 if(jQuery.inArray(item.name, inTools) == -1){
-                   inTools.push(item.name);
-                   var tool = new addTool(item.name, item.link);
-                   fullResults.push(tool)
-                 }
-               }
-            });
-          }
-
-          
-
-
-          
-          if(inFilts.length>0 && fullResults.length>0){
-            var indexToRemove = [];
-            $.each(fullResults, function(tool) {
-              var toolName = this.name;
-              var keepTool = 0;
-              var toolReqs = [];
-              var items = topFilDat.items.map(function (item){
-                if(item.name == toolName){
-                  toolReqs.push(item.topFilter)
-                }
-              });
-              for (i=0; i<=toolReqs.length; i++) {
-                if(jQuery.inArray(toolReqs[i], inFilts) >= 0){
-                  keepTool = 1;
-                }
-              }
-              if(keepTool==0){
-                var whichRemove = jQuery.inArray(toolName, inTools);
-                indexToRemove.push(whichRemove)
-              }
-            });
-
-            if(indexToRemove.length>0){
-              inTools = inTools.filter(function(val, ind) {
-                return indexToRemove.indexOf(ind) == -1
-              });
-              fullResults = fullResults.filter(function(val, ind) {
-                return indexToRemove.indexOf(ind) == -1
-              });
-            }
-
-          }else if(inFilts.length>0 && fullResults.length==0){
-            var items = topFilDat.items.map(function (item){
-              if(jQuery.inArray(item.topFilter, inFilts) >= 0){
-                if(jQuery.inArray(item.name, inTools) == -1){
-                  inTools.push(item.name);
-                  var tool = new addTool(item.name, item.link);
-                  fullResults.push(tool)
-                }
-              }
-            });
-          }
-
-          
-          if(inSubFilts.length>0 && fullResults.length>0){
-            var indexToRemove = [];
-            $.each(fullResults, function(tool) {
-              var toolName = this.name;
-              var keepTool = 0;
-              var toolReqs = [];
-              var items = topSubFilDat.items.map(function (item){
-                if(item.name == toolName){
-                  toolReqs.push(item.subFilter)
-                }
-              });
-              for (i=0; i<=toolReqs.length; i++) {
-                if(jQuery.inArray(toolReqs[i], inSubFilts) >= 0){
-                  keepTool = 1;
-                }
-              }
-              if(keepTool==0){
-                var whichRemove = jQuery.inArray(toolName, inTools);
-                indexToRemove.push(whichRemove)
-              }
-            });
-
-            if(indexToRemove.length>0){
-              inTools = inTools.filter(function(val, ind) {
-                return indexToRemove.indexOf(ind) == -1
-              });
-              fullResults = fullResults.filter(function(val, ind) {
-                return indexToRemove.indexOf(ind) == -1
-              });
-            }
-
-          }else if(inSubFilts.length>0 && fullResults.length==0){
-            var items = topSubFilDat.items.map(function (item){
-              if(jQuery.inArray(item.subFilter, inSubFilts) >= 0){
-                if(jQuery.inArray(item.name, inTools) == -1){
-                  inTools.push(item.name);
-                  var tool = new addTool(item.name, item.link);
-                  fullResults.push(tool)
-                }
-              }
-            });
-          }
-
-          
-          if(inFunct.length>0 && fullResults.length>0){
-            var indexToRemove = [];
-            $.each(fullResults, function(tool) {
-              var toolName = this.name;
-              var keepTool = 0;
-              var toolReqs = [];
-              var items = tFunDat.items.map(function (item){
-                if(item.name == toolName){
-                  toolReqs.push(item.toolFun)
-                }
-              });
-              for (i=0; i<=toolReqs.length; i++) {
-                if(jQuery.inArray(toolReqs[i], inFunct) >= 0){
-                  keepTool = 1;
-                }
-              }
-              
-              if(keepTool==0){
-                var whichRemove = jQuery.inArray(toolName, inTools);
-                indexToRemove.push(whichRemove)
-              }
-            });
-
-            if(indexToRemove.length>0){
-              inTools = inTools.filter(function(val, ind) {
-                return indexToRemove.indexOf(ind) == -1
-              });
-              fullResults = fullResults.filter(function(val, ind) {
-                return indexToRemove.indexOf(ind) == -1
-              });
-            }
-
-          }else if(inFunct.length>0 && fullResults.length==0){
-            var items = tFunDat.items.map(function (item){
-              if(jQuery.inArray(item.toolFun, inFunct) >= 0){
-                if(jQuery.inArray(item.name, inTools) == -1){
-                  inTools.push(item.name);
-                  var tool = new addTool(item.name, item.link);
-                  fullResults.push(tool)
-                }
-              }
-            });
-          }
-
-          
-          
-          inTools.sort(function (a,b) {
-            return a.toLowerCase().localeCompare(b.toLowerCase());
-          });
-
-          
-          var holdOrigOrder = [];
-          $.each(fullResults, function(tool) {
-            holdOrigOrder.push(this.name)
-          });
-
-          
-          document.getElementsByTagName("h2")[1].innerHTML = "Search Results (Displaying " + fullResults.length + " Tools)"
-          if(fullResults.length > 0){
-            for(var i=0; i<inTools.length; i++){
-              var tInd = jQuery.inArray(inTools[i], holdOrigOrder)
-              
-              newTool = '<li><a href="https://cbtooltest.marisa.psu.edu/' + fullResults[tInd].link +'/index.html" target="_blank">' + fullResults[tInd].name + '</a></li>';
-              showData.append(newTool);
-            }
-          }
-
-          
-
-        } 
-        
-        
-        
-        function defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData){
-          showData.empty();
-          
-          
-          
-          
-          var check = ['Weather and Climate', 'Ecosystems', 'Agriculture / Built Environment', 'Society', 'Water / Flooding', 'None'];
-          selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, check, topFilData, holdTopSubSearch, subFilData)
-        }
-        
-        
-        
-        function getType(o) {
-          return Object.prototype.toString.call(o).match(/^\[object\s(.*)\]$/)[1];
-        }
-        
-        
-
-        
-        
-        
-        jQuery.getMultipleJSON('/data/searchSoft.json', '/data/searchGeoScope_county.json', '/data/searchGeoScope_state.json', '/data/searchGeoScope_coastal.json', '/data/searchToolFun.json', '/data/searchTopFilter.json', '/data/searchSubFilter.json')
-          .progress(function(percent, count, total){})
-          .fail(function(jqxhr, textStatus, error){alert("load error")})
-          .done(function(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData){
-
-            defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData);
-            
-
-            
-            
-            $('#mdGeoOpt').multiselect({
-              columns: 1,
-              maxWidth: 287,
-              minHeight: 20,
-              maxHeight: 260,
-              selectGroup: true,
-              texts: {
-                placeholder: 'Maryland',
-                selectAllTxt: 'Statewide'
-              },
-              onOptionClick : function(){
-                showData.empty();
-
-                var collectGeo = collectGeoData();
-                var stateSelect = collectGeo.states;
-                var cntySelect = collectGeo.counties;
-
-                holdGeoSearch_cnty = cntySelect;
-                holdGeoSearch_state = stateSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              },
-              onSelectAll : function(){
-                showData.empty();
-
-                var collectGeo = collectGeoData();
-                var stateSelect = collectGeo.states;
-                var cntySelect = collectGeo.counties;
-
-                holdGeoSearch_cnty = cntySelect;
-                holdGeoSearch_state = stateSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              }
-            });
-            
-            $('#paGeoOpt').multiselect({
-              columns: 1,
-              maxWidth: 287,
-              minHeight: 20,
-              maxHeight: 260,
-              selectGroup: true,
-              texts: {
-                placeholder: 'Pennsylvania',
-                selectAllTxt: 'Statewide'
-              },
-              onOptionClick : function(){
-                showData.empty();
-
-                var collectGeo = collectGeoData();
-                var stateSelect = collectGeo.states;
-                var cntySelect = collectGeo.counties;
-
-                holdGeoSearch_cnty = cntySelect;
-                holdGeoSearch_state = stateSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              },
-              onSelectAll : function(){
-                showData.empty();
-
-                var collectGeo = collectGeoData();
-                var stateSelect = collectGeo.states;
-                var cntySelect = collectGeo.counties;
-
-                holdGeoSearch_cnty = cntySelect;
-                holdGeoSearch_state = stateSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              }
-            });
-            
-            $('#vaGeoOpt').multiselect({
-              columns: 1,
-              maxWidth: 287,
-              minHeight: 20,
-              maxHeight: 260,
-              selectGroup: true,
-              texts: {
-                placeholder: 'Virginia',
-                selectAllTxt: 'Statewide'
-              },
-              onOptionClick : function(){
-                showData.empty();
-
-                var collectGeo = collectGeoData();
-                var stateSelect = collectGeo.states;
-                var cntySelect = collectGeo.counties;
-
-                holdGeoSearch_cnty = cntySelect;
-                holdGeoSearch_state = stateSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              },
-              onSelectAll : function(){
-                showData.empty();
-
-                var collectGeo = collectGeoData();
-                var stateSelect = collectGeo.states;
-                var cntySelect = collectGeo.counties;
-
-                holdGeoSearch_cnty = cntySelect;
-                holdGeoSearch_state = stateSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              }
-            });
-            
-            $('#nyGeoOpt').multiselect({
-              columns: 1,
-              maxWidth: 287,
-              minHeight: 20,
-              maxHeight: 260,
-              selectGroup: true,
-              texts: {
-                placeholder: 'New York',
-                selectAllTxt: 'Statewide'
-              },
-              onOptionClick : function(){
-                showData.empty();
-
-                var collectGeo = collectGeoData();
-                var stateSelect = collectGeo.states;
-                var cntySelect = collectGeo.counties;
-
-                holdGeoSearch_cnty = cntySelect;
-                holdGeoSearch_state = stateSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              },
-              onSelectAll : function(){
-                showData.empty();
-
-                var collectGeo = collectGeoData();
-                var stateSelect = collectGeo.states;
-                var cntySelect = collectGeo.counties;
-
-                holdGeoSearch_cnty = cntySelect;
-                holdGeoSearch_state = stateSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              }
-            });
-            
-            $('#deGeoOpt').multiselect({
-              columns: 1,
-              maxWidth: 287,
-              minHeight: 20,
-              maxHeight: 260,
-              selectGroup: true,
-              texts: {
-                placeholder: 'Delaware',
-                selectAllTxt: 'Statewide'
-              },
-              onOptionClick : function(){
-                showData.empty();
-
-                var collectGeo = collectGeoData();
-                var stateSelect = collectGeo.states;
-                var cntySelect = collectGeo.counties;
-
-                holdGeoSearch_cnty = cntySelect;
-                holdGeoSearch_state = stateSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              },
-              onSelectAll : function(){
-                showData.empty();
-
-                var collectGeo = collectGeoData();
-                var stateSelect = collectGeo.states;
-                var cntySelect = collectGeo.counties;
-
-                holdGeoSearch_cnty = cntySelect;
-                holdGeoSearch_state = stateSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              }
-            });
-            
-            $('#njGeoOpt').multiselect({
-              columns: 1,
-              maxWidth: 287,
-              minHeight: 20,
-              maxHeight: 260,
-              selectGroup: true,
-              texts: {
-                placeholder: 'New Jersey',
-                selectAllTxt: 'Statewide'
-              },
-              onOptionClick : function(){
-                showData.empty();
-
-                var collectGeo = collectGeoData();
-                var stateSelect = collectGeo.states;
-                var cntySelect = collectGeo.counties;
-
-                holdGeoSearch_cnty = cntySelect;
-                holdGeoSearch_state = stateSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              },
-              onSelectAll : function(){
-                showData.empty();
-
-                var collectGeo = collectGeoData();
-                var stateSelect = collectGeo.states;
-                var cntySelect = collectGeo.counties;
-
-                holdGeoSearch_cnty = cntySelect;
-                holdGeoSearch_state = stateSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              }
-            });
-            
-            $('#dcGeoOpt').multiselect({
-              columns: 1,
-              placeholder: 'Washington D.C.',
-              maxWidth: 287,
-              minHeight: 20,
-              maxHeight: 260,
-              onOptionClick : function(){
-                showData.empty();
-
-                var collectGeo = collectGeoData();
-                var stateSelect = collectGeo.states;
-                var cntySelect = collectGeo.counties;
-
-                holdGeoSearch_cnty = cntySelect;
-                holdGeoSearch_state = stateSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, cntySelect.length, stateSelect.length, holdGeoSearch_coast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, cntySelect, stateSelect, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              }
-            });
-            
-            $('.globalGeoChecks').change(function(){
-              showData.empty();
-              var searchGeoGlobal = [];
-              var getCoast = [];
-
-              $('#globalGeoOptions :checked').each(function(){
-                searchGeoGlobal.push($(this).val());
-              });
-              
-
-              for(var i=0; i<searchGeoGlobal.length; i++){
-                var arrVal = searchGeoGlobal[i];
-                if(arrVal == "Coastal"){
-                  getCoast = 1;
-                }
-              }
-
-              holdGeoSearch_coast = getCoast;
-
-              var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, getCoast.length, holdToolFunSearch.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-              if(chkNumRes>0){
-                selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, getCoast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-              }else{
-                defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-              }
-            });
-
-
-            
-            
-            $('#climFiltOpt').multiselect({
-              columns: 1,
-              maxWidth: 287,
-              minHeight: 20,
-              maxHeight: 260,
-              selectGroup: true,
-              texts: {
-                placeholder: 'Weather and Climate',
-                selectAllTxt: 'Select All'
-              },
-              onOptionClick : function(){
-                showData.empty();
-
-                var collectFilter = collectFilterData();
-                var topFilterSelect = collectFilter.topFilt;
-                var subFilterSelect = collectFilter.subFilt;
-
-                holdTopFilSearch = topFilterSelect;
-                holdTopSubSearch = subFilterSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              },
-              onSelectAll : function(){
-                showData.empty();
-
-                var collectFilter = collectFilterData();
-                var topFilterSelect = collectFilter.topFilt;
-                var subFilterSelect = collectFilter.subFilt;
-
-                holdTopFilSearch = topFilterSelect;
-                holdTopSubSearch = subFilterSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              }
-            });
-            
-            $('#ecoFiltOpt').multiselect({
-              columns: 1,
-              maxWidth: 287,
-              minHeight: 20,
-              maxHeight: 260,
-              selectGroup: true,
-              texts: {
-                placeholder: 'Ecosystems',
-                selectAllTxt: 'Select All'
-              },
-              onOptionClick : function(){
-                showData.empty();
-
-                var collectFilter = collectFilterData();
-                var topFilterSelect = collectFilter.topFilt;
-                var subFilterSelect = collectFilter.subFilt;
-
-                holdTopFilSearch = topFilterSelect;
-                holdTopSubSearch = subFilterSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              },
-              onSelectAll : function(){
-                showData.empty();
-
-                var collectFilter = collectFilterData();
-                var topFilterSelect = collectFilter.topFilt;
-                var subFilterSelect = collectFilter.subFilt;
-
-                holdTopFilSearch = topFilterSelect;
-                holdTopSubSearch = subFilterSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              }
-            });
-            
-            $('#bltFiltOpt').multiselect({
-              columns: 1,
-              maxWidth: 287,
-              minHeight: 20,
-              maxHeight: 260,
-              selectGroup: true,
-              texts: {
-                placeholder: 'Developed Environments',
-                selectAllTxt: 'Select All'
-              },
-              onOptionClick : function(){
-                showData.empty();
-
-                var collectFilter = collectFilterData();
-                var topFilterSelect = collectFilter.topFilt;
-                var subFilterSelect = collectFilter.subFilt;
-
-                holdTopFilSearch = topFilterSelect;
-                holdTopSubSearch = subFilterSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              },
-              onSelectAll : function(){
-                showData.empty();
-
-                var collectFilter = collectFilterData();
-                var topFilterSelect = collectFilter.topFilt;
-                var subFilterSelect = collectFilter.subFilt;
-
-                holdTopFilSearch = topFilterSelect;
-                holdTopSubSearch = subFilterSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              }
-            });
-            
-            $('#socFiltOpt').multiselect({
-              columns: 1,
-              maxWidth: 287,
-              minHeight: 20,
-              maxHeight: 260,
-              selectGroup: true,
-              texts: {
-                placeholder: 'Society',
-                selectAllTxt: 'Select All'
-              },
-              onOptionClick : function(){
-                showData.empty();
-
-                var collectFilter = collectFilterData();
-                var topFilterSelect = collectFilter.topFilt;
-                var subFilterSelect = collectFilter.subFilt;
-
-                holdTopFilSearch = topFilterSelect;
-                holdTopSubSearch = subFilterSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              },
-              onSelectAll : function(){
-                showData.empty();
-
-                var collectFilter = collectFilterData();
-                var topFilterSelect = collectFilter.topFilt;
-                var subFilterSelect = collectFilter.subFilt;
-
-                holdTopFilSearch = topFilterSelect;
-                holdTopSubSearch = subFilterSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              }
-            });
-            
-            $('#fldFiltOpt').multiselect({
-              columns: 1,
-              maxWidth: 287,
-              minHeight: 20,
-              maxHeight: 260,
-              selectGroup: true,
-              texts: {
-                placeholder: 'Water / Flooding',
-                selectAllTxt: 'Select All'
-              },
-              onOptionClick : function(){
-                showData.empty();
-
-                var collectFilter = collectFilterData();
-                var topFilterSelect = collectFilter.topFilt;
-                var subFilterSelect = collectFilter.subFilt;
-
-                holdTopFilSearch = topFilterSelect;
-                holdTopSubSearch = subFilterSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              },
-              onSelectAll : function(){
-                showData.empty();
-
-                var collectFilter = collectFilterData();
-                var topFilterSelect = collectFilter.topFilt;
-                var subFilterSelect = collectFilter.subFilt;
-
-                holdTopFilSearch = topFilterSelect;
-                holdTopSubSearch = subFilterSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              }
-            });
-            
-            $('#othFiltOpt').multiselect({
-              columns: 1,
-              placeholder: 'Other / Uncategorized',
-              maxWidth: 287,
-              minHeight: 20,
-              maxHeight: 260,
-              onOptionClick : function(){
-                showData.empty();
-
-                var collectFilter = collectFilterData();
-                var topFilterSelect = collectFilter.topFilt;
-                var subFilterSelect = collectFilter.subFilt;
-
-                holdTopFilSearch = topFilterSelect;
-                holdTopSubSearch = subFilterSelect;
-                var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, holdToolFunSearch.length, topFilterSelect.length, subFilterSelect.length]);
-                if(chkNumRes>0){
-                  selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, holdToolFunSearch, tFunData, topFilterSelect, topFilData, subFilterSelect, subFilData)
-                }else{
-                  defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-                }
-
-              }
-            });
-
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-
-            
-            $('.toolFunctChecks').change(function(){
-              showData.empty();
-              var searchToolFun = [];
-
-              if($('.toolFunctChecks:checked').length == $('.toolFunctChecks').length){
-                $('#tlfunTogAll').prop('checked',true);
-              }else{
-                $('#tlfunTogAll').prop('checked',false);
-              }
-
-              $('#toolFunSearch :checked').each(function(){
-                searchToolFun.push($(this).val());
-              });
-
-              holdToolFunSearch = searchToolFun;
-              var chkNumRes = $.sum([holdSoftReqSearch.length, holdGeoSearch_cnty.length, holdGeoSearch_state.length, holdGeoSearch_coast.length, searchToolFun.length, holdTopFilSearch.length, holdTopSubSearch.length]);
-              if(chkNumRes>0){
-                selectTools(holdSoftReqSearch, reqData, holdGeoSearch_cnty, holdGeoSearch_state, holdGeoSearch_coast, geoDataCNTY, geoDataST, geoDataCoast, searchToolFun, tFunData, holdTopFilSearch, topFilData, holdTopSubSearch, subFilData)
-              }else{
-                defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData)
-              }
-            });
-          });
-
-      });
-  </script>
+  
+  
+  
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  
+  
+  <script src="/data/toolsFilter.js" type="text/javascript"></script>
 </head>
 <body>
-<div class="app-container">
-  <div class="app-content">
-    <section class="filtered-search">
-      <div class="filtered-search-dashboard">
-        <div class="filtered-search-banner">
-          <h2 class="mb-5">Tool Search</h2>
-        </div>
-        <div class="filtered-search-filters">
-          <fieldset class>
+  
+  <h1>Tool Search</h1>
 
-          <fieldset class="singleRow">
-            <legend><h5>Geographic Scope</h5></legend>
-            <form id="geoScopeSearch">
-              <select name="deGeoOpt[]" id="deGeoOpt" multiple="multiple">
-                <optgroup label=" ">
-                  <option value="Kent County">Kent County</option>
-                  <option value="New Castle County">New Castle County</option>
-                  <option value="Sussex County">Sussex County</option>
-                </optgroup>
-              </select>
-              <select name="mdGeoOpt[]" id="mdGeoOpt" multiple="multiple">
-                <optgroup label=" ">
-                  <option value="Allegany County">Allegany County</option>
-                  <option value="Anne Arundel County">Anne Arundel County</option>
-                  <option value="Baltimore County">Baltimore County</option>
-                  <option value="Calvert County">Calvert County</option>
-                  <option value="Caroline County">Caroline County</option>
-                  <option value="Carroll County">Carroll County</option>
-                  <option value="Cecil County">Cecil County</option>
-                  <option value="Charles County">Charles County</option>
-                  <option value="Dorchester County">Dorchester County</option>
-                  <option value="Frederick County">Frederick County</option>
-                  <option value="Garrett County">Garrett County</option>
-                  <option value="Harford County">Harford County</option>
-                  <option value="Howard County">Howard County</option>
-                  <option value="Kent County">Kent County</option>
-                  <option value="Montgomery County">Montgomery County</option>
-                  <option value="Prince George's County">Prince George's County</option>
-                  <option value="Somerset County">Somerset County</option>
-                  <option value="St. Mary's County">St. Mary's County</option>
-                  <option value="Talbot County">Talbot County</option>
-                  <option value="Washington County">Washington County</option>
-                  <option value="Wicomico County">Wicomico County</option>
-                  <option value="Worcester County">Worcester County</option>
-                  <option value="Baltimore City">Baltimore City</option>
-                </optgroup>
-              </select>
-              <select name="njGeoOpt[]" id="njGeoOpt" multiple="multiple">
-                <optgroup label=" ">
-                  <option value="Atlantic County">Atlantic County</option>
-                  <option value="Bergen County">Bergen County</option>
-                  <option value="Burlington City">Burlington City</option>
-                  <option value="Camden County">Camden County</option>
-                  <option value="Cape May County">Cape May County</option>
-                  <option value="Cumerland County">Cumerland County</option>
-                  <option value="Essex County">Essex County</option>
-                  <option value="Gloucester County">Gloucester County</option>
-                  <option value="Hudson County">Hudson County</option>
-                  <option value="Hunterdon County">Hunterdon County</option>
-                  <option value="Mercer County">Mercer County</option>
-                  <option value="Middlesex County">Middlesex County</option>
-                  <option value="Monmouth County">Monmouth County</option>
-                  <option value="Morris County">Morris County</option>
-                  <option value="Ocean County">Ocean County</option>
-                  <option value="Passaic County">Passaic County</option>
-                  <option value="Salem County">Salem County</option>
-                  <option value="Somerset County">Somerset County</option>
-                  <option value="Sussex County">Sussex County</option>
-                  <option value="Union County">Union County</option>
-                  <option value="Warren County">Warren County</option>
-                </optgroup>
-              </select>
-              <select name="nyGeoOpt[]" id="nyGeoOpt" multiple="multiple">
-                <optgroup label=" ">
-                  <option value="Albany County">Albany County</option>
-                  <option value="Allegany County">Allegany County</option>
-                  <option value="Bronx County">Bronx County</option>
-                  <option value="Broome County">Broome County</option>
-                  <option value="Cattaraugus County">Cattaraugus County</option>
-                  <option value="Cayuga County">Cayuga County</option>
-                  <option value="Chautauqua County">Chautauqua County</option>
-                  <option value="Chemung County">Chemung County</option>
-                  <option value="Chenango County">Chenango County</option>
-                  <option value="Clinton County">Clinton County</option>
-                  <option value="Columbia County">Columbia County</option>
-                  <option value="Cortland County">Cortland County</option>
-                  <option value="Delaware County">Delaware County</option>
-                  <option value="Dutchess County">Dutchess County</option>
-                  <option value="Erie County">Erie County</option>
-                  <option value="Essex County">Essex County</option>
-                  <option value="Franklin County">Franklin County</option>
-                  <option value="Fulton County">Fulton County</option>
-                  <option value="Genesee County">Genesee County</option>
-                  <option value="Greene County">Greene County</option>
-                  <option value="Hamilton County">Hamilton County</option>
-                  <option value="Herkimer County">Herkimer County</option>
-                  <option value="Jefferson County">Jefferson County</option>
-                  <option value="Kings County">Kings County</option>
-                  <option value="Lewis County">Lewis County</option>
-                  <option value="Livingston County">Livingston County</option>
-                  <option value="Madison County">Madison County</option>
-                  <option value="Monroe County">Monroe County</option>
-                  <option value="Montgomery County">Montgomery County</option>
-                  <option value="Nassau County">Nassau County</option>
-                  <option value="New York County">New York County</option>
-                  <option value="Niagara County">Niagara County</option>
-                  <option value="Oneida County">Oneida County</option>
-                  <option value="Onondaga County">Onondaga County</option>
-                  <option value="Ontario County">Ontario County</option>
-                  <option value="Orange County">Orange County</option>
-                  <option value="Orleans County">Orleans County</option>
-                  <option value="Oswego County">Oswego County</option>
-                  <option value="Otsego County">Otsego County</option>
-                  <option value="Putnam County">Putnam County</option>
-                  <option value="Queens County">Queens County</option>
-                  <option value="Rensselaer County">Rensselaer County</option>
-                  <option value="Richmond County">Richmond County</option>
-                  <option value="Rockland County">Rockland County</option>
-                  <option value="St. Lawrence County">St. Lawrence County</option>
-                  <option value="Saratoga County">Saratoga County</option>
-                  <option value="Schenectady County">Schenectady County</option>
-                  <option value="Schoharie County">Schoharie County</option>
-                  <option value="Schuyler County">Schuyler County</option>
-                  <option value="Seneca County">Seneca County</option>
-                  <option value="Steuben County">Steuben County</option>
-                  <option value="Suffolk County">Suffolk County</option>
-                  <option value="Sullivan County">Sullivan County</option>
-                  <option value="Tioga County">Tioga County</option>
-                  <option value="Tompkins County">Tompkins County</option>
-                  <option value="Ulster County">Ulster County</option>
-                  <option value="Warren County">Warren County</option>
-                  <option value="Washington County">Washington County</option>
-                  <option value="Wayne County">Wayne County</option>
-                  <option value="Westchester County">Westchester County</option>
-                  <option value="Wyoming County">Wyoming County</option>
-                  <option value="Yates County">Yates County</option>
-                </optgroup>
-              </select>
-              <select name="paGeoOpt[]" id="paGeoOpt" multiple="multiple">
-                <optgroup label=" ">
-                  <option value="Adams County">Adams County</option>
-                  <option value="Allegheny County">Allegheny County</option>
-                  <option value="Armstrong County">Armstrong County</option>
-                  <option value="Beaver County">Beaver County</option>
-                  <option value="Bedford County">Bedford County</option>
-                  <option value="Berks County">Berks County</option>
-                  <option value="Blair County">Blair County</option>
-                  <option value="Bradford County">Bradford County</option>
-                  <option value="Bucks County">Bucks County</option>
-                  <option value="Butler County">Butler County</option>
-                  <option value="Cambria County">Cambria County</option>
-                  <option value="Cameron County">Cameron County</option>
-                  <option value="Carbon County">Carbon County</option>
-                  <option value="Centre County">Centre County</option>
-                  <option value="Chester County">Chester County</option>
-                  <option value="Clarion County">Clarion County</option>
-                  <option value="Clearfield County">Clearfield County</option>
-                  <option value="Clinton County">Clinton County</option>
-                  <option value="Columbia County">Columbia County</option>
-                  <option value="Crawford County">Crawford County</option>
-                  <option value="Cumberland County">Cumberland County</option>
-                  <option value="Dauphin County">Dauphin County</option>
-                  <option value="Delaware County">Delaware County</option>
-                  <option value="Elk County">Elk County</option>
-                  <option value="Erie County">Erie County</option>
-                  <option value="Fayette County">Fayette County</option>
-                  <option value="Forest County">Forest County</option>
-                  <option value="Franklin County">Franklin County</option>
-                  <option value="Fulton County">Fulton County</option>
-                  <option value="Greene County">Greene County</option>
-                  <option value="Huntingdon County">Huntingdon County</option>
-                  <option value="Indiana County">Indiana County</option>
-                  <option value="Jefferson County">Jefferson County</option>
-                  <option value="Juniata County">Juniata County</option>
-                  <option value="Lackawanna County">Lackawanna County</option>
-                  <option value="Lancaster County">Lancaster County</option>
-                  <option value="Lawrence County">Lawrence County</option>
-                  <option value="Lebanon County">Lebanon County</option>
-                  <option value="Lehigh County">Lehigh County</option>
-                  <option value="Luzerne County">Luzerne County</option>
-                  <option value="Lycoming County">Lycoming County</option>
-                  <option value="McKean County">McKean County</option>
-                  <option value="Mercer County">Mercer County</option>
-                  <option value="Mifflin County">Mifflin County</option>
-                  <option value="Monroe County">Monroe County</option>
-                  <option value="Montgomery County">Montgomery County</option>
-                  <option value="Montour County">Montour County</option>
-                  <option value="Northampton County">Northampton County</option>
-                  <option value="Northumberland County">Northumberland County</option>
-                  <option value="Perry County">Perry County</option>
-                  <option value="Philadelphia County">Philadelphia County</option>
-                  <option value="Pike County">Pike County</option>
-                  <option value="Potter County">Potter County</option>
-                  <option value="Schuylkill County">Schuylkill County</option>
-                  <option value="Snyder County">Snyder County</option>
-                  <option value="Somerset County">Somerset County</option>
-                  <option value="Sullivan County">Sullivan County</option>
-                  <option value="Susquehanna County">Susquehanna County</option>
-                  <option value="Tioga County">Tioga County</option>
-                  <option value="Union County">Union County</option>
-                  <option value="Venago County">Venago County</option>
-                  <option value="Warren County">Warren County</option>
-                  <option value="Washington County">Washington County</option>
-                  <option value="Wayne County">Wayne County</option>
-                  <option value="Westmoreland County">Westmoreland County</option>
-                  <option value="Wyoming County">Wyoming County</option>
-                  <option value="York County">York County</option>
-                </optgroup>
-              </select>
-              <select name="vaGeoOpt[]" id="vaGeoOpt" multiple="multiple">
-                <optgroup label=" ">
-                  <option value="Accomack County">Accomack County</option>
-                  <option value="Albemarie County">Albemarie County</option>
-                  <option value="Alleghany County">Alleghany County</option>
-                  <option value="Amelia County">Amelia County</option>
-                  <option value="Amherst County">Amherst County</option>
-                  <option value="Appomattox County">Appomattox County</option>
-                  <option value="Arlington County">Arlington County</option>
-                  <option value="Augusta County">Augusta County</option>
-                  <option value="Bath County">Bath County</option>
-                  <option value="Bedford County">Bedford County</option>
-                  <option value="Bland County">Bland County</option>
-                  <option value="Botetourt County">Botetourt County</option>
-                  <option value="Brunswick County">Brunswick County</option>
-                  <option value="Buchanan County">Buchanan County</option>
-                  <option value="Buckingham County">Buckingham County</option>
-                  <option value="Campbell County">Campbell County</option>
-                  <option value="Caroline County">Caroline County</option>
-                  <option value="Carroll County">Carroll County</option>
-                  <option value="Charles City County">Charles City County</option>
-                  <option value="Charlotte County">Charlotte County</option>
-                  <option value="Chesterfield County">Chesterfield County</option>
-                  <option value="Clarke County">Clarke County</option>
-                  <option value="Craig County">Craig County</option>
-                  <option value="Culpeper County">Culpeper County</option>
-                  <option value="Cumberland County">Cumberland County</option>
-                  <option value="Dickenson County">Dickenson County</option>
-                  <option value="Dinwiddie County">Dinwiddie County</option>
-                  <option value="Essex County">Essex County</option>
-                  <option value="Fairfax County">Fairfax County</option>
-                  <option value="Fauquier County">Fauquier County</option>
-                  <option value="Floyd County">Floyd County</option>
-                  <option value="Fluvanna County">Fluvanna County</option>
-                  <option value="Franklin County">Franklin County</option>
-                  <option value="Frederick County">Frederick County</option>
-                  <option value="Giles County">Giles County</option>
-                  <option value="Gloucester County">Gloucester County</option>
-                  <option value="Goochland County">Goochland County</option>
-                  <option value="Grayson County">Grayson County</option>
-                  <option value="Greene County">Greene County</option>
-                  <option value="Greensville County">Greensville County</option>
-                  <option value="Halifax County">Halifax County</option>
-                  <option value="Hanover County">Hanover County</option>
-                  <option value="Henrico County">Henrico County</option>
-                  <option value="Henry County">Henry County</option>
-                  <option value="Highland County">Highland County</option>
-                  <option value="Isle of Wight County">Isle of Wight County</option>
-                  <option value="James City County">James City County</option>
-                  <option value="King and Queen County">King and Queen County</option>
-                  <option value="King George County">King George County</option>
-                  <option value="King William County">King William County</option>
-                  <option value="Lancaster County">Lancaster County</option>
-                  <option value="Lee County">Lee County</option>
-                  <option value="Loudoun County">Loudoun County</option>
-                  <option value="Louisa County">Louisa County</option>
-                  <option value="Lunenburg County">Lunenburg County</option>
-                  <option value="Madison County">Madison County</option>
-                  <option value="Mathews County">Mathews County</option>
-                  <option value="Mecklenburg County">Mecklenburg County</option>
-                  <option value="Middlesex County">Middlesex County</option>
-                  <option value="Montgomery County">Montgomery County</option>
-                  <option value="Nelson County">Nelson County</option>
-                  <option value="New Kent County">New Kent County</option>
-                  <option value="Northhampton County">Northhampton County</option>
-                  <option value="Northumberland County">Northumberland County</option>
-                  <option value="Nottoway County">Nottoway County</option>
-                  <option value="Orange County">Orange County</option>
-                  <option value="Page County">Page County</option>
-                  <option value="Patrick County">Patrick County</option>
-                  <option value="Pittsylvania County">Pittsylvania County</option>
-                  <option value="Powhatan County">Powhatan County</option>
-                  <option value="Prince Edward County">Prince Edward County</option>
-                  <option value="Prince George County">Prince George County</option>
-                  <option value="Pulaski County">Pulaski County</option>
-                  <option value="Rappahannock County">Rappahannock County</option>
-                  <option value="Richmond County">Richmond County</option>
-                  <option value="Roanoke County">Roanoke County</option>
-                  <option value="Rockbridge County">Rockbridge County</option>
-                  <option value="Rockingham County">Rockingham County</option>
-                  <option value="Russell County">Russell County</option>
-                  <option value="Scott County">Scott County</option>
-                  <option value="Shenandoah County">Shenandoah County</option>
-                  <option value="Smyth County">Smyth County</option>
-                  <option value="Southampton County">Southampton County</option>
-                  <option value="Spotsylvania County">Spotsylvania County</option>
-                  <option value="Stafford County">Stafford County</option>
-                  <option value="Surry County">Surry County</option>
-                  <option value="Sussex County">Sussex County</option>
-                  <option value="Tazewell County">Tazewell County</option>
-                  <option value="Warren County">Warren County</option>
-                  <option value="Washington County">Washington County</option>
-                  <option value="Westmoreland County">Westmoreland County</option>
-                  <option value="Wise County">Wise County</option>
-                  <option value="Wythe County">Wythe County</option>
-                  <option value="York County">York County</option>
-                  <option value="Alexandria City">Alexandria City</option>
-                  <option value="Bistol City">Bistol City</option>
-                  <option value="Buena Vista City">Buena Vista City</option>
-                  <option value="Charlottesville City">Charlottesville City</option>
-                  <option value="Chesapeake City">Chesapeake City</option>
-                  <option value="Colonial Heights City">Colonial Heights City</option>
-                  <option value="Covington City">Covington City</option>
-                  <option value="Danville City">Danville City</option>
-                  <option value="Emporia City">Emporia City</option>
-                  <option value="Fairfax City">Fairfax City</option>
-                  <option value="Falls Church City">Falls Church City</option>
-                  <option value="Franklin City">Franklin City</option>
-                  <option value="Fredericksburg City">Fredericksburg City</option>
-                  <option value="Galax City">Galax City</option>
-                  <option value="Hampton City">Hampton City</option>
-                  <option value="Harrisonburg City">Harrisonburg City</option>
-                  <option value="Hopewell City">Hopewell City</option>
-                  <option value="Lexington City">Lexington City</option>
-                  <option value="Lynchburg City">Lynchburg City</option>
-                  <option value="Manassas City">Manassas City</option>
-                  <option value="Manassas Park City">Manassas Park City</option>
-                  <option value="Martinsville City">Martinsville City</option>
-                  <option value="Newport News City">Newport News City</option>
-                  <option value="Norfolk City">Norfolk City</option>
-                  <option value="Norton City">Norton City</option>
-                  <option value="Petersburg City">Petersburg City</option>
-                  <option value="Poquoson City">Poquoson City</option>
-                  <option value="Portsmouth City">Portsmouth City</option>
-                  <option value="Radford City">Radford City</option>
-                  <option value="Richmond City">Richmond City</option>
-                  <option value="Roanoke City">Roanoke City</option>
-                  <option value="Salem City">Salem City</option>
-                  <option value="Staunton City">Staunton City</option>
-                  <option value="Suffolk City">Suffolk City</option>
-                  <option value="Virginia Beach City">Virginia Beach City</option>
-                  <option value="Waynesboro City">Waynesboro City</option>
-                  <option value="Williamsburg City">Williamsburg City</option>
-                  <option value="Winchester City">Winchester City</option>
-                </optgroup>
-              </select>
-              <select name="dcGeoOpt[]" id="dcGeoOpt" multiple="multiple">
-                
-                <option value="District of Columbia">Washington D.C.</option> 
-              </select>
-            </form>
-            <form id="globalGeoOptions">
-              <label><input type="checkbox" aria-selected="false" class="globalGeoChecks" value="Coastal">Only Tools Related To Coasts</label><br>
-              
-              
-            </form>
-          </fieldset>
-          <form id="filterSearch">
-            <fieldset class="singleRow">
-              <legend><h5>Topic Filter</h5></legend>
-              <select name="bltFiltOpt[]" id="bltFiltOpt" multiple="multiple">
-                <optgroup label=" ">
-                  <option value="Planning / Land Use">Planning / Land Use</option>
-                  <option value="Transportation">Transportation</option>
-                  <option value="Buildings / Infrastructure">Buildings / Infrastructure</option>
-                  <option value="Fisheries and Aquaculture">Fisheries and Aquaculture</option>
-                  <option value="Agriculture">Agriculture</option>
-                  <option value="Forestry">Forestry</option>
-                  <option value="Economic Assessment">Economic Assessment</option>
-                <option value="Urban Forestry">Urban Forestry</option>
-                </optgroup>
-              </select>
-              <select name="ecoFiltOpt[]" id="ecoFiltOpt" multiple="multiple">
-                <optgroup label=" ">
-                  <option value="Wetlands">Wetlands</option>
-                  <option value="Shorelines and Erosion">Shorelines and Erosion</option>
-                  <option value="Restoration">Restoration</option>
-                  <option value="Eco Services Valuation">Eco Services Valuation</option>
-                  <option value="Submerged Aquatic Vegitation">Submerged Aquatic Vegitation</option>
-                  <option value="Soils">Soils</option>
-                </optgroup>
-              </select>
-              <select name="socFiltOpt[]" id="socFiltOpt" multiple="multiple">
-                <optgroup label=" ">
-                  <option value="Social Vulnerability">Social Vulnerability</option>
-                  <option value="Public Health">Public Health</option>
-                  <option value="Air Quality">Air Quality</option>
-                </optgroup>
-              </select>
-              <select name="fldFiltOpt[]" id="fldFiltOpt" multiple="multiple">
-                <optgroup label=" ">
-                  <option value="Water Level">Water Level</option>
-                  <option value="Water Quality">Water Quality</option>
-                  <option value="Stream Flow">Stream Flow</option>
-                  <option value="High Tide / Recurrent Flooding">High Tide / Recurrent Flooding</option>
-                  <option value="Storm Surge">Storm Surge</option>
-                  <option value="Inland Flooding">Inland Flooding</option>
-                <option value="Saltwater Intrusion">Saltwater Intrusion</option>
-                </optgroup>
-              </select>
-              <select name="climFiltOpt[]" id="climFiltOpt" multiple="multiple">
-                <optgroup label=" ">
-                  <option value="Sea Level Rise">Sea Level Rise</option>
-                  <option value="Temperature">Temperature</option>
-                  <option value="Precipitation">Precipitation</option>
-                  <option value="Storms and Hurricanes">Storms and Hurricanes</option>
-                  <option value="Drought">Drought</option>
-                  <option value="Carbon Emissions">Carbon Emissions</option>
-                </optgroup>
-              </select>
-              <select name="othFiltOpt[]" id="othFiltOpt" multiple="multiple">
-                <option value="None">Other</option>
-              </select>
-            </fieldset>
-          </form>
-          <form id="toolFunSearch">
-            <fieldset class="singleRow">
-              <legend><h5>Tool Function</h5></legend>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Adaptation Planning"><span title="Preparing a natural or urban area for the effects of climate change and extreme weather with the intention of reducing risk or exposure. Includes planning for current and expected future climates.">Adaptation Planning</span></label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Citizen Science"><span title="Involving public participation in data collection or other components of the scientific process.">Citizen Science</span></label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Climate Mitigation Planning"><span title="Reducing heat-trapping gasses in the atmosphere. May be accomplished by reducing sources (e.g., burning fossil fuels) or enhancing sinks (e.g., oceans, forests, soils).">Climate Mitigation Planning</span></label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Engagement"><span title="Tools or guidance to support community engagement in climate impact assessment and/or planning.">Engagement</span></label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Identify Vulnerabilities"><span title="Identifying community assets (e.g., critical infrastructure and natural resources) and people at risk to extreme weather and climate-related hazards.">Identify Vulnerabilities</span></label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Process Support"><span title="'Formal ways of thinking about the means by which decision are made, as opposed to computational or modeling methods used to support decision making' (RAND). ">Process Support</span></label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="View Past/Current Conditions"><span title="Visualizing or comparing historical and/or present-day conditions.">View Past/Current Conditions</span></label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="View Future Projections"><span title="Visualizing or comparing possible future scenarios projected by climate models.">View Future Projections</span></label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="Toolkit/Tool Collection"><span title="A program or data center providing multiple tools.">Toolkit/Tool Collection</span></label><br>
-              <label><input type="checkbox" aria-selected="false" class="toolFunctChecks" value="None">Unspecified</label><br>
-              
-              <button type="button" onclick="defualtSetup(reqData, geoDataCNTY, geoDataST, geoDataCoast, tFunData, topFilData, subFilData);">Custom Reset Button</button>
-            </fieldset>
-          </form>
-          </fieldset>
-        </div>
+  
+  <label for="location"><b>Where do you need your tool to work?</b></label><br>
+  <select class="js-location-multiple" id="location" multiple="multiple" style="width: 50%">
+    <option value="Any" selected>Any location</option>
+    <optgroup label="Delaware">
+      <option value="Delaware">Delaware</option>
+      <option value="Kent County, DE">Kent County, DE</option>
+      <option value="New Castle County, DE">New Castle County, DE</option>
+      <option value="Sussex County, DE">Sussex County, DE</option>
+    </optgroup>
+    <optgroup label="Maryland">
+      <option value="Maryland">Maryland</option>
+      <option value="Allegany County, MD">Allegany County, MD</option>
+      <option value="Anne Arundel County, MD">Anne Arundel County, MD</option>
+      <option value="Baltimore County, MD">Baltimore County, MD</option>
+      <option value="Calvert County, MD">Calvert County, MD</option>
+      <option value="Caroline County, MD">Caroline County, MD</option>
+      <option value="Carroll County, MD">Carroll County, MD</option>
+      <option value="Cecil County, MD">Cecil County, MD</option>
+      <option value="Charles County, MD">Charles County, MD</option>
+      <option value="Dorchester County, MD">Dorchester County, MD</option>
+      <option value="Frederick County, MD">Frederick County, MD</option>
+      <option value="Garrett County, MD">Garrett County, MD</option>
+      <option value="Harford County, MD">Harford County, MD</option>
+      <option value="Howard County, MD">Howard County, MD</option>
+      <option value="Kent County, MD">Kent County, MD</option>
+      <option value="Montgomery County, MD">Montgomery County, MD</option>
+      <option value="Prince George's County, MD">Prince George's County, MD</option>
+      <option value="Somerset County, MD">Somerset County, MD</option>
+      <option value="St. Mary's County, MD">St. Mary's County, MD</option>
+      <option value="Talbot County, MD">Talbot County, MD</option>
+      <option value="Washington County, MD">Washington County, MD</option>
+      <option value="Wicomico County, MD">Wicomico County, MD</option>
+      <option value="Worcester County, MD">Worcester County, MD</option>
+      <option value="Baltimore City, MD">Baltimore, MD</option>
+    </optgroup>
+    <optgroup label="New Jersey">
+      <option value="New Jersey">New Jersey</option>
+      <option value="Atlantic County">Atlantic County</option>
+      <option value="Bergen County, NJ">Bergen County, NJ</option>
+      <option value="Burlington County, NJ">Burlington County, NJ</option>
+      <option value="Camden County, NJ">Camden County, NJ</option>
+      <option value="Cape May County, NJ">Cape May County, NJ</option>
+      <option value="Cumerland County, NJ">Cumerland County, NJ</option>
+      <option value="Essex County, NJ">Essex County, NJ</option>
+      <option value="Gloucester County, NJ">Gloucester County, NJ</option>
+      <option value="Hudson County, NJ">Hudson County, NJ</option>
+      <option value="Hunterdon County, NJ">Hunterdon County, NJ</option>
+      <option value="Mercer County, NJ">Mercer County, NJ</option>
+      <option value="Middlesex County, NJ">Middlesex County, NJ</option>
+      <option value="Monmouth County, NJ">Monmouth County, NJ</option>
+      <option value="Morris County, NJ">Morris County, NJ</option>
+      <option value="Ocean County, NJ">Ocean County, NJ</option>
+      <option value="Passaic County, NJ">Passaic County, NJ</option>
+      <option value="Salem County, NJ">Salem County, NJ</option>
+      <option value="Somerset County, NJ">Somerset County, NJ</option>
+      <option value="Sussex County, NJ">Sussex County, NJ</option>
+      <option value="Union County, NJ">Union County, NJ</option>
+      <option value="Warren County, NJ">Warren County, NJ</option>
+    </optgroup>
+    <optgroup label="New York">
+      <option value="New York">New York</option>
+      <option value="Albany County, NY">Albany County, NY</option>
+      <option value="Allegany County, NY">Allegany County, NY</option>
+      <option value="Bronx County, NY">Bronx County, NY</option>
+      <option value="Broome County, NY">Broome County, NY</option>
+      <option value="Cattaraugus County, NY">Cattaraugus County, NY</option>
+      <option value="Cayuga County, NY">Cayuga County, NY</option>
+      <option value="Chautauqua County, NY">Chautauqua County, NY</option>
+      <option value="Chemung County, NY">Chemung County, NY</option>
+      <option value="Chenango County, NY">Chenango County, NY</option>
+      <option value="Clinton County, NY">Clinton County, NY</option>
+      <option value="Columbia County, NY">Columbia County, NY</option>
+      <option value="Cortland County, NY">Cortland County, NY</option>
+      <option value="Delaware County, NY">Delaware County, NY</option>
+      <option value="Dutchess County, NY">Dutchess County, NY</option>
+      <option value="Erie County, NY">Erie County, NY</option>
+      <option value="Essex County, NY">Essex County, NY</option>
+      <option value="Franklin County, NY">Franklin County, NY</option>
+      <option value="Fulton County, NY">Fulton County, NY</option>
+      <option value="Genesee County, NY">Genesee County, NY</option>
+      <option value="Greene County, NY">Greene County, NY</option>
+      <option value="Hamilton County, NY">Hamilton County, NY</option>
+      <option value="Herkimer County, NY">Herkimer County, NY</option>
+      <option value="Jefferson County, NY">Jefferson County, NY</option>
+      <option value="Kings County, NY">Kings County, NY</option>
+      <option value="Lewis County, NY">Lewis County, NY</option>
+      <option value="Livingston County, NY">Livingston County, NY</option>
+      <option value="Madison County, NY">Madison County, NY</option>
+      <option value="Monroe County, NY">Monroe County, NY</option>
+      <option value="Montgomery County, NY">Montgomery County, NY</option>
+      <option value="Nassau County, NY">Nassau County, NY</option>
+      <option value="New York County, NY">New York County, NY</option>
+      <option value="Niagara County, NY">Niagara County, NY</option>
+      <option value="Oneida County, NY">Oneida County, NY</option>
+      <option value="Onondaga County, NY">Onondaga County, NY</option>
+      <option value="Ontario County, NY">Ontario County, NY</option>
+      <option value="Orange County, NY">Orange County, NY</option>
+      <option value="Orleans County, NY">Orleans County, NY</option>
+      <option value="Oswego County, NY">Oswego County, NY</option>
+      <option value="Otsego County, NY">Otsego County, NY</option>
+      <option value="Putnam County, NY">Putnam County, NY</option>
+      <option value="Queens County, NY">Queens County, NY</option>
+      <option value="Rensselaer County, NY">Rensselaer County, NY</option>
+      <option value="Richmond County, NY">Richmond County, NY</option>
+      <option value="Rockland County, NY">Rockland County, NY</option>
+      <option value="St. Lawrence County, NY">St. Lawrence County, NY</option>
+      <option value="Saratoga County, NY">Saratoga County, NY</option>
+      <option value="Schenectady County, NY">Schenectady County, NY</option>
+      <option value="Schoharie County, NY">Schoharie County, NY</option>
+      <option value="Schuyler County, NY">Schuyler County, NY</option>
+      <option value="Seneca County, NY">Seneca County, NY</option>
+      <option value="Steuben County, NY">Steuben County, NY</option>
+      <option value="Suffolk County, NY">Suffolk County, NY</option>
+      <option value="Sullivan County, NY">Sullivan County, NY</option>
+      <option value="Tioga County, NY">Tioga County, NY</option>
+      <option value="Tompkins County, NY">Tompkins County, NY</option>
+      <option value="Ulster County, NY">Ulster County, NY</option>
+      <option value="Warren County, NY">Warren County, NY</option>
+      <option value="Washington County, NY">Washington County, NY</option>
+      <option value="Wayne County, NY">Wayne County, NY</option>
+      <option value="Westchester County, NY">Westchester County, NY</option>
+      <option value="Wyoming County, NY">Wyoming County, NY</option>
+      <option value="Yates County, NY">Yates County, NY</option>
+    </optgroup>
+    <optgroup label="Pennslyvania">
+      <option value="Pennslyvania">Pennslyvania</option>
+      <option value="Adams County, PA">Adams County, PA</option>
+      <option value="Allegheny County, PA">Allegheny County, PA</option>
+      <option value="Armstrong County, PA">Armstrong County, PA</option>
+      <option value="Beaver County, PA">Beaver County, PA</option>
+      <option value="Bedford County, PA">Bedford County, PA</option>
+      <option value="Berks County, PA">Berks County, PA</option>
+      <option value="Blair County, PA">Blair County, PA</option>
+      <option value="Bradford County, PA">Bradford County, PA</option>
+      <option value="Bucks County, PA">Bucks County, PA</option>
+      <option value="Butler County, PA">Butler County, PA</option>
+      <option value="Cambria County, PA">Cambria County, PA</option>
+      <option value="Cameron County, PA">Cameron County, PA</option>
+      <option value="Carbon County, PA">Carbon County, PA</option>
+      <option value="Centre County, PA">Centre County, PA</option>
+      <option value="Chester County, PA">Chester County, PA</option>
+      <option value="Clarion County, PA">Clarion County, PA</option>
+      <option value="Clearfield County, PA">Clearfield County, PA</option>
+      <option value="Clinton County, PA">Clinton County, PA</option>
+      <option value="Columbia County, PA">Columbia County, PA</option>
+      <option value="Crawford County, PA">Crawford County, PA</option>
+      <option value="Cumberland County, PA">Cumberland County, PA</option>
+      <option value="Dauphin County, PA">Dauphin County, PA</option>
+      <option value="Delaware County, PA">Delaware County, PA</option>
+      <option value="Elk County, PA">Elk County, PA</option>
+      <option value="Erie County, PA">Erie County, PA</option>
+      <option value="Fayette County, PA">Fayette County, PA</option>
+      <option value="Forest County, PA">Forest County, PA</option>
+      <option value="Franklin County, PA">Franklin County, PA</option>
+      <option value="Fulton County, PA">Fulton County, PA</option>
+      <option value="Greene County, PA">Greene County, PA</option>
+      <option value="Huntingdon County, PA">Huntingdon County, PA</option>
+      <option value="Indiana County, PA">Indiana County, PA</option>
+      <option value="Jefferson County, PA">Jefferson County, PA</option>
+      <option value="Juniata County, PA">Juniata County, PA</option>
+      <option value="Lackawanna County, PA">Lackawanna County, PA</option>
+      <option value="Lancaster County, PA">Lancaster County, PA</option>
+      <option value="Lawrence County, PA">Lawrence County, PA</option>
+      <option value="Lebanon County, PA">Lebanon County, PA</option>
+      <option value="Lehigh County, PA">Lehigh County, PA</option>
+      <option value="Luzerne County, PA">Luzerne County, PA</option>
+      <option value="Lycoming County, PA">Lycoming County, PA</option>
+      <option value="McKean County, PA">McKean County, PA</option>
+      <option value="Mercer County, PA">Mercer County, PA</option>
+      <option value="Mifflin County, PA">Mifflin County, PA</option>
+      <option value="Monroe County, PA">Monroe County, PA</option>
+      <option value="Montgomery County, PA">Montgomery County, PA</option>
+      <option value="Montour County, PA">Montour County, PA</option>
+      <option value="Northampton County, PA">Northampton County, PA</option>
+      <option value="Northumberland County, PA">Northumberland County, PA</option>
+      <option value="Perry County, PA">Perry County, PA</option>
+      <option value="Philadelphia County, PA">Philadelphia, PA</option>
+      <option value="Pike County, PA">Pike County, PA</option>
+      <option value="Potter County, PA">Potter County, PA</option>
+      <option value="Schuylkill County, PA">Schuylkill County, PA</option>
+      <option value="Snyder County, PA">Snyder County, PA</option>
+      <option value="Somerset County, PA">Somerset County, PA</option>
+      <option value="Sullivan County, PA">Sullivan County, PA</option>
+      <option value="Susquehanna County, PA">Susquehanna County, PA</option>
+      <option value="Tioga County, PA">Tioga County, PA</option>
+      <option value="Union County, PA">Union County, PA</option>
+      <option value="Venago County, PA">Venago County, PA</option>
+      <option value="Warren County, PA">Warren County, PA</option>
+      <option value="Washington County, PA">Washington County, PA</option>
+      <option value="Wayne County, PA">Wayne County, PA</option>
+      <option value="Westmoreland County, PA">Westmoreland County, PA</option>
+      <option value="Wyoming County, PA">Wyoming County, PA</option>
+      <option value="York County, PA">York County, PA</option>
+    </optgroup>
+    <optgroup label="Virginia">
+      <option value="Virginia">Virginia</option>
+      <option value="Accomack County, VA">Accomack County, VA</option>
+      <option value="Albemarie County, VA">Albemarie County, VA</option>
+      <option value="Alleghany County, VA">Alleghany County, VA</option>
+      <option value="Amelia County, VA">Amelia County, VA</option>
+      <option value="Amherst County, VA">Amherst County, VA</option>
+      <option value="Appomattox County, VA">Appomattox County, VA</option>
+      <option value="Arlington County, VA">Arlington County, VA</option>
+      <option value="Augusta County, VA">Augusta County, VA</option>
+      <option value="Bath County, VA">Bath County, VA</option>
+      <option value="Bedford County, VA">Bedford County, VA</option>
+      <option value="Bland County, VA">Bland County, VA</option>
+      <option value="Botetourt County, VA">Botetourt County, VA</option>
+      <option value="Brunswick County, VA">Brunswick County, VA</option>
+      <option value="Buchanan County, VA">Buchanan County, VA</option>
+      <option value="Buckingham County, VA">Buckingham County, VA</option>
+      <option value="Campbell County, VA">Campbell County, VA</option>
+      <option value="Caroline County, VA">Caroline County, VA</option>
+      <option value="Carroll County, VA">Carroll County, VA</option>
+      <option value="Charles City County, VA">Charles City County, VA</option>
+      <option value="Charlotte County, VA">Charlotte County, VA</option>
+      <option value="Chesterfield County, VA">Chesterfield County, VA</option>
+      <option value="Clarke County, VA">Clarke County, VA</option>
+      <option value="Craig County, VA">Craig County, VA</option>
+      <option value="Culpeper County, VA">Culpeper County, VA</option>
+      <option value="Cumberland County, VA">Cumberland County, VA</option>
+      <option value="Dickenson County, VA">Dickenson County, VA</option>
+      <option value="Dinwiddie County, VA">Dinwiddie County, VA</option>
+      <option value="Essex County, VA">Essex County, VA</option>
+      <option value="Fairfax County, VA">Fairfax County, VA</option>
+      <option value="Fauquier County, VA">Fauquier County, VA</option>
+      <option value="Floyd County, VA">Floyd County, VA</option>
+      <option value="Fluvanna County, VA">Fluvanna County, VA</option>
+      <option value="Franklin County, VA">Franklin County, VA</option>
+      <option value="Frederick County, VA">Frederick County, VA</option>
+      <option value="Giles County, VA">Giles County, VA</option>
+      <option value="Gloucester County, VA">Gloucester County, VA</option>
+      <option value="Goochland County, VA">Goochland County, VA</option>
+      <option value="Grayson County, VA">Grayson County, VA</option>
+      <option value="Greene County, VA">Greene County, VA</option>
+      <option value="Greensville County, VA">Greensville County, VA</option>
+      <option value="Halifax County, VA">Halifax County, VA</option>
+      <option value="Hanover County, VA">Hanover County, VA</option>
+      <option value="Henrico County, VA">Henrico County, VA</option>
+      <option value="Henry County, VA">Henry County, VA</option>
+      <option value="Highland County, VA">Highland County, VA</option>
+      <option value="Isle of Wight County, VA">Isle of Wight County, VA</option>
+      <option value="James City County, VA">James City County, VA</option>
+      <option value="King and Queen County, VA">King and Queen County, VA</option>
+      <option value="King George County, VA">King George County, VA</option>
+      <option value="King William County, VA">King William County, VA</option>
+      <option value="Lancaster County, VA">Lancaster County, VA</option>
+      <option value="Lee County, VA">Lee County, VA</option>
+      <option value="Loudoun County, VA">Loudoun County, VA</option>
+      <option value="Louisa County, VA">Louisa County, VA</option>
+      <option value="Lunenburg County, VA">Lunenburg County, VA</option>
+      <option value="Madison County, VA">Madison County, VA</option>
+      <option value="Mathews County, VA">Mathews County, VA</option>
+      <option value="Mecklenburg County, VA">Mecklenburg County, VA</option>
+      <option value="Middlesex County, VA">Middlesex County, VA</option>
+      <option value="Montgomery County, VA">Montgomery County, VA</option>
+      <option value="Nelson County, VA">Nelson County, VA</option>
+      <option value="New Kent County, VA">New Kent County, VA</option>
+      <option value="Northhampton County, VA">Northhampton County, VA</option>
+      <option value="Northumberland County, VA">Northumberland County, VA</option>
+      <option value="Nottoway County, VA">Nottoway County, VA</option>
+      <option value="Orange County, VA">Orange County, VA</option>
+      <option value="Page County, VA">Page County, VA</option>
+      <option value="Patrick County, VA">Patrick County, VA</option>
+      <option value="Pittsylvania County, VA">Pittsylvania County, VA</option>
+      <option value="Powhatan County, VA">Powhatan County, VA</option>
+      <option value="Prince Edward County, VA">Prince Edward County, VA</option>
+      <option value="Prince George County, VA">Prince George County, VA</option>
+      <option value="Pulaski County, VA">Pulaski County, VA</option>
+      <option value="Rappahannock County, VA">Rappahannock County, VA</option>
+      <option value="Richmond County, VA">Richmond County, VA</option>
+      <option value="Roanoke County, VA">Roanoke County, VA</option>
+      <option value="Rockbridge County, VA">Rockbridge County, VA</option>
+      <option value="Rockingham County, VA">Rockingham County, VA</option>
+      <option value="Russell County, VA">Russell County, VA</option>
+      <option value="Scott County, VA">Scott County, VA</option>
+      <option value="Shenandoah County, VA">Shenandoah County, VA</option>
+      <option value="Smyth County, VA">Smyth County, VA</option>
+      <option value="Southampton County, VA">Southampton County, VA</option>
+      <option value="Spotsylvania County, VA">Spotsylvania County, VA</option>
+      <option value="Stafford County, VA">Stafford County, VA</option>
+      <option value="Surry County, VA">Surry County, VA</option>
+      <option value="Sussex County, VA">Sussex County, VA</option>
+      <option value="Tazewell County, VA">Tazewell County, VA</option>
+      <option value="Warren County, VA">Warren County, VA</option>
+      <option value="Washington County, VA">Washington County, VA</option>
+      <option value="Westmoreland County, VA">Westmoreland County, VA</option>
+      <option value="Wise County, VA">Wise County, VA</option>
+      <option value="Wythe County, VA">Wythe County, VA</option>
+      <option value="York County, VA">York County, VA</option>
+      <option value="Alexandria City, VA">Alexandria, VA</option>
+      <option value="Bistol City, VA">Bistol, VA</option>
+      <option value="Buena Vista City, VA">Buena Vista, VA</option>
+      <option value="Charlottesville City, VA">Charlottesville, VA</option>
+      <option value="Chesapeake City, VA">Chesapeake, VA</option>
+      <option value="Colonial Heights City, VA">Colonial Heights, VA</option>
+      <option value="Covington City, VA">Covington, VA</option>
+      <option value="Danville City, VA">Danville, VA</option>
+      <option value="Emporia City, VA">Emporia, VA</option>
+      <option value="Fairfax City, VA">Fairfax, VA</option>
+      <option value="Falls Church City, VA">Falls Church, VA</option>
+      <option value="Franklin City, VA">Franklin, VA</option>
+      <option value="Fredericksburg City, VA">Fredericksburg, VA</option>
+      <option value="Galax City, VA">Galax, VA</option>
+      <option value="Hampton City, VA">Hampton, VA</option>
+      <option value="Harrisonburg City, VA">Harrisonburg, VA</option>
+      <option value="Hopewell City, VA">Hopewell, VA</option>
+      <option value="Lexington City, VA">Lexington, VA</option>
+      <option value="Lynchburg City, VA">Lynchburg, VA</option>
+      <option value="Manassas City, VA">Manassas, VA</option>
+      <option value="Manassas Park City, VA">Manassas Park, VA</option>
+      <option value="Martinsville City, VA">Martinsville, VA</option>
+      <option value="Newport News City, VA">Newport News, VA</option>
+      <option value="Norfolk City, VA">Norfolk, VA</option>
+      <option value="Norton City, VA">Norton, VA</option>
+      <option value="Petersburg City, VA">Petersburg, VA</option>
+      <option value="Poquoson City, VA">Poquoson, VA</option>
+      <option value="Portsmouth City, VA">Portsmouth, VA</option>
+      <option value="Radford City, VA">Radford, VA</option>
+      <option value="Richmond City, VA">Richmond, VA</option>
+      <option value="Roanoke City, VA">Roanoke, VA</option>
+      <option value="Salem City, VA">Salem, VA</option>
+      <option value="Staunton City, VA">Staunton, VA</option>
+      <option value="Suffolk City, VA">Suffolk, VA</option>
+      <option value="Virginia Beach City, VA">Virginia Beach, VA</option>
+      <option value="Waynesboro City, VA">Waynesboro, VA</option>
+      <option value="Williamsburg City, VA">Williamsburg, VA</option>
+      <option value="Winchester City, VA">Winchester, VA</option>
+    </optgroup>
+    <optgroup label="Washington, DC">
+      <option value="District of Columbia">Washington, DC</option>
+    </optgroup>
+  </select>
+  <br>
+  <br>
+  
+  
+  
+  <label for="subfilter"><b>What topic(s) are you interested in?</b></label><br>
+  <select class="js-subfilter-multiple" id="subfilter" multiple="multiple" style="width: 50%">
+    <option value="Any" selected>Any topic</option>
+    <optgroup label="Developed Environments">
+      <option value="Planning / Land Use">Planning / Land Use</option>
+      <option value="Transportation">Transportation</option>
+      <option value="Buildings / Infrastructure">Buildings / Infrastructure</option>
+      <option value="Fisheries and Aquaculture">Fisheries and Aquaculture</option>
+      <option value="Agriculture">Agriculture</option>
+      <option value="Forestry">Forestry</option>
+      <option value="Economic Assessment">Economic Assessment</option>
+      <option value="Urban Forestry">Urban Forestry</option>
+    </optgroup>
+    <optgroup label="Ecosystems">
+      <option value="Wetlands">Wetlands</option>
+      <option value="Shorelines and Erosion">Shorelines and Erosion</option>
+      <option value="Restoration">Restoration</option>
+      <option value="Eco Services Valuation">Eco Services Valuation</option>
+      <option value="Submerged Aquatic Vegitation">Submerged Aquatic Vegitation</option>
+      <option value="Soils">Soils</option>
+    </optgroup>
+    <optgroup label="Society">
+      <option value="Social Vulnerability">Social Vulnerability</option>
+      <option value="Public Health">Public Health</option>
+      <option value="Air Quality">Air Quality</option>
+    </optgroup>
+    <optgroup label="Water / Flooding">
+      <option value="Water Level">Water Level</option>
+      <option value="Water Quality">Water Quality</option>
+      <option value="Stream Flow">Stream Flow</option>
+      <option value="High Tide / Recurrent Flooding">High Tide / Recurrent Flooding</option>
+      <option value="Storm Surge">Storm Surge</option>
+      <option value="Inland Flooding">Inland Flooding</option>
+      <option value="Saltwater Intrusion">Saltwater Intrusion</option>
+    </optgroup>
+    <optgroup label="Weather and Climate">
+      <option value="Sea Level Rise">Sea Level Rise</option>
+      <option value="Temperature">Temperature</option>
+      <option value="Precipitation">Precipitation</option>
+      <option value="Storms and Hurricanes">Storms and Hurricanes</option>
+      <option value="Drought">Drought</option>
+      <option value="Carbon Emissions">Carbon Emissions</option>
+    </optgroup>
+    <optgroup label="Coastal / Inland">
+      <option value="Noncoastal/ Inland">Noncoastal/ Inland</option>
+      <option value="Coastal">Coastal</option>
+    </optgroup>
+    <optgroup label="Other / Uncategorized">
+      <option value="None">Other</option>
+    </optgroup>
+  </select>
+  <br>
+  <br>
 
-        <hr>
-        <h2>Search Results</h2>
-        <div>
-          <ul id="outputList">
+  
+  <label for="toolfunction"><b>Why do you need the tool?</b></label><br>
+  <select class="js-toolfunction-multiple" id="toolfunction" multiple="multiple" style="width: 50%">
+    <option value="Any" selected>Any function</option>
+    <option value="Adaptation Planning">Adaptation Planning</option>
+    <option value="Citizen Science">Citizen Science</option>
+    <option value="Climate Mitigation Planning">Climate Mitigation Planning</option>
+    <option value="Engagement">Engagement</option>
+    <option value="Identify Vulnerabilities">Identify Vulnerabilities</option>
+    <option value="Process Support">Process Support</option>
+    <option value="View Past/Current Conditions">View Past/Current Conditions</option>
+    <option value="View Future Projections">View Future Projections</option>
+    <option value="Toolkit/Tool Collection">Toolkit/Tool Collection</option>
+  </select>
+  
+  <hr>
+  
+  
+  <div id="result"></div>
+  
+  
+  
+  <script>
+  
+  
+  $(document).ready(function() {
+    $('.js-location-multiple').select2({
+      width: 'resolve', 
+      placeholder: "Select a location",
+      allowClear: true
+    });
+    $('.js-subfilter-multiple').select2({
+      width: 'resolve', 
+      placeholder: "Select a topic",
+      allowClear: true
+    });
+    $('.js-toolfunction-multiple').select2({
+      width: 'resolve', 
+      placeholder: "Select a function",
+      allowClear: true
+    });
+  });
+  
+  
+  
+  
+  
+  
+  function findValueInArray(value,arr){
+    var result = false;
+    
+    for(var i=0; i<arr.length; i++){
+      var name = arr[i];
+      if(name == value){
+        result = true;
+        break;
+      }
+    }
+    
+    return result;
+  }
 
-          </ul>
-        </div>
-      </div>
-    </section>
-  </div>
-</div>
+  
+  
+  
+  
+  
+  function findCommonElement(array1, array2) {
+    if(typeof array1 === 'string') {
+      var result = findValueInArray(array1, array2)
+      return result;
+      
+    } else {
+      var result = false;
+      
+      for(let i = 0; i < array1.length; i++) {
+        
+        
+        for(let j = 0; j < array2.length; j++) {
+          
+          
+          
+          if(array1[i] === array2[j]) {
+            
+            result = true;
+          }
+        }
+      }
+      
+      return result;
+    }
+  }
+  
+  
+  
+  
+  
+  var $location = $('#location'),
+      $subfilter = $('#subfilter'),
+      $toolfunction = $('#toolfunction'),
+      $result = $('#result');
+  
+  
+  $location.change(function () {
+    onChange();
+  });
+
+  $subfilter.change(function () {
+    onChange();
+  });
+
+  $toolfunction.change(function () {
+    onChange();
+  });
+  
+  
+  
+  function onChange() {
+    var foundTools = findTools();
+    showTools(foundTools);
+  }
+  
+  
+  function findTools() {
+    
+    var locSelect = [];
+    var Selectlocation = $("#location option:selected");
+    Selectlocation.each(function(){
+      locSelect.push($(this).val());
+    });
+
+    
+    var filtSelect = [];
+    var Selectsubfilter = $("#subfilter option:selected");
+    Selectsubfilter.each(function(){
+      filtSelect.push($(this).val());
+    });
+    
+    
+    var funcSelect = [];
+    var Selectfunction = $("#toolfunction option:selected");
+    Selectfunction.each(function(){
+      funcSelect.push($(this).val());
+    });
+    
+    
+    
+    
+    
+    return filter(locSelect, filtSelect, funcSelect);
+  }
+  
+  
+  function filter(location, subfilter, toolfunction) {
+    var result = [];
+    
+    
+    for (var i = 0; i < toolsjson.length; i++) {
+      var tools = toolsjson[i].tools;
+      
+      
+      
+      if ((findValueInArray("Any", location) || findCommonElement(tools.location, location)) && 
+      
+      
+      (findValueInArray("Any", subfilter) || findCommonElement(tools.subfilter, subfilter)) && 
+      
+      
+      (findValueInArray("Any", toolfunction) || findCommonElement(tools.toolfunction, toolfunction))) {
+        result.push(tools);
+      }
+    }
+    return result;
+  }
+  
+  
+  
+  function showTools(toolsjson) {
+    
+    $result.empty();
+    
+    
+    $result.append($("<h2>Search Results (Displaying " + toolsjson.length + " Tools)</h2>"));
+    
+    $result.append($("<ul>"));
+    
+    
+    toolsjson.sort(function (a,b) {
+      return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
+    });
+    
+    
+    for (var i = 0; i < toolsjson.length; i++) {
+      $result.append($('<li><a href="https://cbtooltest.marisa.psu.edu/' + toolsjson[i].link +'/index.html" target="_blank">' + toolsjson[i].name + '</a></li>'));
+    }
+    $result.append($("</ul>"));
+  }
+  
+  
+  onChange();
+  </script>
+  
 </body>
   </main>
 

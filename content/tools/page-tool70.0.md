@@ -1,7 +1,7 @@
 ---
 title: "Coastal Change Analysis Program (C-CAP) Land Cover Atlas"
 description: "Interactive map showing changes in land use cover from 1996-2010 in coastal regions"
-date: 2022-02-28T11:04:50-0500
+date: 2022-03-09T16:02:06-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Real-time/Current", "Jursidiction based", "County level", "State level", "Watershed level", "Application", "Interactive interface/map", "Downloadable data", "Downloadable results"]
@@ -20,7 +20,7 @@ Alongside maps of land use change, the C-CAP Land Cover Atlas also includes nume
 __**Get This Tool:**__ https://coast.noaa.gov/ccapatlas/
 
 __**Geographic Coverage**__
-- Contiguous United States
+- Coastal Contiguous United States
 
 __**Tags**__
 -  Historical 

@@ -1,7 +1,7 @@
 ---
 title: "USGS StreamStats"
 description: "Streamflow data, trends, and analyses from USGS gaging stations."
-date: 2022-02-28T11:04:50-0500
+date: 2022-03-09T16:02:06-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Real-time/Current", "Location specific", "Watershed level", "Application", "Interactive interface/map", "Downloadable results"]

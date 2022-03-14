@@ -52,7 +52,7 @@
 {"softReq":"None","name":"Drought-Applied Climate Information System (ACIS)","link":"tools/page-tool29.0"},
 {"softReq":"None","name":"Drought Risk Atlas","link":"tools/page-tool30.0"},
 {"softReq":"None","name":"Drought Management Database","link":"tools/page-tool31.0"},
-{"softReq":"None","name":"Eyes On The Bay: Main site","link":"tools/page-tool32.0"},
+{"softReq":"None","name":"Eyes On The Bay","link":"tools/page-tool32.0"},
 {"softReq":"Excel/SAS","name":"Chesapeake Bay Program DataHub","link":"tools/page-tool33.0"},
 {"softReq":"None","name":"Delaware Climate Projections Portal","link":"tools/page-tool34.0"},
 {"softReq":"None","name":"Annual United States Climate Stripes: Temperature and Precipitation","link":"tools/page-tool35.0"},

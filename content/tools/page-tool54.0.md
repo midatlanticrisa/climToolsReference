@@ -1,7 +1,7 @@
 ---
 title: "FEMA Data Visualizations of Disaster Declarations and Grants"
 description: "Visualize FEMA data regarding natural disaster occurrence, flood frequency, and housing assistance at the national, state, county, and tribal level."
-date: 2022-02-28T11:04:50-0500
+date: 2022-03-09T16:02:05-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Jursidiction based", "County level", "State level", "Website", "Interactive interface/map", "Cost estimates", "Downloadable data", "Downloadable results"]

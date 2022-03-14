@@ -1,7 +1,7 @@
 ---
 title: "Virginia Wetland Condition Assessment Tool (WetCAT)"
 description: "Method of assessing wetland's ability to perform ecosystem services."
-date: 2022-02-28T11:04:49-0500
+date: 2022-03-09T16:02:05-0500
 pubtype: "Tool"
 featured: true
 tags: ["Jursidiction based", "Grid based", "State level", "Watershed level", "Regional level", "Application", "Interactive interface/map", "Downloadable results", "Quarterly", "Weekly"]

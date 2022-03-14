@@ -1,7 +1,7 @@
 ---
-title: "Eyes On The Bay: Main site"
+title: "Eyes On The Bay"
 description: "Website providing Maryland water quality data and information"
-date: 2022-02-28T11:04:49-0500
+date: 2022-03-09T16:02:05-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Real-time/Current", "Location specific", "Website", "Interactive interface/map"]
@@ -17,7 +17,7 @@ This website provides a variety of resources that allow users to explore status 
 __**Get This Tool:**__ http://eyesonthebay.dnr.maryland.gov/eyesonthebay/index.cfm
 
 __**Geographic Coverage**__
-- Maryland
+- Coastal Maryland
 
 __**Tags**__
 -  Historical 

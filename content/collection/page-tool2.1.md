@@ -1,7 +1,7 @@
 ---
 title: "Hampton Roads Geospatial Exchange Online: Hampton Roads Sea Level Rise Planning Scenarios (Raster)"
 description: "Interactive map showing observed and projected sea level rise for scenarios of 1.5 feet (years 2018-2050), 3 feet (years 2050-2080), and 4.5 feet (years 2080-2100) above current MHHW. "
-date: 2022-02-28T11:04:49-0500
+date: 2022-03-09T16:02:05-0500
 pubtype: "Tool"
 featured: true
 tags: ["Climate projections", "Grid based", "Regional level", "Dataset", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data"]

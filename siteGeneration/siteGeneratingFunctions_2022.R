@@ -324,6 +324,12 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
     if("ersn" %in% toolSubFilts){
       toolSubFilts <- toolSubFilts[-grep("ersn", toolSubFilts)]
     }
+    # Extract all coastal related topic filters
+    coastFilters <- toolRec[grep("Topic Filters-Coastal / Inland", names(toolRec))]
+    coastFilters <- coastFilters[which(is.na(coastFilters)==F)]
+    if(length(coastFilters)>0){
+      toolSubFilts <- c(toolSubFilts, sapply(strsplit(names(coastFilters), "Topic Filters-Coastal / Inland-"), "[[", 2))
+    }
     
     # Classify each sub topic into a top level topic for the topic filter
     ##set up for output
@@ -520,6 +526,18 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
         toolFilts[varInd] <- "fld"
         toolFiltsName[varInd] <- "Water / Flooding"
       }
+      if("nonc" %in% toolSubFilts){
+        varInd <- which(toolSubFilts=="nonc")
+        toolSubFilts[varInd] <- "Noncoastal/ Inland"
+        toolFilts[varInd] <- "cstl"
+        toolFiltsName[varInd] <- "Coastal / Inland"
+      }
+      if("cstl" %in% toolSubFilts){
+        varInd <- which(toolSubFilts=="cstl")
+        toolSubFilts[varInd] <- "Coastal"
+        toolFilts[varInd] <- "cstl"
+        toolFiltsName[varInd] <- "Coastal / Inland"
+      }
       toolFilters <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, topFilter=toolFilts, topFilterNam=toolFiltsName, subFilter=toolSubFilts)
     }else{
       toolFilters <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, topFilter="None", topFilterNam="None", subFilter="None")
@@ -584,28 +602,52 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
       # Convert the list of states from abbreviations to the full name. Use a look up table.
       collectSts <- sapply(findState, stateLookUp, statecodes = statefips)
       
+      # toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, 
+      #                       toolState=collectSts, toolLoc=locsNoState, 
+      #                       coastal=toolRec$`Geographic Scope-Coastal`)
       toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, 
                             toolState=collectSts, toolLoc=locsNoState, 
-                            coastal=toolRec$`Geographic Scope-Coastal`)
+                            coastal=toolRec$`Geographic Scope-Only Coastal`)
       toolScope <- paste0("__**Geographic Coverage**__", el, "- ", toolRec$`Geographic Scope-Locality`, el)
       
-      ### STATE
+      ### Coastal (only coastal part of state)
+    } else if(toolRec$`Geographic Scope-Scope`=="Coastal"){
+
+      collectSts <- strsplit(toolRec$`Geographic Scope-State`, "; ")[[1]]
+      # Grab only the coastal counties
+      subTab <- scTab[scTab$state %in% collectSts,]
+      subTab <- subTab[subTab$coastal=="Y",]
+      # whichnotCity <- grep(" City", subTab$cntyName, invert = TRUE)
+      # subTab$cntyName[whichnotCity] <- paste0(subTab$cntyName[whichnotCity], " County")
+      locsNoState <- subTab$cntyName
+      collectSts <- subTab$state
+
+      # Convert the list of states from abbreviations to the full name. Use a look up table.
+      collectSts <- sapply(collectSts, stateLookUp, statecodes = statefips)
+
+      toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt,
+                            toolState=collectSts, toolLoc=locsNoState,
+                            coastal=toolRec$`Geographic Scope-Only Coastal`)
+      toolScope <- paste0("__**Geographic Coverage**__", el, "- Coastal ",
+                          paste(unique(collectSts), collapse="; "), el)
+      
+      ### STATE (whole state)
     } else if(toolRec$`Geographic Scope-Scope`=="State"){
       collectSts <- strsplit(toolRec$`Geographic Scope-State`, "; ")[[1]]
       
-      # if it is coastal then grab only the coastal counties
-      locsNoState <- NA ## NEED TO CREATE AN ELSE OPTION FOR NONE COASTAL COUNTIES
-      if(!is.na(toolRec$`Geographic Scope-Coastal`) & toolRec$`Geographic Scope-Coastal`=="x"){
-        subTab <- scTab[scTab$state %in% collectSts,]
-        subTab <- subTab[subTab$coastal=="Y",]
-        # whichnotCity <- grep(" City", subTab$cntyName, invert = TRUE)
-        # subTab$cntyName[whichnotCity] <- paste0(subTab$cntyName[whichnotCity], " County")
-        locsNoState <- subTab$cntyName
-        collectSts <- subTab$state
-        
-        # Convert the list of states from abbreviations to the full name. Use a look up table.
-        collectSts <- sapply(collectSts, stateLookUp, statecodes = statefips)
-      } else {
+      # # if it is coastal then grab only the coastal counties
+      # locsNoState <- NA ## NEED TO CREATE AN ELSE OPTION FOR NONE COASTAL COUNTIES
+      # if(!is.na(toolRec$`Geographic Scope-Coastal`) & toolRec$`Geographic Scope-Coastal`=="x"){
+      #   subTab <- scTab[scTab$state %in% collectSts,]
+      #   subTab <- subTab[subTab$coastal=="Y",]
+      #   # whichnotCity <- grep(" City", subTab$cntyName, invert = TRUE)
+      #   # subTab$cntyName[whichnotCity] <- paste0(subTab$cntyName[whichnotCity], " County")
+      #   locsNoState <- subTab$cntyName
+      #   collectSts <- subTab$state
+      #   
+      #   # Convert the list of states from abbreviations to the full name. Use a look up table.
+      #   collectSts <- sapply(collectSts, stateLookUp, statecodes = statefips)
+      # } else {
         # library(tidycensus)
         data(fips_codes) # download state/county info
         # list only the Marisa state counties
@@ -614,27 +656,81 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
         locsNoState <-str_to_title(localities$county)
         # Convert the list of states from abbreviations to the full name.
         collectSts <- localities$state_name
-      }
+      # }
       
+      # toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, 
+      #                       toolState=collectSts, toolLoc=locsNoState, 
+      #                       coastal=toolRec$`Geographic Scope-Coastal`)
       toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, 
                             toolState=collectSts, toolLoc=locsNoState, 
-                            coastal=toolRec$`Geographic Scope-Coastal`)
+                            coastal=toolRec$`Geographic Scope-Only Coastal`)
       toolScope <- paste0("__**Geographic Coverage**__", el, "- ", 
                           paste(unique(collectSts), collapse="; "), el)
       
       ### NATIONAL
     } else if(toolRec$`Geographic Scope-Scope`=="National"){
+      
+      # locsNoState <- NA ## NEED TO CREATE AN ELSE OPTION FOR NONE COASTAL COUNTIES
+      if(!is.na(toolRec$`Geographic Scope-Only Coastal`) & toolRec$`Geographic Scope-Only Coastal`=="x"){
+        
+        # We only need to parse the states in the Mid-Atlantic
+        collectSts <- c("DE", "MD", "NJ", "NY", "PA", "VA", "DC")
+        
+        subTab <- scTab[scTab$state %in% collectSts,]
+        subTab <- subTab[subTab$coastal=="Y",]
+        # whichnotCity <- grep(" City", subTab$cntyName, invert = TRUE)
+        # subTab$cntyName[whichnotCity] <- paste0(subTab$cntyName[whichnotCity], " County")
+        locsNoState <- subTab$cntyName
+        collectSts <- subTab$state
+
+        # Convert the list of states from abbreviations to the full name. Use a look up table.
+        collectSts <- sapply(collectSts, stateLookUp, statecodes = statefips)
+      
+        toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt,
+                              toolState=collectSts, toolLoc=locsNoState,
+                              coastal=toolRec$`Geographic Scope-Only Coastal`)
+        toolScope <- paste0("__**Geographic Coverage**__", el, "- Coastal Contiguous United States", el)
+      } else{
+      # toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, 
+      #                       toolState="All", toolLoc="All", 
+      #                       coastal=toolRec$`Geographic Scope-Coastal`)
       toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, 
                             toolState="All", toolLoc="All", 
-                            coastal=toolRec$`Geographic Scope-Coastal`)
+                            coastal=toolRec$`Geographic Scope-Only Coastal`)
       toolScope <- paste0("__**Geographic Coverage**__", el, "- Contiguous United States", el)
+      }
       
       ### OTHER OR ANYWHERE
     } else{
+      # locsNoState <- NA ## NEED TO CREATE AN ELSE OPTION FOR NONE COASTAL COUNTIES
+      if(!is.na(toolRec$`Geographic Scope-Only Coastal`) & toolRec$`Geographic Scope-Only Coastal`=="x"){
+        
+        # We only need to parse the states in the Mid-Atlantic
+        collectSts <- c("DE", "MD", "NJ", "NY", "PA", "VA", "DC")
+        
+        subTab <- scTab[scTab$state %in% collectSts,]
+        subTab <- subTab[subTab$coastal=="Y",]
+        # whichnotCity <- grep(" City", subTab$cntyName, invert = TRUE)
+        # subTab$cntyName[whichnotCity] <- paste0(subTab$cntyName[whichnotCity], " County")
+        locsNoState <- subTab$cntyName
+        collectSts <- subTab$state
+
+        # Convert the list of states from abbreviations to the full name. Use a look up table.
+        collectSts <- sapply(collectSts, stateLookUp, statecodes = statefips)
+
+        toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt,
+                              toolState=collectSts, toolLoc=locsNoState,
+                              coastal=toolRec$`Geographic Scope-Only Coastal`)
+        toolScope <- paste0("__**Geographic Coverage**__", el, "- Applicable Anywhere Coastal", el)
+      } else{
+      # toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, 
+      #                       toolState="Gen", toolLoc="Gen", 
+      #                       coastal=toolRec$`Geographic Scope-Coastal`)
       toolGeo <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, 
                             toolState="Gen", toolLoc="Gen", 
-                            coastal=toolRec$`Geographic Scope-Coastal`)
+                            coastal=toolRec$`Geographic Scope-Only Coastal`)
       toolScope <- paste0("__**Geographic Coverage**__", el, "- Applicable Anywhere", el)
+      }
     }
     ## tools geographic scope
     # BIND the tags data.frame to the GLOBAL search* list

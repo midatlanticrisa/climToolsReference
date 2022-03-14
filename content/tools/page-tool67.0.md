@@ -1,7 +1,7 @@
 ---
 title: "Future Urban Climates"
 description: "Interactive map illustrating climate migration of US cities in the next 60 years"
-date: 2022-02-28T11:04:50-0500
+date: 2022-03-09T16:02:06-0500
 pubtype: "Tool"
 featured: true
 tags: ["Jursidiction based", "City level", "Application", "Interactive interface/map", "Compare scenarios/locations"]

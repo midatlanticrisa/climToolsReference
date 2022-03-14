@@ -1,7 +1,7 @@
 ---
 title: "Air Quality Forecast"
 description: "Report the current conditions and 2 day forecast of the Washington D.C. Air Quality"
-date: 2022-02-28T11:04:50-0500
+date: 2022-03-09T16:02:05-0500
 pubtype: "Tool"
 featured: true
 tags: ["Real-time/Current", "Forecast", "Jursidiction based", "City level", "Website"]

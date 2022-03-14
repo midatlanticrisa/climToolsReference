@@ -1,7 +1,7 @@
 ---
 title: "Headwaters Economics Neighborhoods at Risk"
 description: "Assessment of neighborhood risk based on census tracts and FEMA flood maps"
-date: 2022-02-28T11:04:49-0500
+date: 2022-03-09T16:02:05-0500
 pubtype: "Tool"
 featured: true
 tags: ["Climate projections", "Jursidiction based", "City level", "County level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
@@ -17,7 +17,7 @@ This easy-to-use tool is designed to help conduct vulnerability assessments and 
 __**Get This Tool:**__ https://headwaterseconomics.org/equity/climate-change/neighborhoods-at-risk/
 
 __**Geographic Coverage**__
-- Buffalo, NY; Lancaster, PA; Richmond City, VA; Gaithersburg, MD; Blaskburg, VA
+- Contiguous United States
 
 __**Tags**__
 -  Climate projections

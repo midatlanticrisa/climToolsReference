@@ -3,7 +3,7 @@ title: "OpenNSPECT"
 description: "*Map surface water runoff volumes, pollutants, and total sediment loads
 *Identify areas that might benefit from changes to proposed development strategies
 *Analyze land use change scenarios and impacts"
-date: 2022-02-28T11:04:50-0500
+date: 2022-03-09T16:02:06-0500
 pubtype: "Tool"
 featured: true
 tags: ["Open source", "Restrictions apply", "Historical ", "Climate projections", "Application", "Interactive interface/map", "Compare scenarios/locations"]

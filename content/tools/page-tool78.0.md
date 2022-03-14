@@ -1,7 +1,7 @@
 ---
 title: "PINEMAP"
 description: "PINEMAP contains 13 total tools dealing with loblolly pine trees in Southeastern US across four categories: Environment, Establishment, Management, and Production."
-date: 2022-02-28T11:04:50-0500
+date: 2022-03-09T16:02:06-0500
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Climate projections", "Grid based", "Location specific", "Application", "Interactive interface/map", "Compare scenarios/locations"]
@@ -17,7 +17,7 @@ The USDA tool is focused on helping foresters understand how pine forests will b
 __**Get This Tool:**__ https://climate.ncsu.edu/pinemap/
 
 __**Geographic Coverage**__
-- Applicable Anywhere
+- Contiguous United States
 
 __**Tags**__
 -  Historical 
