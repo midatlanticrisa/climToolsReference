@@ -1,7 +1,7 @@
 ---
 title: "USGS Exploration and Graphics for RivEr Trends (EGRET)"
 description: "R package for evaluating changes in river conditions "
-date: 2022-03-09T16:02:05-0500
+date: 2022-05-19T11:52:35-0400
 pubtype: "Tool"
 featured: true
 tags: ["Open source", "Historical ", "Real-time/Current", "Location specific", "Application", "Downloadable data", "Downloadable results"]

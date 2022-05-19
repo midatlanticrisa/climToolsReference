@@ -1,10 +1,10 @@
 ---
 title: "Climate Engine"
 description: "Web application that generates maps and graphs using climate data from remotely sensed source data"
-date: 2022-03-09T16:02:05-0500
+date: 2022-05-19T11:52:35-0400
 pubtype: "Tool"
 featured: true
-tags: ["Registration required", "Real-time/Current", "Forecast", "Grid based", "Application", "Dataset", "Interactive interface/map", "Downloadable data", "Downloadable results"]
+tags: ["Registration required", "Historical ", "Real-time/Current", "Forecast", "Grid based", "Application", "Dataset", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_28.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_28.0_ScreenCapture-1.png
 ---
@@ -23,12 +23,14 @@ __**Geographic Coverage**__
 
 __**Tags**__
 -  Registration required
+-  Historical 
 -  Real-time/Current
 -  Forecast
 -  Grid based
 -  Application
 -  Dataset
 -  Interactive interface/map
+-  Compare scenarios/locations
 -  Downloadable data
 -  Downloadable results
 

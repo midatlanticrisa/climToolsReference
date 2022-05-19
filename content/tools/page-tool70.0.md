@@ -1,7 +1,7 @@
 ---
 title: "Coastal Change Analysis Program (C-CAP) Land Cover Atlas"
 description: "Interactive map showing changes in land use cover from 1996-2010 in coastal regions"
-date: 2022-03-09T16:02:06-0500
+date: 2022-05-19T11:52:36-0400
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Real-time/Current", "Jursidiction based", "County level", "State level", "Watershed level", "Application", "Interactive interface/map", "Downloadable data", "Downloadable results"]

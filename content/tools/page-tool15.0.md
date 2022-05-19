@@ -1,10 +1,10 @@
 ---
 title: "Better Assessment Science Integrating Point and Non-point Sources (BASIN)"
 description: "BASINS purpose is to assist in watershed management and TMDL development by integrating data, tools, and models."
-date: 2022-03-09T16:02:05-0500
+date: 2022-05-19T11:52:35-0400
 pubtype: "Tool"
 featured: true
-tags: ["Restrictions apply", "Grid based", "Application", "Interactive interface/map", "Downloadable data"]
+tags: ["Restrictions apply", "Historical ", "Real-time/Current", "Grid based", "Application", "Interactive interface/map", "Downloadable data"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_15.0_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_15.0_ScreenCapture-1.png
 ---
@@ -22,6 +22,8 @@ __**Geographic Coverage**__
 
 __**Tags**__
 -  Restrictions apply
+-  Historical 
+-  Real-time/Current
 -  Grid based
 -  Application
 -  Interactive interface/map

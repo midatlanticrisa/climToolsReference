@@ -166,9 +166,9 @@
 {"geoScopeST":"Virginia","name":"Northeast Conservation Planning Atlas","link":"tools/page-tool43.0"},
 {"geoScopeST":"All","name":"United States Drought Monitor","link":"tools/page-tool44.0"},
 {"geoScopeST":"District of Columbia","name":"DC Department of Energy and Environment Data & Maps","link":"tools/page-tool45.0"},
-{"geoScopeST":"District of Columbia","name":"Air Quality Forecast","link":"tools/page-tool46.0"},
-{"geoScopeST":"Maryland","name":"Air Quality Forecast","link":"tools/page-tool46.0"},
-{"geoScopeST":"Virginia","name":"Air Quality Forecast","link":"tools/page-tool46.0"},
+{"geoScopeST":"District of Columbia","name":"Metropolitan Washington Air Quality Forecast","link":"tools/page-tool46.0"},
+{"geoScopeST":"Maryland","name":"Metropolitan Washington Air Quality Forecast","link":"tools/page-tool46.0"},
+{"geoScopeST":"Virginia","name":"Metropolitan Washington Air Quality Forecast","link":"tools/page-tool46.0"},
 {"geoScopeST":"Delaware","name":"Chesapeake Assessment Scenario Tool (CAST)","link":"tools/page-tool47.0"},
 {"geoScopeST":"District of Columbia","name":"Chesapeake Assessment Scenario Tool (CAST)","link":"tools/page-tool47.0"},
 {"geoScopeST":"Maryland","name":"Chesapeake Assessment Scenario Tool (CAST)","link":"tools/page-tool47.0"},
@@ -201,7 +201,8 @@
 {"geoScopeST":"All","name":"i-Tree: Mytree and Landscape","link":"collection/page-tool57.1"},
 {"geoScopeST":"All","name":"i-Tree: Design","link":"collection/page-tool57.2"},
 {"geoScopeST":"All","name":"i-Tree: Canopy","link":"collection/page-tool57.3"},
-{"geoScopeST":"All","name":"i-Tree: Hydro, and Eco","link":"collection/page-tool57.4"},
+{"geoScopeST":"All","name":"i-Tree: HydroPlus","link":"collection/page-tool57.4"},
+{"geoScopeST":"All","name":"i-Tree:  Eco","link":"collection/page-tool57.5"},
 {"geoScopeST":"District of Columbia","name":"Surging Seas Risk Zone Map (SSRZM)","link":"tools/page-tool58.0"},
 {"geoScopeST":"Delaware","name":"Surging Seas Risk Zone Map (SSRZM)","link":"tools/page-tool58.0"},
 {"geoScopeST":"Maryland","name":"Surging Seas Risk Zone Map (SSRZM)","link":"tools/page-tool58.0"},
@@ -274,6 +275,7 @@
 {"geoScopeST":"District of Columbia","name":"SRC Trading Program Impervious Viewer","link":"tools/page-tool83.0"},
 {"geoScopeST":"District of Columbia","name":"DC Flood Risk Map","link":"tools/page-tool84.0"},
 {"geoScopeST":"District of Columbia","name":"Green Infrastructure Practices in the District","link":"tools/page-tool85.0"},
-{"geoScopeST":"District of Columbia","name":"DC Solar Tool","link":"tools/page-tool86.0"}
+{"geoScopeST":"District of Columbia","name":"DC Solar Tool","link":"tools/page-tool86.0"},
+{"geoScopeST":"All","name":"AirNow","link":"tools/page-tool87.0"}
 ]
 }

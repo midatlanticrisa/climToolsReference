@@ -1,7 +1,7 @@
 ---
 title: "AdaptVA: Interactive Map"
 description: "Maps that shows sea level rise projections (low, mid, and high) in relationship to social vulnerability, infrastructure, management, and natural resources. "
-date: 2022-03-09T16:02:05-0500
+date: 2022-05-19T11:52:35-0400
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Real-time/Current", "Climate projections", "Jursidiction based", "Grid based", "Location specific", "County level", "State level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Downloadable results"]

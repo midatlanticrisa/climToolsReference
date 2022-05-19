@@ -73,7 +73,7 @@
 {"softReq":"-contact provider for additional cost details ","name":"Northeast Conservation Planning Atlas","link":"tools/page-tool43.0"},
 {"softReq":"None","name":"United States Drought Monitor","link":"tools/page-tool44.0"},
 {"softReq":"None","name":"DC Department of Energy and Environment Data & Maps","link":"tools/page-tool45.0"},
-{"softReq":"None","name":"Air Quality Forecast","link":"tools/page-tool46.0"},
+{"softReq":"None","name":"Metropolitan Washington Air Quality Forecast","link":"tools/page-tool46.0"},
 {"softReq":"None","name":"Chesapeake Assessment Scenario Tool (CAST)","link":"tools/page-tool47.0"},
 {"softReq":"None","name":"Chesapeake Bay Interpretive Buoy System (CBIBS)","link":"tools/page-tool48.0"},
 {"softReq":"None","name":"MDOT Climate Change Vulnerability","link":"tools/page-tool49.0"},
@@ -90,7 +90,8 @@
 {"softReq":"Requires downloadable software, not compatible with Mac/iOS","name":"i-Tree: Mytree and Landscape","link":"collection/page-tool57.1"},
 {"softReq":"Requires downloadable software, not compatible with Mac/iOS","name":"i-Tree: Design","link":"collection/page-tool57.2"},
 {"softReq":"Option to download software, not compatible with Mac/iOS","name":"i-Tree: Canopy","link":"collection/page-tool57.3"},
-{"softReq":"Requires downloadable software, not compatible with Mac/iOS ","name":"i-Tree: Hydro, and Eco","link":"collection/page-tool57.4"},
+{"softReq":"Requires downloadable software, not compatible with Mac/iOS ","name":"i-Tree: HydroPlus","link":"collection/page-tool57.4"},
+{"softReq":"Requires downloadable software, not compatible with Mac/iOS ","name":"i-Tree:  Eco","link":"collection/page-tool57.5"},
 {"softReq":"None","name":"Surging Seas Risk Zone Map (SSRZM)","link":"tools/page-tool58.0"},
 {"softReq":"None","name":"Delaware Environmental Monitoring Sites","link":"tools/page-tool59.0"},
 {"softReq":"None","name":"Beach Nourishment Viewer","link":"tools/page-tool60.0"},
@@ -117,6 +118,7 @@
 {"softReq":"None","name":"SRC Trading Program Impervious Viewer","link":"tools/page-tool83.0"},
 {"softReq":"None","name":"DC Flood Risk Map","link":"tools/page-tool84.0"},
 {"softReq":"None","name":"Green Infrastructure Practices in the District","link":"tools/page-tool85.0"},
-{"softReq":"None","name":"DC Solar Tool","link":"tools/page-tool86.0"}
+{"softReq":"None","name":"DC Solar Tool","link":"tools/page-tool86.0"},
+{"softReq":"None","name":"AirNow","link":"tools/page-tool87.0"}
 ]
 }

@@ -1,7 +1,7 @@
 ---
 title: "Climate Smart Farming: Growing Degree Day Calculator"
 description: "Create charts demonstrating changing growing degree days based on planting date and GDD base."
-date: 2022-03-09T16:02:05-0500
+date: 2022-05-19T11:52:35-0400
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Real-time/Current", "Forecast", "Location specific", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]

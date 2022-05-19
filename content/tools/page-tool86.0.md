@@ -1,7 +1,7 @@
 ---
 title: "DC Solar Tool"
 description: "Calculates cost, federal tax credit, carbon offset, average revenue, and energy output of solar energy for residential and business roofs in D.C. area that are looking to create solar panel systems"
-date: 2022-03-09T16:02:06-0500
+date: 2022-05-19T11:52:36-0400
 pubtype: "Tool"
 featured: true
 tags: ["Real-time/Current", "Jursidiction based", "City level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Cost estimates", "Downloadable results"]

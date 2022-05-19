@@ -1,10 +1,10 @@
 ---
 title: "Creating Resilient Water Utilities: Climate Resilience Evaluation and Awareness Tool Risk Assessment Application for Water Utilities"
 description: "Risk assessment application for water utilities"
-date: 2022-03-09T16:02:05-0500
+date: 2022-05-19T11:52:35-0400
 pubtype: "Tool"
 featured: true
-tags: ["Registration required", "Historical ", "Climate projections", "Application", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Cost estimates", "Downloadable results"]
+tags: ["Registration required", "Historical ", "Climate projections", "Location specific", "Application", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Cost estimates", "Downloadable results"]
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_8.1_ScreenCapture-1.png
 thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_8.1_ScreenCapture-1.png
 ---
@@ -23,6 +23,7 @@ __**Tags**__
 -  Registration required
 -  Historical 
 -  Climate projections
+-  Location specific
 -  Application
 -  Interactive interface/map
 -  Compare scenarios/locations

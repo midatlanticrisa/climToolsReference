@@ -1,7 +1,7 @@
 ---
 title: "Green Infrastructure Modeling Toolkit"
 description: "A collection of models and tools for communities to manage water runoff in urban and other environments"
-date: 2022-03-09T16:02:06-0500
+date: 2022-05-19T11:52:36-0400
 pubtype: "Tool"
 featured: true
 pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_73.0_ScreenCapture-1.png

@@ -1,7 +1,7 @@
 ---
 title: "Know Your Zone"
 description: "Allows residents of coastal Virginia to identify their evacuation zone in preparation for severe weather conditions during annual hurricane season"
-date: 2022-03-09T16:02:05-0500
+date: 2022-05-19T11:52:35-0400
 pubtype: "Tool"
 featured: true
 tags: ["Grid based", "Location specific", "Regional level", "Application", "Interactive interface/map"]

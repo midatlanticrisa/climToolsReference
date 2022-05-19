@@ -1,7 +1,7 @@
 ---
 title: "i-Tree: Design"
 description: "Users assess the current benefits of trees. Option to look at data for the current year, in 100 years, and then as combined benefits over the next 10 years."
-date: 2022-03-09T16:02:05-0500
+date: 2022-05-19T11:52:36-0400
 pubtype: "Tool"
 featured: true
 tags: ["Real-time/Current", "Forecast", "Location specific", "Application", "Interactive interface/map", "Cost estimates", "Downloadable results"]

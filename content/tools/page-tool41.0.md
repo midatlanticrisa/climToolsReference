@@ -1,7 +1,7 @@
 ---
 title: "Virginia Coastal Geospatial and Educational Mapping System (GEMS)"
 description: "Ongoing inventory of features from Virginia’s coastal ecosystems with each feature accompanied by supporting information "
-date: 2022-03-09T16:02:05-0500
+date: 2022-05-19T11:52:36-0400
 pubtype: "Tool"
 featured: true
 tags: ["Real-time/Current", "Location specific", "State level", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]

@@ -1,7 +1,7 @@
 ---
 title: "Coastal Inundation Predictions for Maryland"
 description: "Projections of SLR and the predicted effects on the state of Maryland"
-date: 2022-03-09T16:02:05-0500
+date: 2022-05-19T11:52:35-0400
 pubtype: "Tool"
 featured: true
 tags: ["Climate projections", "State level", "Compare scenarios/locations"]

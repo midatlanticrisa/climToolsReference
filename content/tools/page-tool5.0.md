@@ -1,7 +1,7 @@
 ---
 title: "Resilience Adaptation Feasibility Tool (The RAFT)"
 description: "Provides independent, objective assessment of locality resilience in coastal Virginia."
-date: 2022-03-09T16:02:05-0500
+date: 2022-05-19T11:52:35-0400
 pubtype: "Tool"
 featured: true
 tags: ["Restrictions apply", "Real-time/Current", "Climate projections", "Jursidiction based", "City level", "County level", "Program", "Compare scenarios/locations", "Solutions", "Downloadable results"]

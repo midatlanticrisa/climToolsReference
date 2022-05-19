@@ -1,5 +1,5 @@
 ---
-title: "Glossary"
-type: "page"
-layout: "glossary"
+type: page
+title: Glossary
+layout: glossary
 ---

@@ -1,9 +1,9 @@
 ---
-title: "i-Tree: Hydro, and Eco"
+title: "i-Tree: HydroPlus"
 description: "i-Tree Eco provides functional, structural and compositional information, forecasting models, and management information on local trees.  
 
 i-Tree Hydro runs local and city-wide analysis of watershed dynamics and how trees impact these features "
-date: 2022-03-09T16:02:05-0500
+date: 2022-05-19T11:52:36-0400
 pubtype: "Tool"
 featured: true
 tags: ["Restrictions apply", "Real-time/Current", "Forecast", "Location specific", "City level", "Application", "Interactive interface/map", "Downloadable results"]
@@ -12,11 +12,9 @@ thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_57.4_
 ---
 Developed By: USFS, Davey Tree Expert Company, Arbor Day Foundation, Society of Municipal Arborists, International Society of Arboriculture, Casey Trees, and SUNY_College of Environmental Science and Forestry.
 
-**Summary:** i-Tree Hydro models urban hydrology from a vegetation-specific perspective by simulating the effects of changes in urban tree cover and impervious surfaces on the hydrological cycle. This includes streamflow and water quality, for both watershed and non-watershed areas. Though beneficial for specific projects and experts in forestry and land management, i-Tree Eco and Hydro are not intended for everyday users.
+**Summary:** i-Tree HydroPlus is a collection of process-based environmental models including I-Tree Hydro, I-Tree Cool Air, and I-Tree Cool River. It is designed to model 1) the effects of land cover changes on water quantity and quality, and 2) the effects of channel morphology, riparian shading, tributaries, stormwater inflow, groundwater mixing, and river restoration. Though beneficial for specific projects and experts in forestry and land management, i-Tree HydroPlus is not intended for everyday users. i-Tree HydroPlus is a more time intensive and complex tool on i-Tree. It requires a downloadable software application.
 
-i-Tree Eco and Hydro are the most time intensive and complex tools on i-Tree. Both tools require a downloadable software application. i-Tree Eco is designed to use field-collected tree cover data along with local hourly air pollution and meteorological data to quantify forest structure, environmental benefits of trees, and economic value of these trees to communities.
-
-__**Get This Tool:**__ https://www.itreetools.org/tools/i-tree-eco
+__**Get This Tool:**__ https://www.itreetools.org/tools/research-suite/hydro-plus
 
 
 https://www.itreetools.org/tools/hydro

@@ -1,7 +1,7 @@
 ---
 title: "Mapping Social Vulnerability of Fishing Communities"
 description: "National map of social vulnerability in fishing communities"
-date: 2022-03-09T16:02:05-0500
+date: 2022-05-19T11:52:36-0400
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Jursidiction based", "City level", "County level", "Application", "Interactive interface/map", "Downloadable data", "Downloadable results"]

@@ -1,7 +1,7 @@
 ---
 title: "Climate Change in the American Mind (CCAM) Explorer"
 description: "Display data on American climate change perceptions based on year and respondent characteristics"
-date: 2022-03-09T16:02:05-0500
+date: 2022-05-19T11:52:36-0400
 pubtype: "Tool"
 featured: true
 tags: ["Historical ", "Program", "Dataset", "Interactive interface/map", "Downloadable data", "Downloadable results"]

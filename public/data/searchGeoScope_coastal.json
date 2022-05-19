@@ -65,7 +65,7 @@
 {"geoScopeCoast":"0","name":"Northeast Conservation Planning Atlas","link":"tools/page-tool43.0"},
 {"geoScopeCoast":"0","name":"United States Drought Monitor","link":"tools/page-tool44.0"},
 {"geoScopeCoast":"1","name":"DC Department of Energy and Environment Data & Maps","link":"tools/page-tool45.0"},
-{"geoScopeCoast":"0","name":"Air Quality Forecast","link":"tools/page-tool46.0"},
+{"geoScopeCoast":"0","name":"Metropolitan Washington Air Quality Forecast","link":"tools/page-tool46.0"},
 {"geoScopeCoast":"0","name":"Chesapeake Assessment Scenario Tool (CAST)","link":"tools/page-tool47.0"},
 {"geoScopeCoast":"1","name":"Chesapeake Bay Interpretive Buoy System (CBIBS)","link":"tools/page-tool48.0"},
 {"geoScopeCoast":"1","name":"MDOT Climate Change Vulnerability","link":"tools/page-tool49.0"},
@@ -80,7 +80,8 @@
 {"geoScopeCoast":"0","name":"i-Tree: Mytree and Landscape","link":"collection/page-tool57.1"},
 {"geoScopeCoast":"0","name":"i-Tree: Design","link":"collection/page-tool57.2"},
 {"geoScopeCoast":"0","name":"i-Tree: Canopy","link":"collection/page-tool57.3"},
-{"geoScopeCoast":"0","name":"i-Tree: Hydro, and Eco","link":"collection/page-tool57.4"},
+{"geoScopeCoast":"0","name":"i-Tree: HydroPlus","link":"collection/page-tool57.4"},
+{"geoScopeCoast":"0","name":"i-Tree:  Eco","link":"collection/page-tool57.5"},
 {"geoScopeCoast":"1","name":"Surging Seas Risk Zone Map (SSRZM)","link":"tools/page-tool58.0"},
 {"geoScopeCoast":"1","name":"Delaware Environmental Monitoring Sites","link":"tools/page-tool59.0"},
 {"geoScopeCoast":"1","name":"Beach Nourishment Viewer","link":"tools/page-tool60.0"},
@@ -107,6 +108,7 @@
 {"geoScopeCoast":"1","name":"SRC Trading Program Impervious Viewer","link":"tools/page-tool83.0"},
 {"geoScopeCoast":"1","name":"DC Flood Risk Map","link":"tools/page-tool84.0"},
 {"geoScopeCoast":"1","name":"Green Infrastructure Practices in the District","link":"tools/page-tool85.0"},
-{"geoScopeCoast":"1","name":"DC Solar Tool","link":"tools/page-tool86.0"}
+{"geoScopeCoast":"1","name":"DC Solar Tool","link":"tools/page-tool86.0"},
+{"geoScopeCoast":"0","name":"AirNow","link":"tools/page-tool87.0"}
 ]
 }

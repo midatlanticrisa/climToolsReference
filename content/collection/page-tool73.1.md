@@ -1,7 +1,7 @@
 ---
 title: "Green Infrastructure Modeling Toolkit: Storm Water Management Model (SWMM)"
 description: "Allows users to assess stormwater runoff quantity and quality in order to plan for grey and green infrastructure."
-date: 2022-03-09T16:02:06-0500
+date: 2022-05-19T11:52:36-0400
 pubtype: "Tool"
 featured: true
 tags: ["Open source", "Restrictions apply", "Real-time/Current", "Climate projections", "Application", "Interactive interface/map", "Compare scenarios/locations"]
