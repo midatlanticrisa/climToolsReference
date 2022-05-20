@@ -121,10 +121,120 @@
   
   
   <script src="/data/toolsFilter.js" type="text/javascript"></script>
+  <script src="definition.js" type="text/javascript"></script>
+  
 </head>
+<style>
+  h1 {
+      display: inline-block;
+  }
+  .defright {
+    width: 25%;
+    float: right;
+    font-size:12px;
+  }
+  .defFont{
+  font-size:12px;
+}
+  </style>
 <body>
   
-  <h1>Tool Search</h1>
+  <div>
+    <h1>Tool Search</h1>
+    <div class="defright">
+      <label for="definitionfunction"><b>Need a definition?</b></label><br>
+<select class="js-definitionfunction-single" id="definitionfunction" style="width: 100%">
+<option></option>
+<optgroup label="Tool function">
+<option value="Adaptation Planning">Adaptation Planning</option>
+<option value="Citizen Science">Citizen Science</option>
+<option value="Climate Mitigation Planning">Climate Mitigation Planning</option>
+<option value="Engagement">Engagement</option>
+<option value="Identify Vulnerabilities">Identify Vulnerabilities</option>
+<option value="Process Support">Process Support</option>
+<option value="Toolkit/Tool Collection">Toolkit/Tool Collection</option>
+<option value="View Future Projections">View Future Projections</option>
+<option value="View Past/Current Conditions">View Past/Current Conditions</option></optgroup>
+<optgroup label="Topics">
+<option value="Developed Environments">Developed Environments</option>
+<option value="Ecosystems">Ecosystems</option>
+<option value="Society">Society</option>
+<option value="Water / Flooding">Water / Flooding</option>
+<option value="Weather and Climate">Weather and Climate</option></optgroup>
+<optgroup label="Sub-topics">
+<option value="Agriculture">Agriculture</option>
+<option value="Air Quality">Air Quality</option>
+<option value="Buildings / Infrastructure">Buildings / Infrastructure</option>
+<option value="Carbon Emissions">Carbon Emissions</option>
+<option value="Coastal">Coastal</option>
+<option value="Cultural Resources">Cultural Resources</option>
+<option value="Eco Services Valuation">Eco Services Valuation</option>
+<option value="Economic Assessment">Economic Assessment</option>
+<option value="Fisheries and Aquaculture">Fisheries and Aquaculture</option>
+<option value="Forestry">Forestry</option>
+<option value="High Tide / Recurrent Flooding">High Tide / Recurrent Flooding</option>
+<option value="Inland Flooding">Inland Flooding</option>
+<option value="Noncoastal/ Inland">Noncoastal/ Inland</option>
+<option value="Planning / Land Use">Planning / Land Use</option>
+<option value="Precipitation">Precipitation</option>
+<option value="Public Health">Public Health</option>
+<option value="Restoration">Restoration</option>
+<option value="Saltwater Intrusion">Saltwater Intrusion</option>
+<option value="Sea Level Rise">Sea Level Rise</option>
+<option value="Shorelines and Erosion">Shorelines and Erosion</option>
+<option value="Social Vulnerability">Social Vulnerability</option>
+<option value="Soils">Soils</option>
+<option value="Storm Surge">Storm Surge</option>
+<option value="Storms and Hurricanes">Storms and Hurricanes</option>
+<option value="Stream Flow">Stream Flow</option>
+<option value="Submerged Aquatic Vegetation">Submerged Aquatic Vegetation</option>
+<option value="Temperature">Temperature</option>
+<option value="Transportation">Transportation</option>
+<option value="Water Quality">Water Quality</option>
+<option value="Wetlands">Wetlands</option></optgroup>
+<optgroup label="Tags">
+<option value="Low">Low</option>
+<option value="Med">Med</option>
+<option value="High">High</option>
+<option value="Varies">Varies</option>
+<option value="Application">Application</option>
+<option value="Climate projections">Climate projections</option>
+<option value="Compare scenarios/locations">Compare scenarios/locations</option>
+<option value="Cost estimates">Cost estimates</option>
+<option value="County level">County level</option>
+<option value="Daily">Daily</option>
+<option value="Dataset">Dataset</option>
+<option value="Downloadable data">Downloadable data</option>
+<option value="Downloadable results">Downloadable results</option>
+<option value="Drought">Drought</option>
+<option value="Forecast">Forecast</option>
+<option value="Grid based">Grid based</option>
+<option value="Historical ">Historical </option>
+<option value="Interactive interface/map">Interactive interface/map</option>
+<option value="Jursidiction based">Jursidiction based</option>
+<option value="Location specific">Location specific</option>
+<option value="Monthly">Monthly</option>
+<option value="Open source">Open source</option>
+<option value="Program">Program</option>
+<option value="Quarterly">Quarterly</option>
+<option value="Real-time/Current">Real-time/Current</option>
+<option value="Regional level">Regional level</option>
+<option value="Registration required">Registration required</option>
+<option value="Restrictions apply">Restrictions apply</option>
+<option value="Solutions">Solutions</option>
+<option value="Spreadsheet">Spreadsheet</option>
+<option value="State level">State level</option>
+<option value="Subdaily">Subdaily</option>
+<option value="Water Level">Water Level</option>
+<option value="Watershed level">Watershed level</option>
+<option value="Website">Website</option>
+<option value="Weekly">Weekly</option>
+<option value="Yearly">Yearly</option></optgroup>
+</select>
+<br><br>
+      <div id="defined"></div> 
+    </div>
+  </div>
 
   
   <label for="location"><b>Where do you need your tool to work?</b></label><br>
@@ -544,8 +654,8 @@
   
   <script>
   
-  
   $(document).ready(function() {
+    
     $('.js-location-multiple').select2({
       width: 'resolve', 
       placeholder: "Select a location",
@@ -560,6 +670,12 @@
       width: 'resolve', 
       placeholder: "Select a function",
       allowClear: true
+    });
+    $('.js-definitionfunction-single').select2({
+      width: 'resolve', 
+      placeholder: "Type a word to define",
+      allowClear: true,
+      dropdownCssClass: "defFont" 
     });
   });
   
@@ -719,6 +835,62 @@
   }
   
   
+
+  
+  
+  
+  var $definitionfunction = $('#definitionfunction'),
+      $defined = $('#defined');
+
+  
+  $definitionfunction.change(function () {
+    onDefine();
+  });
+
+  
+  
+  function onDefine() {
+    var foundDefinition = findDefinition();
+    showDefinition(foundDefinition);
+  }
+
+  
+  function findDefinition() {
+    return definefilter($definitionfunction.find('option:selected').val())
+  }
+
+  
+  function definefilter(definitionfunction) {
+    var defined = [];
+    
+    
+    for (var i = 0; i < defsjson.length; i++) {
+      var defs = defsjson[i].defs;
+      
+      
+      
+      if (defs.name === definitionfunction) {
+        defined.push(defs);
+      }
+    }
+    return defined;
+  }
+
+  
+  
+  function showDefinition(defsjson) {
+    
+    $defined.empty();
+    
+    
+    for (var i = 0; i < defsjson.length; i++) {
+      $defined.append($('<p>' + defsjson[i].definition + '</p>'));
+    }
+  }
+
+  
+  
+  onDefine();
   onChange();
   </script>
   
