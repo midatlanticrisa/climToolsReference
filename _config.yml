@@ -90,3 +90,12 @@ exclude:
   - mac-docker-buildit
   - mac-docker-testit
   - mac-shipit
+
+# Organize the files into a folder. They are hidden pages
+collections:
+  collection:
+    output: true
+  individualtools:
+    output: true
+  tag:
+    output: true
