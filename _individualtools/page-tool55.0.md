@@ -1,33 +1,36 @@
 ---
-title: "USGS National Water Dashboard"
-description: "Visualize steam and weather data"
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Real-time/Current", "Location specific", "Application", "Interactive interface/map", "Downloadable data", "Downloadable results", "Subdaily"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_55.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_55.0_ScreenCapture-1.png
+layout: page
+title: USGS National Water Dashboard
+permalink: /individualtools/page-tool55.0/
 ---
-Developed By: USGS
+# USGS National Water Dashboard
+
+<img src="/images/scaled_250_400/TOOLID_55.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** USGS
 
 **Summary:** The National Water Dashboard is a interactive map that shows reail-time water data colleged at USGS observation stations along with weather-related data from other public sources.
 
-__**Get This Tool:**__ https://dashboard.waterdata.usgs.gov/app/nwd/?region=lower48&aoi=default
+**Get This Tool:** [https://dashboard.waterdata.usgs.gov/app/nwd/?region=lower48&aoi=default](https://dashboard.waterdata.usgs.gov/app/nwd/?region=lower48&aoi=default){:target='blank'}
 
-__**Geographic Coverage**__
-- Contiguous United States
+**Geographic Coverage**
 
-__**Tags**__
--  Real-time/Current
--  Location specific
--  Application
--  Interactive interface/map
--  Downloadable data
--  Downloadable results
--  Subdaily
+* Contiguous United States
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Low
+*  Real-time/Current
+*  Location specific
+*  Application
+*  Interactive interface/map
+*  Downloadable data
+*  Downloadable results
+*  Subdaily
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

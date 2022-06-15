@@ -1,14 +1,13 @@
 ---
-title: "Delaware Air Quality Forecast"
-description: "Report the current conditions and next day forecast of Delaware Air Quality."
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Historical ", "Real-time/Current", "Forecast", "Grid based", "Location specific", "City level", "Application", "Interactive interface/map", "Subdaily"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_74.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_74.0_ScreenCapture-1.png
+layout: page
+title: Delaware Air Quality Forecast
+permalink: /individualtools/page-tool74.0/
 ---
-Developed By: DDNREC
+# Delaware Air Quality Forecast
+
+<img src="/images/scaled_250_400/TOOLID_74.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** DDNREC
 
 **Summary:** The Delaware Air Quality Forecast is a user-friendly forecast that provides daily air quality forecasts for the state of Delaware.
 
@@ -16,24 +15,28 @@ This forecast's primary objective is to report the level of health concern due t
 
 The Air Quality Forecast also provides links to educational resources that users can use to learn what factors affect air quality, how air quality affects human health, and suggestions for individual approaches to increase air quality.
 
-__**Get This Tool:**__ https://dnrec.alpha.delaware.gov/air/quality/forecast/
+**Get This Tool:** [https://dnrec.alpha.delaware.gov/air/quality/forecast/](https://dnrec.alpha.delaware.gov/air/quality/forecast/){:target='blank'}
 
-__**Geographic Coverage**__
-- Delaware
+**Geographic Coverage**
 
-__**Tags**__
--  Historical 
--  Real-time/Current
--  Forecast
--  Grid based
--  Location specific
--  City level
--  Application
--  Interactive interface/map
--  Subdaily
+* Delaware
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Low
+*  Historical 
+*  Real-time/Current
+*  Forecast
+*  Grid based
+*  Location specific
+*  City level
+*  Application
+*  Interactive interface/map
+*  Subdaily
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

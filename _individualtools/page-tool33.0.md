@@ -1,14 +1,13 @@
 ---
-title: "Chesapeake Bay Program DataHub"
-description: "Datasets related to water quality, living resources, pollution, and fluorescence "
-date: 2022-05-19T11:52:35-0400
-pubtype: "Tool"
-featured: true
-tags: ["Historical ", "Real-time/Current", "Website", "Dataset", "Downloadable data"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_33.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_33.0_ScreenCapture-1.png
+layout: page
+title: Chesapeake Bay Program DataHub
+permalink: /individualtools/page-tool33.0/
 ---
-Developed By: CBP
+# Chesapeake Bay Program DataHub
+
+<img src="/images/scaled_250_400/TOOLID_33.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** CBP
 
 **Summary:** The DataHub is the Chesapeake Bay Program’s primary tool for searching and downloading environmental data for the Chesapeake Bay watershed.
 
@@ -17,20 +16,24 @@ This tool provides access to several types of data related to pollutants, water 
 
 
 
-__**Get This Tool:**__ http://data.chesapeakebay.net/Home
+**Get This Tool:** [http://data.chesapeakebay.net/Home](http://data.chesapeakebay.net/Home){:target='blank'}
 
-__**Geographic Coverage**__
-- Chesapeake Bay
+**Geographic Coverage**
 
-__**Tags**__
--  Historical 
--  Real-time/Current
--  Website
--  Dataset
--  Downloadable data
+* Chesapeake Bay
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Med
+*  Historical 
+*  Real-time/Current
+*  Website
+*  Dataset
+*  Downloadable data
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Med

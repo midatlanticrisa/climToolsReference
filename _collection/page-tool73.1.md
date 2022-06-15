@@ -1,14 +1,13 @@
 ---
-title: "Green Infrastructure Modeling Toolkit: Storm Water Management Model (SWMM)"
-description: "Allows users to assess stormwater runoff quantity and quality in order to plan for grey and green infrastructure."
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Open source", "Restrictions apply", "Real-time/Current", "Climate projections", "Application", "Interactive interface/map", "Compare scenarios/locations"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_73.1_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_73.1_ScreenCapture-1.png
+layout: page
+title: Green Infrastructure Modeling Toolkit- Storm Water Management Model (SWMM)
+permalink: /collection/page-tool73.1/
 ---
-Developed By: EPA
+# Green Infrastructure Modeling Toolkit: Storm Water Management Model (SWMM)
+
+<img src="/images/scaled_250_400/TOOLID_73.1_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** EPA
 
 **Summary:** The EPA's Storm Water Management Model (SWMM) is a software application that simulates water runoff quantity and quality. The model is used for planning, analysis, and design related to stormwater runoff, combined and sanitary sewers, and other drainage systems in urban and rural areas. SWMM was developed to support local, state, and national stormwater and runoff management objectives and reduce discharges that cause impairment of waterbodies. 
 
@@ -17,22 +16,26 @@ Users must download the software and then input spatial data to generate stormwa
 The tool has extensive help documentation available online, including a manual, user's guide, and help portal for technical support.
 
 
-__**Get This Tool:**__ https://www.epa.gov/water-research/storm-water-management-model-swmm
+**Get This Tool:** [https://www.epa.gov/water-research/storm-water-management-model-swmm](https://www.epa.gov/water-research/storm-water-management-model-swmm){:target='blank'}
 
-__**Geographic Coverage**__
-- Applicable Anywhere
+**Geographic Coverage**
 
-__**Tags**__
--  Open source
--  Restrictions apply
--  Real-time/Current
--  Climate projections
--  Application
--  Interactive interface/map
--  Compare scenarios/locations
+* Applicable Anywhere
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- High
+*  Open source
+*  Restrictions apply
+*  Real-time/Current
+*  Climate projections
+*  Application
+*  Interactive interface/map
+*  Compare scenarios/locations
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* High

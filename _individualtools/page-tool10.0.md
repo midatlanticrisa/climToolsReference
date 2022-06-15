@@ -1,14 +1,13 @@
 ---
-title: "Eastern Virginia Coastal Resilience (ESVA Coastal Resilience)"
-description: "Decision support tool to assess coastal resilience in Eastern Virginia "
-date: 2022-05-19T11:52:35-0400
-pubtype: "Tool"
-featured: true
-tags: ["Real-time/Current", "Climate projections", "Grid based", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_10.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_10.0_ScreenCapture-1.png
+layout: page
+title: Eastern Virginia Coastal Resilience (ESVA Coastal Resilience)
+permalink: /individualtools/page-tool10.0/
 ---
-Developed By: NOAA, and TNC
+# Eastern Virginia Coastal Resilience (ESVA Coastal Resilience)
+
+<img src="/images/scaled_250_400/TOOLID_10.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** NOAA, and TNC
 
 **Summary:** The Virginia Eastern Shore Coastal Resilience tool is an interactive mapping tool that allows users to visualize potential social, economic, and environmental impacts of sea level rise and storm surge and identify areas for nature-based solutions to enhance resilience and reduce risks where possible.
 
@@ -16,23 +15,27 @@ In this tool, users can explore five modules to visualize and map the potential 
 
 This tool was designed with feedback from a variety of local stakeholders and does not require any advanced training or experience. The web portal provides a welcome guide describing each application, as well as a short introductory video, step-by-step tutorial, and factsheets about how to use each app. Users can also easily find metadata to access original local, state, and federal data where available. 
 
-__**Get This Tool:**__ https://maps.coastalresilience.org/virginia/
+**Get This Tool:** [https://maps.coastalresilience.org/virginia/](https://maps.coastalresilience.org/virginia/){:target='blank'}
 
-__**Geographic Coverage**__
-- Accomack County, VA; Northampton County, VA; Assateague Island, VA; Wallops Island, VA; Assawoman Island, VA; Metompkin Island, VA; Cedar Island, VA; Parramore Island, VA; Hog Island, VA; Cobb Island, VA; Wreck Island, VA; Ship Shoal Island, VA; Myrtle Island, VA; Smith Island, VA; Fishermans Island, VA
+**Geographic Coverage**
 
-__**Tags**__
--  Real-time/Current
--  Climate projections
--  Grid based
--  Regional level
--  Application
--  Interactive interface/map
--  Compare scenarios/locations
--  Downloadable results
+* Accomack County, VA; Northampton County, VA; Assateague Island, VA; Wallops Island, VA; Assawoman Island, VA; Metompkin Island, VA; Cedar Island, VA; Parramore Island, VA; Hog Island, VA; Cobb Island, VA; Wreck Island, VA; Ship Shoal Island, VA; Myrtle Island, VA; Smith Island, VA; Fishermans Island, VA
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Low
+*  Real-time/Current
+*  Climate projections
+*  Grid based
+*  Regional level
+*  Application
+*  Interactive interface/map
+*  Compare scenarios/locations
+*  Downloadable results
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

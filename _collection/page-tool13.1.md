@@ -1,14 +1,13 @@
 ---
-title: "MARISA Climate Data Portal: Climate Data for the Mid-Atlantic Region"
-description: "Climate data"
-date: 2022-05-19T11:52:35-0400
-pubtype: "Tool"
-featured: true
-tags: ["Historical ", "Grid based", "Regional level", "Dataset", "Downloadable data", "Daily"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_13.1_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_13.1_ScreenCapture-1.png
+layout: page
+title: MARISA Climate Data Portal- Climate Data for the Mid-Atlantic Region
+permalink: /collection/page-tool13.1/
 ---
-Developed By: NOAA, and MARISA
+# MARISA Climate Data Portal: Climate Data for the Mid-Atlantic Region
+
+<img src="/images/scaled_250_400/TOOLID_13.1_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** NOAA, and MARISA
 
 **Summary:** Climate Data for the Mid-Atlantic Region contains a list and overview of climate data products in the region. 
 
@@ -16,21 +15,25 @@ Available data include an experimental precipitation dataset developed by MARISA
 
 
 
-__**Get This Tool:**__ https://www.marisa.psu.edu/data/
+**Get This Tool:** [https://www.marisa.psu.edu/data/](https://www.marisa.psu.edu/data/){:target='blank'}
 
-__**Geographic Coverage**__
-- Delaware; Maryland; New Jersey; New York; Pennsylvania; Virginia
+**Geographic Coverage**
 
-__**Tags**__
--  Historical 
--  Grid based
--  Regional level
--  Dataset
--  Downloadable data
--  Daily
+* Delaware; Maryland; New Jersey; New York; Pennsylvania; Virginia
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- High
+*  Historical 
+*  Grid based
+*  Regional level
+*  Dataset
+*  Downloadable data
+*  Daily
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* High

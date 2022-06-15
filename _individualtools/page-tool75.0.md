@@ -1,14 +1,13 @@
 ---
-title: "OSPREY Public"
-description: "Report current meteorological and infrastructure (electricity, traffic, shelters) conditions to aid emergency response planning for both citizens and professionals."
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Real-time/Current", "Location specific", "State level", "Application", "Interactive interface/map"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_75.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_75.0_ScreenCapture-1.png
+layout: page
+title: OSPREY Public
+permalink: /individualtools/page-tool75.0/
 ---
-Developed By: NOAA_NWS
+# OSPREY Public
+
+<img src="/images/scaled_250_400/TOOLID_75.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** NOAA_NWS
 
 **Summary:** Operation and Situational Preparedness for Responding to an Emergency (OSPREY) is an interactive map for Maryland that presents users with statewide current conditions on weather, traffic, and electrical outages.
 
@@ -16,20 +15,24 @@ This detailed interface offers a broad range of information to aid emergency man
 
 OSPREY is supported by MD iMAP and is associated with the National Weather Service for DC/Baltimore Twitter account (@NWS_BaltWash), which users may follow to receive daily weather updates for the region.
 
-__**Get This Tool:**__ https://geodata.md.gov/ospreypublic/
+**Get This Tool:** [https://geodata.md.gov/ospreypublic/](https://geodata.md.gov/ospreypublic/){:target='blank'}
 
-__**Geographic Coverage**__
-- Maryland
+**Geographic Coverage**
 
-__**Tags**__
--  Real-time/Current
--  Location specific
--  State level
--  Application
--  Interactive interface/map
+* Maryland
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Low
+*  Real-time/Current
+*  Location specific
+*  State level
+*  Application
+*  Interactive interface/map
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

@@ -1,15 +1,13 @@
 ---
-title: "Adaptation Workbook (Climate Change Response Framework)"
-description: "Provide data and process support to bridge the gap between climate data and land managers
-"
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Registration required", "Climate projections", "Program", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Downloadable results"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_61.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_61.0_ScreenCapture-1.png
+layout: page
+title: Adaptation Workbook (Climate Change Response Framework)
+permalink: /individualtools/page-tool61.0/
 ---
-Developed By: Northern Institute for Applied Climate Science, and USDA_USFS
+# Adaptation Workbook (Climate Change Response Framework)
+
+<img src="/images/scaled_250_400/TOOLID_61.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** Northern Institute for Applied Climate Science, and USDA_USFS
 
 **Summary:** The Adaptation Workbook guides users through the process of creating an adaptation plan to prepare for land management and conservation efforts under changing conditions. 
 
@@ -20,22 +18,26 @@ This tool examines soils, hydrology, temperature, and surrounding land use for t
 The tool allows users to create a custom adaptation plan, but the overall success of the project depends on the accuracy of the user’s data and their ability to design, implement, and monitor the project. This tool is moderately time-intensive, however there are multiple resources and how-to guides, including a YouTube channel and a 7-week online training course, to explain how to use and get the most out of this tool. 
 
 
-__**Get This Tool:**__ https://adaptationworkbook.org/
+**Get This Tool:** [https://adaptationworkbook.org/](https://adaptationworkbook.org/){:target='blank'}
 
-__**Geographic Coverage**__
-- Contiguous United States
+**Geographic Coverage**
 
-__**Tags**__
--  Registration required
--  Climate projections
--  Program
--  Interactive interface/map
--  Compare scenarios/locations
--  Solutions
--  Downloadable results
+* Contiguous United States
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Med
+*  Registration required
+*  Climate projections
+*  Program
+*  Interactive interface/map
+*  Compare scenarios/locations
+*  Solutions
+*  Downloadable results
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Med

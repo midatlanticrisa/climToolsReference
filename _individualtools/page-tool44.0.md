@@ -1,14 +1,13 @@
 ---
-title: "United States Drought Monitor"
-description: "Current and historical (through January 4, 2000) drought comparison mapping tool of continental U.S., Alaska, Hawaii,  and territories"
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Historical ", "Real-time/Current", "Website", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data", "Downloadable results", "Weekly"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_44.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_44.0_ScreenCapture-1.png
+layout: page
+title: United States Drought Monitor
+permalink: /individualtools/page-tool44.0/
 ---
-Developed By: NDMC, University of Nebraska-Lincoln, USDA, and NOAA
+# United States Drought Monitor
+
+<img src="/images/scaled_250_400/TOOLID_44.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** NDMC, University of Nebraska-Lincoln, USDA, and NOAA
 
 **Summary:** The United States Drought Monitor (USDM) is an interactive tool that allows users to view drought conditions at a regional scale within the United States and territories.
 
@@ -16,24 +15,29 @@ This weekly-updated tool provides maps and data describing weekly drought condit
 
 This tool is intended for a wide range of users and does not require any specialized software or training. The website provides a detailed explanation of map data and products as well as a tutorial describing how to use to U.S. Drought Monitor. 
 
-__**Get This Tool:**__ https://droughtmonitor.unl.edu/
+**Get This Tool:** [https://droughtmonitor.unl.edu/
+](https://droughtmonitor.unl.edu/
+){:target='blank'}
 
+**Geographic Coverage**
 
-__**Geographic Coverage**__
-- Contiguous United States
+* Contiguous United States
 
-__**Tags**__
--  Historical 
--  Real-time/Current
--  Website
--  Interactive interface/map
--  Compare scenarios/locations
--  Downloadable data
--  Downloadable results
--  Weekly
+**Tags**
 
-__**Cost**__
-- Free
+*  Historical 
+*  Real-time/Current
+*  Website
+*  Interactive interface/map
+*  Compare scenarios/locations
+*  Downloadable data
+*  Downloadable results
+*  Weekly
 
-__**Skill Level**__
-- Low
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

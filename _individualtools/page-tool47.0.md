@@ -1,14 +1,13 @@
 ---
-title: "Chesapeake Assessment Scenario Tool (CAST)"
-description: "CAST provides estimates of load reductions, allows users to understand which BMPs provide the greatest load reduction benefit, the extent to which these BMPs can be implemented, and the cost of these BMPs."
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Registration required", "Program", "Interactive interface/map", "Compare scenarios/locations", "Solutions", "Cost estimates", "Downloadable data", "Downloadable results"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_47.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_47.0_ScreenCapture-1.png
+layout: page
+title: Chesapeake Assessment Scenario Tool (CAST)
+permalink: /individualtools/page-tool47.0/
 ---
-Developed By: CBP
+# Chesapeake Assessment Scenario Tool (CAST)
+
+<img src="/images/scaled_250_400/TOOLID_47.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** CBP
 
 **Summary:** The Chesapeake Assessment Scenario Tool (CAST) is a web-based nitrogen, phosphorus and sediment load modeling tool designed to streamline environmental planning. 
 
@@ -17,24 +16,29 @@ CAST allows Decisionmakers and planners to determine the most cost-effective str
 CAST's Results include interactive graphs and maps as well as customizable reports. The graphs allow for up to 4 customizable time scenarios within multiple geographical areas, and can be printed. The map comparison feature allows the user to analyze the same two spatial areas under different time periods. Report requests take some time to process but are highly tailored to the user's needs and are emailed to the user. Report topics include BMP Summaries, Base Conditions, Loads, Wastewater, and Atmospheric Deposition for specified geographic areas.
 
 
-__**Get This Tool:**__ https://cast.chesapeakebay.net
+**Get This Tool:** [https://cast.chesapeakebay.net
+](https://cast.chesapeakebay.net
+){:target='blank'}
 
+**Geographic Coverage**
 
-__**Geographic Coverage**__
-- Delaware; District of Columbia; Maryland; New York; Pennsylvania; Virginia
+* Delaware; District of Columbia; Maryland; New York; Pennsylvania; Virginia
 
-__**Tags**__
--  Registration required
--  Program
--  Interactive interface/map
--  Compare scenarios/locations
--  Solutions
--  Cost estimates
--  Downloadable data
--  Downloadable results
+**Tags**
 
-__**Cost**__
-- Free
+*  Registration required
+*  Program
+*  Interactive interface/map
+*  Compare scenarios/locations
+*  Solutions
+*  Cost estimates
+*  Downloadable data
+*  Downloadable results
 
-__**Skill Level**__
-- Med
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Med

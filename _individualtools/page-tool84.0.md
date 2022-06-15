@@ -1,14 +1,13 @@
 ---
-title: "DC Flood Risk Map"
-description: "DC flood map with layers for 1% annual flood, storm surge, and interactive SLR meter"
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Real-time/Current", "Forecast", "Jursidiction based", "City level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_84.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_84.0_ScreenCapture-1.png
+layout: page
+title: DC Flood Risk Map
+permalink: /individualtools/page-tool84.0/
 ---
-Developed By: DCDOEE
+# DC Flood Risk Map
+
+<img src="/images/scaled_250_400/TOOLID_84.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** DCDOEE
 
 **Summary:** The DC Flood Risk Tool uses an interactive map to display the risk of various types of flooding throughout the District. 
 
@@ -16,24 +15,29 @@ This easy-to-use tool was designed to identify the potential flood impacts of a 
 
 
 
-__**Get This Tool:**__ http://dcfloodrisk.org/
+**Get This Tool:** [http://dcfloodrisk.org/
+](http://dcfloodrisk.org/
+){:target='blank'}
 
+**Geographic Coverage**
 
-__**Geographic Coverage**__
-- Washington, DC
+* Washington, DC
 
-__**Tags**__
--  Real-time/Current
--  Forecast
--  Jursidiction based
--  City level
--  Application
--  Interactive interface/map
--  Compare scenarios/locations
--  Downloadable results
+**Tags**
 
-__**Cost**__
-- Free
+*  Real-time/Current
+*  Forecast
+*  Jursidiction based
+*  City level
+*  Application
+*  Interactive interface/map
+*  Compare scenarios/locations
+*  Downloadable results
 
-__**Skill Level**__
-- Low
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

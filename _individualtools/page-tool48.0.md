@@ -1,14 +1,13 @@
 ---
-title: "Chesapeake Bay Interpretive Buoy System (CBIBS)"
-description: "Measures and records weather and water conditions within the Chesapeake Bay"
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Historical ", "Real-time/Current", "Location specific", "Watershed level", "Website", "Dataset", "Downloadable data", "Subdaily"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_48.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_48.0_ScreenCapture-1.png
+layout: page
+title: Chesapeake Bay Interpretive Buoy System (CBIBS)
+permalink: /individualtools/page-tool48.0/
 ---
-Developed By: NOAA
+# Chesapeake Bay Interpretive Buoy System (CBIBS)
+
+<img src="/images/scaled_250_400/TOOLID_48.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** NOAA
 
 **Summary:** The Chesapeake Bay Interpretive Buoys System (CBIBS) is a network of ocean observing platforms that provide real-time access to meteorological, oceanographic and water quality data throughout the Chesapeake Bay. 
 
@@ -17,24 +16,29 @@ CBIBS allows users to easily view current Chesapeake Bay conditions such as wave
 Each buoy location offers data to download as a CSV that includes all of the observations from the past year, or as historical data from 2008 to present. Some buoys are offline as they undergo maintenance, but still display previously collected data. CBIBS also offers a “Data in the Classroom” resource designed for middle and high school science classes, and a presentation for recreational fishermen outlining how CBIBS can enhance their experience on the Bay.
 
 
-__**Get This Tool:**__ https://buoybay.noaa.gov/about/about-system
+**Get This Tool:** [https://buoybay.noaa.gov/about/about-system
+](https://buoybay.noaa.gov/about/about-system
+){:target='blank'}
 
+**Geographic Coverage**
 
-__**Geographic Coverage**__
-- Chesapeake Bay
+* Chesapeake Bay
 
-__**Tags**__
--  Historical 
--  Real-time/Current
--  Location specific
--  Watershed level
--  Website
--  Dataset
--  Downloadable data
--  Subdaily
+**Tags**
 
-__**Cost**__
-- Free
+*  Historical 
+*  Real-time/Current
+*  Location specific
+*  Watershed level
+*  Website
+*  Dataset
+*  Downloadable data
+*  Subdaily
 
-__**Skill Level**__
-- Low
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

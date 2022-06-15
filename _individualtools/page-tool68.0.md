@@ -1,14 +1,13 @@
 ---
-title: "Nature's Network Prioritization Tool"
-description: "Modeling tool for conservation areas of high priority"
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Application", "Interactive interface/map", "Downloadable data", "Downloadable results"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_68.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_68.0_ScreenCapture-1.png
+layout: page
+title: Nature's Network Prioritization Tool
+permalink: /individualtools/page-tool68.0/
 ---
-Developed By: Nature's Network
+# Nature's Network Prioritization Tool
+
+<img src="/images/scaled_250_400/TOOLID_68.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** Nature's Network
 
 **Summary:** The Prioritization Tool from Nature’s Network is an interactive mapping tool that helps identify conservation priorities, such as rare and threatened habitats for species of greatest conservation need. The tool provides local planners with a broad, regional context for areas of degraded habitat that could contribute to a network of connected, intact, and resilient sites.
 
@@ -18,19 +17,23 @@ The user selects the geography in which they want to build the model and then se
 Users can view an interactive map for pre-defined scenarios, found on the main tool page. Users can also save their custom models and will receive a code that allows them to return to their customized results in the future. A pdf of the map and .csv file of the data and model can be downloaded from the tool as well.
 
 
-__**Get This Tool:**__ http://www.naturesnetwork.org/prioritization-tool/
+**Get This Tool:** [http://www.naturesnetwork.org/prioritization-tool/](http://www.naturesnetwork.org/prioritization-tool/){:target='blank'}
 
-__**Geographic Coverage**__
-- Delaware; Maryland; New Jersey; New York; Pennsylvania; Virginia
+**Geographic Coverage**
 
-__**Tags**__
--  Application
--  Interactive interface/map
--  Downloadable data
--  Downloadable results
+* Delaware; Maryland; New Jersey; New York; Pennsylvania; Virginia
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Med
+*  Application
+*  Interactive interface/map
+*  Downloadable data
+*  Downloadable results
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Med

@@ -1,14 +1,13 @@
 ---
-title: "Climate Engine"
-description: "Web application that generates maps and graphs using climate data from remotely sensed source data"
-date: 2022-05-19T11:52:35-0400
-pubtype: "Tool"
-featured: true
-tags: ["Registration required", "Historical ", "Real-time/Current", "Forecast", "Grid based", "Application", "Dataset", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data", "Downloadable results"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_28.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_28.0_ScreenCapture-1.png
+layout: page
+title: Climate Engine
+permalink: /individualtools/page-tool28.0/
 ---
-Developed By: Desert Research Institute, University of Idaho, and Google
+# Climate Engine
+
+<img src="/images/scaled_250_400/TOOLID_28.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** Desert Research Institute, University of Idaho, and Google
 
 **Summary:** Climate Engine is an interactive mapping and graphing tool that allows users to access, analyze, and interact with extensive earth observation datasets for a variety of location and scenario specific analyses. 
 
@@ -16,26 +15,30 @@ Hosted by Google's Earth Engine, the Climate Engine Application allows users to 
 
 
 
-__**Get This Tool:**__ https://app.climateengine.org/
+**Get This Tool:** [https://app.climateengine.org/](https://app.climateengine.org/){:target='blank'}
 
-__**Geographic Coverage**__
-- Contiguous United States
+**Geographic Coverage**
 
-__**Tags**__
--  Registration required
--  Historical 
--  Real-time/Current
--  Forecast
--  Grid based
--  Application
--  Dataset
--  Interactive interface/map
--  Compare scenarios/locations
--  Downloadable data
--  Downloadable results
+* Contiguous United States
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Med
+*  Registration required
+*  Historical 
+*  Real-time/Current
+*  Forecast
+*  Grid based
+*  Application
+*  Dataset
+*  Interactive interface/map
+*  Compare scenarios/locations
+*  Downloadable data
+*  Downloadable results
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Med

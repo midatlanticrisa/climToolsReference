@@ -1,31 +1,34 @@
 ---
-title: "Coastal Inundation Predictions for Maryland"
-description: "Projections of SLR and the predicted effects on the state of Maryland"
-date: 2022-05-19T11:52:35-0400
-pubtype: "Tool"
-featured: true
-tags: ["Climate projections", "State level", "Compare scenarios/locations"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_22.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_22.0_ScreenCapture-1.png
+layout: page
+title: Coastal Inundation Predictions for Maryland
+permalink: /individualtools/page-tool22.0/
 ---
-Developed By: UMCES
+# Coastal Inundation Predictions for Maryland
+
+<img src="/images/scaled_250_400/TOOLID_22.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** UMCES
 
 **Summary:** The Coastal Inundation Predictions is a report on Sea Level Rise on coastal Maryland. The report provides an assessment of the impact of sea level rise on repeat flooding and storm surge.
 
 This tool provides in depth sea level rise projections on the Maryland coast. Broken into sections, this report explains why SLR is impacting Maryland coast more than other locations, the projections, and practical applications for the projections. In the report, projections are made in three different scenarios, Paris agreement emissions, stabilized emissions, and growing emissions. In each scenario sea level rise is projected in easy to read charts accompanied by text explaining how the projections were calculated and what they mean. 
 
-__**Get This Tool:**__ https://www.umces.edu/sea-level-rise-projections
+**Get This Tool:** [https://www.umces.edu/sea-level-rise-projections](https://www.umces.edu/sea-level-rise-projections){:target='blank'}
 
-__**Geographic Coverage**__
-- Coastal Maryland
+**Geographic Coverage**
 
-__**Tags**__
--  Climate projections
--  State level
--  Compare scenarios/locations
+* Coastal Maryland
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Low
+*  Climate projections
+*  State level
+*  Compare scenarios/locations
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

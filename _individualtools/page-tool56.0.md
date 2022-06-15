@@ -1,35 +1,39 @@
 ---
-title: "Mapping Social Vulnerability of Fishing Communities"
-description: "National map of social vulnerability in fishing communities"
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Historical ", "Jursidiction based", "City level", "County level", "Application", "Interactive interface/map", "Downloadable data", "Downloadable results"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_56.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_56.0_ScreenCapture-1.png
+layout: page
+title: Mapping Social Vulnerability of Fishing Communities
+permalink: /individualtools/page-tool56.0/
 ---
-Developed By: NOAA
+# Mapping Social Vulnerability of Fishing Communities
+
+<img src="/images/scaled_250_400/TOOLID_56.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** NOAA
 
 **Summary:** NOAA Fisheries Social Indicators Toolbox is comprised of a suite of social, economic, and environmental indicators that describe and evaluate a community’s ability to respond to change. In addition, the Toolbox includes several metrics that reflect the relative level of each community’s involvement in commercial and recreational fishing, placing fisheries dependence into a human context. The indicator map and graphing tool enables users to conduct and download custom queries for over 4,600 coastal communities in 23 states.
 
-__**Get This Tool:**__ https://www.st.nmfs.noaa.gov/data-and-tools/social-indicators/
+**Get This Tool:** [https://www.st.nmfs.noaa.gov/data-and-tools/social-indicators/
+](https://www.st.nmfs.noaa.gov/data-and-tools/social-indicators/
+){:target='blank'}
 
+**Geographic Coverage**
 
-__**Geographic Coverage**__
-- Coastal Contiguous United States
+* Coastal Contiguous United States
 
-__**Tags**__
--  Historical 
--  Jursidiction based
--  City level
--  County level
--  Application
--  Interactive interface/map
--  Downloadable data
--  Downloadable results
+**Tags**
 
-__**Cost**__
-- Free
+*  Historical 
+*  Jursidiction based
+*  City level
+*  County level
+*  Application
+*  Interactive interface/map
+*  Downloadable data
+*  Downloadable results
 
-__**Skill Level**__
-- Low
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

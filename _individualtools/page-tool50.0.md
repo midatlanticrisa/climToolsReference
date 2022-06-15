@@ -1,14 +1,13 @@
 ---
-title: "Water Quality Assessment and TMDLs"
-description: "Provide water quality assessment and TMDL information. Show the spatial relationship of how each intersect"
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Historical ", "Real-time/Current", "State level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable data", "Downloadable results"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_50.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_50.0_ScreenCapture-1.png
+layout: page
+title: Water Quality Assessment and TMDLs
+permalink: /individualtools/page-tool50.0/
 ---
-Developed By: MDE
+# Water Quality Assessment and TMDLs
+
+<img src="/images/scaled_250_400/TOOLID_50.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** MDE
 
 **Summary:** This interactive mapping tool displays surface water quality assessment information found in Maryland’s 2018 Integrated Report of Surface Water Quality (IR) as well as watersheds for which Total Maximum Daily Load (TMDL) analyses have been approved by EPA for Maryland. 
 
@@ -17,24 +16,29 @@ Decisionmakers, environmental planners, and the public alike will find this map 
 TMDL and water quality data are available to download as compressed file geodatabases. TMDL and the water quality assessment report are available for additional information.
 
 
-__**Get This Tool:**__ https://mdewin64.mde.state.md.us/WSA/IR-TMDL/index.html
+**Get This Tool:** [https://mdewin64.mde.state.md.us/WSA/IR-TMDL/index.html
+](https://mdewin64.mde.state.md.us/WSA/IR-TMDL/index.html
+){:target='blank'}
 
+**Geographic Coverage**
 
-__**Geographic Coverage**__
-- Maryland
+* Maryland
 
-__**Tags**__
--  Historical 
--  Real-time/Current
--  State level
--  Application
--  Interactive interface/map
--  Compare scenarios/locations
--  Downloadable data
--  Downloadable results
+**Tags**
 
-__**Cost**__
-- Free
+*  Historical 
+*  Real-time/Current
+*  State level
+*  Application
+*  Interactive interface/map
+*  Compare scenarios/locations
+*  Downloadable data
+*  Downloadable results
 
-__**Skill Level**__
-- Low
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

@@ -1,14 +1,13 @@
 ---
-title: "My Environment"
-description: "A tool dashboard providing health and environmental quality assessments for the chosen locality "
-date: 2022-05-19T11:52:35-0400
-pubtype: "Tool"
-featured: true
-tags: ["Real-time/Current", "Forecast", "Jursidiction based", "Location specific", "City level", "County level", "State level", "Application", "Interactive interface/map"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_26.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_26.0_ScreenCapture-1.png
+layout: page
+title: My Environment
+permalink: /individualtools/page-tool26.0/
 ---
-Developed By: EPA
+# My Environment
+
+<img src="/images/scaled_250_400/TOOLID_26.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** EPA
 
 **Summary:** The EPA's MyEnvironment tool is an online dashboard that provides access to a cross-section environmental information specific to a user's location. 
 
@@ -16,24 +15,28 @@ The MyEnvironment tool displays local environmental data through a simple dashbo
 
 
 
-__**Get This Tool:**__ https://enviro.epa.gov/myenvironment/
+**Get This Tool:** [https://enviro.epa.gov/myenvironment/](https://enviro.epa.gov/myenvironment/){:target='blank'}
 
-__**Geographic Coverage**__
-- Contiguous United States
+**Geographic Coverage**
 
-__**Tags**__
--  Real-time/Current
--  Forecast
--  Jursidiction based
--  Location specific
--  City level
--  County level
--  State level
--  Application
--  Interactive interface/map
+* Contiguous United States
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Low
+*  Real-time/Current
+*  Forecast
+*  Jursidiction based
+*  Location specific
+*  City level
+*  County level
+*  State level
+*  Application
+*  Interactive interface/map
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

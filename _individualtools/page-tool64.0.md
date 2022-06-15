@@ -1,14 +1,13 @@
 ---
-title: "Bay Footprint Calculator"
-description: "Calculates individual nitrogen contribution to the Chesapeake Bay."
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Registration required", "Location specific", "Application", "Interactive interface/map", "Solutions", "Downloadable results"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_64.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_64.0_ScreenCapture-1.png
+layout: page
+title: Bay Footprint Calculator
+permalink: /individualtools/page-tool64.0/
 ---
-Developed By: CBF, and UVA
+# Bay Footprint Calculator
+
+<img src="/images/scaled_250_400/TOOLID_64.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** CBF, and UVA
 
 **Summary:** The Bay Footprint Calculator is an easy-to-use tool that estimates your contribution to nitrogen pollution in the Chesapeake Bay. 
 
@@ -16,21 +15,25 @@ By providing simple lifestyle information such as diet, housing, and transportat
 
 Another helpful output of this tool is the final report that offers easy solutions to limit your Bay Footprint, such as eating less meat, and using a rain barrel at your home. This is an excellent tool for gauging your personal impact on such a valuable natural resource as the Chesapeake Bay. 
 
-__**Get This Tool:**__ https://secure.cbf.org/site/SPageNavigator/bay_footprint.html?pg_wrap=n&amp;s_src=social
+**Get This Tool:** [https://secure.cbf.org/site/SPageNavigator/bay_footprint.html?pg_wrap=n&amp;s_src=social](https://secure.cbf.org/site/SPageNavigator/bay_footprint.html?pg_wrap=n&amp;s_src=social){:target='blank'}
 
-__**Geographic Coverage**__
-- Delaware; District of Columbia; Maryland; New York; Pennsylvania; Virginia
+**Geographic Coverage**
 
-__**Tags**__
--  Registration required
--  Location specific
--  Application
--  Interactive interface/map
--  Solutions
--  Downloadable results
+* Delaware; District of Columbia; Maryland; New York; Pennsylvania; Virginia
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Low
+*  Registration required
+*  Location specific
+*  Application
+*  Interactive interface/map
+*  Solutions
+*  Downloadable results
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

@@ -1,37 +1,40 @@
 ---
-title: "MARISA Climate Data Portal: Interactive Map for the MARISA Region"
-description: "Interactive map with current climate data"
-date: 2022-05-19T11:52:35-0400
-pubtype: "Tool"
-featured: true
-tags: ["Real-time/Current", "Jursidiction based", "Grid based", "Location specific", "County level", "Regional level", "Website", "Interactive interface/map", "Subdaily"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_13.2_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_13.2_ScreenCapture-1.png
+layout: page
+title: MARISA Climate Data Portal- Interactive Map for the MARISA Region
+permalink: /collection/page-tool13.2/
 ---
-Developed By: NOAA, and MARISA
+# MARISA Climate Data Portal: Interactive Map for the MARISA Region
+
+<img src="/images/scaled_250_400/TOOLID_13.2_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** NOAA, and MARISA
 
 **Summary:** The Interactive Map for the MARISA region is an interactive web map that enables users to view real time climate data for the MARISA region.
 
 This interactive map includes a variety of layers that allows users to view weather observations, stream discharge, buoy observations, and tide gauge water levels. Users may also select U.S. climate divisions to view recent historical trends in temperature and precipitation. Additional weather information provided by this tool include weather radar and a drought monitor. Although this mapping tool is centered on the Mid-Atlantic region, users may zoom out to view the entire contiguous United States. 
 
-__**Get This Tool:**__ https://www.marisa.psu.edu/map/
+**Get This Tool:** [https://www.marisa.psu.edu/map/](https://www.marisa.psu.edu/map/){:target='blank'}
 
-__**Geographic Coverage**__
-- Delaware; Maryland; New Jersey; New York; Pennsylvania; Virginia
+**Geographic Coverage**
 
-__**Tags**__
--  Real-time/Current
--  Jursidiction based
--  Grid based
--  Location specific
--  County level
--  Regional level
--  Website
--  Interactive interface/map
--  Subdaily
+* Delaware; Maryland; New Jersey; New York; Pennsylvania; Virginia
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Low
+*  Real-time/Current
+*  Jursidiction based
+*  Grid based
+*  Location specific
+*  County level
+*  Regional level
+*  Website
+*  Interactive interface/map
+*  Subdaily
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

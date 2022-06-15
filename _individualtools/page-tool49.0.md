@@ -1,14 +1,13 @@
 ---
-title: "MDOT Climate Change Vulnerability"
-description: "Illustrates the specific roads that will experience inundation due to predicted storm events. Displays projected water depth grids"
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Historical ", "Real-time/Current", "Climate projections", "State level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Downloadable results"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_49.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_49.0_ScreenCapture-1.png
+layout: page
+title: MDOT Climate Change Vulnerability
+permalink: /individualtools/page-tool49.0/
 ---
-Developed By: MDOT_State Highway Administration, Salisbury University, and the Eastern Shore Regional GIS Cooperative
+# MDOT Climate Change Vulnerability
+
+<img src="/images/scaled_250_400/TOOLID_49.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** MDOT_State Highway Administration, Salisbury University, and the Eastern Shore Regional GIS Cooperative
 
 **Summary:** The MDOT Climate Change Vulnerability tool is an interactive map that illustrates the potential impact of storm surge and sea level rise on roadways and transportation infrastructure in Maryland.
 
@@ -16,24 +15,29 @@ This tool is primarily intended to support MDOT State Highway Administration to 
 
 This map's water level projections are based on data from the US Army Corps of Engineers (USACE) Sea Level Change Projections, United States Geological Survey (USGS) studies, and the National Oceanic & Atmospheric Administration (NOAA) tidal observations. 
 
-__**Get This Tool:**__ https://maryland.maps.arcgis.com/apps/webappviewer/index.html?id=86b5933d2d3e45ee8b9d8a5f03a7030c
+**Get This Tool:** [https://maryland.maps.arcgis.com/apps/webappviewer/index.html?id=86b5933d2d3e45ee8b9d8a5f03a7030c
+](https://maryland.maps.arcgis.com/apps/webappviewer/index.html?id=86b5933d2d3e45ee8b9d8a5f03a7030c
+){:target='blank'}
 
+**Geographic Coverage**
 
-__**Geographic Coverage**__
-- Coastal Maryland
+* Coastal Maryland
 
-__**Tags**__
--  Historical 
--  Real-time/Current
--  Climate projections
--  State level
--  Application
--  Interactive interface/map
--  Compare scenarios/locations
--  Downloadable results
+**Tags**
 
-__**Cost**__
-- Free
+*  Historical 
+*  Real-time/Current
+*  Climate projections
+*  State level
+*  Application
+*  Interactive interface/map
+*  Compare scenarios/locations
+*  Downloadable results
 
-__**Skill Level**__
-- Med
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Med

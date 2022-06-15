@@ -1,34 +1,37 @@
 ---
-title: "Sea Level Report Cards"
-description: "Illustrate trends and projected sea level rise"
-date: 2022-05-19T11:52:35-0400
-pubtype: "Tool"
-featured: true
-tags: ["Historical ", "Climate projections", "Location specific", "Website", "Downloadable results"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_16.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_16.0_ScreenCapture-1.png
+layout: page
+title: Sea Level Report Cards
+permalink: /individualtools/page-tool16.0/
 ---
-Developed By: VIMS_CCRM
+# Sea Level Report Cards
+
+<img src="/images/scaled_250_400/TOOLID_16.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** VIMS_CCRM
 
 **Summary:** The Sea-Level Report cards provide interactive graphs and narrative descriptions of sea-level trends and projections for 32 coastal locations across the U.S.
 
 This easy-to-use tool allows users to view trends and future projections of monthly mean sea level to the year 2050. The report cards also describe local processes affecting sea-level trends and allow users to compare trends across different locations. The report cards are updated annually as new water level data become available.
 
 
-__**Get This Tool:**__ https://www.vims.edu/research/products/slrc/
+**Get This Tool:** [https://www.vims.edu/research/products/slrc/](https://www.vims.edu/research/products/slrc/){:target='blank'}
 
-__**Geographic Coverage**__
-- Coastal Contiguous United States
+**Geographic Coverage**
 
-__**Tags**__
--  Historical 
--  Climate projections
--  Location specific
--  Website
--  Downloadable results
+* Coastal Contiguous United States
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Low
+*  Historical 
+*  Climate projections
+*  Location specific
+*  Website
+*  Downloadable results
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

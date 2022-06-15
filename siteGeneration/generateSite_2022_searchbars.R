@@ -25,14 +25,14 @@ library(tidycensus)
 library(jsonlite)
 
 baseDir <- "~/Documents/Github/"
-dataDir <- paste0(baseDir, "marisa-tool-site/siteGeneration/")
+dataDir <- paste0(baseDir, "climToolsReference/siteGeneration/")
 source(paste0(dataDir, "siteGeneratingFunctions_2022_searchbars.R"))
 
-siteDir <- paste0(baseDir, "marisa-tool-site/")
+siteDir <- paste0(baseDir, "climToolsReference/")
 tagDir <- paste0(siteDir, "_tag/")
 toolsDir <- paste0(siteDir, "_individualtools/")
-discovDir <- paste0(baseDir, "marisa-tool-site/misc/")
-imageDir <- paste0(baseDir, "marisa-tool-site/images/")
+discovDir <- paste0(baseDir, "climToolsReference/misc/")
+imageDir <- paste0(baseDir, "climToolsReference/images/")
 
 toolInventoryName <- "Tool Inventory - 12.15.21 copy.xlsx"
 templateCollectionName <- "collectionTemplate.md"
@@ -180,16 +180,16 @@ splitByCol <- lapply(multiToolsID, function(x){colID <- grep(x, toolIDs); invVal
 # Set up search engine??
 ##########################################################################
 
-##create the various subdirectories for the site
-if(dir.exists(toolsDir)==F){ # public/tools/ directory
-  dir.create(toolsDir, recursive=T)
-}
-if(dir.exists(discovDir)==F){ # public/data/ directory
-  dir.create(discovDir, recursive=T)
-}
-if(dir.exists(imageDir)==F){ # public/images/ directory
-  dir.create(imageDir, recursive=T)
-}
+# ##create the various subdirectories for the site
+# if(dir.exists(toolsDir)==F){ # public/tools/ directory
+#   dir.create(toolsDir, recursive=T)
+# }
+# if(dir.exists(discovDir)==F){ # public/data/ directory
+#   dir.create(discovDir, recursive=T)
+# }
+# if(dir.exists(imageDir)==F){ # public/images/ directory
+#   dir.create(imageDir, recursive=T)
+# }
 
 # Create a series of empty data.frames with specific column names
 # searchTags <- data.frame(toolName=NA, toolLink=NA, tag=NA)

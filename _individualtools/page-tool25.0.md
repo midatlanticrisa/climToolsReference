@@ -1,14 +1,13 @@
 ---
-title: "FloodFactor"
-description: "Map of tidal and hurricane flooding under present and future scenarios"
-date: 2022-05-19T11:52:35-0400
-pubtype: "Tool"
-featured: true
-tags: ["Historical ", "Real-time/Current", "Climate projections", "Grid based", "Location specific", "Website", "Interactive interface/map", "Solutions", "Downloadable results"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_25.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_25.0_ScreenCapture-1.png
+layout: page
+title: FloodFactor
+permalink: /individualtools/page-tool25.0/
 ---
-Developed By: First Street Foundation
+# FloodFactor
+
+<img src="/images/scaled_250_400/TOOLID_25.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** First Street Foundation
 
 **Summary:** FloodFactor is a flood risk mapping tool that shows the extent of potential inundation from tidal flooding and hurricane storm surge on the East and Gulf coasts of the U.S.
 
@@ -16,24 +15,28 @@ This easy-to-use tools allows users to search for or zoom to an area of interest
 
 Although most information is available without an account, users must provide an email address to generate a free detailed flood risk report for their location. 
 
-__**Get This Tool:**__ https://floodfactor.com
+**Get This Tool:** [https://floodfactor.com](https://floodfactor.com){:target='blank'}
 
-__**Geographic Coverage**__
-- Contiguous United States
+**Geographic Coverage**
 
-__**Tags**__
--  Historical 
--  Real-time/Current
--  Climate projections
--  Grid based
--  Location specific
--  Website
--  Interactive interface/map
--  Solutions
--  Downloadable results
+* Contiguous United States
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Low
+*  Historical 
+*  Real-time/Current
+*  Climate projections
+*  Grid based
+*  Location specific
+*  Website
+*  Interactive interface/map
+*  Solutions
+*  Downloadable results
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

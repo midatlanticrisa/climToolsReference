@@ -1,36 +1,39 @@
 ---
-title: "Virginia Flood Risk Information System (VFRIS)"
-description: "Interactive flood maps to determine if property is within a FEMA flood risk zone. "
-date: 2022-05-19T11:52:35-0400
-pubtype: "Tool"
-featured: true
-tags: ["Real-time/Current", "Climate projections", "Jursidiction based", "Grid based", "Location specific", "Application", "Interactive interface/map", "Downloadable data"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_17.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_17.0_ScreenCapture-1.png
+layout: page
+title: Virginia Flood Risk Information System (VFRIS)
+permalink: /individualtools/page-tool17.0/
 ---
-Developed By: VIMS, CCRM, and VDCR
+# Virginia Flood Risk Information System (VFRIS)
+
+<img src="/images/scaled_250_400/TOOLID_17.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** VIMS, CCRM, and VDCR
 
 **Summary:** The Virginia Flood Risk Information System uses an interactive map to display FEMA flood risk zones in Virginia. 
 
 This easy-to-use, interactive mapping tool allows users to quickly locate a property to determine if it is within a Special Flood Hazards Area (SFHA) or non-regulatory flood zone. In addition to the mapping tool, users can also search for and download FEMA reports and data including FIRM Panels, Flood Insurance Studies (FIS) and Flood Risk Reports (FRR). This tool includes an excellent “Help/Information” window, which provides instructions, data information, and links to additional resources.
 
-__**Get This Tool:**__ http://cmap2.vims.edu/VaFloodRisk/vfris2.html
+**Get This Tool:** [http://cmap2.vims.edu/VaFloodRisk/vfris2.html](http://cmap2.vims.edu/VaFloodRisk/vfris2.html){:target='blank'}
 
-__**Geographic Coverage**__
-- Virginia
+**Geographic Coverage**
 
-__**Tags**__
--  Real-time/Current
--  Climate projections
--  Jursidiction based
--  Grid based
--  Location specific
--  Application
--  Interactive interface/map
--  Downloadable data
+* Virginia
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Low
+*  Real-time/Current
+*  Climate projections
+*  Jursidiction based
+*  Grid based
+*  Location specific
+*  Application
+*  Interactive interface/map
+*  Downloadable data
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

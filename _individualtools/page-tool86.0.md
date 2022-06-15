@@ -1,14 +1,13 @@
 ---
-title: "DC Solar Tool"
-description: "Calculates cost, federal tax credit, carbon offset, average revenue, and energy output of solar energy for residential and business roofs in D.C. area that are looking to create solar panel systems"
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Real-time/Current", "Jursidiction based", "City level", "Application", "Interactive interface/map", "Compare scenarios/locations", "Cost estimates", "Downloadable results"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_86.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_86.0_ScreenCapture-1.png
+layout: page
+title: DC Solar Tool
+permalink: /individualtools/page-tool86.0/
 ---
-Developed By: Mapdwell, and Massachusetts Institute of Technology
+# DC Solar Tool
+
+<img src="/images/scaled_250_400/TOOLID_86.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** Mapdwell, and Massachusetts Institute of Technology
 
 **Summary:** The D.C. Solar Tool is an interactive mapping tool that allows users to estimate the cost, average revenue, federal tax credit, carbon offset, and energy output of a solar panel system installed to their business or residence. 
 
@@ -16,24 +15,29 @@ This tool features a map of the D.C. area with colored building roofs that indic
 
 The estimated energy output, cost, and carbon offset values are generated in part from market values and research and are refined by citizen contributions. Solar panel users can upload their system information to the database to refine the rates calculated by the program, and to also log the systems in the area to help city planners meet the goal of the D.C. solar energy mandate of 2.5% by 2023.
 
-__**Get This Tool:**__ https://www.mapdwell.com/en/solar/dc
+**Get This Tool:** [https://www.mapdwell.com/en/solar/dc
+](https://www.mapdwell.com/en/solar/dc
+){:target='blank'}
 
+**Geographic Coverage**
 
-__**Geographic Coverage**__
-- Washington, DC
+* Washington, DC
 
-__**Tags**__
--  Real-time/Current
--  Jursidiction based
--  City level
--  Application
--  Interactive interface/map
--  Compare scenarios/locations
--  Cost estimates
--  Downloadable results
+**Tags**
 
-__**Cost**__
-- Free
+*  Real-time/Current
+*  Jursidiction based
+*  City level
+*  Application
+*  Interactive interface/map
+*  Compare scenarios/locations
+*  Cost estimates
+*  Downloadable results
 
-__**Skill Level**__
-- Low
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

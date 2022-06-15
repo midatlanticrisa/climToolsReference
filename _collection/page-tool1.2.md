@@ -1,34 +1,37 @@
 ---
-title: "AdaptVA: Tidewatch Map"
-description: "36-hour coastal flooding forecasts"
-date: 2022-05-19T11:52:35-0400
-pubtype: "Tool"
-featured: true
-tags: ["Real-time/Current", "Forecast", "Regional level", "Application", "Interactive interface/map", "Subdaily"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_1.2_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_1.2_ScreenCapture-1.png
+layout: page
+title: AdaptVA- Tidewatch Map
+permalink: /collection/page-tool1.2/
 ---
-Developed By: VIMS_CCRM
+# AdaptVA: Tidewatch Map
+
+<img src="/images/scaled_250_400/TOOLID_1.2_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** VIMS_CCRM
 
 **Summary:** The AdaptVA Tidewatch Map uses an interactive map to display coastal flooding in Virginia. 
 
 This easy-to-use tool provides 36-hour forecasts of coastal flooding, which are updated daily at 6:00 am and 6:00 pm. Users may click through or automate the display to view hourly forecasts over the next 36 hours. The tool contains location-specific plots of water level over time. 
 
-__**Get This Tool:**__ https://cmap2.vims.edu/SCHISM/TidewatchViewer.html
+**Get This Tool:** [https://cmap2.vims.edu/SCHISM/TidewatchViewer.html](https://cmap2.vims.edu/SCHISM/TidewatchViewer.html){:target='blank'}
 
-__**Geographic Coverage**__
-- Coastal Virginia
+**Geographic Coverage**
 
-__**Tags**__
--  Real-time/Current
--  Forecast
--  Regional level
--  Application
--  Interactive interface/map
--  Subdaily
+* Coastal Virginia
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Low
+*  Real-time/Current
+*  Forecast
+*  Regional level
+*  Application
+*  Interactive interface/map
+*  Subdaily
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

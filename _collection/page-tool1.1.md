@@ -1,34 +1,37 @@
 ---
-title: "AdaptVA: Sea Level Rise Projection Viewer"
-description: "Observed and projected sea level rise from 1990 to 2100"
-date: 2022-05-19T11:52:35-0400
-pubtype: "Tool"
-featured: true
-tags: ["Climate projections", "Grid based", "Regional level", "Application", "Interactive interface/map", "Compare scenarios/locations"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_1.1_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_1.1_ScreenCapture-1.png
+layout: page
+title: AdaptVA- Sea Level Rise Projection Viewer
+permalink: /collection/page-tool1.1/
 ---
-Developed By: VIMS_CCRM
+# AdaptVA: Sea Level Rise Projection Viewer
+
+<img src="/images/scaled_250_400/TOOLID_1.1_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** VIMS_CCRM
 
 **Summary:** The AdaptVA Sea Level Rise Projection Viewer uses an interactive map to display sea level rise projections for coastal Virginia. 
 
 This easy-to-use tool provides three sea level rise scenarios (low, intermediate, and extreme), which can be viewed at 10-year increments from 1992 – 2100. Users may click through or automate the display to view 10-year intervals for each sea level rise scenario. This tool is intended for beginner users and does not require any specialized software or training.
 
-__**Get This Tool:**__ http://cmap2.vims.edu/SeaLevelRise_Depth/SLRDepth_revised4.html
+**Get This Tool:** [http://cmap2.vims.edu/SeaLevelRise_Depth/SLRDepth_revised4.html](http://cmap2.vims.edu/SeaLevelRise_Depth/SLRDepth_revised4.html){:target='blank'}
 
-__**Geographic Coverage**__
-- Coastal Virginia
+**Geographic Coverage**
 
-__**Tags**__
--  Climate projections
--  Grid based
--  Regional level
--  Application
--  Interactive interface/map
--  Compare scenarios/locations
+* Coastal Virginia
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Low
+*  Climate projections
+*  Grid based
+*  Regional level
+*  Application
+*  Interactive interface/map
+*  Compare scenarios/locations
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

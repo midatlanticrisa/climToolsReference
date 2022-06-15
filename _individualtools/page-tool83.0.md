@@ -1,14 +1,13 @@
 ---
-title: "SRC Trading Program Impervious Viewer"
-description: "This map shows impervious surfaces within Washington D.C. intended to help users recognize areas where SRC practices can be implemented."
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Real-time/Current", "Jursidiction based", "City level", "Dataset", "Interactive interface/map", "Downloadable data", "Downloadable results"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_83.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_83.0_ScreenCapture-1.png
+layout: page
+title: SRC Trading Program Impervious Viewer
+permalink: /individualtools/page-tool83.0/
 ---
-Developed By: DCDOEE
+# SRC Trading Program Impervious Viewer
+
+<img src="/images/scaled_250_400/TOOLID_83.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** DCDOEE
 
 **Summary:** The SRC Trading Impervious Viewer is an interactive mapping tool that displays large impervious surfaces such as parking lots, driveways, and buildings in the District of Columbia. This viewer allows users to locate areas that may qualify for Stormwater Retention Credits (SRC) projects. 
 
@@ -16,23 +15,28 @@ This viewer displays large impervious surfaces that may be eligible for SRC proj
 
 To view areas of impervious surfaces, the user must first either navigate to, or search for an area of interest. Users may also view additional data layers such as wetlands, watersheds, and combined sewer areas, or upload their own GIS data. This easy-to-use mapping tool also offers various "Draw", "Measure", and "Print" tools with which users may annotate and export the finished product. 
 
-__**Get This Tool:**__ https://dcgis.maps.arcgis.com/apps/webappviewer/index.html?id=92dca0c84d974a0c9ecc0858a110bf2d
+**Get This Tool:** [https://dcgis.maps.arcgis.com/apps/webappviewer/index.html?id=92dca0c84d974a0c9ecc0858a110bf2d
+](https://dcgis.maps.arcgis.com/apps/webappviewer/index.html?id=92dca0c84d974a0c9ecc0858a110bf2d
+){:target='blank'}
 
+**Geographic Coverage**
 
-__**Geographic Coverage**__
-- Washington, DC
+* Washington, DC
 
-__**Tags**__
--  Real-time/Current
--  Jursidiction based
--  City level
--  Dataset
--  Interactive interface/map
--  Downloadable data
--  Downloadable results
+**Tags**
 
-__**Cost**__
-- Free
+*  Real-time/Current
+*  Jursidiction based
+*  City level
+*  Dataset
+*  Interactive interface/map
+*  Downloadable data
+*  Downloadable results
 
-__**Skill Level**__
-- Low
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

@@ -1,14 +1,13 @@
 ---
-title: "Metropolitan Washington Air Quality Forecast"
-description: "Report the current conditions and 2 day forecast of the Washington D.C. Air Quality"
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Real-time/Current", "Forecast", "Jursidiction based", "City level", "Website"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_46.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_46.0_ScreenCapture-1.png
+layout: page
+title: Metropolitan Washington Air Quality Forecast
+permalink: /individualtools/page-tool46.0/
 ---
-Developed By: Metropolitan Washington Council of Governments
+# Metropolitan Washington Air Quality Forecast
+
+<img src="/images/scaled_250_400/TOOLID_46.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** Metropolitan Washington Council of Governments
 
 **Summary:** The Metropolitan Washington Air Quality Forecast is a 3-part forecast, chart, and mapping tool that provides daily air quality forecasts for the Washington metropolitan area.
 
@@ -16,21 +15,26 @@ This forecast's primary objective is to report the level of health concern due t
 
 The Metropolitan Washington Air Quality Forecast also provides links to educational resources that users can use to learn what factors affect air quality, how air quality affects human health, and policy approaches that Decisionmakers can use to improve air quality and human health. 
 
-__**Get This Tool:**__ https://www.mwcog.org/environment/planning-areas/air-quality/air-quality-forecast/
+**Get This Tool:** [https://www.mwcog.org/environment/planning-areas/air-quality/air-quality-forecast/
+](https://www.mwcog.org/environment/planning-areas/air-quality/air-quality-forecast/
+){:target='blank'}
 
+**Geographic Coverage**
 
-__**Geographic Coverage**__
-- Washington, DC; Takoma Park, MD; Prince George's County, MD; Beltsville, MD; Rockville, MD; Montgomery County, MD; Charles County, MD; Frederick County, MD; Calvert County, MD; Alexandria, VA; Arlington County, VA; Prince WIlliam County, VA; Loudoun County, VA; Fairfax County, VA
+* Washington, DC; Takoma Park, MD; Prince George's County, MD; Beltsville, MD; Rockville, MD; Montgomery County, MD; Charles County, MD; Frederick County, MD; Calvert County, MD; Alexandria, VA; Arlington County, VA; Prince WIlliam County, VA; Loudoun County, VA; Fairfax County, VA
 
-__**Tags**__
--  Real-time/Current
--  Forecast
--  Jursidiction based
--  City level
--  Website
+**Tags**
 
-__**Cost**__
-- Free
+*  Real-time/Current
+*  Forecast
+*  Jursidiction based
+*  City level
+*  Website
 
-__**Skill Level**__
-- Low
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

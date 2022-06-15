@@ -1,14 +1,13 @@
 ---
-title: "Delaware Environmental Monitoring Sites"
-description: "This tool inventories environmental monitoring stations in Delaware and provides links to access corresponding data and find data of interest."
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Historical ", "Real-time/Current", "Location specific", "Watershed level", "Regional level", "Website", "Interactive interface/map", "Downloadable data"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_59.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_59.0_ScreenCapture-1.png
+layout: page
+title: Delaware Environmental Monitoring Sites
+permalink: /individualtools/page-tool59.0/
 ---
-Developed By: DEMAC, Delaware Geological Survey, and University of Delaware
+# Delaware Environmental Monitoring Sites
+
+<img src="/images/scaled_250_400/TOOLID_59.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** DEMAC, Delaware Geological Survey, and University of Delaware
 
 
 **Summary:** Delaware Environmental Monitoring Sites is a data access portal that provides an inventory of environmental monitoring sites throughout the state of Delaware.
@@ -17,23 +16,27 @@ This tool provides access to over 400 meteorological, groundwater, tidal, and wa
 
 The monitoring sites linked through this data access portal vary widely in terms of content and structure. Therefore data availability and downloads vary by site.
 
-__**Get This Tool:**__ https://demac.udel.edu/monitoring/del_env_sites.html
+**Get This Tool:** [https://demac.udel.edu/monitoring/del_env_sites.html](https://demac.udel.edu/monitoring/del_env_sites.html){:target='blank'}
 
-__**Geographic Coverage**__
-- Delaware
+**Geographic Coverage**
 
-__**Tags**__
--  Historical 
--  Real-time/Current
--  Location specific
--  Watershed level
--  Regional level
--  Website
--  Interactive interface/map
--  Downloadable data
+* Delaware
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Low
+*  Historical 
+*  Real-time/Current
+*  Location specific
+*  Watershed level
+*  Regional level
+*  Website
+*  Interactive interface/map
+*  Downloadable data
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

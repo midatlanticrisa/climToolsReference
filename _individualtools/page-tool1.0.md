@@ -1,28 +1,32 @@
 ---
-title: "AdaptVA"
-description: "Collection of tools and information on climate change adaptation for individuals, local programs, and agencies in Virginia"
-date: 2022-05-19T11:52:35-0400
-pubtype: "Tool"
-featured: true
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_1.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_1.0_ScreenCapture-1.png
+layout: page
+title: AdaptVA
+permalink: /individualtools/page-tool1.0/
 ---
-Developed By: VIMS_CCRM
+# AdaptVA
+
+<img src="/images/scaled_250_400/TOOLID_1.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** VIMS_CCRM
 
 **Summary:** Tool that includes Sea Level Rise Projection Viewers, Tidewatch Map, and Interactive Map
 
-__**Get This Tool:**__ http://adaptva.com/
+**Get This Tool:** [http://adaptva.com/](http://adaptva.com/){:target='blank'}
 
-__**Geographic Coverage**__
-- Virginia
+**Geographic Coverage**
 
-__**Available Tools**__
--  [AdaptVA: Sea Level Rise Projection Viewer](https://cbtooltest.marisa.psu.edu/collection/page-tool1.1)
--  [AdaptVA: Tidewatch Map](https://cbtooltest.marisa.psu.edu/collection/page-tool1.2)
--  [AdaptVA: Interactive Map](https://cbtooltest.marisa.psu.edu/collection/page-tool1.3)
+* Virginia
 
-__**Cost**__
-- Free
+**Available Tools**
 
-__**Skill Level**__
-- Low
+*  [AdaptVA: Sea Level Rise Projection Viewer](/collection/page-tool1.1/){:target='blank'}
+*  [AdaptVA: Tidewatch Map](/collection/page-tool1.2/){:target='blank'}
+*  [AdaptVA: Interactive Map](/collection/page-tool1.3/){:target='blank'}
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low

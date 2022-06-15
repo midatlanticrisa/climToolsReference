@@ -1,14 +1,13 @@
 ---
-title: "National Beach Nourishment Database"
-description: "Demonstrates location of past and current beach nourishment projects, number of nourishment episodes in one area, date of project completion, cost, and volume of the project."
-date: 2022-05-19T11:52:36-0400
-pubtype: "Tool"
-featured: true
-tags: ["Location specific", "Application", "Dataset", "Interactive interface/map", "Cost estimates", "Downloadable data"]
-pageImage: https://cbtooltest.marisa.psu.edu/images/scaled_250_400/TOOLID_63.0_ScreenCapture-1.png
-thumbImage: https://cbtooltest.marisa.psu.edu/images/scaled_156_250/TOOLID_63.0_ScreenCapture-1.png
+layout: page
+title: National Beach Nourishment Database
+permalink: /individualtools/page-tool63.0/
 ---
-Developed By: American Shore & Beach Protection Agency, Regional Sediment Management Program, and APTIM
+# National Beach Nourishment Database
+
+<img src="/images/scaled_250_400/TOOLID_63.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
+
+**Developed By:** American Shore & Beach Protection Agency, Regional Sediment Management Program, and APTIM
 
 **Summary:** The National Beach Nourishment Viewer is an online database including project data from more than 3,000 beach nourishment projects across the US dating back to 1927.
 
@@ -17,21 +16,25 @@ This national level tool offers state specific information for over 3,000 beach 
 The beach nourishment data included in this tool is provided by a multiple data sources, such as the Western Carolina University’s Beach Nourishment Viewer and the Florida Department of Environmental Protection. While the tool is relatively easy to use, users should be familiar with beach nourishment terms and techniques to interpret the provided data.
 
 
-__**Get This Tool:**__ https://gim2.aptim.com/ASBPANationwideRenourishment/
+**Get This Tool:** [https://gim2.aptim.com/ASBPANationwideRenourishment/](https://gim2.aptim.com/ASBPANationwideRenourishment/){:target='blank'}
 
-__**Geographic Coverage**__
-- Coastal Contiguous United States
+**Geographic Coverage**
 
-__**Tags**__
--  Location specific
--  Application
--  Dataset
--  Interactive interface/map
--  Cost estimates
--  Downloadable data
+* Coastal Contiguous United States
 
-__**Cost**__
-- Free
+**Tags**
 
-__**Skill Level**__
-- Low
+*  Location specific
+*  Application
+*  Dataset
+*  Interactive interface/map
+*  Cost estimates
+*  Downloadable data
+
+**Cost**
+
+* Free
+
+**Skill Level**
+
+* Low
