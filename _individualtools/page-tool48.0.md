@@ -3,7 +3,7 @@ layout: page
 title: Chesapeake Bay Interpretive Buoy System (CBIBS)
 permalink: /individualtools/page-tool48.0/
 ---
-# Chesapeake Bay Interpretive Buoy System (CBIBS)
+## Chesapeake Bay Interpretive Buoy System (CBIBS)
 
 <img src="/images/scaled_250_400/TOOLID_48.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

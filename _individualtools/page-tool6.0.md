@@ -3,7 +3,7 @@ layout: page
 title: Maryland Coastal Atlas
 permalink: /individualtools/page-tool6.0/
 ---
-# Maryland Coastal Atlas
+## Maryland Coastal Atlas
 
 <img src="/images/scaled_250_400/TOOLID_6.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

@@ -3,7 +3,7 @@ layout: page
 title: Operational Forecast System- Chesapeake Bay Operational Forecast System (CBOFS)
 permalink: /collection/page-tool3.1/
 ---
-# Operational Forecast System: Chesapeake Bay Operational Forecast System (CBOFS)
+## Operational Forecast System: Chesapeake Bay Operational Forecast System (CBOFS)
 
 <img src="/images/scaled_250_400/TOOLID_3.1_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

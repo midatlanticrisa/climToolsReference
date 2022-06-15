@@ -3,7 +3,7 @@ layout: page
 title: Climate Smart Farming- Water Deficit Calculator
 permalink: /collection/page-tool39.3/
 ---
-# Climate Smart Farming: Water Deficit Calculator
+## Climate Smart Farming: Water Deficit Calculator
 
 <img src="/images/scaled_250_400/TOOLID_39.3_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

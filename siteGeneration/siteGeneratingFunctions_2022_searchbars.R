@@ -218,7 +218,7 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
                             trimws(toolRec$`Tool ID`), 
                             '_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>', el)
     
-    toolName <- paste0("# ", toolRec$`Tool Name`, el)
+    toolName <- paste0("## ", toolRec$`Tool Name`, el)
     
     toolImg <- paste0('<img src="/images/scaled_250_400/TOOLID_', 
                       trimws(toolRec$`Tool ID`), 

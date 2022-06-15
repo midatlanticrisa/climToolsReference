@@ -3,7 +3,7 @@ layout: page
 title: AdaptVA- Interactive Map
 permalink: /collection/page-tool1.3/
 ---
-# AdaptVA: Interactive Map
+## AdaptVA: Interactive Map
 
 <img src="/images/scaled_250_400/TOOLID_1.3_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

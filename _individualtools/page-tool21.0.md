@@ -3,7 +3,7 @@ layout: page
 title: Wetbud- Wetland Water Budget Modeling Software
 permalink: /individualtools/page-tool21.0/
 ---
-# Wetbud: Wetland Water Budget Modeling Software
+## Wetbud: Wetland Water Budget Modeling Software
 
 <img src="/images/scaled_250_400/TOOLID_21.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

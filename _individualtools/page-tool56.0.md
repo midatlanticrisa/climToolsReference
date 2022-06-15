@@ -3,7 +3,7 @@ layout: page
 title: Mapping Social Vulnerability of Fishing Communities
 permalink: /individualtools/page-tool56.0/
 ---
-# Mapping Social Vulnerability of Fishing Communities
+## Mapping Social Vulnerability of Fishing Communities
 
 <img src="/images/scaled_250_400/TOOLID_56.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

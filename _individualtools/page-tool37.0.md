@@ -3,7 +3,7 @@ layout: page
 title: Virginia Estuarine and Coastal Observing System (VECOS)
 permalink: /individualtools/page-tool37.0/
 ---
-# Virginia Estuarine and Coastal Observing System (VECOS)
+## Virginia Estuarine and Coastal Observing System (VECOS)
 
 <img src="/images/scaled_250_400/TOOLID_37.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

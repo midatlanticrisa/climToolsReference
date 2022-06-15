@@ -3,7 +3,7 @@ layout: page
 title: Future Urban Climates
 permalink: /individualtools/page-tool67.0/
 ---
-# Future Urban Climates
+## Future Urban Climates
 
 <img src="/images/scaled_250_400/TOOLID_67.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

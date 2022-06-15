@@ -3,7 +3,7 @@ layout: page
 title: FEMA Data Visualizations of Disaster Declarations and Grants
 permalink: /individualtools/page-tool54.0/
 ---
-# FEMA Data Visualizations of Disaster Declarations and Grants
+## FEMA Data Visualizations of Disaster Declarations and Grants
 
 <img src="/images/scaled_250_400/TOOLID_54.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

@@ -3,7 +3,7 @@ layout: page
 title: Application
 permalink: /tag/Application/
 ---
-<h1>Tag: Application</h1>
+<h2>Tag: Application</h2>
 * [AdaptVA: Sea Level Rise Projection Viewer](/collection/page-tool1.1/){:target='blank'}
 * [AdaptVA: Tidewatch Map](/collection/page-tool1.2/){:target='blank'}
 * [AdaptVA: Interactive Map](/collection/page-tool1.3/){:target='blank'}

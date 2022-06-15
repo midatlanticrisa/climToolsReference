@@ -3,7 +3,7 @@ layout: page
 title: Restrictions apply
 permalink: /tag/Restrictions apply/
 ---
-<h1>Tag: Restrictions apply</h1>
+<h2>Tag: Restrictions apply</h2>
 * [Resilience Adaptation Feasibility Tool (The RAFT)](/individualtools/page-tool5.0/){:target='blank'}
 * [MARISA Climate Data Portal: Community Climate Outlooks](/collection/page-tool13.3/){:target='blank'}
 * [Better Assessment Science Integrating Point and Non-point Sources (BASIN)](/individualtools/page-tool15.0/){:target='blank'}

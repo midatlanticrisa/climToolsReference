@@ -3,7 +3,7 @@ layout: page
 title: Beach Nourishment Viewer
 permalink: /individualtools/page-tool60.0/
 ---
-# Beach Nourishment Viewer
+## Beach Nourishment Viewer
 
 <img src="/images/scaled_250_400/TOOLID_60.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

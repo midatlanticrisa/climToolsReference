@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: page
 title: Tools
 permalink: /tools/
 ---
 
 {% include tags.html %}
 
-# Tools
+## Tools
 
 <img src="/images/scaled_156_250/TOOLID_61.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 

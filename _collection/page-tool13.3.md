@@ -3,7 +3,7 @@ layout: page
 title: MARISA Climate Data Portal- Community Climate Outlooks
 permalink: /collection/page-tool13.3/
 ---
-# MARISA Climate Data Portal: Community Climate Outlooks
+## MARISA Climate Data Portal: Community Climate Outlooks
 
 <img src="/images/scaled_250_400/TOOLID_13.3_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

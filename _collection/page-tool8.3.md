@@ -3,7 +3,7 @@ layout: page
 title: Creating Resilient Water Utilities- Resilient Strategies Guide for Water Utilities
 permalink: /collection/page-tool8.3/
 ---
-# Creating Resilient Water Utilities: Resilient Strategies Guide for Water Utilities
+## Creating Resilient Water Utilities: Resilient Strategies Guide for Water Utilities
 
 <img src="/images/scaled_250_400/TOOLID_8.3_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

@@ -3,7 +3,7 @@ layout: page
 title: Climate Change in the American Mind (CCAM) Explorer
 permalink: /individualtools/page-tool42.0/
 ---
-# Climate Change in the American Mind (CCAM) Explorer
+## Climate Change in the American Mind (CCAM) Explorer
 
 <img src="/images/scaled_250_400/TOOLID_42.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

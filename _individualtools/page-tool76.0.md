@@ -3,7 +3,7 @@ layout: page
 title: Earth--Global wind patterns
 permalink: /individualtools/page-tool76.0/
 ---
-# Earth::Global wind patterns
+## Earth::Global wind patterns
 
 <img src="/images/scaled_250_400/TOOLID_76.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

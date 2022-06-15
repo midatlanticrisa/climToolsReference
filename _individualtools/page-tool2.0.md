@@ -3,7 +3,7 @@ layout: page
 title: Hampton Roads Geospatial Exchange Online (HRGEO)
 permalink: /individualtools/page-tool2.0/
 ---
-# Hampton Roads Geospatial Exchange Online (HRGEO)
+## Hampton Roads Geospatial Exchange Online (HRGEO)
 
 <img src="/images/scaled_250_400/TOOLID_2.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

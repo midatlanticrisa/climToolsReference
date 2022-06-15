@@ -3,7 +3,7 @@ layout: page
 title: PINEMAP
 permalink: /individualtools/page-tool78.0/
 ---
-# PINEMAP
+## PINEMAP
 
 <img src="/images/scaled_250_400/TOOLID_78.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

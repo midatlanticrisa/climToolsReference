@@ -3,7 +3,7 @@ layout: page
 title: Shoreline Assessment Mapper
 permalink: /individualtools/page-tool19.0/
 ---
-# Shoreline Assessment Mapper
+## Shoreline Assessment Mapper
 
 <img src="/images/scaled_250_400/TOOLID_19.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

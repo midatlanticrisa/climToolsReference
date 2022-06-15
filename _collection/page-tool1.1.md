@@ -3,7 +3,7 @@ layout: page
 title: AdaptVA- Sea Level Rise Projection Viewer
 permalink: /collection/page-tool1.1/
 ---
-# AdaptVA: Sea Level Rise Projection Viewer
+## AdaptVA: Sea Level Rise Projection Viewer
 
 <img src="/images/scaled_250_400/TOOLID_1.1_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

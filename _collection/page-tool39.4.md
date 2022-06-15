@@ -3,7 +3,7 @@ layout: page
 title: Climate Smart Farming- Winter Cover Crop Planting Scheduler
 permalink: /collection/page-tool39.4/
 ---
-# Climate Smart Farming: Winter Cover Crop Planting Scheduler
+## Climate Smart Farming: Winter Cover Crop Planting Scheduler
 
 <img src="/images/scaled_250_400/TOOLID_39.4_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

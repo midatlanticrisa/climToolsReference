@@ -3,7 +3,7 @@ layout: page
 title: Mid-Atlantic Ocean Data Tool
 permalink: /individualtools/page-tool40.0/
 ---
-# Mid-Atlantic Ocean Data Tool
+## Mid-Atlantic Ocean Data Tool
 
 <img src="/images/scaled_250_400/TOOLID_40.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

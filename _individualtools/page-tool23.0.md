@@ -3,7 +3,7 @@ layout: page
 title: Headwaters Economics Neighborhoods at Risk
 permalink: /individualtools/page-tool23.0/
 ---
-# Headwaters Economics Neighborhoods at Risk
+## Headwaters Economics Neighborhoods at Risk
 
 <img src="/images/scaled_250_400/TOOLID_23.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

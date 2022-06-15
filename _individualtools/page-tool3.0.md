@@ -3,7 +3,7 @@ layout: page
 title: Operational Forecast System
 permalink: /individualtools/page-tool3.0/
 ---
-# Operational Forecast System
+## Operational Forecast System
 
 <img src="/images/scaled_250_400/TOOLID_3.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

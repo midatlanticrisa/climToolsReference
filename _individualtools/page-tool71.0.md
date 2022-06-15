@@ -3,7 +3,7 @@ layout: page
 title: USGS Water Data for the Nation
 permalink: /individualtools/page-tool71.0/
 ---
-# USGS Water Data for the Nation
+## USGS Water Data for the Nation
 
 <img src="/images/scaled_250_400/TOOLID_71.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

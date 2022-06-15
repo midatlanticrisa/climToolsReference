@@ -3,7 +3,7 @@ layout: page
 title: Creating Resilient Water Utilities
 permalink: /individualtools/page-tool8.0/
 ---
-# Creating Resilient Water Utilities
+## Creating Resilient Water Utilities
 
 <img src="/images/scaled_250_400/TOOLID_8.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

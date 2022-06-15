@@ -3,7 +3,7 @@ layout: page
 title: Coastal Change Analysis Program (C-CAP) Land Cover Atlas
 permalink: /individualtools/page-tool70.0/
 ---
-# Coastal Change Analysis Program (C-CAP) Land Cover Atlas
+## Coastal Change Analysis Program (C-CAP) Land Cover Atlas
 
 <img src="/images/scaled_250_400/TOOLID_70.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

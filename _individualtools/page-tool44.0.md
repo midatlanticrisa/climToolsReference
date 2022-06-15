@@ -3,7 +3,7 @@ layout: page
 title: United States Drought Monitor
 permalink: /individualtools/page-tool44.0/
 ---
-# United States Drought Monitor
+## United States Drought Monitor
 
 <img src="/images/scaled_250_400/TOOLID_44.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

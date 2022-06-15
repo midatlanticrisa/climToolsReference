@@ -3,7 +3,7 @@ layout: page
 title: DC Solar Tool
 permalink: /individualtools/page-tool86.0/
 ---
-# DC Solar Tool
+## DC Solar Tool
 
 <img src="/images/scaled_250_400/TOOLID_86.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

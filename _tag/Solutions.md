@@ -3,7 +3,7 @@ layout: page
 title: Solutions
 permalink: /tag/Solutions/
 ---
-<h1>Tag: Solutions</h1>
+<h2>Tag: Solutions</h2>
 * [AdaptVA: Interactive Map](/collection/page-tool1.3/){:target='blank'}
 * [Resilience Adaptation Feasibility Tool (The RAFT)](/individualtools/page-tool5.0/){:target='blank'}
 * [Creating Resilient Water Utilities: Climate Resilience Evaluation and Awareness Tool Risk Assessment Application for Water Utilities](/collection/page-tool8.1/){:target='blank'}

@@ -3,7 +3,7 @@ layout: page
 title: MARISA Climate Data Portal- Interactive Map for the MARISA Region
 permalink: /collection/page-tool13.2/
 ---
-# MARISA Climate Data Portal: Interactive Map for the MARISA Region
+## MARISA Climate Data Portal: Interactive Map for the MARISA Region
 
 <img src="/images/scaled_250_400/TOOLID_13.2_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

@@ -3,7 +3,7 @@ layout: page
 title: Nature's Network Prioritization Tool
 permalink: /individualtools/page-tool68.0/
 ---
-# Nature's Network Prioritization Tool
+## Nature's Network Prioritization Tool
 
 <img src="/images/scaled_250_400/TOOLID_68.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

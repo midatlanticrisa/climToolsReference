@@ -3,7 +3,7 @@ layout: page
 title: Operational Forecast System- Delaware Bay Operational Forecast System (DBOFS)
 permalink: /collection/page-tool3.2/
 ---
-# Operational Forecast System: Delaware Bay Operational Forecast System (DBOFS)
+## Operational Forecast System: Delaware Bay Operational Forecast System (DBOFS)
 
 <img src="/images/scaled_250_400/TOOLID_3.2_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

@@ -3,7 +3,7 @@ layout: page
 title: Water Quality Assessment and TMDLs
 permalink: /individualtools/page-tool50.0/
 ---
-# Water Quality Assessment and TMDLs
+## Water Quality Assessment and TMDLs
 
 <img src="/images/scaled_250_400/TOOLID_50.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

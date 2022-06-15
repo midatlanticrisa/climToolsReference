@@ -3,7 +3,7 @@ layout: page
 title: Submerged Aquatic Vegetation (SAV) in the Chesapeake Bay
 permalink: /individualtools/page-tool38.0/
 ---
-# Submerged Aquatic Vegetation (SAV) in the Chesapeake Bay
+## Submerged Aquatic Vegetation (SAV) in the Chesapeake Bay
 
 <img src="/images/scaled_250_400/TOOLID_38.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

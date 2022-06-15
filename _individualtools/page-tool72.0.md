@@ -3,7 +3,7 @@ layout: page
 title: Diagnostic Spreadsheet for Analysis of Water Quality Data in relation to Growth Requirements of Submerged Aquatic Vegetation
 permalink: /individualtools/page-tool72.0/
 ---
-# Diagnostic Spreadsheet for Analysis of Water Quality Data in relation to Growth Requirements of Submerged Aquatic Vegetation
+## Diagnostic Spreadsheet for Analysis of Water Quality Data in relation to Growth Requirements of Submerged Aquatic Vegetation
 
 <img src="/images/scaled_250_400/TOOLID_72.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

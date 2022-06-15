@@ -3,7 +3,7 @@ layout: page
 title: Bay Footprint Calculator
 permalink: /individualtools/page-tool64.0/
 ---
-# Bay Footprint Calculator
+## Bay Footprint Calculator
 
 <img src="/images/scaled_250_400/TOOLID_64.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

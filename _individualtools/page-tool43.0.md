@@ -3,7 +3,7 @@ layout: page
 title: Northeast Conservation Planning Atlas
 permalink: /individualtools/page-tool43.0/
 ---
-# Northeast Conservation Planning Atlas
+## Northeast Conservation Planning Atlas
 
 <img src="/images/scaled_250_400/TOOLID_43.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

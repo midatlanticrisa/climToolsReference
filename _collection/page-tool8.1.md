@@ -3,7 +3,7 @@ layout: page
 title: Creating Resilient Water Utilities- Climate Resilience Evaluation and Awareness Tool Risk Assessment Application for Water Utilities
 permalink: /collection/page-tool8.1/
 ---
-# Creating Resilient Water Utilities: Climate Resilience Evaluation and Awareness Tool Risk Assessment Application for Water Utilities
+## Creating Resilient Water Utilities: Climate Resilience Evaluation and Awareness Tool Risk Assessment Application for Water Utilities
 
 <img src="/images/scaled_250_400/TOOLID_8.1_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

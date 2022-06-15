@@ -3,7 +3,7 @@ layout: page
 title: Adaptation Workbook (Climate Change Response Framework)
 permalink: /individualtools/page-tool61.0/
 ---
-# Adaptation Workbook (Climate Change Response Framework)
+## Adaptation Workbook (Climate Change Response Framework)
 
 <img src="/images/scaled_250_400/TOOLID_61.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

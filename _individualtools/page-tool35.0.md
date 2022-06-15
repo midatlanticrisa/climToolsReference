@@ -3,7 +3,7 @@ layout: page
 title: Annual United States Climate Stripes- Temperature and Precipitation
 permalink: /individualtools/page-tool35.0/
 ---
-# Annual United States Climate Stripes: Temperature and Precipitation
+## Annual United States Climate Stripes: Temperature and Precipitation
 
 <img src="/images/scaled_250_400/TOOLID_35.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

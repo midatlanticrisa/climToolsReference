@@ -3,7 +3,7 @@ layout: page
 title: Delaware Climate Projections Portal
 permalink: /individualtools/page-tool34.0/
 ---
-# Delaware Climate Projections Portal
+## Delaware Climate Projections Portal
 
 <img src="/images/scaled_250_400/TOOLID_34.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

@@ -3,7 +3,7 @@ layout: page
 title: DC Department of Energy and Environment Data & Maps
 permalink: /individualtools/page-tool45.0/
 ---
-# DC Department of Energy and Environment Data & Maps
+## DC Department of Energy and Environment Data & Maps
 
 <img src="/images/scaled_250_400/TOOLID_45.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

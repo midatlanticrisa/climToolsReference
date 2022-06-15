@@ -3,7 +3,7 @@ layout: page
 title: Eyes On The Bay
 permalink: /individualtools/page-tool32.0/
 ---
-# Eyes On The Bay
+## Eyes On The Bay
 
 <img src="/images/scaled_250_400/TOOLID_32.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

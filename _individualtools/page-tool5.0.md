@@ -3,7 +3,7 @@ layout: page
 title: Resilience Adaptation Feasibility Tool (The RAFT)
 permalink: /individualtools/page-tool5.0/
 ---
-# Resilience Adaptation Feasibility Tool (The RAFT)
+## Resilience Adaptation Feasibility Tool (The RAFT)
 
 <img src="/images/scaled_250_400/TOOLID_5.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

@@ -3,7 +3,7 @@ layout: page
 title: MDOT Climate Change Vulnerability
 permalink: /individualtools/page-tool49.0/
 ---
-# MDOT Climate Change Vulnerability
+## MDOT Climate Change Vulnerability
 
 <img src="/images/scaled_250_400/TOOLID_49.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

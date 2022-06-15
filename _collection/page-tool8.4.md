@@ -3,7 +3,7 @@ layout: page
 title: Creating Resilient Water Utilities- Storm Surge Inundation Map
 permalink: /collection/page-tool8.4/
 ---
-# Creating Resilient Water Utilities: Storm Surge Inundation Map
+## Creating Resilient Water Utilities: Storm Surge Inundation Map
 
 <img src="/images/scaled_250_400/TOOLID_8.4_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

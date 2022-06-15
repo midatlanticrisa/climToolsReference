@@ -3,7 +3,7 @@ layout: page
 title: Climate Smart Farming- Grape Hardiness & Freeze Risk
 permalink: /collection/page-tool39.6/
 ---
-# Climate Smart Farming: Grape Hardiness & Freeze Risk
+## Climate Smart Farming: Grape Hardiness & Freeze Risk
 
 <img src="/images/scaled_250_400/TOOLID_39.6_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

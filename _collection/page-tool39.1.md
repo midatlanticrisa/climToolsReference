@@ -3,7 +3,7 @@ layout: page
 title: Climate Smart Farming- Climate Change in Your County
 permalink: /collection/page-tool39.1/
 ---
-# Climate Smart Farming: Climate Change in Your County
+## Climate Smart Farming: Climate Change in Your County
 
 <img src="/images/scaled_250_400/TOOLID_39.1_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

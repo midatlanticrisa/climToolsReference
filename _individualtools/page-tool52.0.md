@@ -3,7 +3,7 @@ layout: page
 title: Riparian Restoration Decision Support Tool
 permalink: /individualtools/page-tool52.0/
 ---
-# Riparian Restoration Decision Support Tool
+## Riparian Restoration Decision Support Tool
 
 <img src="/images/scaled_250_400/TOOLID_52.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

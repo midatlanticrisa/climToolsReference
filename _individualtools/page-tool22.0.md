@@ -3,7 +3,7 @@ layout: page
 title: Coastal Inundation Predictions for Maryland
 permalink: /individualtools/page-tool22.0/
 ---
-# Coastal Inundation Predictions for Maryland
+## Coastal Inundation Predictions for Maryland
 
 <img src="/images/scaled_250_400/TOOLID_22.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

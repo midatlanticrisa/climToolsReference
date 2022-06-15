@@ -3,7 +3,7 @@ layout: page
 title: USGS Exploration and Graphics for RivEr Trends (EGRET)
 permalink: /individualtools/page-tool9.0/
 ---
-# USGS Exploration and Graphics for RivEr Trends (EGRET)
+## USGS Exploration and Graphics for RivEr Trends (EGRET)
 
 <img src="/images/scaled_250_400/TOOLID_9.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

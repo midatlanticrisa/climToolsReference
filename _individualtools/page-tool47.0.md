@@ -3,7 +3,7 @@ layout: page
 title: Chesapeake Assessment Scenario Tool (CAST)
 permalink: /individualtools/page-tool47.0/
 ---
-# Chesapeake Assessment Scenario Tool (CAST)
+## Chesapeake Assessment Scenario Tool (CAST)
 
 <img src="/images/scaled_250_400/TOOLID_47.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

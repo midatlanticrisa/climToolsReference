@@ -3,7 +3,7 @@ layout: page
 title: Introduction to FEMA Coastal Floodplain Mapping
 permalink: /individualtools/page-tool12.0/
 ---
-# Introduction to FEMA Coastal Floodplain Mapping
+## Introduction to FEMA Coastal Floodplain Mapping
 
 <img src="/images/scaled_250_400/TOOLID_12.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

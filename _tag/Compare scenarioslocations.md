@@ -3,7 +3,7 @@ layout: page
 title: Compare scenarios/locations
 permalink: /tag/Compare scenarioslocations/
 ---
-<h1>Tag: Compare scenarios/locations</h1>
+<h2>Tag: Compare scenarios/locations</h2>
 * [AdaptVA: Sea Level Rise Projection Viewer](/collection/page-tool1.1/){:target='blank'}
 * [AdaptVA: Interactive Map](/collection/page-tool1.3/){:target='blank'}
 * [Hampton Roads Geospatial Exchange Online: Hampton Roads Sea Level Rise Planning Scenarios (Raster)](/collection/page-tool2.1/){:target='blank'}

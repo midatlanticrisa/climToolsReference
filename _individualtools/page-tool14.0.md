@@ -3,7 +3,7 @@ layout: page
 title: NOAA State Climate Summaries
 permalink: /individualtools/page-tool14.0/
 ---
-# NOAA State Climate Summaries
+## NOAA State Climate Summaries
 
 <img src="/images/scaled_250_400/TOOLID_14.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

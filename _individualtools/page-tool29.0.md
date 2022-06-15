@@ -3,7 +3,7 @@ layout: page
 title: Drought-Applied Climate Information System (ACIS)
 permalink: /individualtools/page-tool29.0/
 ---
-# Drought-Applied Climate Information System (ACIS)
+## Drought-Applied Climate Information System (ACIS)
 
 <img src="/images/scaled_250_400/TOOLID_29.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

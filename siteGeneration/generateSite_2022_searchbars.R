@@ -263,7 +263,7 @@ unqTags <- unique(filterTags$tag)
 
 for(i in 1:length(unqTags)){
   indTag <- which(filterTags$tag == unqTags[i])
-  header <- paste0("<h1>Tag: ", unqTags[i], "</h1>")
+  header <- paste0("<h2>Tag: ", unqTags[i], "</h2>")
   bullets <- paste0("* [", filterTags$toolName[indTag], "](/", filterTags$toolLink[indTag], "/){:target='blank'}", collapse = el)
   
   tagPage <- gsub("titleholder", unqTags[i], templateTag)

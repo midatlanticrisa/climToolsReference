@@ -3,7 +3,7 @@ layout: page
 title: USGS National Water Dashboard
 permalink: /individualtools/page-tool55.0/
 ---
-# USGS National Water Dashboard
+## USGS National Water Dashboard
 
 <img src="/images/scaled_250_400/TOOLID_55.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

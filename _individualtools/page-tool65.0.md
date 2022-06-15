@@ -3,7 +3,7 @@ layout: page
 title: Coastal Change Hazards Portal
 permalink: /individualtools/page-tool65.0/
 ---
-# Coastal Change Hazards Portal
+## Coastal Change Hazards Portal
 
 <img src="/images/scaled_250_400/TOOLID_65.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

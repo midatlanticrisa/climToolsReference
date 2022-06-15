@@ -3,7 +3,7 @@ layout: page
 title: Climate Smart Farming- Apple Stage / Freeze Damage Probability
 permalink: /collection/page-tool39.5/
 ---
-# Climate Smart Farming: Apple Stage / Freeze Damage Probability
+## Climate Smart Farming: Apple Stage / Freeze Damage Probability
 
 <img src="/images/scaled_250_400/TOOLID_39.5_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

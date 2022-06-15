@@ -3,7 +3,7 @@ layout: page
 title: My Environment
 permalink: /individualtools/page-tool26.0/
 ---
-# My Environment
+## My Environment
 
 <img src="/images/scaled_250_400/TOOLID_26.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

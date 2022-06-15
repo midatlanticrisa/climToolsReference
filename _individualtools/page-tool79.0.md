@@ -3,7 +3,7 @@ layout: page
 title: Coastal County Snapshots
 permalink: /individualtools/page-tool79.0/
 ---
-# Coastal County Snapshots
+## Coastal County Snapshots
 
 <img src="/images/scaled_250_400/TOOLID_79.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

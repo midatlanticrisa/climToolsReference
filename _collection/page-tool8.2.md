@@ -3,7 +3,7 @@ layout: page
 title: Creating Resilient Water Utilities- Case Study and Information Exchange
 permalink: /collection/page-tool8.2/
 ---
-# Creating Resilient Water Utilities: Case Study and Information Exchange
+## Creating Resilient Water Utilities: Case Study and Information Exchange
 
 <img src="/images/scaled_250_400/TOOLID_8.2_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

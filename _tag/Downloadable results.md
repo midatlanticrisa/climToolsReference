@@ -3,7 +3,7 @@ layout: page
 title: Downloadable results
 permalink: /tag/Downloadable results/
 ---
-<h1>Tag: Downloadable results</h1>
+<h2>Tag: Downloadable results</h2>
 * [AdaptVA: Interactive Map](/collection/page-tool1.3/){:target='blank'}
 * [Virginia Wetland Condition Assessment Tool (WetCAT)](/individualtools/page-tool4.0/){:target='blank'}
 * [Resilience Adaptation Feasibility Tool (The RAFT)](/individualtools/page-tool5.0/){:target='blank'}

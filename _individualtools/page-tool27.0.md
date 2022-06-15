@@ -3,7 +3,7 @@ layout: page
 title: Climate Impact Map
 permalink: /individualtools/page-tool27.0/
 ---
-# Climate Impact Map
+## Climate Impact Map
 
 <img src="/images/scaled_250_400/TOOLID_27.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

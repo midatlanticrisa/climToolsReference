@@ -3,7 +3,7 @@ layout: page
 title: Drought Management Database
 permalink: /individualtools/page-tool31.0/
 ---
-# Drought Management Database
+## Drought Management Database
 
 <img src="/images/scaled_250_400/TOOLID_31.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

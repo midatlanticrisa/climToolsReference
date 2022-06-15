@@ -3,7 +3,7 @@ layout: page
 title: Green Infrastructure Modeling Toolkit
 permalink: /individualtools/page-tool73.0/
 ---
-# Green Infrastructure Modeling Toolkit
+## Green Infrastructure Modeling Toolkit
 
 <img src="/images/scaled_250_400/TOOLID_73.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

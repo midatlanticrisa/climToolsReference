@@ -3,7 +3,7 @@ layout: page
 title: Drought Risk Atlas
 permalink: /individualtools/page-tool30.0/
 ---
-# Drought Risk Atlas
+## Drought Risk Atlas
 
 <img src="/images/scaled_250_400/TOOLID_30.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

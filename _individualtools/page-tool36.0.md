@@ -3,7 +3,7 @@ layout: page
 title: USDA Plant Hardiness Zone Map
 permalink: /individualtools/page-tool36.0/
 ---
-# USDA Plant Hardiness Zone Map
+## USDA Plant Hardiness Zone Map
 
 <img src="/images/scaled_250_400/TOOLID_36.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

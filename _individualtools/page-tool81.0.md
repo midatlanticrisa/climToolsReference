@@ -3,7 +3,7 @@ layout: page
 title: USGS StreamStats
 permalink: /individualtools/page-tool81.0/
 ---
-# USGS StreamStats
+## USGS StreamStats
 
 <img src="/images/scaled_250_400/TOOLID_81.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

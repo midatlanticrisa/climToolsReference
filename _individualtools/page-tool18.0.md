@@ -3,7 +3,7 @@ layout: page
 title: Shoreline Management Self-Guided Decision Tools
 permalink: /individualtools/page-tool18.0/
 ---
-# Shoreline Management Self-Guided Decision Tools
+## Shoreline Management Self-Guided Decision Tools
 
 <img src="/images/scaled_250_400/TOOLID_18.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

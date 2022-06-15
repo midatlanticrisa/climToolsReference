@@ -3,7 +3,7 @@ layout: page
 title: Green Infrastructure Modeling Toolkit- Storm Water Management Model (SWMM)
 permalink: /collection/page-tool73.1/
 ---
-# Green Infrastructure Modeling Toolkit: Storm Water Management Model (SWMM)
+## Green Infrastructure Modeling Toolkit: Storm Water Management Model (SWMM)
 
 <img src="/images/scaled_250_400/TOOLID_73.1_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

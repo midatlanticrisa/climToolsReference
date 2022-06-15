@@ -3,7 +3,7 @@ layout: page
 title: Surging Seas Risk Zone Map (SSRZM)
 permalink: /individualtools/page-tool58.0/
 ---
-# Surging Seas Risk Zone Map (SSRZM)
+## Surging Seas Risk Zone Map (SSRZM)
 
 <img src="/images/scaled_250_400/TOOLID_58.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

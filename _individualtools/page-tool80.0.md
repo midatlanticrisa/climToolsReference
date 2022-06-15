@@ -3,7 +3,7 @@ layout: page
 title: DGIF Wildlife Action Plan
 permalink: /individualtools/page-tool80.0/
 ---
-# DGIF Wildlife Action Plan
+## DGIF Wildlife Action Plan
 
 <img src="/images/scaled_250_400/TOOLID_80.0_ScreenCapture-1.png" style="max-height:250px;max-width:400;" align="right"/>
 

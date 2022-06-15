@@ -3,7 +3,7 @@ layout: page
 title: Climate projections
 permalink: /tag/Climate projections/
 ---
-<h1>Tag: Climate projections</h1>
+<h2>Tag: Climate projections</h2>
 * [AdaptVA: Sea Level Rise Projection Viewer](/collection/page-tool1.1/){:target='blank'}
 * [AdaptVA: Interactive Map](/collection/page-tool1.3/){:target='blank'}
 * [Hampton Roads Geospatial Exchange Online: Hampton Roads Sea Level Rise Planning Scenarios (Raster)](/collection/page-tool2.1/){:target='blank'}
