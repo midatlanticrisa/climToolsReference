@@ -2,7 +2,7 @@
 # Created 2019 by Robert Nicholas <ren10@psu.edu>.
 # Modified for Climate Tools website by Kelsey Ruckert <klr324@psu.edu>
 
-SRC_DIR="public"
+SRC_DIR="_site"
 DEST_DIR="/net/www/cbtooltest.marisa.psu.edu/htdocs"
 DEST_HOST="laurasia.ems.psu.edu"
 

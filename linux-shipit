@@ -1,0 +1,13 @@
+#!/bin/bash
+# Last modified 8 February 2021 by Robert Nicholas <ren10@psu.edu>.
+
+SRC_DIR="_site"
+DEST_DIR="/net/www/cbtooltest.marisa.psu.edu/htdocs"
+DEST_HOST="laurasia.ems.psu.edu"
+
+# This requires rsync 3.1.0 or newer:
+rsync -avz --chown=${USER}:clima --chmod=ug=rwX --chmod=o=rX ${SRC_DIR}/ ${DEST_HOST}:${DEST_DIR}/
+
+# Unfortunately, macOS 10.14 Mojave ships with a very old rsync, so you'll need to do this instead:
+# rsync -avz --chmod=ug=rwX --chmod=o=rX --exclude mapdata ${SRC_DIR}/ ${DEST_HOST}:${DEST_DIR}/
+# ssh ${DEST_HOST} chown -R ${USER}:clima ${DEST_DIR}/
