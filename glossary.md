@@ -1,5 +1,7 @@
 ---
-type: page
+layout: default
 title: Glossary
-layout: glossary
+permalink: /glossary/
 ---
+
+{% include glossary.html %}

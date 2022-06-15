@@ -1,16 +1,12 @@
 ---
+layout: default
 title: Home
-date: 2020-01-07T16:47:30.077Z
-sitemap:
-  priority: 1.0
-
-outputs:
-- html
-- rss
-- json
+permalink: 
 ---
+
 # Climate Tools:
-#### a search engine for finding climate tools in the Mid-Atlantic
+
+### a search engine for finding climate tools in the Mid-Atlantic
 
 MARISA Climate Tools is a site designed to help you identify the best climate tool(s) for your needs in the Mid-Atlantic Region. Climate Tools helps speed up the time it takes to find a tool and helps you feel more confident in your choice of tool(s) by allowing you to filter a collection of tools based on your needs, view a summary of the available tools, and compare tools in a similar format.
  
@@ -38,3 +34,4 @@ For more information on MARISA and how to contact us, please head to our [About]
 Work on this product was initiated by Pamela Braff and continued by Benjamin Watson and Kelsey Ruckert, with additional help from Matthew Lisk, Molly Mitchell, and Robert Nicholas. Kelsey Ruckert is the current lead for the project.
 <br>
 <br>
+

@@ -1,5 +1,8 @@
 ---
-title: "Tool Search"
-type: "page"
-layout: "toolsearch"
+layout: default
+title: Tool Search
+permalink: /toolsearch/
 ---
+
+{% include toolsearch.html %}
+
