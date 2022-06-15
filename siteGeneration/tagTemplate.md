@@ -1,5 +1,5 @@
 ---
 layout: page
 title: titleholder
-permalink: /collection/placeholder
+permalink: /tag/placeholder
 ---

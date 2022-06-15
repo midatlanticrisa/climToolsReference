@@ -1,5 +1,16 @@
-##a script to automatically pull apart input data and present that data in a website
-
+##########################################################################
+##########################################################################
+## Script Name: generateSite.R
+## Purpose of Script: A script to automatically pull apart input data and present that data in a website.
+##
+## Author: Kelsey Ruckert
+## Email: klr324@psu.edu
+## Date Created: 4/6/2022
+##
+## Copyright (c) 2022 The Pennsylvania State University
+##
+##########################################################################
+##########################################################################
 ##libraries
 library(readxl)
 library(pbapply)
@@ -13,31 +24,21 @@ library(stringr)
 library(tidycensus)
 library(jsonlite)
 
-#/Volumes/GoogleDrive/Shared drives/MARISA/Coastal Climate Extension Pilot/Tool Inventory/Tool Screenshots_resized_156_250/TOOLID_1.0_ScreenCapture-1.png
-##find data file, assumed to be on computer
-# baseDir <- "/Users/mdl5548/Documents/GitHub/"
-# dataDir <- paste0(baseDir, "climToolsReference/siteGeneration/")
-# #siteDir <- paste0(dataDir, "docs/")
-# siteDir <- paste0(baseDir, "climToolsReference/content/")
-# toolsDir <- paste0(siteDir, "tools_test/")
-# discovDir <- paste0(baseDir, "climToolsReference/public/data_test/")
-# imageDir <- paste0(baseDir, "climToolsReference/public/images_test/")
-# toolSearchDir <- paste0(baseDir, "climToolsReference/themes/soho/layouts/page/")
-
 baseDir <- "~/Documents/Github/"
-dataDir <- paste0(baseDir, "climToolsReference/siteGeneration/")
+dataDir <- paste0(baseDir, "marisa-tool-site/siteGeneration/")
 source(paste0(dataDir, "siteGeneratingFunctions_2022_searchbars.R"))
 
-siteDir <- paste0(baseDir, "climToolsReference/content/")
-toolsDir <- paste0(siteDir, "tools/")
-discovDir <- paste0(baseDir, "climToolsReference/public/data/")
-imageDir <- paste0(baseDir, "climToolsReference/public/images/")
+siteDir <- paste0(baseDir, "marisa-tool-site/")
+tagDir <- paste0(siteDir, "_tag/")
+toolsDir <- paste0(siteDir, "_individualtools/")
+discovDir <- paste0(baseDir, "marisa-tool-site/misc/")
+imageDir <- paste0(baseDir, "marisa-tool-site/images/")
 
-#toolInventoryName <- "Inventory_2020-01-21_v2.xlsx"
 toolInventoryName <- "Tool Inventory - 12.15.21 copy.xlsx"
 templateCollectionName <- "collectionTemplate.md"
 templatePageName <- "pageTemplate.md"
-templateIndex <- "templateIndex.md"
+templateTagName <- "tagTemplate.md"
+templateIndex <- "toolsTemplate.md" # "templateIndex.md"
 searchCodePage <- "searchTemplate.html"
 stcntyFile <- paste0(dataDir, "MARISAstateFIPSUpdate.csv")
 statefips = read.csv(paste0(dataDir, "stateFIPS.csv"))
@@ -83,14 +84,12 @@ if(clean_website_tools_and_tags){
 ##read in the tool description document
 toolInventoryFile <- list.files(dataDir, toolInventoryName, recursive=T, full.names=T)
 toolInventoryFile <- toolInventoryFile[grep("~",toolInventoryFile, invert=TRUE)]
-#toolInventoryFile <- descFile[grep(paste0("/",toolInventoryFile), descFile)]
 
 ##get number of sheets, to load all of them
 sheetNames <- excel_sheets(toolInventoryFile)
 
 ##read in data
 # Each list represents a seperate excel sheet
-# toolInventory <- lapply(sheetNames, read_excel, path=toolInventoryFile, col_names=F)
 
 # Use read.xlsx to get the merged cells
 toolInventory <- lapply(sheetNames, read.xlsx, xlsxFile=toolInventoryFile, colNames=F, fillMergedCells = TRUE)
@@ -134,27 +133,6 @@ ind_dup_4level = unlist(lapply(X = dup_headers_4level, function(X){which(headers
 headers[ind_dup_4level] = paste(headers[ind_dup_4level], level4Names[ind_dup_4level], sep="-")
                       
 # # Combine the top line and secondary headers to set as the column names
-# ##for now, hard coded
-# baseNames[6:10] <- paste(catNames[6], baseNames[6:10], sep="-") # Description
-# baseNames[11:15] <- paste(catNames[11], baseNames[11:15], sep="-") # Geographic Scope
-# baseNames[16:24] <- paste(catNames[16], baseNames[16], as.character(inventory[3,][16:24]), sep="-") # Purpose - Tool Function
-# baseNames[25:28] <- paste(catNames[16], baseNames[25], as.character(inventory[3,][25:28]), sep="-") # Purpose - Future Projections
-# baseNames[29] <- paste(catNames[16], baseNames[29], sep="-") # Purpose - Description
-# baseNames[30:34] <- paste(catNames[30], baseNames[30:34], sep="-") # Tool type
-# baseNames[35:36] <- paste(catNames[35], baseNames[35:36], sep="-") # Tool Inputs
-# baseNames[37:39] <- paste(catNames[37], baseNames[37:39], sep="-") # Tool Outputs
-# baseNames[45] <- paste(catNames[37], baseNames[45], sep="-")# Tool Outputs
-# baseNames[46:50] <- paste(catNames[46], baseNames[46:50], sep="-") # Software Requirements
-# baseNames[51:53] <- paste(catNames[51], baseNames[51:53], sep="-") # Effort / Skill
-# baseNames[54:58] <- paste(catNames[54], baseNames[54], as.character(inventory[3,][54:58]), sep="-") # Topic Filters - Main Topics
-# baseNames[59:64] <- paste(catNames[54], baseNames[59], as.character(inventory[3,][59:64]), sep="-") # Topic Filters - Climate
-# baseNames[65:70] <- paste(catNames[54], baseNames[65], as.character(inventory[3,][65:70]), sep="-") # Topic Filters - Ecosystems
-# baseNames[71:78] <- paste(catNames[54], baseNames[71], as.character(inventory[3,][71:78]), sep="-") # Topic Filters - Agriculture / Built Environment
-# baseNames[79:82] <- paste(catNames[54], baseNames[79], as.character(inventory[3,][79:82]), sep="-") # Topic Filters - Society
-# baseNames[83:90] <- paste(catNames[54], baseNames[83], as.character(inventory[3,][83:90]), sep="-") # Topic Filters - Water / Flooding
-# baseNames[93:94] <- paste(catNames[93], baseNames[93:94], sep="-") # Contact Information
-# baseNames[95:99] <- paste(catNames[93], baseNames[95:99], sep="-") # Contact Information
-
 colnames(inventory) <- headers # baseNames
 inventory <- inventory[which(inventory$`Tool ID`=="1"):nrow(inventory),] # Extract only the tools (Should remove the first 4 rows; the header rows)
 invValsOnly <- inventory[which(is.na(inventory$`Group ID`)==F),] # Extract the only the ones with Group IDs - should be all the tools
@@ -173,21 +151,13 @@ crossNames <- c("Tool Outputs-dat-dat- numerical data", "Tool Outputs-fig",
                 "Tool Outputs-gis", "Tool Outputs-map", "Tool Outputs-rprt-rprt- reports")
 invValsOnly <- invValsOnly[ ,!(colnames(invValsOnly) %in% crossNames)]
 
-# # Remove all column entries after `Contact Information-Related Publications`. These relate to creating the document
-# # 39 is `Tool Outputs-rprt`
-# # 45 is `Tool Outputs-Description`
-# # > colnames(invValsOnly[40:44])
-# # [1] "dat"  "fig"  "gis"  "map"  "rprt"
-# # # hhh <- invValsOnly[,c(1:39, 45:99)]
-# # Remove columns that are not useful including:
-# # "dat", "fig", "gis", "map", "rprt" 
-# invValsOnly <- invValsOnly[,c(1:39, 45:99)] 
-
 ##read in the template files to be editted
 findColFile <- list.files(dataDir, templateCollectionName, recursive=T, full.names=T)
 collectionPage <- paste(readLines(findColFile), collapse="\n")
 findTempFile <- list.files(dataDir, templatePageName, recursive=T, full.names=T)
 templatePage <- paste(readLines(findTempFile), collapse="\n")
+findTagFile <- list.files(dataDir, templateTagName, recursive=T, full.names=T)
+templateTag <- paste(readLines(findTagFile), collapse="\n")
 findIndFile <- list.files(dataDir, templateIndex, recursive=T, full.names=T)
 templateIndexPg <- paste(readLines(findIndFile), collapse="\n")
 findSearchTempFile <- list.files(dataDir, searchCodePage, recursive=T, full.names=T)
@@ -238,6 +208,19 @@ toolpage_list = pblapply(splitByToolID, generateToolPage, tempPage=templatePage,
                          splitByCol=splitByCol, toolCol=toolCol, collectionPage=collectionPage,
                          multiTools=multiTools)
 
+# Tool Highlights
+highlights <- lapply(X = 1:length(toolpage_list), function(X){toolpage_list[[X]]$listTools})
+highlights <- do.call(rbind.data.frame, highlights)
+
+rmcollections <- highlights[-which(is.na(highlights$url)), ]
+orderedTools <- rmcollections[order(rmcollections$name), ]
+toolHome <- paste(templateIndexPg, paste0(orderedTools$img, orderedTools$url, orderedTools$description, 
+                                          orderedTools$tags, collapse=el), sep=el)
+
+conTool <- file(paste0(siteDir, "tools.md")) # Connect to the file
+writeLines(toolHome, conTool)
+close(conTool)
+
 # Tags
 searchTags <- lapply(X = 1:length(toolpage_list), function(X){toolpage_list[[X]]$searchTags})
 searchTags <- do.call(rbind.data.frame, searchTags)
@@ -273,6 +256,30 @@ attributejson = sapply(X = 1:length(toolpage_list),
 # Save as a variable in a javascript file
 toolsjson = c("var toolsjson = [", attributejson, "];")
 cat(toolsjson, file=paste0(discovDir, "toolsFilter.js"), sep="\n")
+
+# Tag pages
+filterTags <- searchTags[-which(searchTags$tag == ""), ]
+unqTags <- unique(filterTags$tag)
+
+for(i in 1:length(unqTags)){
+  indTag <- which(filterTags$tag == unqTags[i])
+  header <- paste0("<h1>Tag: ", unqTags[i], "</h1>")
+  bullets <- paste0("* [", filterTags$toolName[indTag], "](/", filterTags$toolLink[indTag], "/){:target='blank'}", collapse = el)
+  
+  tagPage <- gsub("placeholder", paste0(unqTags[i], "/"), templateTag)
+  
+  toolTag <- paste(tagPage, header, bullets, sep=el)
+  
+  conTool <- file(paste0(tagDir, gsub("/", "-", unqTags[i]), ".md")) # Connect to the file
+  writeLines(toolTag, conTool)
+  close(conTool)
+}
+
+
+
+# STOP --------------------------------------------------------------------
+
+
 
 # # Remove the first row from the data.frames???
 # searchTags <- searchTags[-1,]
