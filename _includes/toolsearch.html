@@ -726,7 +726,7 @@ Adding filters narrows your search. Select your top 1-2 choices to optimize your
     
     // If a tool is found loop over the tools to create a list
     for (var i = 0; i < toolsjson.length; i++) {
-      $result.append($('<li><a href="https://cbtooltest.marisa.psu.edu/' + toolsjson[i].link +'/index.html" target="_blank">' + toolsjson[i].name + '</a></li>'));
+      $result.append($('<li><a href="/' + toolsjson[i].link +'/index.html" target="_blank">' + toolsjson[i].name + '</a></li>'));
     }
     $result.append($("</ul>"));
   }

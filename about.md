@@ -1,7 +1,7 @@
 ---
 layout: default
-title:
-permalink: 
+title: About
+permalink: /about/
 ---
 
 # About MARISA

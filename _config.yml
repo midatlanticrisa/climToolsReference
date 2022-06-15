@@ -90,6 +90,8 @@ exclude:
   - mac-docker-buildit
   - mac-docker-testit
   - mac-shipit
+  - siteGeneration/
+  - tags.xlsx
 
 # Organize the files into a folder. They are hidden pages
 collections:
