@@ -267,7 +267,7 @@ for(i in 1:length(unqTags)){
   bullets <- paste0("* [", filterTags$toolName[indTag], "](/", filterTags$toolLink[indTag], "/){:target='blank'}", collapse = el)
   
   tagPage <- gsub("titleholder", unqTags[i], templateTag)
-  tagPage <- gsub("placeholder", paste0(unqTags[i], "/"), tagPage)
+  tagPage <- gsub("placeholder", paste0(gsub("/", "", unqTags[i]), "/"), tagPage)
   
   toolTag <- paste(tagPage, header, bullets, sep=el)
   

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Compare scenarios/locations
-permalink: /tag/Compare scenarios/locations/
+permalink: /tag/Compare scenarioslocations/
 ---
 <h1>Tag: Compare scenarios/locations</h1>
 * [AdaptVA: Sea Level Rise Projection Viewer](/collection/page-tool1.1/){:target='blank'}

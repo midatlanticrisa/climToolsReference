@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Interactive interface/map
-permalink: /tag/Interactive interface/map/
+permalink: /tag/Interactive interfacemap/
 ---
 <h1>Tag: Interactive interface/map</h1>
 * [AdaptVA: Sea Level Rise Projection Viewer](/collection/page-tool1.1/){:target='blank'}

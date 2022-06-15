@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Real-time/Current
-permalink: /tag/Real-time/Current/
+permalink: /tag/Real-timeCurrent/
 ---
 <h1>Tag: Real-time/Current</h1>
 * [AdaptVA: Tidewatch Map](/collection/page-tool1.2/){:target='blank'}
