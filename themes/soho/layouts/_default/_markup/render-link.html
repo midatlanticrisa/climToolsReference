@@ -1,3 +1,0 @@
-<!-- Render links to open in a seperate tab -->
-<!-- Code from https://agrimprasad.com/post/hugo-goldmark-markdown/ -->
-<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank"{{ end }}>{{ .Text }}</a>
