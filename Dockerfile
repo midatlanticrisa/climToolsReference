@@ -1,0 +1,6 @@
+FROM jekyll/jekyll
+RUN apk add --no-cache python2
+ENV BUNDLE_HOME=/srv/jekyll/.bundle
+ENV BUNDLE_PATH=$BUNDLE_HOME
+ENV BUNDLE_APP_CONFIG=$BUNDLE_HOME
+ENV BUNDLE_BIN=$BUNDLE_HOME/bin

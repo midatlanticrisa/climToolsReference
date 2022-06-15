@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include analytics.html %}
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+
+    <!-- Bookmania and PT Sans fonts linked from klk5327 Adobe fonts account -->
+    <link rel="stylesheet" href="https://use.typekit.net/fuy4ipu.css">
+
+
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+<header>
+    <div class="wrapper-masthead">
+      <div class="header-inner">
+        <div class="brand-wrap">
+            <a href="{{ site.baseurl }}/" class="logo"><img src="{{ site.avatar }}" /></a>
+        </div>
+        <nav id="hamnav">
+          <label for="hamburger"><a href="https://www.midatlanticrisa.org/">&#9776;</a></label>
+          <input id="hamburger" type="checkbox" />
+          <div>
+            <ul class="main-nav">
+              <li><a href="{{ site.baseurl }}/">About</a></li>
+              <li><a href="{{ site.baseurl }}/">Climate Summaries</a></li>
+              <li class="menu-mark"><a href="{{ site.baseurl }}/">Data Tools</a></li>
+              <!--Use "menu-mark" class to indicate which menu item should be highlighted-->
+              <li><a href="{{ site.baseurl }}/">Publications and News</a></li>
+            </ul>
+          </div>
+          <div class="follow-us">
+            <ul>
+              <li>
+                <a class="twitter external" href="https://www.twitter.com/MidAtlanticRISA">@MidAtlanticRISA</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+</header>
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+    <footer>
+      <div class="container footer-wrap">
+        <div>
+          <a href="https://www.psu.edu/legal-statements/" target="_blank"><img class="ems-logo" src="/images/psu-ems-logo.png"></a>
+        </div>
+        <div class="follow-us">
+          <ul>
+            <li>
+              <a class="twitter external" href="https://www.twitter.com/MidAtlanticRISA">@MidAtlanticRISA</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2016-2022 The Pennsylvania State University</div>
+      <!-- {% include svg-icons.html %} -->
+    </footer>
+  </body>
+</html>
