@@ -16,8 +16,8 @@ Provide data and process support to bridge the gap between climate data and land
 <ul class='tags'><li><a class='tag' href='/tag/Registration required' target='_blank'>Registration required</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Program' target='_blank'>Program</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Solutions' target='_blank'>Solutions</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -31,13 +31,13 @@ Collection of tools and information on climate change adaptation for individuals
 ### [AirNow](/individualtools/page-tool87.0/){:target='blank'}
 Reports historical, current, and forecast air quality and fire conditions across North America.
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Forecast' target='_blank'>Forecast</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/City level' target='_blank'>City level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Subdaily' target='_blank'>Subdaily</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_35.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -48,7 +48,7 @@ Artistic representation of Climate Change
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/County level' target='_blank'>County level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_64.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -58,7 +58,7 @@ Calculates individual nitrogen contribution to the Chesapeake Bay.
 <ul class='tags'><li><a class='tag' href='/tag/Registration required' target='_blank'>Registration required</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Solutions' target='_blank'>Solutions</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -70,7 +70,7 @@ Demonstrates location of past and current beach nourishment projects, number of 
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Cost estimates' target='_blank'>Cost estimates</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
@@ -81,10 +81,10 @@ Demonstrates location of past and current beach nourishment projects, number of 
 BASINS purpose is to assist in watershed management and TMDL development by integrating data, tools, and models.
 <ul class='tags'><li><a class='tag' href='/tag/Restrictions apply' target='_blank'>Restrictions apply</a></li>
 <li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_47.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -93,8 +93,8 @@ BASINS purpose is to assist in watershed management and TMDL development by inte
 CAST provides estimates of load reductions, allows users to understand which BMPs provide the greatest load reduction benefit, the extent to which these BMPs can be implemented, and the cost of these BMPs.
 <ul class='tags'><li><a class='tag' href='/tag/Registration required' target='_blank'>Registration required</a></li>
 <li><a class='tag' href='/tag/Program' target='_blank'>Program</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Solutions' target='_blank'>Solutions</a></li>
 <li><a class='tag' href='/tag/Cost estimates' target='_blank'>Cost estimates</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
@@ -105,7 +105,7 @@ CAST provides estimates of load reductions, allows users to understand which BMP
 ### [Chesapeake Bay Interpretive Buoy System (CBIBS)](/individualtools/page-tool48.0/){:target='blank'}
 Measures and records weather and water conditions within the Chesapeake Bay
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Watershed level' target='_blank'>Watershed level</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
@@ -118,7 +118,7 @@ Measures and records weather and water conditions within the Chesapeake Bay
 ### [Chesapeake Bay Program DataHub](/individualtools/page-tool33.0/){:target='blank'}
 Datasets related to water quality, living resources, pollution, and fluorescence 
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
 <li><a class='tag' href='/tag/Dataset' target='_blank'>Dataset</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li></ul><br><br><br>
@@ -130,7 +130,7 @@ Display data on American climate change perceptions based on year and respondent
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
 <li><a class='tag' href='/tag/Program' target='_blank'>Program</a></li>
 <li><a class='tag' href='/tag/Dataset' target='_blank'>Dataset</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -140,13 +140,13 @@ Display data on American climate change perceptions based on year and respondent
 Web application that generates maps and graphs using climate data from remotely sensed source data
 <ul class='tags'><li><a class='tag' href='/tag/Registration required' target='_blank'>Registration required</a></li>
 <li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Forecast' target='_blank'>Forecast</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
 <li><a class='tag' href='/tag/Dataset' target='_blank'>Dataset</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -160,8 +160,8 @@ Interactive map showing past and future temperature based different climate mode
 <li><a class='tag' href='/tag/County level' target='_blank'>County level</a></li>
 <li><a class='tag' href='/tag/State level' target='_blank'>State level</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_39.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -174,13 +174,13 @@ A toolkit designed to help farmers in the Northeast US improve their productivit
 ### [Coastal Change Analysis Program (C-CAP) Land Cover Atlas](/individualtools/page-tool70.0/){:target='blank'}
 Interactive map showing changes in land use cover from 1996-2010 in coastal regions
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/County level' target='_blank'>County level</a></li>
 <li><a class='tag' href='/tag/State level' target='_blank'>State level</a></li>
 <li><a class='tag' href='/tag/Watershed level' target='_blank'>Watershed level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -190,7 +190,7 @@ Interactive map showing changes in land use cover from 1996-2010 in coastal regi
 National map illustrating past, present, and projected coastal conditions
 <ul class='tags'><li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_79.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -201,7 +201,7 @@ The open-source map leads users to reports that contain graphs and figures with 
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/County level' target='_blank'>County level</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li></ul><br><br><br>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_22.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 
@@ -209,7 +209,7 @@ The open-source map leads users to reports that contain graphs and figures with 
 Projections of SLR and the predicted effects on the state of Maryland
 <ul class='tags'><li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/State level' target='_blank'>State level</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li></ul><br><br><br>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_8.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 
@@ -220,7 +220,7 @@ Support water utility practitioners in preparing for extreme weather events <br>
 
 ### [DC Department of Energy and Environment Data & Maps](/individualtools/page-tool45.0/){:target='blank'}
 Provides information on how DC is tackling environmental and climate issues
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/City level' target='_blank'>City level</a></li>
@@ -234,25 +234,25 @@ Provides information on how DC is tackling environmental and climate issues
 
 ### [DC Flood Risk Map](/individualtools/page-tool84.0/){:target='blank'}
 DC flood map with layers for 1% annual flood, storm surge, and interactive SLR meter
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Forecast' target='_blank'>Forecast</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/City level' target='_blank'>City level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_86.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 
 ### [DC Solar Tool](/individualtools/page-tool86.0/){:target='blank'}
 Calculates cost, federal tax credit, carbon offset, average revenue, and energy output of solar energy for residential and business roofs in D.C. area that are looking to create solar panel systems
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/City level' target='_blank'>City level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Cost estimates' target='_blank'>Cost estimates</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -261,13 +261,13 @@ Calculates cost, federal tax credit, carbon offset, average revenue, and energy 
 ### [Delaware Air Quality Forecast](/individualtools/page-tool74.0/){:target='blank'}
 Report the current conditions and next day forecast of Delaware Air Quality.
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Forecast' target='_blank'>Forecast</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/City level' target='_blank'>City level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Subdaily' target='_blank'>Subdaily</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_34.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -279,7 +279,7 @@ Climate projections for state of Delaware
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/City level' target='_blank'>City level</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_59.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -287,12 +287,12 @@ Climate projections for state of Delaware
 ### [Delaware Environmental Monitoring Sites](/individualtools/page-tool59.0/){:target='blank'}
 This tool inventories environmental monitoring stations in Delaware and provides links to access corresponding data and find data of interest.
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Watershed level' target='_blank'>Watershed level</a></li>
 <li><a class='tag' href='/tag/Regional level' target='_blank'>Regional level</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_80.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -301,14 +301,14 @@ This tool inventories environmental monitoring stations in Delaware and provides
 Virginia's 2015 Wildlife Action Plan contains ecological data and conservation plans for hundreds of species. The plan has reports and interactive maps that make ecological data available on a planning district commission-level. Locality-specific reports document conservation needs in communities, with prioritized actions for locally threatened species.
 <ul class='tags'><li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li></ul><br><br><br>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_72.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 
 ### [Diagnostic Spreadsheet for Analysis of Water Quality Data in relation to Growth Requirements of Submerged Aquatic Vegetation](/individualtools/page-tool72.0/){:target='blank'}
 Determines if minimum light requirements for SAV growth are met at a given station.
 <ul class='tags'><li><a class='tag' href='/tag/Spreadsheet' target='_blank'>Spreadsheet</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Solutions' target='_blank'>Solutions</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_31.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -327,8 +327,8 @@ View drought indices to assess national drought risk on map or for specific weat
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
 <li><a class='tag' href='/tag/Dataset' target='_blank'>Dataset</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -340,7 +340,7 @@ Interactive chart to view precipitation / temperature data for stations across t
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
 <li><a class='tag' href='/tag/Dataset' target='_blank'>Dataset</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -349,11 +349,11 @@ Interactive chart to view precipitation / temperature data for stations across t
 ### [Earth::Global wind patterns](/individualtools/page-tool76.0/){:target='blank'}
 A fantastic visualization of climate, atmospheric, and oceanic data for educational purposes.
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Forecast' target='_blank'>Forecast</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Weekly' target='_blank'>Weekly</a></li>
 <li><a class='tag' href='/tag/Daily' target='_blank'>Daily</a></li>
 <li><a class='tag' href='/tag/Subdaily' target='_blank'>Subdaily</a></li></ul><br><br><br>
@@ -362,13 +362,13 @@ A fantastic visualization of climate, atmospheric, and oceanic data for educatio
 
 ### [Eastern Virginia Coastal Resilience (ESVA Coastal Resilience)](/individualtools/page-tool10.0/){:target='blank'}
 Decision support tool to assess coastal resilience in Eastern Virginia 
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Regional level' target='_blank'>Regional level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_32.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -376,10 +376,10 @@ Decision support tool to assess coastal resilience in Eastern Virginia
 ### [Eyes On The Bay](/individualtools/page-tool32.0/){:target='blank'}
 Website providing Maryland water quality data and information
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li></ul><br><br><br>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_54.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 
@@ -390,7 +390,7 @@ Visualize FEMA data regarding natural disaster occurrence, flood frequency, and 
 <li><a class='tag' href='/tag/County level' target='_blank'>County level</a></li>
 <li><a class='tag' href='/tag/State level' target='_blank'>State level</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Cost estimates' target='_blank'>Cost estimates</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
@@ -399,11 +399,11 @@ Visualize FEMA data regarding natural disaster occurrence, flood frequency, and 
 
 ### [FEMA's National Flood Hazard Layer (NFHL) Viewer](/individualtools/page-tool51.0/){:target='blank'}
 Display FEMA-delineated flood hazards through Flood Insurance Rate Maps (FIRMs) and revisions to FIRMS via Letters of Map Amendments and Letters of Map Revisions (LOMRs)
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Program' target='_blank'>Program</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_24.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -417,12 +417,12 @@ Platform for beekeepers, farmers, and pesticide applicators to communicate and s
 ### [FloodFactor](/individualtools/page-tool25.0/){:target='blank'}
 Map of tidal and hurricane flooding under present and future scenarios
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Solutions' target='_blank'>Solutions</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -433,8 +433,8 @@ Interactive map illustrating climate migration of US cities in the next 60 years
 <ul class='tags'><li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/City level' target='_blank'>City level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li></ul><br><br><br>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_73.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 
@@ -445,13 +445,13 @@ A collection of models and tools for communities to manage water runoff in urban
 
 ### [Green Infrastructure Practices in the District](/individualtools/page-tool85.0/){:target='blank'}
 Interactive map with filtered layers that highlights existing best management practice projects and provides the known specifications of projects
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/City level' target='_blank'>City level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
 <li><a class='tag' href='/tag/Dataset' target='_blank'>Dataset</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -469,8 +469,8 @@ Assessment of neighborhood risk based on census tracts and FEMA flood maps
 <li><a class='tag' href='/tag/City level' target='_blank'>City level</a></li>
 <li><a class='tag' href='/tag/County level' target='_blank'>County level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_57.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -492,7 +492,7 @@ Allows residents of coastal Virginia to identify their evacuation zone in prepar
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Regional level' target='_blank'>Regional level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li></ul><br><br><br>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_56.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 
@@ -503,7 +503,7 @@ National map of social vulnerability in fishing communities
 <li><a class='tag' href='/tag/City level' target='_blank'>City level</a></li>
 <li><a class='tag' href='/tag/County level' target='_blank'>County level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -523,8 +523,8 @@ Seasonal (quarterly) reports outlining past weather events and their significanc
 <li><a class='tag' href='/tag/Watershed level' target='_blank'>Watershed level</a></li>
 <li><a class='tag' href='/tag/Regional level' target='_blank'>Regional level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Quarterly' target='_blank'>Quarterly</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_6.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -532,7 +532,7 @@ Seasonal (quarterly) reports outlining past weather events and their significanc
 ### [Maryland Coastal Atlas](/individualtools/page-tool6.0/){:target='blank'}
 Create maps and graphs presenting coastal and ocean data in Maryland
 
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
@@ -540,8 +540,8 @@ Create maps and graphs presenting coastal and ocean data in Maryland
 <li><a class='tag' href='/tag/State level' target='_blank'>State level</a></li>
 <li><a class='tag' href='/tag/Watershed level' target='_blank'>Watershed level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_49.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -549,19 +549,19 @@ Create maps and graphs presenting coastal and ocean data in Maryland
 ### [MDOT Climate Change Vulnerability](/individualtools/page-tool49.0/){:target='blank'}
 Illustrates the specific roads that will experience inundation due to predicted storm events. Displays projected water depth grids
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/State level' target='_blank'>State level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_46.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 
 ### [Metropolitan Washington Air Quality Forecast](/individualtools/page-tool46.0/){:target='blank'}
 Report the current conditions and 2 day forecast of the Washington D.C. Air Quality
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Forecast' target='_blank'>Forecast</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/City level' target='_blank'>City level</a></li>
@@ -571,11 +571,11 @@ Report the current conditions and 2 day forecast of the Washington D.C. Air Qual
 
 ### [Mid-Atlantic Ocean Data Tool](/individualtools/page-tool40.0/){:target='blank'}
 The Mid-Atlantic Ocean Data Portal is a resource center consisting of an interactive map, data layers, case studies, and collaborative tools that allows users to explore and share visualizations of coastal and social resources between New York and Virginia. 
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Regional level' target='_blank'>Regional level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -583,7 +583,7 @@ The Mid-Atlantic Ocean Data Portal is a resource center consisting of an interac
 
 ### [My Environment](/individualtools/page-tool26.0/){:target='blank'}
 A tool dashboard providing health and environmental quality assessments for the chosen locality 
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Forecast' target='_blank'>Forecast</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
@@ -591,7 +591,7 @@ A tool dashboard providing health and environmental quality assessments for the 
 <li><a class='tag' href='/tag/County level' target='_blank'>County level</a></li>
 <li><a class='tag' href='/tag/State level' target='_blank'>State level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li></ul><br><br><br>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_63.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 
@@ -600,7 +600,7 @@ Demonstrates location of past and current beach nourishment projects, number of 
 <ul class='tags'><li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
 <li><a class='tag' href='/tag/Dataset' target='_blank'>Dataset</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Cost estimates' target='_blank'>Cost estimates</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li></ul><br><br><br>
 
@@ -609,7 +609,7 @@ Demonstrates location of past and current beach nourishment projects, number of 
 ### [Nature's Network Prioritization Tool](/individualtools/page-tool68.0/){:target='blank'}
 Modeling tool for conservation areas of high priority
 <ul class='tags'><li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -630,12 +630,12 @@ Summaries for each state regarding historical climate change and future climate 
 View, create, and collaborate with other users on maps to visualize biological, physical, and socio-economic information about the Northeast.
 <ul class='tags'><li><a class='tag' href='/tag/Registration required' target='_blank'>Registration required</a></li>
 <li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Regional level' target='_blank'>Regional level</a></li>
 <li><a class='tag' href='/tag/Program' target='_blank'>Program</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -650,8 +650,8 @@ View, create, and collaborate with other users on maps to visualize biological, 
 <li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li></ul><br><br><br>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_3.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 
@@ -662,11 +662,11 @@ A national network of real-time information about water levels, wind, water temp
 
 ### [OSPREY Public](/individualtools/page-tool75.0/){:target='blank'}
 Report current meteorological and infrastructure (electricity, traffic, shelters) conditions to aid emergency response planning for both citizens and professionals.
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/State level' target='_blank'>State level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li></ul><br><br><br>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_78.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 
@@ -677,19 +677,19 @@ PINEMAP contains 13 total tools dealing with loblolly pine trees in Southeastern
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li></ul><br><br><br>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_53.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 
 ### [Potomac Inundation Maps](/individualtools/page-tool53.0/){:target='blank'}
 Real time data showing storm-based flood potential for the Potomac and Anacostia Rivers around the DC area
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Forecast' target='_blank'>Forecast</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_5.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -697,13 +697,13 @@ Real time data showing storm-based flood potential for the Potomac and Anacostia
 ### [Resilience Adaptation Feasibility Tool (The RAFT)](/individualtools/page-tool5.0/){:target='blank'}
 Provides independent, objective assessment of locality resilience in coastal Virginia.
 <ul class='tags'><li><a class='tag' href='/tag/Restrictions apply' target='_blank'>Restrictions apply</a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/City level' target='_blank'>City level</a></li>
 <li><a class='tag' href='/tag/County level' target='_blank'>County level</a></li>
 <li><a class='tag' href='/tag/Program' target='_blank'>Program</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Solutions' target='_blank'>Solutions</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -712,10 +712,10 @@ Provides independent, objective assessment of locality resilience in coastal Vir
 ### [Riparian Restoration Decision Support Tool](/individualtools/page-tool52.0/){:target='blank'}
 Guide restoration efforts in identifying high priority areas by generating different scenarios for riparian habitats in the Eastern U.S.
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -733,12 +733,12 @@ Illustrate trends and projected sea level rise
 
 ### [Shoreline Assessment Mapper](/individualtools/page-tool19.0/){:target='blank'}
 An interactive map that displays a variety of data describing shoreline type and condition in coastal VA
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Regional level' target='_blank'>Regional level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li></ul><br><br><br>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_18.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 
@@ -746,8 +746,8 @@ An interactive map that displays a variety of data describing shoreline type and
 Decision tree that provides shoreline management recommendations
 <ul class='tags'><li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Solutions' target='_blank'>Solutions</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -755,11 +755,11 @@ Decision tree that provides shoreline management recommendations
 
 ### [SRC Trading Program Impervious Viewer](/individualtools/page-tool83.0/){:target='blank'}
 This map shows impervious surfaces within Washington D.C. intended to help users recognize areas where SRC practices can be implemented.
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/City level' target='_blank'>City level</a></li>
 <li><a class='tag' href='/tag/Dataset' target='_blank'>Dataset</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -771,7 +771,7 @@ Monitor SAV growth in the Chesapeake Bay
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Regional level' target='_blank'>Regional level</a></li>
 <li><a class='tag' href='/tag/Program' target='_blank'>Program</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li>
 <li><a class='tag' href='/tag/Yearly' target='_blank'>Yearly</a></li></ul><br><br><br>
@@ -780,24 +780,24 @@ Monitor SAV growth in the Chesapeake Bay
 
 ### [Surging Seas Risk Zone Map (SSRZM)](/individualtools/page-tool58.0/){:target='blank'}
 National scale map that highlights flooding along coastal areas with SLR from 1-10ft, social demographic layers. The tool also includes localized fact sheets and detailed reports with flood impacts and resilience efforts individuals may take.
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_82.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 
 ### [Targeted Subwatersheds](/individualtools/page-tool82.0/){:target='blank'}
 Map of D.C. sewers and subwatersheds
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/City level' target='_blank'>City level</a></li>
 <li><a class='tag' href='/tag/Dataset' target='_blank'>Dataset</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -806,10 +806,10 @@ Map of D.C. sewers and subwatersheds
 ### [United States Drought Monitor](/individualtools/page-tool44.0/){:target='blank'}
 Current and historical (through January 4, 2000) drought comparison mapping tool of continental U.S., Alaska, Hawaii,  and territories
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li>
 <li><a class='tag' href='/tag/Weekly' target='_blank'>Weekly</a></li></ul><br><br><br>
@@ -818,10 +818,10 @@ Current and historical (through January 4, 2000) drought comparison mapping tool
 
 ### [USDA Plant Hardiness Zone Map](/individualtools/page-tool36.0/){:target='blank'}
 National, regional, and state maps detailing plant hardiness zones
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li></ul><br><br><br>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_9.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 
@@ -829,7 +829,7 @@ National, regional, and state maps detailing plant hardiness zones
 R package for evaluating changes in river conditions 
 <ul class='tags'><li><a class='tag' href='/tag/Open source' target='_blank'>Open source</a></li>
 <li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
@@ -852,10 +852,10 @@ Provide data on climate, geological processes, and meteorology
 
 ### [USGS National Water Dashboard](/individualtools/page-tool55.0/){:target='blank'}
 Visualize steam and weather data
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li>
 <li><a class='tag' href='/tag/Subdaily' target='_blank'>Subdaily</a></li></ul><br><br><br>
@@ -865,11 +865,11 @@ Visualize steam and weather data
 ### [USGS StreamStats](/individualtools/page-tool81.0/){:target='blank'}
 Streamflow data, trends, and analyses from USGS gaging stations.
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Watershed level' target='_blank'>Watershed level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_71.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -877,11 +877,11 @@ Streamflow data, trends, and analyses from USGS gaging stations.
 ### [USGS Water Data for the Nation](/individualtools/page-tool71.0/){:target='blank'}
 Clearinghouse of all USGS-hosted water data across the country, including water temperatures, levels, flows, groundwater tables, and a host of other physical and chemical parameters.
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
 <li><a class='tag' href='/tag/Dataset' target='_blank'>Dataset</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
@@ -889,13 +889,13 @@ Clearinghouse of all USGS-hosted water data across the country, including water 
 
 ### [Virginia Coastal Geospatial and Educational Mapping System (GEMS)](/individualtools/page-tool41.0/){:target='blank'}
 Ongoing inventory of features from Virginia’s coastal ecosystems with each feature accompanied by supporting information 
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/State level' target='_blank'>State level</a></li>
 <li><a class='tag' href='/tag/Regional level' target='_blank'>Regional level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_37.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -905,20 +905,20 @@ Provides access to water quality and meteorological data from a variety of monit
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_17.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
 
 ### [Virginia Flood Risk Information System (VFRIS)](/individualtools/page-tool17.0/){:target='blank'}
 Interactive flood maps to determine if property is within a FEMA flood risk zone. 
-<ul class='tags'><li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li></ul><br><br><br>
 
 <img src="/images/scaled_156_250/TOOLID_4.0_ScreenCapture-1.png" style="max-height:156px;max-width:250;" align="right"/>
@@ -931,7 +931,7 @@ Method of assessing wetland's ability to perform ecosystem services.
 <li><a class='tag' href='/tag/Watershed level' target='_blank'>Watershed level</a></li>
 <li><a class='tag' href='/tag/Regional level' target='_blank'>Regional level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li>
 <li><a class='tag' href='/tag/Quarterly' target='_blank'>Quarterly</a></li>
 <li><a class='tag' href='/tag/Weekly' target='_blank'>Weekly</a></li></ul><br><br><br>
@@ -941,11 +941,11 @@ Method of assessing wetland's ability to perform ecosystem services.
 ### [Water Quality Assessment and TMDLs](/individualtools/page-tool50.0/){:target='blank'}
 Provide water quality assessment and TMDL information. Show the spatial relationship of how each intersect
 <ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
-<li><a class='tag' href='/tag/Real-time-Current' target='_blank'>Real-time/Current</a></li>
+<li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/State level' target='_blank'>State level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
-<li><a class='tag' href='/tag/Interactive interface-map' target='_blank'>Interactive interface/map</a></li>
-<li><a class='tag' href='/tag/Compare scenarios-locations' target='_blank'>Compare scenarios/locations</a></li>
+<li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
+<li><a class='tag' href='/tag/Compare scenarioslocations' target='_blank'>Compare scenarios/locations</a></li>
 <li><a class='tag' href='/tag/Downloadable data' target='_blank'>Downloadable data</a></li>
 <li><a class='tag' href='/tag/Downloadable results' target='_blank'>Downloadable results</a></li></ul><br><br><br>
 

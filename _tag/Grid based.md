@@ -1,6 +1,6 @@
 ---
 layout: page
-title: titleholder
+title: Grid based
 permalink: /tag/Grid based/
 ---
 <h1>Tag: Grid based</h1>

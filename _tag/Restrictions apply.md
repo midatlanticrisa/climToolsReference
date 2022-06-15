@@ -1,6 +1,6 @@
 ---
 layout: page
-title: titleholder
+title: Restrictions apply
 permalink: /tag/Restrictions apply/
 ---
 <h1>Tag: Restrictions apply</h1>

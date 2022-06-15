@@ -1,6 +1,6 @@
 ---
 layout: page
-title: titleholder
+title: Registration required
 permalink: /tag/Registration required/
 ---
 <h1>Tag: Registration required</h1>

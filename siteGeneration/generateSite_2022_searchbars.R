@@ -266,11 +266,12 @@ for(i in 1:length(unqTags)){
   header <- paste0("<h1>Tag: ", unqTags[i], "</h1>")
   bullets <- paste0("* [", filterTags$toolName[indTag], "](/", filterTags$toolLink[indTag], "/){:target='blank'}", collapse = el)
   
-  tagPage <- gsub("placeholder", paste0(unqTags[i], "/"), templateTag)
+  tagPage <- gsub("titleholder", unqTags[i], templateTag)
+  tagPage <- gsub("placeholder", paste0(unqTags[i], "/"), tagPage)
   
   toolTag <- paste(tagPage, header, bullets, sep=el)
   
-  conTool <- file(paste0(tagDir, gsub("/", "-", unqTags[i]), ".md")) # Connect to the file
+  conTool <- file(paste0(tagDir, gsub("/", "", unqTags[i]), ".md")) # Connect to the file
   writeLines(toolTag, conTool)
   close(conTool)
 }

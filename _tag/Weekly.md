@@ -1,6 +1,6 @@
 ---
 layout: page
-title: titleholder
+title: Weekly
 permalink: /tag/Weekly/
 ---
 <h1>Tag: Weekly</h1>

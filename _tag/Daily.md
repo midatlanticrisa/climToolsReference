@@ -1,6 +1,6 @@
 ---
 layout: page
-title: titleholder
+title: Daily
 permalink: /tag/Daily/
 ---
 <h1>Tag: Daily</h1>

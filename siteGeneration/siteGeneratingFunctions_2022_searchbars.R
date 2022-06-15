@@ -174,7 +174,7 @@ generateToolPage <- function(toolRec, tempPage, el, siteDir, scTab, updateConten
         # Create a data.frame of tags
         toolTags <- data.frame(toolName=toolRec$`Tool Name`, toolLink=toolIDtxt, tag=tags)
         listTools$tags <- paste0(el, "<ul class='tags'>", paste0("<li><a class='tag' href='/tag/", 
-                                                                 gsub("/", "-", toolTags$tag), 
+                                                                 gsub("/", "", toolTags$tag), 
                                                                  "' target='_blank'>", toolTags$tag, "</a></li>", 
                                                                  collapse = el), "</ul><br><br><br>")
         # BIND the tags data.frame to the GLOBAL searchTags list

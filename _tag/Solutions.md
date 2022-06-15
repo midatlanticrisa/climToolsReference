@@ -1,6 +1,6 @@
 ---
 layout: page
-title: titleholder
+title: Solutions
 permalink: /tag/Solutions/
 ---
 <h1>Tag: Solutions</h1>
