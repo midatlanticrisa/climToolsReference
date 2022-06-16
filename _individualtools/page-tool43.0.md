@@ -22,7 +22,7 @@ Through the CPA users can find a variety of  maps and data from the tool's exten
 **Tags**
 
 *  Registration required
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Climate projections
 *  Regional level

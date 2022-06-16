@@ -21,7 +21,7 @@ permalink: /individualtools/page-tool77.0/
 
 *  Open source
 *  Restrictions apply
-*  Historical 
+*  Historical
 *  Climate projections
 *  Application
 *  Interactive interface/map

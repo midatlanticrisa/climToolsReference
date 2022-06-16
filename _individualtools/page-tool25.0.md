@@ -23,7 +23,7 @@ Although most information is available without an account, users must provide an
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Climate projections
 *  Grid based

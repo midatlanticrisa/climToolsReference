@@ -21,7 +21,7 @@ permalink: /individualtools/page-tool56.0/
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Jursidiction based
 *  City level
 *  County level

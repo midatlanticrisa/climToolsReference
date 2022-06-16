@@ -21,7 +21,7 @@ This easy-to-use tool allows users to identify restoration areas based on lack o
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Grid based
 *  Application

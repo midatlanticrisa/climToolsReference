@@ -21,7 +21,7 @@ By providing several different drought indices at multiple time steps, this tool
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Location specific
 *  Application
 *  Dataset

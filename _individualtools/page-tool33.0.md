@@ -24,7 +24,7 @@ This tool provides access to several types of data related to pollutants, water 
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Website
 *  Dataset

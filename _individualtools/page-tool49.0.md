@@ -25,7 +25,7 @@ This map's water level projections are based on data from the US Army Corps of E
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Climate projections
 *  State level

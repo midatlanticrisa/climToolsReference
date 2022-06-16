@@ -23,7 +23,7 @@ Designed to help agricultural producers select appropriate cover crops and optim
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Location specific
 *  Regional level
 *  Application

@@ -21,7 +21,7 @@ This tool assesses hardiness temperature across the Northeast in order to inform
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Forecast
 *  Location specific

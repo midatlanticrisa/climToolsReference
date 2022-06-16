@@ -22,7 +22,7 @@ A web-based, iterative process CREAT 3.0 is the latest version of the CREAT Risk
 **Tags**
 
 *  Registration required
-*  Historical 
+*  Historical
 *  Climate projections
 *  Location specific
 *  Application

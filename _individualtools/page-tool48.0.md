@@ -26,7 +26,7 @@ Each buoy location offers data to download as a CSV that includes all of the obs
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Location specific
 *  Watershed level

@@ -23,7 +23,7 @@ AirNow provides “current and forecast air quality maps and data for more than 
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Forecast
 *  Grid based

@@ -21,7 +21,7 @@ permalink: /individualtools/page-tool76.0/
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Forecast
 *  Grid based

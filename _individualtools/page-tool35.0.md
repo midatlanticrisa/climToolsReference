@@ -21,7 +21,7 @@ Inspired by Ed Hawkin's Warming Strips visualizations, this tool provides color-
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Jursidiction based
 *  County level
 *  Application

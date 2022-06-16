@@ -24,7 +24,7 @@ The monitoring sites linked through this data access portal vary widely in terms
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Location specific
 *  Watershed level

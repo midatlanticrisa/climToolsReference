@@ -21,7 +21,7 @@ With both a US and global map view, this tool allows users to visualize the pote
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Climate projections
 *  Jursidiction based
 *  County level

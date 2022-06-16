@@ -23,7 +23,7 @@ The Air Quality Forecast also provides links to educational resources that users
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Forecast
 *  Grid based

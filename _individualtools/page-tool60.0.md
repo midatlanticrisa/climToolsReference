@@ -23,7 +23,7 @@ In addition to the data viewer, users have the option to download a data spreads
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Jursidiction based
 *  Location specific
 *  Website

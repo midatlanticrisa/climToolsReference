@@ -21,7 +21,7 @@ The Water Deficit Calculator provides site and crop specific estimates of local 
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Forecast
 *  Location specific

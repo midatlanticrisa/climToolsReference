@@ -26,7 +26,7 @@ TMDL and water quality data are available to download as compressed file geodata
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  State level
 *  Application

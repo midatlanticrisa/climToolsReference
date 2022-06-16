@@ -23,7 +23,7 @@ BASINS can be installed for free and operates using an open source GIS platform.
 **Tags**
 
 *  Restrictions apply
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Grid based
 *  Application

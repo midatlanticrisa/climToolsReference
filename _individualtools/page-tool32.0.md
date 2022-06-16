@@ -21,7 +21,7 @@ This website provides a variety of resources that allow users to explore status 
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Location specific
 *  Website

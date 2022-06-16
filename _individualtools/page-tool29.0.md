@@ -21,7 +21,7 @@ This tool generates interactive graphs and tables summarizing a variety of tempe
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Location specific
 *  Application
 *  Dataset

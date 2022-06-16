@@ -22,7 +22,7 @@ Each climate summary includes key messages, as well as a narrative description a
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Climate projections
 *  Jursidiction based
 *  State level

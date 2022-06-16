@@ -21,7 +21,7 @@ Through this easy-to-use tool, users can access an interactive map depicting reg
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Climate projections
 *  Jursidiction based
 *  County level

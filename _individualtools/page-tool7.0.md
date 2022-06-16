@@ -24,7 +24,7 @@ In addition to downloading the data directly through the portal, users can also 
 **Tags**
 
 *  Open source
-*  Historical 
+*  Historical
 *  Climate projections
 *  Grid based
 *  Regional level

@@ -21,7 +21,7 @@ Coastal County Snapshots begins with an interactive map that allows users to fin
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Jursidiction based
 *  County level
 *  Website

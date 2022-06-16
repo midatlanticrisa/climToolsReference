@@ -21,7 +21,7 @@ This tool allows users to access interactive maps, charts, and tables portraying
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Location specific
 *  Regional level
 *  Program

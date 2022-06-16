@@ -21,7 +21,7 @@ VECOS allows users to view and download historical and recent water quality data
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Location specific
 *  Application
 *  Interactive interface/map

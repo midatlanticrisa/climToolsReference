@@ -25,7 +25,7 @@ This tool is intended for a wide range of users and does not require any special
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Website
 *  Interactive interface/map

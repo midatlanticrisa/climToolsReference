@@ -22,7 +22,7 @@ This easy-to-use tool allows users to view trends and future projections of mont
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Climate projections
 *  Location specific
 *  Website

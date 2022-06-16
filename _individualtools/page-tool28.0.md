@@ -24,7 +24,7 @@ Hosted by Google's Earth Engine, the Climate Engine Application allows users to 
 **Tags**
 
 *  Registration required
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Forecast
 *  Grid based

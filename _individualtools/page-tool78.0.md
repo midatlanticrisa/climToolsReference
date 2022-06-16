@@ -21,7 +21,7 @@ The USDA tool is focused on helping foresters understand how pine forests will b
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Climate projections
 *  Grid based
 *  Location specific

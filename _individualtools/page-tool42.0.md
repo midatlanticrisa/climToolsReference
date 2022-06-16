@@ -21,7 +21,7 @@ Led by the Yale Program on Climate Change Communication and the George Mason Cen
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Program
 *  Dataset
 *  Interactive interface/map

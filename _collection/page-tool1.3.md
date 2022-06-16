@@ -21,7 +21,7 @@ This easy-to-use tool provides three sea level rise scenarios (low, intermediate
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Climate projections
 *  Jursidiction based

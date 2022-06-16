@@ -24,7 +24,7 @@ Alongside maps of land use change, the C-CAP Land Cover Atlas also includes nume
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Jursidiction based
 *  County level

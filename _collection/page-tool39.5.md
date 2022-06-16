@@ -21,7 +21,7 @@ This tool “graphs minimum temperature versus damage probability for the estima
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Forecast
 *  Location specific

@@ -30,7 +30,7 @@ Collection of tools and information on climate change adaptation for individuals
 
 ### [AirNow](/individualtools/page-tool87.0/){:target='blank'}
 Reports historical, current, and forecast air quality and fire conditions across North America.
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Forecast' target='_blank'>Forecast</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
@@ -44,7 +44,7 @@ Reports historical, current, and forecast air quality and fire conditions across
 
 ### [Annual United States Climate Stripes: Temperature and Precipitation](/individualtools/page-tool35.0/){:target='blank'}
 Artistic representation of Climate Change
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/County level' target='_blank'>County level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
@@ -66,7 +66,7 @@ Calculates individual nitrogen contribution to the Chesapeake Bay.
 
 ### [Beach Nourishment Viewer](/individualtools/page-tool60.0/){:target='blank'}
 Demonstrates location of past and current beach nourishment projects, number of nourishment episodes in one area, date of project completion, cost, and volume of the project.
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
@@ -80,7 +80,7 @@ Demonstrates location of past and current beach nourishment projects, number of 
 ### [Better Assessment Science Integrating Point and Non-point Sources (BASIN)](/individualtools/page-tool15.0/){:target='blank'}
 BASINS purpose is to assist in watershed management and TMDL development by integrating data, tools, and models.
 <ul class='tags'><li><a class='tag' href='/tag/Restrictions apply' target='_blank'>Restrictions apply</a></li>
-<li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
@@ -104,7 +104,7 @@ CAST provides estimates of load reductions, allows users to understand which BMP
 
 ### [Chesapeake Bay Interpretive Buoy System (CBIBS)](/individualtools/page-tool48.0/){:target='blank'}
 Measures and records weather and water conditions within the Chesapeake Bay
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Watershed level' target='_blank'>Watershed level</a></li>
@@ -117,7 +117,7 @@ Measures and records weather and water conditions within the Chesapeake Bay
 
 ### [Chesapeake Bay Program DataHub](/individualtools/page-tool33.0/){:target='blank'}
 Datasets related to water quality, living resources, pollution, and fluorescence 
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
 <li><a class='tag' href='/tag/Dataset' target='_blank'>Dataset</a></li>
@@ -127,7 +127,7 @@ Datasets related to water quality, living resources, pollution, and fluorescence
 
 ### [Climate Change in the American Mind (CCAM) Explorer](/individualtools/page-tool42.0/){:target='blank'}
 Display data on American climate change perceptions based on year and respondent characteristics
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Program' target='_blank'>Program</a></li>
 <li><a class='tag' href='/tag/Dataset' target='_blank'>Dataset</a></li>
 <li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
@@ -139,7 +139,7 @@ Display data on American climate change perceptions based on year and respondent
 ### [Climate Engine](/individualtools/page-tool28.0/){:target='blank'}
 Web application that generates maps and graphs using climate data from remotely sensed source data
 <ul class='tags'><li><a class='tag' href='/tag/Registration required' target='_blank'>Registration required</a></li>
-<li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Forecast' target='_blank'>Forecast</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
@@ -154,7 +154,7 @@ Web application that generates maps and graphs using climate data from remotely 
 
 ### [Climate Impact Map](/individualtools/page-tool27.0/){:target='blank'}
 Interactive map showing past and future temperature based different climate models
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/County level' target='_blank'>County level</a></li>
@@ -173,7 +173,7 @@ A toolkit designed to help farmers in the Northeast US improve their productivit
 
 ### [Coastal Change Analysis Program (C-CAP) Land Cover Atlas](/individualtools/page-tool70.0/){:target='blank'}
 Interactive map showing changes in land use cover from 1996-2010 in coastal regions
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/County level' target='_blank'>County level</a></li>
@@ -197,7 +197,7 @@ National map illustrating past, present, and projected coastal conditions
 
 ### [Coastal County Snapshots](/individualtools/page-tool79.0/){:target='blank'}
 The open-source map leads users to reports that contain graphs and figures with short-term projections and current data on flood exposure, ocean jobs, and wetland benefits specific to the user's selected county.
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/County level' target='_blank'>County level</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
@@ -260,7 +260,7 @@ Calculates cost, federal tax credit, carbon offset, average revenue, and energy 
 
 ### [Delaware Air Quality Forecast](/individualtools/page-tool74.0/){:target='blank'}
 Report the current conditions and next day forecast of Delaware Air Quality.
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Forecast' target='_blank'>Forecast</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
@@ -286,7 +286,7 @@ Climate projections for state of Delaware
 
 ### [Delaware Environmental Monitoring Sites](/individualtools/page-tool59.0/){:target='blank'}
 This tool inventories environmental monitoring stations in Delaware and provides links to access corresponding data and find data of interest.
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Watershed level' target='_blank'>Watershed level</a></li>
@@ -323,7 +323,7 @@ Resource database related to drought mitigation strategies
 
 ### [Drought Risk Atlas](/individualtools/page-tool30.0/){:target='blank'}
 View drought indices to assess national drought risk on map or for specific weather stations of United States
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
 <li><a class='tag' href='/tag/Dataset' target='_blank'>Dataset</a></li>
@@ -336,7 +336,7 @@ View drought indices to assess national drought risk on map or for specific weat
 
 ### [Drought-Applied Climate Information System (ACIS)](/individualtools/page-tool29.0/){:target='blank'}
 Interactive chart to view precipitation / temperature data for stations across the U.S.
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
 <li><a class='tag' href='/tag/Dataset' target='_blank'>Dataset</a></li>
@@ -348,7 +348,7 @@ Interactive chart to view precipitation / temperature data for stations across t
 
 ### [Earth::Global wind patterns](/individualtools/page-tool76.0/){:target='blank'}
 A fantastic visualization of climate, atmospheric, and oceanic data for educational purposes.
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Forecast' target='_blank'>Forecast</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
@@ -375,7 +375,7 @@ Decision support tool to assess coastal resilience in Eastern Virginia
 
 ### [Eyes On The Bay](/individualtools/page-tool32.0/){:target='blank'}
 Website providing Maryland water quality data and information
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
@@ -385,7 +385,7 @@ Website providing Maryland water quality data and information
 
 ### [FEMA Data Visualizations of Disaster Declarations and Grants](/individualtools/page-tool54.0/){:target='blank'}
 Visualize FEMA data regarding natural disaster occurrence, flood frequency, and housing assistance at the national, state, county, and tribal level.
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/County level' target='_blank'>County level</a></li>
 <li><a class='tag' href='/tag/State level' target='_blank'>State level</a></li>
@@ -416,7 +416,7 @@ Platform for beekeepers, farmers, and pesticide applicators to communicate and s
 
 ### [FloodFactor](/individualtools/page-tool25.0/){:target='blank'}
 Map of tidal and hurricane flooding under present and future scenarios
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
@@ -498,7 +498,7 @@ Allows residents of coastal Virginia to identify their evacuation zone in prepar
 
 ### [Mapping Social Vulnerability of Fishing Communities](/individualtools/page-tool56.0/){:target='blank'}
 National map of social vulnerability in fishing communities
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/City level' target='_blank'>City level</a></li>
 <li><a class='tag' href='/tag/County level' target='_blank'>County level</a></li>
@@ -516,7 +516,7 @@ Collection of tools and information on climate change for individuals, local pro
 
 ### [MARISA Climate Impacts Summary and Outlook Reports](/individualtools/page-tool20.0/){:target='blank'}
 Seasonal (quarterly) reports outlining past weather events and their significance as well as projections to the next seasons weather
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
@@ -548,7 +548,7 @@ Create maps and graphs presenting coastal and ocean data in Maryland
 
 ### [MDOT Climate Change Vulnerability](/individualtools/page-tool49.0/){:target='blank'}
 Illustrates the specific roads that will experience inundation due to predicted storm events. Displays projected water depth grids
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/State level' target='_blank'>State level</a></li>
@@ -617,7 +617,7 @@ Modeling tool for conservation areas of high priority
 
 ### [NOAA State Climate Summaries](/individualtools/page-tool14.0/){:target='blank'}
 Summaries for each state regarding historical climate change and future climate projections
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Jursidiction based' target='_blank'>Jursidiction based</a></li>
 <li><a class='tag' href='/tag/State level' target='_blank'>State level</a></li>
@@ -629,7 +629,7 @@ Summaries for each state regarding historical climate change and future climate 
 ### [Northeast Conservation Planning Atlas](/individualtools/page-tool43.0/){:target='blank'}
 View, create, and collaborate with other users on maps to visualize biological, physical, and socio-economic information about the Northeast.
 <ul class='tags'><li><a class='tag' href='/tag/Registration required' target='_blank'>Registration required</a></li>
-<li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Regional level' target='_blank'>Regional level</a></li>
@@ -647,7 +647,7 @@ View, create, and collaborate with other users on maps to visualize biological, 
 *Analyze land use change scenarios and impacts
 <ul class='tags'><li><a class='tag' href='/tag/Open source' target='_blank'>Open source</a></li>
 <li><a class='tag' href='/tag/Restrictions apply' target='_blank'>Restrictions apply</a></li>
-<li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
 <li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
@@ -672,7 +672,7 @@ Report current meteorological and infrastructure (electricity, traffic, shelters
 
 ### [PINEMAP](/individualtools/page-tool78.0/){:target='blank'}
 PINEMAP contains 13 total tools dealing with loblolly pine trees in Southeastern US across four categories: Environment, Establishment, Management, and Production.
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
@@ -711,7 +711,7 @@ Provides independent, objective assessment of locality resilience in coastal Vir
 
 ### [Riparian Restoration Decision Support Tool](/individualtools/page-tool52.0/){:target='blank'}
 Guide restoration efforts in identifying high priority areas by generating different scenarios for riparian habitats in the Eastern U.S.
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
@@ -723,7 +723,7 @@ Guide restoration efforts in identifying high priority areas by generating diffe
 
 ### [Sea Level Report Cards](/individualtools/page-tool16.0/){:target='blank'}
 Illustrate trends and projected sea level rise
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
@@ -767,7 +767,7 @@ This map shows impervious surfaces within Washington D.C. intended to help users
 
 ### [Submerged Aquatic Vegetation (SAV) in the Chesapeake Bay](/individualtools/page-tool38.0/){:target='blank'}
 Monitor SAV growth in the Chesapeake Bay 
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Regional level' target='_blank'>Regional level</a></li>
 <li><a class='tag' href='/tag/Program' target='_blank'>Program</a></li>
@@ -805,7 +805,7 @@ Map of D.C. sewers and subwatersheds
 
 ### [United States Drought Monitor](/individualtools/page-tool44.0/){:target='blank'}
 Current and historical (through January 4, 2000) drought comparison mapping tool of continental U.S., Alaska, Hawaii,  and territories
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
 <li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
@@ -828,7 +828,7 @@ National, regional, and state maps detailing plant hardiness zones
 ### [USGS Exploration and Graphics for RivEr Trends (EGRET)](/individualtools/page-tool9.0/){:target='blank'}
 R package for evaluating changes in river conditions 
 <ul class='tags'><li><a class='tag' href='/tag/Open source' target='_blank'>Open source</a></li>
-<li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
@@ -840,7 +840,7 @@ R package for evaluating changes in river conditions
 ### [USGS Geo Data Portal (GDP)](/individualtools/page-tool7.0/){:target='blank'}
 Provide data on climate, geological processes, and meteorology
 <ul class='tags'><li><a class='tag' href='/tag/Open source' target='_blank'>Open source</a></li>
-<li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Climate projections' target='_blank'>Climate projections</a></li>
 <li><a class='tag' href='/tag/Grid based' target='_blank'>Grid based</a></li>
 <li><a class='tag' href='/tag/Regional level' target='_blank'>Regional level</a></li>
@@ -864,7 +864,7 @@ Visualize steam and weather data
 
 ### [USGS StreamStats](/individualtools/page-tool81.0/){:target='blank'}
 Streamflow data, trends, and analyses from USGS gaging stations.
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Watershed level' target='_blank'>Watershed level</a></li>
@@ -876,7 +876,7 @@ Streamflow data, trends, and analyses from USGS gaging stations.
 
 ### [USGS Water Data for the Nation](/individualtools/page-tool71.0/){:target='blank'}
 Clearinghouse of all USGS-hosted water data across the country, including water temperatures, levels, flows, groundwater tables, and a host of other physical and chemical parameters.
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Website' target='_blank'>Website</a></li>
@@ -902,7 +902,7 @@ Ongoing inventory of features from Virginia’s coastal ecosystems with each fea
 
 ### [Virginia Estuarine and Coastal Observing System (VECOS)](/individualtools/page-tool37.0/){:target='blank'}
 Provides access to water quality and meteorological data from a variety of monitoring programs conducted by the Chesapeake Bay National Estuarine Research Reserve (CBNERR) in Virginia
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Location specific' target='_blank'>Location specific</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>
 <li><a class='tag' href='/tag/Interactive interfacemap' target='_blank'>Interactive interface/map</a></li>
@@ -940,7 +940,7 @@ Method of assessing wetland's ability to perform ecosystem services.
 
 ### [Water Quality Assessment and TMDLs](/individualtools/page-tool50.0/){:target='blank'}
 Provide water quality assessment and TMDL information. Show the spatial relationship of how each intersect
-<ul class='tags'><li><a class='tag' href='/tag/Historical ' target='_blank'>Historical </a></li>
+<ul class='tags'><li><a class='tag' href='/tag/Historical' target='_blank'>Historical</a></li>
 <li><a class='tag' href='/tag/Real-timeCurrent' target='_blank'>Real-time/Current</a></li>
 <li><a class='tag' href='/tag/State level' target='_blank'>State level</a></li>
 <li><a class='tag' href='/tag/Application' target='_blank'>Application</a></li>

@@ -21,7 +21,7 @@ The Growing Degree Day (GDD) calculator measures seasonal heat accumulation, thr
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Forecast
 *  Location specific

@@ -21,7 +21,7 @@ This tool allows users to search for water data by sites or by data category. To
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Location specific
 *  Website

@@ -22,7 +22,7 @@ EGRET is an tool for advanced users who have experience working with the softwar
 **Tags**
 
 *  Open source
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Location specific
 *  Application

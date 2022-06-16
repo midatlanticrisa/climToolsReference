@@ -21,7 +21,7 @@ These tools help provide important information about the history of disaster dec
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Jursidiction based
 *  County level
 *  State level

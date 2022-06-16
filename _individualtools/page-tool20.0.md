@@ -21,7 +21,7 @@ Released seasonally, these reports summarize recent weather events in the Chesap
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Climate projections
 *  Grid based
 *  Location specific

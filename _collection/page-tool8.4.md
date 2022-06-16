@@ -21,7 +21,7 @@ This easy-to-use tool includes a collection of maps which show historical hurric
 
 **Tags**
 
-*  Historical 
+*  Historical
 *  Real-time/Current
 *  Grid based
 *  Application
