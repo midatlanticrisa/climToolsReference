@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: glossary
 title: Glossary
 permalink: /glossary/
 ---

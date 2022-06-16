@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: overview
 title: Overview
 permalink: 
 ---
@@ -12,7 +12,7 @@ There are many tools available that address climate change or other environmenta
  
 Changes in our climate have become more apparent and important over time. Due to the scope of climate change, and its affects on human societies, it is difficult to collect, analyze, and communicate the results of an analysis without some helpful tools. Tools can help users incorporate climate information into their work to support water management, support planning, help educate users, visualize potential futures or scenarios, and characterize social, economic, and ecological benefits. Climate Tools helps you find the tools most helpful to you and your project that addresses changes in our climate.
 
-To get started, head to the [Tool Search](/toolsearch/) page to start filtering the collection of tools based on your needs or head to the [Tools](/tools/) page to view the complete list of climate tools and summaries for each. Check the [Glossary](/glossary/) to see how categories or fields are defined.
+To get started, head to the [Tool Search](/toolsearch/) page to start filtering the collection of tools based on your needs or head to the [All Tools](/tools/) page to view the complete list of climate tools and summaries for each. Check the [Glossary](/glossary/) to see how categories or fields are defined.
 
 <!---
 ### Climate Tools

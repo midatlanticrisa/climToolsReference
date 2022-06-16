@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Tools
+title: All Tools
 permalink: /tools/
 ---
 
 {% include tags.html %}
 
-## Tools
+## All Tools
