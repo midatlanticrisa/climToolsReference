@@ -117,7 +117,7 @@
   <label for="location"><b>Where do you need your tool to work?</b></label><br>
   <div class="dropFont">
   <select class="js-location-multiple" id="location" multiple="multiple" style="width: 50%">
-    <option value="Any">Any location</option>
+    <!-- <option value="Any">Any location</option> -->
     <optgroup label="Delaware">
       <option value="Delaware">Delaware</option>
       <option value="Kent County, DE">Kent County, DE</option>
@@ -458,7 +458,7 @@ Adding filters narrows your search. Select your top 1-2 choices to optimize your
   <label for="subfilter"><b>What topic(s) are you interested in?</b></label><br>
   <div class="dropFont">
   <select class="js-subfilter-multiple" id="subfilter" multiple="multiple" style="width: 50%">
-    <option value="Any">Any topic</option>
+    <!-- <option value="Any">Any topic</option> -->
     <optgroup label="Developed Environments">
       <option value="Planning / Land Use">Planning / Land Use</option>
       <option value="Transportation">Transportation</option>
@@ -515,7 +515,7 @@ Adding filters narrows your search. Select your top 1-2 choices to optimize your
   <label for="toolfunction"><b>Why do you need the tool?</b></label><br>
   <div class="dropFont">
   <select class="js-toolfunction-multiple" id="toolfunction" multiple="multiple" style="width: 50%">
-    <option value="Any">Any function</option>
+    <!-- <option value="Any">Any function</option> -->
     <option value="Adaptation Planning">Adaptation Planning</option>
     <option value="Citizen Science">Citizen Science</option>
     <option value="Climate Mitigation Planning">Climate Mitigation Planning</option>
@@ -569,13 +569,17 @@ Adding filters narrows your search. Select your top 1-2 choices to optimize your
   //////////////////////////////////////////////////////////////////
   function findValueInArray(value,arr){
     var result = false;
-    
-    for(var i=0; i<arr.length; i++){
+
+    if(arr.length == 0){
+      result = true;
+    } else {
+      for(var i=0; i<arr.length; i++){
       var name = arr[i];
       if(name == value){
         result = true;
         break;
       }
+    }
     }
     // return true or false
     return result;
@@ -587,7 +591,7 @@ Adding filters narrows your search. Select your top 1-2 choices to optimize your
   // https://www.geeksforgeeks.org/how-to-find-if-two-arrays-contain-any-common-item-in-javascript/
   //////////////////////////////////////////////////////////////////
   function findCommonElement(array1, array2) {
-    if(typeof array1 === 'string') {
+    if(typeof array1 === 'string' || array2.length == 0) {
       var result = findValueInArray(array1, array2)
       return result;
       
@@ -681,13 +685,16 @@ Adding filters narrows your search. Select your top 1-2 choices to optimize your
       
       // Include a tool:
       // if any location is selected or the selected location(s) match any listed in the attributes
-      if ((findValueInArray("Any", location) || findCommonElement(tools.location, location)) && 
+      //if ((findValueInArray('Any', location) || findCommonElement(tools.location, location)) && # ANY LOCATION
+      if ((findCommonElement(tools.location, location)) && 
       // AND any subfilter is selected or the selected subfilter matches any listed in the attributes
       //(!subfilter || tools.subfilter.some(item => item === subfilter)) && 
-      (findValueInArray("Any", subfilter) || findCommonElement(tools.subfilter, subfilter)) && 
+      //(findValueInArray("Any", subfilter) || findCommonElement(tools.subfilter, subfilter)) && # ANY SUBFILTER
+      (findCommonElement(tools.subfilter, subfilter)) && 
       // AND any tool function is selected or the selected tool function matches any listed in the attributes
       //(!toolfunction || tools.toolfunction.some(item => item === toolfunction)))
-      (findValueInArray("Any", toolfunction) || findCommonElement(tools.toolfunction, toolfunction))) {
+      //(findValueInArray("Any", toolfunction) || findCommonElement(tools.toolfunction, toolfunction))) { # ANY FUNCTION
+      (findCommonElement(tools.toolfunction, toolfunction))) {
         result.push(tools);
       }
     }

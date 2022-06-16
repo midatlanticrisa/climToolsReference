@@ -6,7 +6,7 @@ permalink:
 
 ## a search engine for finding climate tools in the Mid-Atlantic
 
-MARISA Climate Tools is a site designed to help you identify the best climate tool(s) for your needs in the Mid-Atlantic Region. Climate Tools helps speed up the time it takes to find a tool and helps you feel more confident in your choice of tool(s) by allowing you to filter a collection of tools based on your needs, view a summary of the available tools, and compare tools in a similar format.
+MARISA Climate Tools is designed to help you identify the best climate tool(s) for your needs in the Mid-Atlantic Region. Climate Tools helps speed up the time it takes to find a tool and helps you feel more confident in your choice of tool(s) by allowing you to filter a collection of tools based on your needs, view a summary of the available tools, and compare tools in a similar format.
  
 There are many tools available that address climate change or other environmental issues. However, it takes time to find and sort through all of those tools and not all of them are described in the same way. It is easy to be unsure that the tool you have chosen is the best tool for your needs. Climate Tools is designed to help alleviate those issues.
  
