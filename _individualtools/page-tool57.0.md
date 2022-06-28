@@ -21,11 +21,12 @@ By providing information such as location, species, tree size, condition, and lo
 
 **Available Tools**
 
-*  [i-Tree: Mytree and Landscape](/collection/page-tool57.1/){:target='blank'}
+*  [i-Tree: Mytree](/collection/page-tool57.1/){:target='blank'}
 *  [i-Tree: Design](/collection/page-tool57.2/){:target='blank'}
 *  [i-Tree: Canopy](/collection/page-tool57.3/){:target='blank'}
 *  [i-Tree: HydroPlus](/collection/page-tool57.4/){:target='blank'}
 *  [i-Tree:  Eco](/collection/page-tool57.5/){:target='blank'}
+*  [i-Tree: Landscape](/collection/page-tool57.6/){:target='blank'}
 
 **Cost**
 
